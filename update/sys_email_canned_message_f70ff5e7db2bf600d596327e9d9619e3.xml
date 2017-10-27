@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p><span style="font-size: 11px;">PERSONAL &amp; CONFIDENTIAL</span></p>
+<p><span style="font-size: 11px;">RE: ${claim_number}</span></p>
+<p> </p>
+<p><span style="font-size: 11px;">Dear:${contact_name}</span></p>
+<p><span style="font-size: 11px;">You may recall that a matter was reported to NORCAL involving the above-captioned patient.</span></p>
+<p><span style="font-size: 11px;"><span class="s3" style="font-size: 11px;">There has been no </span><span class="s3" style="font-size: 11px;">recent </span><span class="s3" style="font-size: 11px;">activity in this matter and we are now closing our file.</span></span></p>
+<p><span style="font-size: 11px;"><span class="s3" style="font-size: 11px;"><span class="s6" style="font-size: 11px;">Please be advised that each state has a &#34;statute of limitations&#34; which establishes a period within which the claimant must file a complaint in court. </span><span class="s6" style="font-size: 11px;">Many states expand or toll the limitations period under certain circumstances, including fraud, injuries to minors, and a variety of other reasons.</span> <span class="s6" style="font-size: 11px;">Therefore, although it appears the statute of limitations to file a complaint by this claimant may likely have passed, should you receive any further communication or documents concerning this matter, please contact our office immediately before responding so that we can reopen our file.</span></span></span></p>
+<p><span style="font-size: 11px;">Please do not make this letter part of the patient’s medical chart.</span></p>
+<p><span class="s3" style="font-size: 11px;">We would like to thank you for your patience and cooperation during the pendency of this matter. </span></p>
+<p>Very truly yours,</p>
+<p>cc: <span class="s9" style="color: #5b6770; font-size: 8px;">560 DAVIS STREET, SUITE 200, SAN FRANCISCO, CA 94111-</span><span class="s9" style="color: #5b6770; font-size: 8px;">1966</span> <span class="s11" style="color: #dc4405; font-size: 8px;">T</span> <span class="s9" style="color: #5b6770; font-size: 8px;">415.397.9700  800.416.0791</span> <span class="s11" style="color: #dc4405; font-size: 8px;">F</span> <span class="s9" style="color: #5b6770; font-size: 8px;">415.735.2097</span> <span class="s14" style="color: #dc4405; font-size: 8px;">NORCALMUTUAL.COM</span></p>
+<p> </p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>amoewe</sys_created_by>
+        <sys_created_on>2017-06-30 12:00:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f70ff5e7db2bf600d596327e9d9619e3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Close Other SF</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_f70ff5e7db2bf600d596327e9d9619e3</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:30</sys_updated_on>
+        <title>Close Other SF</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

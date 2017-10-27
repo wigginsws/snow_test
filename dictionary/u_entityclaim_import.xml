@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-EntityClaim" max_length="40" name="u_entityclaim_import" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Claimant" max_length="40" name="u_claimant" type="string"/>
+        <element attributes="import_attribute_name=CLAIM_NO,edge_encryption_enabled=true" label="CLAIM_NO" max_length="40" name="u_claim_no" type="string"/>
+        <element attributes="import_attribute_name=CLIENT_ID,edge_encryption_enabled=true" label="CLIENT_ID" max_length="40" name="u_client_id" type="string"/>
+        <element attributes="import_attribute_name=Entity,edge_encryption_enabled=true" label="Entity" max_length="4000" name="u_entity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ENTITY_PK" max_length="40" name="u_entity_pk" type="string"/>
+        <element attributes="import_attribute_name=FIRST_NAME,edge_encryption_enabled=true" label="FIRST_NAME" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IsPrimaryClaimant" max_length="40" name="u_isprimaryclaimant" type="string"/>
+        <element attributes="import_attribute_name=LAST_NAME,edge_encryption_enabled=true" label="LAST_NAME" max_length="60" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RelationToPatient" max_length="40" name="u_relationtopatient" type="string"/>
+        <element attributes="import_attribute_name=Role,edge_encryption_enabled=true" label="Role" max_length="100" name="u_role" type="string"/>
+    </element>
+</database>

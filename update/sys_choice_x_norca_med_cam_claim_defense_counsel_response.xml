@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="defense_counsel_response" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>defense_counsel_response</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Response Yet</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-04-26 02:14:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e56a412adb56f60075ea38ff9d9619e8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:30:00</sys_updated_on>
+            <value>nr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>defense_counsel_response</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Accepted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>10</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-04-26 02:15:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85ca4d6adb56f60075ea38ff9d961992</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:30:03</sys_updated_on>
+            <value>a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>defense_counsel_response</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>20</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-04-26 02:15:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7da81eadb56f60075ea38ff9d961971</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:30:07</sys_updated_on>
+            <value>r</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>defense_counsel_response</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-04-26 02:14:28</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6146fbb3db900300e022771c8c9619fe</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_name>defense_counsel_response</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_defense_counsel_response</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:35</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

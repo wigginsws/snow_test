@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="survey_conditions">
+    <survey_conditions action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_norca_med_cam_claim">state=5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <order>100</order>
+        <percent_random/>
+        <random_survey>false</random_survey>
+        <repeat_interval/>
+        <survey display_value="Claim Survey">3cfdc6c5db32f20075ea38ff9d9619ca</survey>
+        <sys_class_name>survey_conditions</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-26 11:45:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>148ca590db07ba0075ea38ff9d96199b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>3cfdc6c5db32f20075ea38ff9d9619ca</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>survey_conditions_148ca590db07ba0075ea38ff9d96199b</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-08-07 17:04:52</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <user_field>u_insured.email_1</user_field>
+    </survey_conditions>
+</record_update>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_AddressWebServiceUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_AddressWebServiceUtils</name>
+        <script><![CDATA[var cam_AddressWebServiceUtils = Class.create();
+cam_AddressWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebServiceUtils, {
+	
+    initialize: function() {
+    },
+
+    type: 'cam_AddressWebServiceUtils',
+	
+	
+	saveAddress: function(currentGR) {
+		var dataSyncUtils = new cam_DataSyncUtils();
+	
+		var entityGR = dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_entity", currentGR.entity);
+		gs.debug("[saveAddress] EntityGR " + entityGR?entityGR.getDisplayValue():"not found");
+		if (!entityGR) {
+			throw "Entity record could not be retrieved, sys_id " + currentGR.entity;
+		}
+
+		var countyCode;
+		if (currentGR.county_name) {
+			var countyGR = dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_county_lookup", currentGR.county_name);
+			if (countyGR) {
+				countyCode = countyGR.county_code;
+			}
+		}
+
+		var countryCode;
+		if (currentGR.country) {
+			var countryGR = dataSyncUtils.getRecordBySysId("core_country", currentGR.country);
+			if (countryGR) {
+				countryCode = countryGR.iso3166_3;
+			}
+		}
+
+		var params = {
+			'PartyChangeRequest.UserId': this.getUserNameValueObject(currentGR),
+			'Address.AddressNumberId': this.createParamValueObject(currentGR.sor_id?currentGR.sor_id:''),
+			'Address.LineOne': this.createParamValueObject( currentGR.address_line1?currentGR.address_line1:""),
+			'Address.LineTwo': this.createParamValueObject( currentGR.address_line2?currentGR.address_line2:""),
+			'Address.LineThree': this.createParamValueObject( currentGR.address_line3?currentGR.address_line3:""),
+			'Address.CityName': this.createParamValueObject( currentGR.city?currentGR.city:""),
+			'Address.StateOrProvinceCode': this.createParamValueObject( currentGR.state?currentGR.state: (currentGR.province?currentGR.province:"") ),
+			'Address.CountyCode': this.createParamValueObject( countyCode?countyCode:""),
+			'Address.PostalCode': this.createParamValueObject( currentGR.zip_code?currentGR.zip_code:""),
+			'Address.CountryCode': this.createParamValueObject( countryCode?countryCode:""),
+			'Address.CountryName': this.createParamValueObject(''),
+			'Address.AttentionName': this.createParamValueObject( currentGR.addressee?currentGR.addressee:""),
+			'Address.ExternalReferenceId': this.createParamValueObject( ''),
+			'Address.PostOfficeAddressIndicator': this.createParamValueObject( 'false'),
+
+			'BasicAddress.AddressTypeCode': this.createParamValueObject( currentGR.use?currentGR.use:""),
+			'AddressPeriod.StartDate': this.createParamValueObject( currentGR.effective_from?currentGR.effective_from:new GlideDate().getValue()),
+			'AddressPeriod.EndDate': this.createParamValueObject( currentGR.effective_to?currentGR.effective_to:'3000-01-01'),
+			'BasicAddress.PrimaryIndicator': this.createParamValueObject( currentGR.primary?currentGR.primary:"false"),
+			'BasicAddress.FuturePrimaryIndicator': this.createParamValueObject( ''),
+			'PartyChangeRequest.Address': this.createParamValueObject( currentGR.getUniqueValue()),
+
+		};
+
+		var messageName, idXpath;
+		if (entityGR.entity_type=="P") {
+			params["Person.PersonNumberId"] = this.createParamValueObject( entityGR.sor_id?entityGR.sor_id:"");
+			params["PartyChangeRequest.Person"] = this.createParamValueObject( entityGR.getUniqueValue());
+			params["Person.BasicAddress"] = this.createParamValueObject("BA001");
+			messageName = currentGR.sor_id ? "updatePersonAddress" : "insertPersonAddress";
+			
+		} else {
+			
+			params["Organization.OrganizationNumberId"] = this.createParamValueObject( entityGR.sor_id?entityGR.sor_id:"");
+			params["PartyChangeRequest.Organization"] = this.createParamValueObject( entityGR?entityGR.getUniqueValue():'');
+			params["Organization.BasicAddress"] = this.createParamValueObject("BA001");
+			messageName = currentGR.sor_id ? "updateOrganizationAddress" : "insertOrganizationAddress";
+			
+		}
+		
+		idXpath = "/S:Envelope/S:Body/PartyChangeResult/ns0:Address[@key='" + currentGR.getUniqueValue() + "']/ns0:AddressNumberId";
+
+		this.processMessage(cam.SCOPE_ID + '.CAM-OASIS-PartyChangeService', messageName, params, current, { "sor_id": idXpath});
+	}
+	
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-12 01:48:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cb07e11fdb3bfe00d596327e9d9619ed</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cam_AddressWebServiceUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_cb07e11fdb3bfe00d596327e9d9619ed</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-18 13:40:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

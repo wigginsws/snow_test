@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_final_disposition" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Investigation on-going</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccc7461fdb86b68062bafd441d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Negotiation on-going</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cc7461fdb86b68062bafd441d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim denied-diaried for statute</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d8c7461fdb86b68062bafd441d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No activity-diaried for statute</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58c7461fdb86b68062bafd441d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Active-Discovery ongoing</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4c7461fdb86b68062bafd441d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed with med exp paymt</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14c7461fdb86b68062bafd441d96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed without payment (CWP)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0c7461fdb86b68062bafd441d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>51</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed without payment talk out</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50c7461fdb86b68062bafd441d96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>52</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense verdict-trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcc7461fdb86b68062bafd441d96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>53</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense arbitration award</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cc7461fdb86b68062bafd441d96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>54</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plantiff verdict-trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8c7461fdb86b68062bafd441d96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>55</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plantiff arbitration award</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68c7461fdb86b68062bafd441d96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>56</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissed-talk out with prejudice</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e4c7461fdb86b68062bafd441d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>57</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissed-lack of prosec-w/prejudice</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64c7461fdb86b68062bafd441d961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:39</sys_updated_on>
+            <value>58</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissed-other with prejudice</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0c7461fdb86b68062bafd441d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>59</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dormant-diaried for dismissal</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54c7461fdb86b68062bafd441d96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled-lump sum payment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1c7461fdb86b68062bafd441d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled-with annuity used</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51c7461fdb86b68062bafd441d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>61</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Judgment defense-MSJ</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddc7461fdb86b68062bafd441d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>62</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Small claims-Plantiff award</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5dc7461fdb86b68062bafd441d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>63</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Small claims-Defense verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9c7461fdb86b68062bafd441d961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>64</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plantiff verdict-settled after trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>69c7461fdb86b68062bafd441d961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>65</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Crosea-risk mgmt payment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5c7461fdb86b68062bafd441d961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:43</sys_updated_on>
+            <value>66</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled-awaiting closing instructions</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0c7461fdb86b68062bafd441d96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On appeal</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50c7461fdb86b68062bafd441d96191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissal-Pltt has 1 yr to refile</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94c7461fdb86b68062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65c7461fdb86b68062bafd441d961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>99</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Binding arbitration - defense award</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8c7461fdb86b68062bafd441d961935</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>ARB_DEFAWD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Binding arbitration - plaintiff award</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>60c7461fdb86b68062bafd441d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>ARB_PLFAWD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bench trial - defense judgment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ecc7461fdb86b68062bafd441d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>BENCH_DEF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bench trail - plaintiff judgment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cc7461fdb86b68062bafd441d961934</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>BENCH_PLF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complaint filed-not served</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49c7461fdb86b68062bafd441d96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>CFILNSRVD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim settled</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61c7461fdb86b68062bafd441d961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>CLMSTTLED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deposition representation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcc7461fdb86b68062bafd441d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>DEPO_REP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit dismissed by plaintiff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85c7461fdb86b68062bafd441d96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>DISMISS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissed during trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cc7461fdb86b68062bafd441d961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>DISMIS_TRL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hung Jury</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9c7461fdb86b68062bafd441d96195b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>HUNGJURY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim settled - in-house workup</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>30c7461fdb86b68062bafd441d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>INHOUSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Judgment for defendant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b1c7461fdb86b68062bafd441d961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>JUDMENTDEF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Judgment for plaintiff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1c7461fdb86b68062bafd441d961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>JUDMENTPTF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jury trial - defense verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8c7461fdb86b68062bafd441d961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:40</sys_updated_on>
+            <value>JURY_DEF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jury trial - plaintiff verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38c7461fdb86b68062bafd441d961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>JURY_PLF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit dismissed - lack of prosecution</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89c7461fdb86b68062bafd441d96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>LACK_PROS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mistrial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:18:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc078edbdb86b68062bafd441d961984</sys_id>
+            <sys_mod_count>55</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:18:25</sys_updated_on>
+            <value>MISTRIAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MSJ granted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4c7461fdb86b68062bafd441d961947</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>MSJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No complaint filed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55c7461fdb86b68062bafd441d96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>NCFILED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit dismissed - named in error</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40c7461fdb86b68062bafd441d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>NMD IN ERR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-suit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>34c7461fdb86b68062bafd441d961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>NONSUIT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other (exception)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35c7461fdb86b68062bafd441d961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>OTHER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PAD - matter disposed of</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01c7461fdb86b68062bafd441d96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>PAD_DISPOS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PAD - limits exhausted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0c7461fdb86b68062bafd441d961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>PAD_LIMITS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit dismissed-no settlement</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5c7461fdb86b68062bafd441d96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>SDNSTTLMT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled during trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8dc7461fdb86b68062bafd441d96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>SETTLE_TRL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit settled before trial</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>09c7461fdb86b68062bafd441d96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:42</sys_updated_on>
+            <value>STL_B4_TRL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled post-plaintiff verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0dc7461fdb86b68062bafd441d96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:41</sys_updated_on>
+            <value>STL_PLFVRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_final_disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit settled</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5c7461fdb86b68062bafd441d961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:44</sys_updated_on>
+            <value>STSTTLED</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_final_disposition</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:18:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>42467fb3db900300e022771c8c96191a</sys_id>
+            <sys_mod_count>116</sys_mod_count>
+            <sys_name>u_final_disposition</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_u_final_disposition</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:02</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

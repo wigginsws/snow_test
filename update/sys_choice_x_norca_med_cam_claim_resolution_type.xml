@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="resolution_type" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>39e23e04db523a8062bafd441d961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Defense Verdict</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plaintiff Verdict</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>1</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75e23e04db523a8062bafd441d961924</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Plaintiff Verdict</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dismissed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>31e23e04db523a8062bafd441d961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Dismissed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Settled</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f9e23e04db523a8062bafd441d961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Settled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim Abandoned</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5e23e04db523a8062bafd441d961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Claim Abandoned</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71e23e04db523a8062bafd441d961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Coverage</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>6</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3de23e04db523a8062bafd441d961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>No Coverage</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open in Error</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>7</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5e23e04db523a8062bafd441d961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>Open in Error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Discontinued Act 13 – Certificate of Merit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>8</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b1e23e04db523a8062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>PMSLIC Discontinued Act 13 – Certificate of Merit</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Discontinued Act 13- Disqualified Expert</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>9</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7de23e04db523a8062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>PMSLIC Discontinued Act 13- Disqualified Expert</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Discontinued Act 13 – Statute of Repose</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>10</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>39e23e04db523a8062bafd441d96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>PMSLIC Discontinued Act 13 – Statute of Repose</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Section 605/715</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>11</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1e23e04db523a8062bafd441d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 15:25:36</sys_updated_on>
+            <value>PMSLIC Section 605/715</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>resolution_type</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 15:25:36</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bd463fb3db900300e022771c8c9619c2</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>resolution_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_resolution_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:43</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

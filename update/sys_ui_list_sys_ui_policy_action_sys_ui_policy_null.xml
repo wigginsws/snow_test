@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_ui_policy" relationship="" sys_domain="global" table="sys_ui_policy_action" version="2" view="">
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_ui_policy_action</name>
+            <parent>sys_ui_policy</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-14 17:22:52</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcf6513adb100300e022771c8c961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_ui_policy_action</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_sys_ui_policy_action_sys_ui_policy_null</sys_update_name>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-14 17:22:52</sys_updated_on>
+            <sys_user display_value="">3cde35e9dbed3a0075ea38ff9d96191b</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

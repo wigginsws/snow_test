@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="a67afd48dbe7ba0075ea38ff9d9619fe" sys_domain="global" table="x_norca_med_cam_county_lookup" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>4d0c6625db7bfa00d596327e9d9619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state_postal_code</element>
+            <position>1</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>cd0c6625db7bfa00d596327e9d9619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>county_name</element>
+            <position>2</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>410c6625db7bfa00d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>c10c6625db7bfa00d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>450c6625db7bfa00d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>county_code</element>
+            <position>5</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>c50c6625db7bfa00d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state_code</element>
+            <position>6</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:20:35</sys_created_on>
+            <sys_id>490c6625db7bfa00d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_county_lookup" sys_domain="global" view="Default view">a67afd48dbe7ba0075ea38ff9d9619fe</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:20:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_norca_med_cam_county_lookup</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-19 14:37:34</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a67afd48dbe7ba0075ea38ff9d9619fe</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_norca_med_cam_county_lookup</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_a67afd48dbe7ba0075ea38ff9d9619fe</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:57:41</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

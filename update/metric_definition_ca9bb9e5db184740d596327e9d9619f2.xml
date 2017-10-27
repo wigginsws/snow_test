@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="metric_definition">
+    <metric_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <field>claim_type</field>
+        <name>Claim Type</name>
+        <number>MTRC0010003</number>
+        <order>100</order>
+        <script/>
+        <sys_class_name>metric_definition</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-07-31 13:20:48</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ca9bb9e5db184740d596327e9d9619f2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Claim Type</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>metric_definition_ca9bb9e5db184740d596327e9d9619f2</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-08-02 19:19:43</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <timeline>true</timeline>
+        <type>field_value_duration</type>
+    </metric_definition>
+</record_update>

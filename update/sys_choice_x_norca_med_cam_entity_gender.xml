@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="gender" table="x_norca_med_cam_entity" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Female</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-06 17:08:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9237d19cdbcab200394af9361d9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-06 17:08:00</sys_updated_on>
+            <value>F</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Male</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-06 17:07:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9627d19cdbcab200394af9361d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-06 17:07:42</sys_updated_on>
+            <value>M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>0</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 18:55:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dfdf052fdb8ab68062bafd441d961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 18:55:56</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 18:56:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91ff452fdb8ab68062bafd441d9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 18:56:20</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>S</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 18:53:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e5f49ebdb8ab68062bafd441d961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 18:53:40</sys_updated_on>
+            <value>S</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <name>x_norca_med_cam_entity</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-06 17:07:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9746ffb3db900300e022771c8c9619c2</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_name>gender</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_entity_gender</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:55</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_discard_reason" label="DISCARD_REASON" language="en" table="u_int_oasis_import_claim">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_discard_reason</element>
+            <help/>
+            <hint/>
+            <label>DISCARD_REASON</label>
+            <language>en</language>
+            <name>u_int_oasis_import_claim</name>
+            <plural>DISCARD_REASONs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhardwaj</sys_created_by>
+            <sys_created_on>2017-04-26 08:27:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e6ef166adb563640d596327e9d9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DISCARD_REASON</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_int_oasis_import_claim_u_discard_reason_en</sys_update_name>
+            <sys_updated_by>abhardwaj</sys_updated_by>
+            <sys_updated_on>2017-04-26 08:27:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

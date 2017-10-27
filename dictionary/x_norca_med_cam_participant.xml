@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Claim Participant" max_length="40" name="x_norca_med_cam_participant" type="collection">
+        <element label="Accounting - From" max_length="40" name="accounting_from" type="glide_date"/>
+        <element label="Accounting - To" max_length="40" name="accounting_to" type="glide_date"/>
+        <element label="Address" max_length="32" name="address" reference="x_norca_med_cam_address" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Area Of Expertise" max_length="40" name="area_of_expertise" type="string"/>
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" reference_floats="true" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var displayName = &quot;&quot;;&#10;&#9;if (current.entity) {&#10;&#9;&#9;displayName = current.entity.getDisplayValue();&#10;&#9;}&#10;&#9;if (current.role) {&#10;&#9;&#9;if (displayName!=&quot;&quot;) {&#10;&#9;&#9;&#9;displayName += &quot; - &quot;;&#10;&#9;&#9;}&#10;&#9;&#9;displayName += current.role.getDisplayValue();&#10;&#9;}&#10;&#9;return displayName;  // return the calculated value&#10;&#10;})(current);" display="true" label="Display Name" max_length="100" name="display_name" read_only="true" type="string" virtual="true"/>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Effective From" max_length="40" name="effective_from" type="glide_date" use_dynamic_default="true"/>
+        <element label="Effective To" max_length="40" name="effective_to" type="glide_date"/>
+        <element label="Entity" mandatory="true" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="External ID" max_length="50" name="external_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Opine" max_length="40" name="opine" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Purpose" max_length="40" name="purpose" type="string">
+            <choice>
+                <element label="Standard of care" sequence="0" value="Standard of care"/>
+                <element label="Causation" sequence="1" value="Causation"/>
+                <element label="Damages" sequence="2" value="Damages"/>
+            </choice>
+        </element>
+        <element choice="1" label="Role" max_length="40" name="role" type="choice">
+            <choice>
+                <element label="Claim Adjuster" value="ADJUSTER"/>
+                <element label="Claim Director" value="CLMSUPER"/>
+                <element label="Claim Insured" value="CLMINSURED"/>
+                <element label="Claim Manager" value="MANAGER"/>
+                <element label="Claim Payee" value="CLMPAYEE"/>
+                <element label="Claimant Other" value="PLTFOTHER"/>
+                <element label="Claims Specialist" value="EXAMINER"/>
+                <element label="Co-Defendant" value="CODEFEND"/>
+                <element label="Defendant" value="DEFEND"/>
+                <element label="Defense Attorney" value="DINDATTY"/>
+                <element label="Defense Expert Witness" value="DEWITNESS"/>
+                <element label="Defense Firm" value="DATTORNEY"/>
+                <element label="Defense lawyer" value="DEFIRM"/>
+                <element label="Expert Witness" value="EWITNESS"/>
+                <element label="Facility/Clinic/Hospital" value="FACILITY"/>
+                <element label="Field Rep" value="FIELDREP"/>
+                <element label="Group Name" value="CLMGROUP"/>
+                <element label="Insured's Organization" value="INSDORG"/>
+                <element label="Issue Company" value="ISSUECOMP"/>
+                <element label="Mediator" value="MEDIATOR"/>
+                <element label="Named Insured" value="NAMEDINSRD"/>
+                <element label="Non-Insured" value="NONINSURED"/>
+                <element label="Patient" value="PATIENT"/>
+                <element label="Plaintiff Attorney" value="PATTORNEY"/>
+                <element label="Plaintiff Expert Witness" value="PEWITNESS"/>
+                <element label="Plaintiff Firm" value="PLATTYFIRM"/>
+                <element label="PLMS Entity" value="PLMSENTITY"/>
+                <element label="Policy Holder" value="POLHOLDER"/>
+                <element label="TPA" value="TPA"/>
+                <element label="TPA Investigator" value="TPA_INVEST"/>
+                <element label="Underwriter" value="UNDWRITER"/>
+                <element label="ADDNTNMINS" sequence="0" value="ADDNTNMINS"/>
+                <element label="ARB" sequence="0" value="ARB"/>
+                <element label="DEFENDANT" sequence="0" value="DEFENDANT"/>
+                <element label="DEFENDREP" sequence="0" value="DEFENDREP"/>
+                <element label="PLAINTIFF" sequence="0" value="PLAINTIFF"/>
+                <element label="PLAINTREP" sequence="0" value="PLAINTREP"/>
+                <element label="Witness" sequence="0" value="WITNESS"/>
+                <element label="Claimant" sequence="5" value="CLAIMANT"/>
+                <element label="Claim Vendor" sequence="9" value="VENDOR"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Side" max_length="40" name="side" type="string">
+            <choice>
+                <element label="Plaintiff" sequence="0" value="Plaintiff"/>
+                <element label="Defense" sequence="1" value="Defense"/>
+            </choice>
+        </element>
+        <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Speciality" max_length="40" name="speciality" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Type" max_length="40" name="vendor_type" type="string">
+            <choice>
+                <element label="Copy" sequence="0" value="Copy"/>
+                <element label="Court Reporter" sequence="1" value="Court Reporter"/>
+                <element label="Expert" sequence="2" value="Expert"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="address"/>
+        </index>
+        <index name="index2">
+            <element name="claim"/>
+        </index>
+        <index name="index3">
+            <element name="sor_id"/>
+        </index>
+        <index name="index4">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

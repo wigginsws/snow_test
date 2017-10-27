@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_fireWorkflowEvent</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_fireWorkflowEvent</name>
+        <script><![CDATA[var cam_fireWorkflowEvent = Class.create();
+cam_fireWorkflowEvent.prototype = {
+	initialize: function() {
+	},
+	
+	type: 'cam_fireWorkflowEvent',
+	
+	fireWfEvent: function(evt) {
+		var wf = new global.Workflow().getRunningFlows(current);
+		while(wf.next()){
+			new global.Workflow().broadcastEvent(wf.sys_id, evt);
+		}
+		
+		
+	}	
+	
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-21 14:25:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>057ace87dbe93e4062bafd441d961916</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cam_fireWorkflowEvent</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_057ace87dbe93e4062bafd441d961916</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-01 05:14:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

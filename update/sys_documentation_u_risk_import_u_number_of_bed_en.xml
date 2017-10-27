@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_number_of_bed" label="NUMBER_OF_BED" language="en" table="u_risk_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_number_of_bed</element>
+            <help/>
+            <hint/>
+            <label>NUMBER_OF_BED</label>
+            <language>en</language>
+            <name>u_risk_import</name>
+            <plural>NUMBER_OF_BEDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-05-01 15:49:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0ff47514db6e7e0075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>NUMBER_OF_BED</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_risk_import_u_number_of_bed_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-05-01 15:49:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

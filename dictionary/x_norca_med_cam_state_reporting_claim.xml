@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="State Reporting - Claim" max_length="40" name="x_norca_med_cam_state_reporting_claim" type="collection">
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="State Reporting" max_length="32" name="state_reporting" reference="x_norca_med_cam_state_reporting" type="reference"/>
+        <index name="index">
+            <element name="state_reporting"/>
+        </index>
+        <index name="index2">
+            <element name="claim"/>
+        </index>
+    </element>
+</database>

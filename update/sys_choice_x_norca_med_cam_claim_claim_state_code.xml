@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="claim_state_code" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label/>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-07-13 15:55:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>658275f3db7f320075ea38ff9d96196c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-13 15:56:25</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alabama</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700b8941dbe33200d596327e9d9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>AL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alaska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>1</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc0b8941dbe33200d596327e9d9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>AK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arizona</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40b8941dbe33200d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>AZ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arkansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>300b8941dbe33200d596327e9d9619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>AR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>California</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>780b8941dbe33200d596327e9d9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>CA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Colorado</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b00b8941dbe33200d596327e9d9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>CO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Connecticut</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>6</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f80b8941dbe33200d596327e9d9619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>CT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Delaware</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>7</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>340b8941dbe33200d596327e9d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>DE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>District of Columbia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>8</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c0b8941dbe33200d596327e9d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>DC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Florida</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>9</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b40b8941dbe33200d596327e9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>FL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Georgia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>10</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc0b8941dbe33200d596327e9d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>GA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hawaii</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>11</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>380b8941dbe33200d596327e9d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>HI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Idaho</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>12</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700b8941dbe33200d596327e9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>ID</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Illinois</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>13</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b80b8941dbe33200d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>IL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Indiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>14</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f00b8941dbe33200d596327e9d9619d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>IN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Iowa</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>15</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c0b8941dbe33200d596327e9d9619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>IA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>16</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>740b8941dbe33200d596327e9d9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>KS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kentucky</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>17</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc0b8941dbe33200d596327e9d9619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>KY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Loiusiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>18</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40b8941dbe33200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>LA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maine</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>19</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>300b8941dbe33200d596327e9d9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>ME</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maryland</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>20</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>780b8941dbe33200d596327e9d9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Massachusetts</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>21</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b00b8941dbe33200d596327e9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Michigan</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>22</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f80b8941dbe33200d596327e9d9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Minnesota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>23</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>340b8941dbe33200d596327e9d9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mississippi</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>24</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c0b8941dbe33200d596327e9d9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missouri</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>25</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b40b8941dbe33200d596327e9d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Montana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>26</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc0b8941dbe33200d596327e9d9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>MT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nebraska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>27</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>380b8941dbe33200d596327e9d9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nevada</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>28</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700b8941dbe33200d596327e9d9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Hampshire</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>29</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b80b8941dbe33200d596327e9d9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Jersey</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>30</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f00b8941dbe33200d596327e9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Mexico</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>31</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c0b8941dbe33200d596327e9d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New York</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>32</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>740b8941dbe33200d596327e9d9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>33</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc0b8941dbe33200d596327e9d9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>NC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>34</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40b8941dbe33200d596327e9d9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>ND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ohio</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>35</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>300b8941dbe33200d596327e9d9619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>OH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oklahoma</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>36</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>780b8941dbe33200d596327e9d9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>OK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oregon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>37</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b00b8941dbe33200d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>OR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pennsylvania</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>38</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f80b8941dbe33200d596327e9d9619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>PA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Puerto Rico</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>39</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>340b8941dbe33200d596327e9d9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>PR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rhode Island</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>40</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c0b8941dbe33200d596327e9d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>RI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>41</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b40bc941dbe33200d596327e9d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>SC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>42</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc0bc941dbe33200d596327e9d961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>SD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tennessee</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>43</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>380bc941dbe33200d596327e9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>TN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Texas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>44</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700bc941dbe33200d596327e9d961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>TX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Utah</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>45</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b80bc941dbe33200d596327e9d961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>UT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vermont</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>46</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f00bc941dbe33200d596327e9d961908</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>VT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virgin Islands</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>47</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c0bc941dbe33200d596327e9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>VI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>48</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>740bc941dbe33200d596327e9d96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>VA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Washington</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>49</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc0bc941dbe33200d596327e9d96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>WA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>West Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>50</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40bc941dbe33200d596327e9d96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>WV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wisconsin</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>51</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>300bc941dbe33200d596327e9d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>WI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_state_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wyoming</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>52</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>780bc941dbe33200d596327e9d961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-06-22 13:44:07</sys_updated_on>
+            <value>WY</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>claim_state_code</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-06-22 13:44:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8d46fbb3db900300e022771c8c961964</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>claim_state_code</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_claim_state_code</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-13 15:56:25</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

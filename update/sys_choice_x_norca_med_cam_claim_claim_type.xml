@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="claim_type" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Hospital</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40c7061fdb86b68062bafd441d9619f6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-01 16:58:55</sys_updated_on>
+            <value>HOSPITAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>PAD</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44c7061fdb86b68062bafd441d9619f4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-01 16:58:55</sys_updated_on>
+            <value>PAD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Regular</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0c7061fdb86b68062bafd441d9619f5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-01 16:58:55</sys_updated_on>
+            <value>REGULAR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>CONTINGEN</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-05-12 22:39:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>295c733bdbea3ec0d596327e9d961972</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-01 16:58:55</sys_updated_on>
+            <value>CONTINGEN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>No Cov</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-06-01 16:58:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f53e299adb0b7240d596327e9d96197e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:51:38</sys_updated_on>
+            <value>No Cov</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Malpractice Unlisted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 18:19:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec21fa20dbc2f200394af9361d9619d6</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-01 16:58:55</sys_updated_on>
+            <value>MALUNLIST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ROC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>100</sequence>
+            <sys_created_by>abhardwaj</sys_created_by>
+            <sys_created_on>2017-04-29 09:20:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56b84e6bdb96f640d596327e9d961927</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:57:47</sys_updated_on>
+            <value>ROC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Event</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>200</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 18:19:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d331fa20dbc2f200394af9361d9619d9</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:57:54</sys_updated_on>
+            <value>EVENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>300</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 18:19:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff413e20dbc2f200394af9361d961932</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:58:03</sys_updated_on>
+            <value>CLAIM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>400</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 18:20:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d61ba20dbc2f200394af9361d961975</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:58:10</sys_updated_on>
+            <value>SUIT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Coverage</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>500</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-15 03:38:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c543ccbdb02b68062bafd441d9619e6</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:58:16</sys_updated_on>
+            <value>MALP UNL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>claim_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entry Error</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>600</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-15 03:39:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>30843ccbdb02b68062bafd441d9619c9</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:58:20</sys_updated_on>
+            <value>ENTRY ERRO</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>claim_type</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 18:19:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9d46fbb3db900300e022771c8c9619c1</sys_id>
+            <sys_mod_count>38</sys_mod_count>
+            <sys_name>claim_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_claim_type</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-24 14:58:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

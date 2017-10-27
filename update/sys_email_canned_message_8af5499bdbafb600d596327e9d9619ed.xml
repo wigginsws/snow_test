@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<div>
+<p><span class="s3" style="color: #e36c0a;">NORCAL SPECIALTY INSURANCE COMPANY</span></p>
+<p>Date:${date}</p>
+<p> </p>
+<p>PERSONAL &amp; CONFIDENTIAL</p>
+<p>Policy No: ${policy}</p>
+<p>RE:</p>
+<p>Norcal <span class="s6">Specialty</span> <span class="s5">File No.</span></p>
+<p>​<span class="s5">(formerly known as PMSLIC)</span></p>
+<p> </p>
+<p><span class="s5">Dear:</span></p>
+<p><span class="s4">This letter will confirm that </span><span class="s4">your coverage limit of $25,000 for this matter has now been exhausted. If you have not yet done so, you should make arrangements for your continue</span><span class="s4">d </span><span class="s4">representation with your defense attorney in case there is any further activity. We will now close our file. In the event you receive any correspondence or communication related to a potential medical malpractice action arising from this matter, please contact this office immediately as other coverages may apply.</span></p>
+<p><span class="s4">This letter will confirm that your coverage limit of $30,000 for this matter has now been exhausted. If you have not yet done so, you should make arrangements for your continue<span class="s4">d</span><span class="s4">representation with your defense attorney in case there is any further activity. We will now close our file. In the event you receive any correspondence or communication related to a potential medical malpractice action arising from this matter, please contact this office immediately as other coverages may apply.</span></span></p>
+<p> </p>
+<p><span class="s4">This letter will confirm that your coverage limit of $50,000 for this matter has now been exhausted. If you have not yet done so, you should make arrangements for your continue</span><span class="s4">d</span><span class="s4">representation with your defense attorney in case there is any further activity. We will now close our file. In the event you receive any correspondence or communication related to a potential medical malpractice action arising from this matter, please contact this office immediately as other coverages may apply.</span></p>
+<p><span class="s4">This letter will confirm that this matter has been resolved. We will now close our file. In the event you receive any correspondence or communication related to a potential medical malpractice action arising from this matter, please contact this office immediately as other coverages may apply.</span></p>
+<p><span class="s4">If you have any questions or concerns, please do not hesitate to call this office.</span></p>
+<p><span class="s4">Very truly yours,</span></p>
+<p><span class="s4">cc:<span class="s8" style="color: #5b6770; font-size: 7px;"> </span><span class="s9" style="color: #5b6770; font-size: 8px;">1700 BENT CREEK BOULEVARD, P.O. BOX 2080, MECHANICSBURG, PA 17050-0787 </span><span class="s10" style="color: #abb0b9; font-size: 8px;"> </span><span class="s11" style="color: #dc4405; font-size: 8px;">T</span> <span class="s9" style="color: #5b6770; font-size: 8px;">844.4NORCAL</span> <span class="s11" style="color: #dc4405; font-size: 8px;">F</span> <span class="s9" style="color: #5b6770; font-size: 8px;">717.796.8080</span><span class="s13" style="color: #69737b; font-size: 8px;"> </span><span class="s11" style="color: #dc4405; font-size: 8px;">NORCAL-GROUP.COM</span></span></p>
+</div>
+<p> </p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>amoewe</sys_created_by>
+        <sys_created_on>2017-06-29 13:15:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8af5499bdbafb600d596327e9d9619ed</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Close Letter Admin Defense NS</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_8af5499bdbafb600d596327e9d9619ed</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:17</sys_updated_on>
+        <title>Close Letter Admin Defense NS</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

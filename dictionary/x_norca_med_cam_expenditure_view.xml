@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Transactions" max_length="40" name="x_norca_med_cam_expenditure_view" type="collection">
+        <element label="Accounting Date" max_length="40" name="accounting_date" type="string"/>
+        <element choice="1" label="Activity" max_length="40" name="activity" type="choice">
+            <choice>
+                <element label="Update Expense Reserve" sequence="0" value="update_exp_res"/>
+                <element label="Update Indemnity Reserve" sequence="1" value="update_ind_res"/>
+                <element label="Claim Reserving Worksheet" sequence="2" value="reserve_worksheet"/>
+            </choice>
+        </element>
+        <element label="Actual Case Reserve" max_length="20" name="actual_reserve" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Information" max_length="4000" name="additional_information" type="string"/>
+        <element label="Apportionment of Liability" max_length="40" name="apportionment_liability" type="integer"/>
+        <element label="Claim Number" max_length="40" name="claim_number" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="datetimeforupdatetrigger" max_length="40" name="datetimeforupdatetrigger" type="glide_date_time"/>
+        <element label="High Estimate of Verdict Range" max_length="20" name="high_estimate" type="currency"/>
+        <element label="Implied Severity based on PVR and Defensibility" max_length="20" name="implied_severity" type="currency"/>
+        <element label="Invoice Amount" max_length="40" name="invoice_amount" type="string"/>
+        <element label="Invoice Number" max_length="40" name="invoice_number" type="string"/>
+        <element label="IRS" max_length="40" name="irs" type="string"/>
+        <element choice="1" label="LIability Assessment" max_length="40" name="liability_assessment" type="choice">
+            <choice/>
+        </element>
+        <element label="Low Estimate of Verdict Range" max_length="20" name="low_estimate" type="currency"/>
+        <element label="Payee" max_length="40" name="payee" type="string"/>
+        <element label="Payment Type" max_length="40" name="payment_type" type="string"/>
+        <element label="Applicable Policy Limit" max_length="20" name="policy_limit" type="currency"/>
+        <element label="Raw Case Estimate" max_length="20" name="raw_estimate" type="currency"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Amount" max_length="20" name="transaction_amount" type="decimal"/>
+        <element label="Trans Date" max_length="40" name="trans_date" type="glide_date"/>
+        <element label="Trans Type" max_length="40" name="trans_type" type="string"/>
+        <index name="index">
+            <element name="claim_number"/>
+            <element name="payee"/>
+            <element name="accounting_date"/>
+            <element name="transaction_amount"/>
+            <element name="trans_date"/>
+        </index>
+    </element>
+</database>

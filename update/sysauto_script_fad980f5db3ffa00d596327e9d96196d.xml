@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Temp-Populate CEL PK in Claim</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-07-07 03:10:35</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var celGR = new GlideRecord("x_norca_med_cam_claim_entry_log");
+celGR.addNotNullQuery("u_claim_entry_log_pk");
+celGR.addNotNullQuery("u_claim_id");
+celGR.orderByDesc("sys_updated_on");
+// celGR.setLimit(3);
+celGR.query();
+gs.info("[populateCELPKInClaim] Row count " + celGR.getRowCount());
+var i=0;
+while(celGR.next()) {
+	var claimGR = new GlideRecord("x_norca_med_cam_claim");
+	if (claimGR.get(celGR.getValue("u_claim_id")) && claimGR.getValue("claim_log_id")!=celGR.getValue("u_claim_entry_log_pk")) {
+		claimGR.setWorkflow(false);
+		claimGR.autoSysFields(false);
+		claimGR.setValue("claim_log_id", celGR.getValue("u_claim_entry_log_pk"));
+		claimGR.update();
+		i++;
+	}
+}
+gs.info("[populateCELPKInClaim] Updated " + i + " rows");]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-07 03:18:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fad980f5db3ffa00d596327e9d96196d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CAM-Temp-Populate CEL PK in Claim</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_fad980f5db3ffa00d596327e9d96196d</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-10 11:28:57</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

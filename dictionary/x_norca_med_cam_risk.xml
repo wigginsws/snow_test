@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Risk" max_length="40" name="x_norca_med_cam_risk" type="collection">
+        <element label="Accounting From Date" max_length="40" name="accounting_from_date" read_only="true" type="glide_date"/>
+        <element label="Accounting To Date" max_length="40" name="accounting_to_date" read_only="true" type="glide_date"/>
+        <element label="After Image Record" max_length="40" name="after_image_record" read_only="true" type="boolean"/>
+        <element label="Alternate Speciality Code" max_length="40" name="alternate_speciality_code" read_only="true" type="string"/>
+        <element label="Alternative Rating Method" max_length="40" name="alternative_rating_method" read_only="true" type="string"/>
+        <element label="Annual Outpatient Visit" max_length="20" name="annual_outpatient_visit" read_only="true" type="decimal"/>
+        <element label="Auto Renew" max_length="40" name="auto_renew" read_only="true" type="boolean"/>
+        <element label="Average Daily Census" max_length="20" name="average_daily_census" read_only="true" type="decimal"/>
+        <element label="Base Record" max_length="40" name="base_record" read_only="true" type="boolean"/>
+        <element label="Building Class Code" max_length="40" name="building_class_code" read_only="true" type="string"/>
+        <element label="CHAR1" max_length="100" name="char1" read_only="true" type="string"/>
+        <element label="Closing Trans Log FK" max_length="40" name="closing_trans_log_fk" read_only="true" type="string"/>
+        <element label="County Code Used To Rate" max_length="40" name="county_code_used_to_rate" read_only="true" type="string"/>
+        <element label="Curr Pol Rel Reason Code" max_length="40" name="curr_pol_rel_reason_code" read_only="true" type="string"/>
+        <element label="Curr Pol Rel Stat Type CD" max_length="40" name="curr_pol_rel_stat_type_cd" read_only="true" type="string"/>
+        <element label="Effective From Date" max_length="40" name="effective_from_date" read_only="true" type="glide_date"/>
+        <element label="Effective To Date" max_length="40" name="effective_to_date" read_only="true" type="glide_date"/>
+        <element display="true" label="Entity" mandatory="true" max_length="32" name="entity" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity FK" max_length="20" name="entity_fk" read_only="true" type="string"/>
+        <element label="Exposure Basis" max_length="10" name="exposure_basis" read_only="true" type="string"/>
+        <element label="Fleet Vehicle" max_length="40" name="fleet_vehicle" read_only="true" type="boolean"/>
+        <element label="Moonlighting" max_length="40" name="moonlighting" read_only="true" type="boolean"/>
+        <element label="Policy FK" max_length="40" name="policy_fk" read_only="true" type="string"/>
+        <element label="Policy" mandatory="true" max_length="32" name="policy_reference" read_only="true" reference="x_norca_med_cam_policy" type="reference"/>
+        <element label="Practice State Code" max_length="40" name="practice_state_code" read_only="true" type="string"/>
+        <element label="Primary  Risk" max_length="40" name="primary_risk" read_only="true" type="boolean"/>
+        <element label="Rate Mature" max_length="40" name="rate_mature" read_only="true" type="boolean"/>
+        <element label="Record Mode Code" max_length="40" name="record_mode_code" read_only="true" type="string"/>
+        <element label="Risk Base Record FK" max_length="40" name="risk_base_record_fk" read_only="true" type="string"/>
+        <element label="Risk CLS Used To Rate" max_length="40" name="risk_cls_used_to_rate" read_only="true" type="string"/>
+        <element label="Risk PK" max_length="40" name="risk_pk" read_only="true" type="string"/>
+        <element label="Risk Type Code" max_length="40" name="risk_type_code" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element label="Transaction Log FK" max_length="40" name="transaction_log_fk" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="risk_pk"/>
+        </index>
+        <index name="index2">
+            <element name="policy_reference"/>
+        </index>
+        <index name="index3">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

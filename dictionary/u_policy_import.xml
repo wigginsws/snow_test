@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-Policy" max_length="40" name="u_policy_import" type="collection">
+        <element attributes="import_attribute_name=CHAR1,edge_encryption_enabled=true" label="CHAR1" max_length="100" name="u_char1" type="string"/>
+        <element attributes="import_attribute_name=CHAR2,edge_encryption_enabled=true" label="CHAR2" max_length="100" name="u_char2" type="string"/>
+        <element attributes="import_attribute_name=CHAR3,edge_encryption_enabled=true" label="CHAR3" max_length="100" name="u_char3" type="string"/>
+        <element attributes="import_attribute_name=DATE1" label="DATE1" max_length="40" name="u_date1" type="datetime"/>
+        <element attributes="import_attribute_name=DATE2" label="DATE2" max_length="40" name="u_date2" type="datetime"/>
+        <element attributes="import_attribute_name=DATE3" label="DATE3" max_length="40" name="u_date3" type="datetime"/>
+        <element attributes="import_attribute_name=FACULTATIVE_B,edge_encryption_enabled=true" label="FACULTATIVE_B" max_length="40" name="u_facultative_b" type="string"/>
+        <element attributes="import_attribute_name=FORMATTED_POL_NO,edge_encryption_enabled=true" label="FORMATTED_POL_NO" max_length="50" name="u_formatted_pol_no" type="string"/>
+        <element attributes="import_attribute_name=INCEPTION_DATE" label="INCEPTION_DATE" max_length="40" name="u_inception_date" type="datetime"/>
+        <element attributes="import_attribute_name=LEGACY_ISSUE_COMPANY_FK" label="LEGACY_ISSUE_COMPANY_FK" max_length="15" name="u_legacy_issue_company_fk" type="decimal"/>
+        <element attributes="import_attribute_name=LEGACY_POLICY_NO,edge_encryption_enabled=true" label="LEGACY_POLICY_NO" max_length="50" name="u_legacy_policy_no" type="string"/>
+        <element attributes="import_attribute_name=LOCKED_BY,edge_encryption_enabled=true" label="LOCKED_BY" max_length="40" name="u_locked_by" type="string"/>
+        <element attributes="import_attribute_name=LOCK_TIME" label="LOCK_TIME" max_length="40" name="u_lock_time" type="datetime"/>
+        <element attributes="import_attribute_name=LOGON_TIME" label="LOGON_TIME" max_length="40" name="u_logon_time" type="datetime"/>
+        <element attributes="import_attribute_name=NUM1" label="NUM1" max_length="15" name="u_num1" type="decimal"/>
+        <element attributes="import_attribute_name=NUM2" label="NUM2" max_length="15" name="u_num2" type="decimal"/>
+        <element attributes="import_attribute_name=NUM3" label="NUM3" max_length="15" name="u_num3" type="decimal"/>
+        <element attributes="import_attribute_name=OFF_NUM" label="OFF_NUM" max_length="15" name="u_off_num" type="decimal"/>
+        <element attributes="import_attribute_name=POLICY_CYCLE_CODE,edge_encryption_enabled=true" label="POLICY_CYCLE_CODE" max_length="40" name="u_policy_cycle_code" type="string"/>
+        <element attributes="import_attribute_name=POLICY_FORM_CODE,edge_encryption_enabled=true" label="POLICY_FORM_CODE" max_length="40" name="u_policy_form_code" type="string"/>
+        <element attributes="import_attribute_name=POLICY_LAYER_CODE,edge_encryption_enabled=true" label="POLICY_LAYER_CODE" max_length="40" name="u_policy_layer_code" type="string"/>
+        <element attributes="import_attribute_name=POLICY_NO,edge_encryption_enabled=true" label="POLICY_NO" max_length="50" name="u_policy_no" type="string"/>
+        <element attributes="import_attribute_name=POLICY_PK" label="POLICY_PK" max_length="15" name="u_policy_pk" type="decimal"/>
+        <element attributes="import_attribute_name=POLICY_TYPE_CODE,edge_encryption_enabled=true" label="POLICY_TYPE_CODE" max_length="40" name="u_policy_type_code" type="string"/>
+        <element attributes="import_attribute_name=POL_CURR_REASON_CODE,edge_encryption_enabled=true" label="POL_CURR_REASON_CODE" max_length="40" name="u_pol_curr_reason_code" type="string"/>
+        <element attributes="import_attribute_name=POL_CURR_STATUS_CODE,edge_encryption_enabled=true" label="POL_CURR_STATUS_CODE" max_length="40" name="u_pol_curr_status_code" type="string"/>
+        <element attributes="import_attribute_name=PROCESS_STATUS_CODE,edge_encryption_enabled=true" label="PROCESS_STATUS_CODE" max_length="40" name="u_process_status_code" type="string"/>
+        <element attributes="import_attribute_name=PROGRAM_CODE,edge_encryption_enabled=true" label="PROGRAM_CODE" max_length="40" name="u_program_code" type="string"/>
+        <element attributes="import_attribute_name=PRT_B,edge_encryption_enabled=true" label="PRT_B" max_length="40" name="u_prt_b" type="string"/>
+        <element attributes="import_attribute_name=QUESTIONNAIRE_DATE" label="QUESTIONNAIRE_DATE" max_length="40" name="u_questionnaire_date" type="datetime"/>
+        <element attributes="import_attribute_name=RECEIVE_DATE" label="RECEIVE_DATE" max_length="40" name="u_receive_date" type="datetime"/>
+        <element attributes="import_attribute_name=REFERRAL_CODE,edge_encryption_enabled=true" label="REFERRAL_CODE" max_length="40" name="u_referral_code" type="string"/>
+        <element attributes="import_attribute_name=REQUESTED_EFF_DATE" label="REQUESTED_EFF_DATE" max_length="40" name="u_requested_eff_date" type="datetime"/>
+        <element attributes="import_attribute_name=SERIAL_" label="SERIAL_" max_length="15" name="u_serial_" type="decimal"/>
+        <element attributes="import_attribute_name=SID" label="SID" max_length="15" name="u_sid" type="decimal"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=WIP_B,edge_encryption_enabled=true" label="WIP_B" max_length="40" name="u_wip_b" type="string"/>
+        <element attributes="import_attribute_name=WIP_NUM" label="WIP_NUM" max_length="15" name="u_wip_num" type="decimal"/>
+    </element>
+</database>

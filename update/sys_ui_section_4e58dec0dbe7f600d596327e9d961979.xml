@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="4e58dec0dbe7f600d596327e9d961979" sys_domain="global" table="x_norca_med_cam_expenditure_view" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>trans_type</element>
+            <position>0</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>3bc297e2db588b40d596327e9d9619c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>accounting_date</element>
+            <position>1</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>bfc297e2db588b40d596327e9d9619c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>payment_type</element>
+            <position>2</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>33c297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>trans_date</element>
+            <position>3</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>b3c297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>irs</element>
+            <position>4</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>37c297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>payee</element>
+            <position>5</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>b7c297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>3bc297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>7</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>bbc297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transaction_amount</element>
+            <position>8</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>3fc297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_amount</element>
+            <position>9</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>bfc297e2db588b40d596327e9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>10</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>33c297e2db588b40d596327e9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_number</element>
+            <position>11</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>b3c297e2db588b40d596327e9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>datetimeforupdatetrigger</element>
+            <position>12</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-03 22:15:23</sys_created_on>
+            <sys_id>37c297e2db588b40d596327e9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-03 22:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>low_estimate</element>
+            <position>13</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:52</sys_created_on>
+            <sys_id>98f826b3db508f40d596327e9d961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>high_estimate</element>
+            <position>14</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:52</sys_created_on>
+            <sys_id>18f8eab3db508f40d596327e9d961908</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>liability_assessment</element>
+            <position>15</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:53</sys_created_on>
+            <sys_id>68f8eab3db508f40d596327e9d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>implied_severity</element>
+            <position>16</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:53</sys_created_on>
+            <sys_id>64f8eab3db508f40d596327e9d961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>apportionment_liability</element>
+            <position>17</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:54</sys_created_on>
+            <sys_id>e0f8eab3db508f40d596327e9d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raw_estimate</element>
+            <position>18</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:54</sys_created_on>
+            <sys_id>f0f8eab3db508f40d596327e9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_limit</element>
+            <position>19</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:54</sys_created_on>
+            <sys_id>74f8eab3db508f40d596327e9d961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actual_reserve</element>
+            <position>20</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-07 16:24:55</sys_created_on>
+            <sys_id>30f8eab3db508f40d596327e9d96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="Default view">4e58dec0dbe7f600d596327e9d961979</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-07 16:24:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>temerson</sys_created_by>
+            <sys_created_on>2017-06-19 16:48:03</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e58dec0dbe7f600d596327e9d961979</sys_id>
+            <sys_mod_count>13</sys_mod_count>
+            <sys_name>x_norca_med_cam_expenditure_view</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_4e58dec0dbe7f600d596327e9d961979</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:56:47</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

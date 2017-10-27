@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_norca_med_cam_claim_document" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10001</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CNTE - Converted File Note</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:14:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb8eb64edb044b0075ea38ff9d961971</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:14:59</sys_updated_on>
+            <value>CNTE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Correspondence</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:35:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e78624adbcb7640de44d5ab5e961927</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:20:35</sys_updated_on>
+            <value>CORR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>COVE - Coverage</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:17:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a94fbe4edb044b0075ea38ff9d9619f4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:18:20</sys_updated_on>
+            <value>COVE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DAMI – Damages Info</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:20:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f76ffe4edb044b0075ea38ff9d961940</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:31</sys_updated_on>
+            <value>DAMI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DCON – Defense Consult</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:21:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19100b8edb044b0075ea38ff9d9619d4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:34</sys_updated_on>
+            <value>DCON</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEMR – Demand and Response</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:21:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74208b8edb044b0075ea38ff9d96196c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:36</sys_updated_on>
+            <value>DEMR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEPO – Deposition Summary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:21:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0830cb8edb044b0075ea38ff9d961967</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:39</sys_updated_on>
+            <value>DEPO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DISP - Disposition</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:21:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90400f8edb044b0075ea38ff9d96197f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:41</sys_updated_on>
+            <value>DISP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DRPT – Defense Counsel Report</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:22:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db404f8edb044b0075ea38ff9d961960</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:44</sys_updated_on>
+            <value>DRPT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9998</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EXTE - External Record Document</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:16:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9aeeb64edb044b0075ea38ff9d9619cd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:16:58</sys_updated_on>
+            <value>EXTE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Processing Form / Backup</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:44:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3ec9ea8adbcb7640de44d5ab5e96197d</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:20:10</sys_updated_on>
+            <value>FORM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Outgoing Fax</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:44:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a78ae2cadbcb7640de44d5ab5e961941</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:20:17</sys_updated_on>
+            <value>FX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9200U</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Incorrect Official Document</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:40:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4389668adbcb7640de44d5ab5e961935</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:07:50</sys_updated_on>
+            <value>INOD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MCAR - MCARE</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:22:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e508f8edb044b0075ea38ff9d961922</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:46</sys_updated_on>
+            <value>MCAR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9997</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC - Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:14:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>326e364edb044b0075ea38ff9d96191b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:14:30</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC - Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:22:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70604f8edb044b0075ea38ff9d961967</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:49</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC - Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:18:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df5f7a4edb044b0075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:18:26</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>99000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:26:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d418bcedb044b0075ea38ff9d9619a9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:26:37</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>11100</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:24:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3dd087cedb044b0075ea38ff9d96191d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:24:50</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10200</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:24:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44a083cedb044b0075ea38ff9d96196d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:24:26</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>12010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:25:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>680107cedb044b0075ea38ff9d9619e5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:25:26</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>99100</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:26:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>92514fcedb044b0075ea38ff9d96196a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:26:58</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10501</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MISC – Miscellaneous</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:25:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed218bcedb044b0075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:25:58</sys_updated_on>
+            <value>MISC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MRAC – NORCAL Review/MRAC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:22:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb608f8edb044b0075ea38ff9d961967</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:51</sys_updated_on>
+            <value>MRAC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>11100</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NOI – Notice of Intent to Sue</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:24:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcf0c7cedb044b0075ea38ff9d961988</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:25:08</sys_updated_on>
+            <value>NOI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9999</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NOTE - Note</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:13:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e45e364edb044b0075ea38ff9d9619b3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:13:56</sys_updated_on>
+            <value>NOTE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Billing Detail Report in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:35:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a88ae4adbcb7640de44d5ab5e96198e</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:06:36</sys_updated_on>
+            <value>PBDR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>UW Binder in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:36:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43a8620adbcb7640de44d5ab5e961973</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:09:22</sys_updated_on>
+            <value>PBIN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9200U</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Paperless Bundle</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26b9ea8adbcb7640de44d5ab5e96190c</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:08:30</sys_updated_on>
+            <value>PBND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Billing Plan Summary in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:36:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddc8264adbcb7640de44d5ab5e96194a</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:06:43</sys_updated_on>
+            <value>PBPS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>COI in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:36:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1d8e64adbcb7640de44d5ab5e961964</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:06:52</sys_updated_on>
+            <value>PCOI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Declarations in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:37:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2be8ee4adbcb7640de44d5ab5e961997</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:07:17</sys_updated_on>
+            <value>PDEC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Endorsement in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:37:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3ff86e4adbcb7640de44d5ab5e96193a</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:07:25</sys_updated_on>
+            <value>PEND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PEXP – Plaintiff Expert Report</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:22:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d370cf8edb044b0075ea38ff9d961925</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:53</sys_updated_on>
+            <value>PEXP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Policy Form in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:37:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c192e4adbcb7640de44d5ab5e961958</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:08:56</sys_updated_on>
+            <value>PFRM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Invoice in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:38:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9619228adbcb7640de44d5ab5e9619b0</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:07:58</sys_updated_on>
+            <value>PINV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Letter in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:38:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37296e4adbcb7640de44d5ab5e961991</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:08:07</sys_updated_on>
+            <value>PLTR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Notice of Cancellation in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:38:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef39228adbcb7640de44d5ab5e9619b0</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:08:15</sys_updated_on>
+            <value>PNOC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Payment Reminder in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:38:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a49e64adbcb7640de44d5ab5e961965</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:08:42</sys_updated_on>
+            <value>PPAY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Premium Discount Report in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:39:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f59268adbcb7640de44d5ab5e961912</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:09:05</sys_updated_on>
+            <value>PPDR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>UW Proposal/Quote in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:39:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f669268adbcb7640de44d5ab5e961913</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:09:33</sys_updated_on>
+            <value>PPRO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>91000</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Tail Offer in PDF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:39:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3a79aa4adbcb7640de44d5ab5e961977</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:09:15</sys_updated_on>
+            <value>PTIN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>9998</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCLG - Records Log</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:17:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c31f7a4edb044b0075ea38ff9d9619fa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:17:35</sys_updated_on>
+            <value>RCLG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RREP – Reinsurance Report</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:23:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a18003cedb044b0075ea38ff9d9619f6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:56</sys_updated_on>
+            <value>RREP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>13010</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RSUM – Records Summary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:23:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>249043cedb044b0075ea38ff9d9619ff</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:23:59</sys_updated_on>
+            <value>RSUM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>12020</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TRAN – Deposition Transcripts</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:25:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5110bcedb044b0075ea38ff9d9619cf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:25:42</sys_updated_on>
+            <value>TRAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>10501</dependent_value>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>W-9 – W-9 Form</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:26:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1318bcedb044b0075ea38ff9d961955</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:26:20</sys_updated_on>
+            <value>W-9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Correspondence</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>0</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-07 18:29:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>131a0beadb19f64062bafd441d961959</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:10:02</sys_updated_on>
+            <value>Correspondence</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Medical records</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>100</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-07 18:29:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>421a0beadb19f64062bafd441d961958</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:10:09</sys_updated_on>
+            <value>Medical records</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Pleadings</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>200</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-07 18:28:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>770ac7eadb19f64062bafd441d9619ca</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:10:18</sys_updated_on>
+            <value>Pleadings</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_norca_med_cam_claim_document</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-07 18:28:56</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>29463fb3db900300e022771c8c961971</sys_id>
+            <sys_mod_count>153</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_document_type</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:26:58</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

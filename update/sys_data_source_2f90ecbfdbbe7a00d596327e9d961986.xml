@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:oracle:thin:@oas16dbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>dev</database_name>
+        <database_port>1521</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>oracle.jdbc.OracleDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Claimants</import_set_table_label>
+        <import_set_table_name>u_claimants</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>pass2017</jdbc_password>
+        <jdbc_server>oas16dbdev.norcalmutual.com</jdbc_server>
+        <jdbc_user_name>oasissn</jdbc_user_name>
+        <last_run_database_field>er.SYS_UPDATE_TIME</last_run_database_field>
+        <last_run_datetime>to_date('2017-05-23 13:51:50','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
+        <name>Claims-OASIS-Claimants</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>dev</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>SELECT c.claim_no,&#13;
+       e.client_id,&#13;
+       e.first_name,&#13;
+       e.last_name,&#13;
+       cs_get_client_name(e.entity_pk) AS "Claimant",&#13;
+       cl.primary_claimant_b  AS "IsPrimaryClaimant",&#13;
+       lc.long_description  AS "RelationToPatient"&#13;
+  FROM entity_role  er&#13;
+       JOIN entity e ON e.entity_pk = er.entity_fk&#13;
+       JOIN claim c ON c.claim_pk = er.source_record_fk&#13;
+       JOIN claimant cl ON cl.entity_role_fk = er.entity_role_pk&#13;
+       JOIN lookup_code lc ON lc.code = cl.relation_to_patient and lc.lookup_type_code = 'RELATION_TO_PATIENT'</sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-05-24 16:55:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2f90ecbfdbbe7a00d596327e9d961986</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Claims-OASIS-Claimants</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_data_source_2f90ecbfdbbe7a00d596327e9d961986</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-18 00:03:42</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>true</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

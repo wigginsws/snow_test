@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_data_source</collection>
+        <condition>current.use_last_run_datetime == true &amp;&amp; !current.last_run_datetime.nil()</condition>
+        <description>Validated.  Roshan to add oracle qual</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-SYSDS-Format last datetime</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// The last_run_datetime field has the following format 
+// "2007-11-08 10:48:38" by default
+//
+// The filter has the following syntax:
+//  SELECT * FROM [tableName] 
+//       WHERE [last_run_database_field] >= [last_run_datetime]
+//
+
+var first_char = current.last_run_datetime.toString().substring(0,1);
+
+if(first_char != '\'' && first_char != 't'){
+ 	current.last_run_datetime = "'" + current.last_run_datetime + "'";
+}
+
+var s, result;
+	
+if(first_char != 't'){
+	s = current.last_run_datetime.toString();
+	result = "to_date(" + s + ",'yyyy-mm-dd hh24:mi:ss')";
+	current.last_run_datetime = result;
+}
+
+// if its not quoted already, quote it
+//if (current.last_run_datetime.indexOf("'") != 0) {
+//  current.last_run_datetime = "'" + current.last_run_datetime + "'";
+//}
+
+// the following script truncates the time part, uncomment to use
+//
+//var s = current.last_run_datetime.toString();
+//current.last_run_datetime = "'" + s.split(' ')[0] + "'";
+
+// the following script converts our datetime stamp into an oracle date format
+// uncomment to use
+//
+//var s = current.last_run_datetime.toString();
+//current.last_run_datetime = "to_date('" + s.split(' ')[0] + "','yyyy-mm-dd')";
+
+// the following script converts our datetime stamp into an SQL server date format
+// uncomment to use
+//
+//var s = current.last_run_datetime.toString();
+//current.last_run_datetime = "convert(datetime, '" + s + "', 21)";]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-23 22:37:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de6e8425db2f360075ea38ff9d9619f5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CAM-SYSDS-Format last datetime</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_de6e8425db2f360075ea38ff9d9619f5</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-06-27 20:21:34</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=de6e8425db2f360075ea38ff9d9619f5"/>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-ExpenditureJoin" max_length="40" name="u_case_expenditurejoin" type="collection">
+        <element attributes="import_attribute_name=ACCOUNTING_DATE" label="ACCOUNTING_DATE" max_length="40" name="u_accounting_date" type="datetime"/>
+        <element attributes="import_attribute_name=CLAIM_NO,edge_encryption_enabled=true" label="CLAIM_NO" max_length="40" name="u_claim_no" reference="x_norca_med_cam_claim" type="reference"/>
+        <element attributes="import_attribute_name=INVOICE_AMT" label="INVOICE_AMT" max_length="15" name="u_invoice_amt" type="decimal"/>
+        <element attributes="import_attribute_name=INVOICE_NO,edge_encryption_enabled=true" label="INVOICE_NO" max_length="40" name="u_invoice_no" type="string"/>
+        <element attributes="import_attribute_name=IRS,edge_encryption_enabled=true" label="IRS" max_length="40" name="u_irs" type="string"/>
+        <element attributes="import_attribute_name=Payee,edge_encryption_enabled=true" label="Payee" max_length="300" name="u_payee" type="string"/>
+        <element attributes="import_attribute_name=Payment_Type,edge_encryption_enabled=true" label="Payment_Type" max_length="40" name="u_payment_type" type="string"/>
+        <element attributes="import_attribute_name=Status,edge_encryption_enabled=true" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="import_attribute_name=TRANS_AMT" label="TRANS_AMT" max_length="15" name="u_trans_amt" type="decimal"/>
+        <element attributes="import_attribute_name=TRANS_DATE" label="TRANS_DATE" max_length="40" name="u_trans_date" type="datetime"/>
+        <element attributes="import_attribute_name=Trans_Type,edge_encryption_enabled=true" label="Trans_Type" max_length="40" name="u_trans_type" type="string"/>
+        <index name="index">
+            <element name="u_claim_no"/>
+        </index>
+    </element>
+</database>

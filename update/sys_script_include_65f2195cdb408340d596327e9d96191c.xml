@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_CaseDocumentLoader</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_CaseDocumentLoader</name>
+        <script><![CDATA[var cam_CaseDocumentLoader = Class.create();
+cam_CaseDocumentLoader.prototype = {
+    initialize: function() {
+    },
+
+    type: 'cam_CaseDocumentLoader',
+	
+	irWebServiceUtils: new cam_IRWebServiceUtils(),
+	
+	dataSyncUtils: new cam_DataSyncUtils(),
+	
+	
+	loadDocumentsForOpenCases: function() {
+		var caseList = [];
+		var casesObj = {};
+		var gr = new GlideRecord(cam.SCOPE_ID + "_claim");
+		gr.addQuery("state", "IN", "1,2,3");
+		gr.addNotNullQuery("case");
+// 		gr.setLimit(10);
+		gr.query();
+		gs.debug("[loadDocumentsForOpenCases] Found " + gr.getRowCount() + " open claims linked to cases");
+		while (gr.next()) {
+			var caseId = gr.getValue("u_case");
+			if (!casesObj[caseId]) {
+				casesObj[caseId] = gr.getDisplayValue("u_case");
+				caseList.push(caseId);
+			}
+		}
+		
+		gs.debug("[loadDocumentsForOpenCases] " + caseList.length + " unique cases to load documents for");
+		for (var i=0; i<caseList.length; i++) {
+			try {
+				gs.debug("[loadDocumentsForOpenCases] Loading documents for case # " + casesObj[caseList[i]]);
+				this.loadDocumentsForCaseId(caseList[i]);
+			} catch (e) {
+				gs.error("[loadDocumentsForOpenCases] Failed loading documents for case " + caseList[i]);
+			}
+		}
+	},
+	
+	
+	loadDocumentsForCaseId: function(caseId) {
+		var gr = new GlideRecord(cam.SCOPE_ID + "_case");
+		if (gr.get(caseId)) {
+			this.loadDocumentsForCase(gr);
+		} else {
+			gs.debug("[loadDocumentsForCaseId] No case record found for " + caseId + ", skipping");
+		}
+	},
+	
+	
+	loadDocumentsForCase: function(caseGR, updateCase) {
+		gs.debug("[loadDocumentsForCase] Called for case " + caseGR.getDisplayValue());
+		var documents = this.irWebServiceUtils.getDocumentsForCase(caseGR.number, caseGR);
+		gs.debug("[loadDocumentsForCase] got back " + (documents?documents.length:0) + " documents");
+		
+		var trackerGR = this.updateTrackerForCase(caseGR, null, documents && documents.length>0?"in_progress":"complete",  documents?documents.length:0, 0, 0);
+		
+		if (documents) {
+			for (var i=0; i<documents.length; i++) {
+				var doc = documents[i];
+				var idString = "Id: " + doc.Id.Id + ", RefId: " + doc.Id.RefId;
+				
+				// process
+				var docDesc = doc.Description;
+				if ((!docDesc || docDesc===true) && doc.ObjType && doc.ObjType.Description) {
+					docDesc = doc.ObjType.Description;
+				}
+				gs.debug("[loadDocumentsForCase] Type: " + doc.Type + ", Description: " + doc.ObjType.Description + ", " + idString);
+				// check for existing document record
+				var gr = new GlideRecord( cam.SCOPE_ID + "_claim_document");
+				gr.setLimit(1);
+				gr.addQuery("sor_id", doc.Id.Id);
+				gr.addQuery("sor_reference_id", doc.Id.RefId);
+				gr.query();
+				
+				var recordExists = gr.next();
+				if (!recordExists) {
+					gs.debug("[loadDocumentsForCase] Adding document " + idString);
+					gr.initialize();
+				} else if (gs.isDebugging()) {
+					gs.debug("[loadDocumentsForCase] Updating document " + idString);
+				}
+				
+				gr.referenced_table = cam.SCOPE_ID + "_case";
+				gr.case_ref = caseGR.getUniqueValue();
+				gr.name = docDesc;
+				gr.sor_id = doc.Id.Id;
+				gr.sor_reference_id = doc.Id.RefId;
+				
+				gr.sor_created_on = doc.DateCreated;
+				gr.sor_updated_on = doc.DateLastModified;
+				gr.ir_load_status = "requested";
+				gr.page_count = doc.PageCount;
+				gr.type = (doc.ObjType && doc.ObjType.Name) ? doc.ObjType.Name : "";
+				// page data needed to retrieve document contents
+				if (doc.Pages && doc.Pages.Page) {
+					if (Array.isArray(doc.Pages.Page)) {
+						gr.page_data = JSON.stringify(doc.Pages.Page);
+					} else {
+						gr.page_data = "[" + JSON.stringify(doc.Pages.Page) + "]";
+					}
+				} else {
+					gr.page_data = "[]";
+				}
+				
+				if (!recordExists) {
+					gr.insert();
+					gs.debug("[loadDocumentsForCase] Added document " + idString + ", for Case " + caseGR.getDisplayValue());
+				} else {
+					gs.debug("[loadDocumentsForCase] prior to update " + gr);
+					gr.update("Document refresh from IR");
+					gs.debug("[loadDocumentsForCase] Updated existing document " + idString);
+				}
+
+			}
+		}
+	},
+	
+	
+	getTrackerForCase: function(caseGR, createIfMissing) {
+		var trackerGR;
+		if (caseGR.ir_doc_load_tracker) {
+			trackerGR = this.dataSyncUtils.getRecordBySysId( cam.SCOPE_ID + "_ir_doc_load_tracker", caseGR.ir_doc_load_tracker);
+		}
+		if (!trackerGR) {
+			trackerGR = new GlideRecord("x_norca_med_cam_ir_doc_load_tracker");
+			trackerGR.initialize();
+			trackerGR.related_table = cam.SCOPE_ID + "_case";
+			trackerGR.related_record = caseGR.getUniqueValue();
+			trackerGR.insert();
+		}
+		
+		return trackerGR;
+	},
+	
+	
+	updateTrackerForCase: function(caseGR, trackerGR, status, total, success, failed) {
+		if (!trackerGR)	trackerGR = this.getTrackerForCase(caseGR, true);
+		trackerGR.total = total;
+		trackerGR.load_successful = success;
+		trackerGR.load_failed = failed;
+		trackerGR.status = status?status:"not_requested";
+		
+		trackerGR.update();
+		return trackerGR;
+	},
+	
+	
+	updateTrackerCountForCase: function(caseGR, successIncrement, failedIncrement) {
+		var trackerGR = this.getTrackerForCase(caseGR, true);
+// 		gs.debug("[updateTrackerCountForCase] " + trackerGR.getDisplayValue() + ", success: "
+		if (successIncrement!=0) trackerGR.load_successful = trackerGR.load_successful + successIncrement;
+		if (failedIncrement!=0) trackerGR.load_failed = trackerGR.load_failed + failedIncrement;
+		gs.debug("[updateTrackerCountForCase] prior to update " + trackerGR.getDisplayValue() + ", trackerGR.load_successful: " + trackerGR.load_successful + ", successIncrement: " + successIncrement + ", trackerGR.load_failed: " + trackerGR.load_failed + ", failedIncrement: " + failedIncrement);
+		trackerGR.update();
+		return trackerGR;
+	},
+	
+	
+	updateTrackerCountForCaseId: function(caseId, successIncrement, failedIncrement) {
+		return this.updateTrackerCountForCase( this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_case", caseId), successIncrement, failedIncrement);
+	},
+	
+	
+	loadDocumentContents: function(documentGR, updateRecord) {
+		gs.debug("[loadDocumentContents] called");
+		// delete current attachments
+		this.dataSyncUtils.deleteAttachmentsForRecord(documentGR.getTableName(), documentGR.getUniqueValue());
+		gs.debug("[loadDocumentContents] Deleted attachments for table " + documentGR.getTableName() + ", sys_id " + documentGR.getUniqueValue());
+
+		// retrieve file contents from IR
+		var fileId = "id:" + documentGR.sor_id + ", refId:" + documentGR.sor_reference_id;
+		gs.debug("[loadDocumentContents] Called for file " + fileId);
+		var encodedContents;
+		try {
+			encodedContents = this.irWebServiceUtils.getDocumentContents(current); //base64Binary
+
+		} catch (err) {
+			gs.error(err);
+		}
+
+		// write encoded contents to sys_attachment
+		if (encodedContents) {
+			gs.debug("[loadDocumentContents] for file " + fileId + " got encoded contents");
+			var attachment = new GlideSysAttachment();
+			var attachmentId = attachment.writeBase64( current, this.getSanitizedFileName(documentGR.name), gs.getProperty(cam.SCOPE_ID + ".ir_ws_file_output_mime_type"), encodedContents); //documentGR.sor_id + "-" + documentGR.sor_reference_id
+			documentGR.ir_load_status = "complete";
+			if (updateRecord) {
+				documentGR.update();
+			}
+			gs.debug("[loadDocumentContents] for file " + fileId + " new attachment " + attachmentId);
+			return true;
+		} else {
+			documentGR.ir_load_status = "failed";
+			if (updateRecord) {
+				documentGR.update();
+			}
+			gs.debug("[loadDocumentContents] no contents for file " + fileId);
+		}
+		return false;
+	},
+	
+	
+	getSanitizedFileName: function(docName) {
+		var retVal = docName.replace(/[\\\/\$\^\*]/g, "");
+		if (retVal.length>99) {
+			retVal = retVal.substring( 0, 99);
+		}
+		return retVal;
+	}
+	
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-15 03:15:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>65f2195cdb408340d596327e9d96191c</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>cam_CaseDocumentLoader</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_65f2195cdb408340d596327e9d96191c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-28 02:16:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

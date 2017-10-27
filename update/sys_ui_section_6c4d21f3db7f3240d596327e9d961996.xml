@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Investigation Info" section_id="6c4d21f3db7f3240d596327e9d961996" sys_domain="global" table="x_norca_med_cam_claim" version="3" view="fnol_list">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>2f4721cddb8c0300d596327e9d9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <text/>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_type</element>
+            <position>0</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>274721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>a74721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>roundtable</element>
+            <position>2</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>2b4721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>ab4721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>2f4721cddb8c0300d596327e9d9619f8</element>
+            <position>4</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>2f4721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>5</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>af4721cddb8c0300d596327e9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>report_date</element>
+            <position>6</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>234721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_incident_start_date</element>
+            <position>7</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>a34721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_incident_end_date</element>
+            <position>8</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>274721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>a74721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>coverage_type</element>
+            <position>10</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>2b4721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>coverage_verification_status</element>
+            <position>11</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>ab4721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>coverage_review_process_results</element>
+            <position>12</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-17 12:19:06</sys_created_on>
+            <sys_id>2f4721cddb8c0300d596327e9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Info" display_value="Investigation Info" name="x_norca_med_cam_claim" sys_domain="global" view="7e6eb5fadbd3720075ea38ff9d96192b">6c4d21f3db7f3240d596327e9d961996</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-17 12:19:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Investigation Info</caption>
+            <header>false</header>
+            <name>x_norca_med_cam_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-13 15:32:44</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c4d21f3db7f3240d596327e9d961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Investigation Info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_6c4d21f3db7f3240d596327e9d961996</sys_update_name>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-13 15:32:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="FNOL List" name="fnol_list">7e6eb5fadbd3720075ea38ff9d96192b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

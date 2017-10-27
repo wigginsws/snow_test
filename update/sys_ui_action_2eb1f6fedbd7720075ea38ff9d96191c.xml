@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>preview_pdf</action_name>
+        <active>false</active>
+        <client>true</client>
+        <comments>Auto-generated button to build stock Generate PDF UI Action</comments>
+        <condition>1==1</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Preview PDF</name>
+        <onclick>previewDocument()</onclick>
+        <order>100</order>
+        <script><![CDATA[function previewDocument(){
+	var sysId = typeof rowSysId == 'undefined' || rowSysId == null ?
+	gel('sys_uniqueValue').value : rowSysId;
+	
+	
+//	var dialogClass = window.GlideModal ? GlideModal : GlideDialogWindow;
+//	var dialog = new dialogClass('Preview document dialog v2');
+	var dialog = new GlideModal('Preview document dialog v2');
+	var msg = new GwtMessage().getMessage('Edit document');
+	
+	dialog.setTitle(msg);
+	dialog.setPreference('sysparm_sysId', sysId);
+	dialog.setPreference('sysparm_sourceTable', g_form.getTableName());
+	dialog.setPreference('sysparm_templateTable', 'u_general_document_template');
+	dialog.setPreference('sysparm_templateName', 'test');
+	dialog.setPreference('sysparm_fileName', g_form.getValue('number'));
+	dialog.render();
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-06-15 21:27:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2eb1f6fedbd7720075ea38ff9d96191c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Preview PDF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_action_2eb1f6fedbd7720075ea38ff9d96191c</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-07-24 15:47:32</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

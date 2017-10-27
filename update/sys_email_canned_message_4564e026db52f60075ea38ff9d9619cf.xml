@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p><strong><span style="font-size: 12.0pt; color: red;">Case Caption: </span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: red;">Case No: ${u_case.number}</span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: red;">Issue Company: ${policy.issue_company}</span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: red;">Claim Type: ${claim_type}</span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: #1f497d;"> </span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: red;">${counsel.display_name}</span></strong></p>
+<p><strong><span style="font-size: 12.0pt; color: #1f497d;"> </span></strong></p>
+<p><span style="color: #1f497d;">I am requesting your representation of </span><strong><span style="color: red;">(${u_insured})</span></strong> <span style="color: #1f497d;">in a matter involving </span><strong><span style="color: red;">(${claimant}).</span></strong><span style="color: red;">  </span></p>
+<p><span style="color: #1f497d;"> </span></p>
+<p><span style="color: #1f497d;">Attached is a copy of the pertinent notice and/or legal documents. Would you please review them and confirm that there are no conflicts that would prevent you from representing our insured(s). If your conflict check clears, I will forward you our file material, including any records we have. </span></p>
+<p><span style="color: #1f497d;"> </span></p>
+<p><u><span style="color: #1f497d;">Please promptly acknowledge acceptance of your representation by responding to this email within 24 hours.  </span></u></p>
+<p><a href="mailto:norcalcmadev&#64;norcal-group.com?subject&#61;Re:${number}%20-%20accept&amp;body&#61;${watermark}" rel="nofollow"> Click here to accept ${number}</a></p>
+<p><a href="mailto:norcalcmadev&#64;norcal-group.com?subject&#61;Re:${number}%20-%20reject&amp;body&#61;${watermark}" rel="nofollow"> Click here to reject ${number}</a></p>
+<p> </p>
+<p> </p>
+<p><span style="color: #1f497d;">Thank you for your attention.  I look forward to working with you to bring this matter to a successful conclusion.</span></p>
+<p><span style="color: #1f497d;"> </span></p>
+<p><span style="color: #1f497d;">Sincerely,</span></p>
+<p> </p>
+<p> </p>
+<p><strong><span style="color: red;">(insert CS signature block)</span></strong></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p style="visibility: hidden;">cam_DCN</p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-04-25 23:30:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4564e026db52f60075ea38ff9d9619cf</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Defense Counsel Notification</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_4564e026db52f60075ea38ff9d9619cf</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:05</sys_updated_on>
+        <title>Defense Counsel Notification</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

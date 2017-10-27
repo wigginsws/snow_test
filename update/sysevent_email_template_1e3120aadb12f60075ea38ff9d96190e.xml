@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_norca_med_cam_claim</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Click here to accept ${number}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>mailto.accept</name>
+        <sms_alternate/>
+        <subject>Re:${number} - accept</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-04-25 23:19:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1e3120aadb12f60075ea38ff9d96190e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>mailto.accept</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_email_template_1e3120aadb12f60075ea38ff9d96190e</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-07-26 14:25:21</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

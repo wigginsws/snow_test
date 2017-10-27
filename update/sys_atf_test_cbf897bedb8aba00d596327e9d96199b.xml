@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Add New Claim  - assign to group Directors</name>
+        <remember/>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-14 20:59:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cbf897bedb8aba00d596327e9d96199b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add New Claim  - assign to group Directors</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_atf_test_cbf897bedb8aba00d596327e9d96199b</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-14 21:07:33</sys_updated_on>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=cbf897bedb8aba00d596327e9d96199b"/>
+</record_update>

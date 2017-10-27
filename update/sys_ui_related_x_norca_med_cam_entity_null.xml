@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_norca_med_cam_entity" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Entity - Default view" name="x_norca_med_cam_entity" related_list="NULL" sys_domain="global" view="Default view">6219a40bdb6b3a0075ea38ff9d9619b1</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_norca_med_cam_claim.u_insured</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-28 16:23:48</sys_created_on>
+            <sys_id>2e19a40bdb6b3a0075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 16:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Entity - Default view" name="x_norca_med_cam_entity" related_list="NULL" sys_domain="global" view="Default view">6219a40bdb6b3a0075ea38ff9d9619b1</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_norca_med_cam_address.entity</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-28 16:23:48</sys_created_on>
+            <sys_id>2619a40bdb6b3a0075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 16:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Entity - Default view" name="x_norca_med_cam_entity" related_list="NULL" sys_domain="global" view="Default view">6219a40bdb6b3a0075ea38ff9d9619b1</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_norca_med_cam_entity_class.entity</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-28 16:23:48</sys_created_on>
+            <sys_id>2a19a40bdb6b3a0075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 16:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Entity - Default view" name="x_norca_med_cam_entity" related_list="NULL" sys_domain="global" view="Default view">6219a40bdb6b3a0075ea38ff9d9619b1</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_norca_med_cam_license.entity</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-28 16:23:48</sys_created_on>
+            <sys_id>2e19a40bdb6b3a0075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 16:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Entity - Default view</calculated_name>
+            <filter/>
+            <name>x_norca_med_cam_entity</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-28 16:23:48</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6219a40bdb6b3a0075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Entity - Default view</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_related_x_norca_med_cam_entity_null</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 16:23:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

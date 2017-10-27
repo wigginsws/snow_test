@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function actionOK() {
+	console.log("actionOK called");
+	
+	var selectedCoverage = $j_glide('input[name="selectedCoverage"]:checked').val(); //("selectedCoverage").value;
+	if (!selectedCoverage) {
+		alert("Please select a coverage to apply to the claim, otherwise click Cancel.");
+		
+	} else {
+		var ga = new GlideAjax('x_norca_med_cam.cam_CoverageReviewAjax'); //Script Include Name
+		ga.addParam("sysparm_name", "setCoverageOnClaim"); //Function in the Script Include
+		//Send the Incident Number for the query
+		ga.addParam("sysparm_claim_id", g_form.getUniqueValue());
+		ga.addParam("sysparm_coverage_pk", selectedCoverage);
+
+		ga.getXMLWait();
+		var status = ga.getAnswer();
+		if (status && status=="success") {
+			GlideDialogWindow.get().destroy();
+			
+		} else {
+			alert("An error occurred when updating claim with selected coverage. Please try again.");
+		}
+	}
+	return false;
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_norca_med_cam_list_coverage_options.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:evaluate var="jvar_claim_id" expression="RP.getWindowProperties()['claim_id']" />
+	<g:evaluate jelly="true">
+		var cvWsUtil = new x_norca_med_cam.cam_CoverageVerificationWSUtils();
+		var coverage_options = cvWsUtil.loadCoveragesFromClaimRecordId(jelly.jvar_claim_id);
+		
+		var success = true;
+		if (coverage_options) {
+			if (coverage_options.length>0) {
+				for (var i=0; coverage_options.length>i; i++) {
+					if (coverage_options[i].ServiceMsg) {
+						gs.info("[list_coverage_options] Failed service call. Message -> " + coverage_options[i].ServiceMsg);
+						success = false;
+						break;
+					}
+				}
+			}
+		} else {
+			success = false;
+		}
+		
+		if (success) {
+			coverage_options.sort(cvWsUtil.compareOptionsForSort);
+		}
+	</g:evaluate>
+	
+	<j:if test="${success}">
+		<p>Please review the coverage options below and select one that verifies coverage for this claim.</p>
+		<g:ui_form>
+		<table border="1" cellspacing="2" cellpadding="1" id="coverages" class="data_list_table list_table table table-hover" style="display:block; height:300px; overflow: auto;">
+			<tbody class="list2_body">
+				<tr><!-- class="list_header list_header_search_row" -->
+					<th nowrap="true" align="center">$[SP]</th>
+					<th nowrap="true" align="center">Coverage Valid</th>
+					<th nowrap="true" align="center">Policy Number</th>
+					<th nowrap="true" align="center">Form Description</th>
+					<th nowrap="true" align="center">Coverage Description</th>
+					<th nowrap="true" align="center">Limit Description</th>
+					<th nowrap="true" align="center">Effective From</th>
+					<th nowrap="true" align="center">Effective To</th>
+					<th nowrap="true" align="center">Retro Date</th>
+					<th nowrap="true" align="center">Risk Description</th>
+				</tr>
+				<j:forEach items="${coverage_options}" var="jvar_coverage_option" indexVar="jvar_counter">
+					<g:evaluate jelly="true" var="jvar_row_style" expression="var somevar = jelly.jvar_counter % 2; somevar==1?'list_odd':'list_even';" />
+					<g:evaluate jelly="true" var="jvar_coverage_pk" expression="var somevar = jelly.jvar_coverage_option.coverage_pk; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_is_coverage_valid" expression="var somevar = jelly.jvar_coverage_option.is_coverage_valid; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_policy_no" expression="var somevar = jelly.jvar_coverage_option.policy_no; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_form_descr" expression="var somevar = jelly.jvar_coverage_option.form_descr; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_product_coverage_code" expression="var somevar = jelly.jvar_coverage_option.product_coverage_code; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_coverage_desc" expression="var somevar = jelly.jvar_coverage_option.coverage_desc; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_limit_description" expression="var somevar = jelly.jvar_coverage_option.limit_descr; somevar?somevar:'';" />
+					<g:evaluate jelly="true" var="jvar_effective_from_date" expression="cam.jsDateStringToUSLocaleString(jelly.jvar_coverage_option.effective_from_date, '')"/>
+					<g:evaluate jelly="true" var="jvar_effective_to_date" expression="cam.jsDateStringToUSLocaleString(jelly.jvar_coverage_option.effective_to_date, '')"/>
+					<g:evaluate jelly="true" var="jvar_retro_date" expression="cam.jsDateStringToUSLocaleString(jelly.jvar_coverage_option.retro_date, '')"/>
+					<g:evaluate jelly="true" var="jvar_risk_descr" expression="var somevar = jelly.jvar_coverage_option.risk_descr; somevar?somevar:'';" />
+					<tr class="list_row ${jvar_row_style}">
+						<td><g:ui_radio name="selectedCoverage" value="${jvar_coverage_pk}" /></td>
+						<td>${jvar_is_coverage_valid}</td>
+						<td>${jvar_policy_no}</td>
+						<td>${jvar_form_descr}</td>
+						<td>${jvar_coverage_desc}</td>
+						<td>${jvar_limit_description}</td>
+						<td>${jvar_effective_from_date}</td>
+						<td>${jvar_effective_to_date}</td>
+						<td>${jvar_retro_date}</td>
+						<td>${jvar_risk_descr}</td>
+					</tr>
+				</j:forEach>
+			</tbody>
+	   </table>
+		<g:dialog_buttons_ok_cancel ok_type="button" cancel_type="button"/>
+		</g:ui_form>
+	</j:if>
+	<j:if test="${!success}">
+		<p>There was a system failure when retrieving coverage options. Please try again or contact an admin if the issue persists.</p>
+	</j:if>
+</j:jelly>
+
+]]></html>
+        <name>list_coverage_options</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-08-02 16:08:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7725f8d2db18074075ea38ff9d96199c</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>list_coverage_options</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_page_7725f8d2db18074075ea38ff9d96199c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-04 19:28:50</sys_updated_on>
+    </sys_ui_page>
+</record_update>

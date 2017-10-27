@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>diary_type</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-Diary-Update Due Date by Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	console.log("[onChange] Diary type: " + newValue + ", u_due_date: " + g_form.getValue("u_due_date"));
+	
+function getDueDate(days) {
+    return new Date(Date.now() + 864e5 * days);
+    }
+
+	if (newValue) { // && !g_form.getValue("due_date")
+		console.log("[onChange] setting date, diary type " + newValue);
+		var due;
+		var desc = "";
+		switch(newValue) {
+			case "provide_policy_dec_page":
+			due = getDueDate(2);
+			desc = "Provide policy declaration page";
+			break;
+				
+			case "coverage_issue_low_priority":
+			due = getDueDate (11);
+			desc = "Low Priority";
+			break;
+				
+			case "coverage_issue_medium_priority":
+			due = getDueDate (10);
+			desc = "Medium Priority";
+			break;
+				
+			case "coverage_issue_high_priority":
+			due = getDueDate (5);
+			desc = "URGENT";
+			break;
+			
+			case "response_to_settlement_demand_5":
+			due = getDueDate (5);
+			desc = "Request to settlement demand.";
+			break;
+				
+			case "response_to_settlement_demand_25":
+			due = getDueDate (25);
+			desc = "Request to settlement demand.";
+			break;
+				
+			case "response_to_settlement_demand_30":
+			due = getDueDate (30);
+			desc = "Request to settlement demand.";
+			break;
+				
+			case "request_for_information_from_counsel_5":
+			due = getDueDate (5);
+			desc = "Request of information counsel.";
+			break;
+				
+			case "request_for_information_from_counsel_30":
+			due = getDueDate (30);
+			desc = "Request of information counsel.";
+			break;
+				
+			case "indemnity_check_approval":
+			due = getDueDate (1);
+			desc = "Need indemnity check approval.";
+			break;
+				
+			case "setting_final_reserves":
+			due = getDueDate (270);
+			desc = "Setting final reserves";
+			break;
+				
+			case "state_payment_reporting_required_pending":
+			due = getDueDate (30);
+			desc = "State payment reporting required pending";
+			break;
+				
+			case "npdb_reporting_req":
+			due = getDueDate (25);
+			desc = "NPDB reporting requirements";
+			break;
+				
+			case "safe_harbor_reminder_150":
+			due = getDueDate (150);
+			desc = "Safe harbor reminder 150 days";
+			break;
+				
+			case "safe_harbor_reminder_175":
+			due = getDueDate (175);
+			desc = "safe harbor reminder 175 days";
+			break;
+				
+			case "safe_harbor_reminder_200":
+			due = getDueDate (200);
+			desc = "safe harbor reminder 200 days";
+			break;
+				
+			case "pre_suit_reminder_30":
+			due = getDueDate (30);
+			desc = "Pre suit reminder 30 days";
+			break;
+				
+			case "pre_suit_reminder_60":
+			due = getDueDate (60);
+			desc = "Pre suit reminder 60 days";
+			break;
+				
+				
+			default:
+			due = getDueDate(2);
+			// 			   desc = "";
+			break;
+		}
+		
+		g_form.setValue("u_due_date", due);
+		g_form.setValue("description", desc);
+
+	}
+}
+
+function getDueDate(daysToAdd) {
+	var now = new Date();
+	return padNumber(now.getMonth() + 1) + "/" + padNumber(now.getDate() + daysToAdd) + "/" + padNumber(now.getFullYear());
+}
+
+function padNumber(number) {
+	number = number.toString();
+	if (number.length === 1) {
+		return "0" + number;
+	}
+	return number;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-05 17:55:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3de9a2fdb87324075ea38ff9d9619a7</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>CAM-Diary-Update Due Date by Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_b3de9a2fdb87324075ea38ff9d9619a7</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-07-11 19:36:14</sys_updated_on>
+        <table>x_norca_med_cam_diary</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

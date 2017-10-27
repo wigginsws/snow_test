@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_script_access">
+    <sys_scope_script_access action="INSERT_OR_UPDATE">
+        <example_stack_trace>Default-thread-3
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.getCurrentStackTrace(ScopeAccessProvider.java:234)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.record(ScopeAccessProvider.java:202)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.access$100(ScopeAccessProvider.java:81)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider.recordAccess(ScopeAccessProvider.java:64)
+	com.glide.sys.fencing.dependency.ScopeAccessRecorder.record(ScopeAccessRecorder.java:13)
+	com.glide.script.system.ASystemInclude.recordCrossScopeDependency(ASystemInclude.java:153)
+	com.glide.script.system.ASystemInclude.include(ASystemInclude.java:133)
+	com.glide.script.AGlideRhinoScopeHandler.isScriptInclude(AGlideRhinoScopeHandler.java:45)
+	com.glide.script.GlideRhinoScopeHandler.found(GlideRhinoScopeHandler.java:27)
+	com.glide.script.ARhinoScope.get(ARhinoScope.java:77)
+	com.glide.script.RhinoScope.get(RhinoScope.java:52)
+	org.mozilla.javascript.ScriptableObject.getProperty(ScriptableObject.java:2323)
+	org.mozilla.javascript.ScriptRuntime.getExistingCtor(ScriptRuntime.java:1289)
+	org.mozilla.javascript.Context.newObject(Context.java:1639)
+	com.glide.script.RhinoObject.&lt;init&gt;(RhinoObject.java:57)
+	com.glide.script.RhinoObject.&lt;init&gt;(RhinoObject.java:49)
+	com.glide.script.GlideRhinoObject.&lt;init&gt;(GlideRhinoObject.java:40)
+	com.glide.script.GlideRhinoHelper.jsonToObject(GlideRhinoHelper.java:229)
+	com.glide.glideobject.GlideElementNameValue.deserializeFromJSON(GlideElementNameValue.java:273)
+	com.glide.glideobject.GlideElementNameValue.getStorageValue(GlideElementNameValue.java:160)
+	com.glide.script.BusinessRule.getCurrentValues(BusinessRule.java:399)
+	com.glide.script.BusinessRule.runSyncBusinessRule(BusinessRule.java:272)
+	com.glide.script.BusinessRule.runBusinessRule(BusinessRule.java:197)
+	com.glide.script.BusinessRule.run(BusinessRule.java:173)
+	com.glide.script.GlideRecordBusinessRules.run(GlideRecordBusinessRules.java:85)
+	com.glide.script.GlideRecord.runScripts(GlideRecord.java:1219)
+	com.glide.script.GlideRecord.runScriptsAndEngines(GlideRecord.java:1169)
+	com.glide.script.GlideRecord.postChange(GlideRecord.java:4597)
+	com.glide.script.GlideRecord.postInsert(GlideRecord.java:4557)
+	com.glide.script.GlideRecord.insert(GlideRecord.java:4492)
+	com.glide.script.GlideRecord.insert(GlideRecord.java:4409)
+	com.glideapp.workflow.engine.ContextCreator.create(ContextCreator.java:86)
+	com.glideapp.workflow.engine.ContextCreator.create(ContextCreator.java:37)
+	com.glideapp.workflow.WorkflowScriptAPI.jsFunction_startFlow(WorkflowScriptAPI.java:124)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.mozilla.javascript.MemberBox.invoke(MemberBox.java:138)
+	org.mozilla.javascript.FunctionObject.doInvoke(FunctionObject.java:637)
+	org.mozilla.javascript.FunctionObject.call(FunctionObject.java:581)
+	org.mozilla.javascript.ScriptRuntime.doCall(ScriptRuntime.java:2574)
+	org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)
+	org.mozilla.javascript.gen.sys_script_include_d3669766c0a8016901828e92d1202ac5_2885._c_anonymous_7(sys_script_include.d3669766c0a8016901828e92d1202ac5:89)
+	org.mozilla.javascript.gen.sys_script_include_d3669766c0a8016901828e92d1202ac5_2885.call(sys_script_include.d3669766c0a8016901828e92d1202ac5)
+	org.mozilla.javascript.ScriptRuntime.doCall2(ScriptRuntime.java:2645)
+	org.mozilla.javascript.ScriptRuntime.doCall(ScriptRuntime.java:2582)
+	org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)
+	org.mozilla.javascript.gen.null_null_7736._c_script_0(null.null:5)
+	org.mozilla.javascript.gen.null_null_7736.call(null.null)
+	org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:560)
+	org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3439)
+	org.mozilla.javascript.gen.null_null_7736.call(null.null)
+	org.mozilla.javascript.gen.null_null_7736.exec(null.null)
+	com.glide.script.ScriptEvaluator.execute(ScriptEvaluator.java:236)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:107)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:73)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:322)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:283)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:254)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:242)
+	com.glide.processors.ScriptProcessor.evaluateScript(ScriptProcessor.java:320)
+	com.glide.processors.ScriptProcessor.runScript(ScriptProcessor.java:215)
+	com.glide.processors.ScriptProcessor.process(ScriptProcessor.java:173)
+	com.glide.processors.AProcessor.runProcessor(AProcessor.java:412)
+	com.glide.processors.AProcessor.processTransaction(AProcessor.java:187)
+	com.glide.processors.ProcessorRegistry.process(ProcessorRegistry.java:165)
+	com.glide.ui.GlideServletTransaction.process(GlideServletTransaction.java:49)
+	com.glide.sys.ServletTransaction.run(ServletTransaction.java:34)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	java.lang.Thread.run(Thread.java:745)
+</example_stack_trace>
+        <script_name>JSON</script_name>
+        <source_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</source_scope>
+        <sys_class_name>sys_scope_script_access</sys_class_name>
+        <sys_created_by>abey@elucent.io</sys_created_by>
+        <sys_created_on>2017-03-02 20:24:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7cb43549db11b640394af9361d96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JSON</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_scope_script_access_7cb43549db11b640394af9361d96195a</sys_update_name>
+        <sys_updated_by>abey@elucent.io</sys_updated_by>
+        <sys_updated_on>2017-03-02 20:24:58</sys_updated_on>
+        <target_scope display_value="Global">global</target_scope>
+    </sys_scope_script_access>
+</record_update>

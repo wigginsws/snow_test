@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_coverage_type" table="x_norca_med_cam_fnol_routing" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_coverage_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PL</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence>0</sequence>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:47:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bbe2f6b3db86f600394af9361d9619b3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jen@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 20:49:24</sys_updated_on>
+            <value>pl</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_coverage_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admin Defense</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence>10</sequence>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:48:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af03f6b3db86f600394af9361d9619c0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jen@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 20:49:29</sys_updated_on>
+            <value>admin_defense</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_coverage_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>InfoNet Secure</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence>20</sequence>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:48:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11233ab3db86f600394af9361d961957</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jen@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 20:49:45</sys_updated_on>
+            <value>infonet_secure</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_coverage_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DatShield</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence>30</sequence>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:48:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb3376b3db86f600394af9361d9619da</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jen@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 20:49:35</sys_updated_on>
+            <value>datshield</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_coverage_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence>40</sequence>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:49:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9053bab3db86f600394af9361d961922</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jen@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 20:49:55</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_coverage_type</element>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jen@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 20:47:33</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9346ffb3db900300e022771c8c9619f6</sys_id>
+            <sys_mod_count>15</sys_mod_count>
+            <sys_name>u_coverage_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_fnol_routing_u_coverage_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:00:45</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

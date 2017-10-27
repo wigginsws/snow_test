@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p><span style="font-size: 11px;">PERSONAL &amp; CONFIDENTIAL</span></p>
+<p><span style="font-size: 11px;">RE:${claim_number}</span></p>
+<p><span style="font-size: 11px;">${policy}</span></p>
+<p><span style="font-size: 11px;">Dear:{contact_name}</span></p>
+<p><span style="font-size: 11px;">As we have now received the appropriate paperwork, we are closing our file.</span></p>
+<p><span style="font-size: 11px;"><span class="s3" style="font-size: 11px;">As part of our ongoing commitment to you, </span><span class="s6" style="font-size: 11px;">Norcal</span><span class="s3" style="font-size: 11px;"> has developed a</span><span class="s3" style="font-size: 11px;">n electronic</span><span class="s3" style="font-size: 11px;"> feedback survey for our policyholders who have recently experienced a claim. </span><span class="s3" style="font-size: 11px;">Y</span><span class="s3" style="font-size: 11px;">ou will be receiving an email link to the </span><span class="s4" style="font-size: 11px;">Claims Feedback Survey </span><span class="s3" style="font-size: 11px;">at the email address above</span> <span class="s3" style="font-size: 11px;">shortly.</span><span class="s3" style="font-size: 11px;"> Please help us improve our service to you and your fellow policyholders by completing the survey once received.</span></span></p>
+<p><span class="s3" style="font-size: 11px;">As always, if you should receive inquiries or correspondence regarding this </span><span class="s3" style="font-size: 11px;">matter</span><span class="s3" style="font-size: 11px;">, please contact </span><span class="s3" style="font-size: 11px;">your attorney or </span><span class="s3" style="font-size: 11px;">this </span><span class="s3" style="font-size: 11px;">office promptly before </span><span class="s3" style="font-size: 11px;">responding.</span></p>
+<p><span class="s3" style="font-size: 11px;"><span style="font-size: 11px;">Please do not make this letter part of the patient’s medical chart.</span></span></p>
+<p><span style="font-size: 11px;">We would like to thank you for your patience and cooperation during the pendency of this matter.</span></p>
+<p><span style="font-size: 11px;">Very truly yours,</span></p>
+<p><span style="font-size: 11px;">cc: <span class="s9" style="color: #5b6770; font-size: 8px;">PO BOX 2080, MECHANICSBURG, PA  17055-0787 </span><span class="s11" style="color: #dc4405; font-size: 8px;">T</span> <span class="s9" style="color: #5b6770; font-size: 8px;">800.445.1212</span> <span class="s11" style="color: #dc4405; font-size: 8px;">F</span> <span class="s9" style="color: #5b6770; font-size: 8px;">717.796-6080 </span><span class="s14" style="color: #dc4405; font-size: 8px;">NORCALMUTUAL.COM</span></span></p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>amoewe</sys_created_by>
+        <sys_created_on>2017-06-30 12:35:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6a60caa7dbe7f600d596327e9d9619cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Close Suit Penn</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_6a60caa7dbe7f600d596327e9d9619cf</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:16</sys_updated_on>
+        <title>Close Suit Penn</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Claim Profile" section_id="f0107307db1fb20075ea38ff9d961901" sys_domain="global" table="x_norca_med_cam_entity" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>insured_since_date</element>
+            <position>0</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eaca6cbedbeff60075ea38ff9d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hicn</element>
+            <position>1</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>6eca6cbedbeff60075ea38ff9d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dynamic_claim_entry_source</element>
+            <position>2</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eeca6cbedbeff60075ea38ff9d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>industry_description</element>
+            <position>3</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>62ca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>e2ca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loss_free_date</element>
+            <position>5</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>66ca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claims_free_date</element>
+            <position>6</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>e6ca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>6aca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>8</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eaca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>component</element>
+            <position>9</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>6eca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status_code</element>
+            <position>10</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eeca6cbedbeff60075ea38ff9d96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fake_ada_number</element>
+            <position>11</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>62ca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>12</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>e2ca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>66ca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>14</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>e6ca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>professional_designation</element>
+            <position>15</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>6aca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>electronic_distribution</element>
+            <position>16</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eaca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>17</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>6eca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>legal_name_effective_date</element>
+            <position>18</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-27 21:52:42</sys_created_on>
+            <sys_id>eeca6cbedbeff60075ea38ff9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Profile" display_value="Claim Profile" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">f0107307db1fb20075ea38ff9d961901</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-27 21:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Claim Profile</caption>
+            <header>false</header>
+            <name>x_norca_med_cam_entity</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-16 20:37:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0107307db1fb20075ea38ff9d961901</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Claim Profile</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_f0107307db1fb20075ea38ff9d961901</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:58:23</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>re: GENCAM-42 (Claim Status)</description>
+        <field>u_claim_stage</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-Claim-State choices depend on Stage</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+//    if (isLoading || newValue === '') {
+//       return;
+//    }
+
+   // State choices (status designation) vary depending on the value of Claim Stage	
+	var states_map = {
+		'intake': [
+			{
+				'label': 'New (System)',
+				'value': 1,
+			},
+			{
+				'label': 'Accepted (User)',
+				'value': 2,
+			},
+			{
+				'label': 'Awaiting Additional Information (User)',
+				'value': 3,
+			},
+		],
+		'assignment': [
+			{
+				'label': 'Unassigned (System)',
+				'value': 4,
+			},
+			{
+				'label': 'Assigned (System)',
+				'value': 5,
+			}
+		],
+
+		'investigate': [
+			{
+				'label': 'Initial Investigation (System)',
+				'value': 6,
+			},
+			{
+				'label': 'Coverage Determination Made (System)',
+				'value': 7,
+			},
+			{
+				'label': 'In Progress (System)',
+				'value': 8,
+			},
+			{
+				'label': 'In Litigation (System)',
+				'value': 9,
+			},
+			{
+				'label': 'Awaiting Additional Information (System/User)',
+				'value': 10,
+			},
+		],
+
+		'resolution': [
+			{
+				'label': 'Resolved (System)',
+				'value': 11,
+			},
+			{
+				'label': 'Closed (System)',
+				'value': 12,
+			},
+		],
+
+		'recoup': [
+			{
+				'label': 'Recoup N/A (System)',
+				'value': 13,
+			},
+			{
+				'label': 'Recoup In Progress (System)',
+				'value': 14,
+			},
+			{
+				'label': 'Recoup Complete (System)',
+				'value': 15,
+			},
+
+		]
+	};	
+	var valid_states = states_map[newValue];
+	g_form.clearOptions('state');
+	if (valid_states) {
+		for (var i=0; i<valid_states.length; i++) {
+			g_form.addOption('state', valid_states[i]['value'], valid_states[i]['label']);
+		}
+	}
+
+	
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>abey@elucent.io</sys_created_by>
+        <sys_created_on>2017-03-01 21:15:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a91383cdb15764062bafd441d9619ff</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>CAM-Claim-State choices depend on Stage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_9a91383cdb15764062bafd441d9619ff</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-24 04:33:39</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

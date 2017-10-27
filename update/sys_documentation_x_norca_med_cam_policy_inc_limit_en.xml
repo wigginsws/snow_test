@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="inc_limit" label="Per Incident Limit" language="en" table="x_norca_med_cam_policy">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>inc_limit</element>
+            <help/>
+            <hint/>
+            <label>Per Incident Limit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <plural>Per Incident Limits</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-22 22:54:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c0f8878ddba7f20075ea38ff9d961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Per Incident Limit</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_policy_inc_limit_en</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-22 22:54:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

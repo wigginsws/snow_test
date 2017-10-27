@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="ir_doc_load_tracker" label="IR Load Tracker" language="en" table="x_norca_med_cam_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ir_doc_load_tracker</element>
+            <help/>
+            <hint/>
+            <label>IR Load Tracker</label>
+            <language>en</language>
+            <name>x_norca_med_cam_case</name>
+            <plural>IR Load Trackers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-27 14:34:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7146e59cdb14034075ea38ff9d961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IR Load Tracker</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_case_ir_doc_load_tracker_en</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-27 14:34:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

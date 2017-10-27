@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>counsel_email</name>
+        <scoped_name>x_norca_med_cam_counsel_email</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-06-15 21:44:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d4e532f2db1b720075ea38ff9d96191c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>counsel_email</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_macro_d4e532f2db1b720075ea38ff9d96191c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-04 15:22:50</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate var="jvar_guid" expression="gs.generateGUID(this);" />
+<j:set var="jvar_n" value="counsel_email_${jvar_guid}:${ref}"/>
+<a id="${jvar_n}" onclick="openEmail()" class="btn btn-default btn-ref icon">
+<img src="email_icon.gif" width="16" height="16" title="${gs.getMessage('Send Defense Counsel Email')}" alt="${gs.getMessage('Send Defense Counsel Email')}"/>
+</a>
+	<script>
+		function openEmail(){
+		var id = g_form.getUniqueValue();
+		popupOpenEmailClient("email_client.do?sysparm_table=x_norca_med_cam_claim&amp;amp;sysparm_sys_id="+id+"&amp;amp;sysparm_target=x_norca_med_cam_claim&amp;amp;sys_target=x_norca_med_cam_claim&amp;amp;sys_uniqueValue="+id+"&amp;amp;sys_row=0&amp;amp;sysparm_encoded_record=&amp;amp;x_norca_med_cam_claim.client_type=counsel&amp;amp;sysparm_stack=no"); 
+
+		}
+		function onChange_defense_counsel(element, original, changed, loading) {
+  var visibility = 'hidden';
+   if (changed.length > 0)
+    visibility = 'visible';
+
+  var e = gel('${jvar_n}');
+  e.style.visibility= visibility;
+}
+		 var h = new GlideEventHandler('onChange_x_norca_med_cam_claim_defense_counsel', onChange_defense_counsel, '${ref}');
+  g_event_handlers.push(h);
+	</script>
+	</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="d69a32b6db1b720075ea38ff9d96195f" sys_domain="global" table="x_norca_med_cam_diary" version="3" view="assigned_to_me">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>de9a32b6db1b720075ea38ff9d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>529a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>diary_type</element>
+            <position>2</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>d29a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim</element>
+            <position>3</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>569a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_due_date</element>
+            <position>4</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>d69a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>5a9a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>da9a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>7</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>5e9a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>8</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>de9a32b6db1b720075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>external_assignee</element>
+            <position>9</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>529a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entity</element>
+            <position>10</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>d29a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignee_s_name</element>
+            <position>11</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>569a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ea_email_address</element>
+            <position>12</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>d69a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>5a9a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>14</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>da9a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>15</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_id>5e9a32b6db1b720075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">b832d3560a0001c700d781efe21e22f5</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_diary" sys_domain="global" view="1beb55cedbd2760075ea38ff9d961914">d69a32b6db1b720075ea38ff9d96195f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-15 22:05:18</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_norca_med_cam_diary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-15 22:05:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d69a32b6db1b720075ea38ff9d96195f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_norca_med_cam_diary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_d69a32b6db1b720075ea38ff9d96195f</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:58:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Assigned_to_me" name="assigned_to_me">1beb55cedbd2760075ea38ff9d961914</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

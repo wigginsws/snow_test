@@ -1,0 +1,2759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="classification" table="x_norca_med_cam_entity" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Holder</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb74f431db96360075ea38ff9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>ACCTHOLDER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Adjuster</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f74f431db96360075ea38ff9d96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>ADJUSTER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb74f431db96360075ea38ff9d961992</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>AGENCY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agency Insureds of MAI</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b84bc31db96360075ea38ff9d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:58</sys_updated_on>
+            <value>AGENCYINSD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb84bc31db96360075ea38ff9d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:59</sys_updated_on>
+            <value>AGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Allied Health Professionals</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0494bc31db96360075ea38ff9d96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:59</sys_updated_on>
+            <value>ALLIEDHLTH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annuity Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4894bc31db96360075ea38ff9d96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:59</sys_updated_on>
+            <value>ANNUITYCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annuity Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc843831db96360075ea38ff9d961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>ANNUITYVEN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arbitrator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0094bc31db96360075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:59</sys_updated_on>
+            <value>ARBITRATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assignment Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4894bc31db96360075ea38ff9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:00</sys_updated_on>
+            <value>ASGNMTCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Association</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78847831db96360075ea38ff9d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>ASSC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bank</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08843831db96360075ea38ff9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>BANK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Batch Contact</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>41847831db96360075ea38ff9d961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>BATCONT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85847831db96360075ea38ff9d961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>BCORP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Beneficiary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b74f431db96360075ea38ff9d96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:40</sys_updated_on>
+            <value>BENFICIARY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Billing Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0494bc31db96360075ea38ff9d961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:00</sys_updated_on>
+            <value>BILLAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Partnership</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85847831db96360075ea38ff9d96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>BPART</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORCAL Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7374f431db96360075ea38ff9d9619d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>BRDMEMBER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Broker</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5094bc31db96360075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:00</sys_updated_on>
+            <value>BROKER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bulk Application Receiver</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1094bc31db96360075ea38ff9d9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:00</sys_updated_on>
+            <value>BULKAPPRCV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8843831db96360075ea38ff9d9619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>BUSMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurance Carrier</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5094bc31db96360075ea38ff9d9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:01</sys_updated_on>
+            <value>CARRIER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certification Board</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d894bc31db96360075ea38ff9d9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:01</sys_updated_on>
+            <value>CERTBOARD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claimant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0484f431db96360075ea38ff9d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>CLAIMANT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Support Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b843c31db96360075ea38ff9d9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:55</sys_updated_on>
+            <value>CLM STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Committee Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22843c31db96360075ea38ff9d96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:53</sys_updated_on>
+            <value>CLMCMTE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a374f431db96360075ea38ff9d961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>CLMMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim Director</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e84f831db96360075ea38ff9d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>CLMSUPER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims WorkFlow Diary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54843831db96360075ea38ff9d961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>CM_DIARY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Regional Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef74f431db96360075ea38ff9d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>CM_REG_MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e494fc31db96360075ea38ff9d961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:01</sys_updated_on>
+            <value>CNS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>COI Holder</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c284f831db96360075ea38ff9d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>COIHOLDER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c847831db96360075ea38ff9d96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>CORP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Court</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e84f831db96360075ea38ff9d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>COURT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Credentialing Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01847831db96360075ea38ff9d96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>CREDENTIAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Claim Reviewer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c684f831db96360075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>CREVIEWBD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certified Registered Nurse Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0684f831db96360075ea38ff9d961947</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>CRNA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Client Serv Rep</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c284f831db96360075ea38ff9d961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:51</sys_updated_on>
+            <value>CSR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CIS Diary User</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2094fc31db96360075ea38ff9d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:01</sys_updated_on>
+            <value>CSUSER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Court Reporter</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e494fc31db96360075ea38ff9d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:02</sys_updated_on>
+            <value>CTR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Firm</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1684f831db96360075ea38ff9d961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:52</sys_updated_on>
+            <value>DATTORNEY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dentist / Oral Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e84f831db96360075ea38ff9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:52</sys_updated_on>
+            <value>DENOSURG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d284f831db96360075ea38ff9d96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:52</sys_updated_on>
+            <value>DENTENTITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a84f831db96360075ea38ff9d96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:52</sys_updated_on>
+            <value>DENTGROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dentist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d284f831db96360075ea38ff9d9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:52</sys_updated_on>
+            <value>DENTIST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c843831db96360075ea38ff9d96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>DENTORG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Attorney</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3374f431db96360075ea38ff9d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>DINDATTY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Director of Underwriting - Operations</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70847831db96360075ea38ff9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>DIRUW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Do Not Solicit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b094fc31db96360075ea38ff9d961947</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:02</sys_updated_on>
+            <value>DNS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Educator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a374f431db96360075ea38ff9d961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>EDUCATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Education Director</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e374f431db96360075ea38ff9d96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>EDUCDIR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elite Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6774f431db96360075ea38ff9d961935</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:40</sys_updated_on>
+            <value>ELITEAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Employed Physician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b2843c31db96360075ea38ff9d961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:54</sys_updated_on>
+            <value>EMPINSURED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Emergency Room Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a774f431db96360075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>ER NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ES Executive Page Mailing</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb74f431db96360075ea38ff9d961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>ESEXECMAIL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expert Witness</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f584f831db96360075ea38ff9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>EWITNESS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Specialist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe843c31db96360075ea38ff9d961934</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:54</sys_updated_on>
+            <value>EXAMINER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exhibit Site</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19847831db96360075ea38ff9d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>EXHIBITS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exhibit Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9847831db96360075ea38ff9d9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>EXHIBSTAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facility</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83843c31db96360075ea38ff9d961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:55</sys_updated_on>
+            <value>FACILITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finance Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b74f431db96360075ea38ff9d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>FINANCE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Friend of MAI</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91847831db96360075ea38ff9d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>FRNDSMAI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospital Claim Cov. Requester</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc94fc31db96360075ea38ff9d96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:02</sys_updated_on>
+            <value>HCC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health Care Management Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9184b831db96360075ea38ff9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>HMO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hlth Care Mgmnt/Point of Service</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d84b831db96360075ea38ff9d961922</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>HMO/POS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospital</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6184b831db96360075ea38ff9d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>HOSPITAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>I/S Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2284f831db96360075ea38ff9d9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:53</sys_updated_on>
+            <value>I/S STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IBS Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee84f831db96360075ea38ff9d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:53</sys_updated_on>
+            <value>IBS STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8843831db96360075ea38ff9d9619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>INDCONSULT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurance Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80843831db96360075ea38ff9d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>INSCOMPANY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a374f431db96360075ea38ff9d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:40</sys_updated_on>
+            <value>INSURER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Physician Association</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2184b831db96360075ea38ff9d961947</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>IPA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Issue Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6184b831db96360075ea38ff9d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>ISSUECOMP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Judge</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72843c31db96360075ea38ff9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:55</sys_updated_on>
+            <value>JUDGE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Landlord</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb847c31db96360075ea38ff9d9619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:58</sys_updated_on>
+            <value>LANDLORD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lead</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b74f431db96360075ea38ff9d9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>LEAD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lessor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7847c31db96360075ea38ff9d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:58</sys_updated_on>
+            <value>LESSOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Limited Liability Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38847831db96360075ea38ff9d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>LLC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Limited Liability Partnership</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>09847831db96360075ea38ff9d96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>LLP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mailing List</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2584b831db96360075ea38ff9d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>MAIL LIST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MCARE Adjuster</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1847831db96360075ea38ff9d961954</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>MCAREADJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Managed Care Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6984b831db96360075ea38ff9d96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>MCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2184b831db96360075ea38ff9d961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>MEDGROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mediator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2184b831db96360075ea38ff9d961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:49</sys_updated_on>
+            <value>MEDIATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f984b831db96360075ea38ff9d96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>MEDICALENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Facilities</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b584b831db96360075ea38ff9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>MEDICALFAC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical School</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d84b831db96360075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>MEDSCHOOL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Society</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3584b831db96360075ea38ff9d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:50</sys_updated_on>
+            <value>MEDSOCIETY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Society Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f74f431db96360075ea38ff9d961956</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>MEDSOCMEMB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MGMA Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55847831db96360075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>MGMA MEMBE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marketing Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3374f431db96360075ea38ff9d9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>MK_VENDOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Management Service Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c843831db96360075ea38ff9d961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>MSO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Network Classification</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e84f831db96360075ea38ff9d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:53</sys_updated_on>
+            <value>NETWORK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c843831db96360075ea38ff9d96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>NONINSURED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Norcal/PMSLIC Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3774f431db96360075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>NPBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c843831db96360075ea38ff9d961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nursing Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>20843831db96360075ea38ff9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>NURSE MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Obstetric Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6843c31db96360075ea38ff9d961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:54</sys_updated_on>
+            <value>OB NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other Employer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc94fc31db96360075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:02</sys_updated_on>
+            <value>OEM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6843c31db96360075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:54</sys_updated_on>
+            <value>OFF MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8843831db96360075ea38ff9d9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>OFF STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Osteopathic Physician Society California</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c843831db96360075ea38ff9d961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>OPSC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb84bc31db96360075ea38ff9d961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:58</sys_updated_on>
+            <value>ORG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Partner</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70847831db96360075ea38ff9d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>PARTNER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plaintiff Attorney</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0843831db96360075ea38ff9d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>PATTORNEY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc94fc31db96360075ea38ff9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:03</sys_updated_on>
+            <value>PBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Peer Review Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac843831db96360075ea38ff9d9619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>PEERRVWMEM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician &amp; Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d94fc31db96360075ea38ff9d9619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:04</sys_updated_on>
+            <value>PHYSICIAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC/NORCAL Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8194fc31db96360075ea38ff9d961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:03</sys_updated_on>
+            <value>PNBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Preferred Physicians Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5943071db96360075ea38ff9d96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:04</sys_updated_on>
+            <value>PPO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Practice Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8843831db96360075ea38ff9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:45</sys_updated_on>
+            <value>PRACTMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Premium Finance Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2843c31db96360075ea38ff9d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:53</sys_updated_on>
+            <value>PREMFINCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prospect</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7374f431db96360075ea38ff9d9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>PROSPECT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Hospital Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15943071db96360075ea38ff9d961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:04</sys_updated_on>
+            <value>PSO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policyholder Service Rep</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1943071db96360075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>PSR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Purchasing Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9943071db96360075ea38ff9d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>PURCHGRP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quality Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d847831db96360075ea38ff9d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:47</sys_updated_on>
+            <value>QUAL MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Record Copy Service</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d94fc31db96360075ea38ff9d9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:03</sys_updated_on>
+            <value>REC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reinsurance Intermediary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7374f431db96360075ea38ff9d9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>REININTER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reinsurer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3374f431db96360075ea38ff9d9619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>REINSURER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d847831db96360075ea38ff9d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:48</sys_updated_on>
+            <value>RISKMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c843831db96360075ea38ff9d961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>RMC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RM Broadcast Network Site</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f843c31db96360075ea38ff9d9619bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:55</sys_updated_on>
+            <value>RM_SITE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Speaker/Moderator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3843c31db96360075ea38ff9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:55</sys_updated_on>
+            <value>RM_SPEAKER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RM Specialist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f74f431db96360075ea38ff9d961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:40</sys_updated_on>
+            <value>RM_SPECIAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f843c31db96360075ea38ff9d9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:56</sys_updated_on>
+            <value>RM_STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Studio</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7843c31db96360075ea38ff9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:56</sys_updated_on>
+            <value>RM_STUDIO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>13847c31db96360075ea38ff9d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:56</sys_updated_on>
+            <value>RM_VENDOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sales Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4884f431db96360075ea38ff9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>SALES</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SCPIE Sales Initiative</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3774f431db96360075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>SCPIE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Self Insured (CMS)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f74f431db96360075ea38ff9d96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:41</sys_updated_on>
+            <value>SELFINSURD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Seminar Participant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df847c31db96360075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:56</sys_updated_on>
+            <value>SM PARTICI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Schedule Rated Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4594fc31db96360075ea38ff9d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:04</sys_updated_on>
+            <value>SRG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Producer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f847c31db96360075ea38ff9d96196c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:57</sys_updated_on>
+            <value>SUBAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surety Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63847c31db96360075ea38ff9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:57</sys_updated_on>
+            <value>SURETYCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7847c31db96360075ea38ff9d96198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:57</sys_updated_on>
+            <value>SURGEON</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suspect</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3774f431db96360075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>SUSPECT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unclassified Norcal Employee</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4843831db96360075ea38ff9d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:43</sys_updated_on>
+            <value>UNCLASS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriter</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb847c31db96360075ea38ff9d9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:57</sys_updated_on>
+            <value>UNDWRITER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriting Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38847831db96360075ea38ff9d96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>UWMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriter - Special Risks</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c843831db96360075ea38ff9d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:46</sys_updated_on>
+            <value>UWSPEC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b74f431db96360075ea38ff9d9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>UW_MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Support Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0084f431db96360075ea38ff9d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:42</sys_updated_on>
+            <value>UW_STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>classification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>10843831db96360075ea38ff9d961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:44</sys_updated_on>
+            <value>VENDOR</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>classification</element>
+            <name>x_norca_med_cam_entity</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:40</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ee46bfb3db900300e022771c8c96199a</sys_id>
+            <sys_mod_count>147</sys_mod_count>
+            <sys_name>classification</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_entity_classification</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

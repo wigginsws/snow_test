@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_norca_med_cam_claim" version="2" view="RPT8074623edbdc474075ea38ff9d9619d2">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c074667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4474667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>coverage_type</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c474667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>claim_type</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4874667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_loss_type</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c874667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_loss_subtype</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4c74667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_case</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>cc74667edbdc474075ea38ff9d9619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_case.number</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4074667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>claimant</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c074667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_insured</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4474667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c474667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>policy</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4874667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counsel</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>c874667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>claim_state_code</element>
+            <list_id display_value="x_norca_med_cam_claim" element="NULL" name="x_norca_med_cam_claim" parent="NULL" relationship="NULL" sys_domain="global" view="c074667edbdc474075ea38ff9d9619da">4c74667edbdc474075ea38ff9d9619da</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_id>4c74667edbdc474075ea38ff9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_norca_med_cam_claim</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-08-04 13:31:17</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c74667edbdc474075ea38ff9d9619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_norca_med_cam_claim</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_x_norca_med_cam_claim_RPT8074623edbdc474075ea38ff9d9619d2</sys_update_name>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-08-04 13:31:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt8074623edbdc474075ea38ff9d9619d2" name="RPT8074623edbdc474075ea38ff9d9619d2">c074667edbdc474075ea38ff9d9619da</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

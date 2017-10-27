@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="County Lookup" max_length="40" name="x_norca_med_cam_county_lookup" type="collection">
+        <element label="County Code" max_length="40" name="county_code" type="string"/>
+        <element display="true" label="County" mandatory="true" max_length="30" name="county_name" type="string"/>
+        <element label="State Code" max_length="40" name="state_code" type="string"/>
+        <element label="State Postal Code" mandatory="true" max_length="2" name="state_postal_code" type="string"/>
+        <index name="index">
+            <element name="county_code"/>
+        </index>
+    </element>
+</database>

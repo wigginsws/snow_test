@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>100</order>
+        <question display_value="That your Specialist followed through on all committments to you">c1dafdd8db07ba0075ea38ff9d961978</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-26 12:46:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>540bb9d8db07ba0075ea38ff9d96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Extremely Satisfied</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>question_choice_540bb9d8db07ba0075ea38ff9d96198c</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-26 12:46:57</sys_updated_on>
+        <text>Extremely Satisfied</text>
+        <value>es</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=540bb9d8db07ba0075ea38ff9d96198c"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>540bb9d8db07ba0075ea38ff9d96198c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-26 12:46:57</sys_created_on>
+        <sys_id>940bb9d8db07ba0075ea38ff9d96198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-26 12:46:57</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>540bb9d8db07ba0075ea38ff9d96198c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-26 12:46:57</sys_created_on>
+        <sys_id>5c0bb9d8db07ba0075ea38ff9d96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-26 12:46:57</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

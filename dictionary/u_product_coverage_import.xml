@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Claims-OASIS-ProductCoverage" max_length="40" name="u_product_coverage_import" type="collection">
+        <element attributes="import_attribute_name=AGGREGATE_DISC_CAP" label="AGGREGATE_DISC_CAP" max_length="15" name="u_aggregate_disc_cap" type="decimal"/>
+        <element attributes="import_attribute_name=CANCELLATION_LEVEL_CODE,edge_encryption_enabled=true" label="CANCELLATION_LEVEL_CODE" max_length="40" name="u_cancellation_level_code" type="string"/>
+        <element attributes="import_attribute_name=CLAIM_TAIL_B,edge_encryption_enabled=true" label="CLAIM_TAIL_B" max_length="40" name="u_claim_tail_b" type="string"/>
+        <element attributes="import_attribute_name=CODE,edge_encryption_enabled=true" label="CODE" max_length="40" name="u_code" type="string"/>
+        <element attributes="import_attribute_name=COVERAGE_CODE,edge_encryption_enabled=true" label="COVERAGE_CODE" max_length="40" name="u_coverage_code" type="string"/>
+        <element attributes="import_attribute_name=COVERAGE_GROUP,edge_encryption_enabled=true" label="COVERAGE_GROUP" max_length="40" name="u_coverage_group" type="string"/>
+        <element attributes="import_attribute_name=COVERAGE_PROCESS_CODE,edge_encryption_enabled=true" label="COVERAGE_PROCESS_CODE" max_length="40" name="u_coverage_process_code" type="string"/>
+        <element attributes="import_attribute_name=COVERAGE_SEGMENT_CODE,edge_encryption_enabled=true" label="COVERAGE_SEGMENT_CODE" max_length="40" name="u_coverage_segment_code" type="string"/>
+        <element attributes="import_attribute_name=COVG_APPLICABLE_TO,edge_encryption_enabled=true" label="COVG_APPLICABLE_TO" max_length="40" name="u_covg_applicable_to" type="string"/>
+        <element attributes="import_attribute_name=COVG_PART_SHARED_LIMIT_B,edge_encryption_enabled=true" label="COVG_PART_SHARED_LIMIT_B" max_length="40" name="u_covg_part_shared_limit_b" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_AMT_OF_INSURANCE" label="DEFAULT_AMT_OF_INSURANCE" max_length="15" name="u_default_amt_of_insurance" type="decimal"/>
+        <element attributes="import_attribute_name=DEFAULT_LIMIT_CODE,edge_encryption_enabled=true" label="DEFAULT_LIMIT_CODE" max_length="40" name="u_default_limit_code" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_SHARED_CP_LIMIT_B,edge_encryption_enabled=true" label="DEFAULT_SHARED_CP_LIMIT_B" max_length="40" name="u_default_shared_cp_limit_b" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_SHARED_LIMIT_B,edge_encryption_enabled=true" label="DEFAULT_SHARED_LIMIT_B" max_length="40" name="u_default_shared_limit_b" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_SUBLIMIT_B,edge_encryption_enabled=true" label="DEFAULT_SUBLIMIT_B" max_length="40" name="u_default_sublimit_b" type="string"/>
+        <element attributes="import_attribute_name=EXPOSURE_BASIS_CODE,edge_encryption_enabled=true" label="EXPOSURE_BASIS_CODE" max_length="40" name="u_exposure_basis_code" type="string"/>
+        <element attributes="import_attribute_name=EXPOSURE_TYPE_CODE,edge_encryption_enabled=true" label="EXPOSURE_TYPE_CODE" max_length="40" name="u_exposure_type_code" type="string"/>
+        <element attributes="import_attribute_name=INFORCE_CALC_B,edge_encryption_enabled=true" label="INFORCE_CALC_B" max_length="40" name="u_inforce_calc_b" type="string"/>
+        <element attributes="import_attribute_name=INFORCE_WR_PREM_B,edge_encryption_enabled=true" label="INFORCE_WR_PREM_B" max_length="40" name="u_inforce_wr_prem_b" type="string"/>
+        <element attributes="import_attribute_name=LONG_DESCRIPTION,edge_encryption_enabled=true" label="LONG_DESCRIPTION" max_length="40" name="u_long_description" type="string"/>
+        <element attributes="import_attribute_name=MIN_PRIMARY_LIMIT" label="MIN_PRIMARY_LIMIT" max_length="15" name="u_min_primary_limit" type="decimal"/>
+        <element attributes="import_attribute_name=MULTI_LAYER_B,edge_encryption_enabled=true" label="MULTI_LAYER_B" max_length="40" name="u_multi_layer_b" type="string"/>
+        <element attributes="import_attribute_name=NOSE_COVERAGE_B,edge_encryption_enabled=true" label="NOSE_COVERAGE_B" max_length="40" name="u_nose_coverage_b" type="string"/>
+        <element attributes="import_attribute_name=OFFERED_DURATION" label="OFFERED_DURATION" max_length="15" name="u_offered_duration" type="decimal"/>
+        <element attributes="import_attribute_name=PARENT_PRODUCT_COVG_CODE,edge_encryption_enabled=true" label="PARENT_PRODUCT_COVG_CODE" max_length="40" name="u_parent_product_covg_code" type="string"/>
+        <element attributes="import_attribute_name=PCF_STATE,edge_encryption_enabled=true" label="PCF_STATE" max_length="40" name="u_pcf_state" type="string"/>
+        <element attributes="import_attribute_name=POLICY_FORM_CODE,edge_encryption_enabled=true" label="POLICY_FORM_CODE" max_length="40" name="u_policy_form_code" type="string"/>
+        <element attributes="import_attribute_name=POLICY_TYPE_CODE,edge_encryption_enabled=true" label="POLICY_TYPE_CODE" max_length="40" name="u_policy_type_code" type="string"/>
+        <element attributes="import_attribute_name=PRACTICE_STATE_CODE,edge_encryption_enabled=true" label="PRACTICE_STATE_CODE" max_length="40" name="u_practice_state_code" type="string"/>
+        <element attributes="import_attribute_name=PRIMARY_COVERAGE_B,edge_encryption_enabled=true" label="PRIMARY_COVERAGE_B" max_length="40" name="u_primary_coverage_b" type="string"/>
+        <element attributes="import_attribute_name=PRODUCT_COV_AGG_RESET_FK" label="PRODUCT_COV_AGG_RESET_FK" max_length="15" name="u_product_cov_agg_reset_fk" type="decimal"/>
+        <element attributes="import_attribute_name=RATE_PAYOR_DEPEND_B,edge_encryption_enabled=true" label="RATE_PAYOR_DEPEND_B" max_length="40" name="u_rate_payor_depend_b" type="string"/>
+        <element attributes="import_attribute_name=RATING_MODULE_CODE,edge_encryption_enabled=true" label="RATING_MODULE_CODE" max_length="40" name="u_rating_module_code" type="string"/>
+        <element attributes="import_attribute_name=RENEW_B,edge_encryption_enabled=true" label="RENEW_B" max_length="40" name="u_renew_b" type="string"/>
+        <element attributes="import_attribute_name=SEQUENCE_NO" label="SEQUENCE_NO" max_length="15" name="u_sequence_no" type="decimal"/>
+        <element attributes="import_attribute_name=SHARED_LIMIT_B,edge_encryption_enabled=true" label="SHARED_LIMIT_B" max_length="40" name="u_shared_limit_b" type="string"/>
+        <element attributes="import_attribute_name=SHORT_DESCRIPTION,edge_encryption_enabled=true" label="SHORT_DESCRIPTION" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="import_attribute_name=SHORT_TERM_B,edge_encryption_enabled=true" label="SHORT_TERM_B" max_length="40" name="u_short_term_b" type="string"/>
+        <element attributes="import_attribute_name=SPLIT_RETRO_B,edge_encryption_enabled=true" label="SPLIT_RETRO_B" max_length="40" name="u_split_retro_b" type="string"/>
+        <element attributes="import_attribute_name=SUBLIMIT_B,edge_encryption_enabled=true" label="SUBLIMIT_B" max_length="40" name="u_sublimit_b" type="string"/>
+        <element attributes="import_attribute_name=SUB_COVG_AVAILABLE_B,edge_encryption_enabled=true" label="SUB_COVG_AVAILABLE_B" max_length="40" name="u_sub_covg_available_b" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=TO_RATE_B,edge_encryption_enabled=true" label="TO_RATE_B" max_length="40" name="u_to_rate_b" type="string"/>
+    </element>
+</database>

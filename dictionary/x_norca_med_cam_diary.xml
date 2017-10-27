@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Diary Entry" max_length="40" name="x_norca_med_cam_diary" text_index="true" type="collection">
+        <element label="Assignee's Name" max_length="40" name="assignee_s_name" type="string"/>
+        <element label="Claim Number" max_length="32" name="claim" read_only="true" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Date and time closed" max_length="40" name="closed_date_and_time" read_only="true" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;if(current.assigned_to != ''){&#10;&#10;&#9;return current.assigned_to.getDisplayValue();  // return the calculated value&#10;&#9;}&#10;&#9;&#10;&#9;if(current.entity == 'c9108537db82f600394af9361d9619e6'){&#10;&#9;&#9;return current.assignee_s_name;&#10;&#9;}&#10;&#9;&#10;&#9;if(current.assignee_s_name == '' &amp;&amp; current.assigned_to == '' &amp;&amp; current.entity != ''){&#10;&#9;&#9;return current.entity.getDisplayValue();&#10;&#9;}&#10;})(current);" label="Current Assignee" max_length="40" name="current_assignee" type="string" virtual="true"/>
+        <element choice="1" label="Diary Type" max_length="40" name="diary_type" type="choice">
+            <choice>
+                <element label="Provide Policy &amp; Dec Page" sequence="0" value="provide_policy_dec_page"/>
+                <element label="Policy Not Available to Attach" sequence="1" value="policy_not_available_to_attach"/>
+                <element label="Defense counsel assignment pending" sequence="2" value="defense_counsel_assignment_pending"/>
+                <element label="Coverage Issue – Low Priority" sequence="3" value="coverage_issue_low_priority"/>
+                <element label="Coverage Issue – Medium Priority" sequence="4" value="coverage_issue_medium_priority"/>
+                <element label="Coverage Issue – High Priority" sequence="5" value="coverage_issue_high_priority"/>
+                <element label="Response to Settlement Demand - 5 days" sequence="6" value="response_to_settlement_demand_5"/>
+                <element label="Response to Settlement Demand - 25 days" sequence="7" value="response_to_settlement_demand_25"/>
+                <element label="Response to Settlement Demand - 30 days" sequence="8" value="response_to_settlement_demand_30"/>
+                <element label="Request for information/analysis from counsel - 5 days" sequence="9" value="request_for_information_from_counsel_5"/>
+                <element label="Request for information/analysis from counsel - 30 days" sequence="10" value="request_for_information_from_counsel_30"/>
+                <element label="Indemnity check approval" sequence="11" value="indemnity_check_approval"/>
+                <element label="Check Processing" sequence="12" value="check_processing"/>
+                <element label="Contact with insured/update insured" sequence="13" value="contact_with_insured_update_insured"/>
+                <element label="Setting final reserves" sequence="14" value="setting_final_reserves"/>
+                <element label="Reinsurance report initial and updates" sequence="15" value="reinsurance_report_initial_and_updates"/>
+                <element label="State specific report (e.g. Fund) required upon case establishment" sequence="16" value="state_specific_report"/>
+                <element label="State/Payment reporting required pending" sequence="17" value="state_payment_reporting_required_pending"/>
+                <element label="NPDB reporting required" sequence="18" value="npdb_reporting_required"/>
+                <element label="Safe Harbor Reminder (FL) - 150" sequence="19" value="safe_harbor_reminder_150"/>
+                <element label="Safe Harbor Reminder (FL) - 175" sequence="20" value="safe_harbor_reminder_175"/>
+                <element label="Safe Harbor Reminder (FL) - 200" sequence="21" value="safe_harbor_reminder_200"/>
+                <element label="Pre-Suit Reminder (FL) - 30" sequence="22" value="pre_suit_reminder_30"/>
+                <element label="Pre-Suit Reminder (FL) - 60" sequence="23" value="pre_suit_reminder_60"/>
+                <element label="Ad Hoc" sequence="24" value="adhoc"/>
+            </choice>
+        </element>
+        <element label="Assignee's email address" max_length="40" name="ea_email_address" type="string"/>
+        <element label="Entity" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
+        <element hint="Check box for setting task to external party" label="External Assignee" max_length="40" name="external_assignee" type="boolean"/>
+        <element label="Date and time resolved" max_length="40" name="resolved_date_and_time" type="glide_date_time"/>
+        <element label="Due Date" max_length="40" name="u_due_date" type="glide_date"/>
+    </element>
+</database>

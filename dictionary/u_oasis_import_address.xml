@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-Address" max_length="40" name="u_oasis_import_address" type="collection">
+        <element attributes="import_attribute_name=ADDRESS_LINE1,edge_encryption_enabled=true" label="ADDRESS_LINE1" max_length="60" name="u_address_line1" type="string"/>
+        <element attributes="import_attribute_name=ADDRESS_LINE2,edge_encryption_enabled=true" label="ADDRESS_LINE2" max_length="60" name="u_address_line2" type="string"/>
+        <element attributes="import_attribute_name=ADDRESS_LINE3,edge_encryption_enabled=true" label="ADDRESS_LINE3" max_length="60" name="u_address_line3" type="string"/>
+        <element attributes="import_attribute_name=ADDRESS_NAME,edge_encryption_enabled=true" label="ADDRESS_NAME" max_length="60" name="u_address_name" type="string"/>
+        <element attributes="import_attribute_name=ADDRESS_PK" label="ADDRESS_PK" max_length="15" name="u_address_pk" type="decimal"/>
+        <element attributes="import_attribute_name=ADDRESS_TYPE_CODE,edge_encryption_enabled=true" label="ADDRESS_TYPE_CODE" max_length="40" name="u_address_type_code" type="string"/>
+        <element attributes="import_attribute_name=CHAR1,edge_encryption_enabled=true" label="CHAR1" max_length="300" name="u_char1" type="string"/>
+        <element attributes="import_attribute_name=CHAR2,edge_encryption_enabled=true" label="CHAR2" max_length="300" name="u_char2" type="string"/>
+        <element attributes="import_attribute_name=CHAR3,edge_encryption_enabled=true" label="CHAR3" max_length="300" name="u_char3" type="string"/>
+        <element attributes="import_attribute_name=CHAR4,edge_encryption_enabled=true" label="CHAR4" max_length="300" name="u_char4" type="string"/>
+        <element attributes="import_attribute_name=CHAR5,edge_encryption_enabled=true" label="CHAR5" max_length="300" name="u_char5" type="string"/>
+        <element attributes="import_attribute_name=CITY,edge_encryption_enabled=true" label="CITY" max_length="40" name="u_city" type="string"/>
+        <element attributes="import_attribute_name=COPIED_ADDRESS_FK" label="COPIED_ADDRESS_FK" max_length="15" name="u_copied_address_fk" type="decimal"/>
+        <element attributes="import_attribute_name=COUNTRY_CODE,edge_encryption_enabled=true" label="COUNTRY_CODE" max_length="40" name="u_country_code" type="string"/>
+        <element attributes="import_attribute_name=COUNTY_CODE,edge_encryption_enabled=true" label="COUNTY_CODE" max_length="40" name="u_county_code" type="string"/>
+        <element attributes="import_attribute_name=DATE1" label="DATE1" max_length="40" name="u_date1" type="datetime"/>
+        <element attributes="import_attribute_name=DATE2" label="DATE2" max_length="40" name="u_date2" type="datetime"/>
+        <element attributes="import_attribute_name=DATE3" label="DATE3" max_length="40" name="u_date3" type="datetime"/>
+        <element attributes="import_attribute_name=DATE4" label="DATE4" max_length="40" name="u_date4" type="datetime"/>
+        <element attributes="import_attribute_name=DATE5" label="DATE5" max_length="40" name="u_date5" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=EXPIRED_ADDRESS_FK" label="EXPIRED_ADDRESS_FK" max_length="15" name="u_expired_address_fk" type="decimal"/>
+        <element attributes="import_attribute_name=LEGACY_DATA_ID,edge_encryption_enabled=true" label="LEGACY_DATA_ID" max_length="50" name="u_legacy_data_id" type="string"/>
+        <element attributes="import_attribute_name=NUM1" label="NUM1" max_length="15" name="u_num1" type="decimal"/>
+        <element attributes="import_attribute_name=NUM2" label="NUM2" max_length="15" name="u_num2" type="decimal"/>
+        <element attributes="import_attribute_name=NUM3" label="NUM3" max_length="15" name="u_num3" type="decimal"/>
+        <element attributes="import_attribute_name=NUM4" label="NUM4" max_length="15" name="u_num4" type="decimal"/>
+        <element attributes="import_attribute_name=NUM5" label="NUM5" max_length="15" name="u_num5" type="decimal"/>
+        <element attributes="import_attribute_name=POST_OFFICE_ADDRESS_B,edge_encryption_enabled=true" label="POST_OFFICE_ADDRESS_B" max_length="40" name="u_post_office_address_b" type="string"/>
+        <element attributes="import_attribute_name=PRIMARY_ADDRESS_B" label="PRIMARY_ADDRESS_B" max_length="40" name="u_primary_address_b" type="char"/>
+        <element attributes="import_attribute_name=PROVINCE,edge_encryption_enabled=true" label="PROVINCE" max_length="40" name="u_province" type="string"/>
+        <element attributes="import_attribute_name=REINS_CONTROL_ADDR,edge_encryption_enabled=true" label="REINS_CONTROL_ADDR" max_length="100" name="u_reins_control_addr" type="string"/>
+        <element attributes="import_attribute_name=SOURCE_RECORD_FK" label="SOURCE_RECORD_FK" max_length="15" name="u_source_record_fk" type="decimal"/>
+        <element attributes="import_attribute_name=SOURCE_TABLE_NAME,edge_encryption_enabled=true" label="SOURCE_TABLE_NAME" max_length="40" name="u_source_table_name" type="string"/>
+        <element attributes="import_attribute_name=STATE_CODE,edge_encryption_enabled=true" label="STATE_CODE" max_length="40" name="u_state_code" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=UNDELIVERABLE_B,edge_encryption_enabled=true" label="UNDELIVERABLE_B" max_length="40" name="u_undeliverable_b" type="string"/>
+        <element attributes="import_attribute_name=USA_ADDRESS_B,edge_encryption_enabled=true" label="USA_ADDRESS_B" max_length="40" name="u_usa_address_b" type="string"/>
+        <element attributes="import_attribute_name=VENDOR_SITE_CODE,edge_encryption_enabled=true" label="VENDOR_SITE_CODE" max_length="40" name="u_vendor_site_code" type="string"/>
+        <element attributes="import_attribute_name=ZIPCODE,edge_encryption_enabled=true" label="ZIPCODE" max_length="40" name="u_zipcode" type="string"/>
+        <element attributes="import_attribute_name=ZIP_PLUS_FOUR,edge_encryption_enabled=true" label="ZIP_PLUS_FOUR" max_length="40" name="u_zip_plus_four" type="string"/>
+    </element>
+</database>

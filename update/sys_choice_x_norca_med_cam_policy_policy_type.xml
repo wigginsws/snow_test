@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="policy_type" table="x_norca_med_cam_policy" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Managed Care</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e747431db96360075ea38ff9d9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:37</sys_updated_on>
+            <value>MNGDCR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pollution Liability</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:42:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e74b431db96360075ea38ff9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>POLLLIAB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Community Health Clinic Program</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 19:02:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>096103c5db16fe00d596327e9d9619e1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>CHCP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CLMSMDE</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-23 01:20:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e4aeb81db2bf20075ea38ff9d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 01:20:00</sys_updated_on>
+            <value>CLMSMDE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CPG</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>823eb249db92fe00d596327e9d961954</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 18:48:58</sys_updated_on>
+            <value>CPG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c63eb249db92fe00d596327e9d961963</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>ENTITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excess</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb3e7649db92fe00d596327e9d961960</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>EXCESS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excess and Surplus</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:57:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3b000b85dbd2fe00d596327e9d961916</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>EXC_SURP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EXENTY</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-23 02:36:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0cbfb85db6ff20075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 02:36:19</sys_updated_on>
+            <value>EXENTY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excess</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:54:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df8ffe41dbd2fe00d596327e9d96197b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>EXS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facility</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>863eb249db92fe00d596327e9d96193a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>FACILITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FLDIC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-23 02:34:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e6bf705db6ff20075ea38ff9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 02:34:50</sys_updated_on>
+            <value>FLDIC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a3eb249db92fe00d596327e9d961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>GROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>204eb649db92fe00d596327e9d96196f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>GRP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Healthcare Facility</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da3eb249db92fe00d596327e9d9619ff</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>HCF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health Care Facility</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 19:02:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8851cb45db16fe00d596327e9d96199f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>HCFC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health Care Professionals</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c63eb249db92fe00d596327e9d961946</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>HCP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health Care Professionals Occurrence</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:57:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9404fc5dbd2fe00d596327e9d961995</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>HCPO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Healthcare System</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f64e7a49db92fe00d596327e9d9619dd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:37</sys_updated_on>
+            <value>HLTHCRSYS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospital</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>323ef249db92fe00d596327e9d9619e6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>HOSPITAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IHS Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:50:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e8e36c9db92fe00d596327e9d961939</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>IHSOTHER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Individual</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd3e7249db92fe00d596327e9d9619d4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>IND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Individual Physician and Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>263ef249db92fe00d596327e9d961941</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>INDP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MEDP</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-23 02:30:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac8af78ddb2ff20075ea38ff9d961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 02:30:52</sys_updated_on>
+            <value>MEDP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Migrated PLMS Tail Policies - Individual</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:50:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e8e36c9db92fe00d596327e9d961962</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:38</sys_updated_on>
+            <value>MIGRTAILLN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OCC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-23 01:20:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a64aeb81db2bf20075ea38ff9d96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 01:20:00</sys_updated_on>
+            <value>OCC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Individual/Group Policy</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:49:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>035e7289db92fe00d596327e9d96198f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:42:39</sys_updated_on>
+            <value>SPM01</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VRP</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca3eb249db92fe00d596327e9d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 18:48:58</sys_updated_on>
+            <value>VRP</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>policy_type</element>
+            <name>x_norca_med_cam_policy</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 18:48:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>fb4633f3db900300e022771c8c9619d6</sys_id>
+            <sys_mod_count>52</sys_mod_count>
+            <sys_name>policy_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_policy_policy_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-23 02:36:19</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

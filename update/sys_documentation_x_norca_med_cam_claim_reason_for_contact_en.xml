@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="reason_for_contact" label="Contact Reason" language="en" table="x_norca_med_cam_claim">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reason_for_contact</element>
+            <help/>
+            <hint>Reason for claim report.</hint>
+            <label>Contact Reason</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <plural>Contact Reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-03-27 18:09:55</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>12854ec1db71fe4062bafd441d9619e3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Contact Reason</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_claim_reason_for_contact_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-21 21:52:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

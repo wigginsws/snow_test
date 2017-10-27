@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_norca_med_cam_claim</basic_apply_to>
+        <basic_query_from>x_norca_med_cam_participant</basic_query_from>
+        <insert_callback/>
+        <name>Participants</name>
+        <query_from/>
+        <query_with><![CDATA[current.addQuery('claim', parent.sys_id);]]></query_with>
+        <reference_field>claim</reference_field>
+        <related_list/>
+        <simple_reference>true</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>jen@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-20 18:35:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c121fdf4db127a8062bafd441d961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Participants</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_relationship_c121fdf4db127a8062bafd441d961934</sys_update_name>
+        <sys_updated_by>jen@buildon.me</sys_updated_by>
+        <sys_updated_on>2017-04-20 18:35:03</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=c121fdf4db127a8062bafd441d961934"/>
+</record_update>

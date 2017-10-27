@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-Case" max_length="40" name="u_case_import" type="collection">
+        <element attributes="import_attribute_name=CHECK_DIGIT" label="CHECK_DIGIT" max_length="15" name="u_check_digit" type="decimal"/>
+        <element attributes="import_attribute_name=CURRENT_STATUS_CODE,edge_encryption_enabled=true" label="CURRENT_STATUS_CODE" max_length="40" name="u_current_status_code" type="string"/>
+        <element attributes="import_attribute_name=CURRENT_STATUS_DATE" label="CURRENT_STATUS_DATE" max_length="40" name="u_current_status_date" type="datetime"/>
+        <element attributes="import_attribute_name=CURRENT_TYPE_CODE,edge_encryption_enabled=true" label="CURRENT_TYPE_CODE" max_length="40" name="u_current_type_code" type="string"/>
+        <element attributes="import_attribute_name=CURRENT_TYPE_DATE" label="CURRENT_TYPE_DATE" max_length="40" name="u_current_type_date" type="datetime"/>
+        <element attributes="import_attribute_name=END_DATE" label="END_DATE" max_length="40" name="u_end_date" type="datetime"/>
+        <element attributes="import_attribute_name=LEGACY_ID,edge_encryption_enabled=true" label="LEGACY_ID" max_length="2000" name="u_legacy_id" type="string"/>
+        <element attributes="import_attribute_name=LOCATION_CODE,edge_encryption_enabled=true" label="LOCATION_CODE" max_length="200" name="u_location_code" type="string"/>
+        <element attributes="import_attribute_name=OCCURRENCE_CATEGORY_CODE,edge_encryption_enabled=true" label="OCCURRENCE_CATEGORY_CODE" max_length="40" name="u_occurrence_category_code" type="string"/>
+        <element attributes="import_attribute_name=OCCURRENCE_DEDUCT" label="OCCURRENCE_DEDUCT" max_length="15" name="u_occurrence_deduct" type="decimal"/>
+        <element attributes="import_attribute_name=OCCURRENCE_LIMIT" label="OCCURRENCE_LIMIT" max_length="15" name="u_occurrence_limit" type="decimal"/>
+        <element attributes="import_attribute_name=OCCURRENCE_NAME,edge_encryption_enabled=true" label="OCCURRENCE_NAME" max_length="40" name="u_occurrence_name" type="string"/>
+        <element attributes="import_attribute_name=OCCURRENCE_NO,edge_encryption_enabled=true" label="OCCURRENCE_NO" max_length="40" name="u_occurrence_no" type="string"/>
+        <element attributes="import_attribute_name=OCCURRENCE_PK" label="OCCURRENCE_PK" max_length="15" name="u_occurrence_pk" type="decimal"/>
+        <element attributes="import_attribute_name=REPLICATE_CLAIMANT_B,edge_encryption_enabled=true" label="REPLICATE_CLAIMANT_B" max_length="40" name="u_replicate_claimant_b" type="string"/>
+        <element attributes="import_attribute_name=START_DATE" label="START_DATE" max_length="40" name="u_start_date" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+    </element>
+</database>

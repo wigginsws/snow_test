@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Indemnity" max_length="40" name="x_norca_med_cam_indemnity" text_index="true" type="collection">
+        <element label="Add Multiple Claims" max_length="40" name="add_multiple_claims" type="boolean"/>
+        <element label="Amount" max_length="15" name="amount" type="decimal"/>
+        <element label="Amount 1" max_length="15" name="amount_1" type="decimal"/>
+        <element label="Amount 2" max_length="15" name="amount_2" type="decimal"/>
+        <element label="Amount 3" max_length="15" name="amount_3" type="decimal"/>
+        <element label="Amount 4" max_length="15" name="amount_4" type="decimal"/>
+        <element hint="Select an approver if  invoice is $500,000 and above." label="Director Approver" max_length="32" name="approver_1" reference="sys_user" reference_qual="department=b76f6dc3db1b124080e9d9fdbf9619e4^EQ" reference_qual_condition="department=b76f6dc3db1b124080e9d9fdbf9619e4^EQ" type="reference"/>
+        <element hint="If over 1 million, a second level of approval is needed.&#13;&#10;" label="SVP Approver" max_length="32" name="approver_2" reference="sys_user" type="reference"/>
+        <element label="Claim Number" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Claim Number" max_length="32" name="claim_number_1" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Claim Number 2" max_length="32" name="claim_number_2" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Claim Number 3" max_length="32" name="claim_number_3" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Claim Number 4" max_length="32" name="claim_number_4" reference="x_norca_med_cam_claim" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Indemnity Type" max_length="40" name="indemnity_type" type="string">
+            <choice>
+                <element label="Final" sequence="0" value="Final"/>
+                <element label="Partial" sequence="1" value="Partial"/>
+                <element label="Medical" sequence="2" value="Medical"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Payee" max_length="40" name="payee" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Taxpayer Identification  Info" max_length="40" name="taxpayer_identification_info" type="string"/>
+    </element>
+</database>

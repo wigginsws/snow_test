@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="char4" label="_char4" language="en" table="x_norca_med_cam_claim_entry_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>char4</element>
+            <help/>
+            <hint/>
+            <label>_char4</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_entry_log</name>
+            <plural>_char4s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-27 19:48:36</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0665cac7db1aba0075ea38ff9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>_char4</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_claim_entry_log_char4_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-27 19:48:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

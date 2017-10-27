@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="Oasis Web Service">bd275793db367a00d596327e9d9619e2</basic_auth_profile>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:par="http://www.delphi-tech.com/ows/PartyChangeService" xmlns:par1="http://www.delphi-tech.com/ows/Party">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<par:PartyChangeRequest>
+			<par:UserId>${PartyChangeRequest.UserId}</par:UserId>
+			<par1:Address key="${PartyChangeRequest.Address}">
+				<par1:AddressNumberId>${Address.AddressNumberId}</par1:AddressNumberId>
+				<par1:ExternalReferenceId>${Address.ExternalReferenceId}</par1:ExternalReferenceId>
+				<par1:LineOne>${Address.LineOne}</par1:LineOne>
+				<par1:LineTwo>${Address.LineTwo}</par1:LineTwo>
+				<par1:LineThree>${Address.LineThree}</par1:LineThree>
+				<par1:CityName>${Address.CityName}</par1:CityName>
+				<par1:CountyCode>${Address.CountyCode}</par1:CountyCode>
+				<par1:StateOrProvinceCode description="${Address.StateOrProvinceCode}">${Address.StateOrProvinceCode}</par1:StateOrProvinceCode>
+				<par1:PostalCode>${Address.PostalCode}</par1:PostalCode>
+				<par1:CountryCode description="${Address.CountryCode}">${Address.CountryCode}</par1:CountryCode>
+				<par1:CountryName>${Address.CountryName}</par1:CountryName>
+				<par1:AttentionName>${Address.AttentionName}</par1:AttentionName>
+				<par1:PostOfficeAddressIndicator description="${Address.PostOfficeAddressIndicator}">${Address.PostOfficeAddressIndicator}</par1:PostOfficeAddressIndicator>
+			</par1:Address>
+			<par1:Person key="${PartyChangeRequest.Person}">
+				<par1:PersonNumberId>${Person.PersonNumberId}</par1:PersonNumberId>
+				<par1:BasicAddress addressReference="${PartyChangeRequest.Address}" key="${Person.BasicAddress}">
+					<par1:PrimaryIndicator description="${BasicAddress.PrimaryIndicator}">${BasicAddress.PrimaryIndicator}</par1:PrimaryIndicator>
+					<par1:FuturePrimaryIndicator description="${BasicAddress.FuturePrimaryIndicator}">${BasicAddress.FuturePrimaryIndicator}</par1:FuturePrimaryIndicator>
+					<par1:AddressTypeCode description="${BasicAddress.AddressTypeCode}">${BasicAddress.AddressTypeCode}</par1:AddressTypeCode>
+					<par1:AddressPeriod>
+						<par1:StartDate>${AddressPeriod.StartDate}</par1:StartDate>
+						<par1:EndDate>${AddressPeriod.EndDate}</par1:EndDate>
+					</par1:AddressPeriod>
+				</par1:BasicAddress>
+			</par1:Person>
+			<par:DataModificationInformation>
+				<par:ActionCode/>
+				<par:PreviousDataValueDescription>
+					<par1:Address key="${PartyChangeRequest.Address}">
+						<par1:AddressNumberId>${Address.AddressNumberId}</par1:AddressNumberId>
+						<!--<par1:ExternalReferenceId>${Address.ExternalReferenceId}</par1:ExternalReferenceId>
+						<par1:LineOne>${Address.LineOne}</par1:LineOne>
+						<par1:LineTwo>${Address.LineTwo}</par1:LineTwo>
+						<par1:LineThree>${Address.LineThree}</par1:LineThree>
+						<par1:CityName>${Address.CityName}</par1:CityName>
+						<par1:CountyCode>${Address.CountyCode}</par1:CountyCode>
+						<par1:StateOrProvinceCode description="${Address.StateOrProvinceCode}">${Address.StateOrProvinceCode}</par1:StateOrProvinceCode>
+						<par1:PostalCode>${Address.PostalCode}</par1:PostalCode>
+						<par1:CountryCode description="${Address.CountryCode}">${Address.CountryCode}</par1:CountryCode>
+						<par1:CountryName>${Address.CountryName}</par1:CountryName>
+						<par1:AttentionName>${Address.AttentionName}</par1:AttentionName>
+						<par1:PostOfficeAddressIndicator description="${Address.PostOfficeAddressIndicator}">${Address.PostOfficeAddressIndicator}</par1:PostOfficeAddressIndicator>
+						-->
+					</par1:Address>
+					<par1:Person key="${PartyChangeRequest.Person}">
+						<par1:PersonNumberId>${Person.PersonNumberId}</par1:PersonNumberId>
+						<par1:BasicAddress addressReference="${PartyChangeRequest.Address}" key="${Person.BasicAddress}">
+							<par1:PrimaryIndicator description="${BasicAddress.PrimaryIndicator}">${BasicAddress.PrimaryIndicator}</par1:PrimaryIndicator>
+							<par1:FuturePrimaryIndicator description="${BasicAddress.FuturePrimaryIndicator}">${BasicAddress.FuturePrimaryIndicator}</par1:FuturePrimaryIndicator>
+							<par1:AddressTypeCode description="${BasicAddress.AddressTypeCode}">${BasicAddress.AddressTypeCode}</par1:AddressTypeCode>
+							<par1:AddressPeriod>
+								<par1:StartDate>${AddressPeriod.StartDate}</par1:StartDate>
+								<par1:EndDate>${AddressPeriod.EndDate}</par1:EndDate>
+							</par1:AddressPeriod>
+						</par1:BasicAddress>
+					</par1:Person>
+				</par:PreviousDataValueDescription>
+			</par:DataModificationInformation>
+		</par:PartyChangeRequest>
+	</soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>updatePersonAddress</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>CAM-OASIS-PartyChangeService [ updatePersonAddress ]</qualified_name>
+        <soap_action>partyChangeRequest</soap_action>
+        <soap_endpoint>http://oas16eoadev.norcalmutual.com:8080/dev/eCIS/wsCIS/PartyChangeService</soap_endpoint>
+        <soap_message display_value="CAM-OASIS-PartyChangeService">0db6d793db367a00d596327e9d961962</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-06 01:27:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>45c8eed9db33fa00d596327e9d96192f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>updatePersonAddress</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_function_45c8eed9db33fa00d596327e9d96192f</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-17 20:58:26</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

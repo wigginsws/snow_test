@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_state_geo" table="x_norca_med_cam_fnol_routing" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alaska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffc49c24db163a00394af9361d961962</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:12:05</sys_updated_on>
+            <value>AK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alabama</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:11:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4b45c24db163a00394af9361d9619e0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:11:58</sys_updated_on>
+            <value>AL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arkansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c5e49c24db163a00394af9361d9619a0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:12:25</sys_updated_on>
+            <value>AR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arizona</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22d49c24db163a00394af9361d96199e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:12:14</sys_updated_on>
+            <value>AZ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>California</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5be49c24db163a00394af9361d961966</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:12:36</sys_updated_on>
+            <value>CA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Colorado</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cef45c24db163a00394af9361d9619e2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:12:46</sys_updated_on>
+            <value>CO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Connecticut</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:12:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f405dc24db163a00394af9361d961907</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:13:07</sys_updated_on>
+            <value>CT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>District of Columbia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:13:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0425dc24db163a00394af9361d9619b4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:13:30</sys_updated_on>
+            <value>DC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Delaware</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:13:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a815dc24db163a00394af9361d9619a0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:13:17</sys_updated_on>
+            <value>DE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Florida</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:13:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f25dc24db163a00394af9361d9619e9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:13:37</sys_updated_on>
+            <value>FL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Georgia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:13:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89355064db163a00394af9361d961910</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:13:47</sys_updated_on>
+            <value>GA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hawaii</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:13:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a335dc24db163a00394af9361d9619ec</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:14:02</sys_updated_on>
+            <value>HI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Iowa</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:15:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5855064db163a00394af9361d961961</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:15:09</sys_updated_on>
+            <value>IA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Idaho</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:14:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b2459064db163a00394af9361d961912</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:14:12</sys_updated_on>
+            <value>ID</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Illinois</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:14:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9555064db163a00394af9361d9619d3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:14:49</sys_updated_on>
+            <value>IL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Indiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:14:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2759064db163a00394af9361d961915</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:15:00</sys_updated_on>
+            <value>IN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:15:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1785d064db163a00394af9361d9619ab</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:15:16</sys_updated_on>
+            <value>KS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kentucky</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:15:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51955064db163a00394af9361d9619b3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:15:25</sys_updated_on>
+            <value>KY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Louisiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:16:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f95d064db163a00394af9361d9619d1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:16:30</sys_updated_on>
+            <value>LA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Massachusetts</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:16:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bae59464db163a00394af9361d961903</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:16:59</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maryland</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:16:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01e51464db163a00394af9361d961926</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:16:44</sys_updated_on>
+            <value>MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maine</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:16:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93d51464db163a00394af9361d961925</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:16:37</sys_updated_on>
+            <value>ME</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Michigan</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:17:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aef59464db163a00394af9361d96198c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:17:09</sys_updated_on>
+            <value>MI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Minnesota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:17:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc069464db163a00394af9361d961904</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:17:29</sys_updated_on>
+            <value>MN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missouri</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:17:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa265464db163a00394af9361d9619eb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:00</sys_updated_on>
+            <value>MO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mississippi</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:17:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61169464db163a00394af9361d961990</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:17:50</sys_updated_on>
+            <value>MS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Montana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d365464db163a00394af9361d9619ec</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:11</sys_updated_on>
+            <value>MT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66769864db163a00394af9361d961916</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:19</sys_updated_on>
+            <value>NC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>20861864db163a00394af9361d96199c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:29</sys_updated_on>
+            <value>ND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nebraska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90465464db163a00394af9361d9619ee</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:23</sys_updated_on>
+            <value>NE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Hampshire</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc56d464db163a00394af9361d9619ff</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:40</sys_updated_on>
+            <value>NH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Jersey</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47561864db163a00394af9361d961900</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:48</sys_updated_on>
+            <value>NJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Mexico</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1665464db163a00394af9361d9619f2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:59</sys_updated_on>
+            <value>NM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nevada</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:18:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4346d464db163a00394af9361d9619ff</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:18:32</sys_updated_on>
+            <value>NV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New York</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37661864db163a00394af9361d961902</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:10</sys_updated_on>
+            <value>NY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ohio</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6861864db163a00394af9361d96199c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:37</sys_updated_on>
+            <value>OH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oklahoma</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>41969864db163a00394af9361d961937</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:47</sys_updated_on>
+            <value>OK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oregon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:19:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b969864db163a00394af9361d961939</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:19:54</sys_updated_on>
+            <value>OR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pennsylvania</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49a6d864db163a00394af9361d96193f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:20:10</sys_updated_on>
+            <value>PA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Puerto Rico</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cb69864db163a00394af9361d9619a9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:20:19</sys_updated_on>
+            <value>PR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rhode Island</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0bb69864db163a00394af9361d9619ed</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:20:28</sys_updated_on>
+            <value>RI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5c6d864db163a00394af9361d961948</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:20:38</sys_updated_on>
+            <value>SC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3c6d864db163a00394af9361d9619e2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:20:48</sys_updated_on>
+            <value>SD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tennessee</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:20:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ad61c64db163a00394af9361d96196e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:21:02</sys_updated_on>
+            <value>TN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Texas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:21:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29e61c64db163a00394af9361d961971</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:21:19</sys_updated_on>
+            <value>TX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Utah</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:21:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4f6d864db163a00394af9361d9619f9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:21:32</sys_updated_on>
+            <value>UT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:23:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38279c64db163a00394af9361d961901</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:23:55</sys_updated_on>
+            <value>VA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virgin Islands</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:22:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b075c64db163a00394af9361d9619ff</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:22:04</sys_updated_on>
+            <value>VI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vermont</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1075c64db163a00394af9361d96197c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:21:40</sys_updated_on>
+            <value>VT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Washington</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:24:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63875c64db163a00394af9361d96197f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:24:08</sys_updated_on>
+            <value>WA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wisconsin</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:24:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75a75c64db163a00394af9361d961982</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:24:31</sys_updated_on>
+            <value>WI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>West Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b69750a4db163a00394af9361d961920</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:24:20</sys_updated_on>
+            <value>WV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state_geo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wyoming</label>
+            <language>en</language>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sequence/>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:24:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f4b790a4db163a00394af9361d961904</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-19 17:24:41</sys_updated_on>
+            <value>WY</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_state_geo</element>
+            <name>x_norca_med_cam_fnol_routing</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-19 17:11:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9346ffb3db900300e022771c8c9619ff</sys_id>
+            <sys_mod_count>112</sys_mod_count>
+            <sys_name>u_state_geo</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_fnol_routing_u_state_geo</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:34</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

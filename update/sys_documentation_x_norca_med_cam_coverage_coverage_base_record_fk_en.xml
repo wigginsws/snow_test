@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="coverage_base_record_fk" label="Coverage Base Record" language="en" table="x_norca_med_cam_coverage">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>coverage_base_record_fk</element>
+            <help/>
+            <hint/>
+            <label>Coverage Base Record</label>
+            <language>en</language>
+            <name>x_norca_med_cam_coverage</name>
+            <plural>Coverage Base Records</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-07-10 19:27:58</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>91560f76dbffb24075ea38ff9d961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Coverage Base Record</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_coverage_coverage_base_record_fk_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-21 14:36:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

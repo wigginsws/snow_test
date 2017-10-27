@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Script-Update Claim Group to Specialist</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-06-20 00:56:31</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[//update the assignment group on all claims in the investigate state.
+var gr = new GlideRecord("x_norca_med_cam_claim");
+var strQuery='state=3';
+gr.addEncodedQuery(strQuery);
+gr.query();
+while (gr.next()) {
+	gr.assignment_group='ae4458bbdbe57e4062bafd441d9619d4';
+	gr.update();
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-06-21 16:30:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>208760f8dbeffa00d596327e9d96192c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CAM-Script-Update Claim Group to Specialist</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_208760f8dbeffa00d596327e9d96192c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-24 04:42:51</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <map display_value="Risk Transform">861f165cdbae7e0075ea38ff9d9619d6</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	if (source.u_primary_risk_b && (new cam_DataSyncUtils()).isRecordEffectiveSimple(target, "effective_from_date", "effective_to_date")) {
+		if (target.policy_reference && target.entity) {
+			var gr = new GlideRecord(cam.SCOPE_ID + "_policy");
+			if (gr.get(target.policy_reference)) {
+				gr.setValue("original_insured_name", target.entity);
+			} else {
+				gs.warn("[transformRisk] Could not set Named Insured on Policy, Risk: " + source.u_risk_name + "(" + source.u_risk_pk + "), Policy: " + source.u_policy_fk );
+			}
+		} else {
+			gs.warn("[transformRisk] Could not set Named Insured on Policy, Risk: " + source.u_risk_name + "(" + source.u_risk_pk + "), Policy: " + source.u_policy_fk);
+		}
+	}
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-17 02:18:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6eebb8d7db9b360075ea38ff9d9619bf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_transform_script_6eebb8d7db9b360075ea38ff9d9619bf</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-17 02:45:37</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>

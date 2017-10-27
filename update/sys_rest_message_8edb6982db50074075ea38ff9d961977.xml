@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>For processing a Claim </description>
+        <name>CAM-ClaimService</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://norcalapi-dev.norcalmutual.com/api/Claim</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>mlindsay</sys_created_by>
+        <sys_created_on>2017-08-02 01:28:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8edb6982db50074075ea38ff9d961977</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CAM-ClaimService</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_rest_message_8edb6982db50074075ea38ff9d961977</sys_update_name>
+        <sys_updated_by>mlindsay</sys_updated_by>
+        <sys_updated_on>2017-08-02 18:27:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

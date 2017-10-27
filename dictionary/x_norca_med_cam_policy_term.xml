@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Policy Term" max_length="40" name="x_norca_med_cam_policy_term" type="collection">
+        <element label="Accounting - Effective From" max_length="40" name="accounting_effective_from" read_only="true" type="glide_date"/>
+        <element label="Accounting - Effective To" max_length="40" name="accounting_effective_to" read_only="true" type="glide_date"/>
+        <element label="Account ID" max_length="10" name="account_id" read_only="true" type="string"/>
+        <element label="Account Number" max_length="15" name="account_number" read_only="true" type="string"/>
+        <element label="Binder" max_length="40" name="binder" read_only="true" type="boolean"/>
+        <element choice="1" label="Cancellation Reason" max_length="10" name="cancellation_reason" read_only="true" type="string">
+            <choice>
+                <element label="65/5 - not Retired" value="K655NOTRET"/>
+                <element label="ADC-Claims Experience" value="ADCCLMS"/>
+                <element label="ADC-Fraud/Misrepresentation" value="ADCFRAUD"/>
+                <element label="ADC-Incomplete App" value="ADCINCOMP"/>
+                <element label="ADC-Licensure Action" value="ADCLICENS"/>
+                <element label="ADC-Non Compliance with UW req" value="ADCNOCMPL"/>
+                <element label="ADC-Practice Profile" value="ADCPRCPRF"/>
+                <element label="ADC-Prior UW Action" value="ADCPRIORUW"/>
+                <element label="ADC-Risk Management" value="ADCRM"/>
+                <element label="ADC-State Board Action" value="ADCSTBRD"/>
+                <element label="ADC-UW Guidelines" value="ADCUW"/>
+                <element label="ADC-ZOther" value="ADCOTHER"/>
+                <element label="Add to Group" value="ADDTOGRP"/>
+                <element label="AIG" value="KAIG"/>
+                <element label="AIG" value="AIG2"/>
+                <element label="All or None" value="ALLORNONE3"/>
+                <element label="All or None" value="ALLORNONE2"/>
+                <element label="All or None" value="ALLORNONE4"/>
+                <element label="Applicant Deceased" value="APPLTDECSD"/>
+                <element label="Applicant Deceased" value="APPLTDEC"/>
+                <element label="Applicant Left State" value="APPLFTSTAT"/>
+                <element label="Applicant Left State" value="APPLTLFTST"/>
+                <element label="AWA-Coverage Not Needed" value="AWACVGNO"/>
+                <element label="AWA-Pricing" value="AWAPRICE"/>
+                <element label="AWA-Remaining With Current Carrier" value="AWACURRENT"/>
+                <element label="AWA-Secured Other Coverage" value="AWAOTHCOV"/>
+                <element label="AWA-ZOther" value="AWOTHER"/>
+                <element label="Bare" value="BARE3"/>
+                <element label="Bare" value="KBARE"/>
+                <element label="Bare" value="BARE2"/>
+                <element label="Bare" value="BARE4"/>
+                <element label="Beta" value="BETA"/>
+                <element label="Better AM Best Rating" value="NIN"/>
+                <element label="Better AM Best Rating" value="CIN"/>
+                <element label="Binder 30 Day" value="BINDER30"/>
+                <element label="Binder 60 Day" value="BINDER60"/>
+                <element label="Breach of Terms/Conditions" value="BRCHTERMS"/>
+                <element label="Cancel Non-Pay" value="CCNPP"/>
+                <element label="Canceled by Board" value="BOARD"/>
+                <element label="Canceled due to fraud" value="FRAUD"/>
+                <element label="CAP/MPT" value="CAP/MPT"/>
+                <element label="CAP/MPT" value="KCAPMPT"/>
+                <element label="Captive" value="CAPTIVE"/>
+                <element label="Captive" value="CAPTIVENT"/>
+                <element label="Captive" value="CAPTIVE1"/>
+                <element label="Claims Experience" value="CLAIMSEXP2"/>
+                <element label="Claims History" value="CCLMSHIST"/>
+                <element label="CNA" value="CNA"/>
+                <element label="CNA" value="CNA2"/>
+                <element label="CNA" value="KCNA"/>
+                <element label="Conviction/Violation" value="CONVCRIME"/>
+                <element label="Coverage Cancel" value="CCOVCX"/>
+                <element label="Coverage Issues" value="COVISSUE"/>
+                <element label="Coverage Issues" value="COVISS"/>
+                <element label="Coverage Issues" value="COVISS1"/>
+                <element label="Coverage No Longer Available" value="COVNAVLBL"/>
+                <element label="Coverage to GL" value="COVGTOGL"/>
+                <element label="Coverage to OCC" value="COVGTOOCC"/>
+                <element label="Coverage to OPL" value="COVGTOOPL"/>
+                <element label="Covg Provided-State/Federal Government" value="NIS"/>
+                <element label="Covg Provided-State/Federal Government" value="CIS"/>
+                <element label="Darwin" value="DARWIN"/>
+                <element label="Death" value="DEATH"/>
+                <element label="Deceased" value="DDRD"/>
+                <element label="Deceased" value="CID"/>
+                <element label="Deceased" value="NID"/>
+                <element label="Default on Loan" value="CDEFLOAN"/>
+                <element label="Default on Loan (z)" value="NPZ"/>
+                <element label="Default on Loan (z)" value="CPZ"/>
+                <element label="Designated Employee Mature/Free REA" value="INRDEMFT"/>
+                <element label="Designated Employee Mature/Free REA" value="PDEMFT"/>
+                <element label="Designated Employee Mature/Free REA" value="PNRDEMFT"/>
+                <element label="Designated Employee Mature/Free REA" value="IDEMFT"/>
+                <element label="Disability" value="NIH"/>
+                <element label="Disability" value="DDRH"/>
+                <element label="Disability" value="CIH"/>
+                <element label="Disagree With Claims or Undwrt" value="NPK"/>
+                <element label="Disagree With Claims or Undwrt" value="NIK"/>
+                <element label="Disagree With Claims or Undwrt" value="CIK"/>
+                <element label="Discipline/Probation by licensing agency" value="DISCBYLICA"/>
+                <element label="Discontinuance of C/A/P Coverage" value="CI3"/>
+                <element label="Discontinuance of C/A/P Coverage" value="NI3"/>
+                <element label="Discontinuance of Moonlighting" value="CIF"/>
+                <element label="Discontinuance of Moonlighting" value="NIF"/>
+                <element label="Dissolution of Entity" value="NI2"/>
+                <element label="Dissolution of Entity" value="CI2"/>
+                <element label="Does not meet Underwriting Guidelines" value="UWGUIDLINE"/>
+                <element label="Drug/Alcohol Issues" value="DRUGALCOHL"/>
+                <element label="Education" value="EDUCATION4"/>
+                <element label="Education" value="EDUCATION"/>
+                <element label="Education" value="EDUCATION3"/>
+                <element label="Education" value="KEDUCATION"/>
+                <element label="Education" value="EDUCATION2"/>
+                <element label="Fail Loss Control" value="FAILLOSSCT"/>
+                <element label="Failure to comply w/Underwriting request" value="NONCOMPLIA"/>
+                <element label="Fairway" value="FAIRWAY"/>
+                <element label="Falsified or misrepresented application" value="FALSAPPINS"/>
+                <element label="Farmer's/Truck" value="FARM/TRUCK"/>
+                <element label="Farmer's/Truck" value="FARM/TRUC"/>
+                <element label="Farmers/Truck" value="KFARMERS"/>
+                <element label="Flat Cancel" value="CFC"/>
+                <element label="Flat Cancellation" value="C44"/>
+                <element label="Fraud" value="FRAUD1"/>
+                <element label="Fraud/Misrepresentation" value="FRAUDMSRP2"/>
+                <element label="Genstar" value="GENSTAR"/>
+                <element label="Government" value="CGOV"/>
+                <element label="Government/Military" value="GOVT/MILI2"/>
+                <element label="Government/Military" value="KGOVT"/>
+                <element label="Government/Military" value="GOVT/MILIT"/>
+                <element label="Government/Military" value="GOVT/MILI3"/>
+                <element label="Gross Negligence" value="GROSSNEG"/>
+                <element label="Health Issues" value="HEALTH"/>
+                <element label="Hospital Action" value="HOSPACTIO2"/>
+                <element label="Insured's Request 65/5" value="INSREQ65"/>
+                <element label="Insured's Request No Tail" value="INSREQNT1"/>
+                <element label="Insured's Request No Tail" value="INSREQNT"/>
+                <element label="Join Hosp-Based" value="CJOINHOSP"/>
+                <element label="Join Hosp-Based" value="JOINHOSP"/>
+                <element label="Join Hosp-Based" value="JOINHOSP2"/>
+                <element label="Join Hosp-Based" value="JOINHOSP1"/>
+                <element label="Join Hosp-Based Prac/Cov" value="CIY"/>
+                <element label="Join Hosp-Based Prac/Cov" value="NIY"/>
+                <element label="Kaiser" value="KAISER"/>
+                <element label="Kaiser" value="KKAISER"/>
+                <element label="Lack insurable prof liability exposure" value="NOINSEXPOS"/>
+                <element label="Leave Of Absence/Sabbatical" value="NIG"/>
+                <element label="Leave Of Absence/Sabbatical" value="CIG"/>
+                <element label="Leaving Group" value="LVNGGRP"/>
+                <element label="Leaving Group" value="CLVNGGRP"/>
+                <element label="Leaving Group" value="LVNGGRP1"/>
+                <element label="Leaving Group" value="LVNGGRP2"/>
+                <element label="Leaving State" value="LVNGSTATE2"/>
+                <element label="Leaving State" value="KLEAVSTATE"/>
+                <element label="Leaving State" value="CLVINGST"/>
+                <element label="Leaving State" value="LVNGSTATE1"/>
+                <element label="Leaving State" value="LVINGSTATE"/>
+                <element label="Lexington" value="LEXTON"/>
+                <element label="Licensure Action" value="LICENSEAC2"/>
+                <element label="Lower Premium" value="CLOWPREM"/>
+                <element label="Lower Premium With New Carrier" value="CI6"/>
+                <element label="Lower Premium With New Carrier" value="NI6"/>
+                <element label="Maintain Occ Cov W/New Carrier" value="NIB"/>
+                <element label="Maintain Occ Cov W/New Carrier" value="CIB"/>
+                <element label="Mat Change Risk" value="MATCHGRISK"/>
+                <element label="Mat Incr Risk" value="MATINCRISK"/>
+                <element label="Mat Repre" value="MATREPRE"/>
+                <element label="Material Change in Risk" value="CMATCGRSK"/>
+                <element label="MCARE Applicable Status Chng" value="XXQ"/>
+                <element label="MCARE Non Compliance" value="CPM"/>
+                <element label="MCARE Non Compliance" value="NPM"/>
+                <element label="MCARE Noncompliance" value="CMCARENC"/>
+                <element label="MedPro" value="KMEDPRO"/>
+                <element label="MedPro" value="MEDPRO"/>
+                <element label="MIEC" value="KMIEC"/>
+                <element label="MIEC" value="MIEC"/>
+                <element label="Multi-State, Other Carrier Cov" value="NIA"/>
+                <element label="Multi-State, Other Carrier Cov" value="CIA"/>
+                <element label="New Emp Other Carrier" value="CNWEMPOTH"/>
+                <element label="New Employer Uses Oth Carrier" value="CI9"/>
+                <element label="New Employer Uses Oth Carrier" value="NI9"/>
+                <element label="New Policy Issued" value="NEWPOLISSU"/>
+                <element label="No Ins Exposure" value="NOINSEXP2"/>
+                <element label="No Ins Exposure" value="NOINSEXP3"/>
+                <element label="No Ins Exposure" value="CNOINSEXP"/>
+                <element label="No Ins Exposure" value="NOINSEXP"/>
+                <element label="Non Compliance" value="CNONCOMP"/>
+                <element label="Non Norcal Group" value="NNCLGRP2"/>
+                <element label="Non Norcal Group" value="NNCLGRP"/>
+                <element label="Non Norcal Group" value="NNCLGRP1"/>
+                <element label="Non-Compliance" value="NOCOMPL"/>
+                <element label="Non-Compliance" value="NOCOMPL2"/>
+                <element label="Non-Compliance" value="NOCOMPL3"/>
+                <element label="Non-pay No Tail" value="NONPAY"/>
+                <element label="Non-Payment of Premium" value="CNPP"/>
+                <element label="Norcal" value="NORCAL2"/>
+                <element label="Norcal" value="KNORCAL"/>
+                <element label="Norcal" value="NORCAL1"/>
+                <element label="NPM" value="NPM2"/>
+                <element label="NPM" value="KNPM"/>
+                <element label="Other" value="KOTHER"/>
+                <element label="Other" value="OTH"/>
+                <element label="Other" value="OTHER6"/>
+                <element label="Other" value="NPV"/>
+                <element label="Other" value="NIV"/>
+                <element label="Other" value="OTHER1"/>
+                <element label="Other" value="OTHER5"/>
+                <element label="Other" value="COTHER"/>
+                <element label="Other" value="OTHER4"/>
+                <element label="Other" value="CIV"/>
+                <element label="Other" value="OTHER3"/>
+                <element label="Other" value="OTHER7"/>
+                <element label="Other" value="CPV"/>
+                <element label="Performs procedure excluded by policy" value="PRPROFPRO"/>
+                <element label="Phico" value="PHICO2"/>
+                <element label="Phico" value="KPHICO"/>
+                <element label="Phico" value="PHICO"/>
+                <element label="Policyholder changed to another carrier" value="CHGCARRIER"/>
+                <element label="Poor Service" value="NIL"/>
+                <element label="Poor Service" value="CPOORSERV"/>
+                <element label="Poor Service" value="POORSERV2"/>
+                <element label="Poor Service" value="POORSERV1"/>
+                <element label="Poor Service" value="POORSERV"/>
+                <element label="Poor Service" value="CIL"/>
+                <element label="Prac Prof-Hosp" value="PRPROFHOS3"/>
+                <element label="Prac Prof-Hosp" value="PRPROFHOS2"/>
+                <element label="Prac Prof-Hosp" value="PRPROFHOS"/>
+                <element label="Prac Prof-Proce" value="PRPROFPRO4"/>
+                <element label="Prac Prof-Proce" value="PRPROFPRO3"/>
+                <element label="Prac Prof-Proce" value="PRPROFPRO2"/>
+                <element label="PracProf-Health" value="PRPROHLTH3"/>
+                <element label="PracProf-Health" value="PRPROHLTH2"/>
+                <element label="PracProf-Health" value="PRPROHLTH"/>
+                <element label="PracProf-MedSvs" value="PRPROMDSV2"/>
+                <element label="PracProf-MedSvs" value="PRPROMDSV3"/>
+                <element label="PracProf-MedSvs" value="PRPROMDSV4"/>
+                <element label="Practice Discontinued, Dissolved or Sold" value="CPRACDISC"/>
+                <element label="Practice outside of training/competence" value="PRACOUTTRN"/>
+                <element label="Practice Profile" value="PRPROFOTHE"/>
+                <element label="Practice Profile" value="PRACPROF"/>
+                <element label="Practice Profile" value="CPRACPROF"/>
+                <element label="Practice Profile - Hospital Action" value="HOSPACTION"/>
+                <element label="Practice Profile - Licensure Action" value="LICENSEACT"/>
+                <element label="Practice Sold" value="PRACSOLD1"/>
+                <element label="Practice Sold" value="PRACSOLD2"/>
+                <element label="Practice Sold" value="PRACSOLD"/>
+                <element label="Practice Sold-New Own Oth Carr" value="NIR"/>
+                <element label="Practice Sold-New Own Oth Carr" value="CIR"/>
+                <element label="PracticeProfile" value="PRACPROF4"/>
+                <element label="PracticeProfile" value="PRACPROF2"/>
+                <element label="PracticeProfile" value="PRACPROF3"/>
+                <element label="Price" value="PRICE2"/>
+                <element label="Price" value="PRICE1"/>
+                <element label="Price" value="PRICE"/>
+                <element label="Prior Insurance" value="PRIORINS"/>
+                <element label="Privileges restrctd/susp/revoked/declnd" value="PRIVRESTRT"/>
+                <element label="ProSelect" value="PROSLCT"/>
+                <element label="Providing medical svs excluded by policy" value="PRPROMDSVS"/>
+                <element label="QDA-Coverage Not Needed" value="QDACVGNO"/>
+                <element label="QDA-Limits" value="QDALIMITS"/>
+                <element label="QDA-Pricing" value="QDAPRICE"/>
+                <element label="QDA-Remaining With Current Carrier" value="QDACURRENT"/>
+                <element label="QDA-Secured Other Coverage" value="QDAOTHCOV"/>
+                <element label="QDA-ZOther" value="QDAOTHER"/>
+                <element label="QWC-No Response" value="QWCNORESP"/>
+                <element label="QWC-Reissue" value="QWCREI"/>
+                <element label="Re-apply Endorsed" value="REAPPLYEND"/>
+                <element label="Records Alteration" value="RECSALT"/>
+                <element label="Relocated Out Of State/Country" value="CIJ"/>
+                <element label="Relocated Out Of State/Country" value="NIJ"/>
+                <element label="Retired" value="RETIRED"/>
+                <element label="Retired - No Wavier" value="RETNOWAV"/>
+                <element label="Retired 55/5" value="RETIRE55/5"/>
+                <element label="Retired NoAge/5" value="RETIRE/5"/>
+                <element label="Retirement" value="DDRI"/>
+                <element label="Retirement" value="CII"/>
+                <element label="Retirement" value="NII"/>
+                <element label="Retirement Benefits" value="RETIREBEN"/>
+                <element label="Retn to Res/Flo" value="CRTNRES"/>
+                <element label="Retn to Residency/Fellowship" value="CIE"/>
+                <element label="Retn to Residency/Fellowship" value="NIE"/>
+                <element label="Return to Residency or Fellowship" value="RETRNRES"/>
+                <element label="Return to Residency or Fellowship" value="RETRNRES2"/>
+                <element label="Return to Residency or Fellowship" value="RETRNRES1"/>
+                <element label="Rewrite" value="CREWR"/>
+                <element label="RRG" value="RRG1"/>
+                <element label="RRG" value="RRG"/>
+                <element label="RRG" value="RRG2"/>
+                <element label="RRG" value="RRG3"/>
+                <element label="RRG" value="KRRG"/>
+                <element label="SCPIE" value="SCPIE2"/>
+                <element label="SCPIE" value="KSCPIE"/>
+                <element label="Self Insured" value="SELFINSD1"/>
+                <element label="Self Insured" value="SELFINSD2"/>
+                <element label="Self Insured" value="SELFINSD"/>
+                <element label="Sexual Misconduct" value="SEXMSCDT"/>
+                <element label="Sexual Misconduct" value="SEXMISCON"/>
+                <element label="Short Term" value="SHORTTERM"/>
+                <element label="Short Term" value="SHORTTERM4"/>
+                <element label="Short Term" value="SHORTTERM2"/>
+                <element label="Short Term" value="SHORTTERM3"/>
+                <element label="St. Paul" value="STPAUL2"/>
+                <element label="St. Paul" value="STPAUL"/>
+                <element label="St. Paul" value="KSTPAUL"/>
+                <element label="Susp/Revoc Lic" value="CSUSP"/>
+                <element label="Suspension/Revocation of Lic" value="CXC"/>
+                <element label="Suspension/Revocation of Lic" value="CPC"/>
+                <element label="Suspension/Revocation of Lic" value="NPC"/>
+                <element label="Sutter" value="SUTTER2"/>
+                <element label="Sutter" value="SUTTER"/>
+                <element label="Sutter" value="SUTTER1"/>
+                <element label="Switched Policy" value="CSWTPOL"/>
+                <element label="Switched Policy Type" value="XXX"/>
+                <element label="TDC" value="TDC2"/>
+                <element label="TDC" value="KTDC"/>
+                <element label="Termination of Employment" value="NIU"/>
+                <element label="Termination of Employment" value="CIU"/>
+                <element label="TIG" value="TIG"/>
+                <element label="TIG" value="KTIG"/>
+                <element label="TIG" value="TIG2"/>
+                <element label="Too Many Claims" value="2MANYCLMS"/>
+                <element label="Transfer - New Pol Issue" value="TRFERNEWPO"/>
+                <element label="Transfer - New Pol Issue" value="TRFRNEWPO1"/>
+                <element label="Transfer - New Pol Issue" value="TRFRNEWPO2"/>
+                <element label="Transfer - New Pol Issue" value="KTRFRNEW"/>
+                <element label="Trfr-Add to Group" value="TRFRTOGRP"/>
+                <element label="Underwriting Committee Action" value="CP1"/>
+                <element label="Underwriting Committee Action" value="CI1"/>
+                <element label="Underwriting Committee Action" value="NP1"/>
+                <element label="Underwriting Guidelines" value="UWGDLINES"/>
+                <element label="Unknown" value="UNK"/>
+                <element label="UW Comm. Action" value="CUWCOMM"/>
+                <element label="UW Guidelines" value="UWGDLINES2"/>
+                <element label="UW Guidelines" value="UWGDLINES4"/>
+                <element label="UW Guidelines" value="UWGDLINES3"/>
+                <element label="Will not Renew Upon Expiration" value="NOTRENEW"/>
+                <element label="Withdrawn - Other" value="WDPERAPP"/>
+                <element label="WSPIE" value="WSPIE2"/>
+                <element label="WSPIE" value="WSPIE"/>
+                <element label="WSPIE" value="KWSPIE"/>
+                <element label="65/5 - not Retired" sequence="0" value="65/5NOTRET"/>
+                <element label="AIG" sequence="0" value="AIG"/>
+                <element label="All or Nothing" sequence="0" value="ALLORNTHNG"/>
+                <element label="Alteration of Medical Records" sequence="0" value="ALTMEDREC"/>
+                <element label="Bare" sequence="0" value="BARE"/>
+                <element label="CANCPURGE" sequence="0" value="CANCPURGE"/>
+                <element label="CAP/MPT" sequence="0" value="CAP/MPT2"/>
+                <element label="CCNTL" sequence="0" value="CCNTL"/>
+                <element label="Change - Affiliation" sequence="0" value="CHGAFFIL"/>
+                <element label="Change Effective Date" sequence="0" value="CHGEEFFDAT"/>
+                <element label="Change Retro Date" sequence="0" value="CHGERETRO"/>
+                <element label="CLAIMSEXP" sequence="0" value="CLAIMSEXP"/>
+                <element label="Death" sequence="0" value="DEATH2"/>
+                <element label="DENTIMING" sequence="0" value="DENTIMING"/>
+                <element label="Disabled" sequence="0" value="DISABLED"/>
+                <element label="Government/Military" sequence="0" value="GOVT/MILI"/>
+                <element label="Kaiser" sequence="0" value="KAISER2"/>
+                <element label="Leaving State" sequence="0" value="LVINGST"/>
+                <element label="License suspended/revoked/restricted" sequence="0" value="LICENSSUSP"/>
+                <element label="MedPro" sequence="0" value="MEDPRO2"/>
+                <element label="MIEC" sequence="0" value="MIEC2"/>
+                <element label="Non-Response/Compliance" sequence="0" value="NONRESCOMP"/>
+                <element label="Norcal" sequence="0" value="NORCAL"/>
+                <element label="NORCAL does not insure all group members" sequence="0" value="ALLORNONE"/>
+                <element label="Other" sequence="0" value="OTHER"/>
+                <element label="Other" sequence="0" value="DENOTHER"/>
+                <element label="Other" sequence="0" value="OTHER2"/>
+                <element label="Questionable - Unacceptable" sequence="0" value="QUESTUNACC"/>
+                <element label="Rates" sequence="0" value="DENRATES"/>
+                <element label="Rates" sequence="0" value="RATES"/>
+                <element label="Retired 55/1" sequence="0" value="RETIRE55/1"/>
+                <element label="Retired 65/5" sequence="0" value="RETIRE65/5"/>
+                <element label="SCPIE" sequence="0" value="SCPIE"/>
+                <element label="Shopping" sequence="0" value="SHOPPING"/>
+                <element label="Shopping" sequence="0" value="DENSHOPPNG"/>
+                <element label="TDC" sequence="0" value="TDC"/>
+                <element label="U/W Action Taken" sequence="0" value="DENUWACT"/>
+                <element label="Unknown" sequence="0" value="DENUNKNOWN"/>
+                <element label="Unknown" sequence="0" value="UNKNOWN"/>
+                <element label="Unknown" sequence="0" value="UNKNOWN2"/>
+                <element label="W/D-Plans to reapply" sequence="0" value="W/DPLNTORE"/>
+                <element label="W/D-Plans to reapply" sequence="0" value="WDPLANS"/>
+            </choice>
+        </element>
+        <element choice="1" label="Cancellation Status" max_length="10" name="cancellation_status" read_only="true" type="string">
+            <choice>
+                <element label="Cancel DD&amp;R" value="DDR"/>
+                <element label="Cancel Non-Pay" value="CNPP"/>
+                <element label="Canceled By Underwriter" value="CANCUNDWR"/>
+                <element label="Cancelled by Company" value="CXC"/>
+                <element label="Cancelled by Insured" value="CCI"/>
+                <element label="Cancelled by Insured" value="CI"/>
+                <element label="Cancelled by PMSLIC" value="CP"/>
+                <element label="Cancelled by PMSLIC For License" value="CX"/>
+                <element label="Coverage Converted" value="CONVCANC"/>
+                <element label="Deny" value="DENIED"/>
+                <element label="Flat Cancelled" value="C4"/>
+                <element label="Insured's Request 65/5" value="INSREQ65"/>
+                <element label="Insured's Request No Tail" value="INSREQNT"/>
+                <element label="Internal Cancel" value="CINTERNAL"/>
+                <element label="KPC Tail Physicians" value="KPCTAIL"/>
+                <element label="Non-Renew" value="NONRENEW"/>
+                <element label="Non-Renewal 65/5" value="NONREN65/5"/>
+                <element label="Non-Renewal(NORCAP)" value="NONRENCAP"/>
+                <element label="Non-Renewal(NORCAP)-65/5" value="NONRENCP65"/>
+                <element label="Non-Renewed by Company" value="CNRC"/>
+                <element label="Non-Renewed by Insured" value="CNI"/>
+                <element label="Non-Renewed by Insured" value="NI"/>
+                <element label="Non-Renewed by PMSLIC" value="NP"/>
+                <element label="Other" value="COTHER"/>
+                <element label="Per Insured/Authorized Rep Written Req" value="CAUTHREQCX"/>
+                <element label="Renew" value="RENEW"/>
+                <element label="Switched Policy Type" value="XX"/>
+                <element label="Unknown" value="UNK"/>
+                <element label="CANCEL" sequence="0" value="CANCEL"/>
+                <element label="CCINT" sequence="0" value="CCINT"/>
+                <element label="Company Election" sequence="0" value="COELECT"/>
+                <element label="Death" sequence="0" value="DEATH"/>
+                <element label="Disabled" sequence="0" value="DISABLED"/>
+                <element label="Insured's Request" sequence="0" value="INSDREQ"/>
+                <element label="Non Payment" sequence="0" value="NONPAY"/>
+                <element label="Retired" sequence="0" value="RETIRED"/>
+                <element label="Withdrawn" sequence="0" value="WITHDRAWN"/>
+            </choice>
+        </element>
+        <element label="Category" max_length="10" name="category" read_only="true" type="string"/>
+        <element label="Claims Made Year" max_length="40" name="claims_made_year" read_only="true" type="float"/>
+        <element label="Collateral" max_length="40" name="collateral" read_only="true" type="boolean"/>
+        <element label="Declination Date" max_length="40" name="declination_date" read_only="true" type="glide_date"/>
+        <element label="Effective From" max_length="40" name="effective_from" read_only="true" type="glide_date"/>
+        <element label="Effective To" max_length="40" name="effective_to" read_only="true" type="glide_date_time"/>
+        <element label="Number of Employees" max_length="40" name="employee_count" read_only="true" type="integer"/>
+        <element label="General Liability Limit" max_length="40" name="gl_limit" read_only="true" type="integer"/>
+        <element label="Guarantee Date" max_length="40" name="guarantee_date" read_only="true" type="glide_date"/>
+        <element label="Hospital Tier" max_length="10" name="hospital_tier" read_only="true" type="string"/>
+        <element choice="1" choice_field="state" choice_table="x_norca_med_cam_address" label="Issued in State" max_length="10" name="issued_in_state" read_only="true" type="string">
+            <choice>
+                <element label="AK" sequence="0" value="AK"/>
+                <element label="CA" sequence="0" value="CA"/>
+                <element label="RI" sequence="0" value="RI"/>
+            </choice>
+        </element>
+        <element label="Issuer" max_length="32" name="issuer" read_only="true" reference="x_norca_med_cam_entity" reference_qual="entity_type=P^EQ" reference_qual_condition="entity_type=P^EQ" type="reference"/>
+        <element label="Issue Company FK" max_length="20" name="issue_company_fk" read_only="true" type="decimal"/>
+        <element label="Non-Renewal Reason" max_length="10" name="non_renewal_reason" read_only="true" type="string"/>
+        <element label="Organization Type" max_length="500" name="organization_type" read_only="true" type="string"/>
+        <element label="Payment Plans" max_length="4000" name="payment_plans" read_only="true" type="glide_list"/>
+        <element label="Peer Groups Code" max_length="100" name="peer_groups_code" read_only="true" type="string"/>
+        <element label="Number of Physicians" max_length="40" name="physician_count" read_only="true" type="integer"/>
+        <element label="Professional Liability Limit" max_length="40" name="pl_limit" read_only="true" type="integer"/>
+        <element label="Policy" max_length="32" name="policy" read_only="true" reference="x_norca_med_cam_policy" type="reference"/>
+        <element choice="1" label="Policy Term" max_length="10" name="policy_term" read_only="true" type="string">
+            <choice>
+                <element label="Policy Year 04" value="PYN04"/>
+                <element label="Policy Year 05" value="PYN05"/>
+                <element label="Policy Year 06" value="PYN06"/>
+                <element label="Policy Year 07" value="PYN07"/>
+                <element label="Policy Year 08" value="PYN08"/>
+                <element label="Policy Year 09" value="PYN09"/>
+                <element label="Policy Year 10" value="PYN10"/>
+                <element label="Policy Year 11" value="PYN11"/>
+                <element label="Policy Year 12" value="PYN12"/>
+                <element label="Policy Year 13" value="PYN13"/>
+                <element label="Policy Year 14" value="PYN14"/>
+                <element label="Policy Year 15" value="PYN15"/>
+                <element label="Policy Year 16" value="PYN16"/>
+                <element label="Policy Year 17" value="PYN17"/>
+                <element label="Policy Year 18" value="PYN18"/>
+                <element label="Policy Year 19" value="PYN19"/>
+                <element label="Policy Year 20" value="PYN20"/>
+                <element label="Policy Year 00" sequence="0" value="PYN00"/>
+                <element label="Policy Year 01" sequence="0" value="PYN01"/>
+                <element label="Policy Year 02" sequence="0" value="PYN02"/>
+                <element label="Policy Year 03" sequence="0" value="PYN03"/>
+                <element label="Policy Year 96" sequence="0" value="PYN96"/>
+                <element label="Policy Year 97" sequence="0" value="PYN97"/>
+                <element label="Policy Year 98" sequence="0" value="PYN98"/>
+                <element label="Policy Year 99" sequence="0" value="PYN99"/>
+                <element label="PYN21" sequence="0" value="PYN21"/>
+            </choice>
+        </element>
+        <element label="First Date of Potential Cancellation" max_length="40" name="potential_cancel_1" read_only="true" type="glide_date"/>
+        <element label="Second Date of Potential Cancellation" max_length="40" name="potential_cancel_2" read_only="true" type="glide_date"/>
+        <element choice="1" label="Renewal Cycle" max_length="10" name="renewal_cycle" read_only="true" type="string">
+            <choice>
+                <element label="Can be renewed" value="RENCAND"/>
+                <element label="Prepared for renewal" value="RENPREP"/>
+                <element label="RENPRE" sequence="0" value="RENPRE"/>
+            </choice>
+        </element>
+        <element choice="1" label="Renewal Indicator" max_length="10" name="renewal_indicator" read_only="true" type="string">
+            <choice>
+                <element label="Auto Renewal" value="AUTO"/>
+                <element label="Converted" value="CONVERTED"/>
+                <element label="Manual" value="MANUAL"/>
+                <element label="Non-Renewal" value="NONRENEW"/>
+            </choice>
+        </element>
+        <element label="Rolling IBNR Date" max_length="40" name="rolling_ibnr_date" read_only="true" type="glide_date"/>
+        <element label="Short Term" max_length="40" name="short_term" read_only="true" type="boolean"/>
+        <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element choice="1" label="Status" max_length="10" name="status" read_only="true" type="string">
+            <choice>
+                <element label="ACCEPTED" sequence="0" value="ACCEPTED"/>
+                <element label="DENIED" sequence="0" value="DENIED"/>
+                <element label="HOLD" sequence="0" value="HOLD"/>
+                <element label="ACTIVE" sequence="1" value="ACTIVE"/>
+                <element label="EXPIRED" sequence="2" value="EXPIRED"/>
+                <element label="INVALID" sequence="3" value="INVALID"/>
+                <element label="PENDING" sequence="4" value="PENDING"/>
+            </choice>
+        </element>
+        <element label="Term Policy Number" max_length="50" name="term_policy_number" read_only="true" type="string"/>
+        <element label="User Policy Minimum Payment" max_length="20" name="user_policy_mp_amount" read_only="true" type="decimal"/>
+        <index name="index">
+            <element name="sor_id"/>
+        </index>
+        <index name="index2">
+            <element name="issuer"/>
+        </index>
+        <index name="index3">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

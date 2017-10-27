@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="diary_type" table="x_norca_med_cam_diary" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Coverage Review</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:21:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e93b3f1dbca3600394af9361d9619b4</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>coverage_review</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Provide Policy &amp; Dec Page</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>0</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:53:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ec8dab7db46f600394af9361d9619d8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 18:57:13</sys_updated_on>
+            <value>provide_policy_dec_page</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Limit erosion tracking</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>1</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:22:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55b337f1dbca3600394af9361d96194e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>limit_erosion_tracking</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Not Available to Attach</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>1</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:54:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78f8dab7db46f600394af9361d9619da</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>policy_not_available_to_attach</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense counsel assignment pending</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>2</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:54:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b091eb7db46f600394af9361d9619d3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>defense_counsel_assignment_pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>NPDB reporting required</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>2</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:22:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>07c337f1dbca3600394af9361d961951</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>npdb_reporting_req</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage Issue – Low Priority</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>3</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:55:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c83912f7db46f600394af9361d96195b</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>coverage_issue_low_priority</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Policy needed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>3</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:23:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4be377f1dbca3600394af9361d961976</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>policy_needed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage Issue – Medium Priority</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>4</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:55:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f59deb7db46f600394af9361d9619f5</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>coverage_issue_medium_priority</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Policy not found</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>4</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:23:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d40477f1dbca3600394af9361d961979</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>policy_not_found</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage Issue – High Priority</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>5</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:55:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb6952f7db46f600394af9361d96197e</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>coverage_issue_high_priority</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Reinsurance report initial and updates</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>5</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:24:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f124b7f1dbca3600394af9361d9619b3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>reinsurance_report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Response to Settlement Demand - 5 days</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>6</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32a9d2f7db46f600394af9361d96190f</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>response_to_settlement_demand_5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>State specific report (e.g. Fund) required upon case establishment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>6</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:25:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7374b7f1dbca3600394af9361d9619a7</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>state_report_on_new_case</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Response to Settlement Demand - 25 days</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>7</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:58:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3be956f7db46f600394af9361d9619ce</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>response_to_settlement_demand_25</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>State/Payment reporting required</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>7</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:24:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a44f7f1dbca3600394af9361d961975</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-09 20:46:55</sys_updated_on>
+            <value>state_payment_reporting_req</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Response to Settlement Demand - 30 days</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>8</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 18:59:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>430a96f7db46f600394af9361d961923</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>response_to_settlement_demand_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request for information/analysis from counsel - 5 days</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>9</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:00:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>744a16f7db46f600394af9361d9619ef</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>request_for_information_from_counsel_5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request for information/analysis from counsel - 30 days</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>10</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:01:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c8a5af7db46f600394af9361d961972</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>request_for_information_from_counsel_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Indemnity check approval</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>11</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:02:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edba9af7db46f600394af9361d9619cc</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>indemnity_check_approval</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Check Processing</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>12</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:02:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61ea1ef7db46f600394af9361d9619c1</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>check_processing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Contact with insured/update insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>13</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:02:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1bfa1ef7db46f600394af9361d9619c6</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>contact_with_insured_update_insured</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Setting final reserves</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>14</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:03:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb0b1ef7db46f600394af9361d9619c7</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>setting_final_reserves</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reinsurance report initial and updates</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>15</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:03:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e2bdef7db46f600394af9361d9619ad</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>reinsurance_report_initial_and_updates</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>State specific report (e.g. Fund) required upon case establishment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>16</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:04:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e4b1ef7db46f600394af9361d9619c9</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>state_specific_report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>State/Payment reporting required pending</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>17</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:04:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>186b1ef7db46f600394af9361d96190b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>state_payment_reporting_required_pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NPDB reporting required</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>18</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:05:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>567b523bdb46f600394af9361d961965</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-05-31 15:04:45</sys_updated_on>
+            <value>npdb_reporting_required</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Safe Harbor Reminder (FL) - 150</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>19</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:05:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cbb923bdb46f600394af9361d9619d2</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 18:23:33</sys_updated_on>
+            <value>safe_harbor_reminder_150</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Safe Harbor Reminder (FL) - 175</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>20</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-06-12 18:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed5b6671db1b364075ea38ff9d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 18:25:55</sys_updated_on>
+            <value>safe_harbor_reminder_175</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Safe Harbor Reminder (FL) - 200</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>21</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-06-12 18:26:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fdbbe671db1b364075ea38ff9d9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 18:26:48</sys_updated_on>
+            <value>safe_harbor_reminder_200</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pre-Suit Reminder (FL) - 30</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>22</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 19:06:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7dbbd23bdb46f600394af9361d96198d</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 19:38:58</sys_updated_on>
+            <value>pre_suit_reminder_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pre-Suit Reminder (FL) - 60</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>23</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-06-12 18:27:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9afbaa71db1b364075ea38ff9d96190a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 19:39:09</sys_updated_on>
+            <value>pre_suit_reminder_60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>diary_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ad Hoc</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <sequence>24</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:21:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b7337f1dbca3600394af9361d961988</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-06-12 18:28:12</sys_updated_on>
+            <value>adhoc</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>diary_type</element>
+            <name>x_norca_med_cam_diary</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-11 20:21:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a646bfb3db900300e022771c8c96195b</sys_id>
+            <sys_mod_count>124</sys_mod_count>
+            <sys_name>diary_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_diary_diary_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:00:55</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Reinsurance" max_length="40" name="x_norca_med_cam_reinsurance" type="collection">
+        <element label="Age (on DOI)" max_length="40" name="age_on_doi" type="string"/>
+        <element label="Allegation" max_length="2000" name="allegation" type="string"/>
+        <element label="Approved By" max_length="32" name="approved_by" reference="sys_user_group" type="reference"/>
+        <element label="CoDefendant" max_length="40" name="codefendant" type="string"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element choice="1" label="Contract" max_length="40" name="contract" type="choice">
+            <choice>
+                <element label="Loss Event" sequence="0" value="Loss Event"/>
+                <element label="Excess Cession" sequence="1" value="Excess Cession"/>
+                <element label="Facultative" sequence="2" value="Facultative"/>
+                <element label="FD INS Awards Made" sequence="3" value="FD INS Awards Made"/>
+            </choice>
+        </element>
+        <element label="Counsel" max_length="40" name="counsel" type="string"/>
+        <element label="Current Status" max_length="40" name="current_status" type="string"/>
+        <element label="Current Subject Indemnity Reserve" max_length="20" name="current_subject_indemnity_reserve" type="currency"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Date Closed" max_length="40" name="date_closed" type="glide_date"/>
+        <element label="Date of Incident" max_length="40" name="date_of_incident" type="glide_date"/>
+        <element label="Date of Report" max_length="40" name="date_of_report" type="glide_date"/>
+        <element label="Earliest Report Date" max_length="40" name="earliest_report_date" type="glide_date"/>
+        <element display="true" label="File Name" max_length="40" name="file_name" type="string"/>
+        <element label="File Number" max_length="40" name="file_number" type="string"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice/>
+        </element>
+        <element label="Indemnity" max_length="40" name="indemnity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Insured Defendant" max_length="40" name="insured_defendant" type="string"/>
+        <element label="Insurer" max_length="40" name="insurer" type="string"/>
+        <element label="Last Demand Amount" max_length="20" name="last_demand_amount" type="currency"/>
+        <element label="Last Demand Date" max_length="40" name="last_demand_date" type="glide_date"/>
+        <element label="Last Offer Amount" max_length="40" name="last_offer_amount" type="string"/>
+        <element label="Last Offer Date" max_length="40" name="last_offer_date" type="glide_date"/>
+        <element label="Limit" max_length="40" name="limit" type="string"/>
+        <element label="Manager" max_length="40" name="manager" type="string"/>
+        <element label="Martial Status" max_length="40" name="martial_status" type="string"/>
+        <element label="Plaintiffs" max_length="40" name="plaintiffs" type="string"/>
+        <element label="Policy Number" max_length="40" name="policy_number" type="string"/>
+        <element label="Policy Period" max_length="40" name="policy_period" type="glide_date"/>
+        <element label="Retro Date" max_length="40" name="retro_date" type="glide_date"/>
+        <element label="Settlement Conference" max_length="40" name="settlement_conference" type="string"/>
+        <element label="Specialist" max_length="32" name="specialist" reference="sys_user_group" type="reference"/>
+        <element label="State" max_length="32" name="state" reference="cmn_location" type="reference"/>
+        <element label="Subject reported Loss Expense" max_length="40" name="subject_reported_loss_expense" type="string"/>
+        <element label="Subject Reported Loss Indemnity" max_length="40" name="subject_reported_loss_indemnity" type="string"/>
+        <element label="Summary of Loss" max_length="2000" name="summary_of_loss" type="string"/>
+        <element label="Trial" max_length="40" name="trial" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+        <element label="Form Completion Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element label="Venue" max_length="40" name="venue" type="string"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="specialist"/>
+        </index>
+        <index name="index3">
+            <element name="company"/>
+        </index>
+        <index name="index4">
+            <element name="state"/>
+        </index>
+    </element>
+</database>

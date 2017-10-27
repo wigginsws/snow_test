@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_EntityClassWebServiceUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_EntityClassWebServiceUtils</name>
+        <script><![CDATA[var cam_EntityClassWebServiceUtils = Class.create();
+cam_EntityClassWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebServiceUtils, {
+	
+    initialize: function() {
+    },
+
+    type: 'cam_EntityClassWebServiceUtils',
+	
+	
+	saveEntityClass: function(currentGR) {
+		var dataSyncUtils = new cam_DataSyncUtils();
+		var entityGR = dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_entity", currentGR.entity);
+		gs.info("[saveEntityClass] EntityGR " + entityGR?entityGR.getDisplayValue():"null");
+		if (!entityGR) {
+			throw "Entity record could not be retrieved, sys_id " + currentGR.entity;
+		}
+
+		var params = {
+			'PartyChangeRequest.UserId': this.getUserNameValueObject(currentGR),
+			'PartyClassification': this.createParamValueObject(currentGR.getUniqueValue()),
+			'PartyClassification.ClassificationNumberId': this.createParamValueObject(currentGR.sor_id?currentGR.sor_id:""),
+			'EffectivePeriod.StartDate': this.createParamValueObject(currentGR.effective_from?currentGR.effective_from:''),
+			'EffectivePeriod.EndDate': this.createParamValueObject(currentGR.effective_to?currentGR.effective_to:''),
+			'PartyClassification.ClassificationCode': this.createParamValueObject(currentGR.class_type?currentGR.class_type:''),
+			'PartyClassification.SubClassificationCode': this.createParamValueObject(currentGR.subclass?currentGR.subclass:''),
+			'PartyClassification.SubTypeCode': this.createParamValueObject(currentGR.subtype?currentGR.subtype:'')
+		};
+
+		var messageName, idXpath;
+		if (entityGR.entity_type=="P") {
+			params["Person.PersonNumberId"] = this.createParamValueObject( entityGR.sor_id?entityGR.sor_id:"");
+			params["PartyChangeRequest.Person"] = this.createParamValueObject( entityGR.getUniqueValue());
+			messageName = currentGR.sor_id ? "updatePersonClassification" : "insertPersonClassification";
+			idXpath = "/S:Envelope/S:Body/PartyChangeResult/ns0:Person/ns0:PartyClassification[@key='" + currentGR.getUniqueValue() + "']/ns0:ClassificationNumberId";
+
+		} else {
+			params["Organization.OrganizationNumberId"] = this.createParamValueObject( entityGR.sor_id?entityGR.sor_id:"");
+			params["PartyChangeRequest.Organization"] = this.createParamValueObject( entityGR.getUniqueValue());
+			messageName = currentGR.sor_id ? "updateOrganizationClassification" : "insertOrganizationClassification";
+			idXpath = "/S:Envelope/S:Body/PartyChangeResult/ns0:Organization/ns0:PartyClassification[@key='" + currentGR.getUniqueValue() + "']/ns0:ClassificationNumberId";
+		}
+
+		this.processMessage(cam.SCOPE_ID + '.CAM-OASIS-PartyChangeService', messageName, params, current, {"sor_id": idXpath});
+	}
+	
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-12 01:21:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9bc06d1bdb3bfe00d596327e9d96198c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>cam_EntityClassWebServiceUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_9bc06d1bdb3bfe00d596327e9d96198c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-18 13:37:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

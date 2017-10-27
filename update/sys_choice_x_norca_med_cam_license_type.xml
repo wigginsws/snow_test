@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_norca_med_cam_license" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>F014 Broker Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>57515ba3db8eb68062bafd441d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>14</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Audiologist/Speech Pathologist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3515ba3db8eb68062bafd441d961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>AO/SP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7515ba3db8eb68062bafd441d961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>BC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business C/A/P</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb515ba3db8eb68062bafd441d961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>BCAP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certified Nurse Midwife</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b515ba3db8eb68062bafd441d961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>CNM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certified Nurse Midwife Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f515ba3db8eb68062bafd441d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>CNMT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certified Nurse Practitioner</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3515ba3db8eb68062bafd441d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>CNP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cert. Reg. Nurse Anesthetist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7515ba3db8eb68062bafd441d961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>CRNA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cert. Reg. Nurse Pract.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf515ba3db8eb68062bafd441d961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>CRNP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dentist-DDS</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77515ba3db8eb68062bafd441d961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>DDS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Doctor Of Osteopathy</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27515ba3db8eb68062bafd441d961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>DO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physicians NOC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33515ba3db8eb68062bafd441d961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>DPM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Electroencephalogram Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb515ba3db8eb68062bafd441d961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>EEGT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HS</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab515ba3db8eb68062bafd441d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>HS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Limited Liability C/A/P</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3515ba3db8eb68062bafd441d961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>LCAP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Licensed Certified Social Worker</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb515ba3db8eb68062bafd441d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>LCSW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Licensed Practical Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3515ba3db8eb68062bafd441d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>LPN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physical Therapist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b515ba3db8eb68062bafd441d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>LPT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00615ba3db8eb68062bafd441d9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63515ba3db8eb68062bafd441d961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>MC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical C/A/P</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f515ba3db8eb68062bafd441d961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>MCAP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Doctor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4615ba3db8eb68062bafd441d9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internal Medicine</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8c615ba3db8eb68062bafd441d9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:46</sys_updated_on>
+            <value>ME</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Laboratory Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44615ba3db8eb68062bafd441d9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>MLT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f515ba3db8eb68062bafd441d961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:45</sys_updated_on>
+            <value>NC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nurse Practitioner</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c615ba3db8eb68062bafd441d9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>NP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Optometrist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0615ba3db8eb68062bafd441d9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>OD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ophthalmology Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88615ba3db8eb68062bafd441d9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>OPTH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Occupational Therapist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40615ba3db8eb68062bafd441d9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>OT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18615ba3db8eb68062bafd441d9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>PA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Assistant Certified</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc615ba3db8eb68062bafd441d9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>PA-C</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef515ba3db8eb68062bafd441d961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>PC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Doctorate</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94615ba3db8eb68062bafd441d9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:47</sys_updated_on>
+            <value>PHD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Surgical Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c615ba3db8eb68062bafd441d9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:48</sys_updated_on>
+            <value>PSA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Psychologist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df511ba3db8eb68062bafd441d9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:43</sys_updated_on>
+            <value>PSYC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physiotherapist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f515ba3db8eb68062bafd441d96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:43</sys_updated_on>
+            <value>PT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Registered Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17515ba3db8eb68062bafd441d96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>RN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Radiology Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db515ba3db8eb68062bafd441d96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>RT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surgical Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93515ba3db8eb68062bafd441d96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>SA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Podiatrist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b515ba3db8eb68062bafd441d96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>SC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surgical Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>13515ba3db8eb68062bafd441d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>ST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Social Worker</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7515ba3db8eb68062bafd441d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>SW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b515ba3db8eb68062bafd441d961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>UNKNOWN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>X-Ray Technician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f515ba3db8eb68062bafd441d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-17 04:21:44</sys_updated_on>
+            <value>XRT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>009</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 11:01:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef46a7a5dbd2360075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 11:01:04</sys_updated_on>
+            <value>009</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>013</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 11:01:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f46a7a5dbd2360075ea38ff9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 11:01:06</sys_updated_on>
+            <value>013</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>014</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 05:46:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d14e1a6ddb9af20075ea38ff9d961957</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 05:46:21</sys_updated_on>
+            <value>014</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AA</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 10:03:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36391b29db52360075ea38ff9d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 10:03:57</sys_updated_on>
+            <value>AA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ACN</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:53:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0d6d3e1db52360075ea38ff9d961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:53:26</sys_updated_on>
+            <value>ACN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ARNP</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:52:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f8613e1db52360075ea38ff9d961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:52:15</sys_updated_on>
+            <value>ARNP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AS</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 10:50:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcd32b25dbd2360075ea38ff9d9619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 10:50:14</sys_updated_on>
+            <value>AS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CH</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:55:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c37d7e1db52360075ea38ff9d96198a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:55:02</sys_updated_on>
+            <value>CH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EO</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 10:46:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3d2ebe1dbd2360075ea38ff9d9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 10:46:04</sys_updated_on>
+            <value>EO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FB</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 10:09:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da9a5b61db92360075ea38ff9d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 10:09:56</sys_updated_on>
+            <value>FB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OPC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:52:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a29613e1db52360075ea38ff9d9619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:52:28</sys_updated_on>
+            <value>OPC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OR</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:58:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8089325db52360075ea38ff9d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:58:36</sys_updated_on>
+            <value>OR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OS</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:52:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>509613e1db52360075ea38ff9d961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:52:19</sys_updated_on>
+            <value>OS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PO</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:53:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcd6d3e1db52360075ea38ff9d961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:53:24</sys_updated_on>
+            <value>PO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PY</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 10:44:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a582e7e1dbd2360075ea38ff9d961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 10:44:33</sys_updated_on>
+            <value>PY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TAX</label>
+            <language>en</language>
+            <name>x_norca_med_cam_license</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 09:52:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d9613e1db52360075ea38ff9d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 09:52:23</sys_updated_on>
+            <value>TAX</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_norca_med_cam_license</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-17 04:21:43</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a34633f3db900300e022771c8c96195a</sys_id>
+            <sys_mod_count>65</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_license_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:00:24</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

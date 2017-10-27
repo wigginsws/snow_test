@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:imag="http://imageright.com/imageright.webservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <imag:GetFlows>
+         <!--Optional:-->
+         <imag:securityToken>${GetFlows.securityToken}</imag:securityToken>
+         <!--Optional:-->
+         <imag:requestFilter>
+            <imag:Flag>${requestFilter.Flag}</imag:Flag>
+            <imag:RequiredPermissions>${requestFilter.RequiredPermissions}</imag:RequiredPermissions>
+            <!--Optional:-->
+            <imag:RequiredSecurity>
+               <!--Zero or more repetitions:-->
+               <imag:SecurityID>
+                  <!--Optional:-->
+                  <imag:ExternalId>${SecurityID.ExternalId}</imag:ExternalId>
+                  <imag:Id>${SecurityID.Id}</imag:Id>
+                  <imag:HasId>${SecurityID.HasId}</imag:HasId>
+               </imag:SecurityID>
+            </imag:RequiredSecurity>
+            <!--Optional:-->
+            <imag:RequiredStepTypes>
+               <!--Zero or more repetitions:-->
+               <imag:string>${RequiredStepTypes.string}</imag:string>
+            </imag:RequiredStepTypes>
+            <imag:WFStatus>${requestFilter.WFStatus}</imag:WFStatus>
+         </imag:requestFilter>
+      </imag:GetFlows>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>IRWebService40Soap.GetFlows</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>CAM-ImageRight-All [ IRWebService40Soap.GetFlows ]</qualified_name>
+        <soap_action>http://imageright.com/imageright.webservice/GetFlows</soap_action>
+        <soap_endpoint>http://pairtestapp2/imageright.webservice/irwebservice40.asmx</soap_endpoint>
+        <soap_message display_value="CAM-ImageRight-All">b02c69b3db7f3240d596327e9d9619c3</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-13 15:31:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>791d69f3db7f3240d596327e9d9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IRWebService40Soap.GetFlows</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_function_791d69f3db7f3240d596327e9d9619eb</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-13 15:31:59</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

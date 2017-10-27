@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Script-Force Update to Run Business Rules</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-06-21 18:30:32</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[//Force an update to all records without changing field values
+var gr = new GlideRecord('x_norca_med_cam_claim_entry_log');
+//gr.query('u_status','PENDING');
+gr.addNullQuery('u_claim_fk');
+gr.query();
+while (gr.next()) {
+	gr.setWorkflow(true); //Do not run business rules
+	gr.autoSysFields(false); //Do not update system fields
+	gr.setForceUpdate(true); //Force the update
+	gr.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-06-21 18:30:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3af249f8db633e00d596327e9d96191b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CAM-Script-Force Update to Run Business Rules</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_3af249f8db633e00d596327e9d96191b</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-08 20:37:07</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

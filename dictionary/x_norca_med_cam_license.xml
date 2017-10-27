@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="License" max_length="40" name="x_norca_med_cam_license" type="collection">
+        <element label="Date Licensed" max_length="40" name="date_licensed" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#9;var display = &quot;&quot;;&#10;&#9;if (current.entity) {&#10;&#9;&#9;display += current.entity.getDisplayValue();&#10;&#9;}&#10;&#9;display += &quot; - &quot; + current.license_number;&#10;&#9;return display;&#10;&#10;})(current);" display="true" label="Display Name" max_length="60" name="display_name" read_only="true" type="string" virtual="true"/>
+        <element label="Entity" mandatory="true" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity_FK" max_length="20" name="entity_fk" type="decimal"/>
+        <element label="Expiration Date" max_length="40" name="expiration_date" type="glide_date"/>
+        <element default="0" label="Last Committed Update" max_length="40" name="last_committed_update" read_only="true" type="integer"/>
+        <element label="License Number" mandatory="true" max_length="20" name="license_number" type="string"/>
+        <element choice="1" label="License State" max_length="10" name="license_state" type="string">
+            <choice>
+                <element label="Alabama" value="AL"/>
+                <element label="Alaska" value="AK"/>
+                <element label="Arizona" value="AZ"/>
+                <element label="Arkansas" value="AR"/>
+                <element label="California" value="CA"/>
+                <element label="Colorado" value="CO"/>
+                <element label="Connecticut" value="CT"/>
+                <element label="Delaware" value="DE"/>
+                <element label="District of Columbia" value="DC"/>
+                <element label="Florida" value="FL"/>
+                <element label="Georgia" value="GA"/>
+                <element label="Hawaii" value="HI"/>
+                <element label="Idaho" value="ID"/>
+                <element label="Illinois" value="IL"/>
+                <element label="Indiana" value="IN"/>
+                <element label="Iowa" value="IA"/>
+                <element label="Kansas" value="KS"/>
+                <element label="Kentucky" value="KY"/>
+                <element label="Loiusiana" value="LA"/>
+                <element label="Maine" value="ME"/>
+                <element label="Maryland" value="MD"/>
+                <element label="Massachusetts" value="MA"/>
+                <element label="Michigan" value="MI"/>
+                <element label="Minnesota" value="MN"/>
+                <element label="Mississippi" value="MS"/>
+                <element label="Missouri" value="MO"/>
+                <element label="Montana" value="MT"/>
+                <element label="Nebraska" value="NE"/>
+                <element label="Nevada" value="NV"/>
+                <element label="New Hampshire" value="NH"/>
+                <element label="New Jersey" value="NJ"/>
+                <element label="New Mexico" value="NM"/>
+                <element label="New York" value="NY"/>
+                <element label="North Carolina" value="NC"/>
+                <element label="North Dakota" value="ND"/>
+                <element label="Ohio" value="OH"/>
+                <element label="Oklahoma" value="OK"/>
+                <element label="Oregon" value="OR"/>
+                <element label="Pennsylvania" value="PA"/>
+                <element label="Puerto Rico" value="PR"/>
+                <element label="Rhode Island" value="RI"/>
+                <element label="South Carolina" value="SC"/>
+                <element label="South Dakota" value="SD"/>
+                <element label="Tennessee" value="TN"/>
+                <element label="Texas" value="TX"/>
+                <element label="Utah" value="UT"/>
+                <element label="Vermont" value="VT"/>
+                <element label="Virgin Islands" value="VI"/>
+                <element label="Virginia" value="VA"/>
+                <element label="Washington" value="WA"/>
+                <element label="West Virginia" value="WV"/>
+                <element label="Wisconsin" value="WI"/>
+                <element label="Wyoming" value="WY"/>
+                <element label="UNKNOWN" sequence="0" value="UNKNOWN"/>
+            </choice>
+        </element>
+        <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date"/>
+        <element label="Suspension Begin Date" max_length="40" name="suspension_begin_date" type="glide_date"/>
+        <element label="Suspension End Date" max_length="40" name="suspension_end_date" type="glide_date"/>
+        <element label="Suspension Reason" max_length="500" name="suspension_reason" type="string"/>
+        <element choice="1" label="Type" max_length="10" name="type" type="string">
+            <choice>
+                <element label="Audiologist/Speech Pathologist" value="AO/SP"/>
+                <element label="BC" value="BC"/>
+                <element label="Business C/A/P" value="BCAP"/>
+                <element label="Cert. Reg. Nurse Anesthetist" value="CRNA"/>
+                <element label="Cert. Reg. Nurse Pract." value="CRNP"/>
+                <element label="Certified Nurse Midwife" value="CNM"/>
+                <element label="Certified Nurse Midwife Technician" value="CNMT"/>
+                <element label="Certified Nurse Practitioner" value="CNP"/>
+                <element label="Dentist-DDS" value="DDS"/>
+                <element label="Doctor Of Osteopathy" value="DO"/>
+                <element label="Doctorate" value="PHD"/>
+                <element label="Electroencephalogram Technician" value="EEGT"/>
+                <element label="F014 Broker Agency" value="14"/>
+                <element label="HS" value="HS"/>
+                <element label="Internal Medicine" value="ME"/>
+                <element label="Licensed Certified Social Worker" value="LCSW"/>
+                <element label="Licensed Practical Nurse" value="LPN"/>
+                <element label="Limited Liability C/A/P" value="LCAP"/>
+                <element label="MC" value="MC"/>
+                <element label="Medical Assistant" value="MA"/>
+                <element label="Medical C/A/P" value="MCAP"/>
+                <element label="Medical Doctor" value="MD"/>
+                <element label="Medical Laboratory Technician" value="MLT"/>
+                <element label="NC" value="NC"/>
+                <element label="Nurse Practitioner" value="NP"/>
+                <element label="Occupational Therapist" value="OT"/>
+                <element label="Ophthalmology Technician" value="OPTH"/>
+                <element label="Optometrist" value="OD"/>
+                <element label="PC" value="PC"/>
+                <element label="Physical Therapist" value="LPT"/>
+                <element label="Physician Assistant" value="PA"/>
+                <element label="Physician Assistant Certified" value="PA-C"/>
+                <element label="Physician Surgical Assistant" value="PSA"/>
+                <element label="Physicians NOC" value="DPM"/>
+                <element label="Physiotherapist" value="PT"/>
+                <element label="Podiatrist" value="SC"/>
+                <element label="Psychologist" value="PSYC"/>
+                <element label="Radiology Technician" value="RT"/>
+                <element label="Registered Nurse" value="RN"/>
+                <element label="Social Worker" value="SW"/>
+                <element label="Surgical Assistant" value="SA"/>
+                <element label="Surgical Technician" value="ST"/>
+                <element label="Unknown" value="UNKNOWN"/>
+                <element label="X-Ray Technician" value="XRT"/>
+                <element label="009" sequence="0" value="009"/>
+                <element label="013" sequence="0" value="013"/>
+                <element label="014" sequence="0" value="014"/>
+                <element label="AA" sequence="0" value="AA"/>
+                <element label="ACN" sequence="0" value="ACN"/>
+                <element label="ARNP" sequence="0" value="ARNP"/>
+                <element label="AS" sequence="0" value="AS"/>
+                <element label="CH" sequence="0" value="CH"/>
+                <element label="EO" sequence="0" value="EO"/>
+                <element label="FB" sequence="0" value="FB"/>
+                <element label="OPC" sequence="0" value="OPC"/>
+                <element label="OR" sequence="0" value="OR"/>
+                <element label="OS" sequence="0" value="OS"/>
+                <element label="PO" sequence="0" value="PO"/>
+                <element label="PY" sequence="0" value="PY"/>
+                <element label="TAX" sequence="0" value="TAX"/>
+            </choice>
+        </element>
+        <element label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element label="Verification Date" max_length="40" name="verification_date" type="glide_date"/>
+        <index name="index">
+            <element name="sor_id"/>
+        </index>
+        <index name="index2">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

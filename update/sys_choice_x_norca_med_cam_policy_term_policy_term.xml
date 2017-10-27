@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="policy_term" table="x_norca_med_cam_policy_term" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 04</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a947071db96360075ea38ff9d9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN04</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 05</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e947071db96360075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN05</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 06</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>92947071db96360075ea38ff9d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN06</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 07</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a947071db96360075ea38ff9d9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN07</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 08</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>92947071db96360075ea38ff9d9619bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN08</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 09</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e947071db96360075ea38ff9d9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN09</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 10</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a947071db96360075ea38ff9d9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 11</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a947071db96360075ea38ff9d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 12</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa947071db96360075ea38ff9d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 13</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e947071db96360075ea38ff9d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 14</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a947071db96360075ea38ff9d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN14</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 15</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22947071db96360075ea38ff9d9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN15</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 16</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a947071db96360075ea38ff9d9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN16</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 17</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26947071db96360075ea38ff9d9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:09</sys_updated_on>
+            <value>PYN17</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 18</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a94b071db96360075ea38ff9d96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:10</sys_updated_on>
+            <value>PYN18</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 19</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e694b071db96360075ea38ff9d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:10</sys_updated_on>
+            <value>PYN19</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 20</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea94b071db96360075ea38ff9d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:10</sys_updated_on>
+            <value>PYN20</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 00</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:23:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b20f8f9db56360075ea38ff9d9619f8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN00</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 01</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 15:46:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55b7a4f1db56360075ea38ff9d961910</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN01</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 02</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 15:46:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4a764f1db56360075ea38ff9d96190e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN02</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 03</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:21:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24afe0f9db56360075ea38ff9d9619de</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN03</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PYN21</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-05-09 23:26:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>736a68c7dbe272c0d596327e9d9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-05-09 23:26:50</sys_updated_on>
+            <value>PYN21</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 96</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:24:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5960fcf9db56360075ea38ff9d9619c1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN96</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 97</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:26:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>31c0b43ddb56360075ea38ff9d9619ed</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN97</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 98</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:24:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f303cf9db56360075ea38ff9d9619d8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN98</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>policy_term</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policy Year 99</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:23:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f4303cf9db56360075ea38ff9d961952</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>PYN99</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>policy_term</element>
+            <name>x_norca_med_cam_policy_term</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 15:46:30</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bc56b3f3db900300e022771c8c96194d</sys_id>
+            <sys_mod_count>37</sys_mod_count>
+            <sys_name>policy_term</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_policy_term_policy_term</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:52</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

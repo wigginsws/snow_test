@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="coverage_verification_status" label="Coverage Verification" language="en" table="x_norca_med_cam_claim">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>coverage_verification_status</element>
+            <help/>
+            <hint>Coverage verification status.</hint>
+            <label>Coverage Verification</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <plural>Coverage Verifications</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 15:16:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>8b370a2cdb06f28062bafd441d9619ec</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>Coverage Verification</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_claim_coverage_verification_status_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-25 17:52:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

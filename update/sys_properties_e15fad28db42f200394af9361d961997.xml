@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Enables the Inbound Action for Emails. If turned off, claims will not be created/updated by Email.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_norca_med_cam.enable_inbound_email</name>
+        <read_roles>x_norca_med_cam.user</read_roles>
+        <suffix>enable_inbound_email</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>roshan@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-07 13:33:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e15fad28db42f200394af9361d961997</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_norca_med_cam.enable_inbound_email</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_properties_e15fad28db42f200394af9361d961997</sys_update_name>
+        <sys_updated_by>roshan@buildon.me</sys_updated_by>
+        <sys_updated_on>2017-04-14 20:05:17</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles>x_norca_med_cam.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e15fad28db42f200394af9361d961997"/>
+</record_update>

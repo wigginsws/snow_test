@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="a6c57a72dbbbb24075ea38ff9d96194e" sys_domain="global" table="x_norca_med_cam_coverage_review" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-10 18:15:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ec57a72dbbbb24075ea38ff9d961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section caption="Supporting Documents" display_value="Supporting Documents" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">2ec57a72dbbbb24075ea38ff9d96194f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-10 18:15:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-11 18:09:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f01effc3db7b364075ea38ff9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">301effc3db7b364075ea38ff9d96197b</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-11 18:09:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-11 18:10:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>793effc3db7b364075ea38ff9d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section caption="Coverage Issue(s)" display_value="Coverage Issue(s)" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">b53effc3db7b364075ea38ff9d961927</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-11 18:10:36</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-11 18:11:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d5eb3c3db7b364075ea38ff9d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">095eb3c3db7b364075ea38ff9d9619f4</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-11 18:11:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-11 18:11:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e57e3307db7b364075ea38ff9d96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section caption="Activity Log" display_value="Activity Log" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">ed7e3307db7b364075ea38ff9d96196a</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-11 18:11:41</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-07 22:05:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8d6b3b7db900300e022771c8c9619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_coverage_review" name="x_norca_med_cam_coverage_review" sys_domain="global" view="Default view">a6c57a72dbbbb24075ea38ff9d96194e</sys_ui_form>
+            <sys_ui_section display_value="">6c7a6faadb2f7600d596327e9d961931</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-07 22:05:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_norca_med_cam_coverage_review</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-07-10 18:15:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6c57a72dbbbb24075ea38ff9d96194e</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_name>x_norca_med_cam_coverage_review</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a6c57a72dbbbb24075ea38ff9d96194e</sys_update_name>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-07-11 18:11:41</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

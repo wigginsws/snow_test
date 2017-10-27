@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="purpose" table="x_norca_med_cam_participant" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purpose</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standard of care</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>0</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-10 19:47:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>322222e9db063600394af9361d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-10 19:47:41</sys_updated_on>
+            <value>Standard of care</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purpose</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Causation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>1</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-10 19:47:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b62222e9db063600394af9361d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-10 19:47:41</sys_updated_on>
+            <value>Causation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purpose</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Damages</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>2</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-10 19:47:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba2222e9db063600394af9361d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>austin@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-10 19:47:41</sys_updated_on>
+            <value>Damages</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>purpose</element>
+            <name>x_norca_med_cam_participant</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-10 19:47:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f34633f3db900300e022771c8c961997</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>purpose</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_participant_purpose</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:23</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

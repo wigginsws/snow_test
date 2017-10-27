@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Entity Class" max_length="40" name="x_norca_med_cam_entity_class" type="collection">
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element choice="1" label="Class" mandatory="true" max_length="10" name="class_type" type="string">
+            <choice>
+                <element label="Account Holder" value="ACCTHOLDER"/>
+                <element label="Adjuster" value="ADJUSTER"/>
+                <element label="Agency" value="AGENCY"/>
+                <element label="Agency Insureds of MAI" value="AGENCYINSD"/>
+                <element label="Agent" value="AGENT"/>
+                <element label="Allied Health Professionals" value="ALLIEDHLTH"/>
+                <element label="Annuity Company" value="ANNUITYCO"/>
+                <element label="Annuity Vendor" value="ANNUITYVEN"/>
+                <element label="Arbitrator" value="ARBITRATOR"/>
+                <element label="Assignment Company" value="ASGNMTCO"/>
+                <element label="Association" value="ASSC"/>
+                <element label="Bank" value="BANK"/>
+                <element label="Batch Contact" value="BATCONT"/>
+                <element label="Beneficiary" value="BENFICIARY"/>
+                <element label="Billing Agency" value="BILLAGENT"/>
+                <element label="Broker" value="BROKER"/>
+                <element label="Bulk Application Receiver" value="BULKAPPRCV"/>
+                <element label="Business Corporation" value="BCORP"/>
+                <element label="Business Manager" value="BUSMGR"/>
+                <element label="Business Partnership" value="BPART"/>
+                <element label="Certification Board" value="CERTBOARD"/>
+                <element label="Certified Registered Nurse Assistant" value="CRNA"/>
+                <element label="CIS Diary User" value="CSUSER"/>
+                <element label="Claim Director" value="CLMSUPER"/>
+                <element label="Claim Manager" value="CLMMGR"/>
+                <element label="Claimant" value="CLAIMANT"/>
+                <element label="Claims Committee Member" value="CLMCMTE"/>
+                <element label="Claims Regional Manager" value="CM_REG_MGR"/>
+                <element label="Claims Specialist" value="EXAMINER"/>
+                <element label="Claims Support Staff" value="CLM STAFF"/>
+                <element label="Claims WorkFlow Diary" value="CM_DIARY"/>
+                <element label="Client Serv Rep" value="CSR"/>
+                <element label="COI Holder" value="COIHOLDER"/>
+                <element label="Corporation" value="CORP"/>
+                <element label="Court" value="COURT"/>
+                <element label="Court Reporter" value="CTR"/>
+                <element label="Credentialing Agency" value="CREDENTIAL"/>
+                <element label="Defense Attorney" value="DINDATTY"/>
+                <element label="Defense Firm" value="DATTORNEY"/>
+                <element label="Dental Group" value="DENTGROUP"/>
+                <element label="Dental Practice Entity" value="DENTORG"/>
+                <element label="Dental Practice Entity" value="DENTENTITY"/>
+                <element label="Dentist" value="DENTIST"/>
+                <element label="Dentist / Oral Surgeon" value="DENOSURG"/>
+                <element label="Director of Underwriting - Operations" value="DIRUW"/>
+                <element label="Do Not Solicit" value="DNS"/>
+                <element label="Education Director" value="EDUCDIR"/>
+                <element label="Educator" value="EDUCATOR"/>
+                <element label="Elite Agency" value="ELITEAGENT"/>
+                <element label="Emergency Room Nurse" value="ER NURSE"/>
+                <element label="Employed Physician" value="EMPINSURED"/>
+                <element label="ES Executive Page Mailing" value="ESEXECMAIL"/>
+                <element label="Exhibit Site" value="EXHIBITS"/>
+                <element label="Exhibit Staff" value="EXHIBSTAFF"/>
+                <element label="Expert Witness" value="EWITNESS"/>
+                <element label="Facility" value="FACILITY"/>
+                <element label="Finance Staff" value="FINANCE"/>
+                <element label="Friend of MAI" value="FRNDSMAI"/>
+                <element label="Health Care Management Organization" value="HMO"/>
+                <element label="Hlth Care Mgmnt/Point of Service" value="HMO/POS"/>
+                <element label="Hospital" value="HOSPITAL"/>
+                <element label="Hospital Claim Cov. Requester" value="HCC"/>
+                <element label="I/S Staff" value="I/S STAFF"/>
+                <element label="IBS Staff" value="IBS STAFF"/>
+                <element label="Independent Consultant" value="CNS"/>
+                <element label="Independent Consultant" value="INDCONSULT"/>
+                <element label="Independent Physician Association" value="IPA"/>
+                <element label="Insurance Carrier" value="CARRIER"/>
+                <element label="Insurance Company" value="INSCOMPANY"/>
+                <element label="Insurer" value="INSURER"/>
+                <element label="Issue Company" value="ISSUECOMP"/>
+                <element label="Judge" value="JUDGE"/>
+                <element label="Landlord" value="LANDLORD"/>
+                <element label="Lead" value="LEAD"/>
+                <element label="Lessor" value="LESSOR"/>
+                <element label="Limited Liability Corporation" value="LLC"/>
+                <element label="Limited Liability Partnership" value="LLP"/>
+                <element label="Mailing List" value="MAIL LIST"/>
+                <element label="Managed Care Organization" value="MCO"/>
+                <element label="Management Service Organization" value="MSO"/>
+                <element label="Marketing Vendor" value="MK_VENDOR"/>
+                <element label="MCARE Adjuster" value="MCAREADJ"/>
+                <element label="Mediator" value="MEDIATOR"/>
+                <element label="Medical Facilities" value="MEDICALFAC"/>
+                <element label="Medical Group" value="MEDGROUP"/>
+                <element label="Medical Practice Entity" value="MEDICALENT"/>
+                <element label="Medical School" value="MEDSCHOOL"/>
+                <element label="Medical Society" value="MEDSOCIETY"/>
+                <element label="Medical Society Member" value="MEDSOCMEMB"/>
+                <element label="MGMA Member" value="MGMA MEMBE"/>
+                <element label="Network Classification" value="NETWORK"/>
+                <element label="Non-Insured" value="NONINSURED"/>
+                <element label="NORCAL Board Member" value="BRDMEMBER"/>
+                <element label="Norcal/PMSLIC Board Member" value="NPBRD"/>
+                <element label="Nurse" value="NURSE"/>
+                <element label="Nursing Manager" value="NURSE MGR"/>
+                <element label="Obstetric Nurse" value="OB NURSE"/>
+                <element label="Office Manager" value="OFF MGR"/>
+                <element label="Office Staff" value="OFF STAFF"/>
+                <element label="Organization" value="ORG"/>
+                <element label="Osteopathic Physician Society California" value="OPSC"/>
+                <element label="Other Employer" value="OEM"/>
+                <element label="Partner" value="PARTNER"/>
+                <element label="Peer Review Member" value="PEERRVWMEM"/>
+                <element label="Physician &amp; Surgeon" value="PHYSICIAN"/>
+                <element label="Physician Claim Reviewer" value="CREVIEWBD"/>
+                <element label="Physician Hospital Organization" value="PSO"/>
+                <element label="Plaintiff Attorney" value="PATTORNEY"/>
+                <element label="PMSLIC Board Member" value="PBRD"/>
+                <element label="PMSLIC/NORCAL Board Member" value="PNBRD"/>
+                <element label="Policyholder Service Rep" value="PSR"/>
+                <element label="Practice Manager" value="PRACTMGR"/>
+                <element label="Preferred Physicians Organization" value="PPO"/>
+                <element label="Premium Finance Company" value="PREMFINCO"/>
+                <element label="Producer" value="SUBAGENT"/>
+                <element label="Prospect" value="PROSPECT"/>
+                <element label="Purchasing Group" value="PURCHGRP"/>
+                <element label="Quality Manager" value="QUAL MGR"/>
+                <element label="Record Copy Service" value="REC"/>
+                <element label="Reinsurance Intermediary" value="REININTER"/>
+                <element label="Reinsurer" value="REINSURER"/>
+                <element label="Risk Management Consultant" value="RMC"/>
+                <element label="Risk Management Speaker/Moderator" value="RM_SPEAKER"/>
+                <element label="Risk Management Staff" value="RM_STAFF"/>
+                <element label="Risk Management Studio" value="RM_STUDIO"/>
+                <element label="Risk Management Vendor" value="RM_VENDOR"/>
+                <element label="Risk Manager" value="RISKMGR"/>
+                <element label="RM Broadcast Network Site" value="RM_SITE"/>
+                <element label="RM Specialist" value="RM_SPECIAL"/>
+                <element label="Sales Staff" value="SALES"/>
+                <element label="Schedule Rated Group" value="SRG"/>
+                <element label="SCPIE Sales Initiative" value="SCPIE"/>
+                <element label="Self Insured (CMS)" value="SELFINSURD"/>
+                <element label="Seminar Participant" value="SM PARTICI"/>
+                <element label="Surety Company" value="SURETYCO"/>
+                <element label="Surgeon" value="SURGEON"/>
+                <element label="Suspect" value="SUSPECT"/>
+                <element label="Unclassified Norcal Employee" value="UNCLASS"/>
+                <element label="Underwriter" value="UNDWRITER"/>
+                <element label="Underwriter - Special Risks" value="UWSPEC"/>
+                <element label="Underwriting Manager" value="UWMGR"/>
+                <element label="UW Manager" value="UW_MGR"/>
+                <element label="UW Support Staff" value="UW_STAFF"/>
+                <element label="Vendor" value="VENDOR"/>
+                <element label=".Corporate" sequence="0" value=".Corporate"/>
+                <element label="Additional" sequence="0" value="Additional"/>
+                <element label="Corporate1" sequence="0" value="Corporate1"/>
+                <element label="IND_AGENT" sequence="0" value="IND_AGENT"/>
+                <element label="Insured Co" sequence="0" value="Insured Co"/>
+                <element label="UNK-DED" sequence="0" value="UNK-DED"/>
+                <element label="UNKNOWN" sequence="0" value="UNKNOWN"/>
+                <element label="_Corporate" sequence="0" value="_Corporate"/>
+            </choice>
+        </element>
+        <element default="javascript: new GlideDate()" label="Effective From" max_length="40" name="effective_from" type="glide_date"/>
+        <element default="3000-01-01" label="Effective To" max_length="40" name="effective_to" type="glide_date"/>
+        <element label="Entity" mandatory="true" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
+        <element default="0" label="Last Committed Update" max_length="40" name="last_committed_update" read_only="true" type="integer"/>
+        <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element label="Subclass" max_length="10" name="subclass" type="string"/>
+        <element label="Subtype" max_length="10" name="subtype" type="string"/>
+        <index name="index">
+            <element name="claim"/>
+        </index>
+        <index name="index2">
+            <element name="sor_id"/>
+        </index>
+        <index name="index3">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

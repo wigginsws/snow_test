@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="contract" table="x_norca_med_cam_reinsurance" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>contract</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Loss Event</label>
+            <language>en</language>
+            <name>x_norca_med_cam_reinsurance</name>
+            <sequence>0</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-04-24 19:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cbb6e2c2db9ab240d596327e9d9619bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-04-24 19:40:18</sys_updated_on>
+            <value>Loss Event</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>contract</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excess Cession</label>
+            <language>en</language>
+            <name>x_norca_med_cam_reinsurance</name>
+            <sequence>1</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-04-24 19:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0bb6e2c2db9ab240d596327e9d9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-04-24 19:40:18</sys_updated_on>
+            <value>Excess Cession</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>contract</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facultative</label>
+            <language>en</language>
+            <name>x_norca_med_cam_reinsurance</name>
+            <sequence>2</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-04-24 19:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83b6e2c2db9ab240d596327e9d9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-04-24 19:40:18</sys_updated_on>
+            <value>Facultative</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>contract</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FD INS Awards Made</label>
+            <language>en</language>
+            <name>x_norca_med_cam_reinsurance</name>
+            <sequence>3</sequence>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-04-24 19:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0fb6e2c2db9ab240d596327e9d9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-04-24 19:40:18</sys_updated_on>
+            <value>FD INS Awards Made</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>contract</element>
+            <name>x_norca_med_cam_reinsurance</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-04-24 19:40:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b056b3f3db900300e022771c8c961974</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>contract</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_reinsurance_contract</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:37</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

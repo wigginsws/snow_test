@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <data_source display_value="Claims-OASIS-PFUser">9b0ea144db67f600d596327e9d961998</data_source>
+        <map/>
+        <name>Claims-OASIS-PFUser</name>
+        <order/>
+        <parent display_value="Claims-OASIS-Entity">573b26afdb0eb68062bafd441d961926</parent>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-06-23 20:47:45</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>parent</run_type>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-23 20:48:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c95b355dbeb360075ea38ff9d96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Claims-OASIS-PFUser</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>scheduled_import_set_9c95b355dbeb360075ea38ff9d96195f</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-23 20:48:58</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </scheduled_import_set>
+</record_update>

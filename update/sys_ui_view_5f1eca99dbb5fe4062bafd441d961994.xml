@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,RPTa17487b80a0a0aa7006cda86a693994a</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>austin@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-28 13:25:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f1eca99dbb5fe4062bafd441d961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,rpta17487b80a0a0aa7006cda86a693994a</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_view_5f1eca99dbb5fe4062bafd441d961994</sys_update_name>
+        <sys_updated_by>austin@buildon.me</sys_updated_by>
+        <sys_updated_on>2017-03-28 13:25:52</sys_updated_on>
+        <title>Sys_popup,rpta17487b80a0a0aa7006cda86a693994a</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

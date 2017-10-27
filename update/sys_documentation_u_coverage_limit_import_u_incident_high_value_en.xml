@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_incident_high_value" label="INCIDENT_HIGH_VALUE" language="en" table="u_coverage_limit_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_incident_high_value</element>
+            <help/>
+            <hint/>
+            <label>INCIDENT_HIGH_VALUE</label>
+            <language>en</language>
+            <name>u_coverage_limit_import</name>
+            <plural>INCIDENT_HIGH_VALUEs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 18:23:18</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>4cbd162edb94474075ea38ff9d96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>INCIDENT_HIGH_VALUE</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_coverage_limit_import_u_incident_high_value_en</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 18:23:18</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

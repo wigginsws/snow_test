@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>ReportDate</name>
+        <rest_message_function display_value="GetCoverageInfo">18b35839db4cc70075ea38ff9d961919</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-19 21:34:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f38979f1db400b0075ea38ff9d961913</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ReportDate</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_f38979f1db400b0075ea38ff9d961913</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-19 21:37:50</sys_updated_on>
+        <type>string</type>
+        <value>4/7/2017</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Address" max_length="40" name="x_norca_med_cam_address" type="collection">
+        <element label="Addressee" max_length="60" name="addressee" type="string"/>
+        <element display="true" label="Address Line 1" mandatory="true" max_length="60" name="address_line1" type="string"/>
+        <element label="Address Line 2" max_length="60" name="address_line2" type="string"/>
+        <element label="Address Line 3" max_length="60" name="address_line3" type="string"/>
+        <element label="City" mandatory="true" max_length="30" name="city" type="string"/>
+        <element label="Country" mandatory="true" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element label="County Code" max_length="10" name="county" type="string"/>
+        <element dynamic_ref_qual="196daeb5db840b0075ea38ff9d9619dd" label="County" max_length="32" name="county_name" reference="x_norca_med_cam_county_lookup" reference_qual="javascript:new x_norca_med_cam.cam_Filters().getCountiesInState(current.claim_state_code)" type="reference" use_reference_qualifier="dynamic"/>
+        <element label="Domestic" max_length="40" name="domestic" type="boolean"/>
+        <element default="javascript:new GlideDate()" label="Effective From" max_length="40" name="effective_from" type="glide_date"/>
+        <element default="3000-01-01" label="Effective To" max_length="40" name="effective_to" type="glide_date"/>
+        <element label="Entity" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
+        <element default="0" label="Last Committed Update" max_length="40" name="last_committed_update" read_only="true" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#9;var displayName = &quot;&quot;;&#10;&#9;if (current.address_line1) {&#10;&#9;&#9;displayName = current.address_line1;&#10;&#9;}&#10;&#9;if (current.city) {&#10;&#9;&#9;if (displayName) {&#10;&#9;&#9;&#9;displayName += &quot;, &quot; + current.city;&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;displayName = current.city;&#10;&#9;&#9;}&#10;&#9;}&#10;&#9;if (current.state) {&#10;&#9;&#9;if (displayName) {&#10;&#9;&#9;&#9;displayName += &quot;, &quot; + current.state;&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;displayName = current.state;&#10;&#9;&#9;}&#10;&#9;}&#9;&#10;&#9;if (current.country) {&#10;&#9;&#9;if (displayName) {&#10;&#9;&#9;&#9;displayName += &quot;, &quot; + current.country.getDisplayValue();&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;displayName = current.country.getDisplayValue();&#10;&#9;&#9;}&#10;&#9;}&#10;&#9;if (current.use) {&#10;&#9;&#9;if (displayName) {&#10;&#9;&#9;&#9;displayName += &quot;, &quot; + &quot; (&quot; + current.use.getDisplayValue() + &quot;)&quot;;&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;displayName = &quot;(&quot; + current.use.getDisplayValue() + &quot;)&quot;;&#10;&#9;&#9;}&#10;&#9;}&#10;&#9;&#10;&#9;return displayName;&#10;&#10;})(current);" label="Display Name" max_length="100" name="name" read_only="true" type="string" virtual="true"/>
+        <element label="Primary Address" max_length="40" name="primary" type="boolean"/>
+        <element label="Province" max_length="30" name="province" type="string"/>
+        <element choice="1" default="x_norca_med_cam_entity" label="Referenced Table" max_length="40" name="referenced_table" read_only="true" type="choice">
+            <choice>
+                <element label="Entity" sequence="0" value="x_norca_med_cam_entity"/>
+            </choice>
+        </element>
+        <element label="OASIS - Created By" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS Updated By" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element choice="1" label="State" mandatory="true" max_length="10" name="state" type="string">
+            <choice>
+                <element label="Alabama" value="AL"/>
+                <element label="Alaska" value="AK"/>
+                <element label="Arizona" value="AZ"/>
+                <element label="Arkansas" value="AR"/>
+                <element label="California" value="CA"/>
+                <element label="Colorado" value="CO"/>
+                <element label="Connecticut" value="CT"/>
+                <element label="Delaware" value="DE"/>
+                <element label="District of Columbia" value="DC"/>
+                <element label="Florida" value="FL"/>
+                <element label="Georgia" value="GA"/>
+                <element label="Hawaii" value="HI"/>
+                <element label="Idaho" value="ID"/>
+                <element label="Illinois" value="IL"/>
+                <element label="Indiana" value="IN"/>
+                <element label="Iowa" value="IA"/>
+                <element label="Kansas" value="KS"/>
+                <element label="Kentucky" value="KY"/>
+                <element label="Loiusiana" value="LA"/>
+                <element label="Maine" value="ME"/>
+                <element label="Maryland" value="MD"/>
+                <element label="Massachusetts" value="MA"/>
+                <element label="Michigan" value="MI"/>
+                <element label="Minnesota" value="MN"/>
+                <element label="Mississippi" value="MS"/>
+                <element label="Missouri" value="MO"/>
+                <element label="Montana" value="MT"/>
+                <element label="Nebraska" value="NE"/>
+                <element label="Nevada" value="NV"/>
+                <element label="New Hampshire" value="NH"/>
+                <element label="New Jersey" value="NJ"/>
+                <element label="New Mexico" value="NM"/>
+                <element label="New York" value="NY"/>
+                <element label="North Carolina" value="NC"/>
+                <element label="North Dakota" value="ND"/>
+                <element label="Ohio" value="OH"/>
+                <element label="Oklahoma" value="OK"/>
+                <element label="Oregon" value="OR"/>
+                <element label="Pennsylvania" value="PA"/>
+                <element label="Puerto Rico" value="PR"/>
+                <element label="Rhode Island" value="RI"/>
+                <element label="South Carolina" value="SC"/>
+                <element label="South Dakota" value="SD"/>
+                <element label="Tennessee" value="TN"/>
+                <element label="Texas" value="TX"/>
+                <element label="Utah" value="UT"/>
+                <element label="Vermont" value="VT"/>
+                <element label="Virgin Islands" value="VI"/>
+                <element label="Virginia" value="VA"/>
+                <element label="Washington" value="WA"/>
+                <element label="West Virginia" value="WV"/>
+                <element label="Wisconsin" value="WI"/>
+                <element label="Wyoming" value="WY"/>
+                <element label=",PA," sequence="0" value=",PA,"/>
+            </choice>
+        </element>
+        <element label="Undeliverable" max_length="40" name="undeliverable" type="boolean"/>
+        <element choice="1" label="Address Purpose" mandatory="true" max_length="10" name="use" type="choice">
+            <choice>
+                <element label="1099 Address" value="1099ADDR"/>
+                <element label="Batch" value="BATCH"/>
+                <element label="Billing" value="BILLING"/>
+                <element label="BRKR" value="BRKR"/>
+                <element label="Business" value="BUSINESS"/>
+                <element label="Claims" value="CLAIMS"/>
+                <element label="COI Recipient" value="COIRECIPIE"/>
+                <element label="Course" value="COURSE"/>
+                <element label="Employer Address" value="EMPLOYER"/>
+                <element label="FD Group" value="FDGROUP"/>
+                <element label="Home" value="HOME"/>
+                <element label="Hospital" value="HOSPITAL"/>
+                <element label="Insured Property" value="PROPERTY"/>
+                <element label="Mailing" value="MAILING"/>
+                <element label="Medicus Group" value="MEDIGRP"/>
+                <element label="Office-Secondary" value="OFFICE-SEC"/>
+                <element label="Payee" value="PAYEE"/>
+                <element label="Practice Location" value="PREMISE"/>
+                <element label="REFUND" value="REFUND"/>
+                <element label="Risk Management Mailing Address" value="RM_MAILING"/>
+                <element label="Unknown" value="UNKNOWN"/>
+                <element label="zOffice-Primary" value="OFFICE"/>
+                <element label="zPractice Address" value="PRACTICE"/>
+                <element label="3PTY" sequence="0" value="3PTY"/>
+                <element label="ACEX" sequence="0" value="ACEX"/>
+                <element label="ADMN" sequence="0" value="ADMN"/>
+                <element label="COI" sequence="0" value="COI"/>
+                <element label="COIRECIPE" sequence="0" value="COIRECIPE"/>
+                <element label="CONTACT" sequence="0" value="CONTACT"/>
+                <element label="E/E" sequence="0" value="E/E"/>
+                <element label="LOC" sequence="0" value="LOC"/>
+                <element label="PLAN" sequence="0" value="PLAN"/>
+                <element label="PRAC" sequence="0" value="PRAC"/>
+                <element label="PRIM" sequence="0" value="PRIM"/>
+                <element label="RALT" sequence="0" value="RALT"/>
+            </choice>
+        </element>
+        <element label="Zip Code" mandatory="true" max_length="10" name="zip_code" type="string"/>
+        <element label="Zip Code Extension" max_length="4" name="zip_code_extension" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="sor_id"/>
+        </index>
+        <index name="index3">
+            <element name="county_name"/>
+        </index>
+        <index name="index4">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

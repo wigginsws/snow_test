@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_DataSyncUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_DataSyncUtils</name>
+        <script><![CDATA[var cam_DataSyncUtils = Class.create();
+cam_DataSyncUtils.prototype = {
+    initialize: function() {
+    },
+	
+	// deprecated
+	isEntityClassEffective: function(classGR) {
+		gs.warn("Called deprecate function isEntityClassEffective");
+		return this.isRecordEffective(classGR, "effective_from", "effective_to", "class_type", "entity");
+	},
+	
+	
+	/**
+	* Checks if a related record that has an effective and expiration date is effective as of today.
+	**/
+	isRecordEffective: function(childGR, childFromDateField, childToDateField, childValueField, parentRefField) {
+		
+		var retVal = false;
+		if (childGR.getValue(parentRefField) && childGR.getValue(childValueField)) {
+			
+			var fromDate = childGR.getValue(childFromDateField);
+			var toDate = childGR.getValue(childToDateField);
+			if (!fromDate && !toDate) {
+				retVal = true;
+			} else {
+				
+				var now = new GlideDateTime();
+				var from;
+				if (!fromDate)  {
+					from = new GlideDateTime();
+					from.subtract(1000);
+				} else {
+					from = new GlideDateTime(fromDate + " 00:00:00");
+				}
+				
+				var to;
+				if (!toDate)  {
+					to = new GlideDateTime();
+					to.add(1000);
+				} else {
+					to = new GlideDateTime(toDate + " 23:59:59");
+				}
+
+				gs.debug("[isRecordEffective] Class: " + childGR.getValue(childValueField) + ", from: " + from + ", now: " + now + ", to: " + to);
+				if (now.compareTo(from)>=0 && now.compareTo(to)<=0) {
+					retVal = true; 
+				}
+			}
+			
+		}
+		return retVal;
+
+	},
+	
+	/**
+	* Simple method for checking whether current time is in between the effective from and to dates on a record.
+	*/
+	isRecordEffectiveSimple: function(gr, fromDateField, toDateField) {
+		var retVal = false;
+		var fromDate = gr.getValue(fromDateField);
+		var toDate = gr.getValue(toDateField);
+		if (!fromDate && !toDate) {
+			retVal = true;
+			
+		} else {
+			var now = new GlideDateTime();
+			var from;
+			if (!fromDate)  {
+				from = new GlideDateTime();
+				from.subtract(1000);
+			} else {
+				from = new GlideDateTime(fromDate + " 00:00:00");
+			}
+
+			var to;
+			if (!toDate)  {
+				to = new GlideDateTime();
+				to.add(1000);
+			} else {
+				to = new GlideDateTime(toDate + " 23:59:59");
+			}
+
+			gs.debug("[isRecordEffectiveSimple] Record from: " + from + ", now: " + now + ", to: " + to);
+			if (now.compareTo(from)>=0 && now.compareTo(to)<=0) {
+				retVal = true; 
+			}
+		}
+		return retVal;
+	},
+	
+	
+	/**
+	*
+	**/
+	updateParentValueList: function(parentTable, parentValueListField, childTable, childFromDateField, childToDateField, childValueField, parentRefField, useDisplayValue, retrieveAllEffective) {
+		
+		var FN_NAME = "[updateParentValueList] ";
+
+		// calculate dates for yesterday and today
+		var now = new GlideDateTime();
+		var today = now.getDate().getByFormat("yyyyMMdd"); // use to check what became effective
+		now.subtract(86400000);
+		var yesterday = now.getDate().getByFormat("yyyyMMdd"); // use to check what became ineffective
+		var childGR = new GlideRecord(childTable);		
+		if (retrieveAllEffective) {
+			// retrieve classes that are effective or expired as of today, grouped by parent
+			childGR.addEncodedQuery(parentRefField + "!=NULL^" + childToDateField + ">=" + today + "T000000^EQ^ORDERBY" + parentRefField);
+			
+		} else {
+			// retrieve classes that have become effective or expired as of today, grouped by parent
+			childGR.addEncodedQuery(parentRefField + "!=NULL^" + childToDateField + ">=" + yesterday + "T000000^" + childToDateField + "<=" + yesterday + "T235959^NQ" + parentRefField + "!=NULL^" + childFromDateField + ">=" + today + "T000000^" + childFromDateField + "<=" + today + "T235959^EQ^ORDERBY" + parentRefField);
+			
+		}
+		gs.debug(FN_NAME + "encodedQuery: " + childGR.getEncodedQuery() + ", rowCount: " + childGR.getRowCount());
+		childGR.query();
+		
+
+		// for each parent, add or update to value list
+		var parentGR = null;
+		var prevId = null;
+		while(childGR.next()) {
+			if (!parentGR) {
+				gs.debug( FN_NAME + "Initial run, getting parent");
+				parentGR = this.getRecordBySysId(cam.SCOPE_ID + "_entity", childGR.getValue(parentRefField));
+			}
+			if (!prevId) {
+				prevId = parentGR.getUniqueValue();
+			} else if (prevId!=childGR.getValue(parentRefField)) {
+				gs.debug( FN_NAME + "Updating " + parentTable + ": " + parentGR.getDisplayValue() + ", " + parentValueListField + ": " + parentGR.getValue(parentValueListField));
+				parentGR.update( parentValueListField + " update caused by " + childTable);
+				parentGR = this.getRecordBySysId(cam.SCOPE_ID + "_entity", childGR.getValue(parentRefField));
+			}
+
+			var theValue = useDisplayValue? childGR.getDisplayValue(childValueField) : childGR.getValue(childValueField);
+			var valueList = parentGR.getValue(parentValueListField);
+			if (this.isRecordEffective(childGR, childFromDateField, childToDateField, childValueField, parentRefField)) {
+				if (!valueList) {
+					valueList = "" + theValue;
+
+				} else if (valueList.indexOf(theValue)<0) {
+					valueList += "," + theValue;
+
+				}
+			} else {
+				if (valueList) {
+					valueList = cam.removeValueFromTokenizedString(valueList, ",", theValue);
+				}
+			}
+			parentGR.setValue(parentValueListField, valueList);
+
+		}
+
+		// last entity is going to be uncommitted, so commit now
+		if (parentGR) {
+			gs.debug( FN_NAME + "Updating " + parentTable + ": " + parentGR.getDisplayValue() + ", " + parentValueListField + ": " + parentGR.getValue(parentValueListField));
+			parentGR.update( parentValueListField + " update caused by " + childTable);
+		}
+	},
+	
+	getEntityBySysId: function(entityID) {
+		var gr = new GlideRecord(cam.SCOPE_ID + "_entity");
+		if (gr.get(entityID)) {
+			return gr;
+		}
+		return null;
+	},
+	
+	getEntityBySorId: function(sorID) {
+		gs.warn("[getEntityBySorId] tablename: " + cam.SCOPE_ID + "_entity");
+		var gr = new GlideRecord(cam.SCOPE_ID + "_entity");
+		if (gr.get("sor_id", sorID)) {
+			return gr;
+		}
+		return null;
+	},
+	
+	getRecordBySysId: function(tableName, sysId) {
+		if (sysId) {
+			var gr = new GlideRecord(tableName);
+			if (gr.get(sysId)) {
+				return gr;
+			}
+		}
+		return null;
+	},
+	
+	getRecordBySorId: function(tableName, sorID, sorIDFieldName) {
+		if (sorID) {
+			var gr = new GlideRecord(tableName);
+			if (gr.get( (sorIDFieldName ? sorIDFieldName : "sor_id"), sorID)) {
+				return gr;
+			}
+		}
+		return null;
+	},
+	
+	getFieldForRecordBySysId: function(tableName, sysId, fieldName) {
+		var retVal;
+		var gr = this.getRecordBySysId(tableName, sysId);
+		if (gr) {
+			retVal = gr.getValue(fieldName);
+		}
+		return retVal;
+	},
+	
+	forceTableUpdate: function(tableName, limit) {
+	
+		var gr = new GlideRecord(tableName);
+		gr.setWorkflow(false);
+		if (limit>0) {
+			gr.setLimit(limit);
+		}
+		gr.query();
+		while (gr.next()) {
+			gr.setWorkflow(false);
+			gr.autoSysFields(false);
+			gr.setForceUpdate(true);
+			gr.update();
+		}
+
+	},
+	
+	
+	deleteAttachmentsForRecord: function( tableName, recordId) {
+		var gr = new GlideRecord("sys_attachment");
+		gr.addQuery("table_name", tableName);
+		gr.addQuery("table_sys_id", recordId);
+		gr.query();
+		while (gr.next()) {
+			gr.deleteRecord();
+		}
+	},
+	
+	
+	copyFieldsFromLogToClaim: function(cel, claim) {
+		
+		claim.u_case = cel.u_occurrence_id;
+		claim.claim_type=cel.u_claim_type;
+		if (!claim.claimant && cel.u_entity_claimant_id) {
+			claim.claimant=cel.u_entity_claimant_id;
+		}
+		claim.u_loss_date=cel.u_loss_date;
+		claim.u_incident_start_date=cel.u_incident_start_date;
+		claim.u_incident_end_date=cel.u_incident_end_date;
+		if(!claim.u_insured && cel.u_risk_id) {
+			claim.u_insured=cel.u_risk_id;
+		}
+		if (!claim.policy && cel.u_policy_id) {
+			claim.policy=cel.u_policy_id;
+		}
+		claim.report_date=cel.u_report_date;
+		claim.short_description=cel.u_headline;
+		claim.u_branch_office=cel.u_branch_office;
+		claim.claim_log_id = cel.u_claim_entry_log_pk;
+		claim.claim_log_updated_by = cel.u_sys_updated_by;
+		claim.claim_log_updated_on = cel.u_sys_update_time;
+		claim.claim_log_created_by = cel.u_sys_created_by;
+		claim.claim_log_created_on = cel.u_sys_create_time;
+	},
+	
+	
+	/**
+	* Description: Utility function that fixes reference field in a table when another column holds the 
+	* SOR ID (Foreign Key) to a referenced table.
+	* Parameters:
+	* tableName - Name of table where references need to be fixed
+	* refSorIdField - Field in referencing table that has the foreign key reference.
+	* refField - Reference field in referencing table
+	* refTableName - Name of the referenced table
+	* sorIdField - The identifying column in the referenced table, record values matching tableName.refSorIdField.
+	* Returns:
+	*/
+	fixReferencesUsingSorId: function(tableName, refSorIdField, refField, refTableName, sorIdField, limit) {
+		var gr = new GlideRecord(tableName);
+		gr.addNotNullQuery(refSorIdField);
+		gr.addNullQuery(refField);
+		if (limit && limit>0) {
+			gr.setLimit(limit);
+		}
+		gr.query();
+		while (gr.next()) {
+			var refGR = this.getRecordBySorId( refTableName, gr.getValue(refSorIdField), sorIdField);
+			if (refGR) {
+				gr.autoSysFields(false);
+				gr.setWorkflow(false);
+				gr.setValue( refField, refGR.getUniqueValue());
+				gr.update();
+			}
+		}
+	},
+	
+    type: 'cam_DataSyncUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>roshan@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-18 14:14:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cda16a8cdb123a8062bafd441d9619ae</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>cam_DataSyncUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_cda16a8cdb123a8062bafd441d9619ae</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-04 03:17:01</sys_updated_on>
+    </sys_script_include>
+</record_update>

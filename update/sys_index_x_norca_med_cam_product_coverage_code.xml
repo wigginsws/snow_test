@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>code</col_name_string>
+        <index_col_name element="code" name="x_norca_med_cam_product_coverage">156dfda6db14474075ea38ff9d961945</index_col_name>
+        <logical_table_name>x_norca_med_cam_product_coverage</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-08-03 16:14:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7b30026adb14474075ea38ff9d96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_norca_med_cam_product_coverage</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_index_x_norca_med_cam_product_coverage_code</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-03 16:14:40</sys_updated_on>
+        <table display_value="Product Coverage" name="x_norca_med_cam_product_coverage">072df9a6db14474075ea38ff9d9619a5</table>
+        <unique_index>true</unique_index>
+    </sys_index>
+</record_update>

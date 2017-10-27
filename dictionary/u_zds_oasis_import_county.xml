@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-County" max_length="40" name="u_zds_oasis_import_county" type="collection">
+        <element attributes="import_attribute_name=CODE,edge_encryption_enabled=true" label="CODE" max_length="40" name="u_code" type="string"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=LONG_DESCRIPTION,edge_encryption_enabled=true" label="LONG_DESCRIPTION" max_length="40" name="u_long_description" type="string"/>
+        <element attributes="import_attribute_name=SHORT_DESCRIPTION,edge_encryption_enabled=true" label="SHORT_DESCRIPTION" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="import_attribute_name=STATE_CODE,edge_encryption_enabled=true" label="STATE_CODE" max_length="40" name="u_state_code" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+    </element>
+</database>

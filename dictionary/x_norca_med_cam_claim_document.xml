@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true" audit="true" label="Document" max_length="40" name="x_norca_med_cam_claim_document" type="collection">
+        <element label="Case" max_length="32" name="case_ref" reference="x_norca_med_cam_case" type="reference"/>
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var display_name = current.getValue(&quot;name&quot;)?current.getValue(&quot;name&quot;):&quot;&quot;;&#10;&#9;switch(current.getValue(&quot;referenced_table&quot;)) {&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_case&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;case_ref&quot;)?current.getDisplayValue(&quot;case_ref&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_claim&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;claim&quot;)?current.getDisplayValue(&quot;claim&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_policy&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;policy&quot;)?current.getDisplayValue(&quot;policy&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;}&#10;// &#9;if (current.folder_name) {&#10;// &#9;&#9;display_name = display_name.trim() + &quot; &quot; + current.getDisplayValue(&quot;folder_name&quot;);&#10;// &#9;}&#10;// &#9;if (current.type) {&#10;// &#9;&#9;display_name = display_name.trim() + &quot; &quot; + current.getDisplayValue(&quot;type&quot;);&#10;// &#9;}&#10;&#9;&#10;&#9;if (display_name.length&gt;100) {&#10;&#9;&#9;display_name = display_name.substring(0, 96) + &quot;...&quot;; &#10;&#9;}&#10;&#9;return display_name;&#10;&#10;})(current);" display="true" label="Display Name" max_length="100" name="display_name" read_only="true" type="string" virtual="true"/>
+        <element choice="1" label="Folder Name" max_length="40" name="folder_name" type="string">
+            <choice>
+                <element label="File Notes (9999)" sequence="100" value="9999"/>
+                <element label="WLI File Notes (9997)" sequence="200" value="9997"/>
+                <element label="File Note Converted (10001)" sequence="300" value="10001"/>
+                <element label="Activity Log (9998)" sequence="400" value="9998"/>
+                <element label="Coverage Documents (10000)" sequence="500" value="10000"/>
+                <element label="Correspondence (13010)" sequence="600" value="13010"/>
+                <element label="Reports and Insured’s Narrative (10200)" sequence="700" value="10200"/>
+                <element label="Legal Documents (11100)" sequence="800" value="11100"/>
+                <element label="Medical and Other Records (12010)" sequence="900" value="12010"/>
+                <element label="Deposition Transcripts (12020)" sequence="1000" value="12020"/>
+                <element label="Accounts Payable (10501)" sequence="1100" value="10501"/>
+                <element label="Backscanned Documents (99000)" sequence="1200" value="99000"/>
+                <element label="Malpractice Unlisted Documents (99100)" sequence="1300" value="99100"/>
+            </choice>
+        </element>
+        <element choice="3" choice_field="status" choice_table="x_norca_med_cam_ir_doc_load_tracker" default="not_requested" label="IR Load Status" mandatory="true" max_length="40" name="ir_load_status" type="choice">
+            <choice/>
+        </element>
+        <element label="Document Name" max_length="100" name="name" type="string"/>
+        <element label="Page Count" max_length="40" name="page_count" read_only="true" type="integer"/>
+        <element label="Page Data" max_length="800" name="page_data" read_only="true" type="data_structure"/>
+        <element label="Policy" max_length="32" name="policy" reference="x_norca_med_cam_policy" type="reference"/>
+        <element choice="3" default="x_norca_med_cam_claim" label="Linked To" max_length="40" name="referenced_table" type="choice">
+            <choice>
+                <element label="Case" value="x_norca_med_cam_case"/>
+                <element label="Claim" value="x_norca_med_cam_claim"/>
+                <element label="Policy" value="x_norca_med_cam_policy"/>
+            </choice>
+        </element>
+        <element label="IR - Created By" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="IR - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element label="IR ID" max_length="40" name="sor_id" read_only="true" type="string"/>
+        <element label="IR Reference ID" max_length="20" name="sor_reference_id" read_only="true" type="string"/>
+        <element label="IR - Updated By" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="IR - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element choice="3" dependent="folder_name" dependent_on_field="folder_name" label="Document Type" mandatory="true" max_length="40" name="type" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="10001" label="CNTE - Converted File Note" value="CNTE"/>
+                <element dependent_value="10000" label="COVE - Coverage" value="COVE"/>
+                <element dependent_value="13010" label="DAMI – Damages Info" value="DAMI"/>
+                <element dependent_value="13010" label="DCON – Defense Consult" value="DCON"/>
+                <element dependent_value="13010" label="DEMR – Demand and Response" value="DEMR"/>
+                <element dependent_value="13010" label="DEPO – Deposition Summary" value="DEPO"/>
+                <element dependent_value="13010" label="DISP - Disposition" value="DISP"/>
+                <element dependent_value="13010" label="DRPT – Defense Counsel Report" value="DRPT"/>
+                <element dependent_value="9998" label="EXTE - External Record Document" value="EXTE"/>
+                <element dependent_value="13010" label="MCAR - MCARE" value="MCAR"/>
+                <element dependent_value="9997" label="MISC - Miscellaneous" value="MISC"/>
+                <element dependent_value="13010" label="MISC - Miscellaneous" value="MISC"/>
+                <element dependent_value="10000" label="MISC - Miscellaneous" value="MISC"/>
+                <element dependent_value="99000" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="11100" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="10200" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="12010" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="99100" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="10501" label="MISC – Miscellaneous" value="MISC"/>
+                <element dependent_value="13010" label="MRAC – NORCAL Review/MRAC" value="MRAC"/>
+                <element dependent_value="11100" label="NOI – Notice of Intent to Sue" value="NOI"/>
+                <element dependent_value="9999" label="NOTE - Note" value="NOTE"/>
+                <element dependent_value="13010" label="PEXP – Plaintiff Expert Report" value="PEXP"/>
+                <element dependent_value="9998" label="RCLG - Records Log" value="RCLG"/>
+                <element dependent_value="13010" label="RREP – Reinsurance Report" value="RREP"/>
+                <element dependent_value="13010" label="RSUM – Records Summary" value="RSUM"/>
+                <element dependent_value="12020" label="TRAN – Deposition Transcripts" value="TRAN"/>
+                <element dependent_value="10501" label="W-9 – W-9 Form" value="W-9"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sor_id"/>
+            <element name="sor_reference_id"/>
+        </index>
+        <index name="index2">
+            <element name="claim"/>
+        </index>
+        <index name="index3">
+            <element name="case_ref"/>
+        </index>
+        <index name="index4">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

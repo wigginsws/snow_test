@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_risk</collection>
+        <condition/>
+        <description>When an effective Risk is added, adds the policy number to associated Entity.</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_risk">entityISNOTEMPTY^EQ<item endquery="false" field="entity" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-RISK-Add PolicyNum to Entity</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var camDataSyncUtils = new cam_DataSyncUtils();
+	
+	gs.debug("[addPolicyToEntity] Called. Effective Date " + current.effective_from_date + ", Expiration " + current.effective_to_date);
+	
+	if (camDataSyncUtils.isRecordEffective(current, "effective_from_date", "effective_to_date", "policy_reference", "entity")) {
+		var entityGR = camDataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_entity", current.getValue("entity"));
+		if (entityGR) {
+			var policy_numbers = entityGR.getValue("policy_numbers");
+
+			gs.debug("[addPolicyToEntity] current policy_numbers " + policy_numbers);
+			var policyNumber = current.getDisplayValue("policy_reference");
+			if (!policy_numbers) {
+				policy_numbers = "" + policyNumber;
+			} else if (policy_numbers.indexOf(policyNumber)<0) {
+				policy_numbers += "," + policyNumber;
+			}
+			entityGR.setValue("policy_numbers", policy_numbers);
+			entityGR.update();
+			gs.debug("[addPolicyToEntity] Entity updated with new policy_numbers " + policy_numbers);
+		} else {
+			gs.warn("[addPolicyToEntity] Could not find entity record for " + current);
+		}
+	}
+	
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-08 20:40:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cac30d9adbbf3e00d596327e9d9619da</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CAM-RISK-Add PolicyNum to Entity</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_cac30d9adbbf3e00d596327e9d9619da</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-08 20:54:15</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cac30d9adbbf3e00d596327e9d9619da"/>
+</record_update>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="folder_name" table="x_norca_med_cam_claim_document" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Official Documents (in PDF) (91000)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:32:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00a7a60adbcb7640de44d5ab5e9619aa</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:55:31</sys_updated_on>
+            <value>91000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Bundled Documents (9200U)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:32:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2de72e0adbcb7640de44d5ab5e961943</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:54:37</sys_updated_on>
+            <value>9200U</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Notes (9999)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>100</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:56:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d55fa46db044b0075ea38ff9d96198a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:56:19</sys_updated_on>
+            <value>9999</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>WLI File Notes (9997)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>200</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:32:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>acc43646db044b0075ea38ff9d96198a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:32:16</sys_updated_on>
+            <value>9997</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Note Converted (10001)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>300</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:33:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46e47246db044b0075ea38ff9d9619d5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:33:22</sys_updated_on>
+            <value>10001</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Activity Log (9998)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>400</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:33:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6257a46db044b0075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:33:47</sys_updated_on>
+            <value>9998</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage Documents (10000)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>500</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:56:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e6ab28adb044b0075ea38ff9d9619fd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:56:55</sys_updated_on>
+            <value>10000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Correspondence (13010)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>600</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-01 02:31:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ea7624adbcb7640de44d5ab5e9619c0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:32:53</sys_updated_on>
+            <value>13010</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reports and Insured’s Narrative (10200)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>700</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:57:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e8a768adb044b0075ea38ff9d96191f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:57:56</sys_updated_on>
+            <value>10200</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legal Documents (11100)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>800</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:58:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d6cab68adb044b0075ea38ff9d9619bf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:58:25</sys_updated_on>
+            <value>11100</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical and Other Records (12010)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>900</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:58:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a5eab68adb044b0075ea38ff9d96198a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:58:46</sys_updated_on>
+            <value>12010</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deposition Transcripts (12020)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>1000</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:59:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87fafa8adb044b0075ea38ff9d961964</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:59:20</sys_updated_on>
+            <value>12020</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Accounts Payable (10501)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>1100</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:59:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f1bfa8adb044b0075ea38ff9d9619d2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 20:59:48</sys_updated_on>
+            <value>10501</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Backscanned Documents (99000)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>1200</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:59:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>793b7e8adb044b0075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:00:08</sys_updated_on>
+            <value>99000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>folder_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Malpractice Unlisted Documents (99100)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim_document</name>
+            <sequence>1300</sequence>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 21:00:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>264b7e8adb044b0075ea38ff9d96190a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:00:30</sys_updated_on>
+            <value>99100</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>folder_name</element>
+            <name>x_norca_med_cam_claim_document</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-20 20:32:05</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>65463fb3db900300e022771c8c96195e</sys_id>
+            <sys_mod_count>46</sys_mod_count>
+            <sys_name>folder_name</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_document_folder_name</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-20 21:00:30</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

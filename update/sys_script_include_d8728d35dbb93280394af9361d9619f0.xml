@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.BackfillAssignmentGroup</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BackfillAssignmentGroup</name>
+        <script><![CDATA[var BackfillAssignmentGroup = Class.create();
+BackfillAssignmentGroup.prototype = {
+    initialize: function() {
+    },
+	
+	
+	
+BackfillAssignmentGroup: function(){
+    var groupList = ' ';
+    var assignedTo = current.assigned_to;
+   
+    //return all groups if the assigned_to value is empty.
+    if(assignedTo == ''){
+        //list of groups that have the "assignment group" type, and filter out inactive groups.
+        return 'type=8a0ff791dbf13280394af9361d96192f^active=true^EQ';
+    }
+    //sys_user_grmember has the user to group relationship
+    var grpGR = new GlideRecord('sys_user_grmember');
+    grpGR.addQuery('user',assignedTo);
+    grpGR.addEncodedQuery('group.typeLIKE8a0ff791dbf13280394af9361d96192f^group.active=true');
+    grpGR.query();
+    while(grpGR.next()) {
+        if (groupList.length > 0) {
+            //build a comma separated string of groups if there is more than one
+            groupList += (',' + grpGR.group);
+        }
+        else {
+            groupList = grpGR.group;
+        }
+    }
+    // return Groups where assigned to is in those groups we use IN for lists
+    return 'sys_idIN' + groupList;
+},
+
+    type: 'BackfillAssignmentGroup'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-29 21:13:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d8728d35dbb93280394af9361d9619f0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>BackfillAssignmentGroup</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_d8728d35dbb93280394af9361d9619f0</sys_update_name>
+        <sys_updated_by>joe@buildon.me</sys_updated_by>
+        <sys_updated_on>2017-04-14 14:47:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

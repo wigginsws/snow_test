@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-Licenses" max_length="40" name="u_license_import" type="collection">
+        <element attributes="import_attribute_name=DATE_LICENSED" label="DATE_LICENSED" max_length="40" name="u_date_licensed" type="datetime"/>
+        <element attributes="import_attribute_name=ENTITY_FK" label="ENTITY_FK" max_length="15" name="u_entity_fk" type="decimal"/>
+        <element attributes="import_attribute_name=EXPIRATION_DATE" label="EXPIRATION_DATE" max_length="40" name="u_expiration_date" type="datetime"/>
+        <element attributes="import_attribute_name=LICENSED_STATE_CODE,edge_encryption_enabled=true" label="LICENSED_STATE_CODE" max_length="40" name="u_licensed_state_code" type="string"/>
+        <element attributes="import_attribute_name=LICENSE_NO,edge_encryption_enabled=true" label="LICENSE_NO" max_length="40" name="u_license_no" type="string"/>
+        <element attributes="import_attribute_name=LICENSE_PROFILE_PK" label="LICENSE_PROFILE_PK" max_length="15" name="u_license_profile_pk" type="decimal"/>
+        <element attributes="import_attribute_name=LICENSE_SUSPEND_BEG_DATE" label="LICENSE_SUSPEND_BEG_DATE" max_length="40" name="u_license_suspend_beg_date" type="datetime"/>
+        <element attributes="import_attribute_name=LICENSE_SUSPEND_EXP_DATE" label="LICENSE_SUSPEND_EXP_DATE" max_length="40" name="u_license_suspend_exp_date" type="datetime"/>
+        <element attributes="import_attribute_name=LICENSE_SUSPENSION_REASON,edge_encryption_enabled=true" label="LICENSE_SUSPENSION_REASON" max_length="500" name="u_license_suspension_reason" type="string"/>
+        <element attributes="import_attribute_name=LICENSE_TYPE_CODE,edge_encryption_enabled=true" label="LICENSE_TYPE_CODE" max_length="40" name="u_license_type_code" type="string"/>
+        <element attributes="import_attribute_name=SOURCE_RECORD_FK" label="SOURCE_RECORD_FK" max_length="15" name="u_source_record_fk" type="decimal"/>
+        <element attributes="import_attribute_name=SOURCE_TABLE,edge_encryption_enabled=true" label="SOURCE_TABLE" max_length="40" name="u_source_table" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=VALID_LICENSE_B,edge_encryption_enabled=true" label="VALID_LICENSE_B" max_length="40" name="u_valid_license_b" type="string"/>
+        <element attributes="import_attribute_name=VERIFICATION_DATE" label="VERIFICATION_DATE" max_length="40" name="u_verification_date" type="datetime"/>
+    </element>
+</database>

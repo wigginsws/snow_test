@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Claim Entry Log" max_length="40" name="x_norca_med_cam_claim_entry_log" type="collection">
+        <element label="_char4" max_length="40" name="char4" read_only="true" type="string"/>
+        <element label="Branch office" max_length="40" name="u_branch_office" read_only="true" type="string"/>
+        <element label="Char1" max_length="40" name="u_char1" read_only="true" type="string"/>
+        <element label="Char2" max_length="40" name="u_char2" read_only="true" type="string"/>
+        <element label="Char3" max_length="40" name="u_char3" read_only="true" type="string"/>
+        <element label="Claim category code" max_length="40" name="u_claim_category_code" read_only="true" type="string"/>
+        <element label="Claim county code" max_length="40" name="u_claim_county_code" read_only="true" type="string"/>
+        <element label="OASIS ID" max_length="40" name="u_claim_entry_log_pk" read_only="true" type="string"/>
+        <element label="Claim fk" max_length="40" name="u_claim_fk" read_only="true" type="string"/>
+        <element label="Claim ID" max_length="32" name="u_claim_id" read_only="true" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Claim state code" max_length="40" name="u_claim_state_code" read_only="true" type="string"/>
+        <element label="Claim type" max_length="40" name="u_claim_type" read_only="true" type="string"/>
+        <element label="Cm jurisdiction code" max_length="40" name="u_cm_jurisdiction_code" read_only="true" type="string"/>
+        <element label="Cm lob code" max_length="40" name="u_cm_lob_code" read_only="true" type="string"/>
+        <element label="Coverage fk" max_length="40" name="u_coverage_fk" read_only="true" type="string"/>
+        <element label="Coverage ID" max_length="40" name="u_coverage_id" read_only="true" reference="x_norca_med_cam_coverage" type="reference"/>
+        <element label="Entity claimant fk" max_length="40" name="u_entity_claimant_fk" read_only="true" type="string"/>
+        <element label="Entity Claimant ID" max_length="40" name="u_entity_claimant_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity defense law firm fk" max_length="40" name="u_entity_defense_law_firm_fk" read_only="true" type="string"/>
+        <element label="Entity Defense Law Firm ID" max_length="40" name="u_entity_defense_law_firm_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity examiner fk" max_length="40" name="u_entity_examiner_fk" read_only="true" type="string"/>
+        <element label="Entity Examiner ID" max_length="40" name="u_entity_examiner_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity insured fk" max_length="40" name="u_entity_insured_fk" read_only="true" type="string"/>
+        <element label="Entity Insured ID" max_length="40" name="u_entity_insured_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity Plantiff Law Firm ID" max_length="40" name="u_entity_plaintiff_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Entity plaintiff law firm fk" max_length="40" name="u_entity_plaintiff_law_firm_fk" read_only="true" type="string"/>
+        <element label="Entity supervisor fk" max_length="40" name="u_entity_supervisor_fk" read_only="true" type="string"/>
+        <element label="Entity Supervisor ID" max_length="40" name="u_entity_supervisor_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Expres amt" max_length="40" name="u_expres_amt" read_only="true" type="string"/>
+        <element label="Headline" max_length="160" name="u_headline" read_only="true" type="string"/>
+        <element label="Incident End Date" max_length="40" name="u_incident_end_date" read_only="true" type="glide_date"/>
+        <element label="Incident Start Date" max_length="40" name="u_incident_start_date" read_only="true" type="glide_date"/>
+        <element label="Indres amt" max_length="40" name="u_indres_amt" read_only="true" type="string"/>
+        <element label="Loss Date" max_length="40" name="u_loss_date" read_only="true" type="glide_date"/>
+        <element attributes="format=none" label="Occurrance fk" max_length="20" name="u_occurrance_fk" read_only="true" type="decimal"/>
+        <element label="Occurrence creation b" max_length="40" name="u_occurrence_creation_b" read_only="true" type="string"/>
+        <element label="Occurrence ID" max_length="40" name="u_occurrence_id" read_only="true" reference="x_norca_med_cam_case" type="reference"/>
+        <element attributes="format=none" label="Policy fk" max_length="20" name="u_policy_fk" read_only="true" type="decimal"/>
+        <element label="Policy ID" max_length="40" name="u_policy_id" read_only="true" reference="x_norca_med_cam_policy" type="reference"/>
+        <element label="Policy term history fk" max_length="20" name="u_policy_term_history_fk" read_only="true" type="decimal"/>
+        <element label="Policy Term History ID" max_length="40" name="u_policy_term_id" read_only="true" reference="x_norca_med_cam_policy_term" type="reference"/>
+        <element label="Report Date" max_length="40" name="u_report_date" read_only="true" type="glide_date"/>
+        <element label="Risk fk" max_length="40" name="u_risk_fk" read_only="true" type="string"/>
+        <element label="Risk ID" max_length="40" name="u_risk_id" read_only="true" reference="x_norca_med_cam_risk" type="reference"/>
+        <element label="Status" max_length="40" name="u_status" read_only="true" type="string"/>
+        <element label="OASIS - Created by" max_length="30" name="u_sys_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created on" max_length="40" name="u_sys_create_time" read_only="true" type="string"/>
+        <element label="OASIS - Updated by" max_length="30" name="u_sys_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated on" max_length="40" name="u_sys_update_time" read_only="true" type="string"/>
+        <index name="index">
+            <element name="u_claim_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_entity_defense_law_firm_id"/>
+        </index>
+        <index name="index3">
+            <element name="u_coverage_id"/>
+        </index>
+        <index name="index4">
+            <element name="u_entity_claimant_id"/>
+        </index>
+        <index name="index5">
+            <element name="u_entity_supervisor_id"/>
+        </index>
+        <index name="index6">
+            <element name="u_policy_term_id"/>
+        </index>
+        <index name="index7">
+            <element name="u_policy_id"/>
+        </index>
+        <index name="index8">
+            <element name="u_risk_id"/>
+        </index>
+        <index name="index9">
+            <element name="u_claim_entry_log_pk"/>
+        </index>
+        <index name="index10">
+            <element name="u_occurrence_id"/>
+        </index>
+        <index name="index11">
+            <element name="u_entity_insured_id"/>
+        </index>
+        <index name="index12">
+            <element name="u_entity_examiner_id"/>
+        </index>
+        <index name="index13">
+            <element name="u_entity_plaintiff_id"/>
+        </index>
+    </element>
+</database>

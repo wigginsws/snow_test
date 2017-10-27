@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Temp-Set Last Committed Update</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-07-11 02:55:54</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var tableNames = [ "x_norca_med_cam_entity", "x_norca_med_cam_address", "x_norca_med_cam_entity_class", "x_norca_med_cam_license"];
+
+gs.info("[setLastCommitCount] Processing tables " + tableNames.join());
+for (var idx=0; idx<tableNames.length; idx++) {
+	var gr = new GlideRecord(tableNames[idx]);
+	gr.addEncodedQuery("sys_mod_count>0^last_committed_update=0^sor_idISNOTEMPTY");
+// 	gr.setLimit(3);
+	gr.query();
+	gs.info("[setLastCommitCount] Processing table " + tableNames[idx] + ", rowCount " + gr.getRowCount());
+	var totalRows=0;
+	while (gr.next()) {
+		gr.last_committed_update = gr.sys_mod_count;
+		gr.setWorkflow(false);
+		gr.autoSysFields(false);
+		gr.update();
+		totalRows++;
+	}
+
+	gs.info("[setLastCommitCount] Committed " + totalRows + " records for " + tableNames[idx]);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-11 02:56:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a6dcec47db3fbe00d596327e9d961990</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CAM-Temp-Set Last Committed Update</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_a6dcec47db3fbe00d596327e9d961990</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-19 16:05:18</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Coverage Review" max_length="40" name="x_norca_med_cam_coverage_review" text_index="true" type="collection">
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Required Response Date From C&amp;L" max_length="40" name="cl_response_date" type="glide_date"/>
+        <element label="Complaints and all other pertinent pleadings" max_length="40" name="complaint_and_pleadings" type="boolean"/>
+        <element label="Brief Explanation of Coverage Issue(s)" max_length="4000" name="coverage_issues" type="journal"/>
+        <element label="Date Matter Reported To NORCAL" max_length="40" name="date_reported" type="glide_date"/>
+        <element label="Defense Counsel" max_length="32" name="defense_counsel" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="File Name" max_length="60" name="file_name" type="string"/>
+        <element label="File No." max_length="40" name="file_no" type="string"/>
+        <element label="Notes" max_length="40" name="notes" type="boolean"/>
+        <element label="Any other information relevant to the coverage opinion?" max_length="4000" name="other_information" type="journal"/>
+        <element label="Any other potentially applicable insurance policies?" max_length="4000" name="other_policies" reference="x_norca_med_cam_policy" type="glide_list"/>
+        <element label="Personal Counsel" max_length="32" name="personal_counsel" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Pertinent documentation" max_length="40" name="pertinent_documentation" type="boolean"/>
+        <element label="Policy Form, Endorsements, and Declaration Page" max_length="40" name="pf_end_decpage" type="boolean"/>
+        <element label="Plantiff Counsel" max_length="32" name="plantiff_counsel" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Responsive Pleading Due Date" max_length="40" name="pleading_due_date" type="glide_date"/>
+        <element label="Prior Correspondence" max_length="40" name="prior_correspondence" type="boolean"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Reservation Of Rights issued" sequence="0" value="ror"/>
+                <element label="Declination issued" sequence="10" value="di"/>
+            </choice>
+        </element>
+        <element choice="1" label="Venue/Jurisdiction" max_length="40" name="venue_jurisdiction" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="personal_counsel"/>
+        </index>
+        <index name="index2">
+            <element name="plantiff_counsel"/>
+        </index>
+        <index name="index3">
+            <element name="claim"/>
+        </index>
+        <index name="index4">
+            <element name="defense_counsel"/>
+        </index>
+    </element>
+</database>

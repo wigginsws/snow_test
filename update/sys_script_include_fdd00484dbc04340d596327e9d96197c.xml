@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_IRWebServiceUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_IRWebServiceUtils</name>
+        <script><![CDATA[var cam_IRWebServiceUtils = Class.create();
+cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, {
+	initialize: function() {
+	},
+	
+	type: 'cam_IRWebServiceUtils',
+	
+	
+	/**
+ 	* Description: Login to ImageRight and create an API token
+ 	* Parameters: None
+ 	* Returns: An API token string
+ 	*/
+	login: function() {
+		var sessionToken;
+		var fn = function(responseXml) {
+			sessionToken = responseXml.getNodeText("/soap:Envelope/soap:Body/UserLoginResponse/UserLoginResult");
+		};
+		var params = {
+			'UserLogin.connName': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_connection")),
+			'UserLogin.password': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_password")),
+			'UserLogin.username': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_username"))
+		};
+		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogin", params, null, fn);
+		gs.debug("[irLogin] Generated token " + sessionToken);
+		return sessionToken;
+	},
+	
+	
+	/**
+ 	* Description: Logoff from ImageRight. Required to terminate a session and release resources.
+ 	* Parameters: Previously acquired Session Token
+ 	* Returns: True/False indicating successful logoff
+ 	*/
+	logoff: function(sessionToken) {
+		var loginSuccess = false;
+		var fn = function(responseXml) {
+			loginSuccess = responseXml.getNodeText("/soap:Envelope/soap:Body/UserLogoffResponse/UserLogoffResult")=="true";
+		};
+		var params = {
+			'UserLogoff.securityToken': this.createParamValueObject(sessionToken)
+		};
+		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogoff", params, null, fn);
+		gs.debug("[irLogin] Logoff " + loginSuccess?"successful":"failed");
+		return loginSuccess;
+	},
+	
+	getDocumentContents: function(currentGR, securityToken) {
+		gs.debug("[getDocumentContents] currentGR: " + currentGR.getDisplayValue() + ", securityToken: " + securityToken);
+		
+		var logOff = false;
+		if (!securityToken) {
+			securityToken = this.login();
+			gs.debug("[getDocumentContents] New securityToken " + securityToken);
+			logOff = true;
+		}
+		
+		var fn = function(responseXml, currentGR) {
+			var fileId = "id:" + currentGR.sor_id + ", refId:" + currentGR.sor_reference_id;
+			gs.debug("[getDocumentContents] fn called by processMessage for file " + fileId);
+			var encodedContents = responseXml.getNodeText("//GetMultiPageImageFileUsingPagesResult");
+			return encodedContents;
+		};
+		
+		var pageDataXml = "";
+		var pageData = currentGR.page_data ? JSON.parse(currentGR.page_data) : [];
+		for (var i = 0; i<pageData.length; i++) {
+			pageDataXml += "<imag:PageRef><imag:Id>" + pageData[i].Id.Id + "</imag:Id><imag:RefId>" + pageData[i].Id.RefId + "</imag:RefId></imag:PageRef>";
+		}
+		
+		var params = {
+			'GetMultiPageImageFileUsingPages.securityToken': this.createParamValueObject(securityToken),
+			'GetMultiPageImageFileUsingPages.outputType': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_file_output_format") ),
+			'GetMultiPageImageFileUsingPages.pageRefs': this.createParamValueObject(pageDataXml)
+		};
+		
+		try {
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.GetMultiPageImageFileUsingPages-CAM", params, currentGR, fn);
+		} finally {
+			try {
+				if (logOff) {
+					this.logoff(securityToken);
+				}
+			} catch (e) {
+				gs.warn("[getDocumentContents] Could not log off from IR. Ignoring, but frequent errors may cause session bloat.");
+			}
+		}
+		
+	},
+	
+	
+	/**
+ 	* Description:
+ 	* Parameters:
+ 	* Returns:
+ 	*/
+	getDocumentsForCase: function(caseNumber, currentGR, securityToken) {
+		gs.debug("[getDocumentsForCase] caseNumber: " + caseNumber + ", securityToken: " + securityToken);
+		
+		var documents;
+		var logOff = false;
+		if (!securityToken) {
+			securityToken = this.login();
+			gs.debug("[getDocumentsForCase] New securityToken " + securityToken);
+			logOff = true;
+		}
+		
+		var fn = function(responseXml, currentGR) {
+			gs.debug("[getDocumentsForCase] fn called by processMessage");
+			
+			var documents = [];
+			var responseJson;
+			var resultNode = responseXml.getFirstNode("//FindDocumentsResult");
+			if (resultNode) {
+				responseJson = gs.xmlToJSON(resultNode);
+				if (responseJson.FindDocumentsResult && responseJson.FindDocumentsResult.Document) {
+					documents = responseJson.FindDocumentsResult.Document;
+				}
+				//gs.debug("[getDocumentsForCase] Response JSON -> " + JSON.stringify(responseJson)); //TODO remove
+			}
+			return documents;
+		};
+		
+		var params = {
+			'FindDocuments.securityToken': this.createParamValueObject(securityToken),
+			'FindDocuments.locationId': this.createParamValueObject('-1'),
+			'FindDocuments.fileNumber': this.createParamValueObject(caseNumber),
+			'FindDocuments.includePageData': this.createParamValueObject( 'true'),
+			'FindDocuments.includeDeleted': this.createParamValueObject('false')
+		};
+		
+		try {
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.FindDocuments.Case", params, currentGR, fn);
+		} finally {
+			try {
+				if (logOff) {
+					this.logoff(securityToken);
+				}
+			} catch (e) {
+				gs.warn("[getDocumentsForCase] Could not log off from IR. Ignoring, but frequent errors may cause session bloat.");
+			}
+		}
+		
+	},
+	
+	
+	/**
+ 	* Function processes a prepared SOAP Message
+ 	**/
+	processMessageWithFunction: function( serviceName, messageName, params, currentGR, fn, responseFormat) {
+		gs.debug("[processMessageFn] serviceName: " + serviceName +", messageName: " + messageName);
+		var s = new sn_ws.SOAPMessageV2(serviceName, messageName);
+		if (gs.isDebugging()) s.setLogLevel("all");
+			for (var key in params) {
+			if (params[key].escape) {
+				s.setStringParameter(key, params[key].value);
+			} else {
+				s.setStringParameterNoEscape(key, params[key].value);
+			}
+			//gs.debug("[processMessage] params[" + key + "] = " + params[key].value);
+		}
+		
+		gs.debug("[processMessage] Before exec");
+		var response = s.execute();
+		response.waitForResponse(60);
+		if (gs.isDebugging()) gs.debug("[processMessage] After exec. Request body " + this.getLoggableMessage(s.getRequestBody()));
+		var responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+		var status = response.getStatusCode();
+		if (status == 200 && !response.haveError()) {
+			if (responseFormat=="raw") {
+				return responseBody; // don't debug log raw output
+			}
+			if (gs.isDebugging()) gs.debug("[processMessage] No error, now processing " + this.getLoggableMessage(responseBody));
+			var xmlDoc = new XMLDocument2();
+			xmlDoc.parseXML(responseBody);
+			return fn(xmlDoc, currentGR);
+			
+		} else {
+			gs.error("[processMessage] HTTP Status " + status + " response: " + responseBody);
+			throw "Web service failure - HTTP Status " + status;
+		}
+	},
+	
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-14 02:17:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fdd00484dbc04340d596327e9d96197c</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>cam_IRWebServiceUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_fdd00484dbc04340d596327e9d96197c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-24 17:35:37</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="issued_in_state" label="Issued in State" language="en" table="x_norca_med_cam_policy_term">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>issued_in_state</element>
+            <help/>
+            <hint/>
+            <label>Issued in State</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <plural>Issued in States</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 16:19:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>230ca02fdb4ab68062bafd441d9619d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Issued in State</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_policy_term_issued_in_state_en</sys_update_name>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 16:19:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

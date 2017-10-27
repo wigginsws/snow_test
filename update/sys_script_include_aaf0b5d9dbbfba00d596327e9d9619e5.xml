@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_Filters</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>cam_Filters</name>
+        <script><![CDATA[var cam_Filters = Class.create();
+cam_Filters.prototype = {
+    initialize: function() {
+    },
+	
+	getCountiesInState: function(state_id) {
+		var answer = [];
+		gs.debug("[getCountiesInState] state_id: " + state_id);
+		if (state_id) {
+			var gr = new GlideRecord(cam.SCOPE_ID + "_county_lookup");
+			gr.addQuery("state_code", state_id);
+			gr.query();
+			while (gr.next()) {
+				answer.push(gr.getUniqueValue());
+			}
+		}
+		
+		gs.debug("[getCountiesInState] answer: " + answer.join());
+		return "sys_idIN" + answer.join();
+
+	},
+	
+	getInsuredForPolicyId: function(policyId) {
+		var answer = "";
+		if (gs.isDebugging()) gs.debug("[getInsuredForPolicyId] policyId: " + policyId);
+		if (policyId) {
+			var gr = new GlideRecord(cam.SCOPE_ID + "_policy");
+			if (gr.get(policyId) && gr.number) {
+				answer = this.getInsuredForPolicyNumber(gr.getValue("number"));
+			}
+		}
+		return answer;
+	},
+	
+	getInsuredForPolicyNumber: function(policyNumber) {
+		var answer = [];
+		if (gs.isDebugging()) gs.debug("[getInsuredForPolicyNumber] policyNumber: " + policyNumber);
+		if (policyNumber) {
+			var gr = new GlideRecord(cam.SCOPE_ID + "_entity");
+			gr.addEncodedQuery("policy_numbersLIKE" + policyNumber);
+			gr.query();
+			while(gr.next()) {
+				answer.push(gr.getUniqueValue());
+			}
+		}
+		if (gs.isDebugging()) gs.debug("[getInsuredForPolicyNumber] answer: " + answer.join());
+		return "sys_idIN" + answer.join();
+	},
+	
+	myReports: function() {
+		gs.info("[myReports] Called, signed in user " + gs.getUserDisplayName());
+		var ids = [gs.getUserID()];
+		var gr = new GlideRecord("sys_user");
+		gr.addQuery("manager", gs.getUserID());
+		gr.query();
+		while (gr.next()) {
+			ids.push(gr.getUniqueValue());
+		}
+		
+		gs.info("[myReports] Returning User IDs " + ids.join());
+		return ids;
+	},
+	
+	myReportsEntities: function() {
+		gs.info("[myReportsEntities] Called, signed in user " + gs.getUserDisplayName());
+		var userIds = this.myReports();
+		var gr = new GlideRecord("x_norca_med_cam_entity");
+		gr.addQuery("user", "IN", userIds.join());
+		gr.query();
+		var ids = [];
+		while (gr.next()) {
+			ids.push(gr.getUniqueValue());
+		}
+		
+		gs.info("[myReportsEntities] Returning Entity IDs " + ids.join());
+		return ids;
+	},
+	
+    type: 'cam_Filters'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-05 21:30:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>aaf0b5d9dbbfba00d596327e9d9619e5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>cam_Filters</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_aaf0b5d9dbbfba00d596327e9d9619e5</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-23 18:58:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

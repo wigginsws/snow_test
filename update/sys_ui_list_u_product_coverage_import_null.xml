@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="u_product_coverage_import" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_row</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>94ac7da6db14474075ea38ff9d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_set</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>1cac7da6db14474075ea38ff9d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_state</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>9cac7da6db14474075ea38ff9d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_default_amt_of_insurance</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>10ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_primary_coverage_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>90ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_policy_form_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>14ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_rating_module_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>94ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_min_primary_limit</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>18ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_policy_type_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>98ac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_product_cov_agg_reset_fk</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>1cac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_multi_layer_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>9cac7da6db14474075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_create_time</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>10ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_claim_tail_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>90ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_default_limit_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>14ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_coverage_group</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>94ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_renew_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>18ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_practice_state_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>98ac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_default_shared_cp_limit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>1cac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_inforce_calc_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>9cac7da6db14474075ea38ff9d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sublimit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>10ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_covg_applicable_to</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>90ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_split_retro_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>14ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_coverage_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>94ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_cancellation_level_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>23</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>18ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_nose_coverage_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>24</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a8ac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_coverage_segment_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>25</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>2cac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_aggregate_disc_cap</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>26</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>acac7da6db14474075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_covg_part_shared_limit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>27</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>20ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_exposure_type_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>28</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a0ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_default_sublimit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>29</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>24ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sequence_no</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>30</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a4ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_offered_duration</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>31</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>28ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_to_rate_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>32</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a8ac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_short_term_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>33</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>2cac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>34</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>acac7da6db14474075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_coverage_process_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>35</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>20ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_short_description</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>36</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a0ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_shared_limit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>37</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>24ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_updated_by</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>38</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a4ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_exposure_basis_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>39</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>28ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_long_description</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>40</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a8ac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_created_by</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>41</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>2cac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_rate_payor_depend_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>42</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>acac7da6db14474075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_parent_product_covg_code</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>43</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>20ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_default_shared_limit_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>44</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a0ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_inforce_wr_prem_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>45</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>24ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_update_time</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>46</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a4ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_pcf_state</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>47</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>28ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sub_covg_available_b</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>48</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>a8ac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_table</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>49</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>2cac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_sys_id</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>50</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>acac7da6db14474075ea38ff9d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_row_error</element>
+            <list_id display_value="u_product_coverage_import" element="NULL" name="u_product_coverage_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9cac7da6db14474075ea38ff9d9619ab</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>51</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:53</sys_created_on>
+            <sys_id>20ac7da6db14474075ea38ff9d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_product_coverage_import</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-03 15:58:52</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cac7da6db14474075ea38ff9d9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_product_coverage_import</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_u_product_coverage_import_null</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-03 15:58:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

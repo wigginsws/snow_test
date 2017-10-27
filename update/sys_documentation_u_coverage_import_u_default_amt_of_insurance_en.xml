@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_default_amt_of_insurance" label="DEFAULT_AMT_OF_INSURANCE" language="en" table="u_coverage_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_default_amt_of_insurance</element>
+            <help/>
+            <hint/>
+            <label>DEFAULT_AMT_OF_INSURANCE</label>
+            <language>en</language>
+            <name>u_coverage_import</name>
+            <plural>DEFAULT_AMT_OF_INSURANCEs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-07-10 18:13:46</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>de553a32dbbbb24075ea38ff9d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DEFAULT_AMT_OF_INSURANCE</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_coverage_import_u_default_amt_of_insurance_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-07-10 18:13:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

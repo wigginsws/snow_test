@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p> </p>
+<p><span style="font-size: 11px;">PERSONAL &amp; CONFIDENTIAL</span></p>
+<p><span style="font-size: 11px;">RE: ${claim_number}</span></p>
+<p> </p>
+<p><span style="font-size: 11px;">Dear:${contact_name}</span></p>
+<p> </p>
+<p><span style="font-size: 11px;"><span class="s4" style="font-size: 11px;">You may recall</span><span class="s4" style="font-size: 11px;"> that a matter was reported to MEDICUS </span><span class="s4" style="font-size: 11px;">involving the above-captioned patient.</span></span></p>
+<p><span class="s4" style="font-size: 11px;">There has been no </span><span class="s4" style="font-size: 11px;">recent </span><span class="s4" style="font-size: 11px;">activity in this matter and we are now closing our file.</span></p>
+<p><span class="s4" style="font-size: 11px;"><span class="s7" style="font-size: 11px;">Please be advised that each state has a &#34;statute of limitations&#34; which establishes a period within which the claimant must file a complaint in court. </span><span class="s7" style="font-size: 11px;">Many states expand or toll the limitations period under certain circumstances, including fraud, injuries to minors, and a variety of other reasons.</span> <span class="s7" style="font-size: 11px;">Therefore, although it appears the statute of limitations to file a complaint by this claimant may likely have passed, should you receive any further communication or documents concerning this matter, please contact our office immediately before responding so that we can reopen our file.</span></span></p>
+<p><span style="font-size: 11px;">Please do not make this letter part of the patient’s medical chart.</span></p>
+<p><span style="font-size: 11px;">We would like to thank you for your patience and cooperation during the pendency of this matter.</span></p>
+<p><span style="font-size: 11px;">Very truly yours,</span></p>
+<p><span style="font-size: 11px;">cc:</span></p>
+<p><span style="font-size: 11px;"><span style="font-size: 8px;">www.medicusins.com       P.O. Box 2080, Mechanicsburg, Pennsylvania 17055-0787        T 800-445-1212     F 717-796-8080</span></span></p>
+<p> </p>
+<p> </p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>amoewe</sys_created_by>
+        <sys_created_on>2017-06-29 13:31:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4d9a0d1fdbafb600d596327e9d9619b3</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Close Other Medicus Penn</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_4d9a0d1fdbafb600d596327e9d9619b3</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:07</sys_updated_on>
+        <title>Close Other Medicus Penn</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

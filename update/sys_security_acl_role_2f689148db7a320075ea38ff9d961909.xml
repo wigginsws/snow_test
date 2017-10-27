@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-05-13 05:21:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2f689148db7a320075ea38ff9d961909</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_norca_med_cam_fnol_routing.x_norca_med_cam.admin</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_security_acl display_value="x_norca_med_cam_fnol_routing">eb689148db7a320075ea38ff9d961906</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2f689148db7a320075ea38ff9d961909</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-22 18:06:17</sys_updated_on>
+        <sys_user_role display_value="x_norca_med_cam.admin" name="x_norca_med_cam.admin">ebfd8af2db97720075ea38ff9d9619e8</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

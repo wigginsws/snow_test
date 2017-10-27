@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_norca_med_cam_risk" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>entity</element>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_id>66e47ae9db7bfa00d596327e9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>entity_fk</element>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_id>e6e47ae9db7bfa00d596327e9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>policy_reference</element>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_id>6ae47ae9db7bfa00d596327e9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>effective_to_date</element>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_id>eae47ae9db7bfa00d596327e9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>effective_from_date</element>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_id>6ee47ae9db7bfa00d596327e9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_norca_med_cam_risk</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-06 20:59:28</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eee47ae9db7bfa00d596327e9d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_norca_med_cam_risk</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_x_norca_med_cam_risk_sys_ref_list</sys_update_name>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">9f0535721823320092c03796c3240332</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

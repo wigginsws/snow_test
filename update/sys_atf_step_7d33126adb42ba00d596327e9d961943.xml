@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Set the values on the form as follows:
+Contact type = Phone</description>
+        <display_name>Set Field Values</display_name>
+        <inputs/>
+        <order>5</order>
+        <step_config display_value="Set Field Values">fcae4a935332120028bc29cac2dc340e</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-13 21:16:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7d33126adb42ba00d596327e9d961943</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Set Field Values</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_atf_step_7d33126adb42ba00d596327e9d961943</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-13 21:18:12</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <test display_value="Adding A New Claim (Claims User)">91ef95a2db02ba00d596327e9d961932</test>
+        <timeout/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=7d33126adb42ba00d596327e9d961943"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7d33126adb42ba00d596327e9d961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-13 21:16:36</sys_created_on>
+        <sys_id>72439e6adb42ba00d596327e9d9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-13 21:16:36</sys_updated_on>
+        <value>x_norca_med_cam_claim</value>
+        <variable display_value="">424ca6465320220002c6435723dc34b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7d33126adb42ba00d596327e9d961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-13 21:16:36</sys_created_on>
+        <sys_id>ba439e6adb42ba00d596327e9d9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-13 21:16:36</sys_updated_on>
+        <value>contact_type=phone^EQ</value>
+        <variable display_value="">b3dba2465320220002c6435723dc34f0</variable>
+    </sys_variable_value>
+</record_update>

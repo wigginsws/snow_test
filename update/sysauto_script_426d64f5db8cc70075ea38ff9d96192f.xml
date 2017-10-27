@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Script-Delete Inactive Workflow Contexts</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2017-07-19 16:01:36</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[new x_norca_med_cam.cam_WorkflowUtils().deleteInactiveContexts(1); // deletes all contexts, for all tables with the x_norca_med_claim prefix that ended (finished/cancelled) more than 30 minutes ago.]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-19 16:04:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>426d64f5db8cc70075ea38ff9d96192f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CAM-Script-Delete Inactive Workflow Contexts</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_426d64f5db8cc70075ea38ff9d96192f</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-28 03:00:12</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

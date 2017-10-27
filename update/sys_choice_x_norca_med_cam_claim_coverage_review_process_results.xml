@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="coverage_review_process_results" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>coverage_review_process_results</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 17:05:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a020a2a4db46f28062bafd441d96198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-07 17:05:07</sys_updated_on>
+            <value>pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>coverage_review_process_results</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage confirmed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>10</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 17:05:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0530a2a4db46f28062bafd441d96198d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-05-01 02:30:32</sys_updated_on>
+            <value>coverage_confirmed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>coverage_review_process_results</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reservation Of Rights issued</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>20</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 17:08:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7540e2a4db46f28062bafd441d961951</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-07 17:08:24</sys_updated_on>
+            <value>ror</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>coverage_review_process_results</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Declination issued</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>30</sequence>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 17:08:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87d0e2a4db46f28062bafd441d961954</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-05-01 02:30:24</sys_updated_on>
+            <value>declination_issued</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>coverage_review_process_results</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-07 17:05:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d146fbb3db900300e022771c8c9619e4</sys_id>
+            <sys_mod_count>17</sys_mod_count>
+            <sys_name>coverage_review_process_results</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_coverage_review_process_results</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:39</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

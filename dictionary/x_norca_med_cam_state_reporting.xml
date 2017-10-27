@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="State Reporting" max_length="40" name="x_norca_med_cam_state_reporting" type="collection">
+        <element label="Additional Info" max_length="1024" name="additional_info" type="url"/>
+        <element label="Address" max_length="400" name="address" type="string"/>
+        <element display="true" label="Claim State" max_length="40" name="claim_state" type="string"/>
+        <element label="Form" max_length="40" name="form" type="string"/>
+        <element label="Format" max_length="200" name="format" type="string"/>
+        <element label="Form Location" max_length="300" name="form_location" type="string"/>
+        <element label="Incident in other state" max_length="40" name="incident_in_other_state" type="string"/>
+        <element label="Key Contact" max_length="200" name="key_contact" type="string"/>
+        <element label="Website" max_length="1024" name="medical_board_website" type="url"/>
+        <element label="Notes" max_length="1000" name="notes" type="string"/>
+        <element label="Reporting Amount" max_length="200" name="reporting_amount" type="string"/>
+        <element label="Requirements" max_length="500" name="requirements" type="string"/>
+        <element label="Submit Online" max_length="40" name="submit_online" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="DOI" value="doi"/>
+                <element label="Medical Board" value="medical_board"/>
+            </choice>
+        </element>
+    </element>
+</database>

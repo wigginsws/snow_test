@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_WorkflowUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_WorkflowUtils</name>
+        <script><![CDATA[var cam_WorkflowUtils = Class.create();
+cam_WorkflowUtils.prototype = {
+	initialize: function() {
+	},
+	
+	type: 'cam_WorkflowUtils',
+	
+	restartWorkflow: function(current) {
+		new global.Workflow().restartWorkflow(current);
+		current.autoSysFields(false);
+		current.update();
+	},
+	
+	
+	isServiceRetryExceeded: function(workflow) {
+		if (workflow.scratchpad.retryCount) {
+			workflow.scratchpad.retryCount++;
+		} else {
+			workflow.scratchpad.retryCount = 1;
+		}
+		return workflow.scratchpad.retryCount < gs.getProperty("x_norca_med_cam.ws_max_retries") ? 'no' : 'yes';
+	}, 
+	
+	resetRetryCount: function(workflow) {
+		workflow.scratchpad.retryCount = 0;
+	},
+	
+	
+	deleteInactiveContexts: function(minutesPast) {
+		var endedBefore = gs.minutesAgoEnd(minutesPast?minutesPast:5);		
+		var gr = new GlideRecord("wf_context");
+		gr.addQuery("table", "STARTSWITH", cam.SCOPE_ID);// ended
+		gr.addQuery( "state", "IN", "cancelled,finished");
+		gr.addEncodedQuery("ended<" + endedBefore);
+		gr.orderBy("ended");
+		gr.query();
+		var i = 0;
+		while (gr.next()) {
+			if(gs.isDebugging()) gs.debug("[deleteInactiveContexts] Deleting table: " + gr.table + ", workflow: " + gr.getDisplayValue("workflow") + ", ended: " + gr.ended);
+			gr.deleteRecord();
+			i++;
+		}
+		gs.info("[deleteInactiveContexts] Deleted " + i + " records.");
+
+	}
+	
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-14 18:28:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6d8e1784db0c4340d596327e9d9619ab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>cam_WorkflowUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_6d8e1784db0c4340d596327e9d9619ab</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-19 16:01:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

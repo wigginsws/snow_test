@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="asmt_metric_category">
+    <asmt_metric_category action="INSERT_OR_UPDATE">
+        <create_stakeholders>false</create_stakeholders>
+        <description/>
+        <details/>
+        <filter table="asmt_metric_type">sys_id=b4d14d44dbcb7a0075ea38ff9d961949^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="b4d14d44dbcb7a0075ea38ff9d961949"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <metric_type display_value="Norcal Claims Survey">b4d14d44dbcb7a0075ea38ff9d961949</metric_type>
+        <name>Norcal Claims Survey</name>
+        <order>100</order>
+        <scoring_type>percent</scoring_type>
+        <sys_class_name>asmt_metric_category</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-25 13:58:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23d10184dbcb7a0075ea38ff9d961927</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Norcal Claims Survey</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>asmt_metric_category_23d10184dbcb7a0075ea38ff9d961927</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-25 20:13:55</sys_updated_on>
+        <table>asmt_metric_type</table>
+        <total_metrics>5</total_metrics>
+        <weight>10</weight>
+    </asmt_metric_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=23d10184dbcb7a0075ea38ff9d961927"/>
+</record_update>

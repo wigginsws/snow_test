@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_norca_med_cam_entity" relationship="" sys_domain="global" table="x_norca_med_cam_entity_class" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>class_type</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>700cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>entity</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>c50cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>effective_from</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>490cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>effective_to</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>c90cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sor_created_by</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>4d0cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sor_created_on</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>cd0cd893dbb7fe00d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sor_id</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>410cd893dbb7fe00d596327e9d96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sor_updated_by</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>c10cd893dbb7fe00d596327e9d96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sor_updated_on</element>
+            <list_id display_value="x_norca_med_cam_entity_class" element="NULL" name="x_norca_med_cam_entity_class" parent="x_norca_med_cam_entity" relationship="NULL" sys_domain="global" view="Default view">f40cd893dbb7fe00d596327e9d961969</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_id>450cd893dbb7fe00d596327e9d96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_norca_med_cam_entity_class</name>
+            <parent>x_norca_med_cam_entity</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-07-11 20:20:48</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40cd893dbb7fe00d596327e9d961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_norca_med_cam_entity_class</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_x_norca_med_cam_entity_class_x_norca_med_cam_entity_null</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-07-11 20:20:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>new cam_EmailUtils().isProcessEmail(email);</condition_script>
+        <description>Emails forwarded from a specific address that will create a Claims record</description>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from display_value="">77cf9c86db39b200871dfd441d961935</from>
+        <name>Create Claim (New)</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-28 21:59:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>102eff51dbf13280394af9361d96195a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Create Claim (New)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_in_email_action_102eff51dbf13280394af9361d96195a</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-06-29 02:29:42</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <template>123TEXTQUERY321=fnol^contact_type=email^state=1^short_descriptionDYNAMICb637bd21ef3221002841f7f775c0fbb6^assignment_group=c6ca7b21db393280394af9361d9619c8^contact_emailDYNAMICc91a8da75b22120070e4492c11f91a8c^EQ</template>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

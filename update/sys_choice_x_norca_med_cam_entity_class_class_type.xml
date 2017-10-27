@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="class_type" table="x_norca_med_cam_entity_class" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Holder</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0843a40cdb1ef68062bafd441d961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>ACCTHOLDER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Adjuster</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc43a40cdb1ef68062bafd441d961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>ADJUSTER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9443a40cdb1ef68062bafd441d961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>AGENCY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agency Insureds of MAI</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce53280cdb1ef68062bafd441d9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:23</sys_updated_on>
+            <value>AGENCYINSD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agent</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8653280cdb1ef68062bafd441d9619a4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 20:24:31</sys_updated_on>
+            <value>AGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Allied Health Professionals</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e53280cdb1ef68062bafd441d9619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:24</sys_updated_on>
+            <value>ALLIEDHLTH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annuity Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1653280cdb1ef68062bafd441d9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:24</sys_updated_on>
+            <value>ANNUITYCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annuity Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7043a40cdb1ef68062bafd441d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>ANNUITYVEN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arbitrator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da53280cdb1ef68062bafd441d9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:24</sys_updated_on>
+            <value>ARBITRATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assignment Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a253280cdb1ef68062bafd441d9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:25</sys_updated_on>
+            <value>ASGNMTCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Association</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e943e40cdb1ef68062bafd441d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>ASSC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bank</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e043a40cdb1ef68062bafd441d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>BANK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Batch Contact</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d43e40cdb1ef68062bafd441d96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>BATCONT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd43e40cdb1ef68062bafd441d96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>BCORP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Beneficiary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4843a40cdb1ef68062bafd441d96191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>BENFICIARY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Billing Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a53280cdb1ef68062bafd441d9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:25</sys_updated_on>
+            <value>BILLAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Partnership</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7543e40cdb1ef68062bafd441d96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>BPART</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORCAL Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6843a40cdb1ef68062bafd441d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>BRDMEMBER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Broker</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2253280cdb1ef68062bafd441d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:26</sys_updated_on>
+            <value>BROKER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bulk Application Receiver</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f653280cdb1ef68062bafd441d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:26</sys_updated_on>
+            <value>BULKAPPRCV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1143e40cdb1ef68062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:04</sys_updated_on>
+            <value>BUSMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurance Carrier</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>be53280cdb1ef68062bafd441d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:26</sys_updated_on>
+            <value>CARRIER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certification Board</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7653280cdb1ef68062bafd441d9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:27</sys_updated_on>
+            <value>CERTBOARD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claimant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c43a40cdb1ef68062bafd441d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>CLAIMANT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Support Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c53280cdb1ef68062bafd441d96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:18</sys_updated_on>
+            <value>CLM STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Committee Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5453e40cdb1ef68062bafd441d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:16</sys_updated_on>
+            <value>CLMCMTE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4043a40cdb1ef68062bafd441d961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>CLMMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim Director</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c343e40cdb1ef68062bafd441d9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:10</sys_updated_on>
+            <value>CLMSUPER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims WorkFlow Diary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b443a40cdb1ef68062bafd441d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>CM_DIARY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Regional Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c443a40cdb1ef68062bafd441d96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>CM_REG_MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4753680cdb1ef68062bafd441d961957</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:27</sys_updated_on>
+            <value>CNS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>COI Holder</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b43e40cdb1ef68062bafd441d9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:11</sys_updated_on>
+            <value>COIHOLDER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2543e40cdb1ef68062bafd441d96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>CORP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Court</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4343e40cdb1ef68062bafd441d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:11</sys_updated_on>
+            <value>COURT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Credentialing Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6943e40cdb1ef68062bafd441d96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>CREDENTIAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Claim Reviewer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b43e40cdb1ef68062bafd441d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:11</sys_updated_on>
+            <value>CREVIEWBD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certified Registered Nurse Assistant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df43e40cdb1ef68062bafd441d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:11</sys_updated_on>
+            <value>CRNA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Client Serv Rep</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9743e40cdb1ef68062bafd441d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:12</sys_updated_on>
+            <value>CSR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CIS Diary User</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f53280cdb1ef68062bafd441d9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:27</sys_updated_on>
+            <value>CSUSER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Court Reporter</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f53680cdb1ef68062bafd441d961957</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:28</sys_updated_on>
+            <value>CTR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Firm</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f43e40cdb1ef68062bafd441d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:12</sys_updated_on>
+            <value>DATTORNEY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dentist / Oral Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1743e40cdb1ef68062bafd441d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:12</sys_updated_on>
+            <value>DENOSURG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb43e40cdb1ef68062bafd441d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:12</sys_updated_on>
+            <value>DENTENTITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a343e40cdb1ef68062bafd441d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:13</sys_updated_on>
+            <value>DENTGROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dentist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b43e40cdb1ef68062bafd441d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:13</sys_updated_on>
+            <value>DENTIST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dental Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c43a40cdb1ef68062bafd441d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>DENTORG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Attorney</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9043a40cdb1ef68062bafd441d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>DINDATTY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Director of Underwriting - Operations</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd43e40cdb1ef68062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:04</sys_updated_on>
+            <value>DIRUW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Do Not Solicit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d353680cdb1ef68062bafd441d961958</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:28</sys_updated_on>
+            <value>DNS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Educator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4443a40cdb1ef68062bafd441d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>EDUCATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Education Director</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c43a40cdb1ef68062bafd441d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>EDUCDIR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elite Agency</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4043a40cdb1ef68062bafd441d96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>ELITEAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Employed Physician</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2853e40cdb1ef68062bafd441d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:17</sys_updated_on>
+            <value>EMPINSURED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Emergency Room Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c043a40cdb1ef68062bafd441d96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>ER NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ES Executive Page Mailing</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8843a40cdb1ef68062bafd441d96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>ESEXECMAIL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expert Witness</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e43e40cdb1ef68062bafd441d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:10</sys_updated_on>
+            <value>EWITNESS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claims Specialist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d053e40cdb1ef68062bafd441d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:16</sys_updated_on>
+            <value>EXAMINER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exhibit Site</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a43e40cdb1ef68062bafd441d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:07</sys_updated_on>
+            <value>EXHIBITS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exhibit Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce43e40cdb1ef68062bafd441d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:07</sys_updated_on>
+            <value>EXHIBSTAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facility</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b453280cdb1ef68062bafd441d96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:18</sys_updated_on>
+            <value>FACILITY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finance Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc43a40cdb1ef68062bafd441d9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>FINANCE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Friend of MAI</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8643e40cdb1ef68062bafd441d961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:07</sys_updated_on>
+            <value>FRNDSMAI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospital Claim Cov. Requester</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b53680cdb1ef68062bafd441d961958</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:28</sys_updated_on>
+            <value>HCC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Health Care Management Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e43e40cdb1ef68062bafd441d961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:07</sys_updated_on>
+            <value>HMO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hlth Care Mgmnt/Point of Service</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1643e40cdb1ef68062bafd441d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:08</sys_updated_on>
+            <value>HMO/POS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospital</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da43e40cdb1ef68062bafd441d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:08</sys_updated_on>
+            <value>HOSPITAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>I/S Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f743e40cdb1ef68062bafd441d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:13</sys_updated_on>
+            <value>I/S STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IBS Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf43e40cdb1ef68062bafd441d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:14</sys_updated_on>
+            <value>IBS STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9143e40cdb1ef68062bafd441d961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>INDCONSULT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurance Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3843a40cdb1ef68062bafd441d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>INSCOMPANY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8043a40cdb1ef68062bafd441d96191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>INSURER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Independent Physician Association</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9243e40cdb1ef68062bafd441d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:08</sys_updated_on>
+            <value>IPA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Issue Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a43e40cdb1ef68062bafd441d961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:08</sys_updated_on>
+            <value>ISSUECOMP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Judge</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc53280cdb1ef68062bafd441d96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:18</sys_updated_on>
+            <value>JUDGE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Landlord</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b953280cdb1ef68062bafd441d9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:22</sys_updated_on>
+            <value>LANDLORD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lead</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c43a40cdb1ef68062bafd441d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>LEAD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lessor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7153280cdb1ef68062bafd441d9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:22</sys_updated_on>
+            <value>LESSOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Limited Liability Corporation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a143e40cdb1ef68062bafd441d96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>LLC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Limited Liability Partnership</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f543e40cdb1ef68062bafd441d96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>LLP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mailing List</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2643e40cdb1ef68062bafd441d9619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:08</sys_updated_on>
+            <value>MAIL LIST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MCARE Adjuster</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3143e40cdb1ef68062bafd441d96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:05</sys_updated_on>
+            <value>MCAREADJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Managed Care Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea43e40cdb1ef68062bafd441d9619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:09</sys_updated_on>
+            <value>MCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a43e40cdb1ef68062bafd441d9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:09</sys_updated_on>
+            <value>MEDGROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mediator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a243e40cdb1ef68062bafd441d9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:09</sys_updated_on>
+            <value>MEDIATOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Practice Entity</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3243e40cdb1ef68062bafd441d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:09</sys_updated_on>
+            <value>MEDICALENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Facilities</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f643e40cdb1ef68062bafd441d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:10</sys_updated_on>
+            <value>MEDICALFAC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical School</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>be43e40cdb1ef68062bafd441d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:10</sys_updated_on>
+            <value>MEDSCHOOL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Society</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7643e40cdb1ef68062bafd441d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:10</sys_updated_on>
+            <value>MEDSOCIETY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical Society Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8c43a40cdb1ef68062bafd441d96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>MEDSOCMEMB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MGMA Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4243e40cdb1ef68062bafd441d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>MGMA MEMBE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marketing Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9443a40cdb1ef68062bafd441d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>MK_VENDOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Management Service Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8143a40cdb1ef68062bafd441d9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>MSO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Network Classification</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2343e40cdb1ef68062bafd441d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:13</sys_updated_on>
+            <value>NETWORK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc43a40cdb1ef68062bafd441d9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>NONINSURED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Norcal/PMSLIC Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1843a40cdb1ef68062bafd441d9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>NPBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4943a40cdb1ef68062bafd441d9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nursing Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0143a40cdb1ef68062bafd441d9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>NURSE MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Obstetric Nurse</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a853e40cdb1ef68062bafd441d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:17</sys_updated_on>
+            <value>OB NURSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other Employer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5353680cdb1ef68062bafd441d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:29</sys_updated_on>
+            <value>OEM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6053e40cdb1ef68062bafd441d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:17</sys_updated_on>
+            <value>OFF MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d43a40cdb1ef68062bafd441d9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>OFF STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Osteopathic Physician Society California</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c543a40cdb1ef68062bafd441d9619b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>OPSC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a53280cdb1ef68062bafd441d9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:23</sys_updated_on>
+            <value>ORG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Partner</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6d43e40cdb1ef68062bafd441d96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:04</sys_updated_on>
+            <value>PARTNER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plaintiff Attorney</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4543a40cdb1ef68062bafd441d9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>PATTORNEY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b53680cdb1ef68062bafd441d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:29</sys_updated_on>
+            <value>PBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Peer Review Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d943e40cdb1ef68062bafd441d961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>PEERRVWMEM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician &amp; Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3753680cdb1ef68062bafd441d96195b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:30</sys_updated_on>
+            <value>PHYSICIAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PMSLIC/NORCAL Board Member</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef53680cdb1ef68062bafd441d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:29</sys_updated_on>
+            <value>PNBRD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Preferred Physicians Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb53680cdb1ef68062bafd441d96195b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:31</sys_updated_on>
+            <value>PPO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Practice Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5943e40cdb1ef68062bafd441d961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:03</sys_updated_on>
+            <value>PRACTMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Premium Finance Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c53e40cdb1ef68062bafd441d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:16</sys_updated_on>
+            <value>PREMFINCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prospect</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d843a40cdb1ef68062bafd441d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>PROSPECT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physician Hospital Organization</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8063680cdb1ef68062bafd441d96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:31</sys_updated_on>
+            <value>PSO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Policyholder Service Rep</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4863680cdb1ef68062bafd441d96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:32</sys_updated_on>
+            <value>PSR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Purchasing Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1063680cdb1ef68062bafd441d96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:32</sys_updated_on>
+            <value>PURCHGRP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quality Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f143e40cdb1ef68062bafd441d96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>QUAL MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Record Copy Service</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a753680cdb1ef68062bafd441d96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:29</sys_updated_on>
+            <value>REC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reinsurance Intermediary</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1443a40cdb1ef68062bafd441d961922</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>REININTER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reinsurer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c43a40cdb1ef68062bafd441d961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:59</sys_updated_on>
+            <value>REINSURER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a43e40cdb1ef68062bafd441d96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:06</sys_updated_on>
+            <value>RISKMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Consultant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f843a40cdb1ef68062bafd441d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>RMC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RM Broadcast Network Site</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0553280cdb1ef68062bafd441d96199e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:19</sys_updated_on>
+            <value>RM_SITE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Speaker/Moderator</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c953280cdb1ef68062bafd441d96199e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:19</sys_updated_on>
+            <value>RM_SPEAKER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RM Specialist</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c843a40cdb1ef68062bafd441d96191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>RM_SPECIAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8153280cdb1ef68062bafd441d96199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:19</sys_updated_on>
+            <value>RM_STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Studio</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5953280cdb1ef68062bafd441d96199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:20</sys_updated_on>
+            <value>RM_STUDIO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Management Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1153280cdb1ef68062bafd441d9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:20</sys_updated_on>
+            <value>RM_VENDOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sales Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6443a40cdb1ef68062bafd441d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>SALES</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SCPIE Sales Initiative</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2043a40cdb1ef68062bafd441d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>SCPIE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Self Insured (CMS)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0043a40cdb1ef68062bafd441d96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:57:58</sys_updated_on>
+            <value>SELFINSURD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Seminar Participant</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d553280cdb1ef68062bafd441d9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:20</sys_updated_on>
+            <value>SM PARTICI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Schedule Rated Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f53680cdb1ef68062bafd441d96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:30</sys_updated_on>
+            <value>SRG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Producer</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad53280cdb1ef68062bafd441d9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:21</sys_updated_on>
+            <value>SUBAGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surety Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6553280cdb1ef68062bafd441d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:21</sys_updated_on>
+            <value>SURETYCO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surgeon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d53280cdb1ef68062bafd441d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:21</sys_updated_on>
+            <value>SURGEON</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Suspect</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1443a40cdb1ef68062bafd441d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>SUSPECT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unclassified Norcal Employee</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a843a40cdb1ef68062bafd441d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:01</sys_updated_on>
+            <value>UNCLASS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriter</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f153280cdb1ef68062bafd441d9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:22</sys_updated_on>
+            <value>UNDWRITER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriting Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a543e40cdb1ef68062bafd441d96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:04</sys_updated_on>
+            <value>UWMGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underwriter - Special Risks</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1943e40cdb1ef68062bafd441d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:04</sys_updated_on>
+            <value>UWSPEC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Manager</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e443a40cdb1ef68062bafd441d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>UW_MGR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Support Staff</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac43a40cdb1ef68062bafd441d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:00</sys_updated_on>
+            <value>UW_STAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vendor</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:58:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3443a40cdb1ef68062bafd441d9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 04:58:02</sys_updated_on>
+            <value>VENDOR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>.Corporate</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:59:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b3f124cdb123a8062bafd441d9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:59:41</sys_updated_on>
+            <value>.Corporate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Additional</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:49:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0fc9a88db123a8062bafd441d9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:49:41</sys_updated_on>
+            <value>Additional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Corporate1</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:57:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ede9a0cdb123a8062bafd441d96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:57:58</sys_updated_on>
+            <value>Corporate1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IND_AGENT</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 19:42:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25cde784dbd23a8062bafd441d96198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 19:42:49</sys_updated_on>
+            <value>IND_AGENT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insured Co</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:49:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15fcda88db123a8062bafd441d96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:49:43</sys_updated_on>
+            <value>Insured Co</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UNK-DED</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:50:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a33dde88db123a8062bafd441d9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:50:58</sys_updated_on>
+            <value>UNK-DED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UNKNOWN</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:48:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1fac5688db123a8062bafd441d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:48:30</sys_updated_on>
+            <value>UNKNOWN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>_Corporate</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 13:57:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05ae960cdb123a8062bafd441d9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:57:05</sys_updated_on>
+            <value>_Corporate</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>class_type</element>
+            <name>x_norca_med_cam_entity_class</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-18 04:57:58</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7e46ffb3db900300e022771c8c961908</sys_id>
+            <sys_mod_count>158</sys_mod_count>
+            <sys_name>class_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_entity_class_class_type</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-28 20:24:32</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

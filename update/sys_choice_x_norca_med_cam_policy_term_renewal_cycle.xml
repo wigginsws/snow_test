@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="renewal_cycle" table="x_norca_med_cam_policy_term" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_cycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Can be renewed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:45:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b15f035db96360075ea38ff9d961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:45:24</sys_updated_on>
+            <value>RENCAND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_cycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prepared for renewal</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:45:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6315f035db96360075ea38ff9d961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:45:25</sys_updated_on>
+            <value>RENPREP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_cycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RENPRE</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-24 00:14:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3fb9ab5db1e360075ea38ff9d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-24 00:14:52</sys_updated_on>
+            <value>RENPRE</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>renewal_cycle</element>
+            <name>x_norca_med_cam_policy_term</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:45:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>3456b3f3db900300e022771c8c961963</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>renewal_cycle</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_policy_term_renewal_cycle</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:26</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

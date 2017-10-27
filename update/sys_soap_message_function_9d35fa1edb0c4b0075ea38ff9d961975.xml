@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="Oasis Web Service">bd275793db367a00d596327e9d9619e2</basic_auth_profile>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cla="http://www.delphi-tech.com/ows/ClaimLogInquiryService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cla:ClaimLogInquiryRequest>
+         <cla:MessageId>${ClaimLogInquiryRequest.MessageId}</cla:MessageId>
+         <cla:CorrelationId>${ClaimLogInquiryRequest.CorrelationId}</cla:CorrelationId>
+         <cla:UserId>${ClaimLogInquiryRequest.UserId}</cla:UserId>
+         <cla:ClaimLogInquiryRequestParameters>
+            <cla:ClaimLogNumberId>${ClaimLogInquiryRequestParameters.ClaimLogNumberId}</cla:ClaimLogNumberId>
+         </cla:ClaimLogInquiryRequestParameters>
+      </cla:ClaimLogInquiryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>claimLogInquiryRequest</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>CAM-OASIS-ClaimLogInquiryService [ claimLogInquiryRequest ]</qualified_name>
+        <soap_action>claimLogInquiryRequest</soap_action>
+        <soap_endpoint>http://oas16eoadev.norcalmutual.com:8080/dev/eClaim/wsCM/ClaimLogInquiryService</soap_endpoint>
+        <soap_message display_value="CAM-OASIS-ClaimLogInquiryService">2d0b9bfddbc40b0075ea38ff9d961986</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-21 15:11:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9d35fa1edb0c4b0075ea38ff9d961975</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>claimLogInquiryRequest</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_function_9d35fa1edb0c4b0075ea38ff9d961975</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-21 15:14:03</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

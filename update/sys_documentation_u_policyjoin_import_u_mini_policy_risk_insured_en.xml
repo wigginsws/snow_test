@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_mini_policy_risk_insured" label="MINI_POLICY_RISK_INSURED" language="en" table="u_policyjoin_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_mini_policy_risk_insured</element>
+            <help/>
+            <hint/>
+            <label>MINI_POLICY_RISK_INSURED</label>
+            <language>en</language>
+            <name>u_policyjoin_import</name>
+            <plural>MINI_POLICY_RISK_INSUREDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-05-22 18:55:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>dbe8220fdb3a3a00d596327e9d961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>MINI_POLICY_RISK_INSURED</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_policyjoin_import_u_mini_policy_risk_insured_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-05-22 18:55:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

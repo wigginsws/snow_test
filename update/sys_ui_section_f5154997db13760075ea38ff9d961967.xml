@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="f5154997db13760075ea38ff9d961967" sys_domain="global" table="x_norca_med_cam_risk" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>record_mode_code</element>
+            <position>1</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>county_code_used_to_rate</element>
+            <position>2</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>bd15095fdb13760075ea38ff9d96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3115095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>risk_cls_used_to_rate</element>
+            <position>4</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b115095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transaction_log_fk</element>
+            <position>5</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3515095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b515095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>char1</element>
+            <position>7</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3915095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>8</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entity_fk</element>
+            <position>9</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alternate_speciality_code</element>
+            <position>10</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>bd15095fdb13760075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alternative_rating_method</element>
+            <position>11</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3115095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>annual_outpatient_visit</element>
+            <position>12</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b115095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>average_daily_census</element>
+            <position>13</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3515095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>building_class_code</element>
+            <position>14</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b515095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_fk</element>
+            <position>15</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3915095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>risk_base_record_fk</element>
+            <position>16</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>risk_type_code</element>
+            <position>17</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>risk_pk</element>
+            <position>18</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>bd15095fdb13760075ea38ff9d961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sor_updated_by</element>
+            <position>19</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3115095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sor_created_by</element>
+            <position>20</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b115095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sor_updated_on</element>
+            <position>21</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3515095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closing_trans_log_fk</element>
+            <position>22</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b515095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>effective_to_date</element>
+            <position>23</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3915095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>curr_pol_rel_reason_code</element>
+            <position>24</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>25</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sor_created_on</element>
+            <position>26</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>bd15095fdb13760075ea38ff9d961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>curr_pol_rel_stat_type_cd</element>
+            <position>27</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3115095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>practice_state_code</element>
+            <position>28</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b115095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>accounting_from_date</element>
+            <position>29</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3515095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>accounting_to_date</element>
+            <position>30</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b515095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>effective_from_date</element>
+            <position>31</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3915095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>primary_risk</element>
+            <position>32</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>after_image_record</element>
+            <position>33</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>auto_renew</element>
+            <position>34</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>bd15095fdb13760075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>base_record</element>
+            <position>35</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3115095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entity</element>
+            <position>36</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b115095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_reference</element>
+            <position>37</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3515095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>moonlighting</element>
+            <position>38</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b515095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rate_mature</element>
+            <position>39</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3915095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fleet_vehicle</element>
+            <position>40</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>b915095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>41</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:53</sys_created_on>
+            <sys_id>3d15095fdb13760075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-17 02:48:53</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>exposure_basis</element>
+            <position>42</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-20 20:06:52</sys_created_on>
+            <sys_id>d07f846cdbab3a00d596327e9d9619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_risk" sys_domain="global" view="Default view">f5154997db13760075ea38ff9d961967</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-20 20:06:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_norca_med_cam_risk</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-06-17 02:48:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5154997db13760075ea38ff9d961967</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_norca_med_cam_risk</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_f5154997db13760075ea38ff9d961967</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:58:26</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

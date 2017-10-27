@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Apply OASIS DS Properties</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-06-24 04:46:56</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var server = gs.getProperty("x_norca_med_cam.oasis_db_host");
+var port = gs.getProperty("x_norca_med_cam.oasis_db_port");
+var sid = gs.getProperty("x_norca_med_cam.oasis_db_sid");
+var username = gs.getProperty("x_norca_med_cam.oasis_db_user");
+var pwd = gs.getProperty("x_norca_med_cam.oasis_db_password");
+gs.info("[applyOasisProps] Loaded properties; server: " + server + ", port: " + port + ", sid: " + sid + ", user: " + username + ", pwd: ****"); 
+
+var gr = new GlideRecord("sys_data_source");
+gr.addQuery("sys_scope", "4427741adb53fe8023cdd92b5e961942"); //01bb26afdb0eb68062bafd441d9619c7");
+gr.addQuery("type", "JDBC");
+gr.addQuery("active", "true");
+gr.query();
+
+while (gr.next()) {
+	gr.jdbc_server = server;
+	gr.database_port = port;
+	gr.database_name = sid;
+	gr.jdbc_user_name = username;
+	gr.jdbc_password = pwd;
+	gr.update("Fix script - applyOasisProps");
+	gs.info("[applyOasisProps] Update data source " + gr.name);
+}
+gs.info("[applyOasisProps] Updates completed");
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-24 04:47:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2733e5e5dba3760075ea38ff9d9619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CAM-Apply OASIS DS Properties</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_2733e5e5dba3760075ea38ff9d9619f2</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-19 16:05:18</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

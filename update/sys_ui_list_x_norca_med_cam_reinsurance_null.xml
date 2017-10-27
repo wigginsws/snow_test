@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_norca_med_cam_reinsurance" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>age_on_doi</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>55ad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>allegation</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>d5ad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approved_by</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>59ad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>codefendant</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>d9ad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>company</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>5dad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contract</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>ddad6541dba73200d596327e9d9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counsel</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>51ad6541dba73200d596327e9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>current_status</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>d1ad6541dba73200d596327e9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>current_subject_indemnity_reserve</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>55ad6541dba73200d596327e9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date</element>
+            <list_id display_value="x_norca_med_cam_reinsurance" element="NULL" name="x_norca_med_cam_reinsurance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ddad6541dba73200d596327e9d9619db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_id>d5ad6541dba73200d596327e9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-06-22 16:15:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_norca_med_cam_reinsurance</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-06-22 16:15:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddad6541dba73200d596327e9d9619db</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_norca_med_cam_reinsurance</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_x_norca_med_cam_reinsurance_null</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:58:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

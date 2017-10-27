@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_CustomRestWsUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_CustomRestWsUtils</name>
+        <script><![CDATA[var cam_CustomRestWsUtils = Class.create();
+cam_CustomRestWsUtils.prototype = Object.extendsObject(cam_RestWebServiceUtils, {
+    initialize: function() {
+    },
+
+    type: 'cam_CustomRestWsUtils',
+	
+	updateClaimLog: function(currentGR) {
+		gs.debug("[updateClaimLog] Called for " + currentGR.getDisplayValue() +", claim_log_id: " + currentGR.claim_log_id);
+		var fn = function(responseBody) {
+			var responseObj = JSON.parse(responseBody);
+			return responseObj;
+		};
+		var params = {
+			'Claim.Number': this.createParamValueObject( currentGR.number ),
+			'ClaimLog.PK': this.createParamValueObject( currentGR.claim_log_id)
+		};
+		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimLogService", "UpdateClaimNumber", params, currentGR, fn);
+	},
+	
+	/**
+ 	* Function processes a prepared SOAP Message
+ 	**/
+	processMessageWithFunction: function( serviceName, messageName, params, currentGR, fn) {
+		gs.debug("[processMessageFn] serviceName: " + serviceName +", messageName: " + messageName);
+		var s = new sn_ws.RESTMessageV2(serviceName, messageName);
+		if (gs.isDebugging()) s.setLogLevel("all");
+			for (var key in params) {
+			if (params[key].escape) {
+				s.setStringParameter(key, params[key].value);
+			} else {
+				s.setStringParameterNoEscape(key, params[key].value);
+			}
+			//gs.debug("[processMessage] params[" + key + "] = " + params[key].value);
+		}
+		
+		var response = s.execute();
+		response.waitForResponse(30);
+		if (gs.isDebugging()) gs.debug("[processMessage] After exec. Request body " + this.getLoggableMessage(s.getRequestBody()));
+		var responseBody = response.getBody(); // response.haveError() ? response.getErrorMessage() : 
+		var status = response.getStatusCode();
+		if (status == 200) {
+			if (gs.isDebugging()) gs.debug("[updateClaimLog] No error, now processing " + this.getLoggableMessage(responseBody));
+			return fn(responseBody, currentGR);
+			
+		} else {
+			gs.error("[processMessage] HTTP Status " + status + " response: " + responseBody);
+			throw "Web service failure - HTTP Status " + status;
+		}
+	},
+	
+	parseDateTime: function() {
+		
+	},
+	
+	parseDate: function() {
+		
+	},
+	
+	formatDate: function(snDateString, format) {
+		if (!format) {
+			format = "MM/dd/yyyy";
+		}
+		var gd = new GlideDate();
+		gd.setValue(snDateString);
+		return gd.getByFormat(format);
+	}
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-19 21:42:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1e5b7135db400b0075ea38ff9d9619f4</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>cam_CustomRestWsUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_1e5b7135db400b0075ea38ff9d9619f4</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-25 17:38:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

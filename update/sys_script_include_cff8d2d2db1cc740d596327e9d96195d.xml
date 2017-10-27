@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_ClaimReserves</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_ClaimReserves</name>
+        <script><![CDATA[var cam_ClaimReserves = Class.create();
+cam_ClaimReserves.prototype = {
+	initialize: function() {
+	},
+	
+	refreshReserves: function(claimid) {
+		
+	},
+	
+	recalculateReserves: function(claimid) {
+		var cdt=new GlideDateTime().getDisplayValue();
+		var gr = new GlideRecord('x_norca_med_cam_expenditure_view');
+		gr.addQuery('claim_number', claimid);
+		gr.setLimit(1);
+		gr.query();
+		if(gr.getRowCount()>0){
+			while (gr.next()) {
+				gr.setWorkflow(true); //run business rules
+				gr.autoSysFields(false); //Do not update system fields
+				gr.datetimeforupdatetrigger=cdt; //Force the update
+				gr.update();
+			}
+		}
+		
+	},
+	
+	createReserve: function(claimid){
+		var check = new GlideRecord('x_norca_med_cam_reserves');
+		check.addQuery('claim_number',claimid);
+		check.query();
+		var ct = check.getRowCount();
+		if(ct==0){
+			var gr = new GlideRecord('x_norca_med_cam_reserves');
+			gr.initialize();
+			gr.claim_number = claimid;
+			gr.insert();
+		}
+		
+	},
+	
+	type: 'cam_ClaimReserves'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-08-02 23:24:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cff8d2d2db1cc740d596327e9d96195d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>cam_ClaimReserves</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_cff8d2d2db1cc740d596327e9d96195d</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-08-04 20:39:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true,no_attachment=true,hasWorkflow=true" audit="true" extends="task" label="Claim" max_length="40" name="x_norca_med_cam_claim" sizeclass="1" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Resolution Information" max_length="1000" name="additional_resolution_information" type="string"/>
+        <element label="Applied Coverage" max_length="32" name="applied_coverage" read_only="true" reference="x_norca_med_cam_coverage" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Blocked Users" max_length="1024" name="blocked_users" reference="sys_user" reference_qual="roles=x_norca_med_cam.user^EQ" reference_qual_condition="roles=x_norca_med_cam.user^EQ" type="glide_list"/>
+        <element attributes="format=none" label="Case Xref SOR ID" max_length="15" name="case_xref_sor_id" type="decimal"/>
+        <element default="0" label="Last Committed Log Update" max_length="40" name="cel_last_committed_update" read_only="true" type="integer"/>
+        <element hint="The party making the claim." label="Claimant" max_length="32" name="claimant" reference="x_norca_med_cam_entity" reference_qual="policy_numbersLIKE^EQ" reference_qual_condition="policy_numbersLIKE^EQ" type="reference"/>
+        <element hint="Assessment of a claim" label="Claim Analysis" max_length="512" name="claim_analysis" type="string"/>
+        <element hint="County of where claim occured" label="Claim County Code" max_length="40" name="claim_county_code" type="string"/>
+        <element label="Insured Location" max_length="32" name="claim_location" reference="cmn_location" type="reference"/>
+        <element label="Claim Log - Created By" max_length="30" name="claim_log_created_by" read_only="true" type="string"/>
+        <element label="Claim Log - Created On" max_length="40" name="claim_log_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS Claim Log ID" max_length="20" name="claim_log_id" read_only="true" type="decimal"/>
+        <element label="Claim Log - Updated By" max_length="30" name="claim_log_updated_by" read_only="true" type="string"/>
+        <element label="Claim Log - Updated On" max_length="40" name="claim_log_updated_on" read_only="true" type="glide_date_time"/>
+        <element choice="1" choice_field="state" choice_table="x_norca_med_cam_address" hint="State of where the claim occured." label="Claim State" max_length="40" name="claim_state_code" type="string">
+            <choice>
+                <element label="Alabama" sequence="0" value="AL"/>
+                <element label="Alaska" sequence="1" value="AK"/>
+                <element label="Arizona" sequence="2" value="AZ"/>
+                <element label="Arkansas" sequence="3" value="AR"/>
+                <element label="California" sequence="4" value="CA"/>
+                <element label="Colorado" sequence="5" value="CO"/>
+                <element label="Connecticut" sequence="6" value="CT"/>
+                <element label="Delaware" sequence="7" value="DE"/>
+                <element label="District of Columbia" sequence="8" value="DC"/>
+                <element label="Florida" sequence="9" value="FL"/>
+                <element label="Georgia" sequence="10" value="GA"/>
+                <element label="Hawaii" sequence="11" value="HI"/>
+                <element label="Idaho" sequence="12" value="ID"/>
+                <element label="Illinois" sequence="13" value="IL"/>
+                <element label="Indiana" sequence="14" value="IN"/>
+                <element label="Iowa" sequence="15" value="IA"/>
+                <element label="Kansas" sequence="16" value="KS"/>
+                <element label="Kentucky" sequence="17" value="KY"/>
+                <element label="Loiusiana" sequence="18" value="LA"/>
+                <element label="Maine" sequence="19" value="ME"/>
+                <element label="Maryland" sequence="20" value="MD"/>
+                <element label="Massachusetts" sequence="21" value="MA"/>
+                <element label="Michigan" sequence="22" value="MI"/>
+                <element label="Minnesota" sequence="23" value="MN"/>
+                <element label="Mississippi" sequence="24" value="MS"/>
+                <element label="Missouri" sequence="25" value="MO"/>
+                <element label="Montana" sequence="26" value="MT"/>
+                <element label="Nebraska" sequence="27" value="NE"/>
+                <element label="Nevada" sequence="28" value="NV"/>
+                <element label="New Hampshire" sequence="29" value="NH"/>
+                <element label="New Jersey" sequence="30" value="NJ"/>
+                <element label="New Mexico" sequence="31" value="NM"/>
+                <element label="New York" sequence="32" value="NY"/>
+                <element label="North Carolina" sequence="33" value="NC"/>
+                <element label="North Dakota" sequence="34" value="ND"/>
+                <element label="Ohio" sequence="35" value="OH"/>
+                <element label="Oklahoma" sequence="36" value="OK"/>
+                <element label="Oregon" sequence="37" value="OR"/>
+                <element label="Pennsylvania" sequence="38" value="PA"/>
+                <element label="Puerto Rico" sequence="39" value="PR"/>
+                <element label="Rhode Island" sequence="40" value="RI"/>
+                <element label="South Carolina" sequence="41" value="SC"/>
+                <element label="South Dakota" sequence="42" value="SD"/>
+                <element label="Tennessee" sequence="43" value="TN"/>
+                <element label="Texas" sequence="44" value="TX"/>
+                <element label="Utah" sequence="45" value="UT"/>
+                <element label="Vermont" sequence="46" value="VT"/>
+                <element label="Virgin Islands" sequence="47" value="VI"/>
+                <element label="Virginia" sequence="48" value="VA"/>
+                <element label="Washington" sequence="49" value="WA"/>
+                <element label="West Virginia" sequence="50" value="WV"/>
+                <element label="Wisconsin" sequence="51" value="WI"/>
+                <element label="Wyoming" sequence="52" value="WY"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="ROC" hint="Choose claim type." label="Claim Type" max_length="40" name="claim_type" type="string">
+            <choice>
+                <element label="ROC" sequence="100" value="ROC"/>
+                <element label="Event" sequence="200" value="EVENT"/>
+                <element label="Claim" sequence="300" value="CLAIM"/>
+                <element label="Suit" sequence="400" value="SUIT"/>
+                <element label="No Coverage" sequence="500" value="MALP UNL"/>
+                <element label="Entry Error" sequence="600" value="ENTRY ERRO"/>
+            </choice>
+        </element>
+        <element choice="1" label="client type" max_length="40" name="client_type" type="choice">
+            <choice>
+                <element label="counsel" value="counsel"/>
+            </choice>
+        </element>
+        <element label="Consent Received" max_length="40" name="consent_received" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="Email of contact person." label="Contact Email" max_length="40" name="contact_email" type="string"/>
+        <element hint="Person to contact about claim follow-up" label="Contact Name" max_length="40" name="contact_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="Phone number of contact person." label="Contact Phone" max_length="40" name="contact_phone_number" type="string"/>
+        <element attributes="ref_contributions=x_norca_med_cam_counsel_email" label="Defense Counsel" max_length="32" name="counsel" reference="x_norca_med_cam_entity" reference_qual="classification=DINDATTY^EQ" reference_qual_condition="classification=DINDATTY^EQ" type="reference"/>
+        <element label="Coverage Conflict" max_length="40" name="coverage_conflict" type="boolean"/>
+        <element choice="3" default="pending" label="Coverage Review Process Results" max_length="40" name="coverage_review_process_results" type="choice">
+            <choice>
+                <element label="Pending" sequence="0" value="pending"/>
+                <element label="Coverage confirmed" sequence="10" value="coverage_confirmed"/>
+                <element label="Reservation Of Rights issued" sequence="20" value="ror"/>
+                <element label="Declination issued" sequence="30" value="declination_issued"/>
+            </choice>
+        </element>
+        <element choice="1" hint="Policy coverage type" label="Coverage Type" max_length="40" name="coverage_type" type="choice">
+            <choice>
+                <element label="PL" sequence="0" value="pl"/>
+                <element label="Admin Defense" sequence="10" value="admin_defense"/>
+                <element label="InfoNet Secure" sequence="20" value="infonet_secure"/>
+                <element label="DatShield" sequence="30" value="datshield"/>
+                <element label="Other" sequence="40" value="other"/>
+            </choice>
+        </element>
+        <element choice="1" hint="Coverage verification status." label="Coverage Verification" max_length="40" name="coverage_verification_status" type="choice">
+            <choice>
+                <element label="Pending" sequence="0" value="p"/>
+                <element label="Coverage confirmed" sequence="10" value="cc"/>
+                <element label="Coverage issue identified" sequence="20" value="cid"/>
+            </choice>
+        </element>
+        <element calculation="gs.date.now();" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element choice="1" label="Defense Counsel Response" max_length="40" name="defense_counsel_response" type="choice">
+            <choice>
+                <element label="No Response Yet" sequence="0" value="nr"/>
+                <element label="Accepted" sequence="10" value="a"/>
+                <element label="Rejected" sequence="20" value="r"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" hint="The disposition of the claim at closure." label="Disposition" max_length="1000" name="disposition" type="choice">
+            <choice>
+                <element label="Bench trial - defense judgment" value="BENCH_DEF"/>
+                <element label="Bench trial - plaintiff judgment" value="BENCH_PLF"/>
+                <element label="Binding arbitration - defense award" value="ARB_DEFAWD"/>
+                <element label="Binding arbitration - plaintiff award" value="ARB_PLFAWD"/>
+                <element label="Claim Abandoned" value="ABANCLM"/>
+                <element label="Claim settled - in-house workup" value="INHOUSE"/>
+                <element label="Complaint filed - not served" value="CFILNSRVD"/>
+                <element label="Deposition representation" value="DEPO_REP"/>
+                <element label="Disc. Act 13-Certificate of Merit" value="ACT13CERT"/>
+                <element label="Disc. Act 13-Disqualified Expert" value="ACT13DISQ"/>
+                <element label="Disc. Act 13-Statute of Repose" value="ACT13STAT"/>
+                <element label="Hung jury" value="HUNGJURY"/>
+                <element label="Info/Net limit exhausted" value="DS_EXHAUST"/>
+                <element label="Info/Net matter disposed of" value="DS_DISPOSE"/>
+                <element label="Judgment for defendant" value="JUDMENTDEF"/>
+                <element label="Judgment for plaintiff" value="JUDMENTPTF"/>
+                <element label="Jury trial - defense verdict" value="JURY_DEF"/>
+                <element label="Jury trial - plaintiff verdict" value="JURY_PLF"/>
+                <element label="Medical Board Action Defense" value="DPR_DISPOS"/>
+                <element label="Mistrial" value="MISTRIAL"/>
+                <element label="MSJ granted" value="MSJ"/>
+                <element label="No complaint filed/claim abandoned" value="NCFILED"/>
+                <element label="No Coverage" value="NOCOVG"/>
+                <element label="Non-suit" value="NONSUIT"/>
+                <element label="Opened in Error" value="OPENERROR"/>
+                <element label="Other" value="OTHER"/>
+                <element label="PAD - limits exhausted" value="PAD_LIMITS"/>
+                <element label="PAD - matter disposed of" value="PAD_DISPOS"/>
+                <element label="Panel Dismissed" value="DISMIS_PNL"/>
+                <element label="Respondent in Discovery" value="RESPDISPOS"/>
+                <element label="ROC - S.O.L. Expired" value="ROC"/>
+                <element label="Section 605/715" value="SEC605715"/>
+                <element label="Settled Claim" value="CLMSTTLED"/>
+                <element label="Settled Suit before trial" value="STL_B4_TRL"/>
+                <element label="Settled Suit during trial" value="SETTLE_TRL"/>
+                <element label="Settled Suit post defense verdict" value="SETTLE_PST"/>
+                <element label="Settled Suit post plaintiff verdict" value="STL_PLFVRD"/>
+                <element label="Suit dismissed" value="SDNSTTLMT"/>
+                <element label="Suit dismissed - lack of prosecution" value="LACK_PROS"/>
+                <element label="Suit dismissed - named in error" value="NMD IN ERR"/>
+                <element label="Suit dismissed by plaintiff" value="DISMISS"/>
+                <element label="Suit dismissed during trial" value="DISMIS_TRL"/>
+                <element label="Suit settled" value="STSTTLED"/>
+                <element label="N/C Outsid" sequence="0" value="N/C Outsid"/>
+                <element label="Settled/Ex" sequence="0" value="Settled/Ex"/>
+            </choice>
+        </element>
+        <element hint="Date claim closed" label="Disposition/Close Date" max_length="40" name="disposition_close_date" type="glide_date"/>
+        <element hint="Time remaining until claim must be assigned for investigation" label="FNOL Timer" max_length="40" name="fnol_timer" type="glide_duration"/>
+        <element default="0" label="Last Committed Claim Update" max_length="40" name="last_committed_update" read_only="true" type="integer"/>
+        <element label="Oasis Claim Status" max_length="40" name="oasis_claim_status" read_only="true" type="string"/>
+        <element label="Other Coverage Type" max_length="40" name="other_coverage_type" type="string"/>
+        <element hint="Insured Policy " label="Policy" max_length="32" name="policy" reference="x_norca_med_cam_policy" reference_qual="policy_cycle_type=POLICY^status!=^EQ" reference_qual_condition="policy_cycle_type=POLICY^status!=^EQ" type="reference"/>
+        <element label="Policy Holder" max_length="32" name="policy_holder" reference_key="entity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" hint="Reason for claim report." label="Contact Reason" max_length="40" name="reason_for_contact" type="string">
+            <choice>
+                <element label="Record Request" sequence="0" value="Record Request"/>
+                <element label="Unexpected Outcome" sequence="1" value="Unexpected Outcome"/>
+                <element label="Notice of Intent to Sue/Claim Letter" sequence="2" value="Notice of Intent to Sue/Claim Letter"/>
+                <element label="Lawsuit" sequence="3" value="Lawsuit"/>
+                <element label="Administrative Defense (St. Board Investigation/Billing Errors Proceeding/Employment-Related Civil A" sequence="4" value="AD"/>
+                <element label="Cyber Security (Information or Network Security Breach/Regulatory Privacy Proceeding/Customer Notifi" sequence="5" value="CS"/>
+                <element label="General Liability (Bodily Injury &amp; Property Damage)" sequence="6" value="GL"/>
+                <element label="Notice of Deposition" sequence="7" value="Notice of Deposition"/>
+                <element label="Other" sequence="8" value="Other"/>
+            </choice>
+        </element>
+        <element label="Reinsurance" max_length="32" name="reinsurance" reference="x_norca_med_cam_reinsurance" type="reference"/>
+        <element hint="Party reporting claim" label="Reported By" max_length="60" name="reported_by" type="string"/>
+        <element hint="The date the claim was reported." label="Report Date" max_length="40" name="report_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Request Additional Documentation" max_length="40" name="request_documentation" type="string"/>
+        <element label=" " max_length="65536" name="reserves" read_only="true" type="html"/>
+        <element label=" " max_length="8000" name="reserves2" read_only="true" type="html"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Resolution Type" max_length="40" name="resolution_type" type="string">
+            <choice>
+                <element label="Defense Verdict" sequence="0" value="Defense Verdict"/>
+                <element label="Plaintiff Verdict" sequence="1" value="Plaintiff Verdict"/>
+                <element label="Dismissed" sequence="2" value="Dismissed"/>
+                <element label="Settled" sequence="3" value="Settled"/>
+                <element label="Claim Abandoned" sequence="4" value="Claim Abandoned"/>
+                <element label="Other" sequence="5" value="Other"/>
+                <element label="No Coverage" sequence="6" value="No Coverage"/>
+                <element label="Open in Error" sequence="7" value="Open in Error"/>
+                <element label="PMSLIC Discontinued Act 13 – Certificate of Merit" sequence="8" value="PMSLIC Discontinued Act 13 – Certificate of Merit"/>
+                <element label="PMSLIC Discontinued Act 13- Disqualified Expert" sequence="9" value="PMSLIC Discontinued Act 13- Disqualified Expert"/>
+                <element label="PMSLIC Discontinued Act 13 – Statute of Repose" sequence="10" value="PMSLIC Discontinued Act 13 – Statute of Repose"/>
+                <element label="PMSLIC Section 605/715" sequence="11" value="PMSLIC Section 605/715"/>
+            </choice>
+        </element>
+        <element hint="Check this box to include this claim in the next Roundtable for your region." label="Roundtable" max_length="40" name="roundtable" type="boolean"/>
+        <element audit="true" label="OASIS - Created By" max_length="30" name="sor_created_by" type="string"/>
+        <element audit="true" label="OASIS - Created On" max_length="40" name="sor_created_on" type="glide_date_time"/>
+        <element label="OASIS Claim ID" max_length="20" name="sor_id" type="string"/>
+        <element audit="true" label="OASIS - Updated By" max_length="30" name="sor_updated_by" type="string"/>
+        <element audit="true" label="OASIS - Updated On" max_length="40" name="sor_updated_on" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" hint="Street and number, P.O. box, c/o." label="Address 1" max_length="40" name="u_address_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="Apartment, suite, unit, building, floor, etc." label="Address 2" max_length="40" name="u_address_2" type="string"/>
+        <element label="Alternate Claim Number" max_length="20" name="u_alternate_claim_num" type="string"/>
+        <element choice="1" label="Alternate Claim Number Type" max_length="10" name="u_alternate_claim_num_type" type="string">
+            <choice>
+                <element label="Manual Claim #" value="MANUAL"/>
+                <element label="TPA Claim #" value="TPA"/>
+            </choice>
+        </element>
+        <element label="Branch Office" max_length="10" name="u_branch_office" type="string"/>
+        <element choice="1" label="Carrier Response" max_length="10" name="u_carrier_response" type="string">
+            <choice>
+                <element label="Attempt to Settle" value="SETTLE"/>
+                <element label="Deny and Defend" value="DD"/>
+            </choice>
+        </element>
+        <element hint="Case" label="Case" max_length="40" name="u_case" reference="x_norca_med_cam_case" type="reference"/>
+        <element label="Catastrophe Number" max_length="20" name="u_catastrophe_number" type="string"/>
+        <element label="City" max_length="40" name="u_city" type="string"/>
+        <element label="Claim Number Prefix" max_length="10" name="u_claim_number_prefix" type="string"/>
+        <element active="false" attributes="edge_encryption_enabled=true" choice="1" default="fnol" label="Claim Stage" max_length="40" name="u_claim_stage" read_only="true" type="workflow">
+            <choice>
+                <element label="Assignment" value="assignment"/>
+                <element label="FNOL" value="fnol"/>
+                <element label="Investigate" value="investigate"/>
+                <element label="Recoup" value="recoup"/>
+                <element label="Resolution" value="resolution"/>
+            </choice>
+        </element>
+        <element label="Company" max_length="10" name="u_company" type="string"/>
+        <element label="Consent Received" max_length="40" name="u_consent_received" type="boolean"/>
+        <element label="Cost Center" max_length="40" name="u_cost_center" type="string"/>
+        <element dynamic_ref_qual="196daeb5db840b0075ea38ff9d9619dd" hint="County of Insured's practice" label="County" max_length="10" name="u_county" reference="x_norca_med_cam_county_lookup" reference_qual="javascript:new x_norca_med_cam.cam_Filters().getCountiesInState(current.claim_state_code)" type="reference" use_reference_qualifier="dynamic"/>
+        <element label="Coverage Issue" max_length="40" name="u_coverage_issue" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Email Address" max_length="40" name="u_email_address" type="string"/>
+        <element label="Final Disposition" max_length="10" name="u_final_disposition" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_first_name" type="string"/>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Received" max_length="40" name="u_glide_date_1" read_only="true" type="glide_date" use_dynamic_default="true"/>
+        <element hint="Claim incident end date." label="Incident End Date" max_length="40" name="u_incident_end_date" type="glide_date"/>
+        <element hint="Claim incident start date." label="Incident Start Date" max_length="40" name="u_incident_start_date" type="glide_date"/>
+        <element dynamic_ref_qual="c8f89a69db3bfa00d596327e9d9619b4" hint="Risk" label="Insured" max_length="32" name="u_insured" reference="x_norca_med_cam_entity" reference_qual="javascript:new x_norca_med_cam.cam_Filters().getInsuredForPolicyId(current.policy)" type="reference" use_dependent_field="true" use_dynamic_default="true" use_reference_qualifier="dynamic"/>
+        <element label="Jurisdiction Code" max_length="10" name="u_jurisdiction_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_last_name" type="string"/>
+        <element label="Liability Probability" max_length="40" name="u_liability_probability" type="float"/>
+        <element hint="Date of medical incident triggering claim report" label="Date of Loss" max_length="40" name="u_loss_date" type="glide_date"/>
+        <element choice="1" hint="Detailed loss type category." label="Loss Subtype" max_length="10" name="u_loss_subtype" type="string">
+            <choice>
+                <element label="Admin Coverage (AD)" value="ADCOVG"/>
+                <element label="Admin No Coverage (AD)" value="ADNOCOVG"/>
+                <element label="Deposition Only" value="PLDEPOONLY"/>
+                <element label="Deposition Only (GL)" value="GLDEPOONLY"/>
+                <element label="Deposition Only (HPL)" value="HPDEPOONLY"/>
+                <element label="DPR" value="DPR"/>
+                <element label="Info/Net Secure" value="DATASHIELD"/>
+                <element label="Investigation" value="PLINVEST"/>
+                <element label="Investigation (GL)" value="GLINVEST"/>
+                <element label="Investigation (HPL)" value="HPINVEST"/>
+                <element label="Legal Advice" value="LEGADVICE"/>
+                <element label="Notice of Intent" value="NOI"/>
+                <element label="Panel" value="PLPANEL"/>
+                <element label="PPL" value="PPL"/>
+                <element label="Response to Discovery" value="PLRESPDISC"/>
+                <element label="Standard" value="PLSTANDARD"/>
+                <element label="Standard (GL)" value="GLSTANDARD"/>
+                <element label="Standard (HPL)" value="HPSTANDARD"/>
+                <element label="Tooth Claim" value="PLTOOTHCLM"/>
+            </choice>
+        </element>
+        <element choice="1" hint="Choose a loss type based on claim." label="Loss Type" max_length="10" name="u_loss_type" type="string">
+            <choice>
+                <element label="Admin Defense" value="AD"/>
+                <element label="Advantage Gold" value="AG"/>
+                <element label="DPR" value="DPR"/>
+                <element label="Employee Benefits" value="EBL"/>
+                <element label="Health Care General Liability" value="GL"/>
+                <element label="Hospital Liability" value="HPL"/>
+                <element label="Info/Net Secure" value="DATASHIELD"/>
+                <element label="Non-owned and Hired Auto" value="NOaH Auto"/>
+                <element label="Professional Liability" value="PL"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Phone" max_length="40" name="u_phone" type="string"/>
+        <element label="Punitive Damages" max_length="40" name="u_punitive_damages" type="currency"/>
+        <element label="Reinsurance" max_length="40" name="u_reinsurance" type="boolean"/>
+        <element label="Statutory Expiration Date" max_length="40" name="u_statutory_expiration_date" type="glide_date"/>
+        <element label="TPA" max_length="40" name="u_tpa" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip Code" max_length="40" name="u_zip_code" type="string"/>
+    </element>
+</database>

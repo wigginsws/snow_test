@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_pol_rel_reason_code" label="POL_REL_REASON_CODE" language="en" table="u_policy_term_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_pol_rel_reason_code</element>
+            <help/>
+            <hint/>
+            <label>POL_REL_REASON_CODE</label>
+            <language>en</language>
+            <name>u_policy_term_import</name>
+            <plural>POL_REL_REASON_CODEs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 02:48:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>61a53129db96f20075ea38ff9d9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>POL_REL_REASON_CODE</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_policy_term_import_u_pol_rel_reason_code_en</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 02:48:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

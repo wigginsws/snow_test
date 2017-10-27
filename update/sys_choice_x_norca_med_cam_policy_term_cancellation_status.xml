@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cancellation_status" table="x_norca_med_cam_policy_term" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Flat Cancelled</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a947071db96360075ea38ff9d96191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>C4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canceled By Underwriter</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>79943071db96360075ea38ff9d9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>CANCUNDWR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Per Insured/Authorized Rep Written Req</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02947071db96360075ea38ff9d961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>CAUTHREQCX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a947071db96360075ea38ff9d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CCI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca947071db96360075ea38ff9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internal Cancel</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02947071db96360075ea38ff9d961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CINTERNAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewed by Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42947071db96360075ea38ff9d96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>CNI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancel Non-Pay</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd943071db96360075ea38ff9d9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>CNPP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewed by Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06947071db96360075ea38ff9d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>CNRC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coverage Converted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35943071db96360075ea38ff9d9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CONVCANC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a947071db96360075ea38ff9d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>COTHER</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by PMSLIC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1943071db96360075ea38ff9d9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by PMSLIC For License</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b1943071db96360075ea38ff9d9619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>CX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02947071db96360075ea38ff9d961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:08</sys_updated_on>
+            <value>CXC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancel DD&amp;R</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5943071db96360075ea38ff9d9619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>DDR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deny</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>39943071db96360075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>DENIED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insured's Request 65/5</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35943071db96360075ea38ff9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>INSREQ65</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insured's Request No Tail</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f9943071db96360075ea38ff9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>INSREQNT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>KPC Tail Physicians</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d943071db96360075ea38ff9d96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>KPCTAIL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewed by Insured</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82947071db96360075ea38ff9d961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>NI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewal 65/5</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad943071db96360075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>NONREN65/5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewal(NORCAP)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9943071db96360075ea38ff9d961977</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>NONRENCAP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewal(NORCAP)-65/5</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1943071db96360075ea38ff9d961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>NONRENCP65</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renew</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd943071db96360075ea38ff9d9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>NONRENEW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Renewed by PMSLIC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5947071db96360075ea38ff9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>NP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Renew</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61943071db96360075ea38ff9d961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>RENEW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e947071db96360075ea38ff9d961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>UNK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Switched Policy Type</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:43:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1943071db96360075ea38ff9d9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:07</sys_updated_on>
+            <value>XX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CANCEL</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:24:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80407cf9db56360075ea38ff9d961934</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:24:08</sys_updated_on>
+            <value>CANCEL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CCINT</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-16 22:24:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7da8809fdb1bf20075ea38ff9d961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-16 22:24:49</sys_updated_on>
+            <value>CCINT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Company Election</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:22:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02cfa4f9db56360075ea38ff9d96197d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>COELECT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Death</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:19:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a4fecb9db56360075ea38ff9d96195c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>DEATH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Disabled</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:23:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a420f8f9db56360075ea38ff9d96198f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>DISABLED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insured's Request</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:17:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2fbe28b9db56360075ea38ff9d96190b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:05</sys_updated_on>
+            <value>INSDREQ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Internal Cancel</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 15:49:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9048e435db56360075ea38ff9d9619d2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>INTERNAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non Payment</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:17:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aebee4b9db56360075ea38ff9d9619e4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>NONPAY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:18:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c1f2cb9db56360075ea38ff9d961930</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>RETIRED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cancellation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Withdrawn</label>
+            <language>en</language>
+            <name>x_norca_med_cam_policy_term</name>
+            <sequence>0</sequence>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 16:19:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c4facb9db56360075ea38ff9d961984</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-04-23 16:43:06</sys_updated_on>
+            <value>WITHDRAWN</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cancellation_status</element>
+            <name>x_norca_med_cam_policy_term</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-04-23 15:49:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a456b3f3db900300e022771c8c96192b</sys_id>
+            <sys_mod_count>50</sys_mod_count>
+            <sys_name>cancellation_status</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_policy_term_cancellation_status</sys_update_name>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-06-16 22:24:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

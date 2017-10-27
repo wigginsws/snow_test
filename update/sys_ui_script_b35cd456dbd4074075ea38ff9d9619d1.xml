@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_norca_med_cam.cam_ClaimClientValidatio</name>
+        <script><![CDATA[var x_norca_med_cam = x_norca_med_cam || {};
+
+x_norca_med_cam.cam_ClaimClientValidation = (function() {
+	"use strict";
+
+/* set your private variables and functions here. For example: 
+	var privateVar = 0; 
+	function private_function() {
+		return ++privateVar;
+	}
+*/
+
+/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
+	x_norca_med_cam.sharedVar = 0; 
+
+ Then access them in your scripts the same way. For example: 
+	function get_shared() {
+		return x_norca_med_cam.sharedVar;
+	}
+*/
+
+	return {
+
+		validateClaimDates:function(g_form) {
+			g_form.hideFieldMsg("report_date");
+			var reportDateStr = g_form.getValue("report_date");
+			var reportDate = reportDateStr?new Date(reportDateStr):null;
+
+			g_form.hideFieldMsg("u_loss_date");
+			var lossDateStr = g_form.getValue("u_loss_date");
+			var lossDate = lossDateStr?new Date(lossDateStr):null;
+
+			var today = new Date();
+			if (reportDate && reportDate.getTime()>today.getTime()) {
+				g_form.showFieldMsg("report_date", "Report date cannot be in the future.", "error");
+			}
+			if (lossDate && lossDate.getTime()>today.getTime()) {
+				g_form.showFieldMsg("u_loss_date", "Date of Loss cannot be in the future.", "error");
+			}
+			if (lossDate && reportDate && lossDate > reportDate) {
+				g_form.showFieldMsg("report_date", "Report date cannot be prior to Date of Loss.", "error");
+				g_form.showFieldMsg("u_loss_date", "Date of Loss for a claim cannot be after Report Date.", "error");
+			}
+
+		},
+		
+		jsDateStringToUSLocaleString: function(dateStr, defaultVal) {
+			if (dateStr) {
+				var date = new Date(dateStr);
+				var mm = date.getMonth() + 1;
+				var dd = date.getDate();
+				var yyyy = date.getFullYear();
+				return mm + '/' + dd + '/' + yyyy;
+			}
+			return defaultVal;
+		},
+		
+		type:  "cam_ClaimClientValidation"
+	};
+})();
+]]></script>
+        <script_name>cam_ClaimClientValidation</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-08-02 14:21:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b35cd456dbd4074075ea38ff9d9619d1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_norca_med_cam.cam_ClaimClientValidatio</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_script_b35cd456dbd4074075ea38ff9d9619d1</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-04 01:25:54</sys_updated_on>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>

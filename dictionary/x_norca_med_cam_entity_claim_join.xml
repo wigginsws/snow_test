@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Entity Claim Join" max_length="40" name="x_norca_med_cam_entity_claim_join" type="collection">
+        <element label="Claimant" max_length="40" name="u_claimant" type="string"/>
+        <element label="Claim Number" max_length="40" name="u_claim_no" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Client ID" max_length="40" name="u_client_id" type="string"/>
+        <element label="Entity" max_length="40" name="u_entity" type="string"/>
+        <element label="Entity_PK" max_length="20" name="u_entity_pk" type="decimal"/>
+        <element label="First Name" max_length="40" name="u_fn" type="string"/>
+        <element label="Last Name" max_length="40" name="u_ln" type="string"/>
+        <element label="Is Primary Claimant" max_length="40" name="u_primary_claimant" type="string"/>
+        <element label="Relation To Patient" max_length="40" name="u_relation" type="string"/>
+        <element label="Role" max_length="40" name="u_role" type="string"/>
+        <index name="index">
+            <element name="u_claim_no"/>
+            <element name="u_entity_pk"/>
+            <element name="u_role"/>
+        </index>
+    </element>
+</database>

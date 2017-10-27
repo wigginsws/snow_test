@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Coverage" max_length="40" name="x_norca_med_cam_coverage" type="collection">
+        <element label="Accounting Date - From" max_length="40" name="accounting_from_date" read_only="true" type="glide_date_time"/>
+        <element label="Accounting Date - To" max_length="40" name="accounting_to_date" read_only="true" type="glide_date_time"/>
+        <element label="Additional Insurance Amount" max_length="20" name="addtl_amt_of_insurance" read_only="true" type="decimal"/>
+        <element label="Adjusted Aggregate Limit" max_length="20" name="adj_aggregate_limit" read_only="true" type="decimal"/>
+        <element label="Adjusted Incident Limit" max_length="20" name="adj_incident_limit" read_only="true" type="decimal"/>
+        <element label="After Image Record" max_length="40" name="after_image_record_b" read_only="true" type="boolean"/>
+        <element label="Annual Base Rate" max_length="20" name="annual_base_rate" read_only="true" type="decimal"/>
+        <element label="Auto Renew" max_length="40" name="auto_renew_b" read_only="true" type="boolean"/>
+        <element label="Base Record" max_length="40" name="base_record_b" read_only="true" type="boolean"/>
+        <element label="Building Rate" max_length="20" name="building_rate" read_only="true" type="decimal"/>
+        <element label=" CANCELLATION_METHOD_CODE" max_length="40" name="cancellation_method_code" read_only="true" type="string"/>
+        <element label="Cancel Type Code" max_length="40" name="cancel_type_code" read_only="true" type="string"/>
+        <element label="char1" max_length="40" name="char1" read_only="true" type="string"/>
+        <element label="char2" max_length="40" name="char2" read_only="true" type="string"/>
+        <element label="char3" max_length="40" name="char3" read_only="true" type="string"/>
+        <element label="Claims Made Date" max_length="40" name="claims_made_date" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="Closing Trans Log FK" max_length="20" name="closing_trans_log_fk" read_only="true" type="decimal"/>
+        <element label="CM Conv Date" max_length="40" name="cm_conv_date" read_only="true" type="glide_date_time"/>
+        <element label="CM Conv Override Date" max_length="40" name="cm_conv_override_date" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="Coverage Base Record" max_length="20" name="coverage_base_record_fk" read_only="true" type="decimal"/>
+        <element label="Description" max_length="40" name="coverage_desc" read_only="true" type="string"/>
+        <element label="Coverage Limit" max_length="32" name="coverage_limit" read_only="true" reference="x_norca_med_cam_coverage_limit" type="reference"/>
+        <element label="Coverage Limit Code" max_length="40" name="coverage_limit_code" read_only="true" type="string"/>
+        <element label="Covg Part Shared Limit" max_length="40" name="covg_part_shared_limit_b" read_only="true" type="boolean"/>
+        <element label="Curr Policy Rel Reason Code" max_length="40" name="curr_pol_rel_reason_code" read_only="true" type="string"/>
+        <element label="Currently Policy Rel Stat Code" max_length="40" name="curr_pol_rel_stat_code" read_only="true" type="string"/>
+        <element label="Curr Policy Rel Stat Type Cd" max_length="40" name="curr_pol_rel_stat_type_cd" read_only="true" type="string"/>
+        <element label="Date 1" max_length="40" name="date1" read_only="true" type="glide_date_time"/>
+        <element label="Date 2" max_length="40" name="date2" read_only="true" type="glide_date_time"/>
+        <element label="Date 3" max_length="40" name="date3" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="Deductible Comp FK" max_length="20" name="deductible_comp_fk" read_only="true" type="decimal"/>
+        <element label="Default Insurance Amount" max_length="20" name="default_amt_of_insurance" read_only="true" type="decimal"/>
+        <element label="Direct Primary" max_length="40" name="direct_primary_b" read_only="true" type="boolean"/>
+        <element label="Effective From" max_length="40" name="effective_from_date" read_only="true" type="glide_date_time"/>
+        <element label="Effective To" max_length="40" name="effective_to_date" read_only="true" type="glide_date_time"/>
+        <element label="Exposure Unit" max_length="20" name="exposure_unit" read_only="true" type="decimal"/>
+        <element label="Extended Aggregate Limit" max_length="20" name="extended_aggregate_limit" read_only="true" type="decimal"/>
+        <element label="Incident Limit" max_length="20" name="incident_limit" read_only="true" type="decimal"/>
+        <element label="Indemnity Type" max_length="40" name="indemnity_type" read_only="true" type="string"/>
+        <element label="Insured Since" max_length="40" name="insured_since_date" read_only="true" type="glide_date_time"/>
+        <element label="Legacy Data ID" max_length="40" name="legacy_data_id" read_only="true" type="string"/>
+        <element label="Limit Erosion Code" max_length="40" name="limit_erosion_code" read_only="true" type="string"/>
+        <element label="Loss Of Income Days" max_length="20" name="loss_of_income_days" read_only="true" type="decimal"/>
+        <element label="Manual Aggregate Limit" max_length="20" name="manual_aggregate_limit" read_only="true" type="decimal"/>
+        <element label="Manual Ded Sir Arg Value" max_length="20" name="manual_ded_sir_agg_value" read_only="true" type="decimal"/>
+        <element label="Manual Ded Sir Code" max_length="40" name="manual_ded_sir_code" read_only="true" type="string"/>
+        <element label="Manual Ded Sir Inc Value" max_length="20" name="manual_ded_sir_inc_value" read_only="true" type="decimal"/>
+        <element label="Manual Incident Limit" max_length="20" name="manual_incident_limit" read_only="true" type="decimal"/>
+        <element label="Mini Policy" max_length="40" name="mini_policy" read_only="true" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var retVal = &quot;&quot;;&#10;&#9;retVal += current.getDisplayValue(&quot;product_coverage&quot;);&#10;&#9;if (retVal &amp;&amp; current.coverage_limit) {&#10;&#9;&#9;retVal += &quot; - &quot; + current.getDisplayValue(&quot;coverage_limit&quot;);&#10;&#9;}&#10;&#9;&#10;&#9;return retVal;  // return the calculated value&#10;&#10;})(current);" display="true" label="Display Name" max_length="100" name="name" read_only="true" type="string" virtual="true"/>
+        <element label="NUM1" max_length="20" name="num1" read_only="true" type="decimal"/>
+        <element label="NUM2" max_length="20" name="num2" read_only="true" type="decimal"/>
+        <element label="NUM3" max_length="20" name="num3" read_only="true" type="decimal"/>
+        <element label="Number of Patient Day" max_length="20" name="number_of_patient_day" read_only="true" type="decimal"/>
+        <element label="OC Conv Date" max_length="40" name="oc_conv_date" read_only="true" type="glide_date_time"/>
+        <element label="OC Conv Override Date" max_length="40" name="oc_conv_override_date" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="Official Record" max_length="20" name="official_record_fk" read_only="true" type="decimal"/>
+        <element attributes="format=none" label="Parent Coverage Base Record FK" max_length="20" name="parent_coverage_base_record_fk" read_only="true" type="decimal"/>
+        <element label="PCF County Code" max_length="40" name="pcf_county_code" read_only="true" type="string"/>
+        <element label="PCF Participation Date" max_length="40" name="pcf_participation_date" read_only="true" type="glide_date_time"/>
+        <element label="Per Day Limit" max_length="40" name="per_day_limit" read_only="true" type="string"/>
+        <element label="Primary Coverage" max_length="40" name="primary_coverage_b" read_only="true" type="boolean"/>
+        <element label="Primary Exposure" max_length="40" name="primary_exposure_b" read_only="true" type="boolean"/>
+        <element label="Prior Acts Retro Date" max_length="40" name="prioracts_retro_date" read_only="true" type="glide_date_time"/>
+        <element label="Product Coverage" max_length="32" name="product_coverage" read_only="true" reference="x_norca_med_cam_product_coverage" type="reference"/>
+        <element label="Product Coverage Code" max_length="40" name="product_coverage_code" read_only="true" type="string"/>
+        <element label="Rate Payor Depend Code" max_length="40" name="rate_payor_depend_code" read_only="true" type="string"/>
+        <element label="Rating Basis" max_length="20" name="rating_basis" read_only="true" type="decimal"/>
+        <element label="Record Mode Code" max_length="40" name="record_mode_code" read_only="true" type="string"/>
+        <element label="Retroactive Date" max_length="40" name="retroactive_date" read_only="true" type="glide_date_time"/>
+        <element label="Risk Base Record" max_length="32" name="risk_base_record" read_only="true" reference="x_norca_med_cam_risk" type="reference"/>
+        <element attributes="format=none" label="Risk Base Record FK" max_length="20" name="risk_base_record_fk" read_only="true" type="decimal"/>
+        <element label="Shared Limit" max_length="40" name="shared_limit_b" read_only="true" type="boolean"/>
+        <element attributes="format=none" label="Oasis ID" max_length="20" name="sor_id" read_only="true" type="decimal"/>
+        <element label="Oasis Created By" max_length="40" name="sor_sys_created_by" read_only="true" type="string"/>
+        <element label="Oasis Create Time" max_length="40" name="sor_sys_create_time" read_only="true" type="glide_date_time"/>
+        <element label="Oasis Updated By" max_length="40" name="sor_sys_updated_by" read_only="true" type="string"/>
+        <element label="Oasis Update Time" max_length="40" name="sor_sys_update_time" read_only="true" type="glide_date_time"/>
+        <element label="Split Retro Date" max_length="40" name="split_retro_date" read_only="true" type="glide_date_time"/>
+        <element label="State Code" max_length="40" name="state_code" read_only="true" type="string"/>
+        <element label="Sub-limit Indicator" max_length="40" name="sublimit_b" read_only="true" type="boolean"/>
+        <element label="SYMBOL" max_length="40" name="symbol" read_only="true" type="string"/>
+        <element attributes="format=none" label="Term Base Record FK" max_length="20" name="term_base_record_fk" read_only="true" type="decimal"/>
+        <element label="To Rate" max_length="40" name="to_rate_b" read_only="true" type="boolean"/>
+        <element attributes="format=none" label="Transaction Log FK" max_length="20" name="transaction_log_fk" read_only="true" type="decimal"/>
+        <element label="Used for Forecast" max_length="40" name="used_for_forecast_b" read_only="true" type="boolean"/>
+        <index name="index">
+            <element name="coverage_limit"/>
+        </index>
+        <index name="index2">
+            <element name="sor_id"/>
+        </index>
+        <index name="index3">
+            <element name="product_coverage"/>
+        </index>
+        <index name="index4">
+            <element name="risk_base_record"/>
+        </index>
+    </element>
+</database>

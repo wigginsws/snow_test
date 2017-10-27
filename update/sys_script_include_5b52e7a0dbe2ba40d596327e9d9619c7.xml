@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.genDocAjaxNorcal</api_name>
+        <client_callable>true</client_callable>
+        <description>General Document</description>
+        <name>genDocAjaxNorcal</name>
+        <script><![CDATA[var genDocAjaxNorcal = Class.create();
+genDocAjaxNorcal.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getDocumentBody : function() {
+		var result = '';
+		var reset = this.getParameter('sysparm_reset');
+		var templateTable = this.getParameter('sysparm_templateTable');
+		var templateName = this.getParameter('sysparm_templateName');
+		var sourceID = this.getParameter('sysparm_sourceID');
+		var sourceTable = this.getParameter('sysparm_sourceTable');
+		
+		if(reset){
+			var gr = new GlideRecord("draft_document");
+			gr.addQuery('table', sourceTable);
+			gr.addQuery('document', sourceID);
+			gr.addQuery('user', gs.getUserID());
+			gr.addActiveQuery();
+			gr.query();
+			while(gr.next()){
+				gr.active = false;
+				gr.update();
+			}
+		}
+			
+			var genDoc = new GeneralDocForm({tableId : sourceID,
+			generalDebug : null,
+			mode : 'pdf' ,
+			targetTable : sourceTable,
+			targetId : sourceID,
+			templateTable : templateTable,
+			template : templateName
+		});
+		
+		return genDoc.body;
+	},
+	
+	setDocumentBody : function() {
+		
+		var documentBody = this.getParameter('sysparm_documentBody') + '';
+		var tableName = this.getParameter('sysparm_table_name') + '';
+		var tableId = this.getParameter('sysparm_table_id') + '';
+		var targetTable = this.getParameter('sysparm_targetTable') + '';
+		var targetId = this.getParameter('sysparm_targetId') + '';
+		
+		if (documentBody.trim() != '') {
+			var gr = new GlideRecord("draft_document");
+			gr.addQuery('table', tableName);
+			gr.addQuery('document', tableId);
+			gr.addQuery('user', gs.getUserID());
+			gr.addActiveQuery();
+			gr.query();
+			
+			if (gr.next() && gr.canWrite()){
+				gr.setValue('body', documentBody);
+				gr.update();
+			} else {
+				gr.initialize();
+				
+				gr.table = tableName;
+				gr.document = tableId;
+				gr.body = documentBody;
+				gr.target_table = targetTable;
+				gr.target_id = targetId;
+				gr.user = gs.getUserID();
+				
+				gr.insert();
+			}
+		}
+		return;
+	},
+	
+	
+	type: 'genDocAjaxNorcal'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-05-02 18:27:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5b52e7a0dbe2ba40d596327e9d9619c7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>genDocAjaxNorcal</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_5b52e7a0dbe2ba40d596327e9d9619c7</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-05-02 18:47:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

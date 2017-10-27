@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:oracle:thin:@oas16dbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>dev</database_name>
+        <database_port>1521</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>oracle.jdbc.OracleDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Entity Class Import</import_set_table_label>
+        <import_set_table_name>u_entity_class_import</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>pass2017</jdbc_password>
+        <jdbc_server>oas16dbdev.norcalmutual.com</jdbc_server>
+        <jdbc_user_name>oasissn</jdbc_user_name>
+        <last_run_database_field>SYS_UPDATE_TIME</last_run_database_field>
+        <last_run_datetime>to_date('2017-08-04 12:35:01','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
+        <name>Claims-OASIS-Entity Classes</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>dev</oracle_sid>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>roshan@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-18 04:10:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>18681c84db1ef68062bafd441d96199c</sys_id>
+        <sys_mod_count>2496</sys_mod_count>
+        <sys_name>Claims-OASIS-Entity Classes</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_data_source_18681c84db1ef68062bafd441d96199c</sys_update_name>
+        <sys_updated_by>OasisSN</sys_updated_by>
+        <sys_updated_on>2017-08-07 19:50:19</sys_updated_on>
+        <table_name>entity_class</table_name>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>true</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

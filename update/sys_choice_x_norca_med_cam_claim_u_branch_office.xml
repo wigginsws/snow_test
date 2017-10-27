@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_branch_office" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excess &amp; Surplus</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccc7061fdb86b68062bafd441d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:37</sys_updated_on>
+            <value>EANDS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FD Insurance</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8c7461fdb86b68062bafd441d961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:37</sys_updated_on>
+            <value>FLDIC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MEDICUS</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0c7461fdb86b68062bafd441d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>MEDICUS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>/NEW/ NORCAL Mutual Insurance Company</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4c7461fdb86b68062bafd441d961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:37</sys_updated_on>
+            <value>NATIONAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORCAL</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7bf68edbdb86b68062bafd441d961972</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:18:21</sys_updated_on>
+            <value>NORCAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORCAL Specialty</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48c7461fdb86b68062bafd441d961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:37</sys_updated_on>
+            <value>PMSLIC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_branch_office</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SPM</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44c7461fdb86b68062bafd441d961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-16 04:21:38</sys_updated_on>
+            <value>SPM</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_branch_office</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-16 04:18:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4e463fb3db900300e022771c8c9619fc</sys_id>
+            <sys_mod_count>18</sys_mod_count>
+            <sys_name>u_branch_office</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_u_branch_office</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-06-13 05:01:25</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

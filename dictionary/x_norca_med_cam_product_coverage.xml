@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Product Coverage" max_length="40" name="x_norca_med_cam_product_coverage" type="collection">
+        <element label="Aggregate Disc Cap" max_length="20" name="aggregate_disc_cap" read_only="true" type="decimal"/>
+        <element label="Cancellation Level Code" max_length="10" name="cancellation_level_code" read_only="true" type="string"/>
+        <element label="Claim Tail" max_length="40" name="claim_tail_b" read_only="true" type="boolean"/>
+        <element label="Code" max_length="10" name="code" read_only="true" type="string"/>
+        <element label="Coverage Code" max_length="10" name="coverage_code" read_only="true" type="string"/>
+        <element label="Coverage Group" max_length="10" name="coverage_group" read_only="true" type="string"/>
+        <element label="Coverage Process Code" max_length="10" name="coverage_process_code" read_only="true" type="string"/>
+        <element label="Coverage Segment Code" max_length="10" name="coverage_segment_code" read_only="true" type="string"/>
+        <element label="Coverage Applicable To" max_length="10" name="covg_applicable_to" read_only="true" type="string"/>
+        <element label="Coverage Part Shared Limit" max_length="40" name="covg_part_shared_limit_b" read_only="true" type="boolean"/>
+        <element label="Default Amount of Insurance" max_length="20" name="default_amt_of_insurance" read_only="true" type="decimal"/>
+        <element label="Default Limit Code" max_length="10" name="default_limit_code" read_only="true" type="string"/>
+        <element label="Default Shared CP Limit" max_length="40" name="default_shared_cp_limit_b" read_only="true" type="boolean"/>
+        <element label="Default Shared Limit" max_length="40" name="default_shared_limit_b" read_only="true" type="boolean"/>
+        <element label="Default Sublimit" max_length="40" name="default_sublimit_b" read_only="true" type="boolean"/>
+        <element label="Exposure Basis Code" max_length="10" name="exposure_basis_code" read_only="true" type="string"/>
+        <element label="Inforce Calc" max_length="40" name="inforce_calc_b" read_only="true" type="boolean"/>
+        <element label="Inforce WR Premium" max_length="40" name="inforce_wr_prem_b" read_only="true" type="boolean"/>
+        <element label="Long Description" max_length="40" name="long_description" read_only="true" type="string"/>
+        <element label="Minimum Primary Limit" max_length="10" name="min_primary_limit" read_only="true" type="integer"/>
+        <element label="Multi Layer" max_length="40" name="multi_layer_b" read_only="true" type="boolean"/>
+        <element label="Nose Coverage" max_length="40" name="nose_coverage_b" read_only="true" type="boolean"/>
+        <element label="Offered Duration" max_length="5" name="offered_duration" read_only="true" type="integer"/>
+        <element label="Parent Product Coverage Code" max_length="10" name="parent_product_covg_code" read_only="true" type="string"/>
+        <element label="PCF State" max_length="10" name="pcf_state" read_only="true" type="string"/>
+        <element label="Policy Form Code" max_length="10" name="policy_form_code" read_only="true" type="string"/>
+        <element label="Policy Type Code" max_length="10" name="policy_type_code" read_only="true" type="string"/>
+        <element label="Practice State Code" max_length="2" name="practice_state_code" read_only="true" type="string"/>
+        <element label="Primary Coverage" max_length="40" name="primary_coverage_b" read_only="true" type="boolean"/>
+        <element label="Product Coverage Aggregate Reset" max_length="40" name="product_cov_agg_reset_fk" read_only="true" type="integer"/>
+        <element label="Rate Payor Depend" max_length="40" name="rate_payor_depend_b" read_only="true" type="boolean"/>
+        <element label="Renew" max_length="40" name="renew_b" read_only="true" type="boolean"/>
+        <element label="Sequence Number" max_length="20" name="sequence_no" read_only="true" type="decimal"/>
+        <element display="true" label="Short Description" max_length="15" name="short_description" read_only="true" type="string"/>
+        <element label="Short Term" max_length="40" name="short_term_b" read_only="true" type="boolean"/>
+        <element label="OASIS - Created By" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element label="OASIS - Updated By" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element label="Split Retro" max_length="40" name="split_retro_b" read_only="true" type="boolean"/>
+        <element label="Sublimit" max_length="40" name="sublimit_b" read_only="true" type="boolean"/>
+        <element label="Sub Coverage Available" max_length="40" name="sub_covg_available_b" read_only="true" type="boolean"/>
+        <element label="To Rate" max_length="40" name="to_rate_b" read_only="true" type="boolean"/>
+        <index name="index">
+            <element name="code"/>
+        </index>
+    </element>
+</database>

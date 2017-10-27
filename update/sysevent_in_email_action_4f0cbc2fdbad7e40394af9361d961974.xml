@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">recipients=claimsdiary-dev@norcal-group.com^EQ<item endquery="false" field="recipients" goto="false" newquery="false" operator="=" or="false" value="claimsdiary-dev@norcal-group.com"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Update Diary Entries State</name>
+        <order>90</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+	processResolveEmail();
+	
+	function processResolveEmail(){
+		
+		//if table name doesn't match don't process email
+		if (current.getTableName() != "x_norca_med_cam_diary"){
+			return;
+		}
+		
+		//if the sender doesn't match assignee don't resolve
+		if(!validUser()) {
+			current.work_notes = getFailurePreamble() + "the sender does not match the Diary Entry's assignee.";
+			current.update();
+			
+		}
+		
+		//if the diary entry is already resolved or closed do not not process and leave message in activity log
+		if(current.state == 2 || current.state == 3){
+			current.work_notes = getFailurePreamble() + "the Diary Entry is already closed or resolved.";
+			current.update();
+			
+		}
+		
+		//check for resolve in email subject then resolve and leave message stating it was resolved from the email
+		if(email.subject.indexOf("resolve") >= 0){
+			current.state = 2;
+			current.work_notes = "Diary Entry " + current.number + " has been resolved by the resolution email.";
+			current.update();
+		}
+		
+	}
+	
+	function validUser() {
+		if (current.assigned_to == email.from_sys_id)
+			return true;
+		
+		function getFailurePreamble() {
+			return 'Resolution email from ' + email.from + ' for Diary Entry "' + current.number + '" assigned to "' + current.assigned_to.getDisplayValue()
+			+ '" failed because: ';
+		}
+		
+	}
+	
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-22 20:58:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f0cbc2fdbad7e40394af9361d961974</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Update Diary Entries State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_in_email_action_4f0cbc2fdbad7e40394af9361d961974</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-08-02 23:08:12</sys_updated_on>
+        <table>x_norca_med_cam_diary</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="resolved_date_and_time" label="Date and time resolved" language="en" table="x_norca_med_cam_diary">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>resolved_date_and_time</element>
+            <help/>
+            <hint/>
+            <label>Date and time resolved</label>
+            <language>en</language>
+            <name>x_norca_med_cam_diary</name>
+            <plural>Date and time resolved</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>joe@buildon.me</sys_created_by>
+            <sys_created_on>2017-03-28 13:04:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>3749c699db313280394af9361d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Date and time resolved</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_diary_resolved_date_and_time_en</sys_update_name>
+            <sys_updated_by>joe@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-03-28 13:04:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

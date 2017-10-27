@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="x_norca_med_cam_entity_role" label="Policy Participant" max_length="40" name="x_norca_med_cam_policy_participant" type="collection">
+        <element label="External ID" max_length="50" name="external_id" type="string"/>
+        <element label="Policy" mandatory="true" max_length="32" name="policy" reference="x_norca_med_cam_policy" type="reference"/>
+        <index name="index">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

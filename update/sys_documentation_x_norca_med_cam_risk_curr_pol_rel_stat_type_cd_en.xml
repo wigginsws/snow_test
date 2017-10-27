@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="curr_pol_rel_stat_type_cd" label="Curr Pol Rel Stat Type CD" language="en" table="x_norca_med_cam_risk">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>curr_pol_rel_stat_type_cd</element>
+            <help/>
+            <hint/>
+            <label>Curr Pol Rel Stat Type CD</label>
+            <language>en</language>
+            <name>x_norca_med_cam_risk</name>
+            <plural>Curr Pol Rel Stat Type CDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-05-01 18:51:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>03be125cdbae7e0075ea38ff9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Curr Pol Rel Stat Type CD</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_risk_curr_pol_rel_stat_type_cd_en</sys_update_name>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-05-01 18:51:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

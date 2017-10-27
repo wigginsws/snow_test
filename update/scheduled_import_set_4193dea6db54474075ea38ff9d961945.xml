@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <data_source display_value="Claims-OASIS-Coverage">59353afedb7bb24075ea38ff9d961962</data_source>
+        <map/>
+        <name>Claims-OASIS-Coverage</name>
+        <order/>
+        <parent display_value="Claims-OASIS-CoverageLimit">3a9e126edb94474075ea38ff9d9619fa</parent>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-08-03 17:29:14</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>parent</run_type>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-08-03 17:39:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4193dea6db54474075ea38ff9d961945</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Claims-OASIS-Coverage</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>scheduled_import_set_4193dea6db54474075ea38ff9d961945</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-03 18:28:17</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </scheduled_import_set>
+</record_update>

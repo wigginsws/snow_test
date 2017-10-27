@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_claim</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_claim">stateCHANGESTO4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-CLAIM-StateReporting</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var state = current.claim_state_code.getDisplayValue();
+		var gr = new GlideRecord('x_norca_med_cam_state_reporting');
+		gr.addQuery('claim_state', state);
+	//	gr.setLimit(2);
+		gr.query();
+		while(gr.next()){
+			var claim_stateReporting = new GlideRecord('x_norca_med_cam_state_reporting_claim');
+				claim_stateReporting.addQuery('claim', current.sys_id);
+				claim_stateReporting.addQuery('state_reporting', gr.sys_id);
+				claim_stateReporting.query();
+				if(claim_stateReporting.hasNext()){
+					return gs.info("There is a state reporting record already created");
+				}
+					else{
+				claim_stateReporting.initialize();
+				claim_stateReporting.setValue('claim', current.sys_id);
+				claim_stateReporting.setValue('state_reporting', gr.sys_id);
+				claim_stateReporting.insert();
+					}
+		}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-07-24 14:02:01</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04bfb5d7db4c0f0075ea38ff9d96197f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>CAM-CLAIM-StateReporting</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_04bfb5d7db4c0f0075ea38ff9d96197f</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-07-25 17:51:54</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=04bfb5d7db4c0f0075ea38ff9d96197f"/>
+</record_update>

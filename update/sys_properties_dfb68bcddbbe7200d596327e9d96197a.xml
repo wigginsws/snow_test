@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Password for OASIS DB</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_norca_med_cam.oasis_db_password</name>
+        <read_roles>x_norca_med_cam.admin</read_roles>
+        <suffix>oasis_db_password</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-05-16 15:58:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dfb68bcddbbe7200d596327e9d96197a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_norca_med_cam.oasis_db_password</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_properties_dfb68bcddbbe7200d596327e9d96197a</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-05-18 04:35:45</sys_updated_on>
+        <type>password</type>
+        <value>{{dflt-gpaes}}xn6jMvXrE1keMAaDwu57hw==</value>
+        <write_roles>x_norca_med_cam.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=dfb68bcddbbe7200d596327e9d96197a"/>
+</record_update>

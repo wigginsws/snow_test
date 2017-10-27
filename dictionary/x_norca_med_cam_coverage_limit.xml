@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Coverage Limit" max_length="40" name="x_norca_med_cam_coverage_limit" type="collection">
+        <element label="Aggregate High Value" max_length="40" name="aggregate_high_value" read_only="true" type="float"/>
+        <element label="Aggregate Low Value" max_length="40" name="aggregate_low_value" read_only="true" type="float"/>
+        <element label="Code" max_length="10" name="code" read_only="true" type="string"/>
+        <element label="Incident High Value" max_length="40" name="incident_high_value" read_only="true" type="float"/>
+        <element label="Incident Low Value" max_length="40" name="incident_low_value" read_only="true" type="float"/>
+        <element label="Long Description" max_length="40" name="long_description" read_only="true" type="string"/>
+        <element label="Policy Aggregate High Value" max_length="40" name="policy_agg_high_value" read_only="true" type="float"/>
+        <element label="Policy Aggregate Low Value" max_length="40" name="policy_agg_low_value" read_only="true" type="float"/>
+        <element label="Sequence Number" max_length="40" name="sequence_no" read_only="true" type="integer"/>
+        <element display="true" label="Short Description" max_length="15" name="short_description" read_only="true" type="string"/>
+        <element label="OASIS - Created By" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element label="OASIS - Updated By" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <index name="index">
+            <element name="code"/>
+        </index>
+    </element>
+</database>

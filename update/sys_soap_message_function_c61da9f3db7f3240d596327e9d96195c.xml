@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:imag="http://imageright.com/imageright.webservice">
+   <soap:Header/>
+   <soap:Body>
+      <imag:FindFilesEx>
+         <!--Optional:-->
+         <imag:securityToken>${FindFilesEx.securityToken}</imag:securityToken>
+         <!--Optional:-->
+         <imag:searchConditions>
+            <!--Optional:-->
+            <imag:DocumentConditions>
+               <!--Zero or more repetitions:-->
+               <imag:DocumentCondition>
+                  <imag:AType>${DocumentCondition.AType}</imag:AType>
+                  <imag:ATarget>${DocumentCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${DocumentCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${DocumentCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${DocumentCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${DocumentCondition.Value2}</imag:Value2>
+                  <imag:ConditionName>${DocumentCondition.ConditionName}</imag:ConditionName>
+               </imag:DocumentCondition>
+            </imag:DocumentConditions>
+            <!--Optional:-->
+            <imag:DrawerConditions>
+               <!--Zero or more repetitions:-->
+               <imag:DrawerCondition>
+                  <imag:AType>${DrawerCondition.AType}</imag:AType>
+                  <imag:ATarget>${DrawerCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${DrawerCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${DrawerCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${DrawerCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${DrawerCondition.Value2}</imag:Value2>
+                  <imag:ConditionName>${DrawerCondition.ConditionName}</imag:ConditionName>
+               </imag:DrawerCondition>
+            </imag:DrawerConditions>
+            <!--Optional:-->
+            <imag:FileConditions>
+               <!--Zero or more repetitions:-->
+               <imag:FileCondition>
+                  <imag:AType>${FileCondition.AType}</imag:AType>
+                  <imag:ATarget>${FileCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${FileCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${FileCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${FileCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${FileCondition.Value2}</imag:Value2>
+                  <imag:ConditionName>${FileCondition.ConditionName}</imag:ConditionName>
+               </imag:FileCondition>
+            </imag:FileConditions>
+            <!--Optional:-->
+            <imag:FolderConditions>
+               <!--Zero or more repetitions:-->
+               <imag:FolderCondition>
+                  <imag:AType>${FolderCondition.AType}</imag:AType>
+                  <imag:ATarget>${FolderCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${FolderCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${FolderCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${FolderCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${FolderCondition.Value2}</imag:Value2>
+                  <imag:ConditionName>${FolderCondition.ConditionName}</imag:ConditionName>
+               </imag:FolderCondition>
+            </imag:FolderConditions>
+            <imag:Operation>${searchConditions.Operation}</imag:Operation>
+            <!--Optional:-->
+            <imag:PageConditions>
+               <!--Zero or more repetitions:-->
+               <imag:PageCondition>
+                  <imag:AType>${PageCondition.AType}</imag:AType>
+                  <imag:ATarget>${PageCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${PageCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${PageCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${PageCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${PageCondition.Value2}</imag:Value2>
+                  <imag:ConditionName>${PageCondition.ConditionName}</imag:ConditionName>
+               </imag:PageCondition>
+            </imag:PageConditions>
+            <!--Optional:-->
+            <imag:TaskConditions>
+               <!--Zero or more repetitions:-->
+               <imag:TaskCondition>
+                  <imag:AType>${TaskCondition.AType}</imag:AType>
+                  <imag:ATarget>${TaskCondition.ATarget}</imag:ATarget>
+                  <imag:CompOp>${TaskCondition.CompOp}</imag:CompOp>
+                  <imag:Id>${TaskCondition.Id}</imag:Id>
+                  <!--Optional:-->
+                  <imag:Value>${TaskCondition.Value}</imag:Value>
+                  <!--Optional:-->
+                  <imag:Value2>${TaskCondition.Value2}</imag:Value2>
+                  <!--Optional:-->
+                  <imag:OtherCondition>
+                     <imag:AType>${OtherCondition.AType}</imag:AType>
+                     <imag:ATarget>${OtherCondition.ATarget}</imag:ATarget>
+                     <imag:CompOp>${OtherCondition.CompOp}</imag:CompOp>
+                     <imag:Id>${OtherCondition.Id}</imag:Id>
+                     <!--Optional:-->
+                     <imag:Value>${OtherCondition.Value}</imag:Value>
+                     <!--Optional:-->
+                     <imag:Value2>${OtherCondition.Value2}</imag:Value2>
+                  </imag:OtherCondition>
+                  <imag:ConditionName>${TaskCondition.ConditionName}</imag:ConditionName>
+                  <imag:FutureTasks>${TaskCondition.FutureTasks}</imag:FutureTasks>
+               </imag:TaskCondition>
+            </imag:TaskConditions>
+         </imag:searchConditions>
+         <imag:getContent>${FindFilesEx.getContent}</imag:getContent>
+         <imag:includeDeleted>${FindFilesEx.includeDeleted}</imag:includeDeleted>
+      </imag:FindFilesEx>
+   </soap:Body>
+</soap:Envelope>]]></envelope>
+        <function_name>IRWebService40Soap12.FindFilesEx</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>CAM-ImageRight-All [ IRWebService40Soap12.FindFilesEx ]</qualified_name>
+        <soap_action>http://imageright.com/imageright.webservice/FindFilesEx</soap_action>
+        <soap_endpoint>http://pairtestapp2/imageright.webservice/irwebservice40.asmx</soap_endpoint>
+        <soap_message display_value="CAM-ImageRight-All">b02c69b3db7f3240d596327e9d9619c3</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-13 15:32:01</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c61da9f3db7f3240d596327e9d96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IRWebService40Soap12.FindFilesEx</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_function_c61da9f3db7f3240d596327e9d96195c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-13 15:32:01</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

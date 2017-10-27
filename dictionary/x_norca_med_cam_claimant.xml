@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Claimant" max_length="40" name="x_norca_med_cam_claimant" type="collection">
+        <element label="Claimant" max_length="40" name="u_claimant" type="string"/>
+        <element label="Claim Number" max_length="40" name="u_claim_no" type="string"/>
+        <element label="Client ID" max_length="40" name="u_client_id" type="string"/>
+        <element label="First Name" max_length="40" name="u_fn" type="string"/>
+        <element label="Is Primary Claimant" max_length="40" name="u_is_primary" type="string"/>
+        <element label="Last Name" max_length="40" name="u_ln" type="string"/>
+        <element label="Relation to Patient" max_length="40" name="u_relation" type="string"/>
+        <index name="index">
+            <element name="u_claim_no"/>
+            <element name="u_client_id"/>
+        </index>
+    </element>
+</database>

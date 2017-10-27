@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p style="color: #e55a00; font-size: 20px; margin: 0px 0px 0px 36px;"><strong>Thank you for your submission.</strong></p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"><span style="color: #6e7a83;"><br /> </span>A claims specialist will contact <span style="color: #929292;">the insured within </span>the next 36 hours to discuss this report and gather additional information.  We have assigned Claim ${number} to this case, but please note that our receipt of your submission and assignment of a claim number is not confirmation of coverage.  You may reply to this email if you wish to submit additional documents related to this matter.  </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"> </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"> </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;">Sincerely,</p>
+<p style="color: #919191; font-size: 14px; margin: 0px;"> </p>
+<p style="color: #525252; font-size: 14px; margin: 0px 0px 0px 36px;"><em>Claims Department</em></p>
+<p style="color: #525252; font-size: 14px; margin: 0px 0px 0px 36px;"><strong>NORCAL Group</strong></p>
+<p> </p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>austin@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-06 21:12:01</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4a95ea92dbd1f64062bafd441d9619fb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Send Acknowledgement Letter</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_4a95ea92dbd1f64062bafd441d9619fb</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:06</sys_updated_on>
+        <title>Send Acknowledgement Letter</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

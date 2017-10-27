@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p><font face="andale mono,times"><span style="color: #333333; font-size: 14px;"> Additional Documentation Request for Claim ID: ${number}</span></font></p>
+<p> </p>
+<p style="margin: 10px 0px 0px;"><font size="3" face="andale mono,times">The following documentation will be necessary to continue processing your claim:</font></p>
+<p style="margin: 10px 0px 0px;"><font size="3" face="andale mono,times">Please scan and attach digital copies as a reply to this message. If you are unable to do so, please contact us for further assistance.</font></p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>austin@buildon.me</sys_created_by>
+        <sys_created_on>2017-03-06 19:43:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a9115a1edb91f64062bafd441d961955</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Request Additional Documentation</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_a9115a1edb91f64062bafd441d961955</sys_update_name>
+        <sys_updated_by>amoewe</sys_updated_by>
+        <sys_updated_on>2017-08-07 12:52:19</sys_updated_on>
+        <title>Request Additional Documentation</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

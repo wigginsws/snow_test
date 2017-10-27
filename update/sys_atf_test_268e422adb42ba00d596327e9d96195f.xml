@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>1. Impersonate Claims Director&#13;
+2. Open an existing record&#13;
+3. Assignment group to FNOL&#13;
+4. Assign to "Andrea Young"&#13;
+5. Submit a form</description>
+        <name>Claims Director</name>
+        <remember/>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-13 20:56:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>268e422adb42ba00d596327e9d96195f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Claims Director</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_atf_test_268e422adb42ba00d596327e9d96195f</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-13 21:11:20</sys_updated_on>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=268e422adb42ba00d596327e9d96195f"/>
+</record_update>

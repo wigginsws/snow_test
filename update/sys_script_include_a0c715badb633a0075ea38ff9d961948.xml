@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_EntityWebServiceUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_EntityWebServiceUtils</name>
+        <script><![CDATA[var cam_EntityWebServiceUtils = Class.create();
+cam_EntityWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebServiceUtils, {
+    initialize: function() {
+    },
+
+    type: 'cam_EntityWebServiceUtils',
+	
+	createAddressUpdateNode: function(addressGR) {
+		var dataSyncUtils = new cam_DataSyncUtils();
+		var key = Math.random() * 10000;
+		var addressReturn = {};
+		
+		var addressXml = '<par1:Address key="%KEY%"><par1:AddressNumberId>%PK%</par1:AddressNumberId><par1:LineOne>%LINE1%</par1:LineOne><par1:LineTwo>%LINE2%</par1:LineTwo><par1:LineThree>%LINE3%</par1:LineThree><par1:CityName>%CITY%</par1:CityName><par1:CountyCode>%COUNTY%</par1:CountyCode><par1:StateOrProvinceCode>%STATEORPROV%</par1:StateOrProvinceCode><par1:PostalCode>%ZIP%</par1:PostalCode><par1:CountryCode>%COUNTRY_CODE%</par1:CountryCode><par1:AttentionName>%ADDRESSEE%</par1:AttentionName><!-- <par1:PostOfficeAddressIndicator>false</par1:PostOfficeAddressIndicator> --></par1:Address>';		
+		
+		var countyGR = currentGR.county?dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_county_lookup", currentGR.county):null;
+		var countryGR = currentGR.country?dataSyncUtils.getRecordBySysId("core_country", currentGR.country):null;
+		
+		var replacements = {
+			"KEY": key,
+			"PK": addressGR.sor_id?addressGR.sor_id:"",
+			"LINE1": addressGR.address_line1?addressGR.address_line1:"",
+			"LINE2": addressGR.address_line2?addressGR.address_line2:"",
+			"LINE3": addressGR.address_line3?addressGR.address_line3:"",
+			"CITY": addressGR.city?addressGR.city:"",
+			"ZIP": addressGR.zip_code?addressGR.zip_code:"",
+			"COUNTY": countyGR?countyGR.getValue("county_code"):"",
+			"STATEORPROV": addressGR.state?addressGR.state:addressGR.province,
+			"COUNTRY_CODE": countryGR?countryGR.getValue("iso3166_3"):"",
+			"ADDRESSEE": addressGR.addressee			
+		};
+		addressReturn.addressXml = addressXml.replace(/%\w+%/g, function(all) {
+		   return replacements[all] || all;
+		});
+		
+		
+		
+		var basicAddressXml = '<par1:BasicAddress addressReference="%KEY%" key="%KEY%"> <par1:PrimaryIndicator>%PRIMARY%</par1:PrimaryIndicator> <par1:FuturePrimaryIndicator>%FUTURE_PRIMARY%</par1:FuturePrimaryIndicator> <par1:AddressTypeCode>%TYPE_CODE%</par1:AddressTypeCode><par1:AddressPeriod> <par1:StartDate>%STARTDATE%</par1:StartDate> <par1:EndDate>%ENDDATE%</par1:EndDate></par1:AddressPeriod></par1:BasicAddress>';
+		
+		replacements = {
+			"KEY": key,
+			"PRIMARY": currentGR.primary?"true":"false",
+			"FUTURE_PRIMARY": "false",
+			"TYPE_CODE": addressGR.use?addressGR.use:"",
+			"STARTDATE": addressGR.effective_from?addressGR.effective_from: new GlideDate().getValue(),
+			"ENDDATE": addressGR.effective_to?addressGR.effective_to: "3000-01-01"
+		};
+		addressReturn.basicAddressXml = addressXml.replace(/%\w+%/g, function(all) {
+		   return replacements[all] || all;
+		});
+		
+	},
+	
+	
+	/**
+	* Function processes a prepared SOAP Message, meant to add a child to an Entity (Person/Org)
+	**/
+	saveEntity: function(currentGR) {
+		
+		var params, messageName, extractionMap;
+		if (currentGR.entity_type=="P") {
+			params = {
+				"PartyChangeRequest.Person": this.createParamValueObject( currentGR.getUniqueValue(), false),
+				'Person.PersonNumberId': this.createParamValueObject(currentGR.sor_id?currentGR.sor_id:"", false),
+				'Person.ClientId': this.createParamValueObject(currentGR.client_id?currentGR.client_id:"", false),
+				
+				'PersonName.FullName': this.createParamValueObject(currentGR.display_name?currentGR.display_name:"", false),
+				'PersonName.PersonTitlePrefix': this.createParamValueObject(currentGR.name_prefix?currentGR.name_prefix:"", false),
+				'PersonName.GivenName': this.createParamValueObject(currentGR.first_name?currentGR.first_name:"", false),
+				'PersonName.OtherGivenName': this.createParamValueObject(currentGR.middle_name?currentGR.middle_name:"", false),
+				'PersonName.Surname': this.createParamValueObject(currentGR.last_name?currentGR.last_name:"", false),
+				'PersonName.NameSuffix': this.createParamValueObject(currentGR.name_suffix?currentGR.name_suffix:"", false),
+
+				'Person.BirthDate': this.createParamValueObject(currentGR.birth_date?currentGR.birth_date:"", false),
+				'Person.GenderCode': this.createParamValueObject(currentGR.gender?currentGR.gender:"", false),				
+				'Person.SocialSecurityNumberId': this.createParamValueObject(currentGR.ssn?currentGR.ssn:"", false),
+				
+				'Person.BusinessEmail': this.createParamValueObject("100", false),
+				'BusinessEmail.Email': this.createParamValueObject(currentGR.email_1?currentGR.email_1:"", false)
+			};
+			messageName = currentGR.sor_id ? "updatePerson" : "insertPerson";
+			extractionMap = { 
+				"sor_id" : "/S:Envelope/S:Body/PartyChangeResult/ns0:Person/ns0:PersonNumberId",
+				"client_id": "/S:Envelope/S:Body/PartyChangeResult/ns0:Person/ns0:ClientId"
+			};
+			
+		} else {
+			params = {
+				'PartyChangeRequest.Organization': this.createParamValueObject( currentGR.getUniqueValue(), false),
+				'Organization.OrganizationNumberId': this.createParamValueObject(currentGR.sor_id?currentGR.sor_id:"", false),
+				'Organization.ClientId': this.createParamValueObject(currentGR.client_id?currentGR.client_id:"", false),
+				
+				'OrganizationName.FullName': this.createParamValueObject(currentGR.organization_name?currentGR.organization_name:"", false),
+				
+				'BusinessEmail.Email': this.createParamValueObject(currentGR.email_1?currentGR.email_1:"", false),
+				'Organization.NationalProviderId': this.createParamValueObject('', false),
+				'Organization.BusinessEmail': this.createParamValueObject( '100', false),
+				'Organization.FEINId': this.createParamValueObject(currentGR.federal_tin?currentGR.federal_tin:'', false)
+			};
+			messageName = currentGR.sor_id ? "updateOrganization" : "insertOrganization";
+			extractionMap = { 
+				"sor_id" : "/S:Envelope/S:Body/PartyChangeResult/ns0:Organization/ns0:OrganizationNumberId",
+				"client_id": "/S:Envelope/S:Body/PartyChangeResult/ns0:Organization/ns0:ClientId"
+			};
+			
+		}
+		params['PartyChangeRequest.UserId'] = this.getUserNameValueObject(currentGR);
+
+		this.processMessage(cam.SCOPE_ID + '.CAM-OASIS-PartyChangeService', messageName, params, currentGR, extractionMap);
+	}
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-28 02:26:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a0c715badb633a0075ea38ff9d961948</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>cam_EntityWebServiceUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_a0c715badb633a0075ea38ff9d961948</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-18 13:39:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

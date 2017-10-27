@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>closeClaim</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>current.state==4 &amp;&amp; (new global.StateFlow().validFlow(current, '0a1d1639db4a3600394af9361d961950', 'manual'));</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Close Claim</name>
+        <onclick>confirmRT()</onclick>
+        <order>900</order>
+        <script><![CDATA[function confirmRT(){
+	
+	var answer = confirm("Please view the reporting requirements below on the Required Reporting tab. If the requirements have been satisfied please click OK.");
+	
+	if (answer==true){
+		gsftSubmit(null, g_form.getFormElement(), 'closeClaim'); //MUST call the 'Action name' set in this UI Action
+	}
+	else{
+		return false;
+	}
+}
+
+if(typeof window == 'undefined')
+	confirmCompletion();
+
+function confirmCompletion(){
+	//Recalculate Reserves
+ 	var cdt=new GlideDateTime().getDisplayValue();
+// 	var gr = new GlideRecord('x_norca_med_cam_expenditure_view');
+// 	gr.addQuery('claim_number', current.sys_id);
+// 	gr.setLimit(1);
+// 	gr.query();
+// 	if(gr.getRowCount()>0){
+// 		while (gr.next()) {
+// 			gr.setWorkflow(true); //run business rules
+// 			gr.autoSysFields(false); //Do not update system fields
+// 			gr.datetimeforupdatetrigger=cdt; //Force the update
+// 			gr.update();
+// 		}
+// 	}
+	new cam_ClaimReserves().recalculateReserves(current);
+	
+	//Get calculated remaining reserve
+	var gr2 = new GlideRecord('x_norca_med_cam_reserves');
+	gr2.addQuery('claim_number',current.sys_id);
+	gr2.query();
+	var rr=0;
+	var re=0;
+	var ri=0;
+	while(gr2.next()){
+		rr = gr2.remaining_reserve;
+		re = gr2.remaining_expense;
+		ri = gr2.remaining_indemnity;
+	}
+	
+	if(rr==0){//if the remaining is zero, close the claim
+		new global.StateFlow().processFlow(current, '0a1d1639db4a3600394af9361d961950', 'manual');
+		gs.addInfoMessage(current.number + " has been closed.");
+		action.setRedirectURL('https://norcaldev.service-now.com/email_client.do?sysparm_table=x_norca_med_cam_claim&sysparm_sys_id='+current.sys_id.toString()+'&sysparm_target=x_norca_med_cam_claim&sys_target=x_norca_med_cam_claim&sys_uniqueValue='+current.sys_id.toString()+'&sys_row=0&sysparm_encoded_record=&sysparm_domain_restore=false&sysparm_stack=no');
+		
+		
+	}
+	else{//if the remaining reserve is not zero, zero it out and start over
+		if (re!=0){//insert transaction to zero remaining expense reserve
+			var gr3 = new GlideRecord('x_norca_med_cam_expenditure_view');
+			gr3.initialize();
+			gr3.trans_type = 'Expense Res';
+			gr3.claim_number = current.sys_id;
+			gr3.transaction_amount=re-(re*2);
+			gr3.status = 'Approved Reserve';
+			gr3.trans_date=cdt;
+			gr3.insert();}
+			
+			if (ri!=0){//insert transaction to zero remaining indemnity reserve
+				var gr4 = new GlideRecord('x_norca_med_cam_expenditure_view');
+				gr4.initialize();
+				gr4.trans_type = 'Indemnity Res';
+				gr4.claim_number = current.sys_id;
+				gr4.transaction_amount=ri-(ri*2);
+				gr4.status = 'Approved Reserve';
+				gr4.trans_date=cdt;
+				gr4.insert();}
+				
+				//start over
+				confirmCompletion();
+				
+			}
+			
+		}
+		]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-06-15 21:23:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6c0b6fedbd7720075ea38ff9d9619fe</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Close Claim</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_action_b6c0b6fedbd7720075ea38ff9d9619fe</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-08-02 23:46:47</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

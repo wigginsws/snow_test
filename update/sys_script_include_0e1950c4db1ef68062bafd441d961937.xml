@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_TransformUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_TransformUtils</name>
+        <script><![CDATA[var cam_TransformUtils = Class.create();
+cam_TransformUtils.prototype = {
+    initialize: function() {
+    },
+	
+	getEntitySysIdBySorId: function(sor_id) {
+		var gr = new GlideRecord(cam.SCOPE_ID + "_entity");
+		gr.addQuery("sor_id", sor_id);
+		gr.query();
+		if (gr.next()) {
+			gs.debug("[getEntitySysIdBySorId] Returning " + gr.getUniqueValue() + " for SOR ID " + sor_id);
+			return gr.getUniqueValue();
+		} else {
+			gs.debug("[getEntitySysIdBySorId] Could not find ENTITY with PK " + sor_id );
+		}
+		return "";
+	},
+	
+	getDirector: function(cType, account, county, state, pType){
+		var eQuery = 'u_coverage_type='+cType+'^u_account='+account+'^u_county='+county+'^u_state_geo='+state+'^u_policy_type='+pType+'^active=true';
+		var gr = new GlideRecord('x_norca_med_cam_fnol_routing');
+		gr.addEncodedQuery(eQuery);
+		gr.orderBy('order');
+		gr.query();
+		if(gr.next()){
+			var director = gr.getValue('u_director');
+			current.assignment_group = 'c0545588db7d7e4062bafd441d961943';
+			current.assigned_to = director;
+			current.update();
+		}
+		else if(!gr.next()){
+			current.assignment_group = 'c0545588db7d7e4062bafd441d961943';
+			current.update();
+			gs.addInfoMessage('A Claims Director could not be found.');
+			
+			
+			
+			
+		}
+	},
+
+    type: 'cam_TransformUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>roshan@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-18 04:17:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0e1950c4db1ef68062bafd441d961937</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>cam_TransformUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_0e1950c4db1ef68062bafd441d961937</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-06-29 02:34:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

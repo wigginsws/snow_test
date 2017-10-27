@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="contact_name" label="Contact Name" language="en" table="x_norca_med_cam_claim">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>contact_name</element>
+            <help/>
+            <hint>Person to contact about claim follow-up</hint>
+            <label>Contact Name</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <plural>Contact Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-05-25 16:21:51</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>e692e9c0db0bfa00d596327e9d96194f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Contact Name</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_claim_contact_name_en</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-19 18:33:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

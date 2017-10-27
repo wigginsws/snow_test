@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-PFUser" max_length="40" name="u_pfuser_import" type="collection">
+        <element attributes="import_attribute_name=AUDIT_CREATE_DATE" label="AUDIT_CREATE_DATE" max_length="40" name="u_audit_create_date" type="datetime"/>
+        <element attributes="import_attribute_name=AUDIT_CREATE_USER,edge_encryption_enabled=true" label="AUDIT_CREATE_USER" max_length="40" name="u_audit_create_user" type="string"/>
+        <element attributes="import_attribute_name=AUDIT_UPDATE_DATE" label="AUDIT_UPDATE_DATE" max_length="40" name="u_audit_update_date" type="datetime"/>
+        <element attributes="import_attribute_name=AUDIT_UPDATE_USER,edge_encryption_enabled=true" label="AUDIT_UPDATE_USER" max_length="40" name="u_audit_update_user" type="string"/>
+        <element attributes="import_attribute_name=CLIENT_SERVER_USER_B,edge_encryption_enabled=true" label="CLIENT_SERVER_USER_B" max_length="40" name="u_client_server_user_b" type="string"/>
+        <element attributes="import_attribute_name=COST_CENTER,edge_encryption_enabled=true" label="COST_CENTER" max_length="40" name="u_cost_center" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_INSURED_ENTITY_FK" label="DEFAULT_INSURED_ENTITY_FK" max_length="15" name="u_default_insured_entity_fk" type="decimal"/>
+        <element attributes="import_attribute_name=DEPARTMENT,edge_encryption_enabled=true" label="DEPARTMENT" max_length="40" name="u_department" type="string"/>
+        <element attributes="import_attribute_name=ENTITY_FK" label="ENTITY_FK" max_length="15" name="u_entity_fk" type="decimal"/>
+        <element attributes="import_attribute_name=FIRST_NAME,edge_encryption_enabled=true" label="FIRST_NAME" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="import_attribute_name=INTERNAL_USER_B,edge_encryption_enabled=true" label="INTERNAL_USER_B" max_length="40" name="u_internal_user_b" type="string"/>
+        <element attributes="import_attribute_name=LAST_LOGGED_IN_DATE" label="LAST_LOGGED_IN_DATE" max_length="40" name="u_last_logged_in_date" type="datetime"/>
+        <element attributes="import_attribute_name=LAST_NAME,edge_encryption_enabled=true" label="LAST_NAME" max_length="60" name="u_last_name" type="string"/>
+        <element attributes="import_attribute_name=LOCATION,edge_encryption_enabled=true" label="LOCATION" max_length="254" name="u_location" type="string"/>
+        <element attributes="import_attribute_name=MIDDLE_NAME,edge_encryption_enabled=true" label="MIDDLE_NAME" max_length="40" name="u_middle_name" type="string"/>
+        <element attributes="import_attribute_name=NO_UNSUCC_LOGONS" label="NO_UNSUCC_LOGONS" max_length="15" name="u_no_unsucc_logons" type="decimal"/>
+        <element attributes="import_attribute_name=NO_UNSUCC_LOGONS_WEB" label="NO_UNSUCC_LOGONS_WEB" max_length="15" name="u_no_unsucc_logons_web" type="decimal"/>
+        <element attributes="import_attribute_name=PASSWORD,edge_encryption_enabled=true" label="PASSWORD" max_length="40" name="u_password" type="string"/>
+        <element attributes="import_attribute_name=PASSWORD_REMINDER,edge_encryption_enabled=true" label="PASSWORD_REMINDER" max_length="100" name="u_password_reminder" type="string"/>
+        <element attributes="import_attribute_name=PASSWORD_UPDATE_DATE" label="PASSWORD_UPDATE_DATE" max_length="40" name="u_password_update_date" type="datetime"/>
+        <element attributes="import_attribute_name=PHONE_NUMBER,edge_encryption_enabled=true" label="PHONE_NUMBER" max_length="40" name="u_phone_number" type="string"/>
+        <element attributes="import_attribute_name=STATUS,edge_encryption_enabled=true" label="STATUS" max_length="40" name="u_status" type="string"/>
+        <element attributes="import_attribute_name=TEMP_EMAIL_ADDRESS,edge_encryption_enabled=true" label="TEMP_EMAIL_ADDRESS" max_length="60" name="u_temp_email_address" type="string"/>
+        <element attributes="import_attribute_name=USERID,edge_encryption_enabled=true" label="USERID" max_length="40" name="u_userid" type="string"/>
+        <element attributes="import_attribute_name=USER_CREATION_EXTERNAL_ID,edge_encryption_enabled=true" label="USER_CREATION_EXTERNAL_ID" max_length="40" name="u_user_creation_external_id" type="string"/>
+        <element attributes="import_attribute_name=USER_CREATION_ROLE_TYPE_CODE,edge_encryption_enabled=true" label="USER_CREATION_ROLE_TYPE_CODE" max_length="40" name="u_user_creation_role_type_code" type="string"/>
+        <element attributes="import_attribute_name=WEB_USER_B,edge_encryption_enabled=true" label="WEB_USER_B" max_length="40" name="u_web_user_b" type="string"/>
+    </element>
+</database>

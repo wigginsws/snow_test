@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Connection Name to be used when making web service calls to ImageRight</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_norca_med_cam.ir_ws_connection</name>
+        <read_roles>x_norca_med_cam.user</read_roles>
+        <suffix>ir_ws_connection</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-14 03:08:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2a3c084cdbc04340d596327e9d961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_norca_med_cam.ir_ws_connection</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_properties_2a3c084cdbc04340d596327e9d961941</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-14 03:08:22</sys_updated_on>
+        <type>string</type>
+        <value>Master</value>
+        <write_roles>x_norca_med_cam.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a3c084cdbc04340d596327e9d961941"/>
+</record_update>

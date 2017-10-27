@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="dl_definition">
+    <dl_definition action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <matcher_table>x_norca_med_cam_claim_location</matcher_table>
+        <name>Assign Claim Director</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>false</run_on_insert>
+        <run_on_update>true</run_on_update>
+        <source_table>x_norca_med_cam_claim</source_table>
+        <sys_class_name>dl_definition</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-11 21:22:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6051c40adbca3600394af9361d96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign Claim Director</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>dl_definition_6051c40adbca3600394af9361d96190f</sys_update_name>
+        <sys_updated_by>joe@buildon.me</sys_updated_by>
+        <sys_updated_on>2017-04-11 21:22:31</sys_updated_on>
+    </dl_definition>
+</record_update>

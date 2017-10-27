@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="asmt_metric_category">
+    <asmt_metric_category action="INSERT_OR_UPDATE">
+        <create_stakeholders>false</create_stakeholders>
+        <description/>
+        <details/>
+        <filter table="asmt_metric_type">sys_id=11be0209db32f20075ea38ff9d96192c^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="11be0209db32f20075ea38ff9d96192c"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <metric_type display_value="Claim Satisfaction Survey">11be0209db32f20075ea38ff9d96192c</metric_type>
+        <name>Claim Satisfaction Survey</name>
+        <order>100</order>
+        <scoring_type>percent</scoring_type>
+        <sys_class_name>asmt_metric_category</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-05-16 11:53:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40ee0ec5db32f20075ea38ff9d961937</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Claim Satisfaction Survey</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>asmt_metric_category_40ee0ec5db32f20075ea38ff9d961937</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-05-16 11:55:55</sys_updated_on>
+        <table>asmt_metric_type</table>
+        <total_metrics>2</total_metrics>
+        <weight>10</weight>
+    </asmt_metric_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=40ee0ec5db32f20075ea38ff9d961937"/>
+</record_update>

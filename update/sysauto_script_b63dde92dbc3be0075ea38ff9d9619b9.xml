@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Script-Dedupe Policies</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-06-01 20:24:20</run_start>
+        <run_time>1970-01-02 03:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[dedupePolicies();
+
+/*
+* Routine to de-duplicate policies. It retrieves all policies sorted by claim ID
+* and for each group of policies:
+* 1. Creates a new record
+* 2. Copies values from previous records to new
+* 3. Inserts new record
+* 4. Updates references to previous records in referencing tables
+* 5. Deletes previous records.
+*/
+function dedupePolicies() {
+	var reg = /^(get|set|sys_)/;
+	var tableMap = {
+		"risk": "policy_reference",
+		"participant": "policy",
+		"policy_participant": "policy",
+		"claim": "policy",
+		"policy_term": "policy",
+		"case": "policy",
+		"claim_entry_log": "u_policy_id",
+		"coverage_review": "policy"
+	};
+	
+	var newGR = new GlideRecord(cam.SCOPE_ID + "_policy");
+	newGR.newRecord();
+	
+	var oldSysIdList = [];
+	var newSysId;
+	var gr = new GlideRecord(cam.SCOPE_ID + "_policy");
+	gr.orderBy("number");
+	gr.setLimit(200000);
+	gr.query();
+	while (gr.next()) {
+		if (newGR.isNewRecord() && newGR.getValue("number")!=gr.getValue("number")) {
+			if (oldSysIdList.length>1) {
+				// insert new record, update all references, delete old records
+				newSysId = newGR.insert();
+				gs.debug("[dedupePolicies] Inserted record " + newSysId + " for policy #" + newGR.number);
+				updateAllPolicyReferences( tableMap, oldSysIdList.join(), newSysId, newGR.number);
+				deleteOldPolicies(oldSysIdList.join());
+			} else {
+				gs.debug("[dedupePolicies] Discarding solo record for " + newSysId + " for policy #" + newGR.number);
+			}
+			// reinit for next set
+			newGR.newRecord();
+			oldSysIdList = [];
+		}
+		copyValues(gr, newGR, reg);
+		oldSysIdList.push(gr.getUniqueValue());
+	}
+	
+	if (newGR.isNewRecord() && newGR.number) {
+		newSysId = newGR.insert();
+		gs.debug("[dedupePolicies] Insert record " + newSysId + " for policy #" + newGR.number);
+		updateAllPolicyReferences( tableMap, oldSysIdList.join(), newSysId, newGR.number);
+		deleteOldPolicies(oldSysIdList.join());
+	}
+}
+
+/*
+* Iteratively call updatePolicyReferences for referencing tables
+*/
+function updateAllPolicyReferences(tableMap, oldSysIdList, newSysId, number) {
+	for (var tableName in tableMap) {
+		updatePolicyReferences(cam.SCOPE_ID + "_" + tableName, tableMap[tableName], oldSysIdList, newSysId, number);
+	}
+}
+
+/*
+* Delete old policy records
+*/
+function deleteOldPolicies(oldSysIdList) {
+	var gr = new GlideRecord(cam.SCOPE_ID + "_policy");
+	gr.addQuery("sys_id", "IN", oldSysIdList);
+	gr.query();
+	gr.deleteMultiple();
+}
+
+/*
+* Update references in a table to any of the old records to point to the new one.
+*/
+function updatePolicyReferences(tableName, columnName, oldSysIdList, newSysId, policyNumber) {
+	gs.debug("[updatePolicyReferences] Updating references in " + tableName + " for policy " + policyNumber);
+	var gr = new GlideRecord(tableName);
+	gr.addQuery(columnName, "IN", oldSysIdList);
+	gr.query();
+	var i=0;
+	while (gr.next()) {
+		gr.setValue(columnName, newSysId);
+		i++;
+	}
+	if (i>0) {
+		gr.updateMultiple();
+		gs.debug("[updatePolicyReferences] Updated reference in " + tableName + " for policy " + policyNumber);
+	} else {
+		gs.debug("[updatePolicyReferences] No updates in " + tableName + " for policy " + policyNumber);
+	}
+}
+
+
+/*
+* Copy field values from old to new record wherever new record does not already have values set.
+*/
+function copyValues(sourceGR, targetGR, reg) {
+	gs.debug("[copyValues] Merging source " + sourceGR + " with target " + targetGR);
+	for (var key in sourceGR) {
+		if (!reg.test(key) && !targetGR.getValue(key) && sourceGR.getValue(key)) {
+			targetGR.setValue(key, sourceGR.getValue(key));
+			//gs.info("[copyValues] Copied key: " + key + ", value: " + sourceGR.getValue(key));
+		}
+	}
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-01 20:57:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b63dde92dbc3be0075ea38ff9d9619b9</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>CAM-Script-Dedupe Policies</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_b63dde92dbc3be0075ea38ff9d9619b9</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-08 20:38:12</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

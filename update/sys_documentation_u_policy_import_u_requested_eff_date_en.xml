@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_requested_eff_date" label="REQUESTED_EFF_DATE" language="en" table="u_policy_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_requested_eff_date</element>
+            <help/>
+            <hint/>
+            <label>REQUESTED_EFF_DATE</label>
+            <language>en</language>
+            <name>u_policy_import</name>
+            <plural>REQUESTED_EFF_DATEs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>roshan@buildon.me</sys_created_by>
+            <sys_created_on>2017-04-13 17:00:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>49a851aadb867600394af9361d9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>REQUESTED_EFF_DATE</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_policy_import_u_requested_eff_date_en</sys_update_name>
+            <sys_updated_by>roshan@buildon.me</sys_updated_by>
+            <sys_updated_on>2017-04-13 17:00:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Policy" max_length="40" name="x_norca_med_cam_policy" type="collection">
+        <element label="Agent" max_length="32" name="agent" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Agent FK" max_length="40" name="agent_fk" read_only="true" type="integer"/>
+        <element label="Aggregate Attachment" max_length="20" name="agg_attachment" read_only="true" type="decimal"/>
+        <element label="Aggregate Deductible" max_length="20" name="agg_deduct" read_only="true" type="decimal"/>
+        <element label="Aggregate Limit" max_length="20" name="agg_limit" read_only="true" type="decimal"/>
+        <element label="Aggregate SIR Limit" max_length="20" name="agg_sir_limit" read_only="true" type="decimal"/>
+        <element label="Amount" max_length="40" name="amount" read_only="true" type="price"/>
+        <element label="Attachment" max_length="20" name="attachment" read_only="true" type="decimal"/>
+        <element label="Bank" max_length="32" name="bank" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Bank Account Number" max_length="30" name="bank_account_no" read_only="true" type="string"/>
+        <element label="Bank FK" max_length="40" name="bank_fk" read_only="true" type="integer"/>
+        <element label="Cancellation Reason Code" max_length="10" name="cancel_reason_code" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Regional/Claim Office" max_length="40" name="claim_office" read_only="true" type="string"/>
+        <element label="Deductible Cost Type List" max_length="4000" name="deductible_cost_type_list" read_only="true" type="glide_list"/>
+        <element label="Description" max_length="100" name="description" read_only="true" type="string"/>
+        <element label="Division" max_length="1000" name="division" read_only="true" type="string"/>
+        <element label="End date" max_length="40" name="end_date" read_only="true" type="glide_date"/>
+        <element label="Facultative" max_length="40" name="facultative" read_only="true" type="boolean"/>
+        <element label="Group Number" max_length="30" name="group_number" read_only="true" type="string"/>
+        <element label="Hospital Name" max_length="60" name="hospital_name" read_only="true" type="string"/>
+        <element label="Hospital Number" max_length="10" name="hospital_number" read_only="true" type="string"/>
+        <element label="Inception Date" max_length="40" name="inception_date" read_only="true" type="glide_date"/>
+        <element label="Per Incident Deductible" max_length="20" name="inc_deduct" read_only="true" type="decimal"/>
+        <element label="Per Incident Limit" max_length="20" name="inc_limit" read_only="true" type="decimal"/>
+        <element label="Incident SIR Limit" max_length="20" name="inc_sir_limit" read_only="true" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Issue Company" max_length="40" name="issue_company" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Jacket Number" max_length="30" name="jacket_no" read_only="true" type="string"/>
+        <element label="Legacy Policy Number" max_length="50" name="legacy_policy_number" read_only="true" type="string"/>
+        <element label="Limit Cost Type List" max_length="4000" name="limit_cost_type_list" read_only="true" type="glide_list"/>
+        <element label="Mini Policy" max_length="40" name="mini_policy" read_only="true" type="boolean"/>
+        <element display="true" label="Policy Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" calculation="g_form.getValue('policy');" hint="Policyholder" label="Named Insured" max_length="40" name="original_insured_name" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Percentage Participation" max_length="20" name="pct_participation" read_only="true" type="decimal"/>
+        <element label="Policy Current Status Code" max_length="40" name="policy_current_status_code" read_only="true" type="string"/>
+        <element choice="1" label="Policy Cycle Type" max_length="40" name="policy_cycle_type" read_only="true" type="choice">
+            <choice>
+                <element label="Application" value="APP"/>
+                <element label="Policy" value="POLICY"/>
+                <element label="Quote" value="QUOTE"/>
+            </choice>
+        </element>
+        <element choice="1" label="Policy Form" max_length="10" name="policy_form" read_only="true" type="string">
+            <choice>
+                <element label="Case Coverage" value="OCCURRENCE"/>
+                <element label="Claims Made" value="CM"/>
+            </choice>
+        </element>
+        <element label="Group" max_length="32" name="policy_group" read_only="true" reference="sys_user_group" type="reference"/>
+        <element label="Policy Layer" max_length="10" name="policy_layer" read_only="true" type="string"/>
+        <element choice="1" choice_field="state" choice_table="x_norca_med_cam_address" label="State" max_length="32" name="policy_location" read_only="true" type="string">
+            <choice/>
+        </element>
+        <element choice="1" label="Policy Type" max_length="10" name="policy_type" read_only="true" type="string">
+            <choice>
+                <element label="Managed Care" value="MNGDCR"/>
+                <element label="Pollution Liability" value="POLLLIAB"/>
+                <element label="CLMSMDE" sequence="0" value="CLMSMDE"/>
+                <element label="Community Health Clinic Program" sequence="0" value="CHCP"/>
+                <element label="CPG" sequence="0" value="CPG"/>
+                <element label="Entity" sequence="0" value="ENTITY"/>
+                <element label="Excess" sequence="0" value="EXCESS"/>
+                <element label="Excess" sequence="0" value="EXS"/>
+                <element label="Excess and Surplus" sequence="0" value="EXC_SURP"/>
+                <element label="EXENTY" sequence="0" value="EXENTY"/>
+                <element label="Facility" sequence="0" value="FACILITY"/>
+                <element label="FLDIC" sequence="0" value="FLDIC"/>
+                <element label="Group" sequence="0" value="GRP"/>
+                <element label="Group" sequence="0" value="GROUP"/>
+                <element label="Health Care Facility" sequence="0" value="HCFC"/>
+                <element label="Health Care Professionals" sequence="0" value="HCP"/>
+                <element label="Health Care Professionals Occurrence" sequence="0" value="HCPO"/>
+                <element label="Healthcare Facility" sequence="0" value="HCF"/>
+                <element label="Healthcare System" sequence="0" value="HLTHCRSYS"/>
+                <element label="Hospital" sequence="0" value="HOSPITAL"/>
+                <element label="IHS Other" sequence="0" value="IHSOTHER"/>
+                <element label="Individual" sequence="0" value="IND"/>
+                <element label="Individual Physician and Surgeon" sequence="0" value="INDP"/>
+                <element label="Individual/Group Policy" sequence="0" value="SPM01"/>
+                <element label="MEDP" sequence="0" value="MEDP"/>
+                <element label="Migrated PLMS Tail Policies - Individual" sequence="0" value="MIGRTAILLN"/>
+                <element label="OCC" sequence="0" value="OCC"/>
+                <element label="VRP" sequence="0" value="VRP"/>
+            </choice>
+        </element>
+        <element label="Prefix" max_length="20" name="prefix" read_only="true" type="string"/>
+        <element label="Premium" max_length="20" name="premium" read_only="true" type="decimal"/>
+        <element label="Process Status" max_length="10" name="process_status" read_only="true" type="string"/>
+        <element label="Producer" max_length="100" name="producer" read_only="true" type="string"/>
+        <element label="Producer FK" max_length="40" name="producer_fk" read_only="true" type="integer"/>
+        <element label="Producer Reference" max_length="32" name="producer_ref" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Product Line" max_length="10" name="product_line_group" read_only="true" type="string"/>
+        <element label="Program" max_length="10" name="program" read_only="true" type="string"/>
+        <element label="Rating Basis" max_length="10" name="rating_basis" read_only="true" type="string"/>
+        <element label="Received Date" max_length="40" name="received_date" read_only="true" type="glide_date"/>
+        <element label="Referral Code" max_length="10" name="referral_code" read_only="true" type="string"/>
+        <element label="Reinsurance Intermediary" max_length="32" name="rein_intermediary" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Reinsurance Intermediary FK" max_length="40" name="rein_intermediary_fk" read_only="true" type="integer"/>
+        <element label="Requested Effective Date" max_length="40" name="requested_effective_date" read_only="true" type="glide_date"/>
+        <element label="Retroactive Date" max_length="40" name="retro_date" read_only="true" type="glide_date"/>
+        <element label="Servicing Office" max_length="10" name="servicing_office" read_only="true" type="string"/>
+        <element label="SIR Cost Type List" max_length="4000" name="sir_cost_type_list" read_only="true" type="glide_list"/>
+        <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element label="Start date" max_length="40" name="start_date" read_only="true" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element label="Accepted" value="ACCEPTED"/>
+                <element label="Active" value="ACTIVE"/>
+                <element label="Cancelled" value="CANCEL"/>
+                <element label="Denied" value="DENIED"/>
+                <element label="Pending" value="PENDING"/>
+                <element label="HOLD" sequence="0" value="HOLD"/>
+                <element label="INVALID" sequence="0" value="INVALID"/>
+            </choice>
+        </element>
+        <element label="Status Reason" max_length="10" name="status_reason" read_only="true" type="string"/>
+        <element label="Type of Business" max_length="10" name="type_of_business" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Underwriter" max_length="40" name="underwriter" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Work in Progress" max_length="40" name="wip" read_only="true" type="boolean"/>
+        <index name="index">
+            <element name="policy_group"/>
+        </index>
+        <index name="index2">
+            <element name="agent"/>
+        </index>
+        <index name="index3">
+            <element name="bank"/>
+        </index>
+        <index name="index4">
+            <element name="producer_ref"/>
+        </index>
+        <index name="index5">
+            <element name="original_insured_name"/>
+        </index>
+        <index name="index6">
+            <element name="issue_company"/>
+        </index>
+        <index name="index7">
+            <element name="sor_id"/>
+        </index>
+        <index name="index8">
+            <element name="rein_intermediary"/>
+        </index>
+        <index name="index9">
+            <element name="underwriter"/>
+        </index>
+    </element>
+</database>

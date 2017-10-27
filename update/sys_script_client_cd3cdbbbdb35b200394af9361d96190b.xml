@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-Claim-Show/Hide tabs</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+var	state = g_form.getValue('state');
+	
+	
+	//show/hide investigation info tab
+   if(state != 1 && state != 2){
+	   g_form.setSectionDisplay('investigation_info', true); 
+	   g_form.showRelatedList('x_norca_med_cam_coverage_review');
+   }
+	else {
+		g_form.setSectionDisplay('investigation_info', false);
+		g_form.hideRelatedList('x_norca_med_cam_coverage_review');
+	}
+	
+	
+	//show clousre tab when state is closed
+	if(state == 5){
+		g_form.setSectionDisplay('closure_info', true);
+		}
+	else {
+		g_form.setSectionDisplay('closure_info', false);
+	}
+	
+	
+	//show claims assignment tab when state is assignment
+	if(state == 2){
+	   g_form.setSectionDisplay('claims_byassignment', true);
+	   g_tabs2Sections.setActive(5);
+	   g_form.showFieldMsg('assigned_to', 'See claim assignments below', 'info');
+	   g_form.setSectionDisplay('claims_bydefensecounsel', true);
+	   }
+	   else {
+		 g_form.setSectionDisplay('claims_byassignment', false);
+		 g_form.setSectionDisplay('claims_bydefensecounsel', false);
+	   }
+	
+	
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>joe@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-05 13:35:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd3cdbbbdb35b200394af9361d96190b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>CAM-Claim-Show/Hide tabs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_cd3cdbbbdb35b200394af9361d96190b</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-24 04:33:16</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

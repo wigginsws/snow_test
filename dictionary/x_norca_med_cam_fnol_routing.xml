@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="FNOL Routing" max_length="40" name="x_norca_med_cam_fnol_routing" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Account" max_length="40" name="u_account" type="string"/>
+        <element label="County" max_length="40" name="u_county" reference="x_norca_med_cam_county_lookup" type="reference"/>
+        <element choice="1" label="Coverage Type" max_length="40" name="u_coverage_type" type="choice">
+            <choice>
+                <element label="PL" sequence="0" value="pl"/>
+                <element label="Admin Defense" sequence="10" value="admin_defense"/>
+                <element label="InfoNet Secure" sequence="20" value="infonet_secure"/>
+                <element label="DatShield" sequence="30" value="datshield"/>
+                <element label="Other" sequence="40" value="other"/>
+            </choice>
+        </element>
+        <element label="Director" mandatory="true" max_length="40" name="u_director" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element choice="1" label="Policy Type" max_length="40" name="u_policy_type" type="choice">
+            <choice>
+                <element label="Admitted" value="Admitted"/>
+                <element label="Excess and Surplus" value="EXC_SURP"/>
+            </choice>
+        </element>
+        <element choice="1" label="State" max_length="40" name="u_state_geo" type="choice">
+            <choice>
+                <element label="Alabama" value="AL"/>
+                <element label="Alaska" value="AK"/>
+                <element label="Arizona" value="AZ"/>
+                <element label="Arkansas" value="AR"/>
+                <element label="California" value="CA"/>
+                <element label="Colorado" value="CO"/>
+                <element label="Connecticut" value="CT"/>
+                <element label="Delaware" value="DE"/>
+                <element label="District of Columbia" value="DC"/>
+                <element label="Florida" value="FL"/>
+                <element label="Georgia" value="GA"/>
+                <element label="Hawaii" value="HI"/>
+                <element label="Idaho" value="ID"/>
+                <element label="Illinois" value="IL"/>
+                <element label="Indiana" value="IN"/>
+                <element label="Iowa" value="IA"/>
+                <element label="Kansas" value="KS"/>
+                <element label="Kentucky" value="KY"/>
+                <element label="Louisiana" value="LA"/>
+                <element label="Maine" value="ME"/>
+                <element label="Maryland" value="MD"/>
+                <element label="Massachusetts" value="MA"/>
+                <element label="Michigan" value="MI"/>
+                <element label="Minnesota" value="MN"/>
+                <element label="Mississippi" value="MS"/>
+                <element label="Missouri" value="MO"/>
+                <element label="Montana" value="MT"/>
+                <element label="Nebraska" value="NE"/>
+                <element label="Nevada" value="NV"/>
+                <element label="New Hampshire" value="NH"/>
+                <element label="New Jersey" value="NJ"/>
+                <element label="New Mexico" value="NM"/>
+                <element label="New York" value="NY"/>
+                <element label="North Carolina" value="NC"/>
+                <element label="North Dakota" value="ND"/>
+                <element label="Ohio" value="OH"/>
+                <element label="Oklahoma" value="OK"/>
+                <element label="Oregon" value="OR"/>
+                <element label="Pennsylvania" value="PA"/>
+                <element label="Puerto Rico" value="PR"/>
+                <element label="Rhode Island" value="RI"/>
+                <element label="South Carolina" value="SC"/>
+                <element label="South Dakota" value="SD"/>
+                <element label="Tennessee" value="TN"/>
+                <element label="Texas" value="TX"/>
+                <element label="Utah" value="UT"/>
+                <element label="Vermont" value="VT"/>
+                <element label="Virgin Islands" value="VI"/>
+                <element label="Virginia" value="VA"/>
+                <element label="Washington" value="WA"/>
+                <element label="West Virginia" value="WV"/>
+                <element label="Wisconsin" value="WI"/>
+                <element label="Wyoming" value="WY"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_director"/>
+        </index>
+        <index name="index2">
+            <element name="u_county"/>
+        </index>
+    </element>
+</database>

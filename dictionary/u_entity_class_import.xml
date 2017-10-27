@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-Entity Classes" max_length="40" name="u_entity_class_import" type="collection">
+        <element attributes="import_attribute_name=ASSIGNMENT_COUNT" label="ASSIGNMENT_COUNT" max_length="15" name="u_assignment_count" type="decimal"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=ENTITY_CLASS_CODE,edge_encryption_enabled=true" label="ENTITY_CLASS_CODE" max_length="40" name="u_entity_class_code" type="string"/>
+        <element attributes="import_attribute_name=ENTITY_CLASS_PK" label="ENTITY_CLASS_PK" max_length="15" name="u_entity_class_pk" type="decimal"/>
+        <element attributes="import_attribute_name=ENTITY_FK" label="ENTITY_FK" max_length="15" name="u_entity_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ENTITY_SUB_CLASS_CODE,edge_encryption_enabled=true" label="ENTITY_SUB_CLASS_CODE" max_length="40" name="u_entity_sub_class_code" type="string"/>
+        <element attributes="import_attribute_name=ENTITY_SUB_TYPE_CODE,edge_encryption_enabled=true" label="ENTITY_SUB_TYPE_CODE" max_length="40" name="u_entity_sub_type_code" type="string"/>
+        <element attributes="import_attribute_name=NETWORK_DISCOUNT" label="NETWORK_DISCOUNT" max_length="15" name="u_network_discount" type="decimal"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+    </element>
+</database>

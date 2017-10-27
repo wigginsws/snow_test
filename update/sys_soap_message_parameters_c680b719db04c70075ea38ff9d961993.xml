@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_parameters">
+    <sys_soap_message_parameters action="INSERT_OR_UPDATE">
+        <name>GetDocumentByRef.securityToken</name>
+        <soap_function display_value="IRWebService40Soap.GetDocumentByRef">111d69f3db7f3240d596327e9d96196c</soap_function>
+        <sys_class_name>sys_soap_message_parameters</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-18 16:57:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c680b719db04c70075ea38ff9d961993</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GetDocumentByRef.securityToken</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_parameters_c680b719db04c70075ea38ff9d961993</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-07-18 17:00:59</sys_updated_on>
+        <type>string</type>
+        <value>e4900913-3c24-45f8-ba43-eee5e84f36f9</value>
+    </sys_soap_message_parameters>
+</record_update>

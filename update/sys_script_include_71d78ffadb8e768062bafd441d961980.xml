@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam</api_name>
+        <client_callable>true</client_callable>
+        <description>Base client-callable script include to hold things like constants.</description>
+        <name>cam</name>
+        <script><![CDATA[var cam = Class.create();
+cam.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	type: 'cam'
+});
+
+cam.SCOPE_ID = "x_norca_med_cam";
+
+cam.parseUTCDateString = function(utcDateStr) {
+	var dateArr = utcDateStr.split("-");
+	var date;
+	if (dateArr && dateArr.length>2) {
+		date = new Date(Date.UTC(dateArr[0], dateArr[1], dateArr[2])); //TODO: Extend to time
+	}
+	return date;
+};
+
+cam.removeValueFromTokenizedString = function(sourceStr, delimiter, value) {
+	
+	var retVal;
+	var sourceArr = sourceStr.split(delimiter);
+	for (i=0; i<sourceArr.length; i++) {
+		if (sourceArr[i]!=value) {
+			if (!retVal) {
+				retVal = sourceArr[i];
+			} else {
+				retVal += "," + sourceArr[i];
+			}
+		}
+	}
+	
+	return retVal;
+};
+
+cam.jsDateStringToUSLocaleString = function(dateStr, defaultVal) {
+	if (dateStr) {
+		var date = new Date(dateStr);
+		var mm = date.getMonth() + 1;
+		var dd = date.getDate();
+		var yyyy = date.getFullYear();
+		return mm + '/' + dd + '/' + yyyy;
+	}
+	return defaultVal;
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>roshan@buildon.me</sys_created_by>
+        <sys_created_on>2017-04-14 19:46:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>71d78ffadb8e768062bafd441d961980</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cam</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_71d78ffadb8e768062bafd441d961980</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-03 19:59:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

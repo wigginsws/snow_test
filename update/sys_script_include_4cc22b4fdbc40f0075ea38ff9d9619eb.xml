@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_CoverageReviewAjax</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>cam_CoverageReviewAjax</name>
+        <script><![CDATA[var cam_CoverageReviewAjax = Class.create();
+cam_CoverageReviewAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    type: 'cam_CoverageReviewAjax',
+	
+	loadCoverageOptions: function() {
+		gs.debug("[ajaxLoadCoverageOptions] called");
+		
+		var claimId = this.getParameter('sysparm_claim_id');
+		var dataSyncUtil = new cam_DataSyncUtils();
+		var cvWsUtil = new cam_CoverageVerificationWSUtils();
+		var coverageOptions = cvWsUtil.loadCoveragesFromClaimRecordId(claimId);
+		
+		// TEST ONLY
+// 		var coverageOptions = [
+// 			{
+// 				"coverage_pk": "1",
+// 				"is_coverage_valid": "Valid",
+// 				"policy_fk": 1,
+// 				"risk_base_record_fk": 1,
+// 				"limit_descr": "100/300k",
+// 				"product_coverage_code": "PL"
+// 			}
+// 		];
+		
+		if (coverageOptions && coverageOptions.length>0) {
+			//gs.debug("[ajaxLoadCoverageOptions] coverageOptions -> " + JSON.stringify(coverageOptions));
+			
+// 			var gr = new GlideRecord("x_norca_med_cam_claim_coverage");
+// 			gr.addQuery("claim_ref", claimId);
+// 			gr.setWorkflow(false);
+// 			gr.query();
+// 			gs.debug("[ajaxLoadCoverageOptions] Found " + gr.getRowCount() + " records, now deleting.");
+// 			while (gr.next()) {
+// 				gr.deleteRecord();
+// 			}
+			
+			gs.debug("[ajaxLoadCoverageOptions] Deletion completed. Now inserting " + coverageOptions.length + "records into claim_coverage table");
+			
+			// pull all IDs in a list so those can be fetched at the same time
+			var coverageIdList = [], policyIdList = [], riskIdList = [];
+			for (var i=0; i<coverageOptions.length; i++) {
+				if (coverageOptions[i].coverage_pk) {
+					coverageIdList.push(coverageOptions[i].coverage_pk);
+				}
+				
+				if (coverageOptions[i].policy_fk) {
+					policyIdList.push(coverageOptions[i].policy_fk);
+				}
+				
+				if (coverageOptions[i].risk_base_record_fk) {
+					riskIdList.push(coverageOptions[i].risk_base_record_fk);
+				}
+			}
+				
+			var coverageGR = new GlideRecord("x_norca_med_cam_coverage");
+			coverageGR.addQuery("sor_id", "IN", coverageIdList.join());
+			coverageGR.query();
+			while (coverageGR.next()) {
+				for (i=0; i<coverageOptions.length; i++) {
+					if (coverageOptions[i].coverage_pk == coverageGR.sor_id) {
+						coverageOptions[i].coverage_ref = coverageGR.getUniqueValue();
+					}
+				}
+			}
+			
+			var policyGR = new GlideRecord("x_norca_med_cam_policy");
+			policyGR.addQuery("sor_id", "IN", policyIdList.join());
+			policyGR.query();
+			while (policyGR.next()) {
+				for (i=0; i<coverageOptions.length; i++) {
+					if (coverageOptions[i].policy_fk == policyGR.sor_id) {
+						coverageOptions[i].policy_ref = policyGR.getUniqueValue();
+					}
+				}
+			}
+				
+			var riskGR = new GlideRecord("x_norca_med_cam_risk");
+			riskGR.addQuery("risk_pk", "IN", riskIdList.join());
+			riskGR.query();
+			while (riskGR.next()) {
+				for (i=0; i<coverageOptions.length; i++) {
+					if (coverageOptions[i].risk_base_record_fk == riskGR.risk_pk) {
+						coverageOptions[i].risk_base_record_ref = riskGR.getUniqueValue();
+					}
+				}
+			}
+			
+			// now iterate and insert
+// 			for (i=0; i<coverageOptions.length; i++) {
+// 				var coverageOptionGR = new GlideRecord("x_norca_med_cam_claim_coverage");
+// 				coverageOptionGR.initialize();
+// 				coverageOptionGR.claim_ref = claimId;
+// 				coverageOptionGR.coverage_pk = coverageOptions[i].coverage_pk;
+// 				coverageOptionGR.coverage_ref = coverageOptions[i].coverage_ref;
+// 				coverageOptionGR.is_coverage_valid = coverageOptions[i].is_coverage_valid=="Valid";
+// 				coverageOptionGR.policy_fk = coverageOptions[i].policy_fk;
+// 				coverageOptionGR.policy_ref = coverageOptions[i].policy_ref;
+// 				coverageOptionGR.risk_base_record_fk = coverageOptions[i].risk_base_record_fk;
+// 				coverageOptionGR.risk_base_record_ref = coverageOptions[i].risk_base_record_ref;
+// 				coverageOptionGR.limit_description = coverageOptions[i].limit_descr;
+// 				coverageOptionGR.coverage_code = coverageOptions[i].product_coverage_code;
+// 				var newRecordId = coverageOptionGR.insert();
+// 				gs.debug("[ajaxLoadCoverageOptions] Inserted record " + newRecordId);
+// 			}
+		} else {
+			gs.info("[ajaxLoadCoverageOptions] No coverage options retrieved for claim " + claimId);
+		}
+		
+		return JSON.stringify(coverageOptions);
+	},
+	
+	setCoverageOnClaim: function() {
+		gs.info("[setCoverageOnClaim] called");
+		var claimId = this.getParameter('sysparm_claim_id');
+		var coveragePK = this.getParameter('sysparm_coverage_pk');
+		
+		if (claimId && coveragePK) {
+			var dataSyncUtil = new cam_DataSyncUtils();
+			var claimGR = dataSyncUtil.getRecordBySysId(cam.SCOPE_ID + "_claim", claimId);
+			if (claimGR) {
+				var coverageGR = dataSyncUtil.getRecordBySorId(cam.SCOPE_ID + "_coverage", coveragePK, "sor_id");
+				if (coverageGR) {
+					claimGR.applied_coverage = coverageGR.getUniqueValue();
+					claimGR.update();
+					gs.debug("[setCoverageOnClaim] Updated applied coverage on Claim " + claimGR.getDisplayValue() + " to " + coverageGR.getDisplayValue());
+					return "success";
+				}
+			}
+			
+		}
+		return "failure";
+	}
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-07-24 02:26:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4cc22b4fdbc40f0075ea38ff9d9619eb</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>cam_CoverageReviewAjax</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_4cc22b4fdbc40f0075ea38ff9d9619eb</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-08-03 19:49:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

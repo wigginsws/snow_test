@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Import-CM_Coverage" max_length="40" name="u_mini_coverage_import" type="collection">
+        <element attributes="import_attribute_name=AGG_ATTACHMENT" label="AGG_ATTACHMENT" max_length="15" name="u_agg_attachment" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_DEDUCT" label="AGG_DEDUCT" max_length="15" name="u_agg_deduct" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_LIMIT" label="AGG_LIMIT" max_length="15" name="u_agg_limit" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_LIMIT_EROSION_LEVEL,edge_encryption_enabled=true" label="AGG_LIMIT_EROSION_LEVEL" max_length="40" name="u_agg_limit_erosion_level" type="string"/>
+        <element attributes="import_attribute_name=AGG_SIR" label="AGG_SIR" max_length="15" name="u_agg_sir" type="decimal"/>
+        <element attributes="import_attribute_name=ATTACHMENT" label="ATTACHMENT" max_length="15" name="u_attachment" type="decimal"/>
+        <element attributes="import_attribute_name=CANCELED_DATE" label="CANCELED_DATE" max_length="40" name="u_canceled_date" type="datetime"/>
+        <element attributes="import_attribute_name=CANCEL_REASON_CODE,edge_encryption_enabled=true" label="CANCEL_REASON_CODE" max_length="40" name="u_cancel_reason_code" type="string"/>
+        <element attributes="import_attribute_name=CHAR1,edge_encryption_enabled=true" label="CHAR1" max_length="100" name="u_char1" type="string"/>
+        <element attributes="import_attribute_name=CHAR2,edge_encryption_enabled=true" label="CHAR2" max_length="100" name="u_char2" type="string"/>
+        <element attributes="import_attribute_name=CHAR3,edge_encryption_enabled=true" label="CHAR3" max_length="100" name="u_char3" type="string"/>
+        <element attributes="import_attribute_name=CM_COVERAGE_PK" label="CM_COVERAGE_PK" max_length="15" name="u_cm_coverage_pk" type="decimal"/>
+        <element attributes="import_attribute_name=CM_COVERAGE_TYPE_CODE,edge_encryption_enabled=true" label="CM_COVERAGE_TYPE_CODE" max_length="40" name="u_cm_coverage_type_code" type="string"/>
+        <element attributes="import_attribute_name=CM_LOB_CODE,edge_encryption_enabled=true" label="CM_LOB_CODE" max_length="40" name="u_cm_lob_code" type="string"/>
+        <element attributes="import_attribute_name=CM_RISK_FK" label="CM_RISK_FK" max_length="15" name="u_cm_risk_fk" type="decimal"/>
+        <element attributes="import_attribute_name=CONSENT_TO_SETTLE,edge_encryption_enabled=true" label="CONSENT_TO_SETTLE" max_length="40" name="u_consent_to_settle" type="string"/>
+        <element attributes="import_attribute_name=COVERAGE_DESCRIPTION,edge_encryption_enabled=true" label="COVERAGE_DESCRIPTION" max_length="100" name="u_coverage_description" type="string"/>
+        <element attributes="import_attribute_name=DEDUCTIBLE,edge_encryption_enabled=true" label="DEDUCTIBLE" max_length="40" name="u_deductible" type="string"/>
+        <element attributes="import_attribute_name=DEDUCTIBLE_COST_TYPE_LIST,edge_encryption_enabled=true" label="DEDUCTIBLE_COST_TYPE_LIST" max_length="400" name="u_deductible_cost_type_list" type="string"/>
+        <element attributes="import_attribute_name=DEDUCTIBLE_TYPE,edge_encryption_enabled=true" label="DEDUCTIBLE_TYPE" max_length="40" name="u_deductible_type" type="string"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=EXPOSURE_UNITS" label="EXPOSURE_UNITS" max_length="15" name="u_exposure_units" type="decimal"/>
+        <element attributes="import_attribute_name=INC_DEDUCT" label="INC_DEDUCT" max_length="15" name="u_inc_deduct" type="decimal"/>
+        <element attributes="import_attribute_name=INC_LIMIT" label="INC_LIMIT" max_length="15" name="u_inc_limit" type="decimal"/>
+        <element attributes="import_attribute_name=INC_LIMIT_EROSION_LEVEL,edge_encryption_enabled=true" label="INC_LIMIT_EROSION_LEVEL" max_length="40" name="u_inc_limit_erosion_level" type="string"/>
+        <element attributes="import_attribute_name=INC_SIR" label="INC_SIR" max_length="15" name="u_inc_sir" type="decimal"/>
+        <element attributes="import_attribute_name=ISO_CODE,edge_encryption_enabled=true" label="ISO_CODE" max_length="40" name="u_iso_code" type="string"/>
+        <element attributes="import_attribute_name=LEGACY_DATA_ID,edge_encryption_enabled=true" label="LEGACY_DATA_ID" max_length="100" name="u_legacy_data_id" type="string"/>
+        <element attributes="import_attribute_name=LIMIT_COST_TYPE_LIST,edge_encryption_enabled=true" label="LIMIT_COST_TYPE_LIST" max_length="400" name="u_limit_cost_type_list" type="string"/>
+        <element attributes="import_attribute_name=NEW_DOCTOR_DISCOUNT" label="NEW_DOCTOR_DISCOUNT" max_length="40" name="u_new_doctor_discount" type="datetime"/>
+        <element attributes="import_attribute_name=NOSE_B,edge_encryption_enabled=true" label="NOSE_B" max_length="40" name="u_nose_b" type="string"/>
+        <element attributes="import_attribute_name=PCT_COINSURANCE" label="PCT_COINSURANCE" max_length="15" name="u_pct_coinsurance" type="decimal"/>
+        <element attributes="import_attribute_name=PCT_INFLATION" label="PCT_INFLATION" max_length="15" name="u_pct_inflation" type="decimal"/>
+        <element attributes="import_attribute_name=PCT_PARTICIPATION" label="PCT_PARTICIPATION" max_length="15" name="u_pct_participation" type="decimal"/>
+        <element attributes="import_attribute_name=POLICY_FORM,edge_encryption_enabled=true" label="POLICY_FORM" max_length="40" name="u_policy_form" type="string"/>
+        <element attributes="import_attribute_name=PRACTICE_STATE_CODE,edge_encryption_enabled=true" label="PRACTICE_STATE_CODE" max_length="40" name="u_practice_state_code" type="string"/>
+        <element attributes="import_attribute_name=PRACTICE_TYPE,edge_encryption_enabled=true" label="PRACTICE_TYPE" max_length="40" name="u_practice_type" type="string"/>
+        <element attributes="import_attribute_name=PREMIUM" label="PREMIUM" max_length="15" name="u_premium" type="decimal"/>
+        <element attributes="import_attribute_name=RETRO_DATE" label="RETRO_DATE" max_length="40" name="u_retro_date" type="datetime"/>
+        <element attributes="import_attribute_name=SEPARATE_LIMIT_B,edge_encryption_enabled=true" label="SEPARATE_LIMIT_B" max_length="40" name="u_separate_limit_b" type="string"/>
+        <element attributes="import_attribute_name=SOCIETY_COUNTY,edge_encryption_enabled=true" label="SOCIETY_COUNTY" max_length="40" name="u_society_county" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=TAIL_B,edge_encryption_enabled=true" label="TAIL_B" max_length="40" name="u_tail_b" type="string"/>
+        <element attributes="import_attribute_name=TERRITORY,edge_encryption_enabled=true" label="TERRITORY" max_length="40" name="u_territory" type="string"/>
+        <element attributes="import_attribute_name=TERRITORY_CODE,edge_encryption_enabled=true" label="TERRITORY_CODE" max_length="40" name="u_territory_code" type="string"/>
+        <element attributes="import_attribute_name=UPLA,edge_encryption_enabled=true" label="UPLA" max_length="60" name="u_upla" type="string"/>
+    </element>
+</database>

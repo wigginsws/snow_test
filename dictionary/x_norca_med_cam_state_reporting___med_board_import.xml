@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-State Reporting-Med Board import" max_length="40" name="x_norca_med_cam_state_reporting___med_board_import" type="collection">
+        <element attributes="import_attribute_name=Additional Info,edge_encryption_enabled=true" label="Additional Info" max_length="40" name="u_additional_info" type="string"/>
+        <element attributes="import_attribute_name=Address,edge_encryption_enabled=true" label="Address" max_length="187" name="u_address" type="string"/>
+        <element attributes="import_attribute_name=CLAIM STATE,edge_encryption_enabled=true" label="CLAIM STATE" max_length="40" name="u_claim_state" type="string"/>
+        <element attributes="import_attribute_name=Form,edge_encryption_enabled=true" label="Form" max_length="40" name="u_form" type="string"/>
+        <element attributes="import_attribute_name=Format,edge_encryption_enabled=true" label="Format" max_length="40" name="u_format" type="string"/>
+        <element attributes="import_attribute_name=Form Location,edge_encryption_enabled=true" label="Form Location" max_length="77" name="u_form_location" type="string"/>
+        <element attributes="import_attribute_name=Incident in other state*,edge_encryption_enabled=true" label="Incident in other state*" max_length="40" name="u_incident_in_other_state_" type="string"/>
+        <element attributes="import_attribute_name=Key Contact,edge_encryption_enabled=true" label="Key Contact" max_length="40" name="u_key_contact" type="string"/>
+        <element attributes="import_attribute_name=Medical Board &#10;Website,edge_encryption_enabled=true" label="Medical Board &#10;Website" max_length="102" name="u_medical_board__website" type="string"/>
+        <element attributes="import_attribute_name=Notes,edge_encryption_enabled=true" label="Notes" max_length="374" name="u_notes" type="string"/>
+        <element attributes="import_attribute_name=Reporting Amount,edge_encryption_enabled=true" label="Reporting Amount" max_length="53" name="u_reporting_amount" type="string"/>
+        <element attributes="import_attribute_name=Requirements,edge_encryption_enabled=true" label="Requirements" max_length="73" name="u_requirements" type="string"/>
+        <element attributes="import_attribute_name=Submit online,edge_encryption_enabled=true" label="Submit online" max_length="40" name="u_submit_online" type="string"/>
+    </element>
+</database>

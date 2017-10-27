@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Patient/Claimant Information" section_id="e344073edbbfb24075ea38ff9d961923" sys_domain="global" table="x_norca_med_cam_web_reported_claim" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_pc_fn</element>
+            <position>0</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
+            <sys_id>8c54073edbbfb24075ea38ff9d96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_pc_ln</element>
+            <position>1</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
+            <sys_id>c454073edbbfb24075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
+            <sys_id>4854073edbbfb24075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_pc_dob</element>
+            <position>3</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
+            <sys_id>c854073edbbfb24075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_pc_treatment_date</element>
+            <position>4</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
+            <sys_id>4c54073edbbfb24075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Patient/Claimant Information</caption>
+            <header>false</header>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-07-10 19:19:07</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e344073edbbfb24075ea38ff9d961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Patient/Claimant Information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_e344073edbbfb24075ea38ff9d961923</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-07-10 19:19:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

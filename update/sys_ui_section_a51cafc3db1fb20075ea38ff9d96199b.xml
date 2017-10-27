@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Person Detail" section_id="a51cafc3db1fb20075ea38ff9d96199b" sys_domain="global" table="x_norca_med_cam_entity" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name_prefix</element>
+            <position>0</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>ed241357db804f0075ea38ff9d96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>1</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>a5241357db804f0075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>middle_name</element>
+            <position>2</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>29241357db804f0075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>3</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>a9241357db804f0075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name_suffix</element>
+            <position>4</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>2d241357db804f0075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_birth</element>
+            <position>5</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>ad241357db804f0075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_number</element>
+            <position>6</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>21241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>a1241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>8</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>25241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deceased</element>
+            <position>9</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>a5241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_death</element>
+            <position>10</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>29241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>minor</element>
+            <position>11</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>a9241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_maturity</element>
+            <position>12</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>2d241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vip</element>
+            <position>13</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>ad241357db804f0075ea38ff9d96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>14</position>
+            <sys_created_by>amoewe</sys_created_by>
+            <sys_created_on>2017-07-24 20:00:59</sys_created_on>
+            <sys_id>21241357db804f0075ea38ff9d961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Person Detail" display_value="Person Detail" name="x_norca_med_cam_entity" sys_domain="global" view="Default view">a51cafc3db1fb20075ea38ff9d96199b</sys_ui_section>
+            <sys_updated_by>amoewe</sys_updated_by>
+            <sys_updated_on>2017-07-24 20:00:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Person Detail</caption>
+            <header>false</header>
+            <name>x_norca_med_cam_entity</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-06-16 20:20:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a51cafc3db1fb20075ea38ff9d96199b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Person Detail</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_a51cafc3db1fb20075ea38ff9d96199b</sys_update_name>
+            <sys_updated_by>wwiggins</sys_updated_by>
+            <sys_updated_on>2017-08-07 19:57:40</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

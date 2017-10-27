@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Case" max_length="40" name="x_norca_med_cam_case" type="collection">
+        <element label="Category" max_length="40" name="category" type="string"/>
+        <element label="Display Name" max_length="40" name="display_name" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Insured" max_length="40" name="insured" reference="x_norca_med_cam_entity" type="reference"/>
+        <element choice="3" choice_field="status" choice_table="x_norca_med_cam_ir_doc_load_tracker" default="not_requested" label="IR Load Status" max_length="40" name="ir_doc_load_status" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <element label="IR Load Tracker" max_length="32" name="ir_doc_load_tracker" read_only="true" reference="x_norca_med_cam_ir_doc_load_tracker" reference_cascade_rule="clear" type="reference"/>
+        <element label="Location Code" max_length="40" name="location_code" type="string"/>
+        <element label="Loss Date" max_length="40" name="loss_date" type="glide_date"/>
+        <element label="Master Claim Name" max_length="40" name="name" type="string"/>
+        <element label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Policy" max_length="40" name="policy" reference="x_norca_med_cam_policy" type="reference"/>
+        <element label="OASIS - Created By" max_length="40" name="sor_created_by" read_only="true" type="string"/>
+        <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
+        <element attributes="format=none" label="OASIS ID" max_length="20" name="sor_id" read_only="true" type="decimal"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_by" read_only="true" type="string"/>
+        <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
+        <element label="Date of Loss" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Master Claim Status" max_length="40" name="status_code" type="string"/>
+        <element label="Master Claim Type" max_length="40" name="type_code" type="string"/>
+        <index name="index">
+            <element name="ir_doc_load_tracker"/>
+        </index>
+        <index name="index2">
+            <element name="insured"/>
+        </index>
+        <index name="index3">
+            <element name="sor_id"/>
+        </index>
+        <index name="index4">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

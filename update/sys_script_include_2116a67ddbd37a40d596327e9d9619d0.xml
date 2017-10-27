@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_ReportUtils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>cam_ReportUtils</name>
+        <script><![CDATA[var cam_ReportUtils = Class.create();
+cam_ReportUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	myReports: function() {
+		gs.info("[myReports] Called, signed in user " + gs.getUserDisplayName());
+		var ids = [gs.getUserID()];
+		var gr = new GlideRecord("sys_user");
+		gr.addQuery("manager", gs.getUserID());
+		gr.query();
+		while (gr.next()) {
+			ids.push(gr.getUniqueValue());
+		}
+		
+		gs.info("[myReports] Returning User IDs " + ids.join());
+		return ids;
+	},
+	
+	myReportsEntities: function() {
+		gs.info("[myReportsEntities] Called, signed in user " + gs.getUserDisplayName());
+		var userIds = this.myReports();
+		var gr = new GlideRecord("x_norca_med_cam_entity");
+		gr.addQuery("user", "IN", userIds.join());
+		gr.query();
+		var ids = [];
+		while (gr.next()) {
+			ids.push(gr.getUniqueValue());
+		}
+		
+		gs.info("[myReportsEntities] Returning Entity IDs " + ids.join());
+		return ids;
+	},
+	
+    type: 'cam_ReportUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-06-12 18:02:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2116a67ddbd37a40d596327e9d9619d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>cam_ReportUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_2116a67ddbd37a40d596327e9d9619d0</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-06-24 01:26:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

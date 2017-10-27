@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS-Case-Xref" max_length="40" name="u_oasis_import_case_xref" type="collection">
+        <element attributes="import_attribute_name=CHAR1,edge_encryption_enabled=true" label="CHAR1" max_length="100" name="u_char1" type="string"/>
+        <element attributes="import_attribute_name=CHAR2,edge_encryption_enabled=true" label="CHAR2" max_length="100" name="u_char2" type="string"/>
+        <element attributes="import_attribute_name=CHAR3,edge_encryption_enabled=true" label="CHAR3" max_length="100" name="u_char3" type="string"/>
+        <element attributes="import_attribute_name=CHAR4,edge_encryption_enabled=true" label="CHAR4" max_length="100" name="u_char4" type="string"/>
+        <element attributes="import_attribute_name=CHAR5,edge_encryption_enabled=true" label="CHAR5" max_length="100" name="u_char5" type="string"/>
+        <element attributes="import_attribute_name=CLAIM_FK" label="CLAIM_FK" max_length="15" name="u_claim_fk" type="decimal"/>
+        <element attributes="import_attribute_name=CLAIM_OCCURRENCE_XREF_PK" label="CLAIM_OCCURRENCE_XREF_PK" max_length="15" name="u_claim_occurrence_xref_pk" type="decimal"/>
+        <element attributes="import_attribute_name=DATE1" label="DATE1" max_length="40" name="u_date1" type="datetime"/>
+        <element attributes="import_attribute_name=DATE2" label="DATE2" max_length="40" name="u_date2" type="datetime"/>
+        <element attributes="import_attribute_name=DATE3" label="DATE3" max_length="40" name="u_date3" type="datetime"/>
+        <element attributes="import_attribute_name=DATE4" label="DATE4" max_length="40" name="u_date4" type="datetime"/>
+        <element attributes="import_attribute_name=DATE5" label="DATE5" max_length="40" name="u_date5" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=EXPENSE_PCT" label="EXPENSE_PCT" max_length="15" name="u_expense_pct" type="decimal"/>
+        <element attributes="import_attribute_name=INDEMNITY_PCT" label="INDEMNITY_PCT" max_length="15" name="u_indemnity_pct" type="decimal"/>
+        <element attributes="import_attribute_name=OCCURRENCE_FK" label="OCCURRENCE_FK" max_length="15" name="u_occurrence_fk" type="decimal"/>
+        <element attributes="import_attribute_name=PRIMARY_CLAIM_B,edge_encryption_enabled=true" label="PRIMARY_CLAIM_B" max_length="40" name="u_primary_claim_b" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+    </element>
+</database>
