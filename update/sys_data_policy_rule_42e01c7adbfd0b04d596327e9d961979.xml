@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>assignment_group</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-10-17 16:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_data_policy display_value="Restrict reassignment without a Claim Director">cba0587adbfd0b04d596327e9d9619bd</sys_data_policy>
+        <sys_id>42e01c7adbfd0b04d596327e9d961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assignment_group</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_data_policy_rule_42e01c7adbfd0b04d596327e9d961979</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-17 16:21:15</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+    </sys_data_policy_rule>
+</record_update>

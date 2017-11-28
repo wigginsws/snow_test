@@ -5,13 +5,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>0fdbd4e0db488340d596327e9d96198e</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>84217b98dbd1034075ea38ff9d961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>u_invoice_amt</element>
             <position>1</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>83dbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>08217b98dbd1034075ea38ff9d961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>u_status</element>
             <position>2</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>07dbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>88217b98dbd1034075ea38ff9d961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>u_trans_amt</element>
             <position>3</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>87dbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>0c217b98dbd1034075ea38ff9d961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>u_trans_date</element>
             <position>4</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>0bdbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>8c217b98dbd1034075ea38ff9d961941</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>u_trans_type</element>
             <position>5</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>8bdbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>00217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>.split</element>
             <position>6</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>0fdbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>80217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>u_accounting_date</element>
             <position>7</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>8fdbd4e0db488340d596327e9d96198f</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>04217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>u_claim_no</element>
             <position>8</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>03dbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>84217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>u_invoice_no</element>
             <position>9</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>83dbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>08217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>u_irs</element>
             <position>10</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>07dbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>88217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>.end_split</element>
             <position>11</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>87dbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>0c217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>u_payee</element>
             <position>12</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>0bdbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>8c217b98dbd1034075ea38ff9d961942</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,27 @@
             <element>u_payment_type</element>
             <position>13</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_id>8bdbd4e0db488340d596327e9d961990</sys_id>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>00217b98dbd1034075ea38ff9d961943</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-15 17:32:32</sys_updated_on>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_cm_transaction_pk</element>
+            <position>14</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-15 17:44:18</sys_created_on>
+            <sys_id>80217b98dbd1034075ea38ff9d961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_case_expenditurejoin" sys_domain="global" view="Default view">cfdbd4e0db488340d596327e9d96198a</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-15 17:44:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -205,7 +219,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-15 17:32:32</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>cfdbd4e0db488340d596327e9d96198a</sys_id>

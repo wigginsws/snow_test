@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="x_norca_med_cam_state_reporting" element="NULL" name="x_norca_med_cam_state_reporting" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">cc69ff63db0c8f0075ea38ff9d96191b</list_id>
+            <list_id display_value="x_norca_med_cam_state_reporting" element="NULL" name="x_norca_med_cam_state_reporting" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">cc69ff63db0c8f0075ea38ff9d96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>type</element>
-            <list_id display_value="x_norca_med_cam_state_reporting" element="NULL" name="x_norca_med_cam_state_reporting" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">cc69ff63db0c8f0075ea38ff9d96191b</list_id>
+            <list_id display_value="x_norca_med_cam_state_reporting" element="NULL" name="x_norca_med_cam_state_reporting" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">cc69ff63db0c8f0075ea38ff9d96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -44,7 +44,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jsavage</sys_created_by>
             <sys_created_on>2017-07-25 17:22:07</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>cc69ff63db0c8f0075ea38ff9d96191b</sys_id>
@@ -58,7 +58,7 @@
             <sys_updated_by>jsavage</sys_updated_by>
             <sys_updated_on>2017-07-25 17:22:07</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">9f0535721823320092c03796c3240332</view>
+            <view display_value="Reference List" name="sys_ref_list">715a07629430030092c01899af6cf32b</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

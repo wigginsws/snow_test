@@ -16,7 +16,7 @@
         <sys_class_name>sys_filter_option_dynamic</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-20 01:20:48</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>196daeb5db840b0075ea38ff9d9619dd</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Counties In Claim State</sys_name>

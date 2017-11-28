@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="largeTable=true" label="Attachment" max_length="40" name="sys_attachment" type="collection">
+        <element label="Sent" max_length="40" name="u_sent" type="boolean"/>
+    </element>
+</database>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_claim</collection>
+        <condition/>
+        <description>Checks if any of the fields that are  written back to OASIS were changed.</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-CLAIM-Check if OASIS fields changed</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//gs.debug("[chkLastUpdateSync] claim_id: " + current.getValue("claim_id") + ", last_committed_update: " + current.getValue("last_committed_update") + ", claim_log_id: " + current.getValue("claim_log_id") + ", cel_last_committed_update: " + current.getValue("cel_last_committed_update") + ", sys_mod_count: " + current.getValue("sys_mod_count"));
+	
+	gs.info("[fastFireCheck] current.commit_status " + current.commit_status);
+	if (current.sys_updated_by=="oasissn" || (current.commit_status=="pending" && !current.claim_log_id)) {
+		current.setValue("last_update_includes_sor_fields", "false");
+		return;
+	}
+	
+	if (current.getElement("claim_type").changes()) {
+		current.setValue("claim_type_date", new GlideDate().getValue());
+	}
+	
+	if (current.getValue("claim_id") && current.getValue("last_committed_update")!=current.getValue("sys_mod_count")) {
+		// if record is linked to an OASIS Claim and update count is off
+		current.setValue("last_update_includes_sor_fields", "true");
+		
+	} else if (current.getValue("claim_log_id") &&  current.getValue("cel_last_committed_update")!=current.getValue("sys_mod_count")) {
+		// if record is linked to an OASIS Claim Log Entry and update count is off
+		current.setValue("last_update_includes_sor_fields", "true");
+		
+	} else if (!current.u_insured || !current.claimant || !current.u_loss_date || !current.report_date) {
+		current.setValue("last_update_includes_sor_fields", "false");
+		return;
+		
+	} else {
+		// go through all fields and detect changes
+		current.setValue("last_update_includes_sor_fields", "false");
+
+		var fieldList = [
+			"assigned_to",
+			"claim_category",
+			"claim_county_code",
+			"claim_state_code",
+			"claim_type",
+			"claim_type_date",
+			"claimant",
+			"disposition",
+			"disposition_close_date",
+			"oasis_claim_status",
+			"report_date",
+			"short_description",
+			"state", // Status
+			"claim_status_date",
+			"u_branch_office",
+			"u_case",
+			"u_incident_start_date",
+			"u_incident_end_date",
+			"u_insured",
+			"u_jurisdiction_code",
+			"u_loss_date",
+			"u_loss_subtype",
+			"u_loss_type",
+			"u_string_1" // Location Detail
+
+		];
+
+		for (var i=0; i< fieldList.length; i++) {
+			if (current.isValidField(fieldList[i])) {
+				var field = current.getElement(fieldList[i]);
+				if (field.changes()) {
+					current.setValue("last_update_includes_sor_fields", "true");
+					break;
+				}
+			}
+		}
+	}
+	
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-13 16:59:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f64bcd3bdb858740d596327e9d961941</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>CAM-CLAIM-Check if OASIS fields changed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_f64bcd3bdb858740d596327e9d961941</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:35</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f64bcd3bdb858740d596327e9d961941"/>
+</record_update>

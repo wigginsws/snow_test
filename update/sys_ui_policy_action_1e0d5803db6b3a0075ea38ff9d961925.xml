@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-06-28 15:31:22</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1e0d5803db6b3a0075ea38ff9d961925</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ssn_verified</sys_name>

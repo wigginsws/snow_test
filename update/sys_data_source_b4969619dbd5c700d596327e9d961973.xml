@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:oracle:thin:@oasisdbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name/>
+        <database_port/>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>oracle.jdbc.OracleDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>zDs-OASIS-Claim Insured Xref</import_set_table_label>
+        <import_set_table_name>u_oasis_claim_insured_xref</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>5jY8dfwQBXN7MaSa+EyjGA==</jdbc_password>
+        <jdbc_server>oasisdbdev.norcalmutual.com</jdbc_server>
+        <jdbc_user_name>oasissn</jdbc_user_name>
+        <last_run_database_field>X.SYS_UPDATE_TIME</last_run_database_field>
+        <last_run_datetime>to_date('2017-11-02 15:31:05','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
+        <name>Claims-OASIS-Claim Insured Xref</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>dev</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>select C.CLAIM_NO, X.COVERAGE_INSURED_XREF_PK,X.POLICY_FK, X.POLICY_TERM_FK, X.RISK_FK &#13;
+,X.SOURCE_TABLE_NAME, X.POLICY_NO, X.COVERAGE_FK, X.CLAIM_FK, X.SYS_UPDATE_TIME&#13;
+from claim c&#13;
+inner join entity_role er on c.claim_pk = er.source_record_fk&#13;
+inner join claim_insured ci on ci.entity_role_fk = er.entity_role_pk&#13;
+inner join coverage_insured_xref x on x.claim_insured_fk = ci.claim_insured_pk&#13;
+where c.claim_current_status = 'OPEN' </sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-18 14:08:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b4969619dbd5c700d596327e9d961973</sys_id>
+        <sys_mod_count>2861</sys_mod_count>
+        <sys_name>Claims-OASIS-Claim Insured Xref</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_data_source_b4969619dbd5c700d596327e9d961973</sys_update_name>
+        <sys_updated_by>oasissn</sys_updated_by>
+        <sys_updated_on>2017-11-03 01:06:55</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>true</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

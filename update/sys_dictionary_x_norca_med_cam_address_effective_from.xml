@@ -18,7 +18,7 @@
         <column_label>Effective From</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:new GlideDate()</default_value>
+        <default_value>javascript:new GlideDateTime().getLocalDate()</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -52,17 +52,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>roshan@buildon.me</sys_created_by>
         <sys_created_on>2017-04-13 20:25:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>dd97066edbc67600394af9361d96190f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>80ced29adb660300e022771c8c961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Effective From</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_address_effective_from</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-17 18:02:38</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:25:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

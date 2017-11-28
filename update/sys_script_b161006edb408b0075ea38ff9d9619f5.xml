@@ -65,11 +65,11 @@ function getSanitizedFileName(docName) {
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-21 20:51:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b161006edb408b0075ea38ff9d9619f5</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>CAM-DOC-Load Attachment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -77,8 +77,8 @@ function getSanitizedFileName(docName) {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_b161006edb408b0075ea38ff9d9619f5</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-27 03:32:50</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-18 20:47:00</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

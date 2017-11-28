@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_filter">
+    <sys_filter action="INSERT_OR_UPDATE">
+        <filter table="sys_user">nameSTARTSWITHmol^nameISNOTEMPTY^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="mol"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <group/>
+        <last_used>2017-11-02 20:04:45</last_used>
+        <mobile>true</mobile>
+        <roles/>
+        <sys_class_name>sys_filter</sys_class_name>
+        <sys_created_by>dself</sys_created_by>
+        <sys_created_on>2017-11-02 20:04:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d9d1b77134e0300ea8d33228144b0e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mobile</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_filter_9d9d1b77134e0300ea8d33228144b0e5</sys_update_name>
+        <sys_updated_by>dself</sys_updated_by>
+        <sys_updated_on>2017-11-02 20:04:45</sys_updated_on>
+        <table>sys_user</table>
+        <title>mobile</title>
+        <user display_value="">8d47978cdb398f4075ea38ff9d9619cf</user>
+    </sys_filter>
+</record_update>

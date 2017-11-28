@@ -79,7 +79,7 @@ cam_EntityWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebServiceUt
 				'PersonName.Surname': this.createParamValueObject(currentGR.last_name?currentGR.last_name:"", false),
 				'PersonName.NameSuffix': this.createParamValueObject(currentGR.name_suffix?currentGR.name_suffix:"", false),
 
-				'Person.BirthDate': this.createParamValueObject(currentGR.birth_date?currentGR.birth_date:"", false),
+				'Person.BirthDate': this.createParamValueObject(currentGR.date_of_birth?currentGR.date_of_birth:"", false),
 				'Person.GenderCode': this.createParamValueObject(currentGR.gender?currentGR.gender:"", false),				
 				'Person.SocialSecurityNumberId': this.createParamValueObject(currentGR.ssn?currentGR.ssn:"", false),
 				
@@ -121,16 +121,16 @@ cam_EntityWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebServiceUt
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-06-28 02:26:57</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a0c715badb633a0075ea38ff9d961948</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>cam_EntityWebServiceUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_a0c715badb633a0075ea38ff9d961948</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-18 13:39:14</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:24</sys_updated_on>
     </sys_script_include>
 </record_update>

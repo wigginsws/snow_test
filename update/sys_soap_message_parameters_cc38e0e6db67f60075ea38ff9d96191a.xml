@@ -6,7 +6,7 @@
         <sys_class_name>sys_soap_message_parameters</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-06-27 03:02:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cc38e0e6db67f60075ea38ff9d96191a</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>PartyChangeRequest.Person</sys_name>

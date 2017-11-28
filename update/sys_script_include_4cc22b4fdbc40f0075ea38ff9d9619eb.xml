@@ -119,35 +119,68 @@ cam_CoverageReviewAjax.prototype = Object.extendsObject(global.AbstractAjaxProce
 	},
 	
 	setCoverageOnClaim: function() {
-		gs.info("[setCoverageOnClaim] called");
 		var claimId = this.getParameter('sysparm_claim_id');
 		var coveragePK = this.getParameter('sysparm_coverage_pk');
+		var riskFK = this.getParameter('sysparm_risk_fk');
+		var policyTermFK = this.getParameter('sysparm_policy_term_fk');
+		var policyFK = this.getParameter('sysparm_policy_fk');
+		//var productCoverage = this.getParameter('sysparm_product_coverage');
+		gs.debug("[setCoverageOnClaim] Function called. claimId: " + claimId + ", coveragePK: " + coveragePK + ", riskFK: " + riskFK + ", policyTermFK: " + policyTermFK + ", policyFK: " + policyFK);
 		
 		if (claimId && coveragePK) {
 			var dataSyncUtil = new cam_DataSyncUtils();
 			var claimGR = dataSyncUtil.getRecordBySysId(cam.SCOPE_ID + "_claim", claimId);
 			if (claimGR) {
 				var coverageGR = dataSyncUtil.getRecordBySorId(cam.SCOPE_ID + "_coverage", coveragePK, "sor_id");
-				if (coverageGR) {
-					claimGR.applied_coverage = coverageGR.getUniqueValue();
-					claimGR.update();
-					gs.debug("[setCoverageOnClaim] Updated applied coverage on Claim " + claimGR.getDisplayValue() + " to " + coverageGR.getDisplayValue());
-					return "success";
+				gs.debug("[setCoverageOnClaim] Coverage - old: " + claimGR.getValue("applied_coverage") + ", new: " + (coverageGR?coverageGR.getUniqueValue():"null"));
+				if (coverageGR) claimGR.setValue("applied_coverage", coverageGR.getUniqueValue());
+				
+				var riskGR = dataSyncUtil.getRecordBySorId(cam.SCOPE_ID + "_risk", riskFK, "risk_pk");
+				gs.debug("[setCoverageOnClaim] Risk - old: " + claimGR.getValue("risk_ref") + ", new: " + (riskGR?riskGR.getUniqueValue():"null"));
+				if (riskGR) claimGR.setValue("risk_ref", riskGR.getUniqueValue());
+				
+				var policyTermGR = dataSyncUtil.getRecordBySorId(cam.SCOPE_ID + "_policy_term", policyTermFK, "sor_id");
+				gs.debug("[setCoverageOnClaim] Term - old: " + claimGR.getValue("policy_term_ref") + ", new: " + (policyTermGR?policyTermGR.getUniqueValue():"null"));
+				if (policyTermGR) claimGR.setValue("policy_term_ref", policyTermGR.getUniqueValue());
+				
+				var policyGR = dataSyncUtil.getRecordBySorId(cam.SCOPE_ID + "_policy", policyFK, "sor_id");
+				gs.debug("[setCoverageOnClaim] Policy - old: " + claimGR.getValue("policy") + ", new: " + (policyGR?policyGR.getUniqueValue():"null"));
+				if (policyGR) claimGR.setValue("policy", policyGR.getUniqueValue());
+				var coverageCode = dataSyncUtil.getFieldForRecordBySysId(cam.SCOPE_ID + "_product_coverage", coverageGR.product_coverage, "coverage_code");
+				
+				if(coverageCode){
+					if(coverageCode == 'PL')
+						claimGR.setValue('coverage_type', 'pl');
+					else if(coverageCode == 'AD')
+						claimGR.setValue('coverage_type', 'admin_defense');
+					else if(coverageCode == 'CYBERCOV')
+						claimGR.setValue('coverage_type', 'infonet_secure');
+					else 
+						claimGR.setValue('coverage_type', 'other');
 				}
+				
+				claimGR.setWorkflow(false); //?
+				claimGR.autoSysFields(false); //?
+				claimGR.update();
+				gs.debug("[setCoverageOnClaim] Updated applied coverage on Claim " + claimGR.getDisplayValue() + " to " + claimGR.getDisplayValue("applied_coverage"));
+				return "success";
 			}
 			
+		} else {
+			gs.warn("[setCoverageOnClaim] Called, but no Claim ID or Coverage PK!");
 		}
 		return "failure";
 	}
+	
 	
 });
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-24 02:26:41</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4cc22b4fdbc40f0075ea38ff9d9619eb</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>cam_CoverageReviewAjax</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
@@ -155,6 +188,6 @@ cam_CoverageReviewAjax.prototype = Object.extendsObject(global.AbstractAjaxProce
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_4cc22b4fdbc40f0075ea38ff9d9619eb</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-03 19:49:39</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:42:26</sys_updated_on>
     </sys_script_include>
 </record_update>

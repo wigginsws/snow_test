@@ -56,40 +56,15 @@
 	}
 	
 })(current, previous);
-
-
-(function executeRule(current, previous /*null when async*/) {
-	
-	var camDataSyncUtils = new cam_DataSyncUtils();
-	
-	//gs.debug("[addLicenseToEntity] Called. Date Licensed " + current.date_licensed + ", Expiration " + current.expiration);
-	
-	var entityGR = camDataSyncUtils.getEntityBySysId(current.getValue("entity"));
-	if (entityGR) {
-		var license_numbers = entityGR.getValue("license_numbers");
-		
-		//gs.debug("[addLicenseToEntity] current license_numbers " + license_numbers);
-		if (!license_numbers) {
-			license_numbers = "" + current.license_number;
-		} else if (license_numbers.indexOf(current.license_number)<0) {
-			license_numbers += "," + current.license_number;
-		}
-		entityGR.setValue("license_numbers", license_numbers);
-		entityGR.update();
-		//gs.debug("[addLicenseToEntity] Entity updated with new license_numbers " + license_numbers);
-	} else {
-		gs.warn("[addLicenseToEntity] Could not find entity record for " + current);
-	}
-	
-})(current, previous);]]></script>
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-08 20:47:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9955c99edbbf3e00d596327e9d9619e1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>CAM-RISK-Delete Policy Num from Entity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -97,8 +72,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_9955c99edbbf3e00d596327e9d9619e1</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-08 21:14:11</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:35</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

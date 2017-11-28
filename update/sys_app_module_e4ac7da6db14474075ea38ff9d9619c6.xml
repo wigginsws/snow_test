@@ -25,7 +25,7 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 15:58:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e4ac7da6db14474075ea38ff9d9619c6</sys_id>

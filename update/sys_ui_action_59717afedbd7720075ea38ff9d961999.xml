@@ -85,8 +85,9 @@ if(typeof window == 'undefined')
 
 
 function nextStage(){
-
+current.assignment_group = 'c0545588db7d7e4062bafd441d961943';
 current.assigned_to = '';
+current.autoSysFields(false);
 current.update();
 new global.StateFlow().processFlow(current, '18477153db3d728062bafd441d96199c', 'manual');
 	
@@ -99,11 +100,11 @@ action.setRedirectURL(current);
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-06-15 21:26:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59717afedbd7720075ea38ff9d961999</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>FNOL complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -112,7 +113,7 @@ action.setRedirectURL(current);
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_action_59717afedbd7720075ea38ff9d961999</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-24 17:29:35</sys_updated_on>
+        <sys_updated_on>2017-10-26 18:53:24</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

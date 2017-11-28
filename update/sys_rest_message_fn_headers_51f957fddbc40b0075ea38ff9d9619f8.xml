@@ -6,7 +6,7 @@
         <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-20 04:35:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>51f957fddbc40b0075ea38ff9d9619f8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Accept</sys_name>

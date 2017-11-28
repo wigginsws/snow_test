@@ -48,7 +48,7 @@
         <sys_created_by>abhardwaj</sys_created_by>
         <sys_created_on>2017-04-26 08:27:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>a2ef166adb563640d596327e9d9619f3</sys_id>
+        <sys_id>b11f5adadb660300e022771c8c961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ENTITY_CLAIMANT_FK</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_u_int_oasis_import_claim_u_entity_claimant_fk</sys_update_name>
-        <sys_updated_by>abhardwaj</sys_updated_by>
-        <sys_updated_on>2017-04-26 08:27:27</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:22:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

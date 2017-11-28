@@ -6,7 +6,7 @@
         <sys_class_name>sys_user_role_contains</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-13 23:04:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>54c49f7bdb737240d596327e9d961925</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam.user.x_norca_med_cam.claims_director</sys_name>

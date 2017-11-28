@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cateogry" table="x_norca_med_cam_email" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cateogry</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense Attorney</label>
+            <language>en</language>
+            <name>x_norca_med_cam_email</name>
+            <sequence>100</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-25 17:23:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37e2aba1dbf80f00d596327e9d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-25 17:23:49</sys_updated_on>
+            <value>defense_attorney</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cateogry</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Survey</label>
+            <language>en</language>
+            <name>x_norca_med_cam_email</name>
+            <sequence>200</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-25 17:24:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e023afa1dbf80f00d596327e9d961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-25 17:24:10</sys_updated_on>
+            <value>survey</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cateogry</element>
+            <name>x_norca_med_cam_email</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-25 17:23:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>32232696dba60300e022771c8c9619c3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>cateogry</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_email_cateogry</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:00:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>rrao</sys_created_by>
             <sys_created_on>2017-08-03 16:23:02</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>de22c2aadb14474075ea38ff9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Policy Form Code</sys_name>

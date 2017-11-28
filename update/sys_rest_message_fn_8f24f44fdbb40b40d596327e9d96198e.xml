@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+     "ROW_STATUS": null,&#13;
+    "COURTCASE_PK": ${CourtCaseID},&#13;
+    "CASE_NAME": "${CaseName}",&#13;
+    "OFFICIAL_CASE_NO": "${CaseNumber}",&#13;
+   "COURT_NAME": "${CourtName}",&#13;
+    "COURT_ROOM_NO": null,&#13;
+    "COURT_TYPE": null,&#13;
+    "TRIAL_JUDGE": null,&#13;
+    "CONSENT_B": null,&#13;
+    "LEIN_B": null,&#13;
+    "DECLARATORY_JUDGEMENT_B": null,&#13;
+    "FILED_DATE": null,&#13;
+    "DEMAND_DATE": null,&#13;
+    "TRIAL_STATUS_CODE": null,&#13;
+    "TRIAL_STATUS_DATE": null,&#13;
+   "DEFENSE_RESPONSE_DATE": null,&#13;
+    "TRIAL_RESULT": null,&#13;
+    "TRIAL_RESULT_DATE": null,&#13;
+    "ORIG_TRIAL_DATE": null,&#13;
+    "CURRENT_TRIAL_DATE": "${CurrentTrialDate}",&#13;
+    "DEMAND_AMT": ${DemandAmount},&#13;
+    "INTEREST_AMT": 0,&#13;
+    "PUNITIVE_DAMAGE_AWARD": 0,&#13;
+    "COMPENSATORY_AWARD_AMT": 0,&#13;
+    "VERDICT_AMT": 0,&#13;
+    "REMITTITUR_AMT": 0,&#13;
+    "SETTLEMENT_AMT": 0,&#13;
+    "SOURCE_RECORD_FK": ${ClaimID},&#13;
+    "VENUE_STATE": "${VenueState}",&#13;
+    "COMMITTEE_REVIEW_DATE": null,&#13;
+    "COMMITTEE_DECISION": null,&#13;
+    "VERDICT_DATE": null,&#13;
+    "VENUE_CITY": null,&#13;
+    "SOURCE_TABLE_NAME": "CLAIM",&#13;
+    "REVIEWER_DATE": null,&#13;
+    "REVIEWER_COMMENTS": null,&#13;
+    "TRIAL_TYPE": null,&#13;
+    "REPL_CLM_LIST": null,&#13;
+    "REPL_INS_MISS": null,&#13;
+    "REPL_CLM_LIST_XML": null,&#13;
+    "ENTITY_COURT_FK": 0,&#13;
+   "REGISTERED_B": null,&#13;
+    "PUNITIVE_DAMAGE_AMT": 0,&#13;
+    "CMS_AWARD_DATE": null,&#13;
+    "CMS_AWARD_AMT": null,&#13;
+    "CMS_ANNUITY_AMT": null,&#13;
+    "SERVICE_METHOD": null,&#13;
+    "SERVED_DATE": "${ServedDate}",&#13;
+    "CHAR1": null,&#13;
+    "CHAR2": null,&#13;
+    "CHAR3": null,&#13;
+    "CHAR4": null,&#13;
+    "CHAR5": null,&#13;
+  "ENTITY_JUDGE_FK": 0&#13;
+}&#13;
+</content>
+        <function_name>Update Litigation</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>CAM-ClaimLitigation [ Update Litigation ]</qualified_name>
+        <rest_endpoint>http://norcalapi-dev.norcalmutual.com/api/ClaimLitigation</rest_endpoint>
+        <rest_message display_value="CAM-ClaimLitigation">0f5c1483dbb00b40d596327e9d9619d6</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>larnold</sys_created_by>
+        <sys_created_on>2017-08-29 20:54:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8f24f44fdbb40b40d596327e9d96198e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Update Litigation</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8f24f44fdbb40b40d596327e9d96198e</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-19 17:20:07</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

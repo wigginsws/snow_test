@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>false</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>x_norca_med_cam_indemnity</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>x_norca_med_cam.email_finance</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from>NORCAL Group Claims &lt;norcalcmadev@norcal-group.com &gt;</from>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>true</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<p style="margin: 0in 0in .0001pt .5in;"><span style="color: #dc4405; font-size: 20pt; font-family: 'Calibri','sans-serif';">Indemnity Payment Request for&nbsp;Number: ${number}<br /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">Opened by: ${opened_by}<br /></span><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">Payee: ${payee}<br /></span><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">Taxpayer Identification Info: ${taxpayer_identification_info}<br />Pay to the Order Of: ${pay_to_the_order_of}<br />Amount: ${amount}<br />Description: ${description}<br />&nbsp;<br /></span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">For multiple policies:</span></p>
+<div style="margin: 0in 0in .0001pt .5in;">
+<table style="height: 134px;" width="872">
+<tbody>
+<tr>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Claim Number&nbsp;</span></td>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Amount</span></td>
+</tr>
+<tr>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Claim Number 1: ${claim_number_1}<br /></span></td>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Amount 1: $${amount_1}</span></td>
+</tr>
+<tr>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Claim Number 2: ${claim_number_2}</span></td>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Amount 2: $${amount_2}</span></td>
+</tr>
+<tr>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Claim Number 3: ${claim_number_3}</span></td>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Amount 3: $${amount_3}</span></td>
+</tr>
+<tr>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Claim Number 4: ${claim_number_4}</span></td>
+<td><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;Amount 4: $${amount_4}</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">Claim: ${claim}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">IND Generated From: ${generated_from.claim}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 'Calibri','sans-serif'; font-size: 14pt; color: #5b6770;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Indemnity Payment Request to Finance</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups>8e1eb735db240780d596327e9d9619cf</recipient_groups>
+        <recipient_users>86ec4055dbca120080e9d9fdbf961921</recipient_users>
+        <reply_to>norcalcmadev@norcal-group.com</reply_to>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Indemnity Payment Request for Claim: ${claim} - Number: ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-08-09 21:35:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>29f28aa4db608b4075ea38ff9d96195d</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Indemnity Payment Request to Finance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_email_action_29f28aa4db608b4075ea38ff9d96195d</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:09:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

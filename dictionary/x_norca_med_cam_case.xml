@@ -2,18 +2,30 @@
 <database>
     <element audit="true" label="Case" max_length="40" name="x_norca_med_cam_case" type="collection">
         <element label="Category" max_length="40" name="category" type="string"/>
-        <element label="Display Name" max_length="40" name="display_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var dispName;&#10;&#9;if (current.number) dispName = current.getValue(&quot;number&quot;);&#10;&#9;if (current.name) {&#10;&#9;&#9;dispName = dispName? dispName + &quot; - &quot; : &quot;&quot;;&#10;&#9;&#9;dispName += current.getValue(&quot;name&quot;);&#10;&#9;}&#9;&#10;&#9;return dispName;  // return the calculated value&#10;&#10;})(current);" display="true" label="Display Name" max_length="40" name="display_name" type="string" virtual="true"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="File Notes" max_length="4000" name="file_notes" type="journal_list"/>
         <element label="Insured" max_length="40" name="insured" reference="x_norca_med_cam_entity" type="reference"/>
-        <element choice="3" choice_field="status" choice_table="x_norca_med_cam_ir_doc_load_tracker" default="not_requested" label="IR Load Status" max_length="40" name="ir_doc_load_status" read_only="true" type="choice">
-            <choice/>
+        <element choice="3" choice_field="status" choice_table="x_norca_med_cam_ir_doc_load_tracker" default="not_requested" label="IR Document Load Status" max_length="40" name="ir_doc_load_status" read_only="true" type="choice">
+            <choice>
+                <element label="Not Requested" sequence="0" value="not_requested"/>
+                <element label="Requested" sequence="1" value="requested"/>
+                <element label="In Progress" sequence="2" value="in_progress"/>
+                <element label="Complete" sequence="3" value="complete"/>
+                <element label="Failed" sequence="4" value="failed"/>
+            </choice>
         </element>
         <element label="IR Load Tracker" max_length="32" name="ir_doc_load_tracker" read_only="true" reference="x_norca_med_cam_ir_doc_load_tracker" reference_cascade_rule="clear" type="reference"/>
+        <element choice="1" choice_field="status" choice_table="x_norca_med_cam_ir_doc_load_tracker" default="not_requested" label="IR Notes Load Status" max_length="40" name="ir_notes_load_status" read_only="true" type="choice">
+            <choice/>
+        </element>
         <element label="Location Code" max_length="40" name="location_code" type="string"/>
         <element label="Loss Date" max_length="40" name="loss_date" type="glide_date"/>
         <element label="Master Claim Name" max_length="40" name="name" type="string"/>
         <element label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Policy" max_length="40" name="policy" reference="x_norca_med_cam_policy" type="reference"/>
+        <element max_length="8000" name="reserves" read_only="true" type="html"/>
+        <element max_length="8000" name="reserves2" read_only="true" type="html"/>
         <element label="OASIS - Created By" max_length="40" name="sor_created_by" read_only="true" type="string"/>
         <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
         <element attributes="format=none" label="OASIS ID" max_length="20" name="sor_id" read_only="true" type="decimal"/>

@@ -4,168 +4,210 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>report_date</element>
             <position>0</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>5ee79a7adbd0cb40d596327e9d96195f</sys_id>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>ac86db44db118f40d596327e9d961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_loss_date</element>
             <position>1</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>d2e79a7adbd0cb40d596327e9d961960</sys_id>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2086db44db118f40d596327e9d961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applied_coverage.retroactive_date</element>
+            <position>2</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a086db44db118f40d596327e9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_loss_type</element>
-            <position>2</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>56e79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>3</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2486db44db118f40d596327e9d961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_loss_subtype</element>
-            <position>3</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>d6e79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>4</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a486db44db118f40d596327e9d961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>claim_type</element>
-            <position>4</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>5ae79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>5</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2886db44db118f40d596327e9d961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_choice_2</element>
+            <position>6</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a886db44db118f40d596327e9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_category</element>
+            <position>7</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2c86db44db118f40d596327e9d961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>dae79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>8</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>ac86db44db118f40d596327e9d961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applied_coverage</element>
-            <position>6</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>5ee79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>9</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2086db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>coverage_type</element>
-            <position>7</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>dee79a7adbd0cb40d596327e9d961960</sys_id>
+            <position>10</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a086db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>coverage_verification_status</element>
-            <position>8</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>52e79a7adbd0cb40d596327e9d961961</sys_id>
+            <position>11</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2486db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>coverage_review_process_results</element>
-            <position>9</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>d2e79a7adbd0cb40d596327e9d961961</sys_id>
+            <position>12</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a486db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>coverage_conflict</element>
-            <position>10</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>56e79a7adbd0cb40d596327e9d961961</sys_id>
+            <position>13</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>2886db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>blocked_users</element>
-            <position>11</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-08-04 12:36:33</sys_created_on>
-            <sys_id>d6e79a7adbd0cb40d596327e9d961961</sys_id>
+            <position>14</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 21:09:31</sys_created_on>
+            <sys_id>a886db44db118f40d596327e9d96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Coverage Verification" display_value="Coverage Verification" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">b7789532db93720075ea38ff9d9619e6</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-08-04 12:36:33</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 21:09:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -177,7 +219,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jsavage</sys_created_by>
             <sys_created_on>2017-06-15 14:56:42</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b7789532db93720075ea38ff9d9619e6</sys_id>

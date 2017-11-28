@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="name_suffix" table="x_norca_med_cam_entity" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>A.O./S.P.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:09:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b84e020cdbe5c34075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:09:59</sys_updated_on>
+            <value>AO/SP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C.C.P.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:10:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba6ecec8dbe5c34075ea38ff9d961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:10:33</sys_updated_on>
+            <value>CCP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C.N.M.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:11:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c68e860cdbe5c34075ea38ff9d96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:11:01</sys_updated_on>
+            <value>CNM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C.O.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:12:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5ade8ec8dbe5c34075ea38ff9d9619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:12:31</sys_updated_on>
+            <value>COT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C.R.N.A.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:13:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>602f860cdbe5c34075ea38ff9d96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:13:53</sys_updated_on>
+            <value>CRNA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C.R.N.P.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:14:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a4f0e0cdbe5c34075ea38ff9d9619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:14:20</sys_updated_on>
+            <value>CRNP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D.C.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:15:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb7f0e0cdbe5c34075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:15:14</sys_updated_on>
+            <value>DC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D.D.S.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:15:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48afca88dbe5c34075ea38ff9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:15:47</sys_updated_on>
+            <value>DDS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D.M.D.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:16:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7bf024cdbe5c34075ea38ff9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:16:15</sys_updated_on>
+            <value>DMD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D.O.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:16:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47df024cdbe5c34075ea38ff9d961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:16:43</sys_updated_on>
+            <value>DO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D.P.M</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:17:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32ff464cdbe5c34075ea38ff9d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:17:19</sys_updated_on>
+            <value>DPM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>E.E.G.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:17:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6510564cdbe5c34075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:17:45</sys_updated_on>
+            <value>EEGT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Esq.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:01:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>986cce48dbe5c34075ea38ff9d9619f9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:03:15</sys_updated_on>
+            <value>ESQ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jr.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6430d24cdbe5c34075ea38ff9d961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:18:20</sys_updated_on>
+            <value>JR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jr, M.D.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:18:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90505e0cdbe5c34075ea38ff9d9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:18:54</sys_updated_on>
+            <value>JR, MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>L.P.N.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:19:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c70124cdbe5c34075ea38ff9d9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:19:20</sys_updated_on>
+            <value>LPN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.A.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:07:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32ddcec8dbe5c34075ea38ff9d961906</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:08:18</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.D.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:07:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2bbd8688dbe5c34075ea38ff9d9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:07:31</sys_updated_on>
+            <value>MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.D., Inc.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:20:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0290164cdbe5c34075ea38ff9d9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:20:13</sys_updated_on>
+            <value>MD, INC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.F.C.C.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:20:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6c0da4cdbe5c34075ea38ff9d9619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:20:52</sys_updated_on>
+            <value>MFCC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.L.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:21:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>20e0964cdbe5c34075ea38ff9d961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:21:19</sys_updated_on>
+            <value>MLT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M.S.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:21:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4011e4cdbe5c34075ea38ff9d961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:21:45</sys_updated_on>
+            <value>MS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>N.M.W.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:22:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f21128cdbe5c34075ea38ff9d961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:22:36</sys_updated_on>
+            <value>NMW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>N.P.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:22:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e41de4cdbe5c34075ea38ff9d9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:22:59</sys_updated_on>
+            <value>NP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>O.B.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:23:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6561528cdbe5c34075ea38ff9d961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:23:29</sys_updated_on>
+            <value>OB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>O.D.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:23:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b71568cdbe5c34075ea38ff9d961936</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:23:53</sys_updated_on>
+            <value>OD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>O.P.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:24:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1591968cdbe5c34075ea38ff9d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:24:30</sys_updated_on>
+            <value>OPT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>O.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:24:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7db15a4cdbe5c34075ea38ff9d961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:24:52</sys_updated_on>
+            <value>OT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P.A.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:25:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84d1d28cdbe5c34075ea38ff9d9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:25:15</sys_updated_on>
+            <value>PA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ph.D.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:26:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c225e8cdbe5c34075ea38ff9d96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:26:41</sys_updated_on>
+            <value>PHD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PHST.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:25:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edf1968cdbe5c34075ea38ff9d9619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:25:57</sys_updated_on>
+            <value>PHST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PSYC.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:26:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86025a8cdbe5c34075ea38ff9d961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:26:17</sys_updated_on>
+            <value>PSYC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:25:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8e15a8cdbe5c34075ea38ff9d96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:25:35</sys_updated_on>
+            <value>PT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>R.N.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:27:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e932168cdbe5c34075ea38ff9d96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:27:01</sys_updated_on>
+            <value>RN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>R.T.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:27:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14529a8cdbe5c34075ea38ff9d961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:27:34</sys_updated_on>
+            <value>RT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>S.A.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:28:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>207212ccdbe5c34075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:28:01</sys_updated_on>
+            <value>SA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sr.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:28:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>119212ccdbe5c34075ea38ff9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:28:41</sys_updated_on>
+            <value>SR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>name_suffix</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>S.W.</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity</name>
+            <sequence/>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:28:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>34825e8cdbe5c34075ea38ff9d9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-27 02:28:19</sys_updated_on>
+            <value>SW</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>name_suffix</element>
+            <name>x_norca_med_cam_entity</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-27 02:01:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d8332a96dba60300e022771c8c96191a</sys_id>
+            <sys_mod_count>54</sys_mod_count>
+            <sys_name>name_suffix</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_entity_name_suffix</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:00:54</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

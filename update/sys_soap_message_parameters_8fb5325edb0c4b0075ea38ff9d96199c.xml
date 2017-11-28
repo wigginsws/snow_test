@@ -6,7 +6,7 @@
         <sys_class_name>sys_soap_message_parameters</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-21 15:14:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8fb5325edb0c4b0075ea38ff9d96199c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ClaimLogInquiryRequest.MessageId</sys_name>

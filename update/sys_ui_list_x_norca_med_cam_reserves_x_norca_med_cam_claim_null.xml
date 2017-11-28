@@ -12,12 +12,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-02 23:41:26</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-17 18:01:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>22ec5a56db1cc740d596327e9d961902</sys_id>
+            <sys_id>78d7a4b2dbb1878075ea38ff9d9619ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_norca_med_cam_reserves</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -25,9 +25,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_list_x_norca_med_cam_reserves_x_norca_med_cam_claim_null</sys_update_name>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-02 23:41:26</sys_updated_on>
-            <sys_user display_value="">bf7ef52ddbed3a0075ea38ff9d961921</sys_user>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-17 18:01:01</sys_updated_on>
+            <sys_user display_value="">3cde35e9dbed3a0075ea38ff9d96191b</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

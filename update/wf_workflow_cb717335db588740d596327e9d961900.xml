@@ -1,0 +1,1742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["ea404476dbf4438075ea38ff9d9619c1"],"activities":{},"subflows":[],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>Approval workflow for indemnity payment request.</description>
+        <expected_sequences>aa404476dbf4438075ea38ff9d9619c3,e6404476dbf4438075ea38ff9d9619c2,e2404476dbf4438075ea38ff9d9619e6,ea404476dbf4438075ea38ff9d9619c1</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>aa404476dbf4438075ea38ff9d9619c3,e6404476dbf4438075ea38ff9d9619c2,e2404476dbf4438075ea38ff9d9619e6,ea404476dbf4438075ea38ff9d9619c1,e6404476dbf4438075ea38ff9d9619c6,62404476dbf4438075ea38ff9d9619c9,664048f2dbf4438075ea38ff9d961954,2a404476dbf4438075ea38ff9d9619c4,a2404476dbf4438075ea38ff9d9619c8,6e4048f2dbf4438075ea38ff9d961950,2a4048f2dbf4438075ea38ff9d961952,a2404476dbf4438075ea38ff9d9619cc</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>CAM-Indemnity Approval</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">aa404476dbf4438075ea38ff9d9619c3</start>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:29</sys_created_on>
+        <sys_id>624048f2dbf4438075ea38ff9d96194f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_updated_by>dself</sys_updated_by>
+        <sys_updated_on>2017-10-10 19:24:17</sys_updated_on>
+        <table>x_norca_med_cam_indemnity</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="CAM-Indemnity Approval">cb717335db588740d596327e9d961900</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Approval workflow for indemnity payment request.</description>
+        <name>CAM-Indemnity Approval</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-01 16:33:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb717335db588740d596327e9d961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAM-Indemnity Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>wf_workflow_cb717335db588740d596327e9d961900</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-01 16:33:58</sys_updated_on>
+        <table>x_norca_med_cam_indemnity</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>31</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>62404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:06:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>489</x>
+        <y>81</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=62404476dbf4438075ea38ff9d9619c9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>62404476dbf4438075ea38ff9d9619c9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>62404476dbf4438075ea38ff9d9619c9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e2404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>62404476dbf4438075ea38ff9d9619c9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>62404476dbf4438075ea38ff9d9619c9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e2404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval">62404476dbf4438075ea38ff9d9619c9</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Approve</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>33</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a2404476dbf4438075ea38ff9d9619c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:06:19</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>529</x>
+        <y>519</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a2404476dbf4438075ea38ff9d9619c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2404476dbf4438075ea38ff9d9619c8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>26404476dbf4438075ea38ff9d9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2404476dbf4438075ea38ff9d9619c8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>26404476dbf4438075ea38ff9d9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approved">a2404476dbf4438075ea38ff9d9619c8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>aa404476dbf4438075ea38ff9d9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>aa404476dbf4438075ea38ff9d9619c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>35</x>
+        <y>78</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=aa404476dbf4438075ea38ff9d9619c3"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">aa404476dbf4438075ea38ff9d9619c3</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>62404476dbf4438075ea38ff9d9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Director Approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e6404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>201</x>
+        <y>274</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e6404476dbf4438075ea38ff9d9619c6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6a404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>approver_1ISNOTEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e2404476dbf4438075ea38ff9d9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6a404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>approver_1ISNOTEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c6</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e2404476dbf4438075ea38ff9d9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6a404476dbf4438075ea38ff9d9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ea404476dbf4438075ea38ff9d9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>35</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Draft</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e6404476dbf4438075ea38ff9d9619c2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:07:42</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>207</x>
+        <y>2</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e6404476dbf4438075ea38ff9d9619c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6a404476dbf4438075ea38ff9d9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status!=Draft^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status!=Draft^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6404476dbf4438075ea38ff9d9619c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6a404476dbf4438075ea38ff9d9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Draft">e6404476dbf4438075ea38ff9d9619c2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>26404476dbf4438075ea38ff9d9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ea404476dbf4438075ea38ff9d9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>1069</x>
+        <y>652</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ea404476dbf4438075ea38ff9d9619c1"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>25</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Multiple Claims</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a2404476dbf4438075ea38ff9d9619cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:06:21</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>775</x>
+        <y>629</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a2404476dbf4438075ea38ff9d9619cc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2404476dbf4438075ea38ff9d9619cc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a6404476dbf4438075ea38ff9d9619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>//Generate records if there are multiple claims numbers with allocated amounts.&#13;
+var amount = '0';&#13;
+if(current.claim_number_1!=''){&#13;
+	if(current.amount_1==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_1.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_1;&#13;
+	indemGr.claim = current.claim_number_1;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_2!=''){&#13;
+	if(current.amount_2==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_2.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_2;&#13;
+	indemGr.claim = current.claim_number_2;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_3!=''){&#13;
+	if(current.amount_3==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_3.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_3;&#13;
+	indemGr.claim = current.claim_number_3;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_4!=''){&#13;
+	if(current.amount_4==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_4.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_4;&#13;
+	indemGr.claim = current.claim_number_4;&#13;
+	indemGr.insert();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2404476dbf4438075ea38ff9d9619cc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a6404476dbf4438075ea38ff9d9619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>//Generate records if there are multiple claims numbers with allocated amounts.&#13;
+var amount = '0';&#13;
+if(current.claim_number_1!=''){&#13;
+	if(current.amount_1==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_1.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_1;&#13;
+	indemGr.claim = current.claim_number_1;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_2!=''){&#13;
+	if(current.amount_2==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_2.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_2;&#13;
+	indemGr.claim = current.claim_number_2;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_3!=''){&#13;
+	if(current.amount_3==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_3.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_3;&#13;
+	indemGr.claim = current.claim_number_3;&#13;
+	indemGr.insert();&#13;
+}&#13;
+if(current.claim_number_4!=''){&#13;
+	if(current.amount_4==''){&#13;
+		amount = '0';&#13;
+	}&#13;
+	else{&#13;
+		amount = current.amount_4.toString();&#13;
+	}&#13;
+	var indemGr = new GlideRecord('x_norca_med_cam_indemnity');&#13;
+	indemGr.initialize();&#13;
+	indemGr.generated_from = current.sys_id;&#13;
+	indemGr.indemnity_type = current.indemnity_type;&#13;
+	indemGr.payee = current.payee;&#13;
+	indemGr.pay_to_the_order_of = current.pay_to_the_order_of;&#13;
+	indemGr.taxpayer_identification_info = current.taxpayer_identification_info;&#13;
+	indemGr.status = "Approved";&#13;
+	indemGr.amount = current.amount_4;&#13;
+	indemGr.claim = current.claim_number_4;&#13;
+	indemGr.insert();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Multiple Claims">a2404476dbf4438075ea38ff9d9619cc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e404476dbf4438075ea38ff9d9619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Rejected</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:29</sys_created_on>
+        <sys_id>6e4048f2dbf4438075ea38ff9d961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>1014</x>
+        <y>234</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=6e4048f2dbf4438075ea38ff9d961950"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6e4048f2dbf4438075ea38ff9d961950</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:29</sys_created_on>
+        <sys_id>e24048f2dbf4438075ea38ff9d961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:29</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6e4048f2dbf4438075ea38ff9d961950</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:29</sys_created_on>
+        <sys_id>e24048f2dbf4438075ea38ff9d961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:29</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Rejected">6e4048f2dbf4438075ea38ff9d961950</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ee4048f2dbf4438075ea38ff9d961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>28</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send notification to Finance</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a4048f2dbf4438075ea38ff9d961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>748</x>
+        <y>443</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2a4048f2dbf4438075ea38ff9d961952"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e4048f2dbf4438075ea38ff9d961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>d96d456adb20c780d596327e9d9619eb</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>624048f2dbf4438075ea38ff9d961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a64048f2dbf4438075ea38ff9d961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e4048f2dbf4438075ea38ff9d961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>d96d456adb20c780d596327e9d9619eb</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>624048f2dbf4438075ea38ff9d961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a4048f2dbf4438075ea38ff9d961952</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a64048f2dbf4438075ea38ff9d961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send notification to Finance">2a4048f2dbf4438075ea38ff9d961952</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae4048f2dbf4438075ea38ff9d961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>32</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Status is rejected</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>664048f2dbf4438075ea38ff9d961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>495</x>
+        <y>192</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=664048f2dbf4438075ea38ff9d961954"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>664048f2dbf4438075ea38ff9d961954</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a404476dbf4438075ea38ff9d9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>664048f2dbf4438075ea38ff9d961954</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6e404476dbf4438075ea38ff9d9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>664048f2dbf4438075ea38ff9d961954</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>6e404476dbf4438075ea38ff9d9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>664048f2dbf4438075ea38ff9d961954</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a404476dbf4438075ea38ff9d9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Status is rejected">664048f2dbf4438075ea38ff9d961954</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>66404476dbf4438075ea38ff9d9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>34</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Stop the workflow if "Generated From" is not empty</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e2404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:07:36</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>178</x>
+        <y>113</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e2404476dbf4438075ea38ff9d9619e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>66404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>generated_fromISNOTEMPTY^status=Approved^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>aa404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ee404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>66404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>generated_fromISNOTEMPTY^status=Approved^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>aa404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e2404476dbf4438075ea38ff9d9619e6</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ee404476dbf4438075ea38ff9d9619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Stop the workflow if &quot;Generated From&quot; is not empty">e2404476dbf4438075ea38ff9d9619e6</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>66404476dbf4438075ea38ff9d9619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Stop the workflow if &quot;Generated From&quot; is not empty">e2404476dbf4438075ea38ff9d9619e6</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e6404476dbf4438075ea38ff9d9619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>SVP Approver</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2a404476dbf4438075ea38ff9d9619c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:06:13</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+        <x>231</x>
+        <y>458</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2a404476dbf4438075ea38ff9d9619c4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e404476dbf4438075ea38ff9d9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>approver_2ISNOTEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>62404476dbf4438075ea38ff9d9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a6404476dbf4438075ea38ff9d9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e404476dbf4438075ea38ff9d9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>approver_2ISNOTEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>62404476dbf4438075ea38ff9d9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2a404476dbf4438075ea38ff9d9619c4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>a6404476dbf4438075ea38ff9d9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>22404476dbf4438075ea38ff9d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">62404476dbf4438075ea38ff9d9619c4</condition>
+        <from display_value="Begin">aa404476dbf4438075ea38ff9d9619c3</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:07:39</sys_created_on>
+        <sys_id>0ac000f2dbf4438075ea38ff9d9619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:07:39</sys_updated_on>
+        <to display_value="Draft">e6404476dbf4438075ea38ff9d9619c2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">ea404476dbf4438075ea38ff9d9619c7</condition>
+        <from display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>2e404476dbf4438075ea38ff9d9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Approval">62404476dbf4438075ea38ff9d9619c9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">22404476dbf4438075ea38ff9d9619c6</condition>
+        <from display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>36404476dbf4438075ea38ff9d9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Status is rejected">664048f2dbf4438075ea38ff9d961954</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">66404476dbf4438075ea38ff9d9619e7</condition>
+        <from display_value="Stop the workflow if &quot;Generated From&quot; is not empty">e2404476dbf4438075ea38ff9d9619e6</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:07:44</sys_created_on>
+        <sys_id>53c0883adbf4438075ea38ff9d9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:07:44</sys_updated_on>
+        <to display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">aa404476dbf4438075ea38ff9d9619c8</condition>
+        <from display_value="Approved">a2404476dbf4438075ea38ff9d9619c8</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>62404476dbf4438075ea38ff9d9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Send notification to Finance">2a4048f2dbf4438075ea38ff9d961952</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approve">ae404476dbf4438075ea38ff9d9619c9</condition>
+        <from display_value="Approval">62404476dbf4438075ea38ff9d9619c9</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>72404476dbf4438075ea38ff9d9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Approved">a2404476dbf4438075ea38ff9d9619c8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">e6404476dbf4438075ea38ff9d9619e7</condition>
+        <from display_value="Stop the workflow if &quot;Generated From&quot; is not empty">e2404476dbf4438075ea38ff9d9619e6</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>7a404476dbf4438075ea38ff9d9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="End">ea404476dbf4438075ea38ff9d9619c1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">ea404476dbf4438075ea38ff9d9619c7</condition>
+        <from display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>aa404476dbf4438075ea38ff9d9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Status is rejected">664048f2dbf4438075ea38ff9d961954</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">26404476dbf4438075ea38ff9d9619c3</condition>
+        <from display_value="Draft">e6404476dbf4438075ea38ff9d9619c2</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:07:41</sys_created_on>
+        <sys_id>aac044b2dbf4438075ea38ff9d9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:07:41</sys_updated_on>
+        <to display_value="Stop the workflow if &quot;Generated From&quot; is not empty">e2404476dbf4438075ea38ff9d9619e6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">6a404476dbf4438075ea38ff9d9619c7</condition>
+        <from display_value="Director Approval">e6404476dbf4438075ea38ff9d9619c6</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ae404476dbf4438075ea38ff9d9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">22404476dbf4438075ea38ff9d9619c6</condition>
+        <from display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>b2404476dbf4438075ea38ff9d9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Approval">62404476dbf4438075ea38ff9d9619c9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">ae404476dbf4438075ea38ff9d9619c5</condition>
+        <from display_value="SVP Approver">2a404476dbf4438075ea38ff9d9619c4</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>b6404476dbf4438075ea38ff9d9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Approved">a2404476dbf4438075ea38ff9d9619c8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">ee4048f2dbf4438075ea38ff9d961951</condition>
+        <from display_value="Rejected">6e4048f2dbf4438075ea38ff9d961950</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e6404476dbf4438075ea38ff9d9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="End">ea404476dbf4438075ea38ff9d9619c1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2e404476dbf4438075ea38ff9d9619e5</condition>
+        <from display_value="Multiple Claims">a2404476dbf4438075ea38ff9d9619cc</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>e6404476dbf4438075ea38ff9d9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="End">ea404476dbf4438075ea38ff9d9619c1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">66404476dbf4438075ea38ff9d9619c1</condition>
+        <from display_value="Status is rejected">664048f2dbf4438075ea38ff9d961954</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>ea404476dbf4438075ea38ff9d9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Rejected">6e4048f2dbf4438075ea38ff9d961950</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">ae4048f2dbf4438075ea38ff9d961953</condition>
+        <from display_value="Send notification to Finance">2a4048f2dbf4438075ea38ff9d961952</from>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:30</sys_created_on>
+        <sys_id>fe404476dbf4438075ea38ff9d9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:30</sys_updated_on>
+        <to display_value="Multiple Claims">a2404476dbf4438075ea38ff9d9619cc</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-28 22:05:29</sys_created_on>
+        <sys_id>264048f2dbf4438075ea38ff9d96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-28 22:05:29</sys_updated_on>
+        <workflow_version display_value="CAM-Indemnity Approval">624048f2dbf4438075ea38ff9d96194f</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=cb717335db588740d596327e9d961900^sys_id!=624048f2dbf4438075ea38ff9d96194f">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

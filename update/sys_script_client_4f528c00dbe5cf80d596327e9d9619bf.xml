@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>claim</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-CLASS-Highlight Sync Status</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	ScriptLoader.getScripts('x_norca_med_cam.GenericClientUtil.jsdbx', function() {
+		x_norca_med_cam.GenericClientUtil.highlightSyncStatus(g_form);
+	});
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-26 15:58:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f528c00dbe5cf80d596327e9d9619bf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CAM-CLASS-Highlight Sync Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_4f528c00dbe5cf80d596327e9d9619bf</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:54</sys_updated_on>
+        <table>x_norca_med_cam_entity_class</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

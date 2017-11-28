@@ -4,728 +4,784 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a0</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>2a36d369db0a8700d596327e9d961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_insured_fk</element>
             <position>1</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a0</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_incident_start_date</element>
             <position>2</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a0</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_indres_amt</element>
             <position>3</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_category_code</element>
             <position>4</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_expres_amt</element>
             <position>5</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_loss_date</element>
             <position>6</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_risk_fk</element>
             <position>7</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_char1</element>
             <position>8</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_char3</element>
             <position>9</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_cm_jurisdiction_code</element>
             <position>10</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a1</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_examiner_fk</element>
             <position>11</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>char4</element>
             <position>12</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_char2</element>
             <position>13</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_occurrence_creation_b</element>
             <position>14</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_branch_office</element>
             <position>15</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_type</element>
             <position>16</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_claimant_fk</element>
             <position>17</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_defense_law_firm_fk</element>
             <position>18</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a2</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_cm_lob_code</element>
             <position>19</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_report_date</element>
             <position>20</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sys_created_by</element>
             <position>21</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sys_updated_by</element>
             <position>22</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sys_update_time</element>
             <position>23</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_fk</element>
             <position>24</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_state_code</element>
             <position>25</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>26</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>27</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>28</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>29</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>26</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a3</sys_id>
+            <position>30</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_coverage_fk</element>
-            <position>27</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>31</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_status</element>
-            <position>28</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>32</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_county_code</element>
-            <position>29</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>33</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_entry_log_pk</element>
-            <position>30</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>34</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_incident_end_date</element>
-            <position>31</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>35</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sys_create_time</element>
-            <position>32</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>36</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_plaintiff_law_firm_fk</element>
-            <position>33</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>37</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_supervisor_fk</element>
-            <position>34</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a4</sys_id>
+            <position>38</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_headline</element>
-            <position>35</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>39</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_claim_id</element>
-            <position>36</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>40</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_coverage_id</element>
-            <position>37</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>41</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d96196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_claimant_id</element>
-            <position>38</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>42</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_defense_law_firm_id</element>
-            <position>39</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>43</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_examiner_id</element>
-            <position>40</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>44</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_insured_id</element>
-            <position>41</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>45</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e636d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_plaintiff_id</element>
-            <position>42</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a5</sys_id>
+            <position>46</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6a36d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_entity_supervisor_id</element>
-            <position>43</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>47</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ea36d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_occurrence_id</element>
-            <position>44</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b1a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>48</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6e36d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_policy_id</element>
-            <position>45</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>35a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>49</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ee36d369db0a8700d596327e9d96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_policy_term_id</element>
-            <position>46</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b5a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>50</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6236d369db0a8700d596327e9d96196d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_risk_id</element>
-            <position>47</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>39a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>51</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>e236d369db0a8700d596327e9d96196d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_policy_fk</element>
-            <position>48</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>b9a42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>52</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>6636d369db0a8700d596327e9d96196d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_occurrance_fk</element>
-            <position>49</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>3da42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>53</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>ae36d369db0a8700d596327e9d961979</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_policy_term_history_fk</element>
-            <position>50</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>bda42dccdb67ba0075ea38ff9d9619a6</sys_id>
+            <position>54</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>2236d369db0a8700d596327e9d96197a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>51</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-06-19 13:02:13</sys_created_on>
-            <sys_id>31a42dccdb67ba0075ea38ff9d9619a7</sys_id>
+            <position>55</position>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-26 19:46:17</sys_created_on>
+            <sys_id>a236d369db0a8700d596327e9d96197a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_claim_entry_log" sys_domain="global" view="Default view">fda42dccdb67ba0075ea38ff9d96198f</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-06-19 13:02:13</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -741,7 +797,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>fda42dccdb67ba0075ea38ff9d96198f</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_name>x_norca_med_cam_claim_entry_log</sys_name>
             <sys_overrides/>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -749,8 +805,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_section_fda42dccdb67ba0075ea38ff9d96198f</sys_update_name>
-            <sys_updated_by>wwiggins</sys_updated_by>
-            <sys_updated_on>2017-08-07 19:58:32</sys_updated_on>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:46:17</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

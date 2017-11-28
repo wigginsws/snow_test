@@ -21,7 +21,7 @@
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 16:02:06</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>072df9a6db14474075ea38ff9d9619a5</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Product Coverage</sys_name>

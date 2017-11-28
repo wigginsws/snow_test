@@ -29,7 +29,6 @@
         <average_image_color/>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
-        <encryption_context/>
         <file_name>image</file_name>
         <image_height/>
         <image_width/>
@@ -43,6 +42,7 @@
         <sys_updated_on>2017-03-27 19:16:20</sys_updated_on>
         <table_name>ZZ_YYdb_image</table_name>
         <table_sys_id>5be0890ddbfdbe4062bafd441d961970</table_sys_id>
+        <u_sent>false</u_sent>
     </sys_attachment>
     <sys_attachment_doc action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAA==</data>

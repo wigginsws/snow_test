@@ -12,33 +12,25 @@
         <order/>
         <script><![CDATA[function onLoad() {
 	
-// 	ScriptLoader.getScripts('x_norca_med_cam.cam.jsdbx', function(){
-// 		console.log ("Loaded cam");
-		
-// 	});
-	
-	ScriptLoader.getScripts('x_norca_med_cam.cam_ClaimClientValidatio.jsdbx', function(){
-		//console.log ("report_date " + g_form.getValue("report_date"));
-		if (!g_form.getValue("report_date")) {
-			var dt = new Date();
-			g_form.setValue("report_date", x_norca_med_cam.cam_ClaimClientValidation.jsDateStringToUSLocaleString( dt.toLocaleDateString()));
-		}
-		
-		//console.log("validationUtil loaded, calling validateClaimsDates");
-		x_norca_med_cam.cam_ClaimClientValidation.validateClaimDates(g_form);
-		//console.log("called validateClaimsDates");
+	ScriptLoader.getScripts('x_norca_med_cam.cam_ClmClientValidation.jsdbx', function(){
+		if (!g_form.isNewRecord()) x_norca_med_cam.cam_ClmClientValidation.validateClaimDates(g_form);
 	});
+	
+	ScriptLoader.getScripts('x_norca_med_cam.GenericClientUtil.jsdbx', function() {
+		x_norca_med_cam.GenericClientUtil.highlightSyncStatus(g_form);
+	});
+	
 	
 }
 ]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-02 01:27:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3f4be182db50074075ea38ff9d9619aa</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>CAM-Claim-Report and Loss Date Check</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -46,8 +38,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_client_3f4be182db50074075ea38ff9d9619aa</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 01:28:37</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:55</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

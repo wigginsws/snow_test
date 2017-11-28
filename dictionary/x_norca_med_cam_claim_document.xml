@@ -2,8 +2,10 @@
 <database>
     <element attributes="email_client=true" audit="true" label="Document" max_length="40" name="x_norca_med_cam_claim_document" type="collection">
         <element label="Case" max_length="32" name="case_ref" reference="x_norca_med_cam_case" type="reference"/>
+        <element label="Check Encryption" max_length="40" name="check_encryption" type="boolean"/>
         <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var display_name = current.getValue(&quot;name&quot;)?current.getValue(&quot;name&quot;):&quot;&quot;;&#10;&#9;switch(current.getValue(&quot;referenced_table&quot;)) {&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_case&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;case_ref&quot;)?current.getDisplayValue(&quot;case_ref&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_claim&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;claim&quot;)?current.getDisplayValue(&quot;claim&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_policy&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;policy&quot;)?current.getDisplayValue(&quot;policy&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;}&#10;// &#9;if (current.folder_name) {&#10;// &#9;&#9;display_name = display_name.trim() + &quot; &quot; + current.getDisplayValue(&quot;folder_name&quot;);&#10;// &#9;}&#10;// &#9;if (current.type) {&#10;// &#9;&#9;display_name = display_name.trim() + &quot; &quot; + current.getDisplayValue(&quot;type&quot;);&#10;// &#9;}&#10;&#9;&#10;&#9;if (display_name.length&gt;100) {&#10;&#9;&#9;display_name = display_name.substring(0, 96) + &quot;...&quot;; &#10;&#9;}&#10;&#9;return display_name;&#10;&#10;})(current);" display="true" label="Display Name" max_length="100" name="display_name" read_only="true" type="string" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var display_name = current.getValue(&quot;name&quot;)?current.getValue(&quot;name&quot;):&quot;&quot;;&#10;&#9;switch(current.getValue(&quot;referenced_table&quot;)) {&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_case&quot;:&#10;&#9;&#9;&#9;if (current.sor_created_on) {&#10;&#9;&#9;&#9;&#9;var gdt = new GlideDateTime(current.getValue(&quot;sor_created_on&quot;) );&#10;&#9;&#9;&#9;&#9;display_name = gdt.getDate().getByFormat(&quot;MM/dd/yyyy&quot;)  + &quot; &quot; + display_name;&#10;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;if (current.page_count) {&#10;&#9;&#9;&#9;&#9;if (current.page_count==1) {&#10;&#9;&#9;&#9;&#9;&#9;display_name += &quot; (1 Page)&quot;;&#10;&#9;&#9;&#9;&#9;} else {&#10;&#9;&#9;&#9;&#9;&#9;display_name += &quot; (&quot; + current.page_count + &quot; Pages)&quot;;&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_claim&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;claim&quot;)?current.getDisplayValue(&quot;claim&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case cam.SCOPE_ID + &quot;_policy&quot;:&#10;&#9;&#9;&#9;display_name += &quot; (&quot; + (current.getDisplayValue(&quot;policy&quot;)?current.getDisplayValue(&quot;policy&quot;):&quot;&quot;) + &quot;)&quot;;&#10;&#9;&#9;&#9;break;&#10;&#9;}&#10;&#9;&#10;&#9;if (display_name.length&gt;100) {&#10;&#9;&#9;display_name = display_name.substring(0, 96) + &quot;...&quot;; &#10;&#9;}&#10;&#9;return display_name;&#10;&#10;})(current);" display="true" label="Display Name" max_length="100" name="display_name" read_only="true" type="string" virtual="true"/>
+        <element label="Encryption Context" max_length="32" name="encryption_context" read_only="true" reference="sys_encryption_context" type="reference"/>
         <element choice="1" label="Folder Name" max_length="40" name="folder_name" type="string">
             <choice>
                 <element label="File Notes (9999)" sequence="100" value="9999"/>
@@ -74,16 +76,19 @@
             </choice>
         </element>
         <index name="index">
-            <element name="sor_id"/>
-            <element name="sor_reference_id"/>
+            <element name="encryption_context"/>
         </index>
         <index name="index2">
             <element name="claim"/>
         </index>
         <index name="index3">
-            <element name="case_ref"/>
+            <element name="sor_id"/>
+            <element name="sor_reference_id"/>
         </index>
         <index name="index4">
+            <element name="case_ref"/>
+        </index>
+        <index name="index5">
             <element name="policy"/>
         </index>
     </element>

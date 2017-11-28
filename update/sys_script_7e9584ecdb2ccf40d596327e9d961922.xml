@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_claim</collection>
+        <condition>gs.getProperty('glide.task.survey_active') == 'true'</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_claim">stateCHANGESTO5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-CLAIM-Survey Trigger</name>
+        <order>10000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	checkSurveyConditions();
+
+function checkSurveyConditions() {
+   var num = 0;
+   var currentMatch = false;
+   var previousMatch = false;
+   var sc = new GlideRecord('survey_conditions');
+   sc.addQuery('table', current.getTableName());
+   sc.addActiveQuery();
+   sc.orderBy('order');
+   sc.query();
+   //check for send all property to determine if we should fire all matching surveys or only first one
+   var sendAll = gs.getProperty('glide.task.survey_send_all');
+   while (sc.next()) {
+      var filter = GlideFilter;
+      // check to see if current and previous match condition
+      currentMatch = filter.checkRecord(current, sc.condition);
+      previousMatch = filter.checkRecord(previous, sc.condition);
+      
+      //get the recipient and check to see if it's valid
+      var user = current.getElement(sc.user_field);
+      if (user == null)
+         continue;
+
+      if (user.nil())
+         continue;
+
+      //don't repeat surveys for x days
+      var daysWait = sc.repeat_interval;
+      if (daysWait.nil()) {
+         //get global default
+         daysWait = gs.getProperty('glide.task.survey_days_wait',30);
+      }
+
+      // make sure current matches and previous doesn't so this only runs once
+      if (currentMatch && !previousMatch) {
+         //see if we recently sent this survey to this user
+         var lastSurvey = new GlideRecord('task_survey');
+         lastSurvey.addQuery('sent_to',user);
+		 if(sc.isValidField('type') && sc.getValue('type') == 'survey_wizard'){
+			 lastSurvey.addQuery('survey_wizard',sc.survey_wizard.sys_id);
+		 }else{
+			 lastSurvey.addQuery('survey',sc.survey.sys_id);
+		 }
+         lastSurvey.addQuery('requested_date','>',gs.daysAgo(daysWait));
+         lastSurvey.query();
+         if (lastSurvey.next()) {
+			var surveyName = "";
+			if(sc.isValidField('type') && sc.getValue('type') == 'survey_wizard'){
+				surveyName = sc.survey_wizard.getDisplayValue();
+			}else{
+				surveyName = sc.survey.getDisplayValue();
+			}
+            gs.info('Survey "' + surveyName + '" was not sent to ' + user.getDisplayValue() + ' since they were already sent one within the last ' + daysWait + ' days');
+            continue;
+         }
+         
+         //check for random survey option
+         if (sc.random_survey) {
+            num = (100 / sc.percent_random);
+            if (Math.floor(Math.random() * num) == 0) {
+               sendSurvey(current, sc, user);
+            }
+         } else {
+
+			sendSurvey(current, sc, user);
+			
+         }
+         if (sendAll != 'true')
+            return;
+      }
+   }
+}
+
+function sendSurvey(task, sc, recipient) {
+	var gr = new GlideRecord('x_norca_med_cam_entity');
+	gr.get(current.getValue('u_insured'));
+	if(gr.email_1 == ''){
+		var fail = "A survey wasn't sent. The Insured user, " + current.u_insured.getDisplayValue() + ", doesn't have a primary email address. Once the email address is filled in, please click the Send Survey button";
+		gs.addErrorMessage(fail); 
+		gs.info(fail);
+		
+		return;
+	}
+	else {
+   var ts = new GlideRecord('task_survey');
+   ts.initialize();
+   ts.task = current.sys_id;
+   //if(sc.isValidField('type') && sc.getValue('type') == 'survey_wizard'){
+	 //  ts.survey_wizard = sc.survey_wizard;
+	 //  ts.type = "survey_wizard";
+  // }else{
+	   ts.survey = sc.survey;
+	   ts.type = "survey";
+   
+
+   ts.u_entity_sent_to = recipient;	
+   ts.state = "requested";
+   ts.requested_date = new GlideDateTime().getDisplayValue();
+   var taskSurvey = ts.insert();
+
+   var surveyURL = "";
+  // if(sc.isValidField('type') && sc.getValue('type') == 'survey_wizard'){
+	//   surveyURL = getSurveyWizardURL(taskSurvey, sc.survey_wizard.sys_id);
+ //  }else{
+	   surveyURL = getSurveyURL(taskSurvey, sc.survey.name);
+ //  }
+   //pass survey url from here so we don't have to build it in every notification
+	
+	
+  
+
+		 gs.eventQueue('x_norca_med_cam.send_survey', task, recipient.email_1, surveyURL);
+		gs.addInfoMessage("A survey was sent to " + current.u_insured.getDisplayValue());
+}
+	}	
+	
+
+
+function getSurveyURL(taskSurvey, surveyName) {
+   //encode survey name again to escape the special char (e.g. '#')
+   var uri = 'survey_take.do?sysparm_survey=' + encodeURIComponent(surveyName) + '&sysparm_task_survey=' + taskSurvey;
+   var url = getURLPrefix() + '?uri=' + encodeURIComponent(uri);
+   return url;
+}
+function getSurveyWizardURL(taskSurveyID, surveyWizardID) {
+	var url = getURLPrefix() + '?uri=expert_shell.do?sysparm_sys_id=' + surveyWizardID + '%26EV:sysparm_task_survey=' + taskSurveyID;
+	return url;
+}
+
+function getURLPrefix() {
+	var instanceURL = gs.getProperty("glide.servlet.uri");
+	var overrideURL = gs.getProperty("glide.email.override.url");
+	if (overrideURL)
+		instanceURL = overrideURL;
+	else
+		instanceURL = instanceURL + "nav_to.do";
+	return instanceURL;
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-08-09 12:41:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7e9584ecdb2ccf40d596327e9d961922</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>CAM-CLAIM-Survey Trigger</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_7e9584ecdb2ccf40d596327e9d961922</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-10-26 22:37:21</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7e9584ecdb2ccf40d596327e9d961922"/>
+</record_update>

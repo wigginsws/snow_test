@@ -6,7 +6,7 @@
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-23 19:55:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>003902cfdb040f0075ea38ff9d9619ce</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>594b5c39dbc04700d596327e9d9619eb</sys_name>

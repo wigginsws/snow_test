@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Expenditure Join Transform">9790f34fdb5fb20075ea38ff9d961906</map>
+        <map display_value="OASIS-Expenditure Join Transform">9790f34fdb5fb20075ea38ff9d961906</map>
         <reference_value_field/>
         <source_field>u_invoice_amt</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

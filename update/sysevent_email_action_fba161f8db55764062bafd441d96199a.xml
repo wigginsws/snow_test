@@ -3,7 +3,7 @@
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>false</action_insert>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <collection>x_norca_med_cam_claim</collection>
@@ -48,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fba161f8db55764062bafd441d96199a</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Need Additional Documentation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysevent_email_action_fba161f8db55764062bafd441d96199a</sys_update_name>
-        <sys_updated_by>austin@buildon.me</sys_updated_by>
-        <sys_updated_on>2017-03-03 03:27:03</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:09:46</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

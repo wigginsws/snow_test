@@ -19,9 +19,9 @@ camDataSyncUtils.updateParentValueList(cam.SCOPE_ID + "_entity", "classification
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>abhardwaj</sys_created_by>
         <sys_created_on>2017-05-03 20:32:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f4e78d8ddb6afa40d596327e9d96191c</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>CAM-Script-Daily Entity Classifications Update</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -29,7 +29,7 @@ camDataSyncUtils.updateParentValueList(cam.SCOPE_ID + "_entity", "classification
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_f4e78d8ddb6afa40d596327e9d96191c</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-08 19:30:55</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:28</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

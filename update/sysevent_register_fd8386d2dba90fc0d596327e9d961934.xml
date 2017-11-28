@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Fired when a relevant update is made to an Entity Class record needing a commit to Oasis</description>
+        <event_name>x_norca_med_cam.oasis_update_entity_clas</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>oasis_update_entity_class</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-04 01:09:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fd8386d2dba90fc0d596327e9d961934</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_norca_med_cam.oasis_update_entity_clas</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_register_fd8386d2dba90fc0d596327e9d961934</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-04 02:04:49</sys_updated_on>
+        <table>x_norca_med_cam_entity_class</table>
+    </sysevent_register>
+</record_update>

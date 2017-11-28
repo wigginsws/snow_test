@@ -35,9 +35,9 @@ gs.info("[populateCELPKInClaim] Updated " + i + " rows");]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-07 03:18:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fad980f5db3ffa00d596327e9d96196d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CAM-Temp-Populate CEL PK in Claim</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -45,7 +45,7 @@ gs.info("[populateCELPKInClaim] Updated " + i + " rows");]]></script>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_fad980f5db3ffa00d596327e9d96196d</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-10 11:28:57</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:19</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

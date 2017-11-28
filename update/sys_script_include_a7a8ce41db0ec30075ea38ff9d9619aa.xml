@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_ajax_DiaryUtils</api_name>
+        <client_callable>true</client_callable>
+        <description>Diary - Default Configuration</description>
+        <name>cam_ajax_DiaryUtils</name>
+        <script><![CDATA[gs.include('global.DurationCalculator');
+var cam_ajax_DiaryUtils = Class.create();
+cam_ajax_DiaryUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getDefaults: function() {
+
+		
+		var val_dta = '';
+		var sdesc = '';
+		var ldesc = '';
+		var mopt = '';
+		var dur = '';
+		var sched_id = '';
+		var due_date = '';
+ 		var diary_value = this.getParameter('sysparm_diary_value');
+		
+		var gr = new GlideRecord('x_norca_med_cam_menus'); //GlideAggregate query
+		gr.addQuery('menu_name','Diary');
+		gr.addQuery('menu_value',diary_value);
+		gr.query();
+		while(gr.next()){
+			
+			sdesc = gr.getValue('menu_item');
+			ldesc = gr.getValue('menu_comment');
+			mopt  = gr.getValue('menu_option');
+			dur = gr.menu_duration;
+			sched_id = gr.getValue('reference_id');
+		}
+
+		val_dta = this.newItem("result");
+		val_dta.setAttribute("item", sdesc);
+		val_dta.setAttribute("comment", ldesc);
+		val_dta.setAttribute("option", mopt);
+				
+		var curdt = new GlideDateTime();
+		val_dta.setAttribute("startdt", curdt.getDisplayValue());
+		
+		var duration = new GlideDuration();
+		duration.setValue(dur);
+		var sched;
+		if (sched_id !== null){
+			sched = new GlideSchedule(sched_id);
+		} else {
+			sched = new GlideSchedule();
+		}
+		
+		var duedt = sched.add(curdt, duration);
+		val_dta.setAttribute("duedt", duedt.getDisplayValue());
+		
+		return  val_dta;
+	}
+	
+	//type: 'cam_ajax_DiaryUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mlindsay</sys_created_by>
+        <sys_created_on>2017-10-25 02:20:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a7a8ce41db0ec30075ea38ff9d9619aa</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_name>cam_ajax_DiaryUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_a7a8ce41db0ec30075ea38ff9d9619aa</sys_update_name>
+        <sys_updated_by>mlindsay</sys_updated_by>
+        <sys_updated_on>2017-11-01 21:49:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

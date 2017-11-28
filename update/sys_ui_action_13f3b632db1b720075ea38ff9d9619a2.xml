@@ -6,8 +6,8 @@
         <client>false</client>
         <comments>Saves a new record and redirects back to self (button version, advanced mode)</comments>
         <condition>isAdvancedUI() &amp;&amp; current.canCreate()</condition>
-        <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <hint>Save record and remain here</hint>
@@ -37,7 +37,7 @@ au.postInsert(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13f3b632db1b720075ea38ff9d9619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Submit &amp; Stay</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -45,8 +45,8 @@ au.postInsert(current);]]></script>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_action_13f3b632db1b720075ea38ff9d9619a2</sys_update_name>
-        <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-06-15 21:37:51</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:53:48</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-10 19:16:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d0a38f3adbbfb24075ea38ff9d9619cf</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>x_norca_med_cam_coverage.x_norca_med_cam.admin</sys_name>

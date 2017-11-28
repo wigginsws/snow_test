@@ -4,7 +4,7 @@
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>u_county</element>
             <help/>
-            <hint>County of Insured's practice</hint>
+            <hint>County Where Claim Occurred</hint>
             <label>County</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
@@ -12,17 +12,17 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>roshan@buildon.me</sys_created_by>
             <sys_created_on>2017-04-13 02:47:08</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>ea555e5edb827600394af9361d9619ea</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_name>County</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_documentation_x_norca_med_cam_claim_u_county_en</sys_update_name>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-19 18:50:06</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-06 15:58:40</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-05-12 20:16:54</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>36bb133bdb263ec0d596327e9d961978</sys_id>
             <sys_mod_count>3</sys_mod_count>
             <sys_name>Claim State</sys_name>

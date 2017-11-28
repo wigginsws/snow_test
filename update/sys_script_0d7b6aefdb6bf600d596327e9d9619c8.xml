@@ -35,30 +35,32 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 //query to see if a diary item exist for completing the report
 	var gr = new GlideRecord('x_norca_med_cam_diary');
-	gr.addQuery('claim', current.sys_id);
-	gr.addQuery('diary_type', 'state_payment_reporting_req');
+	var sR = 'state_specific_report';
+	gr.addEncodedQuery('claim=' + current.sys_id + '^diary_type='+ sR);
 	gr.query();
 	if(gr.hasNext()){
-		gs.addErrorMessage("There is an existing diary item for state reporting");
+		//gs.info("[existingDiary] for " + current.number );
 	}
 
-	else if (!gr.hasNext()){
+	else {
 	//create new diary item
 	
 	var di = new GlideRecord('x_norca_med_cam_diary');
 	di.newRecord();
 	di.setValue('claim', current.sys_id);
 	di.setValue('assigned_to', current.assigned_to);
-	di.setValue('diary_type', 'state_payment_reporting_req');
+	di.setValue('diary_type', 'state_specific_report');
 	di.insert();
-	
+	gs.addInfoMessage(di.number +  " has been created for the C416 report");
+		
 	var br = new GlideRecord('sys_script');
-	br.addQuery('name', 'CAM-Claim-Open Diary Item - C416');
-	br.query();
-	while(br.next()){
-		GlideSysAttachment.copy(br.getTableName(), br.sys_id, di.getTableName(), di.sys_id);
-	}
+	if(br.get('0d7b6aefdb6bf600d596327e9d9619c8')){
 
+		gs.debug('[addC416report] Report has been added to ' + di.number);
+		var attach = new GlideSysAttachment();
+		attach.copy(br.getTableName(), br.sys_id, di.getTableName(), di.sys_id);
+
+	}
 }
 	
 	
@@ -67,11 +69,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-06-30 15:10:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0d7b6aefdb6bf600d596327e9d9619c8</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>CAM-CLAIM-Open Diary Item - C416</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -80,7 +82,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_0d7b6aefdb6bf600d596327e9d9619c8</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-31 19:07:29</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:40:20</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

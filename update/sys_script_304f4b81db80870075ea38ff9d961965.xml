@@ -16,7 +16,7 @@
         <condition/>
         <description>After a record is inserted, updated or deleted into the Transaction Table, this business rule recalculates the transaction related to the claim and updates the Reserve Record.  This rule will not fire if the activity type of the transaction is "Update Expense Reserve" or "Update Indemnity Reserve".</description>
         <execute_function>false</execute_function>
-        <filter_condition table="x_norca_med_cam_expenditure_view">activityNOT INupdate_exp_res,update_ind_res,reserve_worksheet^EQ<item endquery="false" field="activity" goto="false" newquery="false" operator="NOT IN" or="false" value="update_exp_res,update_ind_res,reserve_worksheet"/>
+        <filter_condition table="x_norca_med_cam_expenditure_view">activityNOT INreserve_not_final,update_exp_res,update_ind_res,reserve_worksheet^EQ<item endquery="false" field="activity" goto="false" newquery="false" operator="NOT IN" or="false" value="reserve_not_final,update_exp_res,update_ind_res,reserve_worksheet"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -31,7 +31,8 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
+	var fr=current.firm_reserve;
+	var ctt=current.trans_type;
 	var gr1 = new GlideAggregate('x_norca_med_cam_expenditure_view');
 	gr1.groupBy('trans_type');
 	gr1.addQuery('claim_number', current.claim_number);
@@ -52,134 +53,130 @@
 	var p_refund_specl=0.00;
 	var p_spec=0.00;
 	var amt=0.00;
-	//gs.info('gr1 rowcount: '+gr1.getRowCount());
 	while(gr1.next()){
 		
 		amt = gr1.getAggregate('SUM','transaction_amount');
-		//gs.info('1. transtype: '+gr1.trans_type + ' amt: '+ amt);
 		
 		if(gr1.trans_type=='Court Fees'){
 			court_fees=amt;}
-		
-		if(gr1.trans_type=='Expense Paymt'){ 
+			
+		if(gr1.trans_type=='Expense Paymt'){
 			expense_pmt=amt;}
-		
-		if(gr1.trans_type=='Expense Res'){ 
+				
+		if(gr1.trans_type=='Expense Res'){
 			expense_res=amt; }
-		
-		if(gr1.trans_type=='Indemnity Paymt'){ 
+					
+		if(gr1.trans_type=='Indemnity Paymt'){
 			indem_pmt=amt; }
-		
+						
 		if(gr1.trans_type=='Indemnity Res'){
-			indem_res=amt; }
-		
-		if(gr1.trans_type=='Lawyer'){ 
+			indem_res=amt;}
+							
+		if(gr1.trans_type=='Lawyer'){
 			lawyer=amt; }
-		
+								
 		if(gr1.trans_type=='Manual Exp'){
 			man_exp=amt; }
-		
-		if(gr1.trans_type=='N-Manual Ind'){ 
+									
+		if(gr1.trans_type=='N-Manual Ind'){
 			n_man_ind=amt; }
-		
+										
 		if(gr1.trans_type=='P-MCARE Ind Res'){
 			p_mcare=amt; }
-		
-		if(gr1.trans_type=='P-Refund Exp'){ 
+											
+		if(gr1.trans_type=='P-Refund Exp'){
 			p_refund_exp=amt; }
-		
-		if(gr1.trans_type=='P-Refund Indem'){ 
+												
+		if(gr1.trans_type=='P-Refund Indem'){
 			p_refund_indem=amt;}
-		
+													
 		if(gr1.trans_type=='P-Refund Specl'){
 			p_refund_specl=amt; }
-		
+														
 		if(gr1.trans_type=='P-Spec Ind Pay'){
 			p_spec=amt; }
-		}
-													
-		var gr2 = new GlideRecord('x_norca_med_cam_reserves');
-		gr2.addQuery('claim_number',current.claim_number);
-		gr2.setLimit(1);
-		gr2.query();
+	}
+														
+	var gr2 = new GlideRecord('x_norca_med_cam_reserves');						
+	gr2.addQuery('claim_number',current.claim_number);
+	gr2.setLimit(1);
+	gr2.query();
 		if (gr2.getRowCount()==1){
-	//		gs.info('2. reserve record count:' +gr2.getRowCount());
-				while(gr2.next()){
-					gr2.court_fees=court_fees;
-					gr2.expense_paymt=expense_pmt;
-					gr2.expense_res=expense_res;
-					gr2.indemnity_payment=indem_pmt;
-					gr2.indemnity_res=indem_res;
-					gr2.lawyer=lawyer;
-					gr2.manual_exp=man_exp;
-					gr2.n_manual_ind=n_man_ind;
-					gr2.p_mcare_ind_res=p_mcare;
-					gr2.p_refund_exp=p_refund_exp;
-					gr2.p_refund_indem=p_refund_indem;
-					gr2.p_refund_specl=p_refund_specl;
-					gr2.p_spec_ind_pay=p_spec;
-					
-					var totalExpensePmt = parseFloat(expense_pmt) + parseFloat(man_exp) + parseFloat(p_refund_exp) + parseFloat(court_fees) + parseFloat(lawyer) + parseFloat(p_refund_specl);
-					gr2.total_expense_payments=totalExpensePmt;
-	//				gs.info(totalExpensePmt + ' totalexpensepmt 3');
-					var totalIndemnityPmt=parseFloat(indem_pmt)+parseFloat(n_man_ind)+parseFloat(p_refund_indem)+parseFloat(p_spec);
-					gr2.total_indemnity_payments=totalIndemnityPmt;
-	//				gs.info(totalIndemnityPmt + ' totalindemnitypmt 4');
-					var totalReserve=parseFloat(expense_res)+parseFloat(indem_res)+parseFloat(p_mcare);
-					gr2.total_reserve=totalReserve;
-	//				gs.info(totalReserve + ' totalreserve 5');
-					var remainingReserve=parseFloat(totalReserve)-parseFloat(totalExpensePmt)-parseFloat(totalIndemnityPmt);
-					gr2.remaining_reserve=remainingReserve;
-	//				gs.info(remainingReserve + ' remainingreserve 6');
-					var remaining_expense=parseFloat(expense_res)-parseFloat(totalExpensePmt);
-					var remaining_indemnity=parseFloat(indem_res)+parseFloat(p_mcare)-parseFloat(totalIndemnityPmt);
-					gr2.remaining_expense=remaining_expense;
-					gr2.remaining_indemnity=remaining_indemnity;
+			while(gr2.next()){
+				gr2.court_fees=court_fees;
+				gr2.expense_paymt=expense_pmt;
+				gr2.expense_res=expense_res;
+				gr2.indemnity_payment=indem_pmt;
+				gr2.indemnity_res=indem_res;
+				gr2.lawyer=lawyer;
+				gr2.manual_exp=man_exp;
+				gr2.n_manual_ind=n_man_ind;
+				gr2.p_mcare_ind_res=p_mcare;
+				gr2.p_refund_exp=p_refund_exp;
+				gr2.p_refund_indem=p_refund_indem;															
+				gr2.p_refund_specl=p_refund_specl;
+				gr2.p_spec_ind_pay=p_spec;
+				var totalExpensePmt = parseFloat(expense_pmt) + parseFloat(man_exp) + parseFloat(p_refund_exp) + parseFloat(court_fees) + parseFloat(lawyer) + parseFloat(p_refund_specl);	
+				gr2.total_expense_payments=totalExpensePmt;
+				var totalIndemnityPmt = parseFloat(indem_pmt) + parseFloat(n_man_ind) +  parseFloat(p_refund_indem) + parseFloat(p_spec);
+				gr2.total_indemnity_payments=totalIndemnityPmt;
+				var totalReserve=parseFloat(expense_res)+parseFloat(indem_res)+parseFloat(p_mcare);
+				gr2.total_reserve=totalReserve;
+				var remainingReserve=parseFloat(totalReserve)-parseFloat(totalExpensePmt)-parseFloat(totalIndemnityPmt);								gr2.remaining_reserve=remainingReserve;
+				var remaining_expense=parseFloat(expense_res)-parseFloat(totalExpensePmt);
+				var remaining_indemnity=parseFloat(indem_res)+parseFloat(p_mcare)-parseFloat(totalIndemnityPmt);
+				gr2.remaining_expense=remaining_expense;
+				gr2.remaining_indemnity=remaining_indemnity;
+				if(current.trans_type=='Indemnity Res'&& current.datetimeforupdatetrigger==''){
+					gr2.final_review=current.firm_reserve;
+				}
 					gr2.update();
-					}
 				}
-			else{
-		//			gs.info('Reserves: create record');
-					gr2=new GlideRecord('x_norca_med_cam_reserves');
-					gr2.initialize();
-					gr2.claim_number=current.claim_number;
-					gr2.court_fees=court_fees;
-					gr2.expense_paymt=expense_pmt;
-					gr2.expense_res=expense_res;
-					gr2.indemnity_payment=indem_pmt;
-					gr2.indemnity_res=indem_res;
-					gr2.lawyer=lawyer;
-					gr2.manual_exp=man_exp;
-					gr2.n_manual_ind=n_man_ind;
-					gr2.p_mcare_ind_res=p_mcare;
-					gr2.p_refund_exp=p_refund_exp;
-					gr2.p_refund_indem=p_refund_indem;
-					gr2.p_refund_specl=p_refund_specl;
-					gr2.p_spec_ind_pay=p_spec;
-					var totalExpensePmt2 = parseFloat(expense_pmt) + parseFloat(man_exp) + parseFloat(p_refund_exp) + parseFloat(court_fees) + parseFloat(lawyer) + parseFloat(p_refund_specl);
-					gr2.total_expense_payments=totalExpensePmt2;
-	//				gs.info(totalExpensePmt + ' totalexpensepmt 3');
-					var totalIndemnityPmt2=parseFloat(indem_pmt)+parseFloat(n_man_ind)+parseFloat(p_refund_indem)+parseFloat(p_spec);
-					gr2.total_indemnity_payments=totalIndemnityPmt2;
-	//				gs.info(totalIndemnityPmt + ' totalindemnitypmt 4');
-					var totalReserve2=parseFloat(expense_res)+parseFloat(indem_res)+parseFloat(p_mcare);
-					gr2.total_reserve=totalReserve2;
-	//				gs.info(totalReserve + ' totalreserve 5');
-					var remainingReserve2=parseFloat(totalReserve2)-parseFloat(totalExpensePmt2)-parseFloat(totalIndemnityPmt2);
-					gr2.remaining_reserve=remainingReserve2;
-	//				gs.info(remainingReserve + ' remainingreserve 6');
-					gr2.insert();
 				}
-													
-})(current, previous);]]></script>
+		else{
+			gr2=new GlideRecord('x_norca_med_cam_reserves');
+			gr2.initialize();
+			gr2.claim_number=current.claim_number;
+				if(current.trans_type=='Indemnity Res'&& current.datetimeforupdatetrigger==''){
+					gr2.final_review=current.firm_reserve;
+				}				
+			gr2.court_fees=court_fees;					
+			gr2.expense_paymt=expense_pmt;
+			gr2.expense_res=expense_res;
+			gr2.indemnity_payment=indem_pmt;
+			gr2.indemnity_res=indem_res;
+			gr2.lawyer=lawyer;
+			gr2.manual_exp=man_exp;
+			gr2.n_manual_ind=n_man_ind;
+			gr2.p_mcare_ind_res=p_mcare;
+			gr2.p_refund_exp=p_refund_exp;
+			gr2.p_refund_indem=p_refund_indem;
+			gr2.p_refund_specl=p_refund_specl;
+			gr2.p_spec_ind_pay=p_spec;
+			var totalExpensePmt2 = parseFloat(expense_pmt) + parseFloat(man_exp) + parseFloat(p_refund_exp) + parseFloat(court_fees) + parseFloat(lawyer) + parseFloat(p_refund_specl);
+			gr2.total_expense_payments=totalExpensePmt2;
+	
+			var totalIndemnityPmt2=parseFloat(indem_pmt)+parseFloat(n_man_ind)+parseFloat(p_refund_indem)+parseFloat(p_spec);
+			gr2.total_indemnity_payments=totalIndemnityPmt2;
+			var totalReserve2=parseFloat(expense_res)+parseFloat(indem_res)+parseFloat(p_mcare);
+			gr2.total_reserve=totalReserve2;
+			var remainingReserve2=parseFloat(totalReserve2)-parseFloat(totalExpensePmt2)-parseFloat(totalIndemnityPmt2);
+			gr2.remaining_reserve=remainingReserve2;
+			gr2.insert();
+			
+		}
+})(current, previous);
+
+
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-17 19:54:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>304f4b81db80870075ea38ff9d961965</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>CAM-EXP-CalcReserve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -187,8 +184,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_304f4b81db80870075ea38ff9d961965</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-07 16:44:45</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-09-28 12:03:24</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

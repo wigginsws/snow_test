@@ -14,7 +14,7 @@
         <sys_class_name>sysevent_email_template</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-04-25 23:20:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>35b2206edb12f60075ea38ff9d9619fa</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>mailto.reject</sys_name>

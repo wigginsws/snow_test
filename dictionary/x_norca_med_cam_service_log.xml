@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Service Log" max_length="40" name="x_norca_med_cam_service_log" type="collection">
+        <element label="Endpoint" max_length="1024" name="endpoint" read_only="true" type="url"/>
+        <element label="Message Function Name" max_length="40" name="message_function_name" read_only="true" type="string"/>
+        <element label="Message Name" max_length="40" name="message_name" read_only="true" type="string"/>
+        <element choice="1" label="Message Type" max_length="40" name="message_type" read_only="true" reference="sys_soap_message_function" type="choice">
+            <choice>
+                <element label="REST" value="rest"/>
+                <element label="SOAP" value="soap"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element dependent="related_table" dependent_on_field="related_table" label="Related Record" max_length="32" name="related_record" read_only="true" type="document_id" use_dependent_field="true"/>
+        <element label="Related Table" max_length="80" name="related_table" read_only="true" type="table_name"/>
+        <element label="Request" max_length="30000" name="request" read_only="true" type="string"/>
+        <element label="Response" max_length="30000" name="response" read_only="true" type="string"/>
+        <element label="Response Code" max_length="3" name="response_code" read_only="true" type="string"/>
+        <index name="index">
+            <element name="related_record"/>
+        </index>
+    </element>
+</database>

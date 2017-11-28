@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-07-22 00:54:47</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>358ab06edb00cb0075ea38ff9d9619de</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>disposition</sys_name>

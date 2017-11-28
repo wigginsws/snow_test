@@ -3,143 +3,199 @@
     <sys_ui_related sys_domain="global" table="x_norca_med_cam_claim" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>0</position>
             <related_list>REL:e869a3badbd4cb40d596327e9d96194d</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>eef9e7fadbd4cb40d596327e9d96194a</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>16b75857dba10f4075ea38ff9d961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>1</position>
             <related_list>REL:81aa99d2db58c740d596327e9d9619af</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>e6f9e7fadbd4cb40d596327e9d96194b</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>dab75857dba10f4075ea38ff9d96198d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>2</position>
             <related_list>x_norca_med_cam_diary.claim</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>eaf9e7fadbd4cb40d596327e9d96194b</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>deb75857dba10f4075ea38ff9d96198d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>3</position>
             <related_list>REL:88126974dbda3a00394af9361d961926</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>eef9e7fadbd4cb40d596327e9d96194b</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d2b75857dba10f4075ea38ff9d96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>4</position>
             <related_list>REL:c121fdf4db127a8062bafd441d961934</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>e2f9e7fadbd4cb40d596327e9d96194c</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d6b75857dba10f4075ea38ff9d96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>5</position>
             <related_list>x_norca_med_cam_expenditure_view.claim_number</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>e6f9e7fadbd4cb40d596327e9d96194c</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>dab75857dba10f4075ea38ff9d96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>6</position>
             <related_list>x_norca_med_cam_reserves.claim_number</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>eaf9e7fadbd4cb40d596327e9d96194c</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>deb75857dba10f4075ea38ff9d96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>7</position>
             <related_list>x_norca_med_cam_claim_entry_log.u_claim_id</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>eef9e7fadbd4cb40d596327e9d96194c</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d2b75857dba10f4075ea38ff9d96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>8</position>
             <related_list>x_norca_med_cam_coverage_review.claim</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>e2f9e7fadbd4cb40d596327e9d96194d</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d6b75857dba10f4075ea38ff9d96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">26f9e7fadbd4cb40d596327e9d96194a</list_id>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
             <order_by/>
             <position>9</position>
             <related_list>x_norca_med_cam_state_reporting_claim.claim</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_id>e6f9e7fadbd4cb40d596327e9d96194d</sys_id>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>dab75857dba10f4075ea38ff9d96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
+            <order_by/>
+            <position>10</position>
+            <related_list>REL:5949cab8dba88b4075ea38ff9d96196f</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>deb75857dba10f4075ea38ff9d96198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
+            <order_by/>
+            <position>11</position>
+            <related_list>x_norca_med_cam_email.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d2b75857dba10f4075ea38ff9d961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
+            <order_by/>
+            <position>12</position>
+            <related_list>REL:8d0e7d90db61074075ea38ff9d96193a</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>d6b75857dba10f4075ea38ff9d961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Claim - Default view" name="x_norca_med_cam_claim" related_list="NULL" sys_domain="global" view="Default view">96b75857dba10f4075ea38ff9d961973</list_id>
+            <order_by/>
+            <position>13</position>
+            <related_list>REL:fe9c0c8edbed8bc0d596327e9d9619fc</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_id>dab75857dba10f4075ea38ff9d961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Claim - Default view</calculated_name>
@@ -150,11 +206,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 18:35:06</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_on>2017-10-06 19:51:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>26f9e7fadbd4cb40d596327e9d96194a</sys_id>
+            <sys_id>96b75857dba10f4075ea38ff9d961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Claim - Default view</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -163,7 +219,7 @@
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_related_x_norca_med_cam_claim_null</sys_update_name>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 18:35:06</sys_updated_on>
+            <sys_updated_on>2017-10-06 19:51:55</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

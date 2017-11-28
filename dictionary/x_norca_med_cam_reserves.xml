@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Reserves" max_length="40" name="x_norca_med_cam_reserves" type="collection">
+        <element label="Case" max_length="32" name="case_number" reference="x_norca_med_cam_case" type="reference"/>
         <element label="Claim Number" max_length="32" name="claim_number" read_only="true" reference="x_norca_med_cam_claim" type="reference"/>
         <element label="Court Fees" max_length="20" name="court_fees" read_only="true" type="currency"/>
         <element label="Expense Paymt" max_length="20" name="expense_paymt" read_only="true" type="currency"/>
         <element label="Expense Res" max_length="20" name="expense_res" read_only="true" type="currency"/>
-        <element label="Final Review" max_length="40" name="final_review" read_only="true" type="boolean"/>
+        <element choice="3" default="No" label="Final Review" max_length="40" name="final_review" type="choice">
+            <choice>
+                <element label="No" value="No"/>
+                <element label="Yes" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Reserve Review Date" max_length="40" name="firm_reserve_dt" read_only="true" type="glide_date_time"/>
         <element label="Indemnity Payment" max_length="20" name="indemnity_payment" read_only="true" type="currency"/>
         <element label="Indemnity Res" max_length="20" name="indemnity_res" read_only="true" type="currency"/>
+        <element default="0" label="Last Committed Update" max_length="40" name="last_committed_update" type="integer"/>
         <element label="Last Reviewed" max_length="40" name="last_reviewed" read_only="true" type="glide_date_time"/>
         <element label="Lawyer" max_length="20" name="lawyer" read_only="true" type="currency"/>
         <element label="Manual Exp" max_length="20" name="manual_exp" read_only="true" type="currency"/>
         <element label="N-Manual Ind" max_length="20" name="n_manual_ind" read_only="true" type="currency"/>
+        <element label="Previous Expense Res" max_length="20" name="previous_expense_res_amount" read_only="true" type="currency"/>
+        <element label="Previous Indemnity Res" max_length="20" name="previous_indemnity_res_amount" read_only="true" type="currency"/>
         <element label="P-MCARE Ind Res" max_length="20" name="p_mcare_ind_res" read_only="true" type="currency"/>
         <element label="P-Refund Exp" max_length="20" name="p_refund_exp" read_only="true" type="currency"/>
         <element label="P-Refund Indem" max_length="20" name="p_refund_indem" read_only="true" type="currency"/>
@@ -25,6 +35,9 @@
         <element label="Total Indemnity Payments" max_length="20" name="total_indemnity_payments" read_only="true" type="currency"/>
         <element label="Total Reserve" max_length="20" name="total_reserve" read_only="true" type="currency"/>
         <index name="index">
+            <element name="case_number"/>
+        </index>
+        <index name="index2">
             <element name="claim_number"/>
         </index>
     </element>

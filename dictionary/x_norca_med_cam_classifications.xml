@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="classifications" max_length="40" name="x_norca_med_cam_classifications" type="collection">
+        <element attributes="import_attribute_name=Dependent value,edge_encryption_enabled=true" label="Dependent value" max_length="40" name="u_dependent_value" type="string"/>
+        <element attributes="import_attribute_name=Domain,edge_encryption_enabled=true" label="Domain" max_length="40" name="u_domain" type="string"/>
+        <element attributes="import_attribute_name=Element,edge_encryption_enabled=true" label="Element" max_length="40" name="u_element" type="string"/>
+        <element attributes="import_attribute_name=Hint,edge_encryption_enabled=true" label="Hint" max_length="40" name="u_hint" type="string"/>
+        <element attributes="import_attribute_name=Inactive,edge_encryption_enabled=true" label="Inactive" max_length="40" name="u_inactive" type="string"/>
+        <element attributes="import_attribute_name=Label,edge_encryption_enabled=true" label="Label" max_length="40" name="u_label" type="string"/>
+        <element attributes="import_attribute_name=Language,edge_encryption_enabled=true" label="Language" max_length="40" name="u_language" type="string"/>
+        <element attributes="import_attribute_name=Sequence,edge_encryption_enabled=true" label="Sequence" max_length="40" name="u_sequence" type="string"/>
+        <element attributes="import_attribute_name=Table,edge_encryption_enabled=true" label="Table" max_length="40" name="u_table" type="string"/>
+        <element attributes="import_attribute_name=Value,edge_encryption_enabled=true" label="Value" max_length="40" name="u_value" type="string"/>
+    </element>
+</database>

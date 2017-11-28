@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+    "entity_role_pk":${EntityRoleID}, &#13;
+    "entity_fk": "${EntityID}",&#13;
+    "role_type_code":"${RoleTypeCode}",&#13;
+    "source_record_fk": "${SourceRecordID}",&#13;
+    "source_table_name": "${SourceTableName}",&#13;
+    "external_id": "${ExternalID}",&#13;
+    "effective_from_date": "${EffectiveFromDate}",&#13;
+    "effective_to_date": "${EffectiveToDate}",&#13;
+    "update_ind": "${UpdateIndicator}",&#13;
+    "claim_pk": "${ClaimID}",&#13;
+    "age_at_loss": "${AgeAtLoss}",&#13;
+    "age_at_loss_type": "${AgeLossType}"&#13;
+	&#13;
+}</content>
+        <function_name>SaveParticipant</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>CAM-ClaimParticipant [ SaveParticipant ]</qualified_name>
+        <rest_endpoint>http://norcalapi-dev.norcalmutual.com/api/SaveParticipant</rest_endpoint>
+        <rest_message display_value="CAM-ClaimParticipant">c866bc05db3c4b00d596327e9d961912</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>blivesay</sys_created_by>
+        <sys_created_on>2017-08-23 16:38:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>45e4c981db7c4b00d596327e9d96199f</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>SaveParticipant</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_rest_message_fn_45e4c981db7c4b00d596327e9d96199f</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:11:50</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

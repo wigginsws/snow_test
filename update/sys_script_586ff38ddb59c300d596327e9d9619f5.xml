@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_entity</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_entity">sys_updated_by!=oasissn^new_ent_address_line_1ISEMPTY^new_ent_cityISEMPTY^new_ent_stateNOT INAL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VI,VA,WA,WV,WI,WY,Unknown^EQ<item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="oasissn"/>
+            <item endquery="false" field="new_ent_address_line_1" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="new_ent_city" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="new_ent_state" goto="false" newquery="false" operator="NOT IN" or="false" value="AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VI,VA,WA,WV,WI,WY,Unknown"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Please complete the Primary Address fields for this entity.</p>]]></message>
+        <name>CAM-ENTITY-Primary address check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/){
+	a=gs.getUserID();
+if (current.operation=='insert' && a!='oasissn'){
+	if (!current.classification || current.getValue("classification").indexOf("CLAIMANT")<0) {
+		gs.addErrorMessage("Please provide Primary Address information for this Person/Organization.");
+		current.setAbortAction(true);
+	}
+}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-18 02:54:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>586ff38ddb59c300d596327e9d9619f5</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>CAM-ENTITY-Primary address check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_586ff38ddb59c300d596327e9d9619f5</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-11-01 19:57:00</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=586ff38ddb59c300d596327e9d9619f5"/>
+</record_update>

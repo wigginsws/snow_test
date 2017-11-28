@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_properties</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_properties">name=x_norca_med_cam.oasis_ws_endpoint^ORname=x_norca_med_cam.ir_ws_endpoint^valueVALCHANGES^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="x_norca_med_cam.oasis_ws_endpoint"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="x_norca_med_cam.ir_ws_endpoint"/>
+            <item endquery="false" field="value" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-SPROP-Update SOAP Fn Endpoints</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>x_norca_med_cam.admin</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if (current.name == "x_norca_med_cam.oasis_ws_endpoint") {
+		var oasisRegex = /(https?\:\/\/\w+\.norcalmutual\.com\:?\d*\/\w+)\//;
+		var oasisFnGR = new GlideRecord("sys_soap_message_function");
+		oasisFnGR.addQuery("sys_scope", "4427741adb53fe8023cdd92b5e961942");
+		var joinGR = oasisFnGR.addJoinQuery("sys_soap_message", "soap_message", "sys_id");
+		joinGR.addCondition( "name", "STARTSWITH", "CAM-OASIS");
+		oasisFnGR.query();
+		while (oasisFnGR.next()) {
+			var endpoint = oasisFnGR.getValue("soap_endpoint");
+			var arr = endpoint.match(oasisRegex);
+			if (arr && arr.length>0) {
+				endpoint = endpoint.replace( arr[arr.length-1], current.value); //gs.getProperty("x_norca_med_cam.oasis_ws_endpoint")
+				oasisFnGR.setValue("soap_endpoint", endpoint);
+				oasisFnGR.update();
+				gs.info("[updateOasisWsSettings] updated endpoint to " + endpoint + " for message " + oasisFnGR.function_name);
+
+			} else {
+				gs.warn("[updateOasisWsSettings] regex did not match current endpoint " + endpoint + " for message " + oasisFnGR.function_name);
+			}
+		}
+	}
+	
+	if (current.name == "x_norca_med_cam.ir_ws_endpoint") {
+		var irFnGR = new GlideRecord("sys_soap_message_function");
+		irFnGR.addQuery("sys_scope", "4427741adb53fe8023cdd92b5e961942");
+		var irJoinGR = irFnGR.addJoinQuery("sys_soap_message", "soap_message", "sys_id");
+		irJoinGR.addCondition( "name", "STARTSWITH", "CAM-ImageRight");
+		irFnGR.query();
+		while (irFnGR.next()) {
+			irFnGR.setValue("soap_endpoint", current.value);
+			irFnGR.update();
+			gs.info("[updateOasisWsSettings] updated endpoint to " + current.value + " for message " + irFnGR.function_name);
+		}
+	}
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-07 05:11:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e30f7e9db050f0075ea38ff9d9619f6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CAM-SPROP-Update SOAP Fn Endpoints</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_0e30f7e9db050f0075ea38ff9d9619f6</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-18 15:40:15</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e30f7e9db050f0075ea38ff9d9619f6"/>
+</record_update>

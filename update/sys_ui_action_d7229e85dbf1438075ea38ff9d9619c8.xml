@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments>UI Action that can be used to retry update to Oasis if prior update has failed.</comments>
+        <condition>current.commit_status == "failure"</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <hint>Sends data from this record to Oasis</hint>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Commit Entity Class to Oasis</name>
+        <onclick/>
+        <order>900</order>
+        <script><![CDATA[new cam_DataSyncUtils().forceCommitToOasis(current, cam.SCOPE_ID + ".oasis_update_entity_clas");]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-12 15:16:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7229e85dbf1438075ea38ff9d9619c8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Commit Entity Class to Oasis</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_action_d7229e85dbf1438075ea38ff9d9619c8</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:53:24</sys_updated_on>
+        <table>x_norca_med_cam_entity_class</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

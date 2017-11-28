@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_cm_transaction_pk" label="CM_TRANSACTION_PK" language="en" table="u_case_expenditurejoin">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_cm_transaction_pk</element>
+            <help/>
+            <hint/>
+            <label>CM_TRANSACTION_PK</label>
+            <language>en</language>
+            <name>u_case_expenditurejoin</name>
+            <plural>CM_TRANSACTION_PKs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-15 16:01:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b2a99f1cdb15cf40d596327e9d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CM_TRANSACTION_PK</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_case_expenditurejoin_u_cm_transaction_pk_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-15 16:01:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

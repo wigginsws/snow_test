@@ -27,7 +27,7 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>abey@elucent.io</sys_created_by>
         <sys_created_on>2017-03-07 19:52:01</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9edc13e6db59f64062bafd441d9619e8</sys_id>

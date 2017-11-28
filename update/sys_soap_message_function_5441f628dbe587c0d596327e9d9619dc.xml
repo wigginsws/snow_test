@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:imag="http://imageright.com/imageright.webservice">
+   <soap:Header/>
+   <soap:Body>
+      <imag:FindFiles>
+         <imag:securityToken>${FindFiles.securityToken}</imag:securityToken>
+         <imag:locationId>${FindFiles.locationId}</imag:locationId>
+         <imag:fileNumber>${FindFiles.fileNumber}</imag:fileNumber>
+         <imag:getContent>${FindFiles.getContent}</imag:getContent>
+         <imag:includeDeleted>${FindFiles.includeDeleted}</imag:includeDeleted>
+      </imag:FindFiles>
+   </soap:Body>
+</soap:Envelope>]]></envelope>
+        <function_name>IRWebService40Soap12.FindFiles-CAM</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>CAM-ImageRight-All [ IRWebService40Soap12.FindFiles-CAM ]</qualified_name>
+        <soap_action>http://imageright.com/imageright.webservice/FindFiles</soap_action>
+        <soap_endpoint>http://pairtestapp2/imageright.webservice/irwebservice40.asmx</soap_endpoint>
+        <soap_message display_value="CAM-ImageRight-All">b02c69b3db7f3240d596327e9d9619c3</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-28 17:59:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5441f628dbe587c0d596327e9d9619dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IRWebService40Soap12.FindFiles-CAM</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_soap_message_function_5441f628dbe587c0d596327e9d9619dc</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:13:08</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

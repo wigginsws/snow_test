@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>/(CLAIM|DIARY)#:*\S+/ig.test(email.subject)</condition_script>
+        <description>This inbound email action is triggered when an email is sent to ServiceNow and:&#13;
+&#13;
+1. The email is a forward.&#13;
+2. The email being forwarded has one or more claims IDs in the subject line.&#13;
+&#13;
+All claim IDs are pulled and searched for in the system.&#13;
+Any claim IDs found will have the email body added to the activity of that claim.&#13;
+The first claim found will also have the email Target set to that claim.&#13;
+Any claim IDs not found will be mentioned in an email sent back to the email address that forwarded the claim with the message that the claim IDs could not be found in the system.&#13;
+</description>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Update claim with forwarded email</name>
+        <order>1</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[/* Debug  */
+var debug = true;
+function debugMessage(msg){
+	if (debug){
+		gs.info(msg);
+	}
+}
+
+
+UpdateRecordsWithForwardedEmail();
+
+function UpdateRecordsWithForwardedEmail() {
+	var scriptName = '[Inbound action] [Update claim with forwarded email]';
+	
+	/* Email variables  */
+	
+	var emailSysId = sys_email.sys_id;
+	var emailSubject = email.subject;
+	
+	
+	/* Claim variables and record */
+	
+	// Extract case, claim, and diary entries IDs from email subject using regex to detect a prefix followed by non-whitespace characters
+	var regExpClaims = /CLAIM#:*\S+/ig; // regex: 'CLAIM#' or 'CLAIM#:' followed by non-whitespace
+	var regExpClaimPrefix = /CLAIM#:*/i;
+	var regExpDiaryEntries = /DIARY#:*\S+/ig; // regex: 'DIARY#' or 'DIARY#:' followed by non-whitespace
+	var regExpDiaryPrefix = /DIARY#:*/i;
+	
+	var claimTable = 'x_norca_med_cam_claim';
+	var diaryTable = 'x_norca_med_cam_diary';
+	
+	var matches = [];
+	var claimNumberArray = [], diaryNumberArray = [];
+	var recordsFound = [], recordsNotFound = [], recordResults = [];
+	var recordSysId = '';
+	
+	// Add matching regex results to arrays
+	var str, tempArray;
+	
+	// Add regex-matched claims.
+	while (matches = regExpClaims.exec(emailSubject)) {
+		str = matches[0].replace(regExpClaimPrefix,'');
+		
+		// Parse out comma-separated claims.
+		tempArray = str.split(',');
+		claimNumberArray = claimNumberArray.concat(tempArray);
+	}
+	
+	// Add regex-matched diary entries.
+	while (matches = regExpDiaryEntries.exec(emailSubject)) {
+		str = matches[0].replace(regExpDiaryPrefix,'');
+		
+		// Parse out comma-separated diary entries.
+		tempArray = str.split(',');
+		diaryNumberArray = diaryNumberArray.concat(tempArray);
+	}
+	
+	// Debug - Show matches cases, claims, and diary entries
+	debugMessage(scriptName +  ' Claim(s) ' + claimNumberArray + ' | Diary Entry(ies) ' + diaryNumberArray);
+	
+	var emailTargetFlag = false;
+	
+	// Loop through array of claims
+	for (i = 0; i < claimNumberArray.length; i++) {
+		var claimNumber = claimNumberArray[i];
+		
+		// Get claim record
+		var gr = new GlideRecord(claimTable);
+		var queryStr = 'number=' + claimNumber;
+		gr.addEncodedQuery(queryStr);
+		gr.query();
+		
+		
+		// If a matching record is found, attach the email body. If it's the first match, associate the email
+		if(gr.next()) {
+			
+			// Get claim sys_id
+			recordSysId = gr.getUniqueValue();
+
+			// Associate the record to the email	
+			associateEmailWithTask(emailSysId, recordSysId);
+			
+			var att=new GlideRecord('sys_attachment');
+			att.addQuery('table_sys_id',emailSysId);
+			att.query();
+			
+			while(att.next()){
+				var claimdoc=new GlideRecord('x_norca_med_cam_claim_document');
+				claimdoc.initialize();
+				claimdoc.claim=recordSysId;
+				claimdoc.folder_name='9998';
+				claimdoc.type='EXTE';
+				claimdoc.name=att.file_name;
+				claimdoc.setWorkflow(true);
+				var cd_id=claimdoc.insert();
+				
+				att.table_sys_id=cd_id;
+				att.table_name='x_norca_med_cam_claim_document';
+				att.setWorkflow(true);
+				att.update();
+			}
+			
+			
+			
+			/* Attach the email body to the content */
+			/*
+			// Add an entry to the work notes
+			gr.work_notes = email.body_text;
+			
+			// Update record
+			gr.update();
+			*/
+			
+			/* Associate this claim with email record with first match */
+
+			if (!emailTargetFlag) {
+				changeEmailTarget(emailSysId, claimTable, recordSysId);
+				emailTargetFlag = true;
+			}
+			
+			// Add claim to found array
+			recordsFound.push('Claim ' + claimNumber);
+
+		}
+		else {
+			// Add claim to not found array
+			recordsNotFound.push(' Claim ' + claimNumber);
+		}
+	}
+	
+	// Loop through array of diary entries
+	for (i = 0; i < diaryNumberArray.length; i++) {
+		var diaryNumber = diaryNumberArray[i];
+		
+		// Get diary record
+		var gr = new GlideRecord(diaryTable);
+		var queryStr = 'number=' + diaryNumber;
+		gr.addEncodedQuery(queryStr);
+		gr.query();
+		
+		
+		// If a matching record is found, attach the email body and if it's the first match, set the email's target field to it
+		if(gr.next()) {
+			
+			// Get diary sys_id
+			recordSysId = gr.getUniqueValue();
+			
+			/* Attach the email body to the content */
+			
+			// Associate the record to the email
+			associateEmailWithTask(emailSysId, recordSysId);
+			
+			/* Associate this claim with email record with first match */
+			
+			if (!emailTargetFlag) {
+				changeEmailTarget(emailSysId, diaryTable, recordSysId);
+				emailTargetFlag = true;
+			}
+			
+			// Add claim to found array
+			recordsFound.push('Diary Entry ' + diaryNumber);
+			
+		}
+		else {
+			recordsNotFound.push(' Diary Entry ' + diaryNumber);
+		}
+	}
+	
+	// If a record wasn't found, send an email
+	if (recordsNotFound.length > 0) {
+		
+		// Get random record from table to trigger event
+		var gr3 = new GlideRecord('sys_email');
+		var queryStr3 = 'sys_id=' + emailSysId;
+		gr3.addEncodedQuery(queryStr3);
+		gr3.query();
+		
+		if(gr3.next()) {
+			// Combine arrays of records found and not found and separate them using a split index
+			var allRecords = [];
+			allRecords = allRecords.concat(recordsFound);
+			allRecords.push('SLICE');
+			allRecords = allRecords.concat(recordsNotFound);
+			
+			// Trigger event to send email that claim number wasn't found
+			gs.eventQueue('x_norca_med_cam.record_not_found_in_fwd', gr3, email.from, allRecords);
+			
+			// Debug
+			debugMessage(scriptName +  ' Records(s) not found: ' + recordsNotFound + ' . Sending notification to ' + email.from);
+		}
+	}
+}
+
+
+/*
+Change an email record's target_table and instance fields
+ */
+
+function changeEmailTarget(emailSysId, targetTable, targetSysId) {
+	// Get email record
+	var gr = new GlideRecord('sys_email');
+	var queryStr = 'sys_id=' + emailSysId;
+	gr.addEncodedQuery(queryStr);
+	gr.query();
+	
+	if(gr.next()) {
+		
+		// Change record values
+		gr.target_table = targetTable;
+		gr.instance = targetSysId;
+		
+		// Update record
+		gr.update();
+		
+		// Debug
+		debugMessage('changeEmailTarget(' + emailSysId + ', ' + targetTable + ', ' + targetSysId + ')');
+		
+
+		
+	}
+}
+
+/*
+Add a prefix to an array
+ */
+
+function addPrefixToArray(prefix, arr) {
+	var newArr = [];
+	for(var i = 0; i<arr.length; i++){
+		newArr[i] = prefix + arr[i];
+	}
+	return newArr;
+}
+
+/*
+Associate an email with a task
+ */
+
+function associateEmailWithTask(emailSysId, taskSydId) {
+	var emailGR = new GlideRecord('x_norca_med_cam_email');
+	var queryStr = 'email_id=' + emailSysId + '^task=' + taskSydId;
+	emailGR.addEncodedQuery(queryStr);
+	emailGR.query();
+	
+	
+	// If no matching record is found, create a new record
+	if(emailGR.next()) {
+		// Debug
+		debugMessage('associateEmailWithTask(): Duplicate record found for ' + emailSysId + ' and ' + taskSydId);
+	}
+	else {
+		emailGR.initialize();
+		emailGR.from = email.from;
+		emailGR.email_id = emailSysId;
+		emailGR.task = taskSydId;
+		emailGR.insert();
+		
+		
+	}}]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>asupsiri</sys_created_by>
+        <sys_created_on>2017-08-17 04:55:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f6ae772db64430075ea38ff9d961908</sys_id>
+        <sys_mod_count>184</sys_mod_count>
+        <sys_name>Update claim with forwarded email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_in_email_action_4f6ae772db64430075ea38ff9d961908</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:10:23</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <template/>
+        <type>forward</type>
+    </sysevent_in_email_action>
+</record_update>

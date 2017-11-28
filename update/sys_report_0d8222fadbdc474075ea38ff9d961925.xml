@@ -86,17 +86,17 @@
         <sys_created_on>2017-08-04 13:22:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0d8222fadbdc474075ea38ff9d961925</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Claims Without Defense Council</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Claims Without Defense Counsel</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_report_0d8222fadbdc474075ea38ff9d961925</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-08-24 00:29:10</sys_updated_on>
+        <sys_updated_on>2017-09-07 13:59:55</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
-        <title>Claims Without Defense Council</title>
+        <title>Claims Without Defense Counsel</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
@@ -105,7 +105,7 @@
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>true</use_color_palette>
-        <user>b41ebd69dbed3a0075ea38ff9d961962</user>
+        <user>group</user>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
         <x_axis_grid_dotted>false</x_axis_grid_dotted>

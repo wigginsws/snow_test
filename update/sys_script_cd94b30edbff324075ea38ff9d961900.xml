@@ -50,7 +50,7 @@
 			gr.u_incident_end_date = current.u_incident_end_date;
 		if (gr.u_insured != current.u_entity_insured_id)
 			gr.u_insured = current.u_entity_insured_id;
-		if (gr.policy != current.u_policy_id)
+		if (gr.policy != current.u_policy_id && gr.policy == '')
 			gr.policy = current.u_policy_id;
 		if (gr.report_date != current.u_report_date)
 			gr.report_date = current.u_report_date;
@@ -60,6 +60,9 @@
 			gr.u_branch_office = current.u_branch_office;
 		gr.claim_log_id = current.u_claim_entry_log_pk;
 		
+		var clWsUtil = new cam_ClaimLogWebServiceUtils();
+		gr.oasis_claim_status = clWsUtil.getOasisClaimStatus(gr); 
+		
 		gr.setWorkflow(false);
 		gr.autoSysFields(false);
 		gr.update();}
@@ -67,11 +70,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-08 14:54:34</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd94b30edbff324075ea38ff9d961900</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>CAM-CEL-Update Claim</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -79,8 +82,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_cd94b30edbff324075ea38ff9d961900</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 03:27:05</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-10-27 19:35:28</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

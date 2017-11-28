@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_Cache</api_name>
+        <client_callable>false</client_callable>
+        <description>API that provides caching capabilities that are useful when integrating with other systems.</description>
+        <name>cam_Cache</name>
+        <script><![CDATA[var cam_Cache = Class.create();
+cam_Cache.prototype = {
+    initialize: function() {
+    },
+
+    type: 'cam_Cache',
+	
+	_tableName: "x_norca_med_cam_simple_cache",
+	
+	get: function(cacheName, cacheKey) {
+		var retVal;
+		if (cacheName && cacheKey) {
+			var gr = new GlideRecord(this._tableName);
+			gr.addQuery("cache_name", cacheName);
+			gr.addQuery("cache_key", cacheKey);
+			gr.query();
+			if (gr.next()) {
+				if(gr.object_value) {
+					retVal = JSON.parse(gr.getValue("object_value"));
+				} else {
+					retVal = gr.getValue("string_value");
+				}
+			}
+
+		}
+		return retVal;
+	},
+	
+	put: function(cacheName, cacheKey, value) {
+		if (cacheName && cacheKey && value) {
+			var gr = new GlideRecord(this._tableName);
+			gr.addQuery("cache_name", cacheName);
+			gr.addQuery("cache_key", cacheKey);
+			gr.query();
+			if (gr.next()) {
+				this._setValueOnGR(gr, value);
+				gr.update();
+				return gr.getUniqueValue();
+			} else {
+				gr.initialize();
+				gr.cache_name = cacheName;
+				gr.cache_key = cacheKey;
+				this._setValueOnGR(gr, value);
+				return gr.insert();
+			}
+
+		}
+		return null;
+	},
+	
+	clear: function(cacheName) {
+		if (cacheNaem) {
+			var gr = new GlideRecord(this._tableName);
+			gr.addQuery("cache_name", cacheName);
+			gr.query();
+			while (gr.next()) {
+				gr.setWorkflow(false);
+				gr.deleteRecord();
+			}
+		}
+	},
+	
+	_setValueOnGR: function(gr, value) {
+		if (typeof value == "object") {
+			gr.string_value = "";
+			gr.object_value = JSON.stringify(value);
+		} else {
+			gr.string_value = value;
+			gr.object_value = "";
+		}
+	}
+};
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-29 01:47:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d447d83cdb2d87c0d596327e9d9619f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>cam_Cache</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_d447d83cdb2d87c0d596327e9d9619f7</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

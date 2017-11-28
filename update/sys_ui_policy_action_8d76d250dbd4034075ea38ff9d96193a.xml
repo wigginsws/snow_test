@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-07-27 18:05:34</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8d76d250dbd4034075ea38ff9d96193a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>assignment_group</sys_name>
@@ -19,7 +19,7 @@
         <sys_updated_by>jsavage</sys_updated_by>
         <sys_updated_on>2017-07-27 18:05:34</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
-        <ui_policy display_value="CAM-Claim-Make assignment group RO">4a269e10dbd4034075ea38ff9d961917</ui_policy>
+        <ui_policy display_value="CAM-CLAIM-Make assignment group RO">4a269e10dbd4034075ea38ff9d961917</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="u_litigation_import" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_row</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_set</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_state</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_verdict_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_result</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_service_method</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_cms_annuity_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_status_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_served_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_demand_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_entity_judge_fk</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_venue_city</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_punitive_damages_award_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_registered_b</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_defense_response_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_court_type</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_source_record_fk</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_judge</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_filed_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_venue_state</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_type</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_consent_b</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_source_table_name</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_compensatory_award_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>23</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_punitive_damage_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>24</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_courtcase_pk</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>25</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_lein_b</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>26</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_official_case_no</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>27</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_cms_award_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>28</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reviewer_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>29</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reviewer_comments</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>30</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_status_code</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>31</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_address_fk</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>32</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_char1</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>33</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_remittitur_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>34</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_committee_decision</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>35</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_char3</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>36</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_char2</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>37</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_char5</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>38</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_create_time</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>39</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_char4</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>40</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_court_name</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>41</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_current_trial_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>42</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_verdict_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>43</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_committee_review_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>44</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_case_name</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>45</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_cms_award_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>46</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_declaratory_judgement_b</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>47</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_settlement_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>48</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_representation_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>49</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_interest_amt</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>50</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_orig_trial_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>51</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_court_room_no</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>52</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_trial_result_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>53</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_entity_court_fk</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>54</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b8f165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_demand_date</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>55</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>3cf165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_updated_by</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>56</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>bcf165d1dbbc8b00d596327e9d961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_created_by</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>57</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>30f165d1dbbc8b00d596327e9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sys_update_time</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>58</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b0f165d1dbbc8b00d596327e9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_table</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>59</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>34f165d1dbbc8b00d596327e9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_sys_id</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>60</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>b4f165d1dbbc8b00d596327e9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_row_error</element>
+            <list_id display_value="u_litigation_import" element="NULL" name="u_litigation_import" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b0f165d1dbbc8b00d596327e9d96197a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>61</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_id>38f165d1dbbc8b00d596327e9d961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_litigation_import</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-24 13:21:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0f165d1dbbc8b00d596327e9d96197a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_litigation_import</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_u_litigation_import_null</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-24 13:21:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

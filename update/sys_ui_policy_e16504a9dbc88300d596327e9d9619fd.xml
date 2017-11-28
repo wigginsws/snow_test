@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_norca_med_cam_claim">sor_idISEMPTY^claim_log_idISEMPTY^u_insuredISEMPTY^ORclaimantISEMPTY^ORreport_dateISEMPTY^ORu_loss_dateISEMPTY^EQ<item endquery="false" field="sor_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <conditions table="x_norca_med_cam_claim">claim_id=^claim_log_idISEMPTY^u_insuredISEMPTY^ORclaimantISEMPTY^ORreport_dateISEMPTY^ORu_loss_dateISEMPTY^EQ<item endquery="false" field="claim_id" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="claim_log_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="false" field="u_insured" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="false" field="claimant" goto="false" newquery="false" operator="ISEMPTY" or="true" value=""/>
@@ -23,18 +23,19 @@
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	g_form.addInfoMessage("Important: Currently this Claim has not been logged in OASIS. A Claim Log can only be entered once the Insured, Claimant, Report Date and Date of Loss have been provided.");
-}]]></script_true>
+	if(!(g_form.isNewRecord())){
+		g_form.addInfoMessage("Important: Currently this Claim has not been logged in OASIS. A Claim Log can only be entered once the Insured, Claimant, Report Date and Date of Loss have been provided.");
+	}}]]></script_true>
         <set_values/>
         <short_description>Claim not logged</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-18 18:32:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e16504a9dbc88300d596327e9d9619fd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Claim not logged</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -42,8 +43,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_policy_e16504a9dbc88300d596327e9d9619fd</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-01 13:31:55</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:05:35</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <ui_type>0</ui_type>
         <view/>

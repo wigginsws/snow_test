@@ -15,27 +15,13 @@
             <sys_updated_by>jpolk</sys_updated_by>
             <sys_updated_on>2017-07-26 17:15:09</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-07 22:05:09</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>b8d6b3b7db900300e022771c8c9619e7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_norca_med_cam_claim" name="x_norca_med_cam_claim" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">7751018cdb144340d596327e9d9619d8</sys_ui_form>
-            <sys_ui_section display_value="">7751018cdb144340d596327e9d9619d7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-07 22:05:09</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_norca_med_cam_claim</name>
             <roles/>
             <sys_class_name>sys_ui_form</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-26 17:15:09</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7751018cdb144340d596327e9d9619d8</sys_id>

@@ -3,13 +3,13 @@
     <sys_ui_style action="INSERT_OR_UPDATE">
         <element>fnol_timer</element>
         <name>x_norca_med_cam_claim</name>
-        <style>background-color:orange;</style>
+        <style>background-color:yellow;</style>
         <sys_class_name>sys_ui_style</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-07-18 13:33:34</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f7e1c39ddb80c70075ea38ff9d9619e7</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>x_norca_med_cam_claim</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -17,7 +17,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_style_f7e1c39ddb80c70075ea38ff9d9619e7</sys_update_name>
         <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-07-19 16:07:05</sys_updated_on>
-        <value>javascript:var sla = new x_norca_med_cam.cam_DotColorerSLA().DotColorerSLA(); sla &gt;= 34 &amp;&amp; sla &lt; 67;</value>
+        <sys_updated_on>2017-08-10 19:35:16</sys_updated_on>
+        <value>javascript:var sla = new x_norca_med_cam.cam_DotColorerSLA().DotColorerSLA(); sla &gt;= 34 &amp;&amp; sla &lt; 100;</value>
     </sys_ui_style>
 </record_update>

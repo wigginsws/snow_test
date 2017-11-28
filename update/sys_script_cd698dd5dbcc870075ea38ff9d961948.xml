@@ -35,18 +35,19 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	if (current.getValue("u_loss_date")) {
-		current.u_incident_start_date = current.u_incident_end_date = current.getValue("u_loss_date");
+		current.setValue("u_incident_start_date", current.getValue("u_loss_date"));
+		current.setValue("u_incident_end_date", current.getValue("u_loss_date"));
 	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-18 04:52:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd698dd5dbcc870075ea38ff9d961948</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>CAM-CLAIM-Set Incident dates</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -54,8 +55,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_cd698dd5dbcc870075ea38ff9d961948</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-02 02:34:26</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-18 15:40:21</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

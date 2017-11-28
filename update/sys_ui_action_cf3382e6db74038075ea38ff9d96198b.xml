@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>surveyFunc</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>current.state==5</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Send Survey</name>
+        <onclick>onClick()</onclick>
+        <order>100</order>
+        <script><![CDATA[	function onClick(){
+		var needValue = false;
+		if(g_form.getValue('u_insured') == ''){
+		g_form.setMandatory('u_insured', true);
+		needValue = true;
+			
+		}
+		
+		if(needValue){
+		g_form.addErrorMessage('Please fill in the Insured user and their primary email address to send a survey.');
+		return false;
+	}
+	 else{
+	//run the the script below getting action name in field above
+	 gsftSubmit(null, g_form.getFormElement(), 'surveyFunc');
+}	}
+  
+
+if(typeof window == 'undefined')
+  triggerSurvey();
+
+
+   function triggerSurvey(){
+   var sc = new GlideRecord('survey_conditions');
+   sc.addQuery('table', current.getTableName());
+   sc.addActiveQuery();
+   sc.orderBy('order');
+   sc.query();
+	while(sc.next()){
+     var user = current.u_insured;
+	 
+		sendSurvey(current, sc, user);
+   }  
+ }
+
+function sendSurvey(task, sc, recipient) {
+	var gr = new GlideRecord('x_norca_med_cam_entity');
+	gr.get(current.getValue('u_insured'));
+if(gr.email_1 == ''){
+		var fail = "A survey wasn't sent. The Insured user, " + current.u_insured.getDisplayValue() + ", doesn't have a primary email address.";
+		gs.addErrorMessage(fail);
+		gs.info(fail);
+		current.setAbortAction(true);
+	    gs.setRedirect(current);
+	
+		return;
+	}
+		else {
+			  var ts = new GlideRecord('task_survey');
+			  ts.initialize();
+			  ts.task = current.sys_id;
+			  ts.survey = "3cfdc6c5db32f20075ea38ff9d9619ca";//sc.survey;
+			  ts.type = "survey";
+			  ts.u_entity_sent_to = recipient;	
+			  ts.state = "requested";
+			  ts.requested_date = new GlideDateTime().getDisplayValue();
+			  var taskSurvey = ts.insert();
+			  var surveyURL = getSurveyURL(taskSurvey, sc.survey.name);
+   
+   //pass survey url from here so we don't have to build it in every notification
+	
+		gs.eventQueue('x_norca_med_cam.send_survey', task, recipient.email_1, surveyURL);
+		gs.addInfoMessage("A survey was sent to " + current.u_insured.getDisplayValue());
+	}	
+
+   }
+		
+
+
+function getSurveyURL(taskSurvey, surveyName) {
+   //encode survey name again to escape the special char (e.g. '#')
+   var uri = 'survey_take.do?sysparm_survey=' + encodeURIComponent(surveyName) + '&sysparm_task_survey=' + taskSurvey;
+   var url = getURLPrefix() + '?uri=' + encodeURIComponent(uri);
+   return url;
+}
+
+/*function getSurveyWizardURL(taskSurveyID, surveyWizardID) {
+	var url = getURLPrefix() + '?uri=expert_shell.do?sysparm_sys_id=' + surveyWizardID + '%26EV:sysparm_task_survey=' + taskSurveyID;
+	return url;
+}*/
+
+function getURLPrefix() {
+	var instanceURL = gs.getProperty("glide.servlet.uri");
+	var overrideURL = gs.getProperty("glide.email.override.url");
+	if (overrideURL)
+		instanceURL = overrideURL;
+	else
+		instanceURL = instanceURL + "nav_to.do";
+	return instanceURL;
+
+   }
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-08-28 13:05:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf3382e6db74038075ea38ff9d96198b</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Send Survey</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_action_cf3382e6db74038075ea38ff9d96198b</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:53:46</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

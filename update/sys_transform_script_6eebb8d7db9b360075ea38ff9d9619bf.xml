@@ -2,7 +2,7 @@
 <record_update table="sys_transform_script">
     <sys_transform_script action="INSERT_OR_UPDATE">
         <active>false</active>
-        <map display_value="Risk Transform">861f165cdbae7e0075ea38ff9d9619d6</map>
+        <map display_value="OASIS-Risk Transform">861f165cdbae7e0075ea38ff9d9619d6</map>
         <order>100</order>
         <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
 

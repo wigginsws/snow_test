@@ -62,7 +62,7 @@ function ajaxResponse(serverResponse) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a6a87d53db3d728062bafd441d961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_norca_med_cam_claim state flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -70,8 +70,8 @@ function ajaxResponse(serverResponse) {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_client_a6a87d53db3d728062bafd441d961900</sys_update_name>
-        <sys_updated_by>joe@buildon.me</sys_updated_by>
-        <sys_updated_on>2017-04-03 17:00:01</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:53</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

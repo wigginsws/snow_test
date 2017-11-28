@@ -9,7 +9,7 @@
         <sys_class_name>pa_dashboards_group</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-07-19 16:14:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>364030fddb484700d596327e9d96193d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Claims Dashboards</sys_name>

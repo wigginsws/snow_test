@@ -2,12 +2,12 @@
 <record_update table="sys_index">
     <sys_index action="INSERT_OR_UPDATE">
         <col_name_string>code</col_name_string>
-        <index_col_name element="code" name="x_norca_med_cam_product_coverage">156dfda6db14474075ea38ff9d961945</index_col_name>
+        <index_col_name element="code" name="x_norca_med_cam_product_coverage">12ce569adb660300e022771c8c9619b6</index_col_name>
         <logical_table_name>x_norca_med_cam_product_coverage</logical_table_name>
         <sys_class_name>sys_index</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 16:14:40</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7b30026adb14474075ea38ff9d96195a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam_product_coverage</sys_name>

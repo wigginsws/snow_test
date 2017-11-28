@@ -14,6 +14,10 @@ cam_CustomRestWsUtils.prototype = Object.extendsObject(cam_RestWebServiceUtils, 
 
     type: 'cam_CustomRestWsUtils',
 	
+	dataSyncUtils: new cam_DataSyncUtils(),
+	
+	slLogger: new cam_ServiceLogger(),
+	
 	updateClaimLog: function(currentGR) {
 		gs.debug("[updateClaimLog] Called for " + currentGR.getDisplayValue() +", claim_log_id: " + currentGR.claim_log_id);
 		var fn = function(responseBody) {
@@ -27,44 +31,250 @@ cam_CustomRestWsUtils.prototype = Object.extendsObject(cam_RestWebServiceUtils, 
 		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimLogService", "UpdateClaimNumber", params, currentGR, fn);
 	},
 	
+	
+	insertClaim: function(currentGR) {
+		gs.debug("[insertClaim] Called for " + currentGR.getDisplayValue());
+		var fn = function(responseBody) {
+			var responseObj = JSON.parse(responseBody);
+			if (responseObj && responseObj["status"] && responseObj["status"]=="Success") {
+				var claimId = responseObj["CLAIM_FK"]?responseObj["CLAIM_FK"]:responseObj["CLAIM_PK"];
+				currentGR.setValue("claim_id", claimId);
+				currentGR.setValue("sor_id", claimId);
+				currentGR.oasis_claim_status = "OPEN";
+				
+				if (!currentGR.u_case && (responseObj["OCCURRENCE_PK"] || responseObj["OCCURRENCE_FK"])) {
+					var gr = new GlideRecord(cam.SCOPE_ID + "_case");
+					gr.initialize();
+					gr.sor_id = responseObj["OCCURRENCE_PK"]?responseObj["OCCURRENCE_PK"]:responseObj["OCCURRENCE_FK"];
+					if (responseObj["OCCURRENCE_NO"]) gr.number = responseObj["OCCURRENCE_NO"];
+					currentGR.u_case = gr.insert();
+				}
+				
+			} else {
+				var message = responseObj && responseObj.message ? responseObj.message : "";
+				gs.error("Could not create claim in OASIS. Error message: " + message);
+				gs.addErrorMessage("Could not create claim in OASIS. Error message: " + message);
+			}
+			return responseObj;
+		};
+		
+		var lossDateStr = cam.snDateFieldByFormat(currentGR, "u_loss_date", "MM/dd/yyyy", "");
+		var reportDateStr = cam.snDateFieldByFormat(currentGR, "report_date", "MM/dd/yyyy", "");
+		
+		var params = {
+			'ClaimNumber': this.createParamValueObject( currentGR.number ),
+			'ClaimLogPK': this.createParamValueObject( currentGR.claim_log_id),
+			
+			'BranchOffice': this.createParamValueObject( currentGR.u_branch_office ? currentGR.u_branch_office : "" ),
+			'CaseFK': this.createParamValueObject(currentGR.u_case ? currentGR.u_case.sor_id:""),
+			'ClaimCategory': this.createParamValueObject( currentGR.claim_category?currentGR.claim_category: "REGULAR" ),
+			'ClaimCountyCode': this.createParamValueObject( currentGR.u_county ? currentGR.u_county.county_code:"" ),
+			'ClaimStateCode': this.createParamValueObject( currentGR.claim_state_code ? currentGR.claim_state_code: "" ),
+			'ClaimType': this.createParamValueObject( currentGR.claim_type?currentGR.claim_type:"" ),
+			'CoverageFK': this.createParamValueObject( currentGR.applied_coverage ? currentGR.applied_coverage.sor_id: ""),
+			'IncidentStartDate': this.createParamValueObject( lossDateStr ),
+			'IncidentEndDate': this.createParamValueObject( lossDateStr ),
+			'LocationDetail': this.createParamValueObject( currentGR.u_string_1?currentGR.u_string_1:"" ),
+			'LossDate': this.createParamValueObject( lossDateStr ),
+			'LossType': this.createParamValueObject( currentGR.u_loss_type?currentGR.u_loss_type:"" ),
+			'LossSubtype': this.createParamValueObject( currentGR.u_loss_subtype?currentGR.u_loss_subtype:"" ),
+			'PolicyTermFK': this.createParamValueObject( this.getPolicyTermFK(currentGR)),
+			'ReportDate': this.createParamValueObject( reportDateStr ),
+			'RiskFK': this.createParamValueObject( this.getRiskFK(currentGR)),
+			'SeverityCode': this.createParamValueObject( currentGR.u_choice_2?currentGR.u_choice_2:"" ),
+			'ShortDescription': this.createParamValueObject( currentGR.short_description?currentGR.short_description:"Not provided yet" )
+			
+		};
+		
+		if (currentGR.policy) {
+			var policyGR = this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_policy", currentGR.policy);
+			if (policyGR) {
+				params['PolicyFK'] = this.createParamValueObject(policyGR.getValue("sor_id"));
+				params['PolicyTypeCode'] = this.createParamValueObject(policyGR.getValue("policy_type"));
+				params['CompanyFK'] = params['NumCompFK'] = this.createParamValueObject(this.getPolicyCompanyFK(policyGR));
+				
+				gs.info("[insertClaim] PolicyFK: " + params["PolicyFK"] + ", PolicyTypeCode: " + params["PolicyTypeCode"] + ", CompanyFK: " + params["CompanyFK"]);
+			}
+			
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimService", "CreateClaim", params, currentGR, fn);
+		}
+		
+		throw "Inadequate data to insert/update claim";
+	},
+	
+	updateClaim: function(currentGR) {
+		gs.debug("[updateClaim] Called for " + currentGR.getDisplayValue());
+		var fn = function(responseBody) {
+			var responseObj = JSON.parse(responseBody);
+			if (responseObj && responseObj["status"] && responseObj["status"]=="Success") {
+				currentGR.setValue("claim_id", responseObj["CLAIM_FK"]);
+				currentGR.setValue("sor_id", responseObj["CLAIM_FK"]);
+			} else {
+				var message = responseObj && responseObj.message ? responseObj.message : "";
+				gs.error("Could not update claim in OASIS. Error message: " + message);
+				gs.addErrorMessage("Could not update claim in OASIS. Error message: " + message);
+			}
+			return responseObj;
+		};
+		
+		var dispositionDateStr = cam.snDateFieldByFormat(currentGR, "disposition_close_date", "MM/dd/yyyy", "");
+		var statusDate = cam.snDateFieldByFormat(currentGR, "claim_status_date", "MM/dd/yyyy", "today");
+		var typeDate = cam.snDateFieldByFormat(currentGR, "claim_type_date", "MM/dd/yyyy", "");
+		if (currentGR.oasis_claim_status=="PENDING") currentGR.oasis_claim_status = "OPEN";
+		
+		var params = {
+			'CaseFK': this.createParamValueObject(currentGR.u_case ? currentGR.u_case.sor_id:""),
+			'ClaimCategory': this.createParamValueObject( currentGR.claim_category?currentGR.claim_category: "REGULAR" ),
+			'ClaimNumber': this.createParamValueObject( currentGR.number ),
+			'ClaimPK': this.createParamValueObject( currentGR.claim_id),
+			'ClaimCountyCode': this.createParamValueObject(currentGR.u_county?currentGR.u_county.county_code:""),
+			'ClaimStateCode': this.createParamValueObject( currentGR.claim_state_code?currentGR.claim_state_code: "" ),
+			'ClaimStatus': this.createParamValueObject( currentGR.oasis_claim_status?currentGR.oasis_claim_status:"OPEN" ),
+			'ClaimStatusDate': this.createParamValueObject( statusDate  ),
+			'ClaimType': this.createParamValueObject( currentGR.claim_type?currentGR.claim_type:"" ),
+			'ClaimTypeDate': this.createParamValueObject( typeDate ),
+			'CoverageFK':  this.createParamValueObject(this.getCoverageFK(currentGR)),
+			'FinalDispositionCode': this.createParamValueObject( currentGR.disposition?currentGR.disposition:"" ),
+			'FinalDispositionDate': this.createParamValueObject( dispositionDateStr ),
+			'LocationDetail': this.createParamValueObject( currentGR.u_string_1?currentGR.u_string_1:"" ),
+			'LossType': this.createParamValueObject( currentGR.u_loss_type?currentGR.u_loss_type:"" ),
+			'LossSubtype': this.createParamValueObject( currentGR.u_loss_subtype?currentGR.u_loss_subtype:"" ),
+			'PolicyTermFK': this.createParamValueObject( this.getPolicyTermFK(currentGR)),
+			'RiskFK': this.createParamValueObject( this.getRiskFK(currentGR)),
+			'SeverityCode': this.createParamValueObject( currentGR.u_choice_2?currentGR.u_choice_2:"" ),
+			'ShortDescription': this.createParamValueObject( currentGR.short_description?currentGR.short_description:"Not provided yet" )
+			
+		};
+		
+		if (currentGR.policy) {
+			var policyGR = this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_policy", currentGR.policy);
+			if (policyGR) {
+				params['PolicyFK'] = this.createParamValueObject(policyGR.getValue("sor_id"));
+				params['PolicyTypeCode'] = this.createParamValueObject(policyGR.getValue("policy_type"));
+				params['CompanyFK'] = params['NumCompFK'] = this.createParamValueObject(this.getPolicyCompanyFK(policyGR));
+			}
+			
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimService", "UpdateClaim", params, currentGR, fn);
+		}
+		
+		throw "Inadequate data to insert/update claim";
+	},
+	
+	
+	closeClaim: function(currentGR) {
+		gs.debug("[closeClaim] Called for " + currentGR.getDisplayValue());
+		var fn = function(responseBody) {
+			var responseObj = JSON.parse(responseBody);
+			if (responseObj && responseObj["status"] && responseObj["status"]=="Success") {
+				currentGR.setValue("claim_id", responseObj["CLAIM_FK"]);
+				currentGR.setValue("sor_id", responseObj["CLAIM_FK"]);
+				currentGR.setValue("oasis_claim_status", "CLOSED");
+			} else {
+				var message = responseObj && responseObj.message ? responseObj.message : "";
+				gs.error("Could not close claim in OASIS. Error message: " + message);
+				gs.addErrorMessage("Could not close claim in OASIS. Error message: " + message);
+			}
+			return responseObj;
+		};
+		
+		var dispositionDateStr = cam.snDateFieldByFormat(currentGR, "disposition_close_date", "MM/dd/yyyy", "");
+		var statusDate = cam.snDateFieldByFormat(currentGR, "claim_status_date", "MM/dd/yyyy", "today");
+		var typeDate = cam.snDateFieldByFormat(currentGR, "claim_type_date", "MM/dd/yyyy", "");
+		
+		var params = {
+			'ClaimCategory': this.createParamValueObject( currentGR.claim_category?currentGR.claim_category: "REGULAR" ),
+			'ClaimPK': this.createParamValueObject( currentGR.claim_id),
+			'ClaimCountyCode': this.createParamValueObject(currentGR.u_county?currentGR.u_county.county_code:""),
+			'ClaimStateCode': this.createParamValueObject( currentGR.claim_state_code?currentGR.claim_state_code: "" ),
+			'ClaimType': this.createParamValueObject( currentGR.claim_type?currentGR.claim_type:"" ),
+			'ClaimTypeDate': this.createParamValueObject( typeDate ),
+			'FinalDispositionCode': this.createParamValueObject( currentGR.disposition?currentGR.disposition:"" ),
+			'FinalDispositionDate': this.createParamValueObject( dispositionDateStr ),
+			'LocationDetail': this.createParamValueObject( currentGR.u_string_1?currentGR.u_string_1:"" ),
+			'LossType': this.createParamValueObject( currentGR.u_loss_type?currentGR.u_loss_type:"" ),
+			'LossSubtype': this.createParamValueObject( currentGR.u_loss_subtype?currentGR.u_loss_subtype:"" ),
+			'SeverityCode': this.createParamValueObject( currentGR.u_choice_2?currentGR.u_choice_2:"" ),
+			'ShortDescription': this.createParamValueObject( currentGR.short_description?currentGR.short_description:"Not provided yet" )
+			
+		};
+		
+		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimService", "CloseClaim1", params, currentGR, fn);
+	},
+	
+	
 	/**
  	* Function processes a prepared SOAP Message
  	**/
 	processMessageWithFunction: function( serviceName, messageName, params, currentGR, fn) {
-		gs.debug("[processMessageFn] serviceName: " + serviceName +", messageName: " + messageName);
+		var msgName = "[" + serviceName + "." + messageName + "]";
+		if (gs.isDebugging()) gs.debug("[processMessageFn]" + msgName + " Called.");
 		var s = new sn_ws.RESTMessageV2(serviceName, messageName);
-		if (gs.isDebugging()) s.setLogLevel("all");
-			for (var key in params) {
+		for (var key in params) {
 			if (params[key].escape) {
 				s.setStringParameter(key, params[key].value);
 			} else {
 				s.setStringParameterNoEscape(key, params[key].value);
 			}
-			//gs.debug("[processMessage] params[" + key + "] = " + params[key].value);
 		}
 		
 		var response = s.execute();
-		response.waitForResponse(30);
-		if (gs.isDebugging()) gs.debug("[processMessage] After exec. Request body " + this.getLoggableMessage(s.getRequestBody()));
-		var responseBody = response.getBody(); // response.haveError() ? response.getErrorMessage() : 
+		response.waitForResponse( gs.getProperty( cam.SCOPE_ID + ".oasis_ws_timeout", 60) );
+		this.slLogger.logMessage(s, serviceName, messageName, response, currentGR, "all");
+		
+		var responseBody = response.getBody();
 		var status = response.getStatusCode();
 		if (status == 200) {
-			if (gs.isDebugging()) gs.debug("[updateClaimLog] No error, now processing " + this.getLoggableMessage(responseBody));
 			return fn(responseBody, currentGR);
 			
 		} else {
-			gs.error("[processMessage] HTTP Status " + status + " response: " + responseBody);
-			throw "Web service failure - HTTP Status " + status;
+			throw "Web service failure " + msgName + " - HTTP Status " + status;
 		}
 	},
 	
-	parseDateTime: function() {
-		
+	getCoverageFK: function(claimGR) {
+		if (claimGR.applied_coverage) {
+			var coverageGR = this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_coverage", claimGR.applied_coverage);
+			if (coverageGR) {
+				return coverageGR.getValue("sor_id");
+			}
+		}
+		return "";
 	},
 	
-	parseDate: function() {
-		
+	
+	getRiskFK: function(claimGR) {
+		if (claimGR.risk_ref) {
+			var riskGR = this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_risk", claimGR.risk_ref);
+			if (riskGR) {
+				return riskGR.getValue("risk_pk");
+			}
+		}
+		return "";
 	},
+	
+	
+	getPolicyCompanyFK: function(policyGR) {
+		if (policyGR.issue_company_fk) {
+			return policyGR.getValue("issue_company_fk");
+			
+		} else if (policyGR.issue_company) {
+			return policyGR.issue_company.sor_id;
+			
+		}
+		return "";
+	},
+	
+	
+	getPolicyTermFK: function(claimGR) {
+		if (claimGR.policy_term_ref) {
+			var policyTermGR = this.dataSyncUtils.getRecordBySysId(cam.SCOPE_ID + "_policy_term", claimGR.policy_term_ref);
+			if (policyTermGR) {
+				return policyTermGR.getValue("sor_id");
+			}
+		}
+		return "";
+	},
+	
 	
 	formatDate: function(snDateString, format) {
 		if (!format) {
@@ -80,16 +290,16 @@ cam_CustomRestWsUtils.prototype = Object.extendsObject(cam_RestWebServiceUtils, 
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-19 21:42:08</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1e5b7135db400b0075ea38ff9d9619f4</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>cam_CustomRestWsUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
-        <sys_policy>read</sys_policy>
+        <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_1e5b7135db400b0075ea38ff9d9619f4</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:38:05</sys_updated_on>
+        <sys_updated_on>2017-11-02 01:50:49</sys_updated_on>
     </sys_script_include>
 </record_update>

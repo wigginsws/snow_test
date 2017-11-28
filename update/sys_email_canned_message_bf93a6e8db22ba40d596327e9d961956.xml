@@ -7,7 +7,7 @@
         <sys_class_name>sys_email_canned_message</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-05-02 13:52:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>bf93a6e8db22ba40d596327e9d961956</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Coverage Determination Letter</sys_name>

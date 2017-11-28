@@ -19,9 +19,9 @@ dataSyncUtil.fixReferencesUsingSorId(cam.SCOPE_ID + "_claim_entry_log", "u_cover
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-04 03:03:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5ba4dc72dbd8474075ea38ff9d961931</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CAM-Temp-Link CEL to Coverage</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -29,7 +29,7 @@ dataSyncUtil.fixReferencesUsingSorId(cam.SCOPE_ID + "_claim_entry_log", "u_cover
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_5ba4dc72dbd8474075ea38ff9d961931</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 13:07:30</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:03</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

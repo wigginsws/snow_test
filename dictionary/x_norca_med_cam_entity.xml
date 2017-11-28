@@ -3,15 +3,15 @@
     <element audit="true" label="Entity" max_length="40" name="x_norca_med_cam_entity" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="ADA Number" max_length="50" name="ada_number" type="string"/>
-        <element label="Addresses" max_length="4000" name="addresses" reference="x_norca_med_cam_address" reference_cascade_rule="delete" type="glide_list"/>
+        <element active="false" label="Addresses" max_length="4000" name="addresses" reference="x_norca_med_cam_address" reference_cascade_rule="delete" type="glide_list"/>
         <element label="Claims-free Date" max_length="40" name="claims_free_date" type="glide_date"/>
-        <element choice="2" label="Classification" max_length="4000" name="classification" read_only="true" type="glide_list">
+        <element attributes="field_decorations=ui_select_list" choice="1" label="Classification" max_length="4000" name="classification" type="glide_list">
             <choice>
                 <element label="Account Holder" value="ACCTHOLDER"/>
                 <element label="Adjuster" value="ADJUSTER"/>
                 <element label="Agency" value="AGENCY"/>
-                <element label="Agency" value="AGENT"/>
                 <element label="Agency Insureds of MAI" value="AGENCYINSD"/>
+                <element label="Agent" value="AGENT"/>
                 <element label="Allied Health Professionals" value="ALLIEDHLTH"/>
                 <element label="Annuity Company" value="ANNUITYCO"/>
                 <element label="Annuity Vendor" value="ANNUITYVEN"/>
@@ -154,6 +154,15 @@
             </choice>
         </element>
         <element label="Client ID" max_length="40" name="client_id" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;return new cam_DataSyncUtils().getCommitStatus(current);&#10;&#10;})(current);" choice="1" label="Sync Status" max_length="40" name="commit_status" read_only="true" type="choice" virtual="true">
+            <choice>
+                <element label="Failed" value="failure"/>
+                <element label="Not Applicable" value="na"/>
+                <element label="Pending" value="pending"/>
+                <element label="Synchronized" value="success"/>
+                <element label="Unknown" value="unknown"/>
+            </choice>
+        </element>
         <element label="Component" max_length="10" name="component" type="string"/>
         <element label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
         <element label="Date of Death" max_length="40" name="date_of_death" type="glide_date"/>
@@ -171,7 +180,8 @@
         <element label="Primary Email" max_length="60" name="email_1" type="string"/>
         <element label="Secondary Email" max_length="60" name="email_2" type="string"/>
         <element label="Tertiary Email" max_length="60" name="email_3" type="string"/>
-        <element choice="1" label="Entity Type" mandatory="true" max_length="1" name="entity_type" type="choice">
+        <element active="false" label="Enter new address" max_length="40" name="enter_new_address" type="boolean"/>
+        <element choice="1" default="P" label="Entity Type" mandatory="true" max_length="1" name="entity_type" type="choice">
             <choice>
                 <element label="Organization" value="O"/>
                 <element label="Person" value="P"/>
@@ -217,13 +227,66 @@
         <element label="Minor" max_length="40" name="minor" type="boolean"/>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;if (current.entity_type == &quot;P&quot;) {&#10;&#9;&#9;var name = &quot;&quot;;&#10;&#9;&#9;if (current.name_prefix) name += current.name_prefix + &quot; &quot;;&#10;&#9;&#9;if (current.first_name) name += current.first_name + &quot; &quot;;&#10;&#9;&#9;if (current.middle_name) name += current.middle_name + &quot; &quot;;&#10;&#9;&#9;if (current.last_name) name += current.last_name + &quot; &quot;;&#10;&#9;&#9;if (current.name_suffix) name += current.name_suffix + &quot; &quot;;&#10;&#9;&#9;return name;&#10;&#9;}&#10;&#9;return current.organization_name;&#10;&#10;})(current);" display="true" label="Display Name" max_length="60" name="name" read_only="true" type="string" virtual="true"/>
         <element label="Name Prefix" max_length="10" name="name_prefix" type="string"/>
-        <element label="Name Suffix" max_length="40" name="name_suffix" type="string"/>
+        <element choice="1" label="Name Suffix" max_length="40" name="name_suffix" type="string">
+            <choice>
+                <element label="A.O./S.P." value="AO/SP"/>
+                <element label="C.C.P." value="CCP"/>
+                <element label="C.N.M." value="CNM"/>
+                <element label="C.O.T." value="COT"/>
+                <element label="C.R.N.A." value="CRNA"/>
+                <element label="C.R.N.P." value="CRNP"/>
+                <element label="D.C." value="DC"/>
+                <element label="D.D.S." value="DDS"/>
+                <element label="D.M.D." value="DMD"/>
+                <element label="D.O." value="DO"/>
+                <element label="D.P.M" value="DPM"/>
+                <element label="E.E.G.T." value="EEGT"/>
+                <element label="Esq." value="ESQ"/>
+                <element label="Jr, M.D." value="JR, MD"/>
+                <element label="Jr." value="JR"/>
+                <element label="L.P.N." value="LPN"/>
+                <element label="M.A." value="MA"/>
+                <element label="M.D." value="MD"/>
+                <element label="M.D., Inc." value="MD, INC"/>
+                <element label="M.F.C.C." value="MFCC"/>
+                <element label="M.L.T." value="MLT"/>
+                <element label="M.S." value="MS"/>
+                <element label="N.M.W." value="NMW"/>
+                <element label="N.P." value="NP"/>
+                <element label="O.B." value="OB"/>
+                <element label="O.D." value="OD"/>
+                <element label="O.P.T." value="OPT"/>
+                <element label="O.T." value="OT"/>
+                <element label="P.A." value="PA"/>
+                <element label="P.T." value="PT"/>
+                <element label="Ph.D." value="PHD"/>
+                <element label="PHST." value="PHST"/>
+                <element label="PSYC." value="PSYC"/>
+                <element label="R.N." value="RN"/>
+                <element label="R.T." value="RT"/>
+                <element label="S.A." value="SA"/>
+                <element label="S.W." value="SW"/>
+                <element label="Sr." value="SR"/>
+            </choice>
+        </element>
+        <element label="Address Line 1" max_length="60" name="new_ent_address_line_1" type="string"/>
+        <element label="Address Line 2" max_length="60" name="new_ent_address_line_2" type="string"/>
+        <element choice="1" choice_field="use" choice_table="x_norca_med_cam_address" label="Address Purpose" max_length="10" name="new_ent_address_purpose" type="choice">
+            <choice/>
+        </element>
+        <element label="City" max_length="30" name="new_ent_city" type="string"/>
+        <element label="Country" max_length="32" name="new_ent_country" reference="core_country" type="reference"/>
+        <element label="County" max_length="32" name="new_ent_county" reference="x_norca_med_cam_county_lookup" type="reference"/>
+        <element choice="1" choice_field="state" choice_table="x_norca_med_cam_address" label="State" max_length="10" name="new_ent_state" type="choice">
+            <choice/>
+        </element>
+        <element label="Zip Code" max_length="10" name="new_ent_zip_code" type="string"/>
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" mandatory="true" max_length="15" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element label="Organization Name" max_length="60" name="organization_name" type="string"/>
         <element label="Partial SSN" max_length="4" name="partial_ssn" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Phone Number" max_length="40" name="phone_number" type="string"/>
         <element label="Policy Numbers" max_length="4000" name="policy_numbers" read_only="true" type="glide_list"/>
-        <element dynamic_creation="true" dynamic_creation_script="current.insert();" label="Primary Address" max_length="32" name="primary_address" reference="x_norca_med_cam_address" reference_cascade_rule="delete" type="reference"/>
+        <element dynamic_creation_script="current.insert();" label="Primary Address" max_length="32" name="primary_address" reference="x_norca_med_cam_address" type="reference"/>
         <element label="Professional Designation" max_length="60" name="professional_designation" type="string"/>
         <element label="Reference Number" max_length="100" name="reference_number" type="string"/>
         <element label="SIC Code" max_length="10" name="sic_code" type="string"/>
@@ -248,15 +311,21 @@
         <element label="Web User" max_length="40" name="web_user" type="boolean"/>
         <element label="Web User ID" max_length="100" name="web_user_id" type="string"/>
         <index name="index">
-            <element name="primary_address"/>
+            <element name="new_ent_county"/>
         </index>
         <index name="index2">
-            <element name="location"/>
+            <element name="primary_address"/>
         </index>
         <index name="index3">
-            <element name="sor_id"/>
+            <element name="location"/>
         </index>
         <index name="index4">
+            <element name="sor_id"/>
+        </index>
+        <index name="index5">
+            <element name="new_ent_country"/>
+        </index>
+        <index name="index6">
             <element name="user"/>
         </index>
     </element>

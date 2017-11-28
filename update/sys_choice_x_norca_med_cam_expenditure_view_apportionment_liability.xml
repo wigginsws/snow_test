@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="apportionment_liability" table="x_norca_med_cam_expenditure_view" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d60a3c8db604b4075ea38ff9d961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>1</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c960a3c8db604b4075ea38ff9d961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>15</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>2</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4560a3c8db604b4075ea38ff9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>15</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>20</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>3</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd60a3c8db604b4075ea38ff9d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>20</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>25</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>4</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4960a3c8db604b4075ea38ff9d961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>25</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>30</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>5</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c160a3c8db604b4075ea38ff9d961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>35</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>6</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d60a3c8db604b4075ea38ff9d961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>35</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>40</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>7</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c560a3c8db604b4075ea38ff9d961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>40</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>45</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>8</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0960a3c8db604b4075ea38ff9d961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>45</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>50</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>9</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8160a3c8db604b4075ea38ff9d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>55</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>10</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d60a3c8db604b4075ea38ff9d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>55</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>60</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>11</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8560a3c8db604b4075ea38ff9d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>65</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>12</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0160a3c8db604b4075ea38ff9d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>65</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>70</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>13</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8960a3c8db604b4075ea38ff9d961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>70</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>75</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>14</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0560a3c8db604b4075ea38ff9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>75</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>80</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>15</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d60a3c8db604b4075ea38ff9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>80</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>85</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>16</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0960a3c8db604b4075ea38ff9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>85</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>90</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>17</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8160a3c8db604b4075ea38ff9d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>90</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>95</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>18</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d60a3c8db604b4075ea38ff9d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>95</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>apportionment_liability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>100</label>
+            <language>en</language>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sequence>19</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9560a3c8db604b4075ea38ff9d96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-08 15:05:38</sys_updated_on>
+            <value>100</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>apportionment_liability</element>
+            <name>x_norca_med_cam_expenditure_view</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-08 15:05:38</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e4332a96dba60300e022771c8c9619be</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>apportionment_liability</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_expenditure_view_apportionment_liability</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:59:56</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

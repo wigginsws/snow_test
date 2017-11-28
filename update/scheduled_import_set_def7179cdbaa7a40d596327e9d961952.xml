@@ -6,9 +6,9 @@
         <conditional>false</conditional>
         <data_source display_value="Claims-OASIS-Entity Classes">18681c84db1ef68062bafd441d96199c</data_source>
         <map/>
-        <name>Claims-OASIS-EntityClass</name>
-        <order/>
-        <parent display_value="Claims-OASIS-Entity">573b26afdb0eb68062bafd441d961926</parent>
+        <name>CAM-OASIS-EntityClass</name>
+        <order>300</order>
+        <parent display_value="CAM-OASIS-Entity">573b26afdb0eb68062bafd441d961926</parent>
         <post_script/>
         <post_script_bool>false</post_script_bool>
         <pre_script/>
@@ -26,15 +26,15 @@
         <sys_created_on>2017-05-01 23:01:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>def7179cdbaa7a40d596327e9d961952</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Claims-OASIS-EntityClass</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>CAM-OASIS-EntityClass</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>scheduled_import_set_def7179cdbaa7a40d596327e9d961952</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-23 20:45:06</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:56:48</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_import_set>
 </record_update>

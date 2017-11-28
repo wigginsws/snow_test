@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Service Log" max_length="40" name="x_norca_med_cam_service_log0001" type="collection">
+        <element label="Endpoint" max_length="1024" name="endpoint" read_only="true" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Message Function Name" max_length="40" name="message_function_name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Message Name" max_length="40" name="message_name" read_only="true" type="string"/>
+        <element choice="1" choice_field="message_type" choice_table="x_norca_med_cam_service_log" label="Message Type" max_length="40" name="message_type" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true,edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element dependent="related_table" dependent_on_field="related_table" label="Related Record" max_length="32" name="related_record" read_only="true" type="document_id"/>
+        <element attributes="base_start=true" label="Related Table" max_length="80" name="related_table" read_only="true" type="table_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Request" max_length="30000" name="request" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Response" max_length="30000" name="response" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Response Code" max_length="3" name="response_code" read_only="true" type="string"/>
+        <index name="index">
+            <element name="related_record"/>
+        </index>
+    </element>
+</database>

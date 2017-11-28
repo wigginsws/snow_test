@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>cam_display_email_body</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+	
+	// Add your code here
+	var scriptName = 'Email Script: cam_display_email_body';
+	var eventParm1 = event.parm1; // Email address of original sender
+	
+	
+	/*
+	Create array of records. The parameter sent to the event that triggers the notification usng this script was an array, but is returned as a string here for some reason.
+	
+	Array is organized: 
+	  • records that were found
+	  • a 'SLICE' entry
+	  • records that weren't found in the system.
+	*/
+	var eventParm2 = event.parm2.split(',');
+	
+	var sliceIndex;
+	
+	// Loop through array of recordIDs and find the split entry
+	for (i = 0; i < eventParm2.length; i++) {
+		if (eventParm2[i] === 'SLICE'){
+			sliceIndex = i;
+			break;
+		}
+	}
+	
+	var recordsFound = eventParm2.slice(0,sliceIndex);
+	var recordsNotFound = eventParm2.slice(sliceIndex + 1);
+	
+	// Email subject
+	email.setSubject('Forwarded email not attached because record(s) '+ recordsNotFound + ' couldn\'t be found.');
+
+	// Email body
+	template.print('<p>Sorry, but the email you forwarded referencing ' + recordsNotFound + ' was not attached because the record(s) could not be found in our system.</p>');
+	
+	if (Object.keys(recordsFound).length !== 0 && recordsFound.constructor === Object){
+		template.print('<p>We were able to find and attach your email to the following records:' + recordsFound + '</p>');
+	}
+	
+	// Variables
+	var currentId = current.getUniqueValue(); // Instance ID
+	var notificationId = email_action.getUniqueValue(); // Notification ID
+	var notificationName = email_action.getDisplayValue();  // Notification Name
+	
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>asupsiri</sys_created_by>
+        <sys_created_on>2017-08-18 18:04:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac192b17dbe4c30075ea38ff9d9619f6</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>cam_display_email_body</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_email_ac192b17dbe4c30075ea38ff9d9619f6</sys_update_name>
+        <sys_updated_by>asupsiri</sys_updated_by>
+        <sys_updated_on>2017-09-20 20:30:22</sys_updated_on>
+    </sys_script_email>
+</record_update>

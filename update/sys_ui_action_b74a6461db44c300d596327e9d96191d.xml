@@ -5,7 +5,7 @@
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition/>
+        <condition>current.claim_id != ''</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
@@ -21,8 +21,7 @@
         <name>Recalculate Reserve</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[
-	var si=new cam_ClaimReserves();
+        <script><![CDATA[	var si=new cam_ClaimReserves();
 	si.recalculateReserves(current.sys_id);
 
 	action.setRedirectURL(current);]]></script>
@@ -33,11 +32,11 @@
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-18 21:10:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b74a6461db44c300d596327e9d96191d</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Recalculate Reserve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -46,7 +45,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_action_b74a6461db44c300d596327e9d96191d</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-04 20:38:40</sys_updated_on>
+        <sys_updated_on>2017-10-26 18:53:25</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

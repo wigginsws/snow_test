@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2017-06-30 03:26:06</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>464a406fdbeb7a0075ea38ff9d961939</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ScriptableSOAPMessageClient.getRequestBody</sys_name>

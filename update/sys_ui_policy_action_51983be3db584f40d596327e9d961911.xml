@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-08-07 03:34:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>51983be3db584f40d596327e9d961911</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>claim_number_1</sys_name>

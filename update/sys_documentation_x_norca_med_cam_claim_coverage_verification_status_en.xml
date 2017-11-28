@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>joe@buildon.me</sys_created_by>
             <sys_created_on>2017-04-07 15:16:05</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>8b370a2cdb06f28062bafd441d9619ec</sys_id>
             <sys_mod_count>4</sys_mod_count>
             <sys_name>Coverage Verification</sys_name>

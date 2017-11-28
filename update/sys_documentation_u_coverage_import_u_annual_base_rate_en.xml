@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-10 18:13:49</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>5f557a32dbbbb24075ea38ff9d9619b5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>ANNUAL_BASE_RATE</sys_name>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-Entity-Show Related Claims Defense </name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var clist=g_form.getValue('classification');
+	var cnum=clist.toString().indexOf('DINDATTY');
+	if(cnum >=0 ){
+		g_form.showRelatedList('x_norca_med_cam_claim.counsel');
+	}
+	else {
+		g_form.hideRelatedList('x_norca_med_cam_claim.counsel');
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-09-24 22:28:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c98c39bdb9d0380d596327e9d9619d3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CAM-Entity-Show Related Claims Defense </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_8c98c39bdb9d0380d596327e9d9619d3</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:53</sys_updated_on>
+        <table>x_norca_med_cam_entity</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

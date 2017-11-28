@@ -11,7 +11,7 @@
         <sys_class_name>ts_group</sys_class_name>
         <sys_created_by>wwiggins</sys_created_by>
         <sys_created_on>2017-08-05 16:37:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>0ba814dbdb140f40d596327e9d961981</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Claims</sys_name>

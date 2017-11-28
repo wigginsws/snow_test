@@ -12,12 +12,12 @@
             <relationship display_value="Versions">67bdac52374010008687ddb1967334ee</relationship>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>rrao</sys_created_by>
-            <sys_created_on>2017-07-02 16:11:21</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-10-02 00:56:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c39c09d4dbbf3a00d596327e9d961930</sys_id>
+            <sys_id>9d6da7e1db218bc0d596327e9d9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sys_update_version</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -25,9 +25,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_list_sys_script_67bdac52374010008687ddb1967334ee_null</sys_update_name>
-            <sys_updated_by>rrao</sys_updated_by>
-            <sys_updated_on>2017-07-02 16:11:21</sys_updated_on>
-            <sys_user display_value="">3011c104db34320075ea38ff9d961958</sys_user>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-10-02 00:56:07</sys_updated_on>
+            <sys_user display_value="">3cde35e9dbed3a0075ea38ff9d96191b</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

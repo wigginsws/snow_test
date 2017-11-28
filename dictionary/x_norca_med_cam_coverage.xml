@@ -11,7 +11,7 @@
         <element label="Auto Renew" max_length="40" name="auto_renew_b" read_only="true" type="boolean"/>
         <element label="Base Record" max_length="40" name="base_record_b" read_only="true" type="boolean"/>
         <element label="Building Rate" max_length="20" name="building_rate" read_only="true" type="decimal"/>
-        <element label=" CANCELLATION_METHOD_CODE" max_length="40" name="cancellation_method_code" read_only="true" type="string"/>
+        <element label="CANCELLATION_METHOD_CODE" max_length="40" name="cancellation_method_code" read_only="true" type="string"/>
         <element label="Cancel Type Code" max_length="40" name="cancel_type_code" read_only="true" type="string"/>
         <element label="char1" max_length="40" name="char1" read_only="true" type="string"/>
         <element label="char2" max_length="40" name="char2" read_only="true" type="string"/>
@@ -61,6 +61,9 @@
         <element attributes="format=none" label="Parent Coverage Base Record FK" max_length="20" name="parent_coverage_base_record_fk" read_only="true" type="decimal"/>
         <element label="PCF County Code" max_length="40" name="pcf_county_code" read_only="true" type="string"/>
         <element label="PCF Participation Date" max_length="40" name="pcf_participation_date" read_only="true" type="glide_date_time"/>
+        <element label="Percent Coinsurance" max_length="40" name="pct_coinsurance" read_only="true" type="float"/>
+        <element label="Percent Inflation" max_length="40" name="pct_inflation" read_only="true" type="float"/>
+        <element label="Percent Participation" max_length="40" name="pct_participation" read_only="true" type="float"/>
         <element label="Per Day Limit" max_length="40" name="per_day_limit" read_only="true" type="string"/>
         <element label="Primary Coverage" max_length="40" name="primary_coverage_b" read_only="true" type="boolean"/>
         <element label="Primary Exposure" max_length="40" name="primary_exposure_b" read_only="true" type="boolean"/>

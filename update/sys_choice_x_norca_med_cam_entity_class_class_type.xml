@@ -2799,6 +2799,63 @@
             <element>class_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Group</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>OasisSN</sys_created_by>
+            <sys_created_on>2017-08-26 00:19:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9532c1f9dbbccf0075ea38ff9d961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>OasisSN</sys_updated_by>
+            <sys_updated_on>2017-08-26 00:19:34</sys_updated_on>
+            <value>Group</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>I/SSTAFF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>OasisSN</sys_created_by>
+            <sys_created_on>2017-09-20 01:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec078631dbddcb0075ea38ff9d96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>OasisSN</sys_updated_by>
+            <sys_updated_on>2017-09-20 01:51:33</sys_updated_on>
+            <value>I/SSTAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IBSSTAFF</label>
+            <language>en</language>
+            <name>x_norca_med_cam_entity_class</name>
+            <sequence>0</sequence>
+            <sys_created_by>OasisSN</sys_created_by>
+            <sys_created_on>2017-09-20 01:51:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00074631dbddcb0075ea38ff9d9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>OasisSN</sys_updated_by>
+            <sys_updated_on>2017-09-20 01:51:32</sys_updated_on>
+            <value>IBSSTAFF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>class_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>IND_AGENT</label>
             <language>en</language>
             <name>x_norca_med_cam_entity_class</name>
@@ -2896,16 +2953,16 @@
             <sys_created_by>roshan@buildon.me</sys_created_by>
             <sys_created_on>2017-04-18 04:57:58</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>7e46ffb3db900300e022771c8c961908</sys_id>
-            <sys_mod_count>158</sys_mod_count>
+            <sys_id>c3236696dba60300e022771c8c961945</sys_id>
+            <sys_mod_count>163</sys_mod_count>
             <sys_name>class_type</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_choice_x_norca_med_cam_entity_class_class_type</sys_update_name>
-            <sys_updated_by>rrao</sys_updated_by>
-            <sys_updated_on>2017-06-28 20:24:32</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:00:29</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

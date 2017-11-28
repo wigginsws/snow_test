@@ -16,45 +16,58 @@ cam_ClaimReserves.prototype = {
 		
 	},
 	
-	recalculateReserves: function(claimid) {
-		var cdt=new GlideDateTime().getDisplayValue();
-		var gr = new GlideRecord('x_norca_med_cam_expenditure_view');
-		gr.addQuery('claim_number', claimid);
-		gr.setLimit(1);
-		gr.query();
-		if(gr.getRowCount()>0){
-			while (gr.next()) {
-				gr.setWorkflow(true); //run business rules
-				gr.autoSysFields(false); //Do not update system fields
-				gr.datetimeforupdatetrigger=cdt; //Force the update
-				gr.update();
+	formatMoney: function(amount) {
+		var symbol = '$';
+		var decimal = '.';
+		var neg = (amount<0)?true:false;
+		amount=amount.toFixed(2);
+		
+		var i = parseInt(amount) + '';
+		var j = (j = i.length) > 3 ? j % 3 : 0;
+		var open = (neg)?'(':'';
+		var closed = (neg)?')':'';
+		return open+symbol + (j>=1 ? i.substr(0, j) + ',' : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + ',') + (2 ? decimal + Math.abs(amount - i).toFixed(2).slice(2) : "")+closed;
+		},
+		
+		recalculateReserves: function(claimid) {
+			var cdt=new GlideDateTime().getDisplayValue();
+			var gr = new GlideRecord('x_norca_med_cam_expenditure_view');
+			gr.addQuery('claim_number', claimid);
+			gr.setLimit(1);
+			gr.query();
+			if(gr.getRowCount()>0){
+				while (gr.next()) {
+					gr.setWorkflow(true); //run business rules
+					gr.autoSysFields(false); //Do not update system fields
+					gr.datetimeforupdatetrigger=cdt; //Force the update
+					gr.update();
+				}
 			}
-		}
+			
+		},
 		
-	},
-	
-	createReserve: function(claimid){
-		var check = new GlideRecord('x_norca_med_cam_reserves');
-		check.addQuery('claim_number',claimid);
-		check.query();
-		var ct = check.getRowCount();
-		if(ct==0){
-			var gr = new GlideRecord('x_norca_med_cam_reserves');
-			gr.initialize();
-			gr.claim_number = claimid;
-			gr.insert();
-		}
+		createReserve: function(claimid){
+			var check = new GlideRecord('x_norca_med_cam_reserves');
+			check.addQuery('claim_number',claimid);
+			check.query();
+			var ct = check.getRowCount();
+			if(ct==0){
+				var gr = new GlideRecord('x_norca_med_cam_reserves');
+				gr.initialize();
+				gr.claim_number = claimid;
+				gr.insert();
+			}
+			
+		},
 		
-	},
-	
-	type: 'cam_ClaimReserves'
-};]]></script>
+		type: 'cam_ClaimReserves'
+	};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-08-02 23:24:57</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cff8d2d2db1cc740d596327e9d96195d</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>cam_ClaimReserves</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
@@ -62,6 +75,6 @@ cam_ClaimReserves.prototype = {
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_cff8d2d2db1cc740d596327e9d96195d</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-04 20:39:52</sys_updated_on>
+        <sys_updated_on>2017-10-26 18:04:24</sys_updated_on>
     </sys_script_include>
 </record_update>

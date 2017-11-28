@@ -28,7 +28,7 @@ while (gr.next()) {
         <sys_created_on>2017-06-21 16:30:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>208760f8dbeffa00d596327e9d96192c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CAM-Script-Update Claim Group to Specialist</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -36,7 +36,7 @@ while (gr.next()) {
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_208760f8dbeffa00d596327e9d96192c</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-24 04:42:51</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:28</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

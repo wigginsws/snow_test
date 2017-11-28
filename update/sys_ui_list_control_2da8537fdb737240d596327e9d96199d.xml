@@ -29,7 +29,7 @@
         <sys_class_name>sys_ui_list_control</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-13 23:22:01</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2da8537fdb737240d596327e9d96199d</sys_id>

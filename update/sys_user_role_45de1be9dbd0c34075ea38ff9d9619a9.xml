@@ -5,7 +5,6 @@
         <can_delegate>false</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_norca_med_cam.indemnity_user</name>
@@ -13,7 +12,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-07-31 20:33:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>45de1be9dbd0c34075ea38ff9d9619a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam.indemnity_user</sys_name>

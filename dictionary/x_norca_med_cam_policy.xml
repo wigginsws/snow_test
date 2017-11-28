@@ -13,7 +13,7 @@
         <element label="Bank Account Number" max_length="30" name="bank_account_no" read_only="true" type="string"/>
         <element label="Bank FK" max_length="40" name="bank_fk" read_only="true" type="integer"/>
         <element label="Cancellation Reason Code" max_length="10" name="cancel_reason_code" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Regional/Claim Office" max_length="40" name="claim_office" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Regional Office" max_length="40" name="claim_office" read_only="true" type="string"/>
         <element label="Deductible Cost Type List" max_length="4000" name="deductible_cost_type_list" read_only="true" type="glide_list"/>
         <element label="Description" max_length="100" name="description" read_only="true" type="string"/>
         <element label="Division" max_length="1000" name="division" read_only="true" type="string"/>
@@ -27,6 +27,7 @@
         <element label="Per Incident Limit" max_length="20" name="inc_limit" read_only="true" type="decimal"/>
         <element label="Incident SIR Limit" max_length="20" name="inc_sir_limit" read_only="true" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" label="Issue Company" max_length="40" name="issue_company" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
+        <element label="Issue Company FK" max_length="20" name="issue_company_fk" read_only="true" type="string"/>
         <element label="Jacket Number" max_length="30" name="jacket_no" read_only="true" type="string"/>
         <element label="Legacy Policy Number" max_length="50" name="legacy_policy_number" read_only="true" type="string"/>
         <element label="Limit Cost Type List" max_length="4000" name="limit_cost_type_list" read_only="true" type="glide_list"/>
@@ -142,12 +143,15 @@
             <element name="issue_company"/>
         </index>
         <index name="index7">
-            <element name="sor_id"/>
+            <element name="policy_location"/>
         </index>
         <index name="index8">
-            <element name="rein_intermediary"/>
+            <element name="sor_id"/>
         </index>
         <index name="index9">
+            <element name="rein_intermediary"/>
+        </index>
+        <index name="index10">
             <element name="underwriter"/>
         </index>
     </element>

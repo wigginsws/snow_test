@@ -8,7 +8,7 @@
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-28 15:02:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cf46b224db50c340d596327e9d961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Sys_popup,sys_popup</sys_name>

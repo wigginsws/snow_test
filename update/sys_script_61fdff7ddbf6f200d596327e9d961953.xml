@@ -16,15 +16,14 @@
         <condition/>
         <description>Updates Primary Address on related Entity - should run on UI-triggered changes and Import. Validated.</description>
         <execute_function>false</execute_function>
-        <filter_condition table="x_norca_med_cam_address">entityISNOTEMPTY^primary=true^primaryVALCHANGES^EQ<item endquery="false" field="entity" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <filter_condition table="x_norca_med_cam_address">entityISNOTEMPTY^primary=true^EQ<item endquery="false" field="entity" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="primary" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="primary" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>CAM-ADDR-Add primary address to entity</name>
-        <order>100</order>
+        <order>900</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -35,32 +34,54 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	var camDataSyncUtils = new cam_DataSyncUtils();
-	if (camDataSyncUtils.isRecordEffective(current, "effective_from", "effective_to", "name", "entity")) {
-		var entityGR = new cam_DataSyncUtils().getEntityBySysId(current.entity);
-		entityGR.primary_address = current.getUniqueValue();
-		entityGR.setWorkflow(false);
-		entityGR.autoSysFields(false);
-		entityGR.update();
+	if (camDataSyncUtils.isRecordEffectiveSimple(current, "effective_from", "effective_to")) {
+		var entityGR = new cam_DataSyncUtils().getRecordBySysId( "x_norca_med_cam_entity", current.entity);
+		if (entityGR.primary_address != current.getUniqueValue()) {
+			entityGR.primary_address = current.getUniqueValue();
+			
+			entityGR.setWorkflow(false);
+			entityGR.autoSysFields(false);
+			entityGR.update();
+		}
+// 		var addressFields = {
+// 			"use": "new_ent_address_purpose",
+// 			"address_line1": "new_ent_address_line_1",
+// 			"address_line2": "new_ent_address_line_2",
+// 			"city": "new_ent_city",
+// 			"state": "new_ent_state",
+// 			"county": "new_ent_county",
+// 			"country": "new_ent_country",
+// 			"zip_code": "new_ent_zip_code"
+// 		};
+
+// 		for (var fieldName in addressFields) {
+// 			if (current.isValidField(fieldName)) {
+// 				entityGR.setValue(addressFields[fieldName], current.getValue(fieldName));
+// 			}
+// 		}
+// 		entityGR.setWorkflow(false);
+// 		entityGR.autoSysFields(false);
+// 		entityGR.update();
 	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-05-19 03:59:02</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>61fdff7ddbf6f200d596327e9d961953</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>CAM-ADDR-Add primary address to entity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_61fdff7ddbf6f200d596327e9d961953</sys_update_name>
-        <sys_updated_by>scott.starkey@snc</sys_updated_by>
-        <sys_updated_on>2017-07-20 16:10:00</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

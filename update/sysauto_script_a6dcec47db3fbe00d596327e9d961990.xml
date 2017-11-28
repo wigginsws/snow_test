@@ -36,9 +36,9 @@ for (var idx=0; idx<tableNames.length; idx++) {
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-11 02:56:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a6dcec47db3fbe00d596327e9d961990</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CAM-Temp-Set Last Committed Update</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -46,7 +46,7 @@ for (var idx=0; idx<tableNames.length; idx++) {
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_a6dcec47db3fbe00d596327e9d961990</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-19 16:05:18</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:19</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

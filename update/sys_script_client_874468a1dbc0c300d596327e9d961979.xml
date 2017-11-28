@@ -15,7 +15,7 @@
 	//document.getElementById('sizer_plus_x_norca_med_cam_claim.reserves').style.display='none';
 	//document.getElementById('sizer_plus_x_norca_med_cam_claim.reserves').style.display='none';
 	
-	var elementsToHide = "reserves,reserves2";
+	var elementsToHide = "reserves,reserves2,html3";
 	var myList = elementsToHide.split(',');
 	for (var i = 0; i< myList.length;i++) {
 		var ele = g_form.getElement(myList[i]);
@@ -27,11 +27,11 @@
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-18 20:48:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>874468a1dbc0c300d596327e9d961979</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>CAM-Claim-HideHTMLButtons</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -40,7 +40,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_client_874468a1dbc0c300d596327e9d961979</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-01 20:05:14</sys_updated_on>
+        <sys_updated_on>2017-10-26 19:00:55</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

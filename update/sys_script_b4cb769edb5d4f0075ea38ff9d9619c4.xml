@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_reserves</collection>
+        <condition/>
+        <description>This script will set the previous reserve amount for either indemnity or expense. The previous (original) amount is needed to pass to OASIS</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_reserves">expense_resVALCHANGESjavascript:global.getCurrencyFilter('x_norca_med_cam_reserves','expense_res', 'USD;USD')^ORindemnity_resVALCHANGESjavascript:global.getCurrencyFilter('x_norca_med_cam_reserves','indemnity_res', 'USD;USD')^sys_updated_by!=oasissn^EQ<item endquery="false" field="expense_res" goto="false" newquery="false" operator="VALCHANGES" or="false" value="javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','expense_res', 'USD;USD')"/>
+            <item endquery="false" field="indemnity_res" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','indemnity_res', 'USD;USD')"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="oasissn"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-RESERVE-Set Previous Amount</name>
+        <order>0</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if(current.indemnity_res.changes()){
+		current.previous_indemnity_res_amount = previous.indemnity_res;
+	}
+	if(current.expense_res.changes()){
+		current.previous_expense_res_amount = previous.expense_res;
+	}
+	
+
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-09-21 19:00:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4cb769edb5d4f0075ea38ff9d9619c4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CAM-RESERVE-Set Previous Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_b4cb769edb5d4f0075ea38ff9d9619c4</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:35</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4cb769edb5d4f0075ea38ff9d9619c4"/>
+</record_update>

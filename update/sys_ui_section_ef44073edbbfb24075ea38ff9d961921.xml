@@ -2,72 +2,58 @@
 <record_update>
     <sys_ui_section caption="Reported By" section_id="ef44073edbbfb24075ea38ff9d961921" sys_domain="global" table="x_norca_med_cam_web_reported_claim" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_rb_fn</element>
+            <element>u_rb_name</element>
             <position>0</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>7b44073edbbfb24075ea38ff9d961968</sys_id>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>159b992bdb700f40d596327e9d96199c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reported By" display_value="Reported By" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">ef44073edbbfb24075ea38ff9d961921</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_rb_ln</element>
-            <position>1</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>fb44073edbbfb24075ea38ff9d961968</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Reported By" display_value="Reported By" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">ef44073edbbfb24075ea38ff9d961921</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>7f44073edbbfb24075ea38ff9d961968</sys_id>
+            <position>1</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>959b992bdb700f40d596327e9d96199c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reported By" display_value="Reported By" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">ef44073edbbfb24075ea38ff9d961921</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_rb_phone</element>
-            <position>3</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>ff44073edbbfb24075ea38ff9d961968</sys_id>
+            <position>2</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>199b992bdb700f40d596327e9d96199c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reported By" display_value="Reported By" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">ef44073edbbfb24075ea38ff9d961921</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_rb_email</element>
-            <position>4</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>7344073edbbfb24075ea38ff9d961969</sys_id>
+            <position>3</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>999b992bdb700f40d596327e9d96199c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Reported By" display_value="Reported By" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">ef44073edbbfb24075ea38ff9d961921</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -79,7 +65,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>sabesamis</sys_created_by>
             <sys_created_on>2017-07-10 19:19:07</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ef44073edbbfb24075ea38ff9d961921</sys_id>

@@ -4,84 +4,98 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_type</element>
             <position>0</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>b0dc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>05fcb984db194f0075ea38ff9d9619df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reason_for_contact</element>
             <position>1</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>34dc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>c9fcb984db194f0075ea38ff9d9619df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_insured_contacted</element>
+            <position>2</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>4dfcb984db194f0075ea38ff9d9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>b4dc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <position>3</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>cdfcb984db194f0075ea38ff9d9619df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_name</element>
-            <position>3</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>38dc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <position>4</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>41fcb984db194f0075ea38ff9d9619e0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_phone_number</element>
-            <position>4</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>b8dc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <position>5</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>c1fcb984db194f0075ea38ff9d9619e0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_email</element>
-            <position>5</position>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-07-27 18:33:12</sys_created_on>
-            <sys_id>3cdc9e14dbd4034075ea38ff9d96190c</sys_id>
+            <position>6</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-14 14:38:16</sys_created_on>
+            <sys_id>45fcb984db194f0075ea38ff9d9619e0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact" display_value="Contact" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">c0385132db93720075ea38ff9d96194b</sys_ui_section>
-            <sys_updated_by>jsavage</sys_updated_by>
-            <sys_updated_on>2017-07-27 18:33:12</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-14 14:38:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -93,7 +107,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jsavage</sys_created_by>
             <sys_created_on>2017-06-15 14:55:21</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c0385132db93720075ea38ff9d96194b</sys_id>

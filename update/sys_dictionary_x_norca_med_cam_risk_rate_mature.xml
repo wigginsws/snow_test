@@ -52,17 +52,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-05-31 03:34:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>cb7ce971db4ffe00d596327e9d9619c7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3f1fdadadb660300e022771c8c9619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Rate Mature</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_risk_rate_mature</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-03 17:26:03</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:29:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

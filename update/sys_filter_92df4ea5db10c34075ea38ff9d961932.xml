@@ -12,7 +12,7 @@
         <sys_class_name>sys_filter</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-07-31 14:48:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>92df4ea5db10c34075ea38ff9d961932</sys_id>

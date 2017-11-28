@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_ClaimParticipantsWSUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_ClaimParticipantsWSUtils</name>
+        <script><![CDATA[var cam_ClaimParticipantsWSUtils = Class.create();
+cam_ClaimParticipantsWSUtils.prototype = Object.extendsObject(cam_CustomRestWsUtils, {
+    initialize: function() {
+    },
+
+    type: 'cam_ClaimParticipantsWSUtils',
+	
+	saveParticipant: function(currentGR){
+		
+		var effFromDate = cam.snDateFieldByFormat(currentGR, "effective_from", "MM/dd/yyyy", "");
+		var effToDate = cam.snDateFieldByFormat(currentGR, "effective_to", "MM/dd/yyyy", "");
+		var update_ind;
+		if(currentGR.sor_id){
+			update_ind = "Y";
+		}else {
+				update_ind = "I";
+		}
+		var ageLossType;
+		if(currentGR.role == 'CLAIMANT' && currentGR.u_decimal_1 && !currentGR.age_loss_type){
+			ageLossType = 'year';
+		} else {
+			ageLossType = currentGR.age_loss_type;
+		}
+	
+			
+		
+		var params = {
+			
+				"EntityRoleID": this.createParamValueObject( currentGR.sor_id?currentGR.sor_id:null),
+				"EntityID": this.createParamValueObject( currentGR.entity.sor_id ),
+				"RoleTypeCode": this.createParamValueObject( currentGR.role ),
+				"SourceRecordID": this.createParamValueObject( currentGR.claim.claim_id ), 
+				"SourceTableName": this.createParamValueObject("CLAIM"),
+				"ExternalID": this.createParamValueObject( currentGR.claim.number ),
+				"EffectiveFromDate": this.createParamValueObject( effFromDate ), 
+				"EffectiveToDate": this.createParamValueObject( effToDate ),
+				"UpdateIndicator": this.createParamValueObject( update_ind ), 
+				"ClaimID": this.createParamValueObject( currentGR.claim.claim_id ),
+				"AgeAtLoss": this.createParamValueObject( currentGR.u_decimal_1 ),
+				"AgeLossType": this.createParamValueObject( ageLossType )
+
+		};
+		
+		var fn = function(responseBody) {
+			var responseObj = JSON.parse(responseBody);
+			if (responseObj && responseObj["status"] && responseObj["status"]=="Success") {
+				currentGR.setValue("sor_id", responseObj["entity_role_pk"]);
+// 				currentGR.setValue("last_committed_update", currentGR.sys_mod_count);
+// 				currentGR.autoSysFields(false);
+// 				currentGR.setWorkflow(false);
+// 				currentGR.update();
+			} else {
+				var message = "";
+			if (responseObj) {
+					message = ", message " + responseObj["Service_Message"];
+				}
+				gs.error("Could not update Claim Participant " + message);
+				gs.addErrorMessage("Could not update Claim Participant " + message);
+			}
+			return responseObj;
+		
+		};
+		
+		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ClaimParticipant", "SaveParticipant", params, currentGR, fn);
+		
+		
+	},
+	
+	isValidParticipantUpdate: function(currentGR, role, claim){
+	var gr = new GlideRecord('x_norca_med_cam_participant');
+		gr.addQuery('role', role);
+		gr.addQuery('claim', claim);
+		gr.addQuery('commit_status','!=', 'failure');
+		gr.addQuery('sys_id', '!=', currentGR.sys_id);
+		gr.addQuery('effective_to', '');
+		gr.query();
+		if(gr.next()){
+			return true;
+		} else {
+			return false;
+		}
+	}
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-09-18 15:43:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>53f1be11dbd1cb0075ea38ff9d9619a5</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>cam_ClaimParticipantsWSUtils</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_53f1be11dbd1cb0075ea38ff9d9619a5</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-10-27 13:40:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

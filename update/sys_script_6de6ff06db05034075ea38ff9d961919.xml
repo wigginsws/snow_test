@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_claim</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-CLAIM-SetLitigationHTML</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var caption='';
+	var court='';
+	var docket='';
+	var suitserved='';
+	var state='';
+	var amount='';
+	var venue='';
+	var trialdate='';
+	var temphtml;
+	
+	var gr = new GlideRecord('x_norca_med_cam_litigation');
+	gr.addQuery('claim_number', current.sys_id);
+	gr.query();
+	
+	if(gr.getRowCount()>0){
+		while (gr.next()) {
+			g_scratchpad.litigation=gr.sys_id;
+			temphtml='<table  border="0" style="width:100%;" >';
+			
+			caption='<tr><td align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px; "><label >Caption</label></td><td style="vertical-align: text-middle;padding:3px; width=40%;"><input readonly="readonly" class="form-control disabled"  value ="'+gr.case_name+'" type="text" ng-non-bindable></td>';
+			
+			court='<td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;width=40%;"><label>Court</label></td><td  style="padding:3px;width=40%; "><input readonly="readonly" class="form-control disabled"  value ="'+gr.court_type.menu_item+'" type="text" ng-non-bindable></td></tr>';
+			
+			docket='<tr><td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>Docket #</label></td><td  style="padding:3px;width=40%; "><input readonly="readonly" class="form-control disabled"  value ="'+gr.official_case_number+'" type="text" ng-non-bindable></td>';
+			
+			suitserved='<td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>Suit Served</label></td><td  style="padding:3px;width=40%; "><input readonly="readonly" class="form-control disabled"  value ="'+gr.defense_response_date+'" type="text" ng-non-bindable></td></tr>';
+			
+			state='<tr><td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>State</label></td><td  style="padding:3px;width=40%; "><input readonly="readonly" class="form-control disabled"  value ="'+gr.venue_state+'" type="text" ng-non-bindable></td>';
+			
+			amount='<td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>Amount</label></td><td  style="padding:3px; width=40%;"><input readonly="readonly" class="form-control disabled"  value ="'+gr.demand_amount+'" type="text" ng-non-bindable></td></tr>';
+			
+			venue='<tr><td align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>Venue</label></td><td  style="padding:3px;width=40%; "><input readonly="readonly" class="form-control disabled"  value ="'+gr.court_name.menu_item+'" type="text" ng-non-bindable></td>';
+			
+			trialdate='<td  align="right" style="vertical-align: text-middle; width: 10%;font-size:12px;padding-top: 6px;padding-right: 3px;"><label>Trial Date</label></td><td  style="padding:3px; width=40%;"><input readonly="readonly" class="form-control disabled"  value ="'+gr.current_trial_date+'" type="text" ng-non-bindable></td></tr>';
+			
+			temphtml=temphtml+caption+court+docket+suitserved+state+amount+venue+trialdate;
+			temphtml=temphtml+'</table>';
+			current.html3=temphtml;
+			
+		}
+	}
+	else{
+		g_scratchpad.litigation='CreateLitigationRecord';
+		temphtml='<table  border="0" style="width:100%;" ><tr><td>There are no litigation details for this claim yet.</td></tr></table><br>';		
+		current.html3=temphtml;
+	}
+	
+	
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-09-08 18:23:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6de6ff06db05034075ea38ff9d961919</sys_id>
+        <sys_mod_count>123</sys_mod_count>
+        <sys_name>CAM-CLAIM-SetLitigationHTML</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_6de6ff06db05034075ea38ff9d961919</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-24 21:22:20</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6de6ff06db05034075ea38ff9d961919"/>
+</record_update>

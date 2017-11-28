@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_norca_med_cam_participant</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_norca_med_cam_participant">role=EXAMINER^effective_toISNOTEMPTY^effective_toVALCHANGES^EQ<item endquery="false" field="role" goto="false" newquery="false" operator="=" or="false" value="EXAMINER"/>
+            <item endquery="false" field="effective_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="effective_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CAM-CPTCPNT-Claim specialist check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var cPtcpntWsUtils = new cam_ClaimParticipantsWSUtils();
+	if(!cPtcpntWsUtils.isValidParticipantUpdate(current, current.role, current.claim)){
+		current.setValue('effective_to', '');
+		current.setAbortAction(true);
+		current.setWorkflow(false);
+		current.autoSysFields(false);
+		gs.addErrorMessage('The participant was not updated. There must first be a valid ' + current.role.getDisplayValue() + ' in the participant list before setting the effective to date.');
+	gs.debug('[isValidParticipantUpdate] called for ' + current.getDisplayValue());
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-10-13 14:43:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ecb1d391dbb1838075ea38ff9d961936</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CAM-CPTCPNT-Claim specialist check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_ecb1d391dbb1838075ea38ff9d961936</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:33</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ecb1d391dbb1838075ea38ff9d961936"/>
+</record_update>

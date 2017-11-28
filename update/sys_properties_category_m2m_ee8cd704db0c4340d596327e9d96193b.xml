@@ -2,14 +2,14 @@
 <record_update table="sys_properties_category_m2m">
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="OASIS Integration">e9a63309db32b200d596327e9d9619f3</category>
-        <order>700</order>
+        <order>1000</order>
         <property display_value="x_norca_med_cam.ws_max_retries" name="x_norca_med_cam.ws_max_retries">037b9b04db0c4340d596327e9d9619f2</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-14 18:17:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ee8cd704db0c4340d596327e9d96193b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_norca_med_cam.ws_max_retries.OASIS Integration</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -17,6 +17,6 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_properties_category_m2m_ee8cd704db0c4340d596327e9d96193b</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-14 18:17:24</sys_updated_on>
+        <sys_updated_on>2017-09-07 05:17:23</sys_updated_on>
     </sys_properties_category_m2m>
 </record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Alerts" max_length="40" name="x_norca_med_cam_alerts" type="collection">
+        <element label="Active" max_length="40" name="activeactive" type="boolean"/>
+        <element choice="1" label="Alert Type" max_length="40" name="alert_type" type="choice">
+            <choice>
+                <element label="Document" sequence="100" value="document"/>
+                <element label="Activity Log" sequence="300" value="activity_log"/>
+            </choice>
+        </element>
+        <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
+        <element label="Description" max_length="80" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" reference_qual="active=true^123TEXTQUERY321-- oper ---- value --^EQ" reference_qual_condition="active=true^123TEXTQUERY321-- oper ---- value --^EQ" type="reference"/>
+        <index name="index">
+            <element name="claim"/>
+            <element name="sys_created_on"/>
+            <element name="description"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

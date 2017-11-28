@@ -96,7 +96,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_report_84790348db6bf600d596327e9d96198e</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-08-24 00:29:11</sys_updated_on>
+        <sys_updated_on>2017-09-07 13:59:57</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <title>Claims to be Assigned</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

@@ -52,8 +52,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-06-29 13:05:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>3215c95bdbafb600d596327e9d961974</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>35ee5e9adb660300e022771c8c96196b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Plantiff Counsel</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_coverage_review_plantiff_counsel</sys_update_name>
-        <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-06-29 13:05:09</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:26:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

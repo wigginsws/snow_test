@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Property to toggle whether web service logging is on. When set to true, logs are written to Service Log table.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_norca_med_cam.ws_logging_active</name>
+        <read_roles>x_norca_med_cam.admin</read_roles>
+        <suffix>ws_logging_active</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-27 21:24:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50165a54dba1074075ea38ff9d961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_norca_med_cam.ws_logging_active</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_properties_50165a54dba1074075ea38ff9d961949</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-09-27 21:24:22</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles>x_norca_med_cam.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=50165a54dba1074075ea38ff9d961949"/>
+</record_update>

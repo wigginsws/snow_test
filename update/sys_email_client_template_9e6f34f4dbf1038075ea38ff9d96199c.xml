@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body/>
+        <condition/>
+        <copied/>
+        <from>NORCAL Group Claims &lt;norcalcmadev@norcal-group.com&gt;</from>
+        <name>claim</name>
+        <order>100</order>
+        <recipients>${u_insured}</recipients>
+        <reply_to>NORCAL Group Claims &lt;norcalcmadev@norcal-group.com&gt;</reply_to>
+        <subject>${number} - ${short_description}</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>jsavage</sys_created_by>
+        <sys_created_on>2017-10-11 14:36:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9e6f34f4dbf1038075ea38ff9d96199c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>claim</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_client_template_9e6f34f4dbf1038075ea38ff9d96199c</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-18 20:12:11</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+    </sys_email_client_template>
+</record_update>

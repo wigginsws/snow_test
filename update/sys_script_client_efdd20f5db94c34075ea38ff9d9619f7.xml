@@ -15,17 +15,17 @@
 		return;
 	}
 	
-	x_norca_med_cam.cam_ClaimClientValidation.validateClaimDates(g_form);
+	x_norca_med_cam.cam_ClmClientValidation.validateClaimDates(g_form);
 	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-01 02:26:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>efdd20f5db94c34075ea38ff9d9619f7</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>CAM-Claim loss date check</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -33,11 +33,11 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_client_efdd20f5db94c34075ea38ff9d9619f7</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-02 15:05:49</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:53</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <type>onChange</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
 </record_update>

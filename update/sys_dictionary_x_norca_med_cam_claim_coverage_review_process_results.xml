@@ -53,16 +53,16 @@
         <sys_created_by>joe@buildon.me</sys_created_by>
         <sys_created_on>2017-04-07 15:42:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>783dceecdb06f28062bafd441d96192b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_id>b23fd21edb660300e022771c8c961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Coverage Review Process Results</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_claim_coverage_review_process_results</sys_update_name>
-        <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-06-01 13:43:58</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:25:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

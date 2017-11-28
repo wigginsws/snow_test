@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="age_loss_type" table="x_norca_med_cam_participant" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>age_loss_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Day</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>0</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-09-22 04:06:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87f8b0eedb918f0075ea38ff9d96197a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-09-22 04:06:17</sys_updated_on>
+            <value>day</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>age_loss_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Week</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>10</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-09-22 04:07:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7249fcaedb918f0075ea38ff9d96190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-09-22 04:07:28</sys_updated_on>
+            <value>week</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>age_loss_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Month</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>20</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-09-22 04:07:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>066934eedb918f0075ea38ff9d961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-09-22 04:07:58</sys_updated_on>
+            <value>month</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>age_loss_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Year</label>
+            <language>en</language>
+            <name>x_norca_med_cam_participant</name>
+            <sequence>30</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-09-22 04:08:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6479b4eedb918f0075ea38ff9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-09-22 04:08:08</sys_updated_on>
+            <value>year</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>age_loss_type</element>
+            <name>x_norca_med_cam_participant</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-09-22 04:06:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6933aa96dba60300e022771c8c96199c</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>age_loss_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_participant_age_loss_type</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:58:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

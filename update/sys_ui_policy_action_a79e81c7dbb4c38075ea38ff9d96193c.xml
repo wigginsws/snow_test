@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>u_consent_received</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-08-29 22:26:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a79e81c7dbb4c38075ea38ff9d96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_consent_received</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a79e81c7dbb4c38075ea38ff9d96193c</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-08-29 22:26:36</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <ui_policy display_value="CAM-HideFieldsFNOL">020e8987dbb4c38075ea38ff9d961930</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

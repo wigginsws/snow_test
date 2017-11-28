@@ -40,7 +40,7 @@
 	gr.u_case = current.u_occurrence_id;
 	gr.claim_type=current.u_claim_type;
 	gr.claimant=current.u_entity_claimant_id;
-	gr.applied_coverage = u_coverage_id;
+	gr.applied_coverage = current.u_coverage_id;
 	gr.u_loss_date=current.u_loss_date;
 	gr.u_incident_start_date=current.u_incident_start_date;
 	gr.u_incident_end_date=current.u_incident_end_date;
@@ -55,6 +55,15 @@
 	gr.claim_log_updated_on = current.u_sys_update_time;
 	gr.claim_log_created_by = current.u_sys_created_by;
 	gr.claim_log_created_on = current.u_sys_create_time;
+	gr.claim_state_code = current.u_claim_state_code;
+	var cty = new GlideRecord('x_norca_med_cam_county_lookup');
+	if(cty.get('county_code', current.u_claim_county_code)) gr.u_county = cty.sys_id;
+	  
+	   
+	
+	var clWsUtil = new cam_ClaimLogWebServiceUtils();
+	gr.oasis_claim_status = clWsUtil.getOasisClaimStatus(gr); 
+	
 	//gr.insert();
 	gr.setWorkflow(false);
 	current.u_claim_id=gr.insert();
@@ -63,11 +72,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-06-28 19:01:42</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0976458bdbab3a0075ea38ff9d961961</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>CAM-CEL-Create Claim</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -75,8 +84,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_0976458bdbab3a0075ea38ff9d961961</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 03:23:40</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-11-02 17:23:07</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

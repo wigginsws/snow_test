@@ -12,7 +12,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Reason for Report</column_label>
@@ -31,13 +31,13 @@
         <element>u_reason</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_norca_med_cam_web_reported_claim</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -53,7 +53,7 @@
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-05-16 12:40:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>c7699609db7e7200d596327e9d96193d</sys_id>
+        <sys_id>550f56dadb660300e022771c8c96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Reason for Report</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_web_reported_claim_u_reason</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-05-16 12:40:41</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:29:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

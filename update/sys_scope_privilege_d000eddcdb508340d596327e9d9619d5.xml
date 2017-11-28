@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-27 14:07:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d000eddcdb508340d596327e9d9619d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_attachment</sys_name>

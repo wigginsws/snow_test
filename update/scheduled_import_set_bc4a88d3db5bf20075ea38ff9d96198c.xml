@@ -6,9 +6,9 @@
         <conditional>false</conditional>
         <data_source display_value="Claims-OASIS-ExpenditureJoin">be0311d5dbaabe40d596327e9d9619e5</data_source>
         <map/>
-        <name>Claims-OASIS-ExpenditureJoin</name>
-        <order/>
-        <parent display_value="Claims-OASIS-Claim">0852db10dbaa7a40d596327e9d96192b</parent>
+        <name>CAM-OASIS-ExpenditureJoin</name>
+        <order>20</order>
+        <parent display_value="CAM-OASIS-Claim">0852db10dbaa7a40d596327e9d96192b</parent>
         <post_script/>
         <post_script_bool>false</post_script_bool>
         <pre_script/>
@@ -24,17 +24,17 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-06-16 22:31:51</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>bc4a88d3db5bf20075ea38ff9d96198c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Claims-OASIS-ExpenditureJoin</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>CAM-OASIS-ExpenditureJoin</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>scheduled_import_set_bc4a88d3db5bf20075ea38ff9d96198c</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-21 15:04:54</sys_updated_on>
+        <sys_updated_on>2017-10-03 19:36:19</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_import_set>
 </record_update>

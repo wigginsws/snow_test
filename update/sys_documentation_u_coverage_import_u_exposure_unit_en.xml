@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-10 18:13:50</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>13557a32dbbbb24075ea38ff9d9619cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>EXPOSURE_UNIT</sys_name>

@@ -3,17 +3,31 @@
     <sys_ui_related sys_domain="global" table="x_norca_med_cam_reserves" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Reserves - Default view" name="x_norca_med_cam_reserves" related_list="NULL" sys_domain="global" view="Default view">ef47ec0bdb98cb40d596327e9d961968</list_id>
+            <list_id display_value="Reserves - Default view" name="x_norca_med_cam_reserves" related_list="NULL" sys_domain="global" view="Default view">ce38ca1cdb61074075ea38ff9d96190c</list_id>
             <order_by/>
             <position>0</position>
             <related_list>REL:5476240bdb98cb40d596327e9d9619a9</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 23:03:02</sys_created_on>
-            <sys_id>ab47ec0bdb98cb40d596327e9d961969</sys_id>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 20:21:40</sys_created_on>
+            <sys_id>8638ca1cdb61074075ea38ff9d96190d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 23:03:02</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-27 20:21:40</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Reserves - Default view" name="x_norca_med_cam_reserves" related_list="NULL" sys_domain="global" view="Default view">ce38ca1cdb61074075ea38ff9d96190c</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:7ee6c258db61074075ea38ff9d9619fb</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 20:21:40</sys_created_on>
+            <sys_id>4a384e1cdb61074075ea38ff9d96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-27 20:21:40</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Reserves - Default view</calculated_name>
@@ -23,12 +37,12 @@
             <position/>
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-04 23:03:02</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 20:21:40</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef47ec0bdb98cb40d596327e9d961968</sys_id>
+            <sys_id>ce38ca1cdb61074075ea38ff9d96190c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Reserves - Default view</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -36,8 +50,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_related_x_norca_med_cam_reserves_null</sys_update_name>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-04 23:03:02</sys_updated_on>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-27 20:21:40</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

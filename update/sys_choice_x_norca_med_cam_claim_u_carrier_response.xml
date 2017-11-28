@@ -46,16 +46,16 @@
             <sys_created_by>roshan@buildon.me</sys_created_by>
             <sys_created_on>2017-04-16 04:18:19</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>0a467fb3db900300e022771c8c96190a</sys_id>
-            <sys_mod_count>8</sys_mod_count>
+            <sys_id>7523a296dba60300e022771c8c9619ca</sys_id>
+            <sys_mod_count>10</sys_mod_count>
             <sys_name>u_carrier_response</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_choice_x_norca_med_cam_claim_u_carrier_response</sys_update_name>
-            <sys_updated_by>rrao</sys_updated_by>
-            <sys_updated_on>2017-06-13 05:00:36</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:01:09</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

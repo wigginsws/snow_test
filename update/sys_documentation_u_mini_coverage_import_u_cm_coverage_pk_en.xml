@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-12 01:14:58</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>825f559bdb77764075ea38ff9d961932</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>CM_COVERAGE_PK</sys_name>

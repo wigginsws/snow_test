@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>rrao</sys_created_by>
             <sys_created_on>2017-05-30 17:28:27</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>03c1e3a1db0fbe00d596327e9d961959</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_name>zDS-OASIS-Case-Xref</sys_name>

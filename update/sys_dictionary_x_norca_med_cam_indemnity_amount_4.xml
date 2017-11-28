@@ -47,8 +47,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-08-07 03:28:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>e827f7a3db584f40d596327e9d961913</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>092f5edadb660300e022771c8c961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Amount 4</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_indemnity_amount_4</sys_update_name>
-        <sys_updated_by>sabesamis</sys_updated_by>
-        <sys_updated_on>2017-08-07 03:28:00</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:27:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-24 16:08:41</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d4fe56dbdb8c0f0075ea38ff9d961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>policy</sys_name>

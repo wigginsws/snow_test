@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Entity Transform">11a9d2abdb4eb600394af9361d96196b</map>
+        <map display_value="OASIS-Entity Transform">11a9d2abdb4eb600394af9361d96196b</map>
         <reference_value_field/>
         <source_field>[Script]</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

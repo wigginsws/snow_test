@@ -17,22 +17,38 @@
 <p><span style="font-size: 11px;">cc:</span></p>
 <p><span style="font-size: 11px;"><span style="font-size: 8px;">www.medicusins.com       P.O. Box 2080, Mechanicsburg, Pennsylvania 17055-0787        T 800-445-1212     F 717-796-8080</span></span></p>
 <p> </p>
-<p> </p>]]></body>
+<p> Revised Formatting below (work in progress)</p>
+<p><strong><span style="font-size: 14.0pt; color: #7f7f7f;">PERSONAL &amp; CONFIDENTIAL</span></strong></p>
+<p> </p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">RE:    ${claim_number}</span></p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">Dear: ${contact_name}</span></p>
+<p style="text-align: start;"> </p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">You may recall that a matter was reported to MEDICUS involving the above-captioned patient.</span></p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">There has been n</span><span style="font-size: 14pt;"><span style="color: #7f7f7f;"><span style="color: #808080;">o </span></span><span style="color: #808080;">recent activity in this matter and we are now closing our file.</span></span></p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">Please be advised that each state has a &#34;statute of limitations&#34; which establishes a period within which the claimant must file a complaint in court. </span><span style="color: #808080;"><span style="font-size: 14pt;">Many states expand or toll the limitations period under certain circumstances, including fraud, injuries to minors, and a variety of other reasons</span>.</span> <span style="font-size: 14.0pt; color: #7f7f7f;">Therefore, although it appears the statute of limitations to file a complaint by this claimant may likely have passed, should you receive any further communication or documents concerning this matter, please contact our office immediately before responding so that we can reopen our file.</span></p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">Please do not make this letter part of the patient’s medical chart.</span></p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">We would like to thank you for your patience and cooperation during the pendency of this matter.</span></p>
+<p style="text-align: start;"> </p>
+<p style="text-align: start;"><span style="font-size: 14.0pt; color: #7f7f7f;">Sincerely,</span></p>
+<p><span style="font-size: 14.0pt; color: #7f7f7f;">Claims Department</span></p>
+<p><span style="font-size: 14.0pt; color: #7f7f7f;">NORCAL Group</span></p>
+<p><span style="font-size: 14.0pt; color: #7f7f7f;">cc:</span></p>
+<p style="text-align: start;"><span style="font-size: 10.0pt; color: #7f7f7f;">www.medicusins.com       P.O. Box 2080, Mechanicsburg, Pennsylvania 17055-0787        T 800-445-1212     F 717-796-8080</span></p>]]></body>
         <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
         <sys_class_name>sys_email_canned_message</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-06-29 13:31:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4d9a0d1fdbafb600d596327e9d9619b3</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Close Other Medicus Penn</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_email_canned_message_4d9a0d1fdbafb600d596327e9d9619b3</sys_update_name>
-        <sys_updated_by>amoewe</sys_updated_by>
-        <sys_updated_on>2017-08-07 12:52:07</sys_updated_on>
+        <sys_updated_by>temerson</sys_updated_by>
+        <sys_updated_on>2017-08-11 17:56:39</sys_updated_on>
         <title>Close Other Medicus Penn</title>
         <user/>
     </sys_email_canned_message>

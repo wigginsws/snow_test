@@ -14,7 +14,7 @@ cam_OasisWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtil
 
     type: 'cam_OasisWebServiceUtils',
 	
-	
+	slLogger: new cam_ServiceLogger(),
 	
 	/**
 	* Function processes a prepared SOAP Message
@@ -22,47 +22,40 @@ cam_OasisWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtil
 	processMessage: function( serviceName, messageName, params, currentGR, fieldExtractionMap) {
 		gs.debug("[processMessage] serviceName: " + serviceName +", messageName: " + messageName);
 		var s = new sn_ws.SOAPMessageV2(serviceName, messageName);
-		if (gs.isDebugging()) s.setLogLevel("all");
 		for (var key in params) {
 			if (params[key].escape) {
 				s.setStringParameter(key, params[key].value);
 			} else {
 				s.setStringParameterNoEscape(key, params[key].value);
 			}
-			//gs.debug("[processMessage] params[" + key + "] = " + params[key].value);
 		}
 		
 		var response = s.execute();
-		response.waitForResponse(60);
-		if (gs.isDebugging()) gs.debug("[processMessage] After exec. Request body " + this.getLoggableMessage(s.getRequestBody()));
+		response.waitForResponse( gs.getProperty( cam.SCOPE_ID + ".oasis_ws_timeout", 60) );
+		this.slLogger.logMessage(s, serviceName, messageName, response, currentGR, "all");
+		
 		var responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
 		var status = response.getStatusCode();
 		if (status == 200 && !response.haveError()) {
-			if (gs.isDebugging()) gs.debug("[processMessage] No error, now processing " + this.getLoggableMessage(responseBody));
 			var xmlDoc = new XMLDocument2();
 			xmlDoc.parseXML(responseBody);
 			var statusCode = xmlDoc.getNodeText("//*[local-name()= 'MessageStatusCode']");
 			if (statusCode && statusCode.toUpperCase()=="SUCCESS") {
 				
 				if (fieldExtractionMap) {
-					currentGR.autoSysFields(false);
-					currentGR.last_committed_update = currentGR.sys_mod_count;
 					for (var fieldName in fieldExtractionMap) {
 						var fieldValue = xmlDoc.getNodeText(fieldExtractionMap[fieldName]);
 						currentGR.setValue( fieldName, fieldValue);
 						gs.debug("[processMessage] Extracted from response, fieldName: " + fieldName + ", fieldValue: " + fieldValue);
 					}
-					//currentGR.update();
 				} else {
 					gs.warn("[processMessage] No fieldExtractionMap, record not updated");
 				}
 			} else {
-				gs.error("[processMessage] Response MessageStatusCode is " + statusCode);
 				throw "Web service failure - MessageStatusCode is " + statusCode;
 			}
 
 		} else {
-			gs.error("[processMessage] HTTP Status " + status + " response: " + responseBody);
 			throw "Web service failure - HTTP Status " + status;
 		}
 	},
@@ -87,9 +80,9 @@ cam_OasisWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtil
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-12 01:02:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b41a5197db3bfe00d596327e9d961942</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>cam_OasisWebServiceUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
@@ -97,6 +90,6 @@ cam_OasisWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtil
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_b41a5197db3bfe00d596327e9d961942</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-26 19:26:51</sys_updated_on>
+        <sys_updated_on>2017-11-02 01:50:05</sys_updated_on>
     </sys_script_include>
 </record_update>

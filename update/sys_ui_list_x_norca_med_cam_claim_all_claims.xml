@@ -4,92 +4,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>6875907adb610300e022771c8c961930</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>83f9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>priority</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>e875907adb610300e022771c8c961930</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>07f9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>6c75907adb610300e022771c8c961930</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>87f9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>ec75907adb610300e022771c8c961930</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>0bf9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>6075907adb610300e022771c8c961931</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>8bf9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_class_name</element>
-            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a075907adb610300e022771c8c961930</list_id>
+            <list_id display_value="task" element="NULL" name="task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbf9a46adb620300e022771c8c961916</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-10-05 06:25:01</sys_created_on>
-            <sys_id>e075907adb610300e022771c8c961931</sys_id>
+            <sys_created_on>2017-11-23 06:19:03</sys_created_on>
+            <sys_id>0ff9a46adb620300e022771c8c961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-10-05 06:25:01</sys_updated_on>
+            <sys_updated_on>2017-11-23 06:19:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,11 +103,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>temerson</sys_created_by>
-            <sys_created_on>2017-07-12 19:37:57</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_on>2017-10-12 13:30:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b2cb5da7db733240d596327e9d9619bf</sys_id>
+            <sys_id>6f0a3d81dbb90704d596327e9d9619f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_norca_med_cam_claim</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -116,7 +116,7 @@
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_list_x_norca_med_cam_claim_All_claims</sys_update_name>
             <sys_updated_by>temerson</sys_updated_by>
-            <sys_updated_on>2017-07-12 19:37:57</sys_updated_on>
+            <sys_updated_on>2017-10-12 13:30:55</sys_updated_on>
             <sys_user display_value="">71eae72813a71200dd593c928144b0f9</sys_user>
             <view display_value="All_claims" name="All_claims">cde07c59dbff7e0075ea38ff9d96199e</view>
             <view_name/>

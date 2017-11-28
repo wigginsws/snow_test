@@ -3,7 +3,7 @@
     <sys_data_source action="INSERT_OR_UPDATE">
         <category/>
         <connection_timeout>0</connection_timeout>
-        <connection_url>jdbc:oracle:thin:@oas16dbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url>jdbc:oracle:thin:@oasisdbdev.norcalmutual.com:1521:dev</connection_url>
         <connection_url_parameters/>
         <csv_delimiter/>
         <database_name/>
@@ -18,10 +18,10 @@
         <import_set_table_name>u_zds_oasis_import_county</import_set_table_name>
         <instance_name/>
         <jdbc_password>5jY8dfwQBXN7MaSa+EyjGA==</jdbc_password>
-        <jdbc_server>oas16dbdev.norcalmutual.com</jdbc_server>
+        <jdbc_server>oasisdbdev.norcalmutual.com</jdbc_server>
         <jdbc_user_name>oasissn</jdbc_user_name>
         <last_run_database_field>SYS_UPDATE_TIME</last_run_database_field>
-        <last_run_datetime>to_date('2017-05-16 18:27:28','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <last_run_datetime>to_date('2017-10-19 11:05:31','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
         <ldap_target/>
         <maximum_rows/>
         <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
@@ -44,15 +44,15 @@
         <sys_created_on>2017-06-22 17:41:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6641028ddbe73200d596327e9d9619d1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>1344</sys_mod_count>
         <sys_name>Claims-OASIS-County</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_data_source_6641028ddbe73200d596327e9d9619d1</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-23 21:14:47</sys_updated_on>
+        <sys_updated_by>oasissn</sys_updated_by>
+        <sys_updated_on>2017-11-03 01:04:51</sys_updated_on>
         <table_name>county_code</table_name>
         <type>JDBC</type>
         <use_integrated_authentication>false</use_integrated_authentication>

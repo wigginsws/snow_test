@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Multiple Claims" section_id="aa5d93a0db280380d596327e9d9619b8" sys_domain="global" table="x_norca_med_cam_indemnity" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>7c9de336dbbc838075ea38ff9d961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <text>If multiple claims, the allocated amount should equal the total amount.</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>709de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <text/>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>7c9de336dbbc838075ea38ff9d961937</element>
+            <position>0</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>349de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_number_1</element>
+            <position>1</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>b49de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_number_2</element>
+            <position>2</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>389de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_number_3</element>
+            <position>3</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>b89de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>claim_number_4</element>
+            <position>4</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>3c9de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>bc9de336dbbc838075ea38ff9d961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>709de336dbbc838075ea38ff9d961938</element>
+            <position>6</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>309de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_1</element>
+            <position>7</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>b09de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_2</element>
+            <position>8</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>349de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_3</element>
+            <position>9</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>b49de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_4</element>
+            <position>10</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>389de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>generated_from.claim</element>
+            <position>11</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>b89de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>3c9de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>13</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>bc9de336dbbc838075ea38ff9d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Multiple Claims</caption>
+            <header>false</header>
+            <name>x_norca_med_cam_indemnity</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-10 04:09:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa5d93a0db280380d596327e9d9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Multiple Claims</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_section_aa5d93a0db280380d596327e9d9619b8</sys_update_name>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-10 04:09:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

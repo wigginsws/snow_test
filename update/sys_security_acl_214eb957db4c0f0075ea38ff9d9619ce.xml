@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-07-24 13:45:48</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>214eb957db4c0f0075ea38ff9d9619ce</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam_state_reporting_claim</sys_name>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Missing Specialists">10606fe1db910340d596327e9d9619ed</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-09-19 14:01:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f874afa9db150340d596327e9d96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>10606fe1db910340d596327e9d9619ed</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_report_users_groups_f874afa9db150340d596327e9d96190e</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-09-19 14:01:20</sys_updated_on>
+        <user_id display_value="">86499016db3b160080e9d9fdbf961976</user_id>
+    </sys_report_users_groups>
+</record_update>

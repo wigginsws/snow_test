@@ -9,18 +9,20 @@
         <name>cam_IRWebServiceUtils</name>
         <script><![CDATA[var cam_IRWebServiceUtils = Class.create();
 cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, {
+	
 	initialize: function() {
 	},
 	
 	type: 'cam_IRWebServiceUtils',
 	
+	slLogger: new cam_ServiceLogger(),
 	
 	/**
  	* Description: Login to ImageRight and create an API token
  	* Parameters: None
  	* Returns: An API token string
  	*/
-	login: function() {
+	login: function(relatedRecord) {
 		var sessionToken;
 		var fn = function(responseXml) {
 			sessionToken = responseXml.getNodeText("/soap:Envelope/soap:Body/UserLoginResponse/UserLoginResult");
@@ -30,7 +32,7 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 			'UserLogin.password': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_password")),
 			'UserLogin.username': this.createParamValueObject( gs.getProperty(cam.SCOPE_ID + ".ir_ws_username"))
 		};
-		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogin", params, null, fn);
+		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogin", params, relatedRecord, fn);
 		gs.debug("[irLogin] Generated token " + sessionToken);
 		return sessionToken;
 	},
@@ -41,7 +43,7 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
  	* Parameters: Previously acquired Session Token
  	* Returns: True/False indicating successful logoff
  	*/
-	logoff: function(sessionToken) {
+	logoff: function(sessionToken, relatedRecord) {
 		var loginSuccess = false;
 		var fn = function(responseXml) {
 			loginSuccess = responseXml.getNodeText("/soap:Envelope/soap:Body/UserLogoffResponse/UserLogoffResult")=="true";
@@ -49,18 +51,27 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 		var params = {
 			'UserLogoff.securityToken': this.createParamValueObject(sessionToken)
 		};
-		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogoff", params, null, fn);
-		gs.debug("[irLogin] Logoff " + loginSuccess?"successful":"failed");
+		this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.UserLogoff", params, relatedRecord, fn);
+		gs.debug("[irLogoff] Logoff " + loginSuccess?"successful":"failed");
 		return loginSuccess;
 	},
 	
+	
+	
+	/**
+	* Description: Get the contents (File) for a document description previously retrieved
+	* Parameters: 
+	* 1. GlideRecord containing document
+	* 2. Optional IR securityToken
+	* Returns:
+	* Encoded byte stream
+	*/
 	getDocumentContents: function(currentGR, securityToken) {
 		gs.debug("[getDocumentContents] currentGR: " + currentGR.getDisplayValue() + ", securityToken: " + securityToken);
 		
 		var logOff = false;
 		if (!securityToken) {
-			securityToken = this.login();
-			gs.debug("[getDocumentContents] New securityToken " + securityToken);
+			securityToken = this.login(currentGR);
 			logOff = true;
 		}
 		
@@ -84,18 +95,19 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 		};
 		
 		try {
-			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.GetMultiPageImageFileUsingPages-CAM", params, currentGR, fn);
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap.GetMultiPageImageFileUsingPages-CAM", params, currentGR, fn, null, "request");
 		} finally {
 			try {
 				if (logOff) {
-					this.logoff(securityToken);
+					this.logoff(securityToken, currentGR);
 				}
 			} catch (e) {
-				gs.warn("[getDocumentContents] Could not log off from IR. Ignoring, but frequent errors may cause session bloat.");
+				gs.warn("[getDocumentContents] Could not log off from IR. Ignoring, but frequent errors may cause session bloat. Error message: " + e);
 			}
 		}
 		
 	},
+	
 	
 	
 	/**
@@ -106,17 +118,13 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 	getDocumentsForCase: function(caseNumber, currentGR, securityToken) {
 		gs.debug("[getDocumentsForCase] caseNumber: " + caseNumber + ", securityToken: " + securityToken);
 		
-		var documents;
 		var logOff = false;
 		if (!securityToken) {
-			securityToken = this.login();
-			gs.debug("[getDocumentsForCase] New securityToken " + securityToken);
+			securityToken = this.login(currentGR);
 			logOff = true;
 		}
 		
 		var fn = function(responseXml, currentGR) {
-			gs.debug("[getDocumentsForCase] fn called by processMessage");
-			
 			var documents = [];
 			var responseJson;
 			var resultNode = responseXml.getFirstNode("//FindDocumentsResult");
@@ -124,8 +132,8 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 				responseJson = gs.xmlToJSON(resultNode);
 				if (responseJson.FindDocumentsResult && responseJson.FindDocumentsResult.Document) {
 					documents = responseJson.FindDocumentsResult.Document;
+					
 				}
-				//gs.debug("[getDocumentsForCase] Response JSON -> " + JSON.stringify(responseJson)); //TODO remove
 			}
 			return documents;
 		};
@@ -143,10 +151,161 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 		} finally {
 			try {
 				if (logOff) {
-					this.logoff(securityToken);
+					this.logoff(securityToken, currentGR);
 				}
 			} catch (e) {
-				gs.warn("[getDocumentsForCase] Could not log off from IR. Ignoring, but frequent errors may cause session bloat.");
+				gs.warn("[getDocumentsForCase] Could not log off from IR. Ignoring, but frequent errors may cause session bloat. Error message: " + e);
+			}
+		}
+		
+	},
+	
+	
+	/**
+	* Description: Gets Folder for a Document
+	*
+	**/
+	getParentFolder: function(objectId, currentGR, securityToken) {
+		//var objectId = currentGR.getValue("sor_reference_id");
+		gs.debug("[getParentFolder] Getting folder for " + objectId);
+		if (!objectId)
+			return null;
+		
+		var logOff = false;
+		if (!securityToken) {
+			securityToken = this.login(currentGR);
+			logOff = true;
+		}
+		
+		var fn = function(responseXml, currentGR) {
+			
+			var folder = {};
+			var responseJson;
+			var resultNode = responseXml.getFirstNode("//GetParentResult");
+			if (resultNode) {
+				responseJson = gs.xmlToJSON(resultNode);
+				if (responseJson.GetParentResult) {
+					var prop;
+					for (prop in responseJson.GetParentResult) {
+						folder[prop] = responseJson.GetParentResult[prop];
+					}
+				}
+			}
+			return folder;
+		};
+		
+		var params = {
+			'GetParent.securityToken': this.createParamValueObject(securityToken),
+			'GetParent.objectId': this.createParamValueObject(objectId)
+		};
+		
+		try {
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap12.GetParent", params, currentGR, fn);
+		} finally {
+			try {
+				if (logOff == "true") {
+					this.logoff(securityToken, currentGR);
+				}
+			} catch (e) {
+				gs.warn("[getParentFolder] Could not log off from IR. Ignoring, but frequent errors may cause session bloat. Error message: " + e);
+			}
+		}
+	},
+	
+	
+	/**
+ 	* Description:
+ 	* Parameters:
+ 	* Returns:
+ 	*/
+	getNotesForCase: function(caseNumber, currentGR, securityToken) {
+		gs.debug("[getNotesForCase] caseNumber: " + caseNumber + ", securityToken: " + securityToken);
+		
+		var logOff = false;
+		if (!securityToken) {
+			securityToken = this.login(currentGR);
+			logOff = true;
+		}
+		
+		var fn = function(responseXml, currentGR) {
+			
+			var notes = [];
+			var responseJson;
+			var resultNode = responseXml.getFirstNode("//FindFilesResult");
+			if (resultNode) {
+				responseJson = gs.xmlToJSON(resultNode);
+				if (responseJson.FindFilesResult && responseJson.FindFilesResult.File && responseJson.FindFilesResult.File.NoteCollection && responseJson.FindFilesResult.File.NoteCollection.Notes) {
+					notes = responseJson.FindFilesResult.File.NoteCollection.Notes;
+				}
+			}
+			return notes;
+		};
+		
+		var params = {
+			'FindFiles.securityToken': this.createParamValueObject(securityToken),
+			'FindFiles.locationId': this.createParamValueObject('-1'),
+			'FindFiles.fileNumber': this.createParamValueObject(caseNumber),
+			'FindFiles.getContent': this.createParamValueObject( 'true'),
+			'FindFiles.includeDeleted': this.createParamValueObject('false')
+		};
+		
+		try {
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap12.FindFiles-CAM", params, currentGR, fn);
+		} finally {
+			try {
+				if (logOff) {
+					this.logoff(securityToken, currentGR);
+				}
+			} catch (e) {
+				gs.warn("[getNotesForCase] Could not log off from IR. Ignoring, but frequent errors may cause session bloat. Error message: " + e);
+			}
+		}
+		
+	},
+	
+	
+	/**
+ 	* Description:
+ 	* Parameters:
+ 	* Returns:
+ 	*/
+	getUser: function(userId, currentGR, securityToken) {
+		gs.debug("[getUserById] userId: " + userId + ", securityToken: " + securityToken);
+		
+		var logOff = false;
+		if (!securityToken) {
+			securityToken = this.login(currentGR);
+			logOff = true;
+		}
+		
+		var fn = function(responseXml, currentGR) {
+			var userRecord = [];
+			var responseJson;
+			var resultNode = responseXml.getFirstNode("//GetUserResult");
+			if (resultNode) {
+				responseJson = gs.xmlToJSON(resultNode);
+				if (responseJson.GetUserResult) {
+					userRecord = responseJson.GetUserResult;
+				}
+			}
+			return userRecord;
+		};
+		
+		var params = {
+			'GetUser.securityToken': this.createParamValueObject(securityToken),
+			'id.Id': this.createParamValueObject(userId),
+			'id.HasId': this.createParamValueObject("true")
+		};
+		
+		try {
+			return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-ImageRight-All", "IRWebService40Soap12.GetUser-CAM", params, currentGR, fn);
+		} finally {
+			try {
+				if (logOff) {
+					this.logoff(securityToken, currentGR);
+				}
+			} catch (e) {
+				gs.warn("[getUserById] Could not log off from IR. Ignoring, but frequent errors may cause session bloat. Error message: " + e);
 			}
 		}
 		
@@ -156,36 +315,32 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
 	/**
  	* Function processes a prepared SOAP Message
  	**/
-	processMessageWithFunction: function( serviceName, messageName, params, currentGR, fn, responseFormat) {
+	processMessageWithFunction: function( serviceName, messageName, params, currentGR, fn, responseFormat, logPayloadOption) {
 		gs.debug("[processMessageFn] serviceName: " + serviceName +", messageName: " + messageName);
 		var s = new sn_ws.SOAPMessageV2(serviceName, messageName);
-		if (gs.isDebugging()) s.setLogLevel("all");
-			for (var key in params) {
+		for (var key in params) {
 			if (params[key].escape) {
 				s.setStringParameter(key, params[key].value);
 			} else {
 				s.setStringParameterNoEscape(key, params[key].value);
 			}
-			//gs.debug("[processMessage] params[" + key + "] = " + params[key].value);
 		}
 		
-		gs.debug("[processMessage] Before exec");
 		var response = s.execute();
-		response.waitForResponse(60);
-		if (gs.isDebugging()) gs.debug("[processMessage] After exec. Request body " + this.getLoggableMessage(s.getRequestBody()));
+		response.waitForResponse(gs.getProperty( cam.SCOPE_ID + ".ir_ws_timeout", 60));
+		this.slLogger.logMessage(s, serviceName, messageName, response, currentGR, logPayloadOption?logPayloadOption:"all");
+		
 		var responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
 		var status = response.getStatusCode();
 		if (status == 200 && !response.haveError()) {
 			if (responseFormat=="raw") {
 				return responseBody; // don't debug log raw output
 			}
-			if (gs.isDebugging()) gs.debug("[processMessage] No error, now processing " + this.getLoggableMessage(responseBody));
 			var xmlDoc = new XMLDocument2();
 			xmlDoc.parseXML(responseBody);
 			return fn(xmlDoc, currentGR);
 			
 		} else {
-			gs.error("[processMessage] HTTP Status " + status + " response: " + responseBody);
 			throw "Web service failure - HTTP Status " + status;
 		}
 	},
@@ -196,9 +351,9 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-14 02:17:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fdd00484dbc04340d596327e9d96197c</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>cam_IRWebServiceUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
@@ -206,6 +361,6 @@ cam_IRWebServiceUtils.prototype = Object.extendsObject(cam_SoapWebServiceUtils, 
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_fdd00484dbc04340d596327e9d96197c</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-24 17:35:37</sys_updated_on>
+        <sys_updated_on>2017-11-02 01:49:06</sys_updated_on>
     </sys_script_include>
 </record_update>

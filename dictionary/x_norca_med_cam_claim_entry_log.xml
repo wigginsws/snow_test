@@ -16,7 +16,7 @@
         <element label="Cm jurisdiction code" max_length="40" name="u_cm_jurisdiction_code" read_only="true" type="string"/>
         <element label="Cm lob code" max_length="40" name="u_cm_lob_code" read_only="true" type="string"/>
         <element label="Coverage fk" max_length="40" name="u_coverage_fk" read_only="true" type="string"/>
-        <element label="Coverage ID" max_length="40" name="u_coverage_id" read_only="true" reference="x_norca_med_cam_coverage" type="reference"/>
+        <element label="Coverage ID" max_length="40" name="u_coverage_id" reference="x_norca_med_cam_coverage" type="reference"/>
         <element label="Entity claimant fk" max_length="40" name="u_entity_claimant_fk" read_only="true" type="string"/>
         <element label="Entity Claimant ID" max_length="40" name="u_entity_claimant_id" read_only="true" reference="x_norca_med_cam_entity" type="reference"/>
         <element label="Entity defense law firm fk" max_length="40" name="u_entity_defense_law_firm_fk" read_only="true" type="string"/>

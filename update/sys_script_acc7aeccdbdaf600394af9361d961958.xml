@@ -7,24 +7,25 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_norca_med_cam_claim</collection>
         <condition/>
-        <description>Joe to Refactor code for script include.  build sys_prop for group assignment.  Roshan checking on initial data load.</description>
+        <description>Inactive due to FNOL routing table not being ready for release one.</description>
         <execute_function>false</execute_function>
-        <filter_condition table="x_norca_med_cam_claim">stateCHANGESTO2^assigned_to.roles!=x_norca_med_cam.claims_director^sys_updated_by!=OasisSN^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+        <filter_condition table="x_norca_med_cam_claim">stateCHANGESTO2^assigned_to.roles!=x_norca_med_cam.claims_director^sys_updated_by!=oasissn^ORsys_updated_by!=system^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
             <item endquery="false" field="assigned_to.roles" goto="false" newquery="false" operator="!=" or="false" value="x_norca_med_cam.claims_director"/>
-            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="OasisSN"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="oasissn"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="true" value="system"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>CAM-CLAIM-Set Claims Director</name>
-        <order>100</order>
+        <order>1000</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -65,7 +66,7 @@
 		else if(!gr.next()){
 			current.assignment_group = 'c0545588db7d7e4062bafd441d961943';
 			current.update();
-			gs.addInfoMessage('A Claims Director could not be found.');
+			//gs.addInfoMessage('A Claims Director could not be found.');
 			
 			
 			
@@ -78,11 +79,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>joe@buildon.me</sys_created_by>
         <sys_created_on>2017-04-18 14:37:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>acc7aeccdbdaf600394af9361d961958</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>CAM-CLAIM-Set Claims Director</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -91,7 +92,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_acc7aeccdbdaf600394af9361d961958</sys_update_name>
         <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-07-20 21:32:01</sys_updated_on>
+        <sys_updated_on>2017-11-01 19:56:00</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

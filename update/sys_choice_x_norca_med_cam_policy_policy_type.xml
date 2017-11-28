@@ -540,16 +540,16 @@
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-04-21 18:48:57</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>fb4633f3db900300e022771c8c9619d6</sys_id>
-            <sys_mod_count>52</sys_mod_count>
+            <sys_id>f133ea96dba60300e022771c8c96193d</sys_id>
+            <sys_mod_count>54</sys_mod_count>
             <sys_name>policy_type</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_choice_x_norca_med_cam_policy_policy_type</sys_update_name>
-            <sys_updated_by>rrao</sys_updated_by>
-            <sys_updated_on>2017-06-23 02:36:19</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:01:13</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

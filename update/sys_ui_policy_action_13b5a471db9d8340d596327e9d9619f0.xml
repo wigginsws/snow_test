@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>u_case</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-19 18:46:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>13b5a471db9d8340d596327e9d9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_case</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_policy_action_13b5a471db9d8340d596327e9d9619f0</sys_update_name>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-09-19 18:46:36</sys_updated_on>
+        <table>x_norca_med_cam_claim</table>
+        <ui_policy display_value="CAM-CLAIM-Make fields RO after CV">69c4acf5db5d8340d596327e9d961950</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

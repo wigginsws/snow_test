@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set default values for Diary Value</description>
+        <field>priority</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-Diary-Priority-Defaults</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	// Converts the date from a datetime object to MM/DD/YYYY
+	function formatDateOnly(date) {
+		var year = date.getFullYear();
+		
+		var month = (1 + date.getMonth()).toString();
+		month = month.length > 1 ? month : '0' + month;
+		
+		var day = date.getDate().toString();
+		day = day.length > 1 ? day : '0' + day;
+		
+		return month + '/' + day + '/' + year;
+	}
+	
+	function getDueDate(days) {
+		var dateTime = new Date(Date.now() + 864e5 * days);
+		return dateTime;
+	}
+	
+	if (newValue) { 
+		var orig_type = g_form.getValue('diary_type');
+		var new_type = orig_type + '_' + newValue;
+		
+ 		var gd = new GlideAjax('x_norca_med_cam.cam_ajax_DiaryUtils');
+ 		gd.addParam('sysparm_name','getDefaults');
+ 		gd.addParam('sysparm_diary_value', new_type);
+ 		gd.getXML(parseDefaults);
+	}
+
+}
+
+function parseDefaults(dresponse) {
+	var result = dresponse.responseXML.getElementsByTagName("result");
+	var ldesc = result[0].getAttribute("comment");
+	var due_date = result[0].getAttribute("duedt");
+	
+	console.log("response " + dresponse.responseXML.documentElement.innerHTML);
+	
+	if (ldesc !== '' && ldesc !=='null') {
+		g_form.clearValue('description');
+		g_form.setValue('description', ldesc);
+	}
+	if (due_date !== '' && due_date !== 'null') {
+		g_form.clearValue('due_date');
+		g_form.setValue('due_date', due_date);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mlindsay</sys_created_by>
+        <sys_created_on>2017-11-01 02:42:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb532a93dbc64b0075ea38ff9d96195c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CAM-Diary-Priority-Defaults</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_eb532a93dbc64b0075ea38ff9d96195c</sys_update_name>
+        <sys_updated_by>mlindsay</sys_updated_by>
+        <sys_updated_on>2017-11-01 22:22:15</sys_updated_on>
+        <table>x_norca_med_cam_diary</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

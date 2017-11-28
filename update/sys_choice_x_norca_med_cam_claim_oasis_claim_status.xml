@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="oasis_claim_status" table="x_norca_med_cam_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:23:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04cbe944db510f40d596327e9d9619dd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:23:27</sys_updated_on>
+            <value>CLOSED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entered in Error</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:23:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffcb6d04db510f40d596327e9d96192a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:23:39</sys_updated_on>
+            <value>ERROR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Malpractice Unlisted</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:24:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9eeb6584db510f40d596327e9d9619a4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:24:08</sys_updated_on>
+            <value>MALP UNL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:23:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>789b2dc0db510f40d596327e9d9619ce</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:23:12</sys_updated_on>
+            <value>OPEN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Close</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:23:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72db6184db510f40d596327e9d961957</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:23:52</sys_updated_on>
+            <value>PENDCLOSE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>oasis_claim_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reopened</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:22:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d88b6580db510f40d596327e9d96191d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-14 13:22:57</sys_updated_on>
+            <value>REOPEN</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>oasis_claim_status</element>
+            <name>x_norca_med_cam_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-14 13:22:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6123a296dba60300e022771c8c961932</sys_id>
+            <sys_mod_count>14</sys_mod_count>
+            <sys_name>oasis_claim_status</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_claim_oasis_claim_status</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:01:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

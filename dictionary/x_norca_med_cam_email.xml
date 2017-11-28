@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Email" max_length="40" name="x_norca_med_cam_email" type="collection">
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element label="Defense Attorney" sequence="100" value="defense_attorney"/>
+                <element label="Survey" sequence="200" value="survey"/>
+            </choice>
+        </element>
+        <element label="Email" max_length="40" name="email_id" reference="sys_email" type="reference"/>
+        <element label="From" max_length="40" name="from" type="string"/>
+        <element label="Task" max_length="40" name="task" reference="task" reference_qual="sys_class_name=x_norca_med_cam_claim^ORsys_class_name=x_norca_med_cam_diary^EQ" reference_qual_condition="sys_class_name=x_norca_med_cam_claim^ORsys_class_name=x_norca_med_cam_diary^EQ" type="reference"/>
+        <index name="index">
+            <element name="email_id"/>
+        </index>
+        <index name="index2">
+            <element name="task"/>
+        </index>
+    </element>
+</database>

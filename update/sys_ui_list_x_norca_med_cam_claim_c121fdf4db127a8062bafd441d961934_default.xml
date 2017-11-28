@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_norca_med_cam_claim" relationship="c121fdf4db127a8062bafd441d961934" sys_domain="global" table="x_norca_med_cam_participant" version="2" view="default">
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_norca_med_cam_participant</name>
+            <parent>x_norca_med_cam_claim</parent>
+            <position/>
+            <relationship display_value="Participants">c121fdf4db127a8062bafd441d961934</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-11-01 17:02:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>775aed23db060f00d596327e9d961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_norca_med_cam_participant</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_list_x_norca_med_cam_claim_c121fdf4db127a8062bafd441d961934_default</sys_update_name>
+            <sys_updated_by>jsavage</sys_updated_by>
+            <sys_updated_on>2017-11-01 17:02:54</sys_updated_on>
+            <sys_user display_value="">3cde35e9dbed3a0075ea38ff9d96191b</sys_user>
+            <view display_value="Default" name="default">30174876cb811200aa871831794c9cc4</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

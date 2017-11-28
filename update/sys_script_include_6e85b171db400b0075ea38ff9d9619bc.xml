@@ -32,26 +32,27 @@ cam_CoverageVerificationWSUtils.prototype = Object.extendsObject( cam_CustomRest
 		var params = {
 			'LOBCode': this.createParamValueObject( claimGR.u_loss_type?claimGR.u_loss_type:"PL" ),
 			'LossDate': this.createParamValueObject( this.formatDate(claimGR.u_loss_date)),
-			'IncidentStartDate': this.createParamValueObject( this.formatDate(claimGR.getValue("u_incident_start_date" ))),
-			'IncidentEndDate': this.createParamValueObject( this.formatDate(claimGR.getValue("u_incident_end_date"))),
+			'IncidentStartDate': this.createParamValueObject( this.formatDate(claimGR.u_loss_date)), //u_incident_start_date
+			'IncidentEndDate': this.createParamValueObject( this.formatDate(claimGR.u_loss_date)), //u_incident_end_date
 			'CountyCode': this.createParamValueObject( countyCode ),
 			'InsuredFK': this.createParamValueObject( insuredGR.sor_id ),
-			'StateCode': this.createParamValueObject( claimGR.getValue("claim_state_code")),
+			'StateCode': this.createParamValueObject( claimGR.getValue("claim_state_code")?claimGR.getValue("claim_state_code"):""),
 			'ReportDate': this.createParamValueObject(this.formatDate(claimGR.report_date? claimGR.report_date: claimGR.u_loss_date))
 		};
 		
 		var fn = function(responseBody) {
 			var responseObj = JSON.parse(responseBody);
-			if (gs.isDebugging()) gs.debug("[loadCoveragesFromClaimRecord] response " + responseBody);
-			if (Array.isArray(responseObj)) {
-				return responseObj;
-			} else {
-				gs.error("[loadCoveragesFromClaimRecord] Invalid web service response, not an array");
-				throw "Invalid web service response";
-			}
+// 			if (gs.isDebugging()) gs.debug("[loadCoveragesFromClaimRecord] response " + responseBody);
+// 			if (Array.isArray(responseObj)) {
+// 				return responseObj;
+// 			} else {
+// 				gs.error("[loadCoveragesFromClaimRecord] Invalid web service response, not an array");
+// 				throw "Invalid web service response";
+// 			}
+			return responseObj;
 		};		
 		
-		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-CoverageVerification", "GetCoverageInfo", params, claimGR, fn);
+		return this.processMessageWithFunction( cam.SCOPE_ID + ".CAM-CoverageVerification", "post", params, claimGR, fn);
 		
 	},
 	
@@ -89,16 +90,16 @@ cam_CoverageVerificationWSUtils.prototype = Object.extendsObject( cam_CustomRest
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-19 21:16:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6e85b171db400b0075ea38ff9d9619bc</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>cam_CoverageVerificationWSUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_6e85b171db400b0075ea38ff9d9619bc</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 19:33:18</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:25</sys_updated_on>
     </sys_script_include>
 </record_update>

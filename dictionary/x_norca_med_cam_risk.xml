@@ -22,6 +22,7 @@
         <element label="Entity FK" max_length="20" name="entity_fk" read_only="true" type="string"/>
         <element label="Exposure Basis" max_length="10" name="exposure_basis" read_only="true" type="string"/>
         <element label="Fleet Vehicle" max_length="40" name="fleet_vehicle" read_only="true" type="boolean"/>
+        <element label="Mini Policy" max_length="40" name="mini_policy" read_only="true" type="boolean"/>
         <element label="Moonlighting" max_length="40" name="moonlighting" read_only="true" type="boolean"/>
         <element label="Policy FK" max_length="40" name="policy_fk" read_only="true" type="string"/>
         <element label="Policy" mandatory="true" max_length="32" name="policy_reference" read_only="true" reference="x_norca_med_cam_policy" type="reference"/>
@@ -31,10 +32,11 @@
         <element label="Record Mode Code" max_length="40" name="record_mode_code" read_only="true" type="string"/>
         <element label="Risk Base Record FK" max_length="40" name="risk_base_record_fk" read_only="true" type="string"/>
         <element label="Risk CLS Used To Rate" max_length="40" name="risk_cls_used_to_rate" read_only="true" type="string"/>
-        <element label="Risk PK" max_length="40" name="risk_pk" read_only="true" type="string"/>
+        <element label="OASIS ID" max_length="40" name="risk_pk" read_only="true" type="string"/>
         <element label="Risk Type Code" max_length="40" name="risk_type_code" read_only="true" type="string"/>
         <element label="OASIS - Created On" max_length="40" name="sor_created_by" read_only="true" type="string"/>
         <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="string"/>
+        <element attributes="format=none" label="OASIS ID" max_length="20" name="sor_id" read_only="true" type="decimal"/>
         <element label="OASIS - Updated On" max_length="40" name="sor_updated_by" read_only="true" type="string"/>
         <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
         <element label="Transaction Log FK" max_length="40" name="transaction_log_fk" read_only="true" type="integer"/>

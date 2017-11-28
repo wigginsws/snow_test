@@ -3,108 +3,303 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_dictionary" version="2" view="advanced">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_name</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>name</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>c20c9f09dbdafe00d596327e9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>f08e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>649ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_class_name</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>active</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>4a0c9f09dbdafe00d596327e9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>348e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>e49ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_update_name</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>array</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>748e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>689ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_scope</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>array</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>ca0c9f09dbdafe00d596327e9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>array_denormalized</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>b48e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>e89ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_policy</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>array_denormalized</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>4e0c9f09dbdafe00d596327e9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attributes</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>ce0c9f09dbdafe00d596327e9d961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attributes</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>f48e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>6c9ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_on</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>audit</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>420c9f09dbdafe00d596327e9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>audit</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>388e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>ec9ff868dbda0700e022771c8c96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_by</element>
-            <list_id display_value="sys_metadata" element="NULL" name="sys_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bc8e8f32d723210092610eca5e610302</list_id>
+            <element>calculation</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>c20c9f09dbdafe00d596327e9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>calculation</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-10-08 04:52:14</sys_created_on>
-            <sys_id>788e8f32d723210092610eca5e610303</sys_id>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>609ff868dbda0700e022771c8c96191e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-10-08 04:52:14</sys_updated_on>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>e09ff868dbda0700e022771c8c96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>460c9f09dbdafe00d596327e9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_field</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>c60c9f09dbdafe00d596327e9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_field</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>649ff868dbda0700e022771c8c96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_table</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-04-21 20:59:14</sys_created_on>
+            <sys_id>4a0c9f09dbdafe00d596327e9d961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-04-21 20:59:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_table</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ec9ff868dbda0700e022771c8c96191c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-11-04 16:29:50</sys_created_on>
+            <sys_id>e49ff868dbda0700e022771c8c96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-11-04 16:29:50</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -117,12 +312,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-24 16:50:05</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_by>dself</sys_created_by>
+            <sys_created_on>2017-10-20 19:06:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4d78ee13dbcc0f0075ea38ff9d9619bc</sys_id>
+            <sys_id>f7a354bfdbf50300d596327e9d96190b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sys_dictionary</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -130,9 +325,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_list_sys_dictionary_advanced</sys_update_name>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-24 16:50:05</sys_updated_on>
-            <sys_user display_value="">bf7ef52ddbed3a0075ea38ff9d961921</sys_user>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-20 19:06:57</sys_updated_on>
+            <sys_user display_value="">8d47978cdb398f4075ea38ff9d9619cf</sys_user>
             <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
             <view_name/>
         </sys_ui_list>

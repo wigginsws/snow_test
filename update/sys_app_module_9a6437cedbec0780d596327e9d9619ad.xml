@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Claim Management">2fda32dcdb1d364062bafd441d96194d</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_norca_med_cam_reserves">claim_number.state=5^remaining_expense!=javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','remaining_expense', 'USD;0')^ORremaining_indemnity!=javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','remaining_indemnity', 'USD;0')^EQ<item endquery="false" field="claim_number.state" goto="false" newquery="false" operator="=" or="false" value="5"/>
+            <item endquery="false" field="remaining_expense" goto="false" newquery="false" operator="!=" or="false" value="javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','remaining_expense', 'USD;0')"/>
+            <item endquery="false" field="remaining_indemnity" goto="false" newquery="false" operator="!=" or="true" value="javascript:global.getCurrencyFilter('x_norca_med_cam_reserves','remaining_indemnity', 'USD;0')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Indemnity Reserves to Firm</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_norca_med_cam_reserves</name>
+        <order>3505</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report display_value="Indemnity Reserves to Firm">d21912f4dbe88b4075ea38ff9d961924</report>
+        <roles>x_norca_med_cam.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-08-14 21:40:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a6437cedbec0780d596327e9d9619ad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Closed Claims with Outstanding Reserves</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_app_module_9a6437cedbec0780d596327e9d9619ad</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-08-14 23:04:21</sys_updated_on>
+        <timeline_page/>
+        <title>Closed Claims with Outstanding Reserves</title>
+        <uncancelable>false</uncancelable>
+        <view_name>Default</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

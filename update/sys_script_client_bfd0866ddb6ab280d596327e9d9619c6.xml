@@ -26,7 +26,7 @@ if (isLoading || newValue === '') {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bfd0866ddb6ab280d596327e9d9619c6</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>CAM-Claim-Coverage Determination Letter</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -34,8 +34,8 @@ if (isLoading || newValue === '') {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_client_bfd0866ddb6ab280d596327e9d9619c6</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-24 04:31:23</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:54</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

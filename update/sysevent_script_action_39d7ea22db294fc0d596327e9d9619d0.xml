@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_norca_med_cam.oasis_update_claim</event_name>
+        <name>CAM-CLAIM-Update Oasis</name>
+        <order>100</order>
+        <script><![CDATA[processRecord();
+
+function processRecord() {
+	
+	var responseObj;
+	
+	if (current.claim_id) { // stop execution if there is no claim
+		if (current.state=="5" && current.oasis_claim_status!="CLOSED") {
+			responseObj = new cam_CustomRestWsUtils().closeClaim(current);
+		} else {
+			responseObj = new cam_CustomRestWsUtils().updateClaim(current);
+		}
+		if (!responseObj || responseObj.status!="Success") {
+			throw new Error("Service response did not confirm that Claim Number was updated. " + responseObj?responseObj.message:"");
+		}
+		current.setValue("last_committed_update", current.sys_mod_count);
+		current.setValue("last_update_includes_sor_fields", "false");
+		updateRecord();
+
+	} else {
+		var claimLogWSUtils = new cam_ClaimLogWebServiceUtils();
+		gs.debug("[saveClaimLog] Claim log record " + current.getDisplayValue());
+		var newCel = (!current.claim_log_id);
+		claimLogWSUtils.saveClaimLog(current); // will insert or update based on whether current has claim_log_id
+		current.setValue("cel_last_committed_update", current.sys_mod_count);
+		current.setValue("last_update_includes_sor_fields", "false");
+		updateRecord();
+		
+		if (newCel && current.claim_log_id) { // new log entry just got created, create skeleton CEL
+			var gr = new GlideRecord(cam.SCOPE_ID + "_claim_entry_log");
+			gr.addQuery( "u_claim_id", current.getUniqueValue());
+			gr.query();
+			if (!gr.next()) {
+				gr = new GlideRecord(cam.SCOPE_ID + "_claim_entry_log");
+				gr.newRecord();
+				gr.setValue( "u_claim_id", current.getUniqueValue());
+				gr.setValue( "u_claim_entry_log_pk", current.claim_log_id);
+				gr.setWorkflow(false);
+				gr.update();
+			}
+		}
+
+		if (!current.claim_number_updated) {
+			responseObj = new cam_CustomRestWsUtils().updateClaimLog(current);
+			if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {
+				throw new Error("Service response did not confirm that Claim Number was updated " + current.number);
+			}
+			current.setValue("claim_number_updated", "true");
+			updateRecord();
+		} else {
+			gs.debug("[wfSaveClaimLog] Claim number previously set, skipping.");
+		}
+
+		if (current.coverage_verification_status=="cc" || current.coverage_verification_status=="cid" || current.coverage_verification_status=="D") {
+			responseObj = new cam_CustomRestWsUtils().insertClaim(current);
+			if (!current.getValue("claim_id")) {
+				throw new Error("Service response did not confirm that Claim was inserted " + current.number);
+			}
+			current.setValue("last_committed_update", current.sys_mod_count);
+			updateRecord();
+		}
+
+	}
+}
+
+function updateRecord() {
+	current.setWorkflow(false);
+	current.autoSysFields(false);
+	current.update();
+}
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-04 22:26:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39d7ea22db294fc0d596327e9d9619d0</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>CAM-CLAIM-Update Oasis</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_script_action_39d7ea22db294fc0d596327e9d9619d0</sys_update_name>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-11-01 23:23:25</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

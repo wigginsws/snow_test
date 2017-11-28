@@ -7,7 +7,7 @@
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-05 17:31:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>63bbfc99dbfbba00d596327e9d9619ab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam.enable_inbound_email.Email Settings</sys_name>

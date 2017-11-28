@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="Web Reported Claim" max_length="40" name="x_norca_med_cam_web_reported_claim" type="collection">
+        <element label="Claim Number" max_length="32" name="claim_number" reference="x_norca_med_cam_claim" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Previously Reported?" max_length="40" name="u_duplicate_report" type="boolean"/>
         <element label="Email" max_length="40" name="u_i_email" type="string"/>
-        <element label="First Name" max_length="40" name="u_i_fn" type="string"/>
-        <element label="Last Name" max_length="40" name="u_i_ln" type="string"/>
+        <element label="Insured Name" max_length="100" name="u_i_name" type="string"/>
         <element label="Phone" max_length="40" name="u_i_phone" type="string"/>
         <element label="Practice State" max_length="40" name="u_i_state" type="string"/>
         <element label="DOB" max_length="40" name="u_pc_dob" type="glide_date"/>
-        <element label="First Name" max_length="40" name="u_pc_fn" type="string"/>
-        <element label="Last Name" max_length="40" name="u_pc_ln" type="string"/>
+        <element label="Claimant Name" max_length="100" name="u_pc_name" type="string"/>
         <element label="Treatment Date" max_length="40" name="u_pc_treatment_date" type="glide_date"/>
         <element label="Policy Number" max_length="40" name="u_policy" type="string"/>
         <element label="Email" max_length="40" name="u_rb_email" type="string"/>
-        <element label="First Name" max_length="40" name="u_rb_fn" type="string"/>
-        <element label="Last Name" max_length="40" name="u_rb_ln" type="string"/>
+        <element label="Reported Name" max_length="100" name="u_rb_name" type="string"/>
         <element label="Phone" max_length="40" name="u_rb_phone" type="string"/>
-        <element label="Reason for Report" max_length="40" name="u_reason" type="string"/>
+        <element choice="1" label="Reason for Report" max_length="40" name="u_reason" read_only="true" type="choice">
+            <choice>
+                <element label="Record Request" sequence="0" value="Record Request"/>
+                <element label="Dissatisfied Patient" sequence="1" value="DP"/>
+                <element label="Verbal or Written Notice of Claim" sequence="2" value="VerbalClaim"/>
+                <element label="Lawsuit" sequence="3" value="Lawsuit"/>
+                <element label="Administrative Defense (St. Board Investigation/Billing Errors Proceeding/Employment-Related Civil A" sequence="4" value="AD"/>
+                <element label="Cyber Security (Information or Network Security Breach/Regulatory Privacy Proceeding/Customer Notifi" sequence="5" value="CS"/>
+                <element label="General Liability (Bodily Injury &amp; Property Damage)" sequence="6" value="GL"/>
+                <element label="Notice of Deposition" sequence="7" value="Notice of Deposition"/>
+                <element label="Unexpected Outcome" sequence="8" value="UnexpectedOutcome"/>
+                <element label="Other" sequence="9" value="UnexpectedOutcome"/>
+            </choice>
+        </element>
         <element label="Date of Report" max_length="40" name="u_reported_date" type="glide_date"/>
+        <index name="index">
+            <element name="claim_number"/>
+        </index>
     </element>
 </database>

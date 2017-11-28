@@ -4,7 +4,7 @@
         <sys_class_name>sys_ui_action_role</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-14 03:24:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4dbe848cdbc04340d596327e9d9619fb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>.x_norca_med_cam.user</sys_name>

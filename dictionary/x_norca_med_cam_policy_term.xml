@@ -5,6 +5,7 @@
         <element label="Accounting - Effective To" max_length="40" name="accounting_effective_to" read_only="true" type="glide_date"/>
         <element label="Account ID" max_length="10" name="account_id" read_only="true" type="string"/>
         <element label="Account Number" max_length="15" name="account_number" read_only="true" type="string"/>
+        <element label="Base Record" max_length="40" name="base_record" read_only="true" type="boolean"/>
         <element label="Binder" max_length="40" name="binder" read_only="true" type="boolean"/>
         <element choice="1" label="Cancellation Reason" max_length="10" name="cancellation_reason" read_only="true" type="string">
             <choice>
@@ -438,7 +439,7 @@
         <element label="Number of Physicians" max_length="40" name="physician_count" read_only="true" type="integer"/>
         <element label="Professional Liability Limit" max_length="40" name="pl_limit" read_only="true" type="integer"/>
         <element label="Policy" max_length="32" name="policy" read_only="true" reference="x_norca_med_cam_policy" type="reference"/>
-        <element choice="1" label="Policy Term" max_length="10" name="policy_term" read_only="true" type="string">
+        <element choice="1" display="true" label="Policy Term" max_length="10" name="policy_term" read_only="true" type="string">
             <choice>
                 <element label="Policy Year 04" value="PYN04"/>
                 <element label="Policy Year 05" value="PYN05"/>
@@ -470,6 +471,7 @@
         </element>
         <element label="First Date of Potential Cancellation" max_length="40" name="potential_cancel_1" read_only="true" type="glide_date"/>
         <element label="Second Date of Potential Cancellation" max_length="40" name="potential_cancel_2" read_only="true" type="glide_date"/>
+        <element label="Regional Office" max_length="10" name="process_location_code" type="string"/>
         <element choice="1" label="Renewal Cycle" max_length="10" name="renewal_cycle" read_only="true" type="string">
             <choice>
                 <element label="Can be renewed" value="RENCAND"/>

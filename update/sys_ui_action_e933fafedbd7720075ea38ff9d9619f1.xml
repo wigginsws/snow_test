@@ -36,6 +36,11 @@ function setMandatory(){
 		needValue = true;
 	}
 	
+		if(g_form.getValue('u_choice_2') == ''){
+		g_form.setMandatory('u_choice_2', true);
+		needValue = true;
+	}
+	
 	if(g_form.getValue('coverage_verification_status') == ''){
 		g_form.setMandatory('coverage_verification_status', true);
 		needValue = true;
@@ -74,7 +79,7 @@ if(typeof window == 'undefined') {
 function nextStage(){
 	var di = new GlideRecord('x_norca_med_cam_diary');
 	di.addQuery('claim', current.sys_id);
-	di.addQuery('diary_type', 'state_payment_reporting_req');
+	//di.addQuery('diary_type', 'state_payment_reporting_req');
 	di.addQuery('state', 1);
 	di.query();
 	
@@ -100,11 +105,11 @@ function nextStage(){
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-06-15 21:33:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e933fafedbd7720075ea38ff9d9619f1</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Resolve Claim</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -113,7 +118,7 @@ function nextStage(){
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_action_e933fafedbd7720075ea38ff9d9619f1</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-31 19:39:31</sys_updated_on>
+        <sys_updated_on>2017-10-26 18:53:25</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

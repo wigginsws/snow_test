@@ -3,7 +3,7 @@
     <sys_data_source action="INSERT_OR_UPDATE">
         <category/>
         <connection_timeout>0</connection_timeout>
-        <connection_url>jdbc:oracle:thin:@oas16dbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url>jdbc:oracle:thin:@oasisdbdev.norcalmutual.com:1521:dev</connection_url>
         <connection_url_parameters/>
         <csv_delimiter/>
         <database_name>dev</database_name>
@@ -18,10 +18,10 @@
         <import_set_table_name>u_mini_coverage_import</import_set_table_name>
         <instance_name/>
         <jdbc_password>pass2017</jdbc_password>
-        <jdbc_server>oas16dbdev.norcalmutual.com</jdbc_server>
+        <jdbc_server>oasisdbdev.norcalmutual.com</jdbc_server>
         <jdbc_user_name>oasissn</jdbc_user_name>
         <last_run_database_field>SYS_UPDATE_TIME</last_run_database_field>
-        <last_run_datetime>to_date('2017-07-10 11:18:17','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <last_run_datetime>to_date('2017-10-04 07:37:23','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
         <ldap_target/>
         <maximum_rows/>
         <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
@@ -42,21 +42,21 @@
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-10 18:14:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2d757e32dbbbb24075ea38ff9d961901</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2990</sys_mod_count>
         <sys_name>Claims-OASIS-CM_Coverage</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_data_source_2d757e32dbbbb24075ea38ff9d961901</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-10 18:14:35</sys_updated_on>
+        <sys_updated_by>oasissn</sys_updated_by>
+        <sys_updated_on>2017-11-03 01:06:03</sys_updated_on>
         <table_name>CM_COVERAGE</table_name>
         <type>JDBC</type>
         <use_integrated_authentication>false</use_integrated_authentication>
-        <use_last_run_datetime>false</use_last_run_datetime>
+        <use_last_run_datetime>true</use_last_run_datetime>
         <xpath_root_node/>
         <zipped>false</zipped>
     </sys_data_source>

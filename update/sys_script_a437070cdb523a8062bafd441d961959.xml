@@ -23,7 +23,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>CAM-CLASS-Update Entity Classification</name>
-        <order>100</order>
+        <order>1100</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -35,7 +35,7 @@
 
 	var camDataSyncUtils = new cam_DataSyncUtils();
 	
-	gs.debug("[updateEntityClassification] Called. From " + current.effective_from + ", To " + current.effective_to);
+	gs.debug("[updateEntityClassification] Called. Class: " + current.class_type + ", From " + current.effective_from + ", To " + current.effective_to);
 	if (current.class_type!=previous.class_type || current.effective_from!=previous.effective_from || current.effective_to!=previous.effective_to) {
 	
 		var entityGR = camDataSyncUtils.getEntityBySysId(current.getValue("entity"));
@@ -45,6 +45,10 @@
 			
 			if (!classification) {
 				classification = "";
+			}
+			
+			if (classification.indexOf(current.getValue("class_type"))<0) {
+				return;
 			}
 			
 			if (previous.class_type) {
@@ -64,12 +68,7 @@
 				classification = cam.removeValueFromTokenizedString(classification, ",", current.class_type.toString());
 			}
 			
-			entityGR.setValue("classification", classification);
-			entityGR.last_committed_update = entityGR.sys_mod_count;
-			entityGR.setWorkflow(false);
-			entityGR.autoSysFields(false);
-			entityGR.update();
-			gs.debug("[updateEntityClassification] Entity updated with new classification " + classification);
+			updateEntity(entityGR, classification);
 		} else {
 			gs.warn("[updateEntityClassification] Could not find entity record for " + current);
 		}
@@ -77,15 +76,24 @@
 		gs.debug("[updateEntityClassification] No changes. Not updating entity.");
 	}
 
-})(current, previous);]]></script>
+})(current, previous);
+
+function updateEntity(entityGR, classification) {
+	entityGR.setValue("classification", classification);
+	entityGR.last_committed_update = entityGR.sys_mod_count;
+	entityGR.setWorkflow(false);
+	entityGR.autoSysFields(false);
+	entityGR.update();
+	gs.debug("[updateEntityClassification] Entity updated with new classification " + classification);
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>roshan@buildon.me</sys_created_by>
         <sys_created_on>2017-04-18 16:54:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a437070cdb523a8062bafd441d961959</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>CAM-CLASS-Update Entity Classification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -93,8 +101,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_a437070cdb523a8062bafd441d961959</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-12 03:51:44</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

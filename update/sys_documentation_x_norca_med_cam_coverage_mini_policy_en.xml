@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-10 20:25:23</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>6273dbf2dbf3f24075ea38ff9d9619db</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_name>Mini Policy</sys_name>

@@ -48,7 +48,7 @@
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-04-25 06:00:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>2fb43892dbda760075ea38ff9d961905</sys_id>
+        <sys_id>7ace969adb660300e022771c8c961962</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ENTITY_ROLE_PK</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_u_oasis_import_claimrole_u_entity_role_pk</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-04-25 06:00:44</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:23:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -6,7 +6,7 @@
         <sys_class_name>sys_soap_message_parameters</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-14 02:13:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>45ffb377dbf37240d596327e9d961929</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>UserLogoff.securityToken</sys_name>

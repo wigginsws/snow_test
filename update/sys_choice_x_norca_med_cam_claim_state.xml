@@ -6,25 +6,6 @@
             <element>state</element>
             <hint/>
             <inactive>true</inactive>
-            <label>Pending</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>0</sequence>
-            <sys_created_by>austin@buildon.me</sys_created_by>
-            <sys_created_on>2017-03-01 16:58:25</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>51dbb7a8dbd1764062bafd441d961914</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:31:57</sys_updated_on>
-            <value>-5</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
             <label>None</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
@@ -63,114 +44,19 @@
             <element>state</element>
             <hint/>
             <inactive>true</inactive>
-            <label>Unassigned</label>
+            <label>Pending</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>3</sequence>
+            <sequence>1</sequence>
             <sys_created_by>austin@buildon.me</sys_created_by>
             <sys_created_on>2017-03-01 16:58:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>21dbb7a8dbd1764062bafd441d961917</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:29</sys_updated_on>
-            <value>16</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Coverage Determination Made</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>6</sequence>
-            <sys_created_by>austin@buildon.me</sys_created_by>
-            <sys_created_on>2017-03-01 16:58:25</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>e9dbb7a8dbd1764062bafd441d961917</sys_id>
-            <sys_mod_count>9</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:45</sys_updated_on>
-            <value>7</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>In Progress</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>7</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d423a0f4db15764062bafd441d961921</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:45</sys_updated_on>
-            <value>8</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>In Litigation</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>8</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>9023a0f4db15764062bafd441d961922</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:45</sys_updated_on>
-            <value>9</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Awaiting Additional Information</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>9</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>5c23a0f4db15764062bafd441d961922</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:29</sys_updated_on>
-            <value>10</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Resolved</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>10</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>1823a0f4db15764062bafd441d961923</sys_id>
-            <sys_mod_count>6</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:30</sys_updated_on>
-            <value>11</value>
+            <sys_id>51dbb7a8dbd1764062bafd441d961914</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>-5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -180,15 +66,15 @@
             <label>Assignment</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>10</sequence>
+            <sequence>1</sequence>
             <sys_created_by>austin@buildon.me</sys_created_by>
             <sys_created_on>2017-03-01 16:58:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>99dbb7a8dbd1764062bafd441d961915</sys_id>
-            <sys_mod_count>8</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:34:06</sys_updated_on>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -196,76 +82,19 @@
             <element>state</element>
             <hint/>
             <inactive>true</inactive>
-            <label>Closed</label>
+            <label>Unassigned</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>11</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sequence>2</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-03-01 16:58:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d023a0f4db15764062bafd441d961924</sys_id>
-            <sys_mod_count>6</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:30</sys_updated_on>
-            <value>12</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Recoup N/A</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>12</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>3aa10970db55764062bafd441d96195f</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:30</sys_updated_on>
-            <value>13</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Recoup In Progress</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>13</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>f2a10970db55764062bafd441d961960</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:31</sys_updated_on>
-            <value>14</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
-            <label>Recoup Complete</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>14</sequence>
-            <sys_created_by>abey@elucent.io</sys_created_by>
-            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>bea10970db55764062bafd441d961960</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:32:31</sys_updated_on>
-            <value>15</value>
+            <sys_id>21dbb7a8dbd1764062bafd441d961917</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>16</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -275,15 +104,15 @@
             <label>Investigate</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>20</sequence>
+            <sequence>2</sequence>
             <sys_created_by>austin@buildon.me</sys_created_by>
             <sys_created_on>2017-03-01 16:58:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>65dbb7a8dbd1764062bafd441d961916</sys_id>
-            <sys_mod_count>8</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:34:13</sys_updated_on>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -294,16 +123,35 @@
             <label>Resolved</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>30</sequence>
+            <sequence>3</sequence>
             <sys_created_by>abey@elucent.io</sys_created_by>
             <sys_created_on>2017-03-01 22:03:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b2a10970db55764062bafd441d96195e</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-21 14:01:30</sys_updated_on>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
             <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Coverage Determination Made</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-03-01 16:58:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9dbb7a8dbd1764062bafd441d961917</sys_id>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>7</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -313,16 +161,168 @@
             <label>Closed</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
-            <sequence>40</sequence>
+            <sequence>4</sequence>
             <sys_created_by>abey@elucent.io</sys_created_by>
             <sys_created_on>2017-03-01 22:03:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7ea10970db55764062bafd441d96195e</sys_id>
-            <sys_mod_count>10</sys_mod_count>
-            <sys_updated_by>joe@buildon.me</sys_updated_by>
-            <sys_updated_on>2017-04-03 16:34:36</sys_updated_on>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
             <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d423a0f4db15764062bafd441d961921</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>In Litigation</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9023a0f4db15764062bafd441d961922</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Awaiting Additional Information</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>6</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c23a0f4db15764062bafd441d961922</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Resolved</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>7</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1823a0f4db15764062bafd441d961923</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>8</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 19:50:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d023a0f4db15764062bafd441d961924</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Recoup N/A</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>9</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3aa10970db55764062bafd441d96195f</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Recoup In Progress</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>10</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2a10970db55764062bafd441d961960</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>14</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Recoup Complete</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>11</sequence>
+            <sys_created_by>abey@elucent.io</sys_created_by>
+            <sys_created_on>2017-03-01 22:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bea10970db55764062bafd441d961960</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>dself</sys_updated_by>
+            <sys_updated_on>2017-10-10 19:46:09</sys_updated_on>
+            <value>15</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>
@@ -331,16 +331,16 @@
             <sys_created_by>austin@buildon.me</sys_created_by>
             <sys_created_on>2017-03-01 16:58:25</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>31463fb3db900300e022771c8c9619d9</sys_id>
-            <sys_mod_count>109</sys_mod_count>
+            <sys_id>b923a296dba60300e022771c8c96198c</sys_id>
+            <sys_mod_count>115</sys_mod_count>
             <sys_name>state</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_choice_x_norca_med_cam_claim_state</sys_update_name>
-            <sys_updated_by>rrao</sys_updated_by>
-            <sys_updated_on>2017-06-13 05:00:59</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:59:50</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

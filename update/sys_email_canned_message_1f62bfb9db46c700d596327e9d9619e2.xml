@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p style="color: #e55a00; font-size: 20px; margin: 0px 0px 0px 36px;"> </p>
+<p style="color: #e55a00; font-size: 20px; margin: 0px 0px 0px 36px;"><strong>Thank you for your submission.</strong></p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"><span style="color: #6e7a83;"><br /> </span>A claims specialist will contact <span style="color: #929292;">the insured within </span>the next 36 hours to discuss this report and gather additional information.  We have assigned Claim ${number} to this case, but please note that our receipt of your submission and assignment of a claim number is not confirmation of coverage.  You may reply to this email if you wish to submit additional documents related to this matter.  </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"> </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;"> </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;">Sincerely,</p>
+<p style="color: #919191; font-size: 14px; margin: 0px;"> </p>
+<p style="color: #919191; font-size: 14px; margin: 0px 0px 0px 36px;">${signature}</p>
+<p> </p>]]></body>
+        <group display_value="">710877cddbf1fe4062bafd441d9619be</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-10-27 16:27:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1f62bfb9db46c700d596327e9d9619e2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Jen Test Letter</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_email_canned_message_1f62bfb9db46c700d596327e9d9619e2</sys_update_name>
+        <sys_updated_by>temerson</sys_updated_by>
+        <sys_updated_on>2017-11-01 13:53:45</sys_updated_on>
+        <title>Jen Test Letter</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

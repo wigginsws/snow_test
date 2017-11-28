@@ -48,7 +48,7 @@
         <sys_created_by>joe@buildon.me</sys_created_by>
         <sys_created_on>2017-03-24 20:37:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>81c4957ddbb1b200aa005404ce96193d</sys_id>
+        <sys_id>dafe92dadb660300e022771c8c961940</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Date and time closed</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_diary_closed_date_and_time</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-04-21 18:04:08</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:27:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

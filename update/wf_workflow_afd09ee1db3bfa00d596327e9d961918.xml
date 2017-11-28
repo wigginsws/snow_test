@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <activity_stages>{"ends":["9ebab727db0c8f0075ea38ff9d9619cc"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <active>false</active>
+        <activity_stages>{"ends":["b768372adb2d4fc0d596327e9d96193b"],"activities":{},"subflows":[],"stages":{}}</activity_stages>
         <after_business_rules>true</after_business_rules>
         <checked_out/>
         <checked_out_by/>
         <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
-        <condition table="x_norca_med_cam_claim">claim_log_idISEMPTY^claimantISNOTEMPTY^u_insuredISNOTEMPTY^u_incident_start_dateISNOTEMPTY^u_incident_end_dateISNOTEMPTY^report_dateISNOTEMPTY^sor_idISEMPTY^NQclaim_log_idISNOTEMPTY^sys_updated_by!=oasissn^claimantISNOTEMPTY^u_insuredISNOTEMPTY^u_incident_start_dateISNOTEMPTY^u_incident_end_dateISNOTEMPTY^report_dateISNOTEMPTY^sor_idISEMPTY^EQ<item endquery="false" field="claim_log_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <condition table="x_norca_med_cam_claim">claim_log_idISEMPTY^claimantISNOTEMPTY^u_insuredISNOTEMPTY^u_incident_start_dateISNOTEMPTY^u_incident_end_dateISNOTEMPTY^report_dateISNOTEMPTY^claim_idISEMPTY^NQclaim_log_idISNOTEMPTY^sys_updated_by!=oasissn^claimantISNOTEMPTY^u_insuredISNOTEMPTY^u_incident_start_dateISNOTEMPTY^u_incident_end_dateISNOTEMPTY^report_dateISNOTEMPTY^claim_idISEMPTY^sor_updated_by!=system^EQ<item endquery="false" field="claim_log_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="false" field="claimant" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="u_insured" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="u_incident_start_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="u_incident_end_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="report_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="false" field="sor_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="claim_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="false" field="claim_log_id" goto="false" newquery="true" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="oasissn"/>
             <item endquery="false" field="claimant" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
@@ -21,21 +21,22 @@
             <item endquery="false" field="u_incident_start_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="u_incident_end_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="report_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="false" field="sor_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="claim_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="sor_updated_by" goto="false" newquery="false" operator="!=" or="false" value="system"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
-        <condition_type>run_match</condition_type>
+        <condition_type>first_match</condition_type>
         <description/>
-        <expected_sequences>d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,5ebab727db0c8f0075ea38ff9d9619f9,d6bab727db0c8f0075ea38ff9d9619fd,9ebab727db0c8f0075ea38ff9d9619cc|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,debab727db0c8f0075ea38ff9d9619fb</expected_sequences>
+        <expected_sequences>b368372adb2d4fc0d596327e9d96193c,b368372adb2d4fc0d596327e9d961935,f768372adb2d4fc0d596327e9d961931,b368fbe6db2d4fc0d596327e9d9619d5,b768372adb2d4fc0d596327e9d961932,7368372adb2d4fc0d596327e9d961934,3f68372adb2d4fc0d596327e9d96192f,3368fbe6db2d4fc0d596327e9d9619d7,f768372adb2d4fc0d596327e9d96193a,b768372adb2d4fc0d596327e9d96193b</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,5ebab727db0c8f0075ea38ff9d9619f9,16bab727db0c8f0075ea38ff9d9619ce|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,5ebab727db0c8f0075ea38ff9d9619f9,d6bab727db0c8f0075ea38ff9d9619fd,9ebab727db0c8f0075ea38ff9d9619cc|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,debab727db0c8f0075ea38ff9d9619fb,9ebab727db0c8f0075ea38ff9d9619cc|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,debab727db0c8f0075ea38ff9d9619fb,5ebab727db0c8f0075ea38ff9d9619f9,16bab727db0c8f0075ea38ff9d9619ce|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,debab727db0c8f0075ea38ff9d9619fb,5ebab727db0c8f0075ea38ff9d9619f9,d6bab727db0c8f0075ea38ff9d9619fd,9ebab727db0c8f0075ea38ff9d9619cc|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,5ebab727db0c8f0075ea38ff9d9619f9,16bab727db0c8f0075ea38ff9d9619ce|d6baf727db0c8f0075ea38ff9d961900,d6baf727db0c8f0075ea38ff9d961901,1ebaf727db0c8f0075ea38ff9d961906,dabaf727db0c8f0075ea38ff9d961907,1ebab727db0c8f0075ea38ff9d9619fe,5ebab727db0c8f0075ea38ff9d9619f9,d6bab727db0c8f0075ea38ff9d9619fd,9ebab727db0c8f0075ea38ff9d9619cc</full_sequences>
+        <full_sequences>b368372adb2d4fc0d596327e9d96193c,b368372adb2d4fc0d596327e9d961935,f768372adb2d4fc0d596327e9d961931,b368fbe6db2d4fc0d596327e9d9619d5,7f68372adb2d4fc0d596327e9d96192d,b768372adb2d4fc0d596327e9d961932,b768fbe6db2d4fc0d596327e9d9619d9,b368fbe6db2d4fc0d596327e9d9619d8,7368372adb2d4fc0d596327e9d961934,b768372adb2d4fc0d596327e9d96193b,3f68372adb2d4fc0d596327e9d96192f,3368fbe6db2d4fc0d596327e9d9619d7,f768372adb2d4fc0d596327e9d96193a</full_sequences>
         <journal/>
         <max_activity_count>500</max_activity_count>
         <name>CAM-OASIS-ClaimLog-Save</name>
         <not_cacheable>false</not_cacheable>
         <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
-        <order>100</order>
+        <order>200</order>
         <pin_type>set_by_activity</pin_type>
         <published>true</published>
         <relative_duration/>
@@ -44,13 +45,13 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">d6baf727db0c8f0075ea38ff9d961900</start>
+        <start display_value="Begin">b368372adb2d4fc0d596327e9d96193c</start>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619ca</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768fbe6db2d4fc0d596327e9d9619d3</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:44:43</sys_updated_on>
+        <sys_updated_on>2017-10-05 17:48:55</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <timezone/>
         <validated>true</validated>
@@ -64,11 +65,11 @@
         <sys_class_name>wf_workflow</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-06 18:21:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>afd09ee1db3bfa00d596327e9d961918</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CAM-OASIS-ClaimLog-Save</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -77,7 +78,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>wf_workflow_afd09ee1db3bfa00d596327e9d961918</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-13 17:26:15</sys_updated_on>
+        <sys_updated_on>2017-10-05 17:48:56</sys_updated_on>
         <table>x_norca_med_cam_claim</table>
         <template>false</template>
         <vars/>
@@ -98,21 +99,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d6baf727db0c8f0075ea38ff9d961900</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d96193c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>20</x>
-        <y>20</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>7</x>
+        <y>2</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d6baf727db0c8f0075ea38ff9d961900"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b368372adb2d4fc0d596327e9d96193c"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">d6baf727db0c8f0075ea38ff9d961900</activity>
+        <activity display_value="Begin">b368372adb2d4fc0d596327e9d96193c</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -126,128 +127,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>12baf727db0c8f0075ea38ff9d961901</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d96193c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-    </wf_condition>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>6</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name>Call insertClaimLog SOAP Action</name>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage/>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>dabaf727db0c8f0075ea38ff9d961907</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>281</x>
-        <y>180</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=dabaf727db0c8f0075ea38ff9d961907"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>dabaf727db0c8f0075ea38ff9d961907</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebaf727db0c8f0075ea38ff9d961907</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>try {&#13;
-	var claimLogWSUtils = new cam_ClaimLogWebServiceUtils();&#13;
-	gs.debug("[saveClaimLog] Claim log record " + current.getDisplayValue());&#13;
-	claimLogWSUtils.saveClaimLog(current);&#13;
-	&#13;
-} catch(ex) {&#13;
-	gs.error("[saveClaimLog] " + (ex &amp;&amp; ex.getMessage?ex.getMessage():ex));&#13;
-}&#13;
-&#13;
-</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>dabaf727db0c8f0075ea38ff9d961907</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebaf727db0c8f0075ea38ff9d961907</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>try {&#13;
-	var claimLogWSUtils = new cam_ClaimLogWebServiceUtils();&#13;
-	gs.debug("[saveClaimLog] Claim log record " + current.getDisplayValue());&#13;
-	claimLogWSUtils.saveClaimLog(current);&#13;
-	&#13;
-} catch(ex) {&#13;
-	gs.error("[saveClaimLog] " + (ex &amp;&amp; ex.getMessage?ex.getMessage():ex));&#13;
-}&#13;
-&#13;
-</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</activity>
-        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>2</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56baf727db0c8f0075ea38ff9d961908</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-    </wf_condition>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</activity>
-        <condition>activity.state == 'faulted'</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>true</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>false</is_positive>
-        <name>Error</name>
-        <order>1</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2baf727db0c8f0075ea38ff9d961908</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -265,30 +149,58 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1ebab727db0c8f0075ea38ff9d9619fe</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>326</x>
-        <y>382</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>384</x>
+        <y>239</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1ebab727db0c8f0075ea38ff9d9619fe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b768372adb2d4fc0d596327e9d961932"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>claim_log_idISNOTEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619ff</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -306,71 +218,43 @@
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619fe</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>claim_log_idISNOTEMPTY^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619ff</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619fe</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>claim_log_idISNOTEMPTY^EQ</value>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>1ebab727db0c8f0075ea38ff9d9619fe</document_key>
+        <document_key>b768372adb2d4fc0d596327e9d961932</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619ff</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -387,7 +271,7 @@
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Check if SOR ID is set">1ebab727db0c8f0075ea38ff9d9619fe</activity>
+        <activity display_value="Check if SOR ID is set">b768372adb2d4fc0d596327e9d961932</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -401,14 +285,14 @@
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619ff</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Check if SOR ID is set">1ebab727db0c8f0075ea38ff9d9619fe</activity>
+        <activity display_value="Check if SOR ID is set">b768372adb2d4fc0d596327e9d961932</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -422,11 +306,190 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>12baf727db0c8f0075ea38ff9d961900</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68372adb2d4fc0d596327e9d961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Coverage Verified</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3f68372adb2d4fc0d596327e9d96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>518</x>
+        <y>477</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3f68372adb2d4fc0d596327e9d96192f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68372adb2d4fc0d596327e9d96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>coverage_verification_statusINcc,cid,D^sor_idISEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68372adb2d4fc0d596327e9d96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>coverage_verification_statusINcc,cid,D^sor_idISEMPTY^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3f68372adb2d4fc0d596327e9d96192f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Coverage Verified">3f68372adb2d4fc0d596327e9d96192f</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>2</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368372adb2d4fc0d596327e9d961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Coverage Verified">3f68372adb2d4fc0d596327e9d96192f</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68372adb2d4fc0d596327e9d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -444,19 +507,130 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619cc</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d96193b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>792</x>
-        <y>557</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>830</x>
+        <y>628</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9ebab727db0c8f0075ea38ff9d9619cc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b768372adb2d4fc0d596327e9d96193b"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Insert Claim</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368fbe6db2d4fc0d596327e9d9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>637</x>
+        <y>346</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3368fbe6db2d4fc0d596327e9d9619d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3368fbe6db2d4fc0d596327e9d9619d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>var responseObj = new cam_CustomRestWsUtils().insertClaim(current);&#13;
+if (!responseObj || !responseObj["CLAIM_PK"] || responseObj["CLAIM_PK"]&lt;1) {&#13;
+	throw new Error("Service response did not confirm that Claim was inserted " + current.number);&#13;
+}&#13;
+currentGR.setValue("last_committed_update", currentGR.sys_mod_count);&#13;
+currentGR.setValue("last_update_includes_sor_fields", "false");&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3368fbe6db2d4fc0d596327e9d9619d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>var responseObj = new cam_CustomRestWsUtils().insertClaim(current);&#13;
+if (!responseObj || !responseObj["CLAIM_PK"] || responseObj["CLAIM_PK"]&lt;1) {&#13;
+	throw new Error("Service response did not confirm that Claim was inserted " + current.number);&#13;
+}&#13;
+currentGR.setValue("last_committed_update", currentGR.sys_mod_count);&#13;
+currentGR.setValue("last_update_includes_sor_fields", "false");&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Insert Claim">3368fbe6db2d4fc0d596327e9d9619d7</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>2</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68fbe6db2d4fc0d596327e9d9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Insert Claim">3368fbe6db2d4fc0d596327e9d9619d7</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68fbe6db2d4fc0d596327e9d9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -473,49 +647,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d6bab727db0c8f0075ea38ff9d9619fd</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>780</x>
-        <y>385</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>901</x>
+        <y>455</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d6bab727db0c8f0075ea38ff9d9619fd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b368fbe6db2d4fc0d596327e9d9619d8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6bab727db0c8f0075ea38ff9d9619fd</document_key>
+        <document_key>b368fbe6db2d4fc0d596327e9d9619d8</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619fd</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>Unsuccessful insert after three attempts</value>
         <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6bab727db0c8f0075ea38ff9d9619fd</document_key>
+        <document_key>b368fbe6db2d4fc0d596327e9d9619d8</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619fd</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>Unsuccessful insert after three attempts</value>
         <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Log message">d6bab727db0c8f0075ea38ff9d9619fd</activity>
+        <activity display_value="Log message">b368fbe6db2d4fc0d596327e9d9619d8</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -529,11 +703,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619fe</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68fbe6db2d4fc0d596327e9d9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -551,49 +725,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1ebaf727db0c8f0075ea38ff9d961906</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768372adb2d4fc0d596327e9d961931</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>54</x>
-        <y>270</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>12</x>
+        <y>110</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1ebaf727db0c8f0075ea38ff9d961906"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f768372adb2d4fc0d596327e9d961931"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebaf727db0c8f0075ea38ff9d961906</document_key>
+        <document_key>f768372adb2d4fc0d596327e9d961931</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d961906</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d961931</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>new cam_WorkflowUtils().resetRetryCount(workflow);</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ebaf727db0c8f0075ea38ff9d961906</document_key>
+        <document_key>f768372adb2d4fc0d596327e9d961931</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d961906</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d961931</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>new cam_WorkflowUtils().resetRetryCount(workflow);</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Reset retry count">1ebaf727db0c8f0075ea38ff9d961906</activity>
+        <activity display_value="Reset retry count">f768372adb2d4fc0d596327e9d961931</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -607,11 +781,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>16baf727db0c8f0075ea38ff9d961907</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68372adb2d4fc0d596327e9d961931</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -629,105 +803,105 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619f9</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d96192d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>603</x>
-        <y>188</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>507</x>
+        <y>89</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=5ebab727db0c8f0075ea38ff9d9619f9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7f68372adb2d4fc0d596327e9d96192d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368372adb2d4fc0d596327e9d96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619fa</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>1</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619fa</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>answer = new cam_WorkflowUtils().isServiceRetryExceeded(workflow);</value>
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619fa</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368372adb2d4fc0d596327e9d96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619fa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619fa</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>1</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5ebab727db0c8f0075ea38ff9d9619f9</document_key>
+        <document_key>7f68372adb2d4fc0d596327e9d96192d</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619fa</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d96192e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>answer = new cam_WorkflowUtils().isServiceRetryExceeded(workflow);</value>
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</activity>
+        <activity display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -741,14 +915,14 @@
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d6bab727db0c8f0075ea38ff9d9619fb</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d96192f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</activity>
+        <activity display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -762,11 +936,138 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619fb</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d96192f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Save Claim Log</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:33</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>266</x>
+        <y>116</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b368fbe6db2d4fc0d596327e9d9619d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368fbe6db2d4fc0d596327e9d9619d5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68fbe6db2d4fc0d596327e9d9619d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:33</sys_updated_on>
+        <value>try {&#13;
+// 	if (!current.claim_log_id) {&#13;
+// 		workflow.scratchpad.update_claim_num = "true";&#13;
+// 		gs.debug("[wfSaveClaimLog] Claim Log ID is " + current.claim_log_id + ", will update claim number after insert");&#13;
+// 	}&#13;
+	&#13;
+	var claimLogWSUtils = new cam_ClaimLogWebServiceUtils();&#13;
+	gs.debug("[saveClaimLog] Claim log record " + current.getDisplayValue());&#13;
+	claimLogWSUtils.saveClaimLog(current);&#13;
+	&#13;
+} catch(ex) {&#13;
+	throw new Error("[saveClaimLog] " + (ex &amp;&amp; ex.getMessage?ex.getMessage():ex));&#13;
+}&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368fbe6db2d4fc0d596327e9d9619d5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68fbe6db2d4fc0d596327e9d9619d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:33</sys_updated_on>
+        <value>try {&#13;
+// 	if (!current.claim_log_id) {&#13;
+// 		workflow.scratchpad.update_claim_num = "true";&#13;
+// 		gs.debug("[wfSaveClaimLog] Claim Log ID is " + current.claim_log_id + ", will update claim number after insert");&#13;
+// 	}&#13;
+	&#13;
+	var claimLogWSUtils = new cam_ClaimLogWebServiceUtils();&#13;
+	gs.debug("[saveClaimLog] Claim log record " + current.getDisplayValue());&#13;
+	claimLogWSUtils.saveClaimLog(current);&#13;
+	&#13;
+} catch(ex) {&#13;
+	throw new Error("[saveClaimLog] " + (ex &amp;&amp; ex.getMessage?ex.getMessage():ex));&#13;
+}&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>2</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768fbe6db2d4fc0d596327e9d9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
@@ -784,443 +1085,443 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d6baf727db0c8f0075ea38ff9d961901</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961935</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>19</x>
-        <y>129</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>122</x>
+        <y>5</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d6baf727db0c8f0075ea38ff9d961901"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b368372adb2d4fc0d596327e9d961935"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>12baf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1abaf727db0c8f0075ea38ff9d961902</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1ebaf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>52baf727db0c8f0075ea38ff9d961904</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368372adb2d4fc0d596327e9d961939</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56baf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5abaf727db0c8f0075ea38ff9d961901</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768372adb2d4fc0d596327e9d961935</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebaf727db0c8f0075ea38ff9d961902</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961936</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = 0;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>92baf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>1970-01-01 00:00:03</value>
-        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>96baf727db0c8f0075ea38ff9d961904</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3f68372adb2d4fc0d596327e9d961937</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9abaf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>500</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d961901</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2baf727db0c8f0075ea38ff9d961902</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d6baf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>dabaf727db0c8f0075ea38ff9d961904</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
-        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>debaf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9abaf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5abaf727db0c8f0075ea38ff9d961901</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1abaf727db0c8f0075ea38ff9d961902</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>500</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d961901</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1ebaf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>92baf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>1970-01-01 00:00:03</value>
-        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d6baf727db0c8f0075ea38ff9d961903</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>12baf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>dabaf727db0c8f0075ea38ff9d961904</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
-        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2baf727db0c8f0075ea38ff9d961902</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>debaf727db0c8f0075ea38ff9d961905</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>52baf727db0c8f0075ea38ff9d961904</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56baf727db0c8f0075ea38ff9d961905</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368372adb2d4fc0d596327e9d961938</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <value/>
-        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>96baf727db0c8f0075ea38ff9d961904</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d6baf727db0c8f0075ea38ff9d961901</document_key>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>1970-01-01 00:00:03</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68372adb2d4fc0d596327e9d961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68372adb2d4fc0d596327e9d961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768372adb2d4fc0d596327e9d961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768372adb2d4fc0d596327e9d961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>1970-01-01 00:00:03</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768372adb2d4fc0d596327e9d961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768372adb2d4fc0d596327e9d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68372adb2d4fc0d596327e9d961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68372adb2d4fc0d596327e9d961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368372adb2d4fc0d596327e9d961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3f68372adb2d4fc0d596327e9d961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368372adb2d4fc0d596327e9d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b368372adb2d4fc0d596327e9d961935</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebaf727db0c8f0075ea38ff9d961902</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961936</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = 0;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Take 5 - Unblock UI">d6baf727db0c8f0075ea38ff9d961901</activity>
+        <activity display_value="Take 5 - Unblock UI">b368372adb2d4fc0d596327e9d961935</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1234,11 +1535,11 @@ answer = 0;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56baf727db0c8f0075ea38ff9d961906</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368372adb2d4fc0d596327e9d96193a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1256,55 +1557,65 @@ answer = 0;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>debab727db0c8f0075ea38ff9d9619fb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368372adb2d4fc0d596327e9d961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:41:28</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
-        <x>445</x>
-        <y>506</y>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>383</x>
+        <y>338</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=debab727db0c8f0075ea38ff9d9619fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7368372adb2d4fc0d596327e9d961934"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>debab727db0c8f0075ea38ff9d9619fb</document_key>
+        <document_key>7368372adb2d4fc0d596327e9d961934</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619fc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:41:28</sys_updated_on>
-        <value>var responseObj = new cam_CustomRestWsUtils().updateClaimLog(current);&#13;
-if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
-	throw "Service response did not confirm that Claim Number was updated " + current.number;&#13;
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>if (current.getValue("claim_number_updated")!="true") {&#13;
+	var responseObj = new cam_CustomRestWsUtils().updateClaimLog(current);&#13;
+	if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
+		throw new Error("Service response did not confirm that Claim Number was updated " + current.number);&#13;
+	}&#13;
+	current.setValue("claim_number_updated", "true");&#13;
+} else {&#13;
+	gs.debug("[wfSaveClaimLog] Claim number previously set, skipping.");&#13;
 }</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>debab727db0c8f0075ea38ff9d9619fb</document_key>
+        <document_key>7368372adb2d4fc0d596327e9d961934</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619fc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:41:28</sys_updated_on>
-        <value>var responseObj = new cam_CustomRestWsUtils().updateClaimLog(current);&#13;
-if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
-	throw "Service response did not confirm that Claim Number was updated " + current.number;&#13;
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>if (current.getValue("claim_number_updated")!="true") {&#13;
+	var responseObj = new cam_CustomRestWsUtils().updateClaimLog(current);&#13;
+	if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
+		throw new Error("Service response did not confirm that Claim Number was updated " + current.number);&#13;
+	}&#13;
+	current.setValue("claim_number_updated", "true");&#13;
+} else {&#13;
+	gs.debug("[wfSaveClaimLog] Claim number previously set, skipping.");&#13;
 }</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Update Claim Number">debab727db0c8f0075ea38ff9d9619fb</activity>
+        <activity display_value="Update Claim Number">7368372adb2d4fc0d596327e9d961934</activity>
         <condition>true &amp;&amp; activity.state != 'faulted'</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1318,14 +1629,14 @@ if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619fc</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d961934</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Update Claim Number">debab727db0c8f0075ea38ff9d9619fb</activity>
+        <activity display_value="Update Claim Number">7368372adb2d4fc0d596327e9d961934</activity>
         <condition>activity.state == 'faulted'</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1339,11 +1650,99 @@ if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>debab727db0c8f0075ea38ff9d9619fc</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d961934</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>20</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Update last committed count</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768372adb2d4fc0d596327e9d96193a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:20:06</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
+        <x>616</x>
+        <y>597</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f768372adb2d4fc0d596327e9d96193a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f768372adb2d4fc0d596327e9d96193a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d96193a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:20:06</sys_updated_on>
+        <value>if (current.claim_id) {&#13;
+	current.setValue("last_committed_update", current.sys_mod_count);&#13;
+} else {&#13;
+	current.setValue("cel_last_committed_update", current.sys_mod_count);&#13;
+}&#13;
+current.setValue("last_update_includes_sor_fields", "false");</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f768372adb2d4fc0d596327e9d96193a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68372adb2d4fc0d596327e9d96193a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:20:06</sys_updated_on>
+        <value>if (current.claim_id) {&#13;
+	current.setValue("last_committed_update", current.sys_mod_count);&#13;
+} else {&#13;
+	current.setValue("cel_last_committed_update", current.sys_mod_count);&#13;
+}&#13;
+current.setValue("last_update_includes_sor_fields", "false");</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Update last committed count">f768372adb2d4fc0d596327e9d96193a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68372adb2d4fc0d596327e9d96193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
@@ -1361,443 +1760,443 @@ if (!responseObj || responseObj["CLAIM_NO"]!=current.getValue("number")) {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>16bab727db0c8f0075ea38ff9d9619ce</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
         <x>829</x>
         <y>96</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=16bab727db0c8f0075ea38ff9d9619ce"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b768fbe6db2d4fc0d596327e9d9619d9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>12bab727db0c8f0075ea38ff9d9619d0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>16bab727db0c8f0075ea38ff9d9619d1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
-        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1ebab727db0c8f0075ea38ff9d9619f8</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368fbe6db2d4fc0d596327e9d9619de</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768fbe6db2d4fc0d596327e9d9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68fbe6db2d4fc0d596327e9d9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3f68fbe6db2d4fc0d596327e9d9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368fbe6db2d4fc0d596327e9d9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68fbe6db2d4fc0d596327e9d9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68fbe6db2d4fc0d596327e9d9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68fbe6db2d4fc0d596327e9d9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619d0</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68fbe6db2d4fc0d596327e9d9619da</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = gs.getProperty("x_norca_med_cam.ws_max_retry_interval");</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>92bab727db0c8f0075ea38ff9d9619f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>500</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>96bab727db0c8f0075ea38ff9d9619cf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9abab727db0c8f0075ea38ff9d9619ce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9abab727db0c8f0075ea38ff9d9619d0</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368fbe6db2d4fc0d596327e9d9619db</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>1970-01-01 00:05:00</value>
         <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619f6</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768fbe6db2d4fc0d596327e9d9619dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d6bab727db0c8f0075ea38ff9d9619f8</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68fbe6db2d4fc0d596327e9d9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>script</value>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1350</order>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>dabab727db0c8f0075ea38ff9d9619cf</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68fbe6db2d4fc0d596327e9d9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
-        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>debab727db0c8f0075ea38ff9d9619d0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d6bab727db0c8f0075ea38ff9d9619f8</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68fbe6db2d4fc0d596327e9d9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>script</value>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9abab727db0c8f0075ea38ff9d9619ce</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68fbe6db2d4fc0d596327e9d9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>12bab727db0c8f0075ea38ff9d9619d0</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68fbe6db2d4fc0d596327e9d9619da</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>96bab727db0c8f0075ea38ff9d9619cf</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68fbe6db2d4fc0d596327e9d9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>16bab727db0c8f0075ea38ff9d9619d1</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68fbe6db2d4fc0d596327e9d9619db</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9abab727db0c8f0075ea38ff9d9619d0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value>1970-01-01 00:05:00</value>
-        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>debab727db0c8f0075ea38ff9d9619d0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
         <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68fbe6db2d4fc0d596327e9d9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368fbe6db2d4fc0d596327e9d9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value>1970-01-01 00:05:00</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1abab727db0c8f0075ea38ff9d9619f7</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3f68fbe6db2d4fc0d596327e9d9619dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
         <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>5ebab727db0c8f0075ea38ff9d9619f7</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7368fbe6db2d4fc0d596327e9d9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>1ebab727db0c8f0075ea38ff9d9619f8</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368fbe6db2d4fc0d596327e9d9619de</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>dabab727db0c8f0075ea38ff9d9619cf</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768fbe6db2d4fc0d596327e9d9619da</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>92bab727db0c8f0075ea38ff9d9619f8</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368fbe6db2d4fc0d596327e9d9619dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <value/>
-        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
-        <order>1360</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>9ebab727db0c8f0075ea38ff9d9619f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>d2bab727db0c8f0075ea38ff9d9619f7</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b768fbe6db2d4fc0d596327e9d9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768fbe6db2d4fc0d596327e9d9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>16bab727db0c8f0075ea38ff9d9619ce</document_key>
+        <document_key>b768fbe6db2d4fc0d596327e9d9619d9</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>56bab727db0c8f0075ea38ff9d9619d0</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bf68fbe6db2d4fc0d596327e9d9619da</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = gs.getProperty("x_norca_med_cam.ws_max_retry_interval");</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for configured interval">16bab727db0c8f0075ea38ff9d9619ce</activity>
+        <activity display_value="Wait for configured interval">b768fbe6db2d4fc0d596327e9d9619d9</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1811,168 +2210,223 @@ answer = gs.getProperty("x_norca_med_cam.ws_max_retry_interval");</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>16bab727db0c8f0075ea38ff9d9619f9</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d96192d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">12baf727db0c8f0075ea38ff9d961900</condition>
-        <from display_value="Check if SOR ID is set">1ebab727db0c8f0075ea38ff9d9619fe</from>
+        <condition display_value="Always">bf68fbe6db2d4fc0d596327e9d9619d8</condition>
+        <from display_value="Log message">b368fbe6db2d4fc0d596327e9d9619d8</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>12baf727db0c8f0075ea38ff9d96190b</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3368372adb2d4fc0d596327e9d96193e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Update Claim Number">debab727db0c8f0075ea38ff9d9619fb</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="End">b768372adb2d4fc0d596327e9d96193b</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Error">d2baf727db0c8f0075ea38ff9d961908</condition>
-        <from display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</from>
+        <condition display_value="Yes">bf68372adb2d4fc0d596327e9d961930</condition>
+        <from display_value="Coverage Verified">3f68372adb2d4fc0d596327e9d96192f</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>16baf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3768372adb2d4fc0d596327e9d96193f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Insert Claim">3368fbe6db2d4fc0d596327e9d9619d7</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16bab727db0c8f0075ea38ff9d9619f9</condition>
-        <from display_value="Wait for configured interval">16bab727db0c8f0075ea38ff9d9619ce</from>
+        <condition display_value="Error">3b68fbe6db2d4fc0d596327e9d9619d7</condition>
+        <from display_value="Insert Claim">3368fbe6db2d4fc0d596327e9d9619d7</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>1abaf727db0c8f0075ea38ff9d96190b</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d96193e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Log message">b368fbe6db2d4fc0d596327e9d9619d8</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16baf727db0c8f0075ea38ff9d961907</condition>
-        <from display_value="Reset retry count">1ebaf727db0c8f0075ea38ff9d961906</from>
+        <condition display_value="Always">7768372adb2d4fc0d596327e9d96192d</condition>
+        <from display_value="Wait for configured interval">b768fbe6db2d4fc0d596327e9d9619d9</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>52baf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>3b68372adb2d4fc0d596327e9d961940</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">d6bab727db0c8f0075ea38ff9d9619fb</condition>
-        <from display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</from>
+        <condition display_value="No">3b68372adb2d4fc0d596327e9d961933</condition>
+        <from display_value="Check if SOR ID is set">b768372adb2d4fc0d596327e9d961932</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>56baf727db0c8f0075ea38ff9d96190b</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d96193e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Wait for configured interval">16bab727db0c8f0075ea38ff9d9619ce</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">5ebab727db0c8f0075ea38ff9d9619fc</condition>
-        <from display_value="Update Claim Number">debab727db0c8f0075ea38ff9d9619fb</from>
+        <condition display_value="Always">ff68372adb2d4fc0d596327e9d96193a</condition>
+        <from display_value="Update last committed count">f768372adb2d4fc0d596327e9d96193a</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>5abaf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7768372adb2d4fc0d596327e9d961940</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="End">9ebab727db0c8f0075ea38ff9d9619cc</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="End">b768372adb2d4fc0d596327e9d96193b</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">12baf727db0c8f0075ea38ff9d961901</condition>
-        <from display_value="Begin">d6baf727db0c8f0075ea38ff9d961900</from>
+        <condition display_value="Always">fb68372adb2d4fc0d596327e9d961934</condition>
+        <from display_value="Update Claim Number">7368372adb2d4fc0d596327e9d961934</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>96baf727db0c8f0075ea38ff9d961909</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d96193d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Take 5 - Unblock UI">d6baf727db0c8f0075ea38ff9d961901</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Coverage Verified">3f68372adb2d4fc0d596327e9d96192f</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">56baf727db0c8f0075ea38ff9d961908</condition>
-        <from display_value="Call insertClaimLog SOAP Action">dabaf727db0c8f0075ea38ff9d961907</from>
+        <condition display_value="Yes">7768372adb2d4fc0d596327e9d96192f</condition>
+        <from display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>96baf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d96193e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Check if SOR ID is set">1ebab727db0c8f0075ea38ff9d9619fe</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Log message">b368fbe6db2d4fc0d596327e9d9619d8</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">56baf727db0c8f0075ea38ff9d961906</condition>
-        <from display_value="Take 5 - Unblock UI">d6baf727db0c8f0075ea38ff9d961901</from>
+        <condition display_value="Always">3768fbe6db2d4fc0d596327e9d9619d6</condition>
+        <from display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9abaf727db0c8f0075ea38ff9d961909</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7f68372adb2d4fc0d596327e9d96193f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Reset retry count">1ebaf727db0c8f0075ea38ff9d961906</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Check if SOR ID is set">b768372adb2d4fc0d596327e9d961932</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">56bab727db0c8f0075ea38ff9d9619fe</condition>
-        <from display_value="Log message">d6bab727db0c8f0075ea38ff9d9619fd</from>
+        <condition display_value="No">3368372adb2d4fc0d596327e9d961931</condition>
+        <from display_value="Coverage Verified">3f68372adb2d4fc0d596327e9d96192f</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d961909</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d96193f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="End">9ebab727db0c8f0075ea38ff9d9619cc</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Update last committed count">f768372adb2d4fc0d596327e9d96193a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">9ebab727db0c8f0075ea38ff9d9619ff</condition>
-        <from display_value="Check if SOR ID is set">1ebab727db0c8f0075ea38ff9d9619fe</from>
+        <condition display_value="Always">ff68372adb2d4fc0d596327e9d961931</condition>
+        <from display_value="Reset retry count">f768372adb2d4fc0d596327e9d961931</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>9ebaf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>b368372adb2d4fc0d596327e9d961940</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">56bab727db0c8f0075ea38ff9d9619fb</condition>
-        <from display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</from>
+        <condition display_value="Always">bb68fbe6db2d4fc0d596327e9d9619d7</condition>
+        <from display_value="Insert Claim">3368fbe6db2d4fc0d596327e9d9619d7</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>d2baf727db0c8f0075ea38ff9d96190b</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68372adb2d4fc0d596327e9d96193e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Log message">d6bab727db0c8f0075ea38ff9d9619fd</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Update last committed count">f768372adb2d4fc0d596327e9d96193a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Error">debab727db0c8f0075ea38ff9d9619fc</condition>
-        <from display_value="Update Claim Number">debab727db0c8f0075ea38ff9d9619fb</from>
+        <condition display_value="Always">7b68372adb2d4fc0d596327e9d96193c</condition>
+        <from display_value="Begin">b368372adb2d4fc0d596327e9d96193c</from>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:01</sys_created_on>
-        <sys_id>dabaf727db0c8f0075ea38ff9d96190a</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>bb68372adb2d4fc0d596327e9d96193f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:01</sys_updated_on>
-        <to display_value="Retry count exceeded">5ebab727db0c8f0075ea38ff9d9619f9</to>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Take 5 - Unblock UI">b368372adb2d4fc0d596327e9d961935</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">bb68372adb2d4fc0d596327e9d961933</condition>
+        <from display_value="Check if SOR ID is set">b768372adb2d4fc0d596327e9d961932</from>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f368372adb2d4fc0d596327e9d96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Update Claim Number">7368372adb2d4fc0d596327e9d961934</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3368372adb2d4fc0d596327e9d96193a</condition>
+        <from display_value="Take 5 - Unblock UI">b368372adb2d4fc0d596327e9d961935</from>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>f768372adb2d4fc0d596327e9d96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Reset retry count">f768372adb2d4fc0d596327e9d961931</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">7b68372adb2d4fc0d596327e9d961934</condition>
+        <from display_value="Update Claim Number">7368372adb2d4fc0d596327e9d961934</from>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>fb68372adb2d4fc0d596327e9d96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">f368372adb2d4fc0d596327e9d96192f</condition>
+        <from display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</from>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68372adb2d4fc0d596327e9d96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Wait for configured interval">b768fbe6db2d4fc0d596327e9d9619d9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">b768fbe6db2d4fc0d596327e9d9619d6</condition>
+        <from display_value="Save Claim Log">b368fbe6db2d4fc0d596327e9d9619d5</from>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>ff68372adb2d4fc0d596327e9d96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rrao</sys_updated_by>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <to display_value="Retry count exceeded">7f68372adb2d4fc0d596327e9d96192d</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>rrao</sys_created_by>
-        <sys_created_on>2017-07-25 17:28:00</sys_created_on>
-        <sys_id>52bab727db0c8f0075ea38ff9d9619cb</sys_id>
+        <sys_created_on>2017-10-05 04:18:16</sys_created_on>
+        <sys_id>7b68fbe6db2d4fc0d596327e9d9619d3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:28:00</sys_updated_on>
-        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">5ebab727db0c8f0075ea38ff9d9619ca</workflow_version>
+        <sys_updated_on>2017-10-05 04:18:16</sys_updated_on>
+        <workflow_version display_value="CAM-OASIS-ClaimLog-Save">7768fbe6db2d4fc0d596327e9d9619d3</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=afd09ee1db3bfa00d596327e9d961918^sys_id!=5ebab727db0c8f0075ea38ff9d9619ca">
+    <wf_workflow_version action="update_multiple" query="workflow=afd09ee1db3bfa00d596327e9d961918^sys_id!=7768fbe6db2d4fc0d596327e9d9619d3">
         <published>false</published>
     </wf_workflow_version>
 </record_update>

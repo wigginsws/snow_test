@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>CAM-Script-Update Primary Address on Entity</name>
+        <run_as display_value="">31d30918dbce7600d596327e9d961963</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-08-27 04:24:11</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var addressFields = {
+	"use": "new_ent_address_purpose",
+	"address_line1": "new_ent_address_line_1",
+	"address_line2": "new_ent_address_line_2",
+	"city": "new_ent_city",
+	"state": "new_ent_state",
+	"county": "new_ent_county",
+	"country": "new_ent_country",
+	"zip_code": "new_ent_zip_code"
+};
+var today = new GlideDate().getValue();
+
+var entityGR = new GlideRecord("x_norca_med_cam_entity");
+// entityGR.setLimit(10);
+entityGR.query();
+while (entityGR.next()) {
+	
+	var addrGR = new GlideRecord("x_norca_med_cam_address");
+	addrGR.addQuery("entity", entityGR.getUniqueValue());
+	addrGR.addQuery("primary", "true");
+	addrGR.addEncodedQuery("effective_to>" + today );
+	addrGR.query();
+	if (addrGR.next()) {
+		entityGR.primary_address = addrGR.getUniqueValue();
+		
+		for (var fieldName in addressFields) {
+			if (addrGR.isValidField(fieldName)) {
+				entityGR.setValue(addressFields[fieldName], addrGR.getValue(fieldName));
+			}
+		}
+		
+		entityGR.setWorkflow(false);
+		entityGR.autoSysFields(false);
+		entityGR.update();
+	}
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-18 04:27:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0b87d055db5d0700d596327e9d9619fc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CAM-Script-Update Primary Address on Entity</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysauto_script_0b87d055db5d0700d596327e9d9619fc</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:56:48</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

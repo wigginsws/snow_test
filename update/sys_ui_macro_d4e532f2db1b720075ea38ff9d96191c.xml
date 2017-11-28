@@ -10,7 +10,7 @@
         <sys_class_name>sys_ui_macro</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-06-15 21:44:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d4e532f2db1b720075ea38ff9d96191c</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>counsel_email</sys_name>

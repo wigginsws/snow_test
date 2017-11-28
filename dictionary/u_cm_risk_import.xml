@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="zDS-OASIS_CM_Risk" max_length="40" name="u_cm_risk_import" type="collection">
+        <element attributes="import_attribute_name=ADDRESS_FK" label="ADDRESS_FK" max_length="15" name="u_address_fk" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_ATTACHMENT" label="AGG_ATTACHMENT" max_length="15" name="u_agg_attachment" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_DEDUCT" label="AGG_DEDUCT" max_length="15" name="u_agg_deduct" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_LIMIT" label="AGG_LIMIT" max_length="15" name="u_agg_limit" type="decimal"/>
+        <element attributes="import_attribute_name=AGG_LIMIT_EROSION_LEVEL,edge_encryption_enabled=true" label="AGG_LIMIT_EROSION_LEVEL" max_length="40" name="u_agg_limit_erosion_level" type="string"/>
+        <element attributes="import_attribute_name=AGG_SIR" label="AGG_SIR" max_length="15" name="u_agg_sir" type="decimal"/>
+        <element attributes="import_attribute_name=ATTACHMENT" label="ATTACHMENT" max_length="15" name="u_attachment" type="decimal"/>
+        <element attributes="import_attribute_name=CANCEL_REASON_CODE,edge_encryption_enabled=true" label="CANCEL_REASON_CODE" max_length="40" name="u_cancel_reason_code" type="string"/>
+        <element attributes="import_attribute_name=CHAR1,edge_encryption_enabled=true" label="CHAR1" max_length="100" name="u_char1" type="string"/>
+        <element attributes="import_attribute_name=CHAR2,edge_encryption_enabled=true" label="CHAR2" max_length="100" name="u_char2" type="string"/>
+        <element attributes="import_attribute_name=CHAR3,edge_encryption_enabled=true" label="CHAR3" max_length="100" name="u_char3" type="string"/>
+        <element attributes="import_attribute_name=CLASS,edge_encryption_enabled=true" label="CLASS" max_length="40" name="u_class" type="string"/>
+        <element attributes="import_attribute_name=CLIENT_PROPERTY_FK" label="CLIENT_PROPERTY_FK" max_length="15" name="u_client_property_fk" type="decimal"/>
+        <element attributes="import_attribute_name=CM_POLICY_FK" label="CM_POLICY_FK" max_length="15" name="u_cm_policy_fk" type="decimal"/>
+        <element attributes="import_attribute_name=CM_RISK_PK" label="CM_RISK_PK" max_length="15" name="u_cm_risk_pk" type="decimal"/>
+        <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
+        <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
+        <element attributes="import_attribute_name=ENTITY_FK" label="ENTITY_FK" max_length="15" name="u_entity_fk" type="decimal"/>
+        <element attributes="import_attribute_name=EXTERNAL_INSURED_NUMBER_ID,edge_encryption_enabled=true" label="EXTERNAL_INSURED_NUMBER_ID" max_length="100" name="u_external_insured_number_id" type="string"/>
+        <element attributes="import_attribute_name=HOSPITAL_NAME,edge_encryption_enabled=true" label="HOSPITAL_NAME" max_length="100" name="u_hospital_name" type="string"/>
+        <element attributes="import_attribute_name=HOSPITAL_NUMBER,edge_encryption_enabled=true" label="HOSPITAL_NUMBER" max_length="40" name="u_hospital_number" type="string"/>
+        <element attributes="import_attribute_name=INC_DEDUCT" label="INC_DEDUCT" max_length="15" name="u_inc_deduct" type="decimal"/>
+        <element attributes="import_attribute_name=INC_LIMIT" label="INC_LIMIT" max_length="15" name="u_inc_limit" type="decimal"/>
+        <element attributes="import_attribute_name=INC_LIMIT_EROSION_LEVEL,edge_encryption_enabled=true" label="INC_LIMIT_EROSION_LEVEL" max_length="40" name="u_inc_limit_erosion_level" type="string"/>
+        <element attributes="import_attribute_name=INC_SIR" label="INC_SIR" max_length="15" name="u_inc_sir" type="decimal"/>
+        <element attributes="import_attribute_name=LEGACY_DATA_ID,edge_encryption_enabled=true" label="LEGACY_DATA_ID" max_length="100" name="u_legacy_data_id" type="string"/>
+        <element attributes="import_attribute_name=LOCAL_JURISDICTION,edge_encryption_enabled=true" label="LOCAL_JURISDICTION" max_length="50" name="u_local_jurisdiction" type="string"/>
+        <element attributes="import_attribute_name=ORG_HIER_FK" label="ORG_HIER_FK" max_length="15" name="u_org_hier_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ORG_HIER_LVL1_FK" label="ORG_HIER_LVL1_FK" max_length="15" name="u_org_hier_lvl1_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ORG_HIER_LVL2_FK" label="ORG_HIER_LVL2_FK" max_length="15" name="u_org_hier_lvl2_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ORG_HIER_LVL3_FK" label="ORG_HIER_LVL3_FK" max_length="15" name="u_org_hier_lvl3_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ORG_HIER_LVL4_FK" label="ORG_HIER_LVL4_FK" max_length="15" name="u_org_hier_lvl4_fk" type="decimal"/>
+        <element attributes="import_attribute_name=ORG_HIER_LVL5_FK" label="ORG_HIER_LVL5_FK" max_length="15" name="u_org_hier_lvl5_fk" type="decimal"/>
+        <element attributes="import_attribute_name=PRACTICE_STATE_CODE,edge_encryption_enabled=true" label="PRACTICE_STATE_CODE" max_length="1000" name="u_practice_state_code" type="string"/>
+        <element attributes="import_attribute_name=PREMIUM" label="PREMIUM" max_length="15" name="u_premium" type="decimal"/>
+        <element attributes="import_attribute_name=PROPERTY_FK" label="PROPERTY_FK" max_length="15" name="u_property_fk" type="decimal"/>
+        <element attributes="import_attribute_name=RATING_BASIS" label="RATING_BASIS" max_length="15" name="u_rating_basis" type="decimal"/>
+        <element attributes="import_attribute_name=RATING_COUNTY,edge_encryption_enabled=true" label="RATING_COUNTY" max_length="40" name="u_rating_county" type="string"/>
+        <element attributes="import_attribute_name=REF_NUMBER,edge_encryption_enabled=true" label="REF_NUMBER" max_length="40" name="u_ref_number" type="string"/>
+        <element attributes="import_attribute_name=RISK_DESCRIPTION,edge_encryption_enabled=true" label="RISK_DESCRIPTION" max_length="100" name="u_risk_description" type="string"/>
+        <element attributes="import_attribute_name=RISK_SPEC_CODE,edge_encryption_enabled=true" label="RISK_SPEC_CODE" max_length="40" name="u_risk_spec_code" type="string"/>
+        <element attributes="import_attribute_name=RISK_TYPE,edge_encryption_enabled=true" label="RISK_TYPE" max_length="40" name="u_risk_type" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATED_BY,edge_encryption_enabled=true" label="SYS_CREATED_BY" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_CREATE_TIME" label="SYS_CREATE_TIME" max_length="40" name="u_sys_create_time" type="datetime"/>
+        <element attributes="import_attribute_name=SYS_UPDATED_BY,edge_encryption_enabled=true" label="SYS_UPDATED_BY" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="import_attribute_name=SYS_UPDATE_TIME" label="SYS_UPDATE_TIME" max_length="40" name="u_sys_update_time" type="datetime"/>
+        <element attributes="import_attribute_name=VEHICLE_FK" label="VEHICLE_FK" max_length="15" name="u_vehicle_fk" type="decimal"/>
+    </element>
+</database>

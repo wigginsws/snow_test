@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>RPTd2111f11c0a8000a0068753ff3fbd45e</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-04-21 22:56:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d2e6bfc9db1efe00d596327e9d961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-04-21 22:56:39</sys_updated_on>
+        <title>Rptd2111f11c0a8000a0068753ff3fbd45e</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

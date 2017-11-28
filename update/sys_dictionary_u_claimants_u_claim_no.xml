@@ -48,7 +48,7 @@
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-05-24 18:00:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>f19f6433db32ba00d596327e9d961904</sys_id>
+        <sys_id>7afe92dadb660300e022771c8c9619a4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>CLAIM_NO</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_u_claimants_u_claim_no</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-05-24 18:00:29</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:20:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

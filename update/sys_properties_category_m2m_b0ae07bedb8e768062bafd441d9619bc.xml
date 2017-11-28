@@ -2,21 +2,21 @@
 <record_update table="sys_properties_category_m2m">
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="Claim Configuration Settings">d24e03bedb8e768062bafd441d9619c5</category>
-        <order>500</order>
+        <order>600</order>
         <property display_value="glide.ui.x_norca_med_cam_claim_activity.fields" name="glide.ui.x_norca_med_cam_claim_activity.fields">774479d2db39b20075ea38ff9d96198f</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>roshan@buildon.me</sys_created_by>
         <sys_created_on>2017-04-14 20:14:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b0ae07bedb8e768062bafd441d9619bc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>glide.ui.x_norca_med_cam_claim_activity.fields.Claim Configuration Settings</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_properties_category_m2m_b0ae07bedb8e768062bafd441d9619bc</sys_update_name>
-        <sys_updated_by>roshan@buildon.me</sys_updated_by>
-        <sys_updated_on>2017-04-14 20:14:22</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-09-15 13:44:15</sys_updated_on>
     </sys_properties_category_m2m>
 </record_update>

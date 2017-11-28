@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>amount_1</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-09-12 16:41:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5906c4a7db410b0075ea38ff9d96193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>amount_1</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5906c4a7db410b0075ea38ff9d96193b</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-09-12 16:41:48</sys_updated_on>
+        <table>x_norca_med_cam_indemnity</table>
+        <ui_policy display_value="Make Amount RO if Approved or Rejected">11940cefdb010b0075ea38ff9d961909</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

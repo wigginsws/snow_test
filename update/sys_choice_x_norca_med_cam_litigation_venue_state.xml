@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="venue_state" table="x_norca_med_cam_litigation" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alabama</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a4c023db410b0075ea38ff9d9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>AL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CO</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 18:09:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>310a5067db4dcf00d596327e9d9619fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 18:09:05</sys_updated_on>
+            <value>CO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DC</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>0</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 18:47:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>92d2682bdb810340d596327e9d961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 18:47:37</sys_updated_on>
+            <value>DC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alaska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>1</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3a4c023db410b0075ea38ff9d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>AK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arizona</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>2</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fa4c023db410b0075ea38ff9d9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>AZ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arkansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>3</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7a4c023db410b0075ea38ff9d9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>AR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>California</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>4</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33a4c023db410b0075ea38ff9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>CA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Colorado</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>5</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bba4c023db410b0075ea38ff9d9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>DO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Connecticut</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>6</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37a4c023db410b0075ea38ff9d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>CT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Delaware</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>7</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bfa4c023db410b0075ea38ff9d9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>DE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Florida</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>8</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3ba4c023db410b0075ea38ff9d9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>FL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Georgia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>9</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3a4c023db410b0075ea38ff9d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>GA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hawaii</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>10</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fa4c023db410b0075ea38ff9d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>HI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Idaho</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>11</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7a4c023db410b0075ea38ff9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>ID</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Illinois</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>12</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33a4c023db410b0075ea38ff9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>IL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Indiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>13</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bba4c023db410b0075ea38ff9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>IN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Iowa</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>14</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37a4c023db410b0075ea38ff9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>IA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kansas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>15</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77a4c023db410b0075ea38ff9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>KS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kentucky</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>16</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa4c023db410b0075ea38ff9d9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>KY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Louisiana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>17</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba4c023db410b0075ea38ff9d9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>LA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maine</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>18</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a4c023db410b0075ea38ff9d9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>ME</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maryland</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>19</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa4c023db410b0075ea38ff9d9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Massachusetts</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>20</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7a4c023db410b0075ea38ff9d9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Michigan</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>21</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73a4c023db410b0075ea38ff9d9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Minnesota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>22</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fba4c023db410b0075ea38ff9d9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mississippi</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>23</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77a4c023db410b0075ea38ff9d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missouri</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>24</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa4c023db410b0075ea38ff9d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Montana</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>25</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba4c023db410b0075ea38ff9d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>MT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nebraska</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>26</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a4c023db410b0075ea38ff9d9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nevada</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>27</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa4c023db410b0075ea38ff9d9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Hampshire</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>28</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7a4c023db410b0075ea38ff9d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Jersey</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>29</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73a4c023db410b0075ea38ff9d9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NJ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Mexico</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>30</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fba4c023db410b0075ea38ff9d9619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New York</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>31</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77a4c023db410b0075ea38ff9d9619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>32</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa4c023db410b0075ea38ff9d9619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>NC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>33</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba4c023db410b0075ea38ff9d9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>ND</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ohio</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>34</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a4c023db410b0075ea38ff9d9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>OH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oklahoma</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>35</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa4c023db410b0075ea38ff9d9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>OK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oregon</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>36</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7a4c023db410b0075ea38ff9d9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>OR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pennsylvania</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>37</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73a4c023db410b0075ea38ff9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>PA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rhode Island</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>38</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fba4c023db410b0075ea38ff9d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>RI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Carolina</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>39</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77a4c023db410b0075ea38ff9d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>SC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>South Dakota</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>40</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa4c023db410b0075ea38ff9d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>SD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tennessee</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>41</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba4c023db410b0075ea38ff9d9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>TN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Texas</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>42</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a4c023db410b0075ea38ff9d9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>TX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Utah</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>43</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa4c023db410b0075ea38ff9d9619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>UT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vermont</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>44</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7a4c023db410b0075ea38ff9d9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>VT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>45</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73a4c023db410b0075ea38ff9d9619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>VA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Washington</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>46</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fba4c023db410b0075ea38ff9d9619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>WA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>West Virginia</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>47</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77a4c023db410b0075ea38ff9d9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>WV</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wisconsin</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>48</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa4c023db410b0075ea38ff9d9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>WI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>venue_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wyoming</label>
+            <language>en</language>
+            <name>x_norca_med_cam_litigation</name>
+            <sequence>49</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba4c023db410b0075ea38ff9d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 16:35:50</sys_updated_on>
+            <value>WY</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>venue_state</element>
+            <name>x_norca_med_cam_litigation</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 16:35:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9933aa96dba60300e022771c8c96196f</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>venue_state</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_litigation_venue_state</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:59:52</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

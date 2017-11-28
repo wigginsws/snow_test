@@ -3,7 +3,7 @@
     <sys_data_source action="INSERT_OR_UPDATE">
         <category/>
         <connection_timeout>0</connection_timeout>
-        <connection_url>jdbc:oracle:thin:@oas16dbdev.norcalmutual.com:1521:dev</connection_url>
+        <connection_url>jdbc:oracle:thin:@oasisdbdev.norcalmutual.com:1521:dev</connection_url>
         <connection_url_parameters/>
         <csv_delimiter/>
         <database_name>dev</database_name>
@@ -18,10 +18,10 @@
         <import_set_table_name>u_case_expenditurejoin</import_set_table_name>
         <instance_name/>
         <jdbc_password>pass2017</jdbc_password>
-        <jdbc_server>oas16dbdev.norcalmutual.com</jdbc_server>
+        <jdbc_server>oasisdbdev.norcalmutual.com</jdbc_server>
         <jdbc_user_name>oasissn</jdbc_user_name>
         <last_run_database_field>t.SYS_UPDATE_TIME</last_run_database_field>
-        <last_run_datetime>to_date('2017-05-16 18:27:28','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
+        <last_run_datetime>to_date('2017-10-03 08:22:42','yyyy-mm-dd hh24:mi:ss')</last_run_datetime>
         <ldap_target/>
         <maximum_rows/>
         <mid_server display_value="">e10bbd10db4e760075ea38ff9d96197a</mid_server>
@@ -47,7 +47,8 @@
       t.payee_name          AS "Payee",&#13;
       t.tax_id_type         AS "IRS",&#13;
       t.invoice_no,&#13;
-      t.invoice_amt&#13;
+      t.invoice_amt,&#13;
+t.cm_transaction_pk&#13;
  FROM cm_transaction_base  t&#13;
       JOIN claim c ON c.claim_pk = t.source_record_fk&#13;
       JOIN cm_transaction_type_code ctc&#13;
@@ -61,9 +62,9 @@ WHERE     NVL (ctc.recovery_b, 'N') = 'N' </sql_statement>
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-05-04 15:54:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>be0311d5dbaabe40d596327e9d9619e5</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Claims-OASIS-ExpenditureJoin</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -71,7 +72,7 @@ WHERE     NVL (ctc.recovery_b, 'N') = 'N' </sql_statement>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_data_source_be0311d5dbaabe40d596327e9d9619e5</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-21 15:04:33</sys_updated_on>
+        <sys_updated_on>2017-10-03 22:10:50</sys_updated_on>
         <table_name/>
         <type>JDBC</type>
         <use_integrated_authentication>false</use_integrated_authentication>

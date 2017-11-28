@@ -1,131 +1,320 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
     <sys_ui_section caption="Claim Reserving Worksheet" section_id="d21de23bdbd40b4075ea38ff9d961913" sys_domain="global" table="x_norca_med_cam_expenditure_view" version="3" view="New_Transaction">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>0d0bddb7db498740d596327e9d9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>1.  Probable Verdict Range (PVR)</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>010bddb7db498740d596327e9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>2.  Your Assessment of the Defensibility of this Defendant</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>050bddb7db498740d596327e9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>3.  Your Assessment of this Defendants Apportionment of Liability</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>090bddb7db498740d596327e9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>4.  Raw Case Estimate based on PVR, Defensibility &amp; Liability Apportionment</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>0d0bddb7db498740d596327e9d9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>5.  Applicable Policy Limit</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>010bddb7db498740d596327e9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text>6.  Actual Case Reserve (lower of 4 and 5)</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>050bddb7db498740d596327e9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <text/>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>low_estimate</element>
+            <element>0d0bddb7db498740d596327e9d9619d1</element>
             <position>0</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>621de23bdbd40b4075ea38ff9d961920</sys_id>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c50bddb7db498740d596327e9d9619d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>liability_assessment</element>
+            <element>low_estimate</element>
             <position>1</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>6a1de23bdbd40b4075ea38ff9d961920</sys_id>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>490bddb7db498740d596327e9d9619d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>apportionment_liability</element>
-            <position>2</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>ea1de23bdbd40b4075ea38ff9d961920</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>raw_estimate</element>
-            <position>3</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>6e1de23bdbd40b4075ea38ff9d961920</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>policy_limit</element>
-            <position>4</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>ee1de23bdbd40b4075ea38ff9d961920</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>actual_reserve</element>
-            <position>5</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>621de23bdbd40b4075ea38ff9d961921</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>6</position>
-            <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>e21de23bdbd40b4075ea38ff9d961921</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
-            <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>high_estimate</element>
-            <position>7</position>
+            <position>2</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>661de23bdbd40b4075ea38ff9d961921</sys_id>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c90bddb7db498740d596327e9d9619d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>010bddb7db498740d596327e9d9619d2</element>
+            <position>3</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>4d0bddb7db498740d596327e9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>liability_assessment</element>
+            <position>4</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>cd0bddb7db498740d596327e9d9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>implied_severity</element>
-            <position>8</position>
+            <position>5</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_id>e61de23bdbd40b4075ea38ff9d961921</sys_id>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>410bddb7db498740d596327e9d9619d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:43:03</sys_updated_on>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>050bddb7db498740d596327e9d9619d2</element>
+            <position>6</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c10bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>apportionment_liability</element>
+            <position>7</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>450bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>090bddb7db498740d596327e9d9619d2</element>
+            <position>8</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c50bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raw_estimate</element>
+            <position>9</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>490bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>0d0bddb7db498740d596327e9d9619d2</element>
+            <position>10</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c90bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>policy_limit</element>
+            <position>11</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>4d0bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>010bddb7db498740d596327e9d9619d3</element>
+            <position>12</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>cd0bddb7db498740d596327e9d9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actual_reserve</element>
+            <position>13</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>410bddb7db498740d596327e9d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>firm_reserve</element>
+            <position>14</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c10bddb7db498740d596327e9d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>15</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>450bddb7db498740d596327e9d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>050bddb7db498740d596327e9d9619d3</element>
+            <position>16</position>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-13 17:31:29</sys_created_on>
+            <sys_id>c50bddb7db498740d596327e9d9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Claim Reserving Worksheet" display_value="Claim Reserving Worksheet" name="x_norca_med_cam_expenditure_view" sys_domain="global" view="35b94feedb948b40d596327e9d961980">d21de23bdbd40b4075ea38ff9d961913</sys_ui_section>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-13 17:31:29</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Claim Reserving Worksheet</caption>
@@ -135,7 +324,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-08-07 16:43:03</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d21de23bdbd40b4075ea38ff9d961913</sys_id>

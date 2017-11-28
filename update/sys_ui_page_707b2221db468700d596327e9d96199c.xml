@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>homepages</category>
+        <client_script><![CDATA[setSelected();
+
+function changeSelected(select) {
+	setPreference('homepage_control_claim_directors', getSelectValue(select), selectionChanged);
+}
+
+function getSelectValue(select) {
+	var index = select.selectedIndex;
+	return select.options[index].value;
+}
+
+function selectionChanged() {
+	homeRefresh();
+}
+
+function setSelected() {
+	if (!g_selectedOption)
+		return;
+	
+	setSelectedValue('homepage_choice', g_selectedOption);
+}
+
+function setSelectedValue(name, value) {
+	var e = gel(name);
+	for (var i = 0; i != e.options.length; i++) {
+		if (e.options[i].value == value) {
+			e.options[i].selected = true;
+		}
+	}
+}]]></client_script>
+        <description>Control Gauge for Dynamic Homepages</description>
+        <direct>false</direct>
+        <endpoint>x_norca_med_cam_homepage_control_claim_directors.do</endpoint>
+        <html><![CDATA[<table width="100%">
+<tr>
+   <td nowrap="true" align="center">
+      <label for="homepage_choice">Name: </label>
+      <select name="homepage_choice" id="homepage_choice" onchange="changeSelected(this)">
+         <g2:evaluate>
+            var pageControl = new GlideRecord('u_homepage_controls');
+            pageControl.addQuery('u_active', true);
+            pageControl.addQuery('u_long_name', 'homepage_control_claim_directors');
+            pageControl.query();
+            if (pageControl.next()) {
+               gs.getSession().setStrictQuery(true);
+               var rec = new GlideRecord(pageControl.u_table);
+               rec.addEncodedQuery(pageControl.u_condition);
+               rec.query();
+               var recList = [];
+               while(rec.next()) {
+                  key = rec.getDisplayValue(pageControl.u_choice_value) + '|' + rec.getValue(pageControl.u_choice_value);
+                  recList.push(key);
+               }
+               var arrayUtil = new ArrayUtil();
+               recList = arrayUtil.unique(recList);
+               recList.sort();
+            }
+         </g2:evaluate>
+         <j2:forEach var="jvar_choice" items="$[recList]">
+            <g2:evaluate jelly="true">
+               var recString = jelly.jvar_choice.toString();
+               var recDisplay = recString.substring(0,recString.indexOf("|"));
+               var recValue = recString.substring(recString.indexOf("|")+1);
+            </g2:evaluate>
+            <option value="$[recValue]">$[recDisplay]</option>
+         </j2:forEach>
+      </select>
+      <script language="javascript" eval="true">
+         g_selectedOption = "${jvar_session.getUser().getPreference('homepage_control_claim_directors')}";
+      </script>
+   </td>
+</tr>
+</table>]]></html>
+        <name>homepage_control_claim_directors</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-10-26 16:39:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>707b2221db468700d596327e9d96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>homepage_control_claim_directors</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_page_707b2221db468700d596327e9d96199c</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 16:39:23</sys_updated_on>
+    </sys_ui_page>
+</record_update>

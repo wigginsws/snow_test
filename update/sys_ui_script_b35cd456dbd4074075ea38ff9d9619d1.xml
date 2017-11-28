@@ -4,10 +4,10 @@
         <active>true</active>
         <description/>
         <global>false</global>
-        <name>x_norca_med_cam.cam_ClaimClientValidatio</name>
+        <name>x_norca_med_cam.cam_ClmClientValidation</name>
         <script><![CDATA[var x_norca_med_cam = x_norca_med_cam || {};
 
-x_norca_med_cam.cam_ClaimClientValidation = (function() {
+x_norca_med_cam.cam_ClmClientValidation = (function() {
 	"use strict";
 
 /* set your private variables and functions here. For example: 
@@ -53,7 +53,8 @@ x_norca_med_cam.cam_ClaimClientValidation = (function() {
 		
 		jsDateStringToUSLocaleString: function(dateStr, defaultVal) {
 			if (dateStr) {
-				var date = new Date(dateStr);
+				var date = new Date(dateStr + " GMT-0700");
+				date.setDate( date.getDate() + 1);
 				var mm = date.getMonth() + 1;
 				var dd = date.getDate();
 				var yyyy = date.getFullYear();
@@ -62,25 +63,25 @@ x_norca_med_cam.cam_ClaimClientValidation = (function() {
 			return defaultVal;
 		},
 		
-		type:  "cam_ClaimClientValidation"
+		type:  "cam_ClmClientValidation"
 	};
 })();
 ]]></script>
-        <script_name>cam_ClaimClientValidation</script_name>
+        <script_name>cam_ClmClientValidation</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-02 14:21:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b35cd456dbd4074075ea38ff9d9619d1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_norca_med_cam.cam_ClaimClientValidatio</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_norca_med_cam.cam_ClmClientValidation</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_script_b35cd456dbd4074075ea38ff9d9619d1</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 01:25:54</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:08:49</sys_updated_on>
         <use_scoped_format>true</use_scoped_format>
     </sys_ui_script>
 </record_update>

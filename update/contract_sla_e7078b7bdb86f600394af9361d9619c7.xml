@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="contract_sla">
     <contract_sla action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <cancel_condition/>
         <collection>x_norca_med_cam_diary</collection>
         <condition_class/>
@@ -32,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e7078b7bdb86f600394af9361d9619c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Ad Hoc</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -40,8 +40,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>contract_sla_e7078b7bdb86f600394af9361d9619c7</sys_update_name>
-        <sys_updated_by>joe@buildon.me</sys_updated_by>
-        <sys_updated_on>2017-04-17 22:15:10</sys_updated_on>
+        <sys_updated_by>mlindsay</sys_updated_by>
+        <sys_updated_on>2017-11-01 00:44:54</sys_updated_on>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>
         <type>SLA</type>

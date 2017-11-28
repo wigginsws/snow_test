@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Entity Class Transform">bc4adc84db1ef68062bafd441d961924</map>
+        <map display_value="OASIS-Entity Class Transform">bc4adc84db1ef68062bafd441d961924</map>
         <reference_value_field/>
         <source_field>u_sys_update_time</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

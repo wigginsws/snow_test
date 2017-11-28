@@ -5,13 +5,13 @@
             <element>f4cbd5b2db93720075ea38ff9d961980</element>
             <position>0</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-27 17:31:22</sys_created_on>
-            <sys_id>03ae0654db148340d596327e9d96191d</sys_id>
+            <sys_created_on>2017-09-22 15:48:54</sys_created_on>
+            <sys_id>bdd9db6adb118f40d596327e9d96193c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claims by Assignment" display_value="Claims by Assignment" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">059b1db2db93720075ea38ff9d9619cb</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-27 17:31:22</sys_updated_on>
+            <sys_updated_on>2017-09-22 15:48:54</sys_updated_on>
             <sys_user/>
             <type>chart</type>
         </sys_ui_element>
@@ -42,7 +42,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>059b1db2db93720075ea38ff9d9619cb</sys_id>
-            <sys_mod_count>36</sys_mod_count>
+            <sys_mod_count>51</sys_mod_count>
             <sys_name>Claims by Assignment</sys_name>
             <sys_overrides/>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -50,8 +50,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_section_059b1db2db93720075ea38ff9d9619cb</sys_update_name>
-            <sys_updated_by>wwiggins</sys_updated_by>
-            <sys_updated_on>2017-08-07 19:55:57</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:58:14</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

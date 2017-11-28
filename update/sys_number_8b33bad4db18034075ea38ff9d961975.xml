@@ -8,7 +8,7 @@
         <sys_class_name>sys_number</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-27 20:12:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8b33bad4db18034075ea38ff9d961975</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>IRDTRK</sys_name>

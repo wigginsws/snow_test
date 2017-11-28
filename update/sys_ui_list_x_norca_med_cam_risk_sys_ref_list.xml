@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>entity</element>
-            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">eee47ae9db7bfa00d596327e9d961914</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>entity_fk</element>
-            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">eee47ae9db7bfa00d596327e9d961914</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>policy_reference</element>
-            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">eee47ae9db7bfa00d596327e9d961914</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>effective_to_date</element>
-            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">eee47ae9db7bfa00d596327e9d961914</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -64,7 +64,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>effective_from_date</element>
-            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="9f0535721823320092c03796c3240332">eee47ae9db7bfa00d596327e9d961914</list_id>
+            <list_id display_value="x_norca_med_cam_risk" element="NULL" name="x_norca_med_cam_risk" parent="NULL" relationship="NULL" sys_domain="global" view="715a07629430030092c01899af6cf32b">eee47ae9db7bfa00d596327e9d961914</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -89,7 +89,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>amoewe</sys_created_by>
             <sys_created_on>2017-07-06 20:59:28</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>eee47ae9db7bfa00d596327e9d961914</sys_id>
@@ -103,7 +103,7 @@
             <sys_updated_by>amoewe</sys_updated_by>
             <sys_updated_on>2017-07-06 20:59:28</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">9f0535721823320092c03796c3240332</view>
+            <view display_value="Reference List" name="sys_ref_list">715a07629430030092c01899af6cf32b</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

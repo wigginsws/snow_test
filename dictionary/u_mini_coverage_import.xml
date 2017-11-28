@@ -24,6 +24,7 @@
         <element attributes="import_attribute_name=EFFECTIVE_FROM_DATE" label="EFFECTIVE_FROM_DATE" max_length="40" name="u_effective_from_date" type="datetime"/>
         <element attributes="import_attribute_name=EFFECTIVE_TO_DATE" label="EFFECTIVE_TO_DATE" max_length="40" name="u_effective_to_date" type="datetime"/>
         <element attributes="import_attribute_name=EXPOSURE_UNITS" label="EXPOSURE_UNITS" max_length="15" name="u_exposure_units" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="EXTERNAL_COVERAGE_NUMBER_ID" max_length="40" name="u_external_coverage_number_id" type="string"/>
         <element attributes="import_attribute_name=INC_DEDUCT" label="INC_DEDUCT" max_length="15" name="u_inc_deduct" type="decimal"/>
         <element attributes="import_attribute_name=INC_LIMIT" label="INC_LIMIT" max_length="15" name="u_inc_limit" type="decimal"/>
         <element attributes="import_attribute_name=INC_LIMIT_EROSION_LEVEL,edge_encryption_enabled=true" label="INC_LIMIT_EROSION_LEVEL" max_length="40" name="u_inc_limit_erosion_level" type="string"/>

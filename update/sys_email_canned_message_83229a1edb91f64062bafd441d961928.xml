@@ -8,7 +8,7 @@
         <sys_class_name>sys_email_canned_message</sys_class_name>
         <sys_created_by>austin@buildon.me</sys_created_by>
         <sys_created_on>2017-03-06 19:46:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>83229a1edb91f64062bafd441d961928</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>Deny Claim</sys_name>

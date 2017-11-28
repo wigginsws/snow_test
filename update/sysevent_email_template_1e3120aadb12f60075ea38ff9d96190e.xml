@@ -13,7 +13,7 @@
         <sys_class_name>sysevent_email_template</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-04-25 23:19:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1e3120aadb12f60075ea38ff9d96190e</sys_id>
         <sys_mod_count>14</sys_mod_count>
         <sys_name>mailto.accept</sys_name>

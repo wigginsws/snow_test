@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-08-04 13:04:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a80e16fedbd0cb40d596327e9d9619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>.x_norca_med_cam.user</sys_name>

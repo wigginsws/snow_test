@@ -52,8 +52,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-11 19:42:41</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>563358d7db77fe00d596327e9d961928</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d64f961edb660300e022771c8c961928</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last Committed Update</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_license_last_committed_update</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-11 19:42:41</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:27:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -17,17 +17,17 @@
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-07 22:05:07</sys_created_on>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-10 04:09:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>10d6b3b7db900300e022771c8c961956</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>e25d93a0db280380d596327e9d9619c4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_norca_med_cam_indemnity" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">2f063f63db584f40d596327e9d961970</sys_ui_form>
-            <sys_ui_section display_value="">2b063f63db584f40d596327e9d96196f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-07 22:05:07</sys_updated_on>
+            <sys_ui_section caption="Multiple Claims" display_value="Multiple Claims" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">aa5d93a0db280380d596327e9d9619b8</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-10 04:12:10</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_norca_med_cam_indemnity</name>
@@ -35,7 +35,7 @@
             <sys_class_name>sys_ui_form</sys_class_name>
             <sys_created_by>sabesamis</sys_created_by>
             <sys_created_on>2017-08-07 03:23:19</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2f063f63db584f40d596327e9d961970</sys_id>

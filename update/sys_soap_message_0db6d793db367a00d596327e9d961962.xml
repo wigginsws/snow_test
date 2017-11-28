@@ -16,7 +16,7 @@
         <sys_created_on>2017-05-23 16:54:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0db6d793db367a00d596327e9d961962</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>CAM-OASIS-PartyChangeService</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -24,7 +24,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_soap_message_0db6d793db367a00d596327e9d961962</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-27 14:22:52</sys_updated_on>
+        <sys_updated_on>2017-09-19 13:18:04</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <wsdl>http://oasisdev.norcalmutual.com:8080/dev/eCIS/wsCIS/PartyChangeService?WSDL</wsdl>
         <wsdl_xml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>

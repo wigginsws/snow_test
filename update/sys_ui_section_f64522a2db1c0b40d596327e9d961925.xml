@@ -247,7 +247,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>rrao</sys_created_by>
             <sys_created_on>2017-08-03 18:56:32</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f64522a2db1c0b40d596327e9d961925</sys_id>

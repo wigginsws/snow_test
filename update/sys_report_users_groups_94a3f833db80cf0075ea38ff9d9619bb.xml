@@ -6,7 +6,7 @@
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-25 21:36:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>94a3f833db80cf0075ea38ff9d9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>cca3f033db80cf0075ea38ff9d961903</sys_name>

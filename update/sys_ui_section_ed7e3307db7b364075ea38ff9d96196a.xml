@@ -23,7 +23,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jsavage</sys_created_by>
             <sys_created_on>2017-07-11 18:11:41</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ed7e3307db7b364075ea38ff9d96196a</sys_id>

@@ -136,6 +136,8 @@ cam_DataSyncUtils.prototype = {
 				prevId = parentGR.getUniqueValue();
 			} else if (prevId!=childGR.getValue(parentRefField)) {
 				gs.debug( FN_NAME + "Updating " + parentTable + ": " + parentGR.getDisplayValue() + ", " + parentValueListField + ": " + parentGR.getValue(parentValueListField));
+				parentGR.setWorkflow(false);
+				parentGR.autoSysFields(false);
 				parentGR.update( parentValueListField + " update caused by " + childTable);
 				parentGR = this.getRecordBySysId(cam.SCOPE_ID + "_entity", childGR.getValue(parentRefField));
 			}
@@ -162,6 +164,8 @@ cam_DataSyncUtils.prototype = {
 		// last entity is going to be uncommitted, so commit now
 		if (parentGR) {
 			gs.debug( FN_NAME + "Updating " + parentTable + ": " + parentGR.getDisplayValue() + ", " + parentValueListField + ": " + parentGR.getValue(parentValueListField));
+			parentGR.setWorkflow(false);
+			parentGR.autoSysFields(false);
 			parentGR.update( parentValueListField + " update caused by " + childTable);
 		}
 	},
@@ -261,10 +265,6 @@ cam_DataSyncUtils.prototype = {
 		claim.short_description=cel.u_headline;
 		claim.u_branch_office=cel.u_branch_office;
 		claim.claim_log_id = cel.u_claim_entry_log_pk;
-		claim.claim_log_updated_by = cel.u_sys_updated_by;
-		claim.claim_log_updated_on = cel.u_sys_update_time;
-		claim.claim_log_created_by = cel.u_sys_created_by;
-		claim.claim_log_created_on = cel.u_sys_create_time;
 	},
 	
 	
@@ -298,14 +298,49 @@ cam_DataSyncUtils.prototype = {
 		}
 	},
 	
+	
+	/**
+	* Provides a status that show
+	**/
+	getCommitStatus: function(current, sorIdFieldName) {
+		if (!current || current.isNewRecord()) {
+			return "na";
+		}
+		if (!sorIdFieldName) sorIdFieldName = "sor_id";
+		if (current.isValidField(sorIdFieldName) && !current.getValue(sorIdFieldName)) {
+			return gs.minutesAgoEnd(gs.getProperty( "x_norca_med_cam.commit_window", 15))>current.getValue("sys_updated_on") ? "failure" : "pending";
+
+		} else if (current.isValidField("last_committed_update")) {
+			if (current.last_committed_update == current.sys_mod_count || "oasissn".equalsIgnoreCase(current.getValue("sys_updated_by"))) {
+				return "success";
+			} else {
+				return gs.minutesAgoEnd(gs.getProperty( "x_norca_med_cam.commit_window", 15))>current.getValue("sys_updated_on") ? "failure" : "pending";
+			}
+		}
+		return "unknown";
+	},
+	
+	
+	/**
+	*
+	*/
+	forceCommitToOasis: function(current, eventName) {
+		var gdt = new GlideDateTime();
+		current.sys_updated_on = gdt.getValue();
+		current.autoSysFields(false);
+		current.setWorkflow(false);
+		current.update();
+		gs.eventQueue(eventName, current, gs.getUserID(), gs.getUserName());
+	},
+	
     type: 'cam_DataSyncUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>roshan@buildon.me</sys_created_by>
         <sys_created_on>2017-04-18 14:14:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cda16a8cdb123a8062bafd441d9619ae</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>cam_DataSyncUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
@@ -313,6 +348,6 @@ cam_DataSyncUtils.prototype = {
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_cda16a8cdb123a8062bafd441d9619ae</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 03:17:01</sys_updated_on>
+        <sys_updated_on>2017-11-01 15:16:48</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_ServiceLogger</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cam_ServiceLogger</name>
+        <script><![CDATA[var cam_ServiceLogger = Class.create();
+cam_ServiceLogger.prototype = {
+	_tableName: "x_norca_med_cam_service_log",
+	
+    initialize: function() {
+    },
+	
+	logMessage: function(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption) {
+		if (gs.getProperty("x_norca_med_cam.ws_logging_active")=="true") {
+			try {
+				var logGR = new GlideRecord(this._tableName);
+				logGR.initialize();
+				this._saveMessage(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption, logGR);
+				return logGR.insert();
+			} catch (e) {
+				gs.error("An error occurred when logging to service log: " + e + ". Will fall back to platform logging.");
+				this._logToPlatformLog(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption);
+			}
+		}
+		return null;
+	},
+	
+	updateMessage: function(logId, msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption) {
+		if (gs.getProperty("x_norca_med_cam.ws_logging_active")=="true") {
+			try {
+				var logGR = new GlideRecord(this._tableName);
+				if (logGR.get(logId)) {
+					this._saveMessage(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption, logGR);
+					logGR.update();
+					return logGR.getUniqueValue();
+				} else {
+					throw "Could not find Service Log entry " + logId;
+				}
+			} catch (e) {
+				gs.error("An error occurred when logging to service log: " + e + ". Will fall back to platform logging.");
+				this._logToPlatformLog(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption);
+			}
+		}
+		return null;
+	},
+	
+	_saveMessage: function(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption, logGR) {
+		if (msg) {
+			logGR.endpoint = msg.getEndpoint();
+			this._logRequestPayload(msg, logPayloadOption, logGR);
+		}
+		
+		logGR.message_type = this._getMessageType(msg);
+		if (msgName) logGR.message_name = msgName;
+		if (fnName) logGR.message_function_name = fnName;
+		if (relatedGR) {
+			logGR.related_table = relatedGR.getTableName();
+			logGR.related_record = relatedGR.getUniqueValue();
+		}
+		
+		if (msgResponse) {
+			logGR.response_code = msgResponse.getStatusCode();
+			this._logResponsePayload(msgResponse, logPayloadOption, logGR);
+		}
+		
+	},
+	
+	
+	_getMessageType: function(msg) {
+		var messageType = "unknown";
+		if (msg instanceof sn_ws.RESTMessageV2) {
+			messageType = "rest";
+		} else if (msg instanceof sn_ws.SOAPMessageV2) {
+			messageType = "soap";
+		}
+		return messageType;
+	},
+	
+	
+	_logRequestPayload: function(msg, logPayloadOption, logGR) {
+		if (!logPayloadOption || logPayloadOption=="request" || logPayloadOption=="all") {
+			logGR.request = this._getLoggableMessage(msg.getRequestBody());
+		}
+	},
+	
+	
+	_logResponsePayload: function(msgResponse, logPayloadOption, logGR) {
+		if (!logPayloadOption || logPayloadOption=="response" || logPayloadOption=="all") {
+			logGR.response = this._getLoggableMessage(msgResponse.getBody());
+		}
+	},
+	
+	_logToPlatformLog:function(msg, msgName, fnName, msgResponse, relatedGR, logPayloadOption) {
+		var prefixArr = [];
+		if (msgName) prefixArr.push(msgName);
+		if (fnName) prefixArr.push(fnName);
+		if (relatedGR) prefixArr.push(relatedGR.getDisplayValue());
+		
+		var prefix = "[" + prefixArr.join("-") + "] ";
+		if (msg && (!logPayloadOption || logPayloadOption=="request" || logPayloadOption=="all")) {
+			gs.info(prefix + this._getLoggableMessage(msg.getRequestBody()));
+		}
+		
+		if (msgResponse && (!logPayloadOption || logPayloadOption=="response" || logPayloadOption=="all")) {
+			gs.info(prefix + "Status Code: " + msgResponse.getStatusCode() + ", Body: " + this._getLoggableMessage(msgResponse.getBody()));
+		}
+	},
+	
+	_getLoggableMessage: function(message) {
+		if (message && message.length>0) {
+			
+			var max = gs.getProperty(cam.SCOPE_ID + ".ws_max_debug_message_size");
+			if (max>message.length) {
+				max = message.length;
+			}
+			var retMessage = message.substring(0, max);
+			if (retMessage.length<message.length) {
+				retMessage += "...";
+			}
+			return retMessage;
+		}
+		return "";
+	},
+
+    type: 'cam_ServiceLogger'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rrao</sys_created_by>
+        <sys_created_on>2017-09-27 16:10:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1b774910dbedc34075ea38ff9d961921</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>cam_ServiceLogger</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_1b774910dbedc34075ea38ff9d961921</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

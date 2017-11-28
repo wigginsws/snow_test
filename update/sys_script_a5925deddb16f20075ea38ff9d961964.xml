@@ -16,16 +16,19 @@
         <condition/>
         <description>Validated</description>
         <execute_function>false</execute_function>
-        <filter_condition table="x_norca_med_cam_claim">counselVALCHANGES^ORu_insuredVALCHANGES^ORclaimantVALCHANGES^ORassigned_toVALCHANGES^EQ<item endquery="false" field="counsel" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="x_norca_med_cam_claim">counselVALCHANGES^ORu_insuredVALCHANGES^ORclaimantVALCHANGES^ORassigned_toVALCHANGES^claim_idISNOTEMPTY^ORcoverage_verification_statusINcc,cid,D^sys_updated_by!=oasissn^EQ<item endquery="false" field="counsel" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="u_insured" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="claimant" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="claim_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="coverage_verification_status" goto="false" newquery="false" operator="IN" or="true" value="cc,cid,D"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="oasissn"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>CAM-CLAIM-Create Participant</name>
-        <order>100</order>
+        <order>1001</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -34,51 +37,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-//var entity = ['claimant', 'counsel', 'u_insured', 'patient'];
-	//for(i = 0; i <= entity.length; i++){
-	//	if(entity[i].changes()){
-	//		createParticipant(current[entity[i]], current[entity[i]].classification);
-	//	}
-	//}
 	
-
-		var counsel = current.counsel;
-		var claimant = current.claimant;
-		var insured = current.u_insured;
-		var patient = current.patient;
-		var assignedTo = current.assigned_to;
-		var role;
-		if(counsel.changes() && counsel){
-		role = 'DINDATTY';
-			createParticipant(counsel, role);
+	var participants = {
+		"counsel": "DINDATTY",
+		"claimant": "CLAIMANT",
+		"patient": "PATIENT",
+		"u_insured": "CLMINSURED"
+	};
+	
+	var role;
+	//update participants for counsel, claimant, patient and insured
+	for (var fieldName in participants) {
+		if (current.isValidField(fieldName) && current.getValue(fieldName) && current.getElement(fieldName).changes()) {
+			role = participants[fieldName];
+			createParticipant(current.getValue(fieldName), role);
+			
+			break;
 		}
-		if(claimant.changes() && claimant){
-		role = 'CLAIMANT';
-			createParticipant(claimant, role);
-		}
-		if(insured.changes() && insured){
-		role = 'Insured';
-			createParticipant(insured, role);
-		}
-		if(patient.changes() && patient){
-		role = 'PATIENT';
-			createParticipant(patient, role);
-		}
-		var user = getAssignedTo();
-		
-		if(assignedTo.changes() && userHasRole(assignedTo, 'x_norca_med_cam.claims_specialist')){
+	}
+	
+	var assignedTo = current.assigned_to; // assigned to user
+	var user = getAssignedTo(); // get related entity
+	
+	//update participant when assignedto changes
+	if(assignedTo.changes() && userHasRole(assignedTo, 'x_norca_med_cam.claims_specialist')) {
 		role = 'EXAMINER';
-			createParticipant(user, role);
-		}
-		if(assignedTo.changes() && userHasRole(assignedTo, 'x_norca_med_cam.claims_director')){
+		createParticipant(user, role);
+	}
+	else if(assignedTo.changes() && userHasRole(assignedTo, 'x_norca_med_cam.claims_director')) {
 		role = 'CLMSUPER';
-			createParticipant(user, role);
-		}
-	
-		
-		
-	
-	
+		createParticipant(user, role);
+	}
 	
 	
 	function getAssignedTo(){
@@ -91,7 +80,6 @@
 	}
 	
 	
-	
 	function createParticipant(user, role){
 		var gr = new GlideRecord('x_norca_med_cam_participant');
 		var claim = current.sys_id;
@@ -99,17 +87,18 @@
 		gr.addEncodedQuery('role='+role+'^effective_to='+""+'^claim='+claim);
 		gr.query();
 		if(gr.next()){
+			var gr2 = new GlideRecord('x_norca_med_cam_participant');
+			gr2.newRecord();
+			gr2.setValue('effective_from', gd);
+			gr2.setValue('entity', user);
+			gr2.setValue('role', role);
+			gr2.setValue('claim', claim);
+			gr2.insert();
 			
 			gr.setValue('effective_to', gd);
 			gr.update();
 			
-			gr.newRecord();
-			gr.setValue('effective_from', gd);
-			gr.setValue('entity', user);
-			gr.setValue('role', role);
-			gr.setValue('claim', claim);
-			gr.insert();
-			gs.addInfoMessage(gr.role.getDisplayValue() + ': ' + gr.entity.getDisplayValue() + ' has been added to the Participant log. The effective to date has been set for the previous ' + gr.role.getDisplayValue() + '.');
+			gs.addInfoMessage(gr2.role.getDisplayValue() + ': ' + gr2.entity.getDisplayValue() + ' has been added to the Participant log. The effective to date has been set for the previous ' + gr.role.getDisplayValue() + '.');
 			
 		}
 		else if(!gr.next()){
@@ -122,26 +111,26 @@
 			gs.addInfoMessage(gr.role.getDisplayValue() + ': ' + gr.entity.getDisplayValue() + ' has been added to the Participant log.');
 		}
 	}
+	
 
 	function userHasRole(userID, role) {  
-  var uhrRec = new GlideRecord('sys_user_has_role');  
-  
-  uhrRec.addQuery('user', userID);  
-  uhrRec.addQuery('role.name', role);  
-  uhrRec.query();  
-  return uhrRec.hasNext();  
-}  
+		var uhrRec = new GlideRecord('sys_user_has_role');  
+		uhrRec.addQuery('user', userID);  
+		uhrRec.addQuery('role.name', role);  
+		uhrRec.query();  
+		return uhrRec.hasNext();  
+	}
 
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-04-23 01:45:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a5925deddb16f20075ea38ff9d961964</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>CAM-CLAIM-Create Participant</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -149,8 +138,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_a5925deddb16f20075ea38ff9d961964</sys_update_name>
-        <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-07-07 13:33:32</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:06:36</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

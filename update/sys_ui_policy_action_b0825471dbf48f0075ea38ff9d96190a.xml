@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>from</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>asupsiri</sys_created_by>
+        <sys_created_on>2017-08-25 20:51:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b0825471dbf48f0075ea38ff9d96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>from</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b0825471dbf48f0075ea38ff9d96190a</sys_update_name>
+        <sys_updated_by>asupsiri</sys_updated_by>
+        <sys_updated_on>2017-08-25 20:51:25</sys_updated_on>
+        <table>x_norca_med_cam_email</table>
+        <ui_policy display_value="CAM - Email cross reference fields should always be read-only">edfd00bddbb48f0075ea38ff9d9619d2</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

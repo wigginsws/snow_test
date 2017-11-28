@@ -8,7 +8,7 @@
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-23 18:36:41</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f447f507db040f0075ea38ff9d961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Specialist_dashboard</sys_name>

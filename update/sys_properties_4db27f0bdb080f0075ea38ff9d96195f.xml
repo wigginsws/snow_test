@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-24 03:36:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4db27f0bdb080f0075ea38ff9d96195f</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>x_norca_med_cam.glide.script.block.client.globals</sys_name>

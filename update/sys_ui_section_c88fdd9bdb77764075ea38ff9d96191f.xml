@@ -1121,6 +1121,48 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pct_coinsurance</element>
+            <position>80</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-28 18:17:50</sys_created_on>
+            <sys_id>f72c47e6dbf00740d596327e9d96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_coverage" sys_domain="global" view="Default view">c88fdd9bdb77764075ea38ff9d96191f</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-28 18:17:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pct_inflation</element>
+            <position>81</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-28 18:19:16</sys_created_on>
+            <sys_id>f08c4ba2dbf00740d596327e9d96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_coverage" sys_domain="global" view="Default view">c88fdd9bdb77764075ea38ff9d96191f</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-28 18:19:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pct_participation</element>
+            <position>82</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-28 18:26:25</sys_created_on>
+            <sys_id>512e47eadbf00740d596327e9d961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_coverage" sys_domain="global" view="Default view">c88fdd9bdb77764075ea38ff9d96191f</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-28 18:26:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
@@ -1129,7 +1171,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-12 01:15:39</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c88fdd9bdb77764075ea38ff9d96191f</sys_id>

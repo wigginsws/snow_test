@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sysapproval_approver</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<div>&nbsp;</div>
+<div>
+<p style="margin: 0in 0in .0001pt .5in;"><strong><span style="font-size: 20.0pt; font-family: 'Calibri','sans-serif'; color: #dc4405;">Indemnity Claim Approval Request for ${sysapproval}</span></strong></p>
+<p style="margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif'; color: #5b6770;"><br /></span><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Claim Number: ${sysapproval.claim.number}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="color: #7f7f7f; font-size: 18.6667px;">Indemnity Type: ${sysapproval.ref_x_norca_med_cam_indemnity.indemnity_type}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="color: #7f7f7f; font-size: 18.6667px;">Payee: ${sysapproval.ref_x_norca_med_cam_indemnity.payee}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="color: #7f7f7f; font-size: 18.6667px;">Taxpayer ID Info: ${sysapproval.ref_x_norca_med_cam_indemnity.taxpayer_identification_info}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="color: #7f7f7f; font-size: 18.6667px;">Pay to the order of: ${sysapproval.ref_x_norca_med_cam_indemnity.pay_to_the_order_of}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Amount: $${sysapproval.ref_x_norca_med_cam_indemnity.amount}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Description: ${sysapproval.description}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Multiple Claims:&nbsp;<br /><br /></span></p>
+<table style="border: 1pt dashed #bbbbbb;" width="399">
+<tbody>
+<tr>
+<td style="border: 1pt dashed #bbbbbb;" width="205">
+<p><span style="font-size: 14px; color: #515151;">Claim Number</span></p>
+</td>
+<td style="border: 1pt dashed #bbbbbb;">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;</span><span style="font-size: 14px; color: #515151;">Amount</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: dashed #BBBBBB 1.0pt;" width="205">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.claim_number_1}</span></p>
+</td>
+<td style="border: dashed #BBBBBB 1.0pt;">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;$</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.amount_1}</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: dashed #BBBBBB 1.0pt;" width="205">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.claim_number_2}</span></p>
+</td>
+<td style="border: dashed #BBBBBB 1.0pt;">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;$</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.amount_2}</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: dashed #BBBBBB 1.0pt;" width="205">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.claim_number_3}</span></p>
+</td>
+<td style="border: dashed #BBBBBB 1.0pt;">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;$</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.amount_3}</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: dashed #BBBBBB 1.0pt;" width="205">
+<p><span style="font-size: 14px; color: #515151;">&nbsp;</span><span style="font-size: 14px; color: #515151;">${sysapproval.ref_x_norca_med_cam_indemnity.claim_number_4}</span></p>
+</td>
+<td style="border: dashed #BBBBBB 1.0pt;">
+<p><span style="font-size: 14px; color: #515151;">$${sysapproval.ref_x_norca_med_cam_indemnity.amount_4}</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;"><br /></span>&nbsp;&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">${mailto:mailto.approval}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">${mailto:mailto.rejection}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Click here to view Approval Request ${URI}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">Click here to view ${sysapproval.sys_class_name}: ${sysapproval.URI}</span></p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;">&nbsp;</p>
+<p style="text-align: start; margin: 0in 0in .0001pt .5in;"><span style="font-size: 14.0pt; font-family: 'Calibri','sans-serif'; color: #7f7f7f;">&nbsp;</span></p>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>indemnity.approve</name>
+        <sms_alternate/>
+        <subject>Indemnity Approval Request for: ${sysapproval} </subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>sabesamis</sys_created_by>
+        <sys_created_on>2017-08-13 19:02:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>68968eb9dbacc380d596327e9d9619a0</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>indemnity.approve</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sysevent_email_template_68968eb9dbacc380d596327e9d9619a0</sys_update_name>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-14 21:53:25</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

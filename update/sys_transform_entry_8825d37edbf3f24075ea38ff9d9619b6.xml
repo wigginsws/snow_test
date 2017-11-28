@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Coverage Transform">ebb39776dbf3f24075ea38ff9d96193f</map>
+        <map display_value="OASIS-Coverage Transform">ebb39776dbf3f24075ea38ff9d96193f</map>
         <reference_value_field/>
         <source_field>u_num2</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {
@@ -19,7 +19,7 @@
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-10 20:32:36</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8825d37edbf3f24075ea38ff9d9619b6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_num2</sys_name>

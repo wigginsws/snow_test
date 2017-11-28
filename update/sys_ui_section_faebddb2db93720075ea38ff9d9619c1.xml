@@ -5,13 +5,13 @@
             <element>18ccddb2db93720075ea38ff9d9619e1</element>
             <position>0</position>
             <sys_created_by>jpolk</sys_created_by>
-            <sys_created_on>2017-07-27 17:31:22</sys_created_on>
-            <sys_id>cfae0654db148340d596327e9d961922</sys_id>
+            <sys_created_on>2017-09-22 15:48:55</sys_created_on>
+            <sys_id>75d9db6adb118f40d596327e9d96194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Claims by Defense Counsel" display_value="Claims by Defense Counsel" name="x_norca_med_cam_claim" sys_domain="global" view="Default view">faebddb2db93720075ea38ff9d9619c1</sys_ui_section>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-07-27 17:31:22</sys_updated_on>
+            <sys_updated_on>2017-09-22 15:48:55</sys_updated_on>
             <sys_user/>
             <type>chart</type>
         </sys_ui_element>
@@ -42,7 +42,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>faebddb2db93720075ea38ff9d9619c1</sys_id>
-            <sys_mod_count>36</sys_mod_count>
+            <sys_mod_count>51</sys_mod_count>
             <sys_name>Claims by Defense Counsel</sys_name>
             <sys_overrides/>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -50,8 +50,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_section_faebddb2db93720075ea38ff9d9619c1</sys_update_name>
-            <sys_updated_by>wwiggins</sys_updated_by>
-            <sys_updated_on>2017-08-07 19:58:31</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:01:14</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

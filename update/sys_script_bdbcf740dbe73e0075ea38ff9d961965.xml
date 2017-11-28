@@ -6,7 +6,7 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>true</action_update>
+        <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -33,11 +33,11 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	//gs.info("[updateClaimParticipantBR] Role is " + current.role.toString());
+	gs.info("[updateClaimParticipantBR] Role is " + current.role.toString());
 
 	if (current.role) {
 		var camDataSyncUtils = new cam_DataSyncUtils();
-		switch(current.role.toString()) {
+		switch(current.getValue("role")) {
 				
 			// Defense Counsel
 			case "DINDATTY":
@@ -48,7 +48,7 @@
 
 			// Claim Specialist
 			case "EXAMINER": 
-				if (camDataSyncUtils.isRecordEffectiveSimple(current, "effective_from", "effective_to")) {
+				if (camDataSyncUtils.isRecordEffectiveSimple(current, "effective_from", "effective_to") && current.sys_updated_by == "oasissn") {
 					var gr = new GlideRecord(cam.SCOPE_ID + "_entity");
 					if (gr.get(current.entity) && gr.user) {
 						updateClaim(current.claim, "assigned_to", gr.user);
@@ -76,7 +76,7 @@
 
 function updateClaim(claimId, fieldName, value) {
 	var gr = new GlideRecord( cam.SCOPE_ID + "_claim");
-	if (gr.get(claimId)) {
+	if (gr.get(claimId) && gr.getValue(fieldName)!=value) {
 		gr.setValue(fieldName, value);
 		gr.setWorkflow(false);
 		gr.autoSysFields(false);
@@ -87,11 +87,11 @@ function updateClaim(claimId, fieldName, value) {
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-06-20 00:07:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bdbcf740dbe73e0075ea38ff9d961965</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>CAM-CPTCPNT-Update Claim</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -99,8 +99,8 @@ function updateClaim(claimId, fieldName, value) {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_bdbcf740dbe73e0075ea38ff9d961965</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-07-05 19:15:17</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-11-02 13:15:28</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

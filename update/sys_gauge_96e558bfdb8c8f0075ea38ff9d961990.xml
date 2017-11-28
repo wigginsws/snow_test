@@ -18,7 +18,7 @@
         <sys_class_name>sys_gauge</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-07-25 19:27:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>96e558bfdb8c8f0075ea38ff9d961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Search for Claim</sys_name>

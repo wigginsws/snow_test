@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>roshan@buildon.me</sys_created_by>
             <sys_created_on>2017-04-13 17:30:04</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>d07fd96edb867600394af9361d9619ee</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_name>OASIS - Created By</sys_name>

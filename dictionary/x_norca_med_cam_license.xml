@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="License" max_length="40" name="x_norca_med_cam_license" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;return new cam_DataSyncUtils().getCommitStatus(current);&#10;&#10;})(current);" choice="1" choice_field="commit_status" choice_table="x_norca_med_cam_entity" label="Sync Status" max_length="40" name="commit_status" read_only="true" type="choice" virtual="true">
+            <choice/>
+        </element>
         <element label="Date Licensed" max_length="40" name="date_licensed" type="glide_date"/>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#9;var display = &quot;&quot;;&#10;&#9;if (current.entity) {&#10;&#9;&#9;display += current.entity.getDisplayValue();&#10;&#9;}&#10;&#9;display += &quot; - &quot; + current.license_number;&#10;&#9;return display;&#10;&#10;})(current);" display="true" label="Display Name" max_length="60" name="display_name" read_only="true" type="string" virtual="true"/>
         <element label="Entity" mandatory="true" max_length="32" name="entity" reference="x_norca_med_cam_entity" type="reference"/>
@@ -128,6 +131,8 @@
                 <element label="ARNP" sequence="0" value="ARNP"/>
                 <element label="AS" sequence="0" value="AS"/>
                 <element label="CH" sequence="0" value="CH"/>
+                <element label="DC" sequence="0" value="DC"/>
+                <element label="DMD" sequence="0" value="DMD"/>
                 <element label="EO" sequence="0" value="EO"/>
                 <element label="FB" sequence="0" value="FB"/>
                 <element label="OPC" sequence="0" value="OPC"/>

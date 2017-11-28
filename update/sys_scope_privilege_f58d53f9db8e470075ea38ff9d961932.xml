@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>mlindsay</sys_created_by>
+        <sys_created_on>2017-10-27 14:56:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f58d53f9db8e470075ea38ff9d961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DurationCalculator</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_scope_privilege_f58d53f9db8e470075ea38ff9d961932</sys_update_name>
+        <sys_updated_by>mlindsay</sys_updated_by>
+        <sys_updated_on>2017-10-27 14:56:40</sys_updated_on>
+        <target_name>DurationCalculator</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

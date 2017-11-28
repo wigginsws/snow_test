@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>CAM-CLAIM-query</name>
+        <name>CAM-CLAIM-Restrict Blocked Users</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -40,20 +40,20 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-08-04 12:37:14</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8857d27adbd0cb40d596327e9d96194d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>CAM-CLAIM-query</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CAM-CLAIM-Restrict Blocked Users</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_8857d27adbd0cb40d596327e9d96194d</sys_update_name>
-        <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-04 16:21:59</sys_updated_on>
+        <sys_updated_by>jsavage</sys_updated_by>
+        <sys_updated_on>2017-10-03 16:25:16</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

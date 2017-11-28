@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_org_hier_lvl1_fk" label="ORG_HIER_LVL1_FK" language="en" table="u_cm_risk_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_org_hier_lvl1_fk</element>
+            <help/>
+            <hint/>
+            <label>ORG_HIER_LVL1_FK</label>
+            <language>en</language>
+            <name>u_cm_risk_import</name>
+            <plural>ORG_HIER_LVL1_FKs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-08-28 18:36:15</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>21605f2edbf00740d596327e9d96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ORG_HIER_LVL1_FK</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_u_cm_risk_import_u_org_hier_lvl1_fk_en</sys_update_name>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-08-28 18:36:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

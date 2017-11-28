@@ -7,8 +7,9 @@
         <omit_line>false</omit_line>
         <order>1</order>
         <override_style/>
-        <query table="x_norca_med_cam_claim">state=1^assigned_to=javascript: (new x_norca_med_cam.cam_ReportUtils()).myReports()^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
-            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="=" or="false" value="javascript: (new x_norca_med_cam.cam_ReportUtils()).myReports()"/>
+        <query table="x_norca_med_cam_claim">state=1^assigned_to.managerDYNAMICb24dea61db468700d596327e9d96196e^ORassigned_toDYNAMICb24dea61db468700d596327e9d96196e^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="false" field="assigned_to.manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="b24dea61db468700d596327e9d96196e"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="true" value="b24dea61db468700d596327e9d96196e"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </query>
         <script/>
@@ -18,15 +19,15 @@
         <sys_created_on>2017-03-07 20:27:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ab15afaadb59f64062bafd441d961922</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>FNOL</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_gauge_counts_ab15afaadb59f64062bafd441d961922</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-06-20 13:10:57</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 17:01:26</sys_updated_on>
         <tablename>x_norca_med_cam_claim</tablename>
         <use_script>false</use_script>
     </sys_gauge_counts>

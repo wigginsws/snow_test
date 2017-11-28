@@ -2,11 +2,11 @@
 <record_update table="sys_rest_message_fn_headers">
     <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
         <name>Accept</name>
-        <rest_message_function display_value="GetCoverageInfo">18b35839db4cc70075ea38ff9d961919</rest_message_function>
+        <rest_message_function display_value="post">18b35839db4cc70075ea38ff9d961919</rest_message_function>
         <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-19 16:31:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4bf338f9db8cc70075ea38ff9d961960</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Accept</sys_name>

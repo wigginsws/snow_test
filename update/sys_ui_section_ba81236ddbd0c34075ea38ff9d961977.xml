@@ -4,39 +4,39 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>d49ef72bdb584f40d596327e9d961966</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>689de336dbbc838075ea38ff9d961924</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <text>For multiple claims, the allocated amounts should equal the total amount.</text>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
+            <text>Attach Draft Letter to send to Finance.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>claim</element>
             <position>0</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>9c9ef72bdb584f40d596327e9d961966</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>a09de336dbbc838075ea38ff9d961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim.number</element>
+            <element>number</element>
             <position>1</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>149ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>289de336dbbc838075ea38ff9d961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -44,13 +44,13 @@
             <element>indemnity_type</element>
             <position>2</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>949ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>a89de336dbbc838075ea38ff9d961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -58,13 +58,13 @@
             <element>payee</element>
             <position>3</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>189ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>2c9de336dbbc838075ea38ff9d961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -72,27 +72,27 @@
             <element>taxpayer_identification_info</element>
             <position>4</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>989ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>ac9de336dbbc838075ea38ff9d961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
+            <element>pay_to_the_order_of</element>
             <position>5</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>1c9ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>209de336dbbc838075ea38ff9d961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -100,335 +100,209 @@
             <element>.split</element>
             <position>6</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>9c9ef72bdb584f40d596327e9d961967</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>a09de336dbbc838075ea38ff9d961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sys_created_by</element>
+            <element>status</element>
             <position>7</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>109ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>249de336dbbc838075ea38ff9d961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>8</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>a49de336dbbc838075ea38ff9d961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>approver_1</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>909ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>289de336dbbc838075ea38ff9d961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>approver_2</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>149ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>a89de336dbbc838075ea38ff9d961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attached_knowledge</element>
+            <position>11</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>2c9de336dbbc838075ea38ff9d961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Attached Knowledge">cfa76e850a0a0b1f01446f67c8538d00</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>689de336dbbc838075ea38ff9d961924</element>
+            <position>12</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>ec9de336dbbc838075ea38ff9d961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_url_3</element>
+            <position>13</position>
+            <sys_created_by>sabesamis</sys_created_by>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>609de336dbbc838075ea38ff9d961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
+            <sys_updated_by>sabesamis</sys_updated_by>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>10</position>
+            <position>14</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>949ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:11</sys_created_on>
+            <sys_id>e09de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:11</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
-            <position>11</position>
+            <position>15</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>189ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>649de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>amount</element>
-            <position>12</position>
+            <position>16</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>989ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>e49de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>13</position>
+            <position>17</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>1c9ef72bdb584f40d596327e9d961968</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>689de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>add_multiple_claims</element>
-            <position>14</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>9c9ef72bdb584f40d596327e9d961968</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>15</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>109ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>d49ef72bdb584f40d596327e9d961966</element>
-            <position>16</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>909ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type>annotation</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>17</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>149ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim_number_1</element>
             <position>18</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>949ef72bdb584f40d596327e9d961969</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>e89de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim_number_2</element>
-            <position>19</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>189ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim_number_3</element>
-            <position>20</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>989ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim_number_4</element>
-            <position>21</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>1c9ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>22</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>9c9ef72bdb584f40d596327e9d961969</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>amount_1</element>
-            <position>23</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>109ef72bdb584f40d596327e9d96196a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>amount_2</element>
-            <position>24</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>909ef72bdb584f40d596327e9d96196a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>amount_3</element>
-            <position>25</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>149ef72bdb584f40d596327e9d96196a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>amount_4</element>
-            <position>26</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>949ef72bdb584f40d596327e9d96196a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>27</position>
+            <position>19</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>189ef72bdb584f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>6c9de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>28</position>
+            <position>20</position>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>989ef72bdb584f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-29 15:22:12</sys_created_on>
+            <sys_id>ec9de336dbbc838075ea38ff9d961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>claim</element>
-            <position>29</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-07 04:00:29</sys_created_on>
-            <sys_id>1c9ef72bdb584f40d596327e9d96196a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_indemnity" sys_domain="global" view="Default view">ba81236ddbd0c34075ea38ff9d961977</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-07 04:00:29</sys_updated_on>
+            <sys_updated_on>2017-08-29 15:22:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -440,7 +314,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>sabesamis</sys_created_by>
             <sys_created_on>2017-07-31 20:45:50</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ba81236ddbd0c34075ea38ff9d961977</sys_id>

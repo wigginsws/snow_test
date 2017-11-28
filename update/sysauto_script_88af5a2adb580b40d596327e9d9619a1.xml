@@ -19,9 +19,9 @@ dataSyncUtil.fixReferencesUsingSorId(cam.SCOPE_ID + "_coverage", "coverage_limit
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 18:31:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>88af5a2adb580b40d596327e9d9619a1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CAM-Temp-Link Coverage to Covg Limit</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
@@ -29,7 +29,7 @@ dataSyncUtil.fixReferencesUsingSorId(cam.SCOPE_ID + "_coverage", "coverage_limit
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sysauto_script_88af5a2adb580b40d596327e9d9619a1</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-04 13:08:49</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:02</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

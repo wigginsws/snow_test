@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_norca_med_cam.cam_AddDays</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>cam_AddDays</name>
+        <script><![CDATA[var cam_AddDays = Class.create();
+cam_AddDays.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	addDays: function() {
+		//var cdt=new GlideDateTime().getDisplayValue();
+		var cdt=new GlideDateTime();
+		//var eDate = this.getParameter('sysparm_start');
+		var addDays = this.getParameter('sysparm_days');
+		var gdt = new GlideDateTime(cdt);
+		gdt.addDaysLocalTime(addDays);
+		return gdt.getDisplayValue();
+		//return gdt;
+	},
+	
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-10-02 13:02:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1233d6f1db298bc0d596327e9d9619de</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>cam_AddDays</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_include_1233d6f1db298bc0d596327e9d9619de</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:25</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -11,7 +11,17 @@
 	var display_name = current.getValue("name")?current.getValue("name"):"";
 	switch(current.getValue("referenced_table")) {
 		case cam.SCOPE_ID + "_case":
-			display_name += " (" + (current.getDisplayValue("case_ref")?current.getDisplayValue("case_ref"):"") + ")";
+			if (current.sor_created_on) {
+				var gdt = new GlideDateTime(current.getValue("sor_created_on") );
+				display_name = gdt.getDate().getByFormat("MM/dd/yyyy")  + " " + display_name;
+			}
+			if (current.page_count) {
+				if (current.page_count==1) {
+					display_name += " (1 Page)";
+				} else {
+					display_name += " (" + current.page_count + " Pages)";
+				}
+			}
 			break;
 		case cam.SCOPE_ID + "_claim":
 			display_name += " (" + (current.getDisplayValue("claim")?current.getDisplayValue("claim"):"") + ")";
@@ -20,12 +30,6 @@
 			display_name += " (" + (current.getDisplayValue("policy")?current.getDisplayValue("policy"):"") + ")";
 			break;
 	}
-// 	if (current.folder_name) {
-// 		display_name = display_name.trim() + " " + current.getDisplayValue("folder_name");
-// 	}
-// 	if (current.type) {
-// 		display_name = display_name.trim() + " " + current.getDisplayValue("type");
-// 	}
 	
 	if (display_name.length>100) {
 		display_name = display_name.substring(0, 96) + "..."; 
@@ -73,17 +77,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-20 13:29:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>2204190adbc80b0075ea38ff9d96190c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fe4f961edb660300e022771c8c96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Display Name</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_claim_document_display_name</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-26 13:46:27</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:25:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

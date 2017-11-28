@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Claim Entry Log Transform">b7c5ca0bdb1aba0075ea38ff9d961929</map>
+        <map display_value="OASIS-Claim Entry Log Transform">b7c5ca0bdb1aba0075ea38ff9d961929</map>
         <reference_value_field/>
         <source_field>u_entity_claimant_fk</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

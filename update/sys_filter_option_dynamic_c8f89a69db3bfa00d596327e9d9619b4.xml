@@ -16,7 +16,7 @@
         <sys_class_name>sys_filter_option_dynamic</sys_class_name>
         <sys_created_by>amoewe</sys_created_by>
         <sys_created_on>2017-07-06 20:22:03</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c8f89a69db3bfa00d596327e9d9619b4</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Policy -&gt; Insured</sys_name>

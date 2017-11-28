@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" label="Coverage Review" max_length="40" name="x_norca_med_cam_coverage_review" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Coverage Review" max_length="40" name="x_norca_med_cam_coverage_review" text_index="true" type="collection">
         <element label="Claim" max_length="32" name="claim" reference="x_norca_med_cam_claim" type="reference"/>
         <element label="Required Response Date From C&amp;L" max_length="40" name="cl_response_date" type="glide_date"/>
         <element label="Complaints and all other pertinent pleadings" max_length="40" name="complaint_and_pleadings" type="boolean"/>
@@ -27,17 +27,5 @@
         <element choice="1" label="Venue/Jurisdiction" max_length="40" name="venue_jurisdiction" type="choice">
             <choice/>
         </element>
-        <index name="index">
-            <element name="personal_counsel"/>
-        </index>
-        <index name="index2">
-            <element name="plantiff_counsel"/>
-        </index>
-        <index name="index3">
-            <element name="claim"/>
-        </index>
-        <index name="index4">
-            <element name="defense_counsel"/>
-        </index>
     </element>
 </database>

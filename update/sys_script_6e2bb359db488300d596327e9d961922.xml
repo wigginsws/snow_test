@@ -30,6 +30,8 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
+	var basecolor=gs.getProperty("css.$navpage-header-bg");
+	//gs.addInfoMessage(basecolor);
 	var gr = new GlideRecord('x_norca_med_cam_reserves');
 	gr.addQuery('claim_number', current.sys_id);
 	gr.query();
@@ -37,20 +39,21 @@
 	if(gr.getRowCount()>0){
 		while (gr.next()) {
 			
-			current.reserves='<table border="1"; style=""><tbody>';
+			//current.reserves='<table border="1"; style="width:100%;"><tbody>';
+			current.reserves='<table><tbody>';
 			
-			current.reserves=current.reserves+'<tr><td style="padding-bottom: 5px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="#67696B"><strong>Expense Payments:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.total_expense_payments.getReferenceDisplayValue() + '</td></tr>';
+			current.reserves=current.reserves+'<tr><td  style="width:70%; padding-bottom: 5px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="'+basecolor+'"><strong>Expense Payments:</strong></td><td style="width:30%; padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.total_expense_payments.getReferenceDisplayValue() + '</td></tr>';
 			
-			current.reserves=current.reserves+'<tr>	<td style="padding-bottom: 10px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="#67696B"><strong>Outstanding Reserve:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.remaining_expense.getReferenceDisplayValue() + '</td></tr>';
+			current.reserves=current.reserves+'<tr>	<td style="padding-bottom: 10px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="'+basecolor+'"><strong>Outstanding Reserve:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.remaining_expense.getReferenceDisplayValue() + '</td></tr>';
 			
 			current.reserves=current.reserves+'</tbody></table>';
 			
-			current.reserves2='<table border="1"; style=""><tbody>';
+			current.reserves2='<table><tbody>';
 			
-			current.reserves2=current.reserves2+'<tr><td style="padding-bottom: 5px;padding-top: 5px;adding-right: 10px; padding-left:10px;color: white; text-align: left;" bgcolor="#67696B"><strong>Indemnity Payments:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.total_indemnity_payments.getReferenceDisplayValue() + '</td></tr>';
+			current.reserves2=current.reserves2+'<tr><td  style="width:70%;padding-bottom: 5px;padding-top: 5px;padding-right: 10px; padding-left:10px;color: white; text-align: left;" bgcolor="'+basecolor+'"><strong>Indemnity Payments:</strong></td><td style="width:30%; padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.total_indemnity_payments.getReferenceDisplayValue() + '</td></tr>';
 			
-			current.reserves2=current.reserves2+'<tr><td style="padding-bottom: 10px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="#67696B"><strong>Outstanding Reserve:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.remaining_indemnity.getReferenceDisplayValue() + '</td></tr>';
-			
+			current.reserves2=current.reserves2+'<tr><td style="padding-bottom: 10px;padding-top: 5px;padding-right: 10px;padding-left:10px;color: white; text-align: left;" bgcolor="'+basecolor+'"><strong>Outstanding Reserve:</strong></td><td style="padding-right: 10px;padding-left:10px;color: black; text-align: right;">' + gr.remaining_indemnity.getReferenceDisplayValue() + '</td></tr>';		
+
 			current.reserves2=current.reserves2+'</tbody></table>';
 		}
 	}
@@ -58,15 +61,19 @@
 		current.reserves='There are no reserve details for this claim yet.';
 	}
 	
+	if(gr.final_review=='Yes'){
+		gs.addInfoMessage('Indemnity Reserves were finalized on '+gr.firm_reserve_dt);
+	}
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-18 17:43:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e2bb359db488300d596327e9d961922</sys_id>
-        <sys_mod_count>116</sys_mod_count>
+        <sys_mod_count>139</sys_mod_count>
         <sys_name>CAM-CLAIM-SetReserves</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -75,7 +82,7 @@
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_6e2bb359db488300d596327e9d961922</sys_update_name>
         <sys_updated_by>jpolk</sys_updated_by>
-        <sys_updated_on>2017-08-04 20:41:41</sys_updated_on>
+        <sys_updated_on>2017-10-26 18:06:32</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

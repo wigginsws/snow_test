@@ -19,7 +19,7 @@
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 18:24:07</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3bdd962edb94474075ea38ff9d961921</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_incident_low_value</sys_name>

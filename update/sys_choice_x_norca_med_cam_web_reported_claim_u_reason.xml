@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_reason" table="x_norca_med_cam_web_reported_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Record Request</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>0</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 17:56:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c5c31c55db0dc70075ea38ff9d96199d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 17:57:54</sys_updated_on>
+            <value>Record Request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dissatisfied Patient</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>1</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 17:58:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b641899db0dc70075ea38ff9d961945</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 17:59:02</sys_updated_on>
+            <value>DP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Verbal or Written Notice of Claim</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:04:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49e558dddb0dc70075ea38ff9d96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:04:41</sys_updated_on>
+            <value>VerbalClaim</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lawsuit</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:05:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2f5d0dddb0dc70075ea38ff9d9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:05:04</sys_updated_on>
+            <value>Lawsuit</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Administrative Defense (St. Board Investigation/Billing Errors Proceeding/Employment-Related Civil A</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:02:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7535d85ddb0dc70075ea38ff9d961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:02:20</sys_updated_on>
+            <value>AD</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cyber Security (Information or Network Security Breach/Regulatory Privacy Proceeding/Customer Notifi</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:02:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b255905ddb0dc70075ea38ff9d96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:02:37</sys_updated_on>
+            <value>CS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General Liability (Bodily Injury &amp; Property Damage)</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>6</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:04:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04c510dddb0dc70075ea38ff9d9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:04:04</sys_updated_on>
+            <value>GL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Notice of Deposition</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>7</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:03:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>279550dddb0dc70075ea38ff9d9619c4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-09-05 18:06:59</sys_updated_on>
+            <value>Notice of Deposition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unexpected Outcome</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>8</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-24 17:43:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c807a809db060700d596327e9d9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-24 17:43:45</sys_updated_on>
+            <value>UnexpectedOutcome</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sequence>9</sequence>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 18:05:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d16d011db4dc70075ea38ff9d96198e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-24 17:44:05</sys_updated_on>
+            <value>UnexpectedOutcome</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_reason</element>
+            <name>x_norca_med_cam_web_reported_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-09-05 17:43:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>fb33ae96dba60300e022771c8c96198b</sys_id>
+            <sys_mod_count>20</sys_mod_count>
+            <sys_name>u_reason</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_web_reported_claim_u_reason</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:01:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

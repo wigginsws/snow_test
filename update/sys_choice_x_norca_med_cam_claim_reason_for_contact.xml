@@ -43,6 +43,25 @@
             <dependent_value/>
             <element>reason_for_contact</element>
             <hint/>
+            <inactive>false</inactive>
+            <label>Dissatisfied Patient</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>1</sequence>
+            <sys_created_by>jsavage</sys_created_by>
+            <sys_created_on>2017-05-04 18:59:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>764df11ddbe2f64075ea38ff9d96194a</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>hmistry</sys_updated_by>
+            <sys_updated_on>2017-08-25 18:35:30</sys_updated_on>
+            <value>DP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_contact</element>
+            <hint/>
             <inactive>true</inactive>
             <label>Sample 1</label>
             <language>en</language>
@@ -62,44 +81,6 @@
             <dependent_value/>
             <element>reason_for_contact</element>
             <hint/>
-            <inactive>false</inactive>
-            <label>Unexpected Outcome</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>1</sequence>
-            <sys_created_by>jsavage</sys_created_by>
-            <sys_created_on>2017-05-04 18:59:58</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>764df11ddbe2f64075ea38ff9d96194a</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-06-23 15:01:37</sys_updated_on>
-            <value>Unexpected Outcome</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>reason_for_contact</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Notice of Intent to Sue/Claim Letter</label>
-            <language>en</language>
-            <name>x_norca_med_cam_claim</name>
-            <sequence>2</sequence>
-            <sys_created_by>austin@buildon.me</sys_created_by>
-            <sys_created_on>2017-03-29 16:48:28</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>a816c4f5dbbdfe4062bafd441d9619f3</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-06-23 15:01:37</sys_updated_on>
-            <value>Notice of Intent to Sue/Claim Letter</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>reason_for_contact</element>
-            <hint/>
             <inactive>true</inactive>
             <label>Sample 2</label>
             <language>en</language>
@@ -114,6 +95,25 @@
             <sys_updated_by>sabesamis</sys_updated_by>
             <sys_updated_on>2017-06-01 21:48:44</sys_updated_on>
             <value>sample 2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_contact</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Verbal or Written Notice of Claim</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>austin@buildon.me</sys_created_by>
+            <sys_created_on>2017-03-29 16:48:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a816c4f5dbbdfe4062bafd441d9619f3</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>hmistry</sys_updated_by>
+            <sys_updated_on>2017-08-25 18:36:23</sys_updated_on>
+            <value>VerbalClaim</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -310,18 +310,37 @@
             <element>reason_for_contact</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Other</label>
+            <label>Unexpected Outcome</label>
             <language>en</language>
             <name>x_norca_med_cam_claim</name>
             <sequence>8</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-24 13:19:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>266ae7f0db420700d596327e9d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-24 13:19:03</sys_updated_on>
+            <value>UnexpectedOutcome</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_contact</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_norca_med_cam_claim</name>
+            <sequence>9</sequence>
             <sys_created_by>austin@buildon.me</sys_created_by>
             <sys_created_on>2017-03-29 16:48:28</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3c16c4f5dbbdfe4062bafd441d9619f7</sys_id>
-            <sys_mod_count>5</sys_mod_count>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-06-23 15:01:37</sys_updated_on>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-24 13:18:20</sys_updated_on>
             <value>Other</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -331,16 +350,16 @@
             <sys_created_by>joe@buildon.me</sys_created_by>
             <sys_created_on>2017-03-28 20:48:23</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>75463fb3db900300e022771c8c9619a4</sys_id>
-            <sys_mod_count>27</sys_mod_count>
+            <sys_id>b923a296dba60300e022771c8c961956</sys_id>
+            <sys_mod_count>35</sys_mod_count>
             <sys_name>reason_for_contact</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_choice_x_norca_med_cam_claim_reason_for_contact</sys_update_name>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-06-23 15:01:37</sys_updated_on>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:58:46</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

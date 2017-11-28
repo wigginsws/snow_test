@@ -33,22 +33,20 @@ cam_ClaimLogWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebService
 			}
 		}
 		
-		var countyCode;
-		if (currentGR.claim_county_code) {
-			var countyGR = dataSyncUtils.getRecordBySorId( cam.SCOPE_ID + "_county_lookup", currentGR.claim_county_code, "sys_id");
-			if (countyGR) {
-				countyCode = countyGR.county_code;
+		var policyType = "";
+		if (currentGR.u_policy) {
+			var policyGR = dataSyncUtils.getRecordBySysId( cam.SCOPE_ID + "_policy", currentGR.u_policy);
+			if (policyGR) {
+				policyType = policyGR.getValue("policy_type");
 			}
 		}
 		
-		//var adjusterPK = dataSyncUtils.getFieldForRecordBySysId(cam.SCOPE_ID + "_entity", currentGR.u_case, "sor_id");
-
 		var params = {
 			'ClaimLogChangeRequest.UserId': this.getUserNameValueObject(currentGR),
 			'ClaimLog.ClaimLogNumberId': this.createParamValueObject( currentGR.claim_log_id?currentGR.claim_log_id:""),
 			'ClaimLog.IncidentRefNumber': this.createParamValueObject( casePK?casePK:"" ),
-			'IncidentDate.StartDate': this.createParamValueObject( currentGR.u_incident_start_date ? currentGR.u_incident_start_date:""),
-			'IncidentDate.EndDate': this.createParamValueObject(  currentGR.u_incident_end_date ? currentGR.u_incident_end_date:""),
+			'IncidentDate.StartDate': this.createParamValueObject( currentGR.u_loss_date ? currentGR.u_loss_date:""),
+			'IncidentDate.EndDate': this.createParamValueObject(  currentGR.u_loss_date ? currentGR.u_loss_date:""),
 			'IncidentReported.IncidentReportedDate': this.createParamValueObject(  currentGR.report_date?currentGR.report_date:""),
 			'ClaimLog.LossDate': this.createParamValueObject( currentGR.u_loss_date?currentGR.u_loss_date:""),
 			'ClaimAdjuster.PartyNumberId': this.createParamValueObject( specialistPK?specialistPK:""),
@@ -56,41 +54,91 @@ cam_ClaimLogWebServiceUtils.prototype = Object.extendsObject(cam_OasisWebService
 			'Insured.PartyNumberId': this.createParamValueObject( insuredPK?insuredPK:""),
 			'Supervisor.PartyNumberId': this.createParamValueObject( supervisorPK?supervisorPK:""),
 			'LiabilityLossInformation.LossType': this.createParamValueObject( currentGR.u_loss_type?currentGR.u_loss_type:"" ),
+			'ClaimLog.ClaimCategoryCode': this.createParamValueObject( currentGR.claim_category?currentGR.claim_category:"" ),			
 			//'DefenceLawFirm.PartyNumberId': this.createParamValueObject(''),
 			'ClaimLog.BranchOffice': this.createParamValueObject( currentGR.u_branch_office?currentGR.u_branch_office:""),//currentGR.?currentGR.:""
 			//'ClaimLog.LocationCode': this.createParamValueObject(currentGR.?currentGR.:""),
 			'ClaimLog.JurisdictionCode': this.createParamValueObject(currentGR.u_jurisdiction_code?currentGR.u_jurisdiction_code:""),
-			//'ClaimLog.ClaimLogStatusCode': this.createParamValueObject(''),
-			//'ClaimLog.ClaimLogStatusDate': this.createParamValueObject(''),
-			//'ClaimLog.ClaimSeverityCode': this.createParamValueObject(''),
-			//'ClaimLog.ClaimCategoryCode': this.createParamValueObject(''),
 			'ClaimLog.ClaimType': this.createParamValueObject(currentGR.claim_type?currentGR.claim_type:""),
+			"ClaimLog.PolicyType": this.createParamValueObject(policyType),
 			'LiabilityStateInformation.StateOrProvinceCode': this.createParamValueObject(currentGR.claim_state_code?currentGR.claim_state_code:""),
-			'LiabilityStateInformation.CountyCode': this.createParamValueObject(countyCode?countyCode:"")
+			'LiabilityStateInformation.CountyCode': this.createParamValueObject( currentGR.u_county ? currentGR.u_county.county_code:"" ),
+			'ClaimLog.RemarkInformation': this.createParamValueObject(currentGR.short_description?currentGR.short_description:""),
+			'ClaimLog.ClaimSeverityCode': this.createParamValueObject( currentGR.u_choice_2?currentGR.u_choice_2:"" ),
+			//'LiabilityLossInformation.LossCauseCode': this.createParamValueObject( currentGR.u_loss_subtype?currentGR.u_loss_subtype:"" ),
+			'ClaimLog.LocationCode': this.createParamValueObject( currentGR.u_string_1?currentGR.u_string_1:"" )
 		};
 
 		var idXpath = "/S:Envelope/S:Body/claimLogChangeResult/ns1:ClaimLog/ns1:ClaimLogNumberId";
 		var messageName = currentGR.claim_log_id ? "updateClaimLog" : "insertClaimLog";
 
 		this.processMessage(cam.SCOPE_ID + '.CAM-OASIS-ClaimLogChangeService', messageName, params, currentGR, {"claim_log_id": idXpath });
-		currentGR.cel_last_committed_update = currentGR.sys_mod_count;
-		log.info("[saveClaimLog] cel_last_committed_update " + currentGR.cel_last_committed_update);
+	},
+	
+	
+	/**
+	* IMPORTANT: currentGR is the Claim GR and NOT Claim Log GR
+	**/
+	getClaimStage: function(currentGR) {
+		var retVal = "1"; // FNOL
+		switch (currentGR.getValue("oasis_claim_status")) {
+			case "OPEN":
+			case "REOPEN":
+				if (currentGR.claim_id || currentGR.assigned_to)	{
+					retVal = "3"; // Investigate
+				}
+				break;
+			case "CLOSED":
+			case "ERROR":
+			case "MALP UNL":
+					retVal = "5"; // Closed
+				break;
+		}
+		return retVal;
+	},
+	
+	
+	/**
+	* IMPORTANT: currentGR is the Claim GR and NOT Claim Log GR
+	**/
+	getOasisClaimStatus: function(currentGR) {
+		var retVal = "PENDING";
+		switch (currentGR.getValue("state")) {
+			case "1":
+			case "2":
+				retVal = "PENDING";
+				break;
+			case "3":
+			case "4":
+				if (!currentGR.claim_id)	{
+					if (currentGR.oasis_claim_status=="OPEN" || currentGR.oasis_claim_status=="REOPEN") {
+						retVal = currentGR.getValue("oasis_claim_status");
+					}
+				}
+				break;
+			case "5":
+				retVal = currentGR.claim_id?"CLOSED":"DISCARD";
+				break;
+		}
+		return retVal;
 	}
+	
 });
+
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-18 03:24:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>71f33c15db0c870075ea38ff9d961912</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>cam_ClaimLogWebServiceUtils</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_script_include_71f33c15db0c870075ea38ff9d961912</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-25 21:07:07</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 18:04:25</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -11,27 +11,27 @@
         <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
-        <label>Indemnity</label>
+        <label>Indemnity Payments</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_norca_med_cam_indemnity</name>
         <number_ref display_value="IND">2831236ddbd0c34075ea38ff9d961991</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Task" name="task">13c5f1b61823320092c03796c32403e6</super_class>
+        <super_class display_value="Task" name="task">301bc3a69430030092c01899af6cf3dc</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-07-31 20:33:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>434e17e9dbd0c34075ea38ff9d961997</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Indemnity</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Indemnity Payments</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_db_object_434e17e9dbd0c34075ea38ff9d961997</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-03 00:53:19</sys_updated_on>
+        <sys_updated_by>sabesamis</sys_updated_by>
+        <sys_updated_on>2017-08-23 03:34:49</sys_updated_on>
         <update_access>true</update_access>
         <user_role display_value="x_norca_med_cam.indemnity_user" name="x_norca_med_cam.indemnity_user">45de1be9dbd0c34075ea38ff9d9619a9</user_role>
         <ws_access>true</ws_access>

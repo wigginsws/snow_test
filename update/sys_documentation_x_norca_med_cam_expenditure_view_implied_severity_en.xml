@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="implied_severity" label="Implied Severity based on PVR and Defensibility" language="en" table="x_norca_med_cam_expenditure_view">
+    <sys_documentation element="implied_severity" label="Implied Severity" language="en" table="x_norca_med_cam_expenditure_view">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>implied_severity</element>
             <help/>
-            <hint/>
-            <label>Implied Severity based on PVR and Defensibility</label>
+            <hint>Implied Severity based on PVR and Defensibility</hint>
+            <label>Implied Severity</label>
             <language>en</language>
             <name>x_norca_med_cam_expenditure_view</name>
-            <plural>Implied Severity based on PVR and Defensibilities</plural>
+            <plural>Implied Severities</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-08-07 16:24:55</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>41f8eab3db508f40d596327e9d96196d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Implied Severity based on PVR and Defensibility</sys_name>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Implied Severity</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_documentation_x_norca_med_cam_expenditure_view_implied_severity_en</sys_update_name>
             <sys_updated_by>jpolk</sys_updated_by>
-            <sys_updated_on>2017-08-07 16:24:55</sys_updated_on>
+            <sys_updated_on>2017-08-08 15:21:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

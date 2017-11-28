@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="message_type" table="x_norca_med_cam_service_log" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>message_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>REST</label>
+            <language>en</language>
+            <name>x_norca_med_cam_service_log</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 15:33:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b2609dcdbadc34075ea38ff9d9619ad</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-27 15:33:20</sys_updated_on>
+            <value>rest</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>message_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SOAP</label>
+            <language>en</language>
+            <name>x_norca_med_cam_service_log</name>
+            <sequence/>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 15:33:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c516c5dcdbadc34075ea38ff9d9619e1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-27 15:33:11</sys_updated_on>
+            <value>soap</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>message_type</element>
+            <name>x_norca_med_cam_service_log</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-27 15:33:05</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bb33ae96dba60300e022771c8c96194f</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>message_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_service_log_message_type</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:00:37</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

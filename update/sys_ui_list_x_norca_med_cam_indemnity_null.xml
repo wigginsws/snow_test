@@ -4,152 +4,137 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>f249a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>b3f7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_new_employee_name</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>claim</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>7649a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>37f7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>status</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>f649a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>b7f7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>assigned_to</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>opened_by</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>7a49a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>3bf7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>short_description</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>payee</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>fa49a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>bbf7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_class_name</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>taxpayer_identification_info</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>7e49a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>3ff7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>opened_at</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>amount</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>fe49a5a3dbd04f40d596327e9d96196a</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>bff7843adb38438075ea38ff9d9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_created_by</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>approver_1</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>7249a5a3dbd04f40d596327e9d96196b</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>33f7843adb38438075ea38ff9d9619e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>payee</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
+            <element>approver_2</element>
+            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3ff7843adb38438075ea38ff9d9619e3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>f249a5a3dbd04f40d596327e9d96196b</sys_id>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_id>b3f7843adb38438075ea38ff9d9619e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>taxpayer_identification_info</element>
-            <list_id display_value="x_norca_med_cam_indemnity" element="NULL" name="x_norca_med_cam_indemnity" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7e49a5a3dbd04f40d596327e9d961969</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_id>7649a5a3dbd04f40d596327e9d96196b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -163,11 +148,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-08-06 17:08:18</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_created_on>2017-08-28 22:39:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7e49a5a3dbd04f40d596327e9d961969</sys_id>
+            <sys_id>3ff7843adb38438075ea38ff9d9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_norca_med_cam_indemnity</sys_name>
             <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -176,7 +161,7 @@
             <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
             <sys_update_name>sys_ui_list_x_norca_med_cam_indemnity_null</sys_update_name>
             <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-08-06 17:08:18</sys_updated_on>
+            <sys_updated_on>2017-08-28 22:39:10</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

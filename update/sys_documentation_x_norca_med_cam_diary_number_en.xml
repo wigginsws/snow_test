@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-07-27 14:53:22</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>608a6158db908340d596327e9d961967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Diary Number</sys_name>

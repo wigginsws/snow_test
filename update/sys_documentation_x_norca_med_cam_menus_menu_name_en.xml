@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="menu_name" label="Menu Name" language="en" table="x_norca_med_cam_menus">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>menu_name</element>
+            <help/>
+            <hint/>
+            <label>Menu Name</label>
+            <language>en</language>
+            <name>x_norca_med_cam_menus</name>
+            <plural>Menu Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-09-12 17:50:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8bb594ebdbc9cf00d596327e9d961989</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Menu Name</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_menus_menu_name_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-09-12 17:50:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

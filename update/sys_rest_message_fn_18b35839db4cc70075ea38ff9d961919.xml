@@ -18,28 +18,28 @@
 	"i_location_fk" : null&#13;
 }&#13;
 </content>
-        <function_name>GetCoverageInfo</function_name>
+        <function_name>post</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
         <oauth2_profile/>
         <protocol_name/>
-        <qualified_name>CAM-CoverageVerification [ GetCoverageInfo ]</qualified_name>
+        <qualified_name>CAM-CoverageVerification [ post ]</qualified_name>
         <rest_endpoint>http://norcalapi-dev.norcalmutual.com/api/GetCoverages</rest_endpoint>
         <rest_message display_value="CAM-CoverageVerification">25835839db4cc70075ea38ff9d9619df</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-19 14:09:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>18b35839db4cc70075ea38ff9d961919</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>GetCoverageInfo</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>post</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_rest_message_fn_18b35839db4cc70075ea38ff9d961919</sys_update_name>
-        <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-19 21:40:00</sys_updated_on>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:11:50</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server display_value="">b755df81dbc04300d596327e9d961980</use_mid_server>
         <use_mutual_auth>false</use_mutual_auth>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sys_import_set_row" label="Claims-OASIS-CoverageLimit" max_length="40" name="u_coverage_limit_import" type="collection">
+    <element extends="sys_import_set_row" label="zDS-OASIS-CoverageLimit" max_length="40" name="u_coverage_limit_import" type="collection">
         <element attributes="import_attribute_name=AGGREGATE_HIGH_VALUE" label="AGGREGATE_HIGH_VALUE" max_length="15" name="u_aggregate_high_value" type="decimal"/>
         <element attributes="import_attribute_name=AGGREGATE_LOW_VALUE" label="AGGREGATE_LOW_VALUE" max_length="15" name="u_aggregate_low_value" type="decimal"/>
         <element attributes="import_attribute_name=CODE,edge_encryption_enabled=true" label="CODE" max_length="40" name="u_code" type="string"/>

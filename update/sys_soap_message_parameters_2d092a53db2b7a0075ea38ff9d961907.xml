@@ -6,7 +6,7 @@
         <sys_class_name>sys_soap_message_parameters</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-06-29 20:21:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2d092a53db2b7a0075ea38ff9d961907</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>EffectivePeriod.StartDate</sys_name>

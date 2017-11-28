@@ -2,72 +2,58 @@
 <record_update>
     <sys_ui_section caption="Patient/Claimant Information" section_id="e344073edbbfb24075ea38ff9d961923" sys_domain="global" table="x_norca_med_cam_web_reported_claim" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_pc_fn</element>
+            <element>u_pc_name</element>
             <position>0</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>8c54073edbbfb24075ea38ff9d96199a</sys_id>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>959b992bdb700f40d596327e9d9619c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_pc_ln</element>
-            <position>1</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>c454073edbbfb24075ea38ff9d9619a7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>4854073edbbfb24075ea38ff9d9619a7</sys_id>
+            <position>1</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>199b992bdb700f40d596327e9d9619c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_pc_dob</element>
-            <position>3</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>c854073edbbfb24075ea38ff9d9619a7</sys_id>
+            <position>2</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>999b992bdb700f40d596327e9d9619c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_pc_treatment_date</element>
-            <position>4</position>
-            <sys_created_by>sabesamis</sys_created_by>
-            <sys_created_on>2017-07-10 19:19:08</sys_created_on>
-            <sys_id>4c54073edbbfb24075ea38ff9d9619a7</sys_id>
+            <position>3</position>
+            <sys_created_by>mlindsay</sys_created_by>
+            <sys_created_on>2017-08-31 12:39:48</sys_created_on>
+            <sys_id>1d9b992bdb700f40d596327e9d9619c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Patient/Claimant Information" display_value="Patient/Claimant Information" name="x_norca_med_cam_web_reported_claim" sys_domain="global" view="Default view">e344073edbbfb24075ea38ff9d961923</sys_ui_section>
-            <sys_updated_by>sabesamis</sys_updated_by>
-            <sys_updated_on>2017-07-10 19:19:08</sys_updated_on>
+            <sys_updated_by>mlindsay</sys_updated_by>
+            <sys_updated_on>2017-08-31 12:39:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -79,7 +65,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>sabesamis</sys_created_by>
             <sys_created_on>2017-07-10 19:19:07</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e344073edbbfb24075ea38ff9d961923</sys_id>

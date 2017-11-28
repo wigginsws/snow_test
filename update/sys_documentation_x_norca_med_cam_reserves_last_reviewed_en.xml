@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jpolk</sys_created_by>
             <sys_created_on>2017-08-04 22:33:54</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>34a02cc3db98cb40d596327e9d9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Last Reviewed</sys_name>

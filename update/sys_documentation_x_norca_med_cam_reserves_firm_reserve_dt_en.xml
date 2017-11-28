@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="firm_reserve_dt" label="Reserve Review Date" language="en" table="x_norca_med_cam_reserves">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>firm_reserve_dt</element>
+            <help/>
+            <hint/>
+            <label>Reserve Review Date</label>
+            <language>en</language>
+            <name>x_norca_med_cam_reserves</name>
+            <plural>Reserve Review Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-08-10 16:34:38</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>50f7ceb8dba88b4075ea38ff9d9619f4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Reserve Review Date</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_documentation_x_norca_med_cam_reserves_firm_reserve_dt_en</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:38:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

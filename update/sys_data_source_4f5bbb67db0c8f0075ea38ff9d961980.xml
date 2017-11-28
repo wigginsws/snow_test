@@ -42,7 +42,7 @@
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-07-25 17:30:47</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4f5bbb67db0c8f0075ea38ff9d961980</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>by-state reporting - med board  doi - cu</sys_name>

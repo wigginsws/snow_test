@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,claim_survey</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>CFROSTAD</sys_created_by>
+        <sys_created_on>2017-08-09 20:49:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a8b879e0dbe00380d596327e9d9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,claim_survey</sys_name>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_ui_view_a8b879e0dbe00380d596327e9d9619b2</sys_update_name>
+        <sys_updated_by>CFROSTAD</sys_updated_by>
+        <sys_updated_on>2017-08-09 20:49:32</sys_updated_on>
+        <title>Sys_popup,claim_survey</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

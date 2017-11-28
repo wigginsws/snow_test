@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="1dba400ddb29c7c0d596327e9d9619eb" sys_domain="global" table="x_norca_med_cam_case" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-29 19:08:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5ba400ddb29c7c0d596327e9d9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_case" name="x_norca_med_cam_case" sys_domain="global" view="Default view">1dba400ddb29c7c0d596327e9d9619eb</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_norca_med_cam_case" sys_domain="global" view="Default view">408ff16edb53320075ea38ff9d9619c6</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-29 19:08:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-29 19:08:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91ba400ddb29c7c0d596327e9d9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_norca_med_cam_case" name="x_norca_med_cam_case" sys_domain="global" view="Default view">1dba400ddb29c7c0d596327e9d9619eb</sys_ui_form>
+            <sys_ui_section caption="ImageRight Notes" display_value="ImageRight Notes" name="x_norca_med_cam_case" sys_domain="global" view="Default view">11ba400ddb29c7c0d596327e9d9619ed</sys_ui_section>
+            <sys_updated_by>rrao</sys_updated_by>
+            <sys_updated_on>2017-09-29 19:08:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_norca_med_cam_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rrao</sys_created_by>
+            <sys_created_on>2017-09-29 19:08:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1dba400ddb29c7c0d596327e9d9619eb</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_norca_med_cam_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_ui_form_sections_1dba400ddb29c7c0d596327e9d9619eb</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 21:58:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

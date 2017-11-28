@@ -5,7 +5,7 @@
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition>current.getValue("sor_id")!=null &amp;&amp; (current.ir_doc_load_status=="not_requested" || current.ir_doc_load_status=="failed" || current.ir_doc_load_status=="complete")</condition>
+        <condition>current.sor_id &amp;&amp; current.ir_doc_load_status!="requested" &amp;&amp; current.ir_doc_load_status!="in_progress"</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
@@ -21,38 +21,43 @@
         <name>Load Documents from ImageRight</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[// gs.eventQueue(cam.SCOPE_ID + ".ir_docs_for_case_request", current, gs.getUserID(), gs.getUserName());
-gs.addInfoMessage("Submitted request to load documents from ImageRight for Case " + current.getDisplayValue() + ". This process can take a few minutes, based on the size and number of documents (files).");
+        <script><![CDATA[if (current.ir_notes_load_status=="in_progress") {
+	current.setAbortAction(true);
+	gs.addErrorMessage("A process is running to load file notes from ImageRight. Please try this after that process is complete.");
+} else {
+	var caseDocLoader = new x_norca_med_cam.cam_CaseDocumentLoader();
+	caseDocLoader.deleteTrackersForRecord( current.getTableName(), current.getUniqueValue());
+	var trackerGR = caseDocLoader.updateTrackerForCase(current, null, "requested", 0, 0, 0);
+	gs.info("[UIAction] trackerGR " + trackerGR);
+	current.ir_doc_load_tracker = trackerGR.getUniqueValue();
+	current.autoSysFields(false);
+	current.update();
+	gs.info("[UIAction] current.ir_doc_load_tracker " + current.ir_doc_load_tracker);
 
-var caseDocLoader = new x_norca_med_cam.cam_CaseDocumentLoader();
-var trackerGR = caseDocLoader.updateTrackerForCase(current, null, "requested", 0, 0, 0);
-gs.info("[UIAction] trackerGR " + trackerGR);
-current.ir_doc_load_tracker = trackerGR.getUniqueValue();
-current.autoSysFields(false);
-current.update();
-gs.info("[UIAction] current.ir_doc_load_tracker " + current.ir_doc_load_tracker);
+	gs.addInfoMessage("Request submitted to load documents from ImageRight for Case " + current.getDisplayValue() + ". This process can take a few minutes, based on the size and number of documents (files).");
+}
 ]]></script>
-        <show_insert>true</show_insert>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-07-14 03:24:10</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9cbe40ccdbc04340d596327e9d961929</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Load Documents from ImageRight</sys_name>
         <sys_overrides/>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_ui_action_9cbe40ccdbc04340d596327e9d961929</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-07-27 20:05:39</sys_updated_on>
+        <sys_updated_on>2017-11-02 01:27:40</sys_updated_on>
         <table>x_norca_med_cam_case</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

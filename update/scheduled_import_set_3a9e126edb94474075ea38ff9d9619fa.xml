@@ -6,9 +6,9 @@
         <conditional>false</conditional>
         <data_source display_value="Claims-OASIS-CoverageLimit">6c9d1aeadb94474075ea38ff9d9619d9</data_source>
         <map/>
-        <name>Claims-OASIS-CoverageLimit</name>
+        <name>CAM-OASIS-CoverageLimit</name>
         <order/>
-        <parent display_value="Claims-OASIS-ProductCoverage">c451de66db54474075ea38ff9d961954</parent>
+        <parent display_value="CAM-OASIS-ProductCoverage">c451de66db54474075ea38ff9d961954</parent>
         <post_script/>
         <post_script_bool>false</post_script_bool>
         <pre_script/>
@@ -24,17 +24,17 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>rrao</sys_created_by>
         <sys_created_on>2017-08-03 18:27:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3a9e126edb94474075ea38ff9d9619fa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Claims-OASIS-CoverageLimit</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CAM-OASIS-CoverageLimit</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>scheduled_import_set_3a9e126edb94474075ea38ff9d9619fa</sys_update_name>
         <sys_updated_by>rrao</sys_updated_by>
-        <sys_updated_on>2017-08-03 18:28:33</sys_updated_on>
+        <sys_updated_on>2017-09-18 15:34:02</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_import_set>
 </record_update>

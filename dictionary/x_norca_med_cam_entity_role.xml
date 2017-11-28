@@ -9,7 +9,7 @@
         <element label="Role Type" mandatory="true" max_length="10" name="role_type" type="string"/>
         <element label="OASIS - Created On" max_length="30" name="sor_created_by" read_only="true" type="string"/>
         <element label="OASIS - Created On" max_length="40" name="sor_created_on" read_only="true" type="glide_date_time"/>
-        <element label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
+        <element attributes="format:none" label="OASIS ID" max_length="15" name="sor_id" read_only="true" type="decimal"/>
         <element label="OASIS - Updated On" max_length="30" name="sor_updated_by" read_only="true" type="string"/>
         <element label="OASIS - Updated On" max_length="40" name="sor_updated_on" read_only="true" type="glide_date_time"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>

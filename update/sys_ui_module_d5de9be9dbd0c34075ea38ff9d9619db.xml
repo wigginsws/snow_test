@@ -12,7 +12,7 @@
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>sabesamis</sys_created_by>
         <sys_created_on>2017-07-31 20:34:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d5de9be9dbd0c34075ea38ff9d9619db</sys_id>

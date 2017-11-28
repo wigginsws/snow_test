@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Litigation" max_length="40" name="x_norca_med_cam_litigation" type="collection">
+        <element label="Caption" max_length="40" name="case_name" type="string"/>
+        <element label="Claim Number" max_length="32" name="claim_number" reference="x_norca_med_cam_claim" type="reference" unique="true"/>
+        <element label="Venue" max_length="32" name="court_name" reference="x_norca_med_cam_menus" reference_qual="menu_name=Venue^EQ" reference_qual_condition="menu_name=Venue^EQ" type="reference"/>
+        <element label="Court" max_length="32" name="court_type" reference="x_norca_med_cam_menus" reference_qual="menu_name=Court^active=true^EQ" reference_qual_condition="menu_name=Court^active=true^EQ" type="reference"/>
+        <element label="Current Trial Date" max_length="40" name="current_trial_date" type="glide_date"/>
+        <element label="Suit Served" max_length="40" name="defense_response_date" type="glide_date"/>
+        <element label="Demand Amount" max_length="40" name="demand_amount" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Docket Number" max_length="40" name="official_case_number" type="string"/>
+        <element label="Related ID" max_length="40" name="related_id" type="string"/>
+        <element label="Relationship" max_length="40" name="related_table" type="string"/>
+        <element attributes="format=none" label="CourtCase PK" max_length="20" name="sor_id" type="decimal"/>
+        <element choice="1" default="CA" label="State" max_length="40" name="venue_state" type="string">
+            <choice>
+                <element label="Alabama" sequence="0" value="AL"/>
+                <element label="CO" sequence="0" value="CO"/>
+                <element label="DC" sequence="0" value="DC"/>
+                <element label="Alaska" sequence="1" value="AK"/>
+                <element label="Arizona" sequence="2" value="AZ"/>
+                <element label="Arkansas" sequence="3" value="AR"/>
+                <element label="California" sequence="4" value="CA"/>
+                <element label="Colorado" sequence="5" value="DO"/>
+                <element label="Connecticut" sequence="6" value="CT"/>
+                <element label="Delaware" sequence="7" value="DE"/>
+                <element label="Florida" sequence="8" value="FL"/>
+                <element label="Georgia" sequence="9" value="GA"/>
+                <element label="Hawaii" sequence="10" value="HI"/>
+                <element label="Idaho" sequence="11" value="ID"/>
+                <element label="Illinois" sequence="12" value="IL"/>
+                <element label="Indiana" sequence="13" value="IN"/>
+                <element label="Iowa" sequence="14" value="IA"/>
+                <element label="Kansas" sequence="15" value="KS"/>
+                <element label="Kentucky" sequence="16" value="KY"/>
+                <element label="Louisiana" sequence="17" value="LA"/>
+                <element label="Maine" sequence="18" value="ME"/>
+                <element label="Maryland" sequence="19" value="MD"/>
+                <element label="Massachusetts" sequence="20" value="MA"/>
+                <element label="Michigan" sequence="21" value="MI"/>
+                <element label="Minnesota" sequence="22" value="MN"/>
+                <element label="Mississippi" sequence="23" value="MS"/>
+                <element label="Missouri" sequence="24" value="MO"/>
+                <element label="Montana" sequence="25" value="MT"/>
+                <element label="Nebraska" sequence="26" value="NE"/>
+                <element label="Nevada" sequence="27" value="NV"/>
+                <element label="New Hampshire" sequence="28" value="NH"/>
+                <element label="New Jersey" sequence="29" value="NJ"/>
+                <element label="New Mexico" sequence="30" value="NM"/>
+                <element label="New York" sequence="31" value="NY"/>
+                <element label="North Carolina" sequence="32" value="NC"/>
+                <element label="North Dakota" sequence="33" value="ND"/>
+                <element label="Ohio" sequence="34" value="OH"/>
+                <element label="Oklahoma" sequence="35" value="OK"/>
+                <element label="Oregon" sequence="36" value="OR"/>
+                <element label="Pennsylvania" sequence="37" value="PA"/>
+                <element label="Rhode Island" sequence="38" value="RI"/>
+                <element label="South Carolina" sequence="39" value="SC"/>
+                <element label="South Dakota" sequence="40" value="SD"/>
+                <element label="Tennessee" sequence="41" value="TN"/>
+                <element label="Texas" sequence="42" value="TX"/>
+                <element label="Utah" sequence="43" value="UT"/>
+                <element label="Vermont" sequence="44" value="VT"/>
+                <element label="Virginia" sequence="45" value="VA"/>
+                <element label="Washington" sequence="46" value="WA"/>
+                <element label="West Virginia" sequence="47" value="WV"/>
+                <element label="Wisconsin" sequence="48" value="WI"/>
+                <element label="Wyoming" sequence="49" value="WY"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="claim_number"/>
+        </index>
+        <index name="index2">
+            <element name="court_type"/>
+        </index>
+        <index name="index3">
+            <element name="sor_id"/>
+        </index>
+        <index name="index4">
+            <element name="court_name"/>
+        </index>
+    </element>
+</database>

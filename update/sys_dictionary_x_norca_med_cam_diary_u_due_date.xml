@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_due_date" table="x_norca_med_cam_diary">
-        <active>true</active>
+        <active>false</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
@@ -53,7 +53,7 @@
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-05-31 12:39:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>b549afb1db433240d596327e9d96194d</sys_id>
+        <sys_id>6efe92dadb660300e022771c8c961957</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Due Date</sys_name>
         <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
         <sys_update_name>sys_dictionary_x_norca_med_cam_diary_u_due_date</sys_update_name>
-        <sys_updated_by>jsavage</sys_updated_by>
-        <sys_updated_on>2017-05-31 12:39:52</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:27:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

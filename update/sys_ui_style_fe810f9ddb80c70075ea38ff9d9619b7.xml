@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_style</sys_class_name>
         <sys_created_by>jsavage</sys_created_by>
         <sys_created_on>2017-07-18 13:32:49</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fe810f9ddb80c70075ea38ff9d9619b7</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>x_norca_med_cam_claim</sys_name>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="alert_type" table="x_norca_med_cam_alerts" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>alert_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Document</label>
+            <language>en</language>
+            <name>x_norca_med_cam_alerts</name>
+            <sequence>100</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-05 14:58:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8aea86b2dbe18fc0d596327e9d96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-05 14:58:26</sys_updated_on>
+            <value>document</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>alert_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Email</label>
+            <language>en</language>
+            <name>x_norca_med_cam_alerts</name>
+            <sequence>200</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-05 14:58:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>340b82b2dbe18fc0d596327e9d9619bf</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-08 15:32:50</sys_updated_on>
+            <value>email</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>alert_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Activity Log</label>
+            <language>en</language>
+            <name>x_norca_med_cam_alerts</name>
+            <sequence>300</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-05 14:58:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>501b4e72dbe18fc0d596327e9d96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-05 14:58:55</sys_updated_on>
+            <value>activity_log</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>alert_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Help</label>
+            <language>en</language>
+            <name>x_norca_med_cam_alerts</name>
+            <sequence>500</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-05 20:56:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70dc5f7edbe58fc0d596327e9d96190e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-08 15:32:56</sys_updated_on>
+            <value>help</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>alert_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Reprocess</label>
+            <language>en</language>
+            <name>x_norca_med_cam_alerts</name>
+            <sequence>600</sequence>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-06 15:05:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73f51307dbadcb4075ea38ff9d96197b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-08 15:33:02</sys_updated_on>
+            <value>reprocess</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>alert_type</element>
+            <name>x_norca_med_cam_alerts</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jpolk</sys_created_by>
+            <sys_created_on>2017-10-05 14:58:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6023ee56dba60300e022771c8c961992</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_name>alert_type</sys_name>
+            <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+            <sys_update_name>sys_choice_x_norca_med_cam_alerts_alert_type</sys_update_name>
+            <sys_updated_by>jpolk</sys_updated_by>
+            <sys_updated_on>2017-10-25 22:00:01</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

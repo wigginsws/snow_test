@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>jpolk</sys_created_by>
         <sys_created_on>2017-07-17 19:39:32</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>871cc301db80870075ea38ff9d961961</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_norca_med_cam_reserves</sys_name>

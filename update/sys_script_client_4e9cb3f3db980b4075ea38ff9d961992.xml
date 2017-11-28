@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>activity</field>
+        <global>true</global>
+        <messages/>
+        <name>CAM-EXP-Hide Worksheet</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	//  var sections = g_form.getSectionNames();
+	//   alert(sections);
+	if (newValue=='reserve_worksheet'){
+		//alert('if true');
+		g_form.setSectionDisplay('claim_reservingworksheet', true);
+		g_form.setDisplay('transaction_amount',false);
+		g_form.setDisplay('firm_reserve',true);
+	}
+	else {
+		//alert('else true');
+		g_form.setSectionDisplay('claim_reservingworksheet', false);
+	}
+	if(newValue=='update_ind_res'){
+		g_form.setDisplay('firm_reserve',false);}
+		//else { g_form.setDisplay('firm_reserve',false);
+		//}
+		
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>jpolk</sys_created_by>
+        <sys_created_on>2017-08-07 22:31:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e9cb3f3db980b4075ea38ff9d961992</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CAM-EXP-Hide Worksheet</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Claim Management" source="x_norca_med_cam">4427741adb53fe8023cdd92b5e961942</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Medical Claim Management">4427741adb53fe8023cdd92b5e961942</sys_scope>
+        <sys_update_name>sys_script_client_4e9cb3f3db980b4075ea38ff9d961992</sys_update_name>
+        <sys_updated_by>jpolk</sys_updated_by>
+        <sys_updated_on>2017-10-26 19:00:54</sys_updated_on>
+        <table>x_norca_med_cam_expenditure_view</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
